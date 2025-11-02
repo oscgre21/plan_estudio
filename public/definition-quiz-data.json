@@ -10,18 +10,17 @@
         "isCorrect": true
       },
       {
-        "word": "HEAT",
-        "emoji": "🔥",
+        "word": "ORBIT",
         "isCorrect": false
       },
       {
-        "word": "BEAUTIFUL",
-        "emoji": "😍",
+        "word": "NORTHERN",
+        "emoji": "⬆️",
         "isCorrect": false
       },
       {
-        "word": "AROUND",
-        "emoji": "🔄",
+        "word": "OCEAN",
+        "emoji": "🌊",
         "isCorrect": false
       }
     ]
@@ -32,23 +31,24 @@
     "correctAnswer": "STAR",
     "options": [
       {
+        "word": "ABOVE",
+        "emoji": "⬆️",
+        "isCorrect": false
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
         "word": "STAR",
         "emoji": "⭐",
         "isCorrect": true
-      },
-      {
-        "word": "FOUND IN",
-        "emoji": "📍✅",
-        "isCorrect": false
-      },
-      {
-        "word": "REVOLVE",
-        "isCorrect": false
-      },
-      {
-        "word": "NEPTUNE",
-        "emoji": "♆",
-        "isCorrect": false
       }
     ]
   },
@@ -58,23 +58,23 @@
     "correctAnswer": "ORBIT",
     "options": [
       {
-        "word": "SPHERE",
-        "emoji": "🌍",
+        "word": "ACROSS",
+        "emoji": "↔️",
+        "isCorrect": false
+      },
+      {
+        "word": "WEATHER",
+        "emoji": "☁️",
+        "isCorrect": false
+      },
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
         "isCorrect": false
       },
       {
         "word": "ORBIT",
         "isCorrect": true
-      },
-      {
-        "word": "INNER",
-        "emoji": "🔴⬅️",
-        "isCorrect": false
-      },
-      {
-        "word": "THROUGH",
-        "emoji": "➡️⭕",
-        "isCorrect": false
       }
     ]
   },
@@ -84,8 +84,8 @@
     "correctAnswer": "ROTATE",
     "options": [
       {
-        "word": "YEAR",
-        "emoji": "📅",
+        "word": "PLACE",
+        "emoji": "📍",
         "isCorrect": false
       },
       {
@@ -93,13 +93,13 @@
         "isCorrect": true
       },
       {
-        "word": "FOUND IN",
-        "emoji": "📍✅",
+        "word": "STAR",
+        "emoji": "⭐",
         "isCorrect": false
       },
       {
-        "word": "LOCATED",
-        "emoji": "📍",
+        "word": "WARM",
+        "emoji": "🌤️",
         "isCorrect": false
       }
     ]
@@ -110,23 +110,23 @@
     "correctAnswer": "REVOLVE",
     "options": [
       {
-        "word": "RAINY",
-        "emoji": "🌧️",
+        "word": "SHOW",
+        "emoji": "👉",
+        "isCorrect": false
+      },
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
         "isCorrect": false
       },
       {
         "word": "REVOLVE",
         "isCorrect": true
-      },
-      {
-        "word": "ALONG",
-        "emoji": "➡️➡️",
-        "isCorrect": false
-      },
-      {
-        "word": "BRIGHT",
-        "emoji": "✨",
-        "isCorrect": false
       }
     ]
   },
@@ -136,13 +136,13 @@
     "correctAnswer": "AXIS",
     "options": [
       {
-        "word": "MOVE AROUND",
-        "emoji": "🌍➡️🔄",
+        "word": "MARS",
+        "emoji": "♂️",
         "isCorrect": false
       },
       {
-        "word": "TIME",
-        "emoji": "⏰",
+        "word": "HUGE",
+        "emoji": "🐘",
         "isCorrect": false
       },
       {
@@ -150,8 +150,8 @@
         "isCorrect": true
       },
       {
-        "word": "YEAR",
-        "emoji": "📅",
+        "word": "SPHERE",
+        "emoji": "🌍",
         "isCorrect": false
       }
     ]
@@ -162,24 +162,24 @@
     "correctAnswer": "INNER",
     "options": [
       {
-        "word": "INNER",
-        "emoji": "🔴⬅️",
-        "isCorrect": true
-      },
-      {
-        "word": "CLIMATE",
-        "emoji": "🌦️",
+        "word": "MERCURY",
+        "emoji": "☿️",
         "isCorrect": false
       },
       {
-        "word": "YEAR",
+        "word": "LONG-TERM",
         "emoji": "📅",
         "isCorrect": false
       },
       {
-        "word": "AROUND",
-        "emoji": "🔄",
+        "word": "RUN",
+        "emoji": "➡️",
         "isCorrect": false
+      },
+      {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": true
       }
     ]
   },
@@ -189,24 +189,24 @@
     "correctAnswer": "OUTER",
     "options": [
       {
-        "word": "PLANET",
-        "emoji": "🪐",
-        "isCorrect": false
-      },
-      {
-        "word": "BIGGER",
-        "emoji": "📈",
-        "isCorrect": false
-      },
-      {
-        "word": "USUAL",
-        "emoji": "✅",
-        "isCorrect": false
-      },
-      {
         "word": "OUTER",
         "emoji": "🔵➡️",
         "isCorrect": true
+      },
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTHERN",
+        "emoji": "⬆️",
+        "isCorrect": false
+      },
+      {
+        "word": "ROCK",
+        "emoji": "🪨",
+        "isCorrect": false
       }
     ]
   },
@@ -221,18 +221,17 @@
         "isCorrect": true
       },
       {
-        "word": "FOUND IN",
-        "emoji": "📍✅",
+        "word": "ALONG",
+        "emoji": "➡️➡️",
         "isCorrect": false
       },
       {
-        "word": "LONG-TERM",
-        "emoji": "📅",
+        "word": "RUN",
+        "emoji": "➡️",
         "isCorrect": false
       },
       {
-        "word": "CONTINENT",
-        "emoji": "🗺️",
+        "word": "AXIS",
         "isCorrect": false
       }
     ]
@@ -243,24 +242,24 @@
     "correctAnswer": "VENUS",
     "options": [
       {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "LIFE",
+        "emoji": "🌱",
+        "isCorrect": false
+      },
+      {
         "word": "VENUS",
         "emoji": "♀️",
         "isCorrect": true
-      },
-      {
-        "word": "CIRCLE",
-        "emoji": "⭕",
-        "isCorrect": false
-      },
-      {
-        "word": "GAS",
-        "emoji": "💨",
-        "isCorrect": false
-      },
-      {
-        "word": "DAY AND NIGHT",
-        "emoji": "☀️🌙",
-        "isCorrect": false
       }
     ]
   },
@@ -270,24 +269,24 @@
     "correctAnswer": "EARTH",
     "options": [
       {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "LIGHT",
+        "emoji": "💡",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      },
+      {
         "word": "EARTH",
         "emoji": "🌍",
         "isCorrect": true
-      },
-      {
-        "word": "EAST TO WEST",
-        "emoji": "⬅️➡️",
-        "isCorrect": false
-      },
-      {
-        "word": "AVERAGE",
-        "emoji": "📊",
-        "isCorrect": false
-      },
-      {
-        "word": "CONTINENT",
-        "emoji": "🗺️",
-        "isCorrect": false
       }
     ]
   },
@@ -297,8 +296,8 @@
     "correctAnswer": "MARS",
     "options": [
       {
-        "word": "YEAR",
-        "emoji": "📅",
+        "word": "CONTINENT",
+        "emoji": "🗺️",
         "isCorrect": false
       },
       {
@@ -307,13 +306,13 @@
         "isCorrect": true
       },
       {
-        "word": "LOCATED",
-        "emoji": "📍",
+        "word": "NORTHERN",
+        "emoji": "⬆️",
         "isCorrect": false
       },
       {
-        "word": "SATURN",
-        "emoji": "🪐",
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
         "isCorrect": false
       }
     ]
@@ -324,23 +323,23 @@
     "correctAnswer": "JUPITER",
     "options": [
       {
+        "word": "RUN",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
         "word": "JUPITER",
         "emoji": "♃",
         "isCorrect": true
       },
       {
-        "word": "OUTER",
-        "emoji": "🔵➡️",
-        "isCorrect": false
-      },
-      {
-        "word": "NORTHERN",
-        "emoji": "⬆️",
-        "isCorrect": false
-      },
-      {
-        "word": "SEASON",
-        "emoji": "🍂",
+        "word": "TOUCH",
+        "emoji": "👆",
         "isCorrect": false
       }
     ]
@@ -351,23 +350,23 @@
     "correctAnswer": "SATURN",
     "options": [
       {
-        "word": "RUN",
-        "emoji": "➡️",
-        "isCorrect": false
-      },
-      {
-        "word": "SOLAR SYSTEM",
-        "emoji": "☀️🪐🌍",
-        "isCorrect": false
-      },
-      {
         "word": "SATURN",
         "emoji": "🪐",
         "isCorrect": true
       },
       {
-        "word": "EDGE",
-        "emoji": "〰️",
+        "word": "SMALL",
+        "emoji": "🐁",
+        "isCorrect": false
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
         "isCorrect": false
       }
     ]
@@ -378,8 +377,8 @@
     "correctAnswer": "URANUS",
     "options": [
       {
-        "word": "SHORT-TERM",
-        "emoji": "⏱️",
+        "word": "BIGGER",
+        "emoji": "📈",
         "isCorrect": false
       },
       {
@@ -388,13 +387,13 @@
         "isCorrect": true
       },
       {
-        "word": "STAR",
-        "emoji": "⭐",
+        "word": "TOUCH",
+        "emoji": "👆",
         "isCorrect": false
       },
       {
-        "word": "EXIST",
-        "emoji": "✅",
+        "word": "CHANGE",
+        "emoji": "🔄",
         "isCorrect": false
       }
     ]
@@ -405,23 +404,22 @@
     "correctAnswer": "HEMISPHERE",
     "options": [
       {
-        "word": "INNER",
-        "emoji": "🔴⬅️",
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
+        "isCorrect": false
+      },
+      {
+        "word": "REVOLVE",
         "isCorrect": false
       },
       {
         "word": "HEMISPHERE",
         "isCorrect": true
-      },
-      {
-        "word": "JUPITER",
-        "emoji": "♃",
-        "isCorrect": false
-      },
-      {
-        "word": "BETWEEN",
-        "emoji": "⬅️⭕➡️",
-        "isCorrect": false
       }
     ]
   },
@@ -431,24 +429,23 @@
     "correctAnswer": "EQUATOR",
     "options": [
       {
-        "word": "LATITUDE",
-        "emoji": "🌍",
-        "isCorrect": false
-      },
-      {
-        "word": "COLD",
-        "emoji": "❄️",
-        "isCorrect": false
-      },
-      {
-        "word": "LIGHT",
-        "emoji": "💡",
-        "isCorrect": false
-      },
-      {
         "word": "EQUATOR",
         "emoji": "🌍",
         "isCorrect": true
+      },
+      {
+        "word": "AXIS",
+        "isCorrect": false
+      },
+      {
+        "word": "MOVE AROUND",
+        "emoji": "🌍➡️🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "PLACE",
+        "emoji": "📍",
+        "isCorrect": false
       }
     ]
   },
@@ -458,12 +455,13 @@
     "correctAnswer": "LONGITUDE",
     "options": [
       {
-        "word": "ORBIT",
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
         "isCorrect": false
       },
       {
-        "word": "COLD",
-        "emoji": "❄️",
+        "word": "INNER",
+        "emoji": "🔴⬅️",
         "isCorrect": false
       },
       {
@@ -472,8 +470,8 @@
         "isCorrect": true
       },
       {
-        "word": "NORTH TO SOUTH",
-        "emoji": "⬆️⬇️",
+        "word": "BELOW",
+        "emoji": "⬇️",
         "isCorrect": false
       }
     ]
@@ -484,24 +482,23 @@
     "correctAnswer": "LATITUDE",
     "options": [
       {
-        "word": "SPHERE",
-        "emoji": "🌍",
-        "isCorrect": false
-      },
-      {
-        "word": "WESTERN",
-        "emoji": "⬅️",
-        "isCorrect": false
-      },
-      {
-        "word": "MERCURY",
-        "emoji": "☿️",
-        "isCorrect": false
-      },
-      {
         "word": "LATITUDE",
         "emoji": "🌍",
         "isCorrect": true
+      },
+      {
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
+        "isCorrect": false
+      },
+      {
+        "word": "AXIS",
+        "isCorrect": false
+      },
+      {
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
+        "isCorrect": false
       }
     ]
   },
@@ -511,16 +508,6 @@
     "correctAnswer": "CONTINENT",
     "options": [
       {
-        "word": "SUNNY",
-        "emoji": "☀️",
-        "isCorrect": false
-      },
-      {
-        "word": "WESTERN",
-        "emoji": "⬅️",
-        "isCorrect": false
-      },
-      {
         "word": "CONTINENT",
         "emoji": "🗺️",
         "isCorrect": true
@@ -528,6 +515,16 @@
       {
         "word": "RINGS",
         "emoji": "💍",
+        "isCorrect": false
+      },
+      {
+        "word": "BRIGHT",
+        "emoji": "✨",
+        "isCorrect": false
+      },
+      {
+        "word": "SOUTHERN",
+        "emoji": "⬇️",
         "isCorrect": false
       }
     ]
@@ -538,18 +535,18 @@
     "correctAnswer": "OCEAN",
     "options": [
       {
-        "word": "PATTERN",
-        "emoji": "🔁",
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
         "isCorrect": false
       },
       {
-        "word": "BIGGER",
-        "emoji": "📈",
+        "word": "LOCATED",
+        "emoji": "📍",
         "isCorrect": false
       },
       {
-        "word": "ABOVE",
-        "emoji": "⬆️",
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
         "isCorrect": false
       },
       {
@@ -565,8 +562,8 @@
     "correctAnswer": "WEATHER",
     "options": [
       {
-        "word": "ALONG",
-        "emoji": "➡️➡️",
+        "word": "CIRCLE",
+        "emoji": "⭕",
         "isCorrect": false
       },
       {
@@ -575,13 +572,13 @@
         "isCorrect": true
       },
       {
-        "word": "LONG-TERM",
-        "emoji": "📅",
+        "word": "JUPITER",
+        "emoji": "♃",
         "isCorrect": false
       },
       {
-        "word": "NEPTUNE",
-        "emoji": "♆",
+        "word": "TRAVEL",
+        "emoji": "🚀",
         "isCorrect": false
       }
     ]
@@ -592,24 +589,24 @@
     "correctAnswer": "CLIMATE",
     "options": [
       {
-        "word": "KNOWN",
-        "emoji": "✅",
+        "word": "HOT",
+        "emoji": "🔥",
         "isCorrect": false
       },
       {
-        "word": "GAS",
-        "emoji": "💨",
+        "word": "AROUND",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "PLACE",
+        "emoji": "📍",
         "isCorrect": false
       },
       {
         "word": "CLIMATE",
         "emoji": "🌦️",
         "isCorrect": true
-      },
-      {
-        "word": "RAINY",
-        "emoji": "🌧️",
-        "isCorrect": false
       }
     ]
   },
@@ -619,23 +616,24 @@
     "correctAnswer": "SEASON",
     "options": [
       {
-        "word": "RAINY",
-        "emoji": "🌧️",
+        "word": "WEATHER",
+        "emoji": "☁️",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": false
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
         "isCorrect": false
       },
       {
         "word": "SEASON",
         "emoji": "🍂",
         "isCorrect": true
-      },
-      {
-        "word": "BEAUTIFUL",
-        "emoji": "😍",
-        "isCorrect": false
-      },
-      {
-        "word": "HEMISPHERE",
-        "isCorrect": false
       }
     ]
   },
@@ -645,22 +643,23 @@
     "correctAnswer": "NORTHERN",
     "options": [
       {
+        "word": "WARM",
+        "emoji": "🌤️",
+        "isCorrect": false
+      },
+      {
         "word": "NORTHERN",
         "emoji": "⬆️",
         "isCorrect": true
       },
       {
-        "word": "BEAUTIFUL",
-        "emoji": "😍",
+        "word": "EQUATOR",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
-        "word": "HEMISPHERE",
-        "isCorrect": false
-      },
-      {
-        "word": "DAY AND NIGHT",
-        "emoji": "☀️🌙",
+        "word": "SOLAR SYSTEM",
+        "emoji": "☀️🪐🌍",
         "isCorrect": false
       }
     ]
@@ -671,24 +670,24 @@
     "correctAnswer": "SOUTHERN",
     "options": [
       {
-        "word": "SOUTHERN",
-        "emoji": "⬇️",
-        "isCorrect": true
-      },
-      {
-        "word": "GIVE",
-        "emoji": "🎁",
+        "word": "CONDITION",
+        "emoji": "☁️🌡️",
         "isCorrect": false
       },
       {
-        "word": "USUAL",
+        "word": "VENUS",
+        "emoji": "♀️",
+        "isCorrect": false
+      },
+      {
+        "word": "EXIST",
         "emoji": "✅",
         "isCorrect": false
       },
       {
-        "word": "SATURN",
-        "emoji": "🪐",
-        "isCorrect": false
+        "word": "SOUTHERN",
+        "emoji": "⬇️",
+        "isCorrect": true
       }
     ]
   },
@@ -698,24 +697,24 @@
     "correctAnswer": "EASTERN",
     "options": [
       {
-        "word": "THROUGH",
-        "emoji": "➡️⭕",
-        "isCorrect": false
-      },
-      {
-        "word": "VENUS",
-        "emoji": "♀️",
-        "isCorrect": false
-      },
-      {
-        "word": "CALLED",
-        "emoji": "📛",
+        "word": "OUTER",
+        "emoji": "🔵➡️",
         "isCorrect": false
       },
       {
         "word": "EASTERN",
         "emoji": "➡️",
         "isCorrect": true
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "PLACE",
+        "emoji": "📍",
+        "isCorrect": false
       }
     ]
   },
@@ -725,24 +724,24 @@
     "correctAnswer": "WESTERN",
     "options": [
       {
-        "word": "TOUCH",
-        "emoji": "👆",
+        "word": "DESCRIBE",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "LOCATED",
+        "emoji": "📍",
+        "isCorrect": false
+      },
+      {
+        "word": "BIGGER",
+        "emoji": "📈",
         "isCorrect": false
       },
       {
         "word": "WESTERN",
         "emoji": "⬅️",
         "isCorrect": true
-      },
-      {
-        "word": "DAY AND NIGHT",
-        "emoji": "☀️🌙",
-        "isCorrect": false
-      },
-      {
-        "word": "DESCRIBE",
-        "emoji": "📝",
-        "isCorrect": false
       }
     ]
   },
@@ -752,8 +751,13 @@
     "correctAnswer": "SPHERE",
     "options": [
       {
-        "word": "STAR",
-        "emoji": "⭐",
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      },
+      {
+        "word": "CHANGE",
+        "emoji": "🔄",
         "isCorrect": false
       },
       {
@@ -762,13 +766,8 @@
         "isCorrect": true
       },
       {
-        "word": "HEAT",
-        "emoji": "🔥",
-        "isCorrect": false
-      },
-      {
-        "word": "MOVE AROUND",
-        "emoji": "🌍➡️🔄",
+        "word": "PLANET",
+        "emoji": "🪐",
         "isCorrect": false
       }
     ]
@@ -779,23 +778,22 @@
     "correctAnswer": "NEPTUNE",
     "options": [
       {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
         "word": "NEPTUNE",
         "emoji": "♆",
         "isCorrect": true
       },
       {
-        "word": "SOUTHERN",
-        "emoji": "⬇️",
+        "word": "AXIS",
         "isCorrect": false
       },
       {
-        "word": "MADE OF",
-        "emoji": "🧱➡️🏠",
-        "isCorrect": false
-      },
-      {
-        "word": "PATH",
-        "emoji": "🛤️",
+        "word": "USUAL",
+        "emoji": "✅",
         "isCorrect": false
       }
     ]
@@ -806,8 +804,13 @@
     "correctAnswer": "MOVE AROUND",
     "options": [
       {
-        "word": "SPHERE",
-        "emoji": "🌍",
+        "word": "OUTER",
+        "emoji": "🔵➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "DIVIDE",
+        "emoji": "✂️",
         "isCorrect": false
       },
       {
@@ -816,13 +819,8 @@
         "isCorrect": true
       },
       {
-        "word": "GAS",
-        "emoji": "💨",
-        "isCorrect": false
-      },
-      {
-        "word": "CONTINENT",
-        "emoji": "🗺️",
+        "word": "KNOWN",
+        "emoji": "✅",
         "isCorrect": false
       }
     ]
@@ -833,24 +831,23 @@
     "correctAnswer": "TRAVEL",
     "options": [
       {
-        "word": "JUPITER",
-        "emoji": "♃",
+        "word": "ORBIT",
         "isCorrect": false
       },
       {
-        "word": "SOUTHERN",
-        "emoji": "⬇️",
+        "word": "LIGHT",
+        "emoji": "💡",
+        "isCorrect": false
+      },
+      {
+        "word": "EASTERN",
+        "emoji": "➡️",
         "isCorrect": false
       },
       {
         "word": "TRAVEL",
         "emoji": "🚀",
         "isCorrect": true
-      },
-      {
-        "word": "STAR",
-        "emoji": "⭐",
-        "isCorrect": false
       }
     ]
   },
@@ -860,13 +857,8 @@
     "correctAnswer": "SPIN",
     "options": [
       {
-        "word": "NORTH TO SOUTH",
-        "emoji": "⬆️⬇️",
-        "isCorrect": false
-      },
-      {
-        "word": "AVERAGE",
-        "emoji": "📊",
+        "word": "SOUTHERN",
+        "emoji": "⬇️",
         "isCorrect": false
       },
       {
@@ -875,8 +867,13 @@
         "isCorrect": true
       },
       {
-        "word": "SHOW",
-        "emoji": "👉",
+        "word": "LONGITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
         "isCorrect": false
       }
     ]
@@ -887,24 +884,24 @@
     "correctAnswer": "GIVE",
     "options": [
       {
-        "word": "GAS",
-        "emoji": "💨",
+        "word": "DESCRIBE",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "SPHERE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
         "isCorrect": false
       },
       {
         "word": "GIVE",
         "emoji": "🎁",
         "isCorrect": true
-      },
-      {
-        "word": "BEAUTIFUL",
-        "emoji": "😍",
-        "isCorrect": false
-      },
-      {
-        "word": "RAINY",
-        "emoji": "🌧️",
-        "isCorrect": false
       }
     ]
   },
@@ -919,17 +916,18 @@
         "isCorrect": true
       },
       {
-        "word": "HEMISPHERE",
+        "word": "TIME",
+        "emoji": "⏰",
         "isCorrect": false
       },
       {
-        "word": "USUAL",
-        "emoji": "✅",
+        "word": "GROW",
+        "emoji": "🌱",
         "isCorrect": false
       },
       {
-        "word": "EASTERN",
-        "emoji": "➡️",
+        "word": "TOUCH",
+        "emoji": "👆",
         "isCorrect": false
       }
     ]
@@ -940,23 +938,23 @@
     "correctAnswer": "KNOWN",
     "options": [
       {
+        "word": "NEPTUNE",
+        "emoji": "♆",
+        "isCorrect": false
+      },
+      {
         "word": "KNOWN",
         "emoji": "✅",
         "isCorrect": true
       },
       {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
         "word": "STAR",
         "emoji": "⭐",
-        "isCorrect": false
-      },
-      {
-        "word": "CIRCLE",
-        "emoji": "⭕",
-        "isCorrect": false
-      },
-      {
-        "word": "TOUCH",
-        "emoji": "👆",
         "isCorrect": false
       }
     ]
@@ -967,13 +965,13 @@
     "correctAnswer": "CALLED",
     "options": [
       {
-        "word": "FOUND IN",
-        "emoji": "📍✅",
+        "word": "BELOW",
+        "emoji": "⬇️",
         "isCorrect": false
       },
       {
-        "word": "KNOWN",
-        "emoji": "✅",
+        "word": "JUPITER",
+        "emoji": "♃",
         "isCorrect": false
       },
       {
@@ -982,8 +980,8 @@
         "isCorrect": true
       },
       {
-        "word": "ROCK",
-        "emoji": "🪨",
+        "word": "HUGE",
+        "emoji": "🐘",
         "isCorrect": false
       }
     ]
@@ -994,23 +992,24 @@
     "correctAnswer": "EXIST",
     "options": [
       {
-        "word": "PATH",
-        "emoji": "🛤️",
-        "isCorrect": false
-      },
-      {
-        "word": "RAINY",
-        "emoji": "🌧️",
-        "isCorrect": false
-      },
-      {
-        "word": "AXIS",
+        "word": "LIGHT",
+        "emoji": "💡",
         "isCorrect": false
       },
       {
         "word": "EXIST",
         "emoji": "✅",
         "isCorrect": true
+      },
+      {
+        "word": "WARM",
+        "emoji": "🌤️",
+        "isCorrect": false
+      },
+      {
+        "word": "PLANET",
+        "emoji": "🪐",
+        "isCorrect": false
       }
     ]
   },
@@ -1020,24 +1019,24 @@
     "correctAnswer": "HEAT",
     "options": [
       {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      },
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
         "word": "HEAT",
         "emoji": "🔥",
         "isCorrect": true
-      },
-      {
-        "word": "JUPITER",
-        "emoji": "♃",
-        "isCorrect": false
-      },
-      {
-        "word": "GAS",
-        "emoji": "💨",
-        "isCorrect": false
-      },
-      {
-        "word": "SHORT-TERM",
-        "emoji": "⏱️",
-        "isCorrect": false
       }
     ]
   },
@@ -1047,8 +1046,8 @@
     "correctAnswer": "LIGHT",
     "options": [
       {
-        "word": "SHORT-TERM",
-        "emoji": "⏱️",
+        "word": "COLD",
+        "emoji": "❄️",
         "isCorrect": false
       },
       {
@@ -1057,13 +1056,13 @@
         "isCorrect": true
       },
       {
-        "word": "EAST TO WEST",
-        "emoji": "⬅️➡️",
+        "word": "SATURN",
+        "emoji": "🪐",
         "isCorrect": false
       },
       {
-        "word": "ACROSS",
-        "emoji": "↔️",
+        "word": "KNOWN",
+        "emoji": "✅",
         "isCorrect": false
       }
     ]
@@ -1074,23 +1073,22 @@
     "correctAnswer": "PATH",
     "options": [
       {
-        "word": "INNER",
-        "emoji": "🔴⬅️",
-        "isCorrect": false
-      },
-      {
-        "word": "WARM",
-        "emoji": "🌤️",
-        "isCorrect": false
-      },
-      {
         "word": "PATH",
         "emoji": "🛤️",
         "isCorrect": true
       },
       {
-        "word": "BELOW",
-        "emoji": "⬇️",
+        "word": "ACROSS",
+        "emoji": "↔️",
+        "isCorrect": false
+      },
+      {
+        "word": "ORBIT",
+        "isCorrect": false
+      },
+      {
+        "word": "SHOW",
+        "emoji": "👉",
         "isCorrect": false
       }
     ]
@@ -1101,8 +1099,13 @@
     "correctAnswer": "AROUND",
     "options": [
       {
-        "word": "MOVE AROUND",
-        "emoji": "🌍➡️🔄",
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
         "isCorrect": false
       },
       {
@@ -1111,13 +1114,8 @@
         "isCorrect": true
       },
       {
-        "word": "TOUCH",
-        "emoji": "👆",
-        "isCorrect": false
-      },
-      {
-        "word": "TRAVEL",
-        "emoji": "🚀",
+        "word": "RINGS",
+        "emoji": "💍",
         "isCorrect": false
       }
     ]
@@ -1128,24 +1126,23 @@
     "correctAnswer": "THROUGH",
     "options": [
       {
-        "word": "CALLED",
-        "emoji": "📛",
-        "isCorrect": false
-      },
-      {
-        "word": "AVERAGE",
-        "emoji": "📊",
-        "isCorrect": false
-      },
-      {
-        "word": "SEASON",
-        "emoji": "🍂",
+        "word": "URANUS",
+        "emoji": "♅",
         "isCorrect": false
       },
       {
         "word": "THROUGH",
         "emoji": "➡️⭕",
         "isCorrect": true
+      },
+      {
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "ORBIT",
+        "isCorrect": false
       }
     ]
   },
@@ -1155,13 +1152,8 @@
     "correctAnswer": "TIME",
     "options": [
       {
-        "word": "ATMOSPHERE",
-        "emoji": "🌫️",
-        "isCorrect": false
-      },
-      {
-        "word": "USUAL",
-        "emoji": "✅",
+        "word": "EARTH",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
@@ -1170,8 +1162,13 @@
         "isCorrect": true
       },
       {
-        "word": "DAY AND NIGHT",
-        "emoji": "☀️🌙",
+        "word": "SPIN",
+        "emoji": "🌀",
+        "isCorrect": false
+      },
+      {
+        "word": "LIFE",
+        "emoji": "🌱",
         "isCorrect": false
       }
     ]
@@ -1182,24 +1179,24 @@
     "correctAnswer": "BETWEEN",
     "options": [
       {
-        "word": "TOUCH",
-        "emoji": "👆",
-        "isCorrect": false
-      },
-      {
-        "word": "HOT",
-        "emoji": "🔥",
-        "isCorrect": false
-      },
-      {
-        "word": "OUTER",
-        "emoji": "🔵➡️",
-        "isCorrect": false
-      },
-      {
         "word": "BETWEEN",
         "emoji": "⬅️⭕➡️",
         "isCorrect": true
+      },
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": false
+      },
+      {
+        "word": "KNOWN",
+        "emoji": "✅",
+        "isCorrect": false
       }
     ]
   },
@@ -1209,18 +1206,18 @@
     "correctAnswer": "SOLAR SYSTEM",
     "options": [
       {
-        "word": "COLD",
-        "emoji": "❄️",
+        "word": "CHANGE",
+        "emoji": "🔄",
         "isCorrect": false
       },
       {
-        "word": "SPIN",
-        "emoji": "🌀",
+        "word": "USUAL",
+        "emoji": "✅",
         "isCorrect": false
       },
       {
-        "word": "SUNNY",
-        "emoji": "☀️",
+        "word": "EDGE",
+        "emoji": "〰️",
         "isCorrect": false
       },
       {
@@ -1236,18 +1233,18 @@
     "correctAnswer": "GAS",
     "options": [
       {
-        "word": "NORTHERN",
-        "emoji": "⬆️",
+        "word": "LIGHT",
+        "emoji": "💡",
         "isCorrect": false
       },
       {
-        "word": "NORTH TO SOUTH",
-        "emoji": "⬆️⬇️",
+        "word": "VENUS",
+        "emoji": "♀️",
         "isCorrect": false
       },
       {
-        "word": "PATTERN",
-        "emoji": "🔁",
+        "word": "SMALL",
+        "emoji": "🐁",
         "isCorrect": false
       },
       {
@@ -1263,23 +1260,23 @@
     "correctAnswer": "ROCK",
     "options": [
       {
-        "word": "SATURN",
-        "emoji": "🪐",
-        "isCorrect": false
-      },
-      {
-        "word": "PATTERN",
-        "emoji": "🔁",
-        "isCorrect": false
-      },
-      {
         "word": "ROCK",
         "emoji": "🪨",
         "isCorrect": true
       },
       {
-        "word": "LIFE",
-        "emoji": "🌱",
+        "word": "DIVIDE",
+        "emoji": "✂️",
+        "isCorrect": false
+      },
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": false
+      },
+      {
+        "word": "RUN",
+        "emoji": "➡️",
         "isCorrect": false
       }
     ]
@@ -1290,23 +1287,23 @@
     "correctAnswer": "LIFE",
     "options": [
       {
-        "word": "WESTERN",
-        "emoji": "⬅️",
+        "word": "HEMISPHERE",
+        "isCorrect": false
+      },
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      },
+      {
+        "word": "EDGE",
+        "emoji": "〰️",
         "isCorrect": false
       },
       {
         "word": "LIFE",
         "emoji": "🌱",
         "isCorrect": true
-      },
-      {
-        "word": "AXIS",
-        "isCorrect": false
-      },
-      {
-        "word": "BETWEEN",
-        "emoji": "⬅️⭕➡️",
-        "isCorrect": false
       }
     ]
   },
@@ -1316,18 +1313,18 @@
     "correctAnswer": "RINGS",
     "options": [
       {
-        "word": "KNOWN",
-        "emoji": "✅",
+        "word": "CLIMATE",
+        "emoji": "🌦️",
         "isCorrect": false
       },
       {
-        "word": "CALLED",
-        "emoji": "📛",
+        "word": "EARTH",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
-        "word": "URANUS",
-        "emoji": "♅",
+        "word": "TRAVEL",
+        "emoji": "🚀",
         "isCorrect": false
       },
       {
@@ -1343,17 +1340,18 @@
     "correctAnswer": "BEAUTIFUL",
     "options": [
       {
-        "word": "ORBIT",
+        "word": "LIGHT",
+        "emoji": "💡",
         "isCorrect": false
       },
       {
-        "word": "MARS",
-        "emoji": "♂️",
+        "word": "SOLAR SYSTEM",
+        "emoji": "☀️🪐🌍",
         "isCorrect": false
       },
       {
-        "word": "EXIST",
-        "emoji": "✅",
+        "word": "SHOW",
+        "emoji": "👉",
         "isCorrect": false
       },
       {
@@ -1369,23 +1367,23 @@
     "correctAnswer": "HUGE",
     "options": [
       {
-        "word": "GIVE",
-        "emoji": "🎁",
-        "isCorrect": false
-      },
-      {
         "word": "HUGE",
         "emoji": "🐘",
         "isCorrect": true
       },
       {
-        "word": "EARTH",
-        "emoji": "🌍",
+        "word": "PATH",
+        "emoji": "🛤️",
         "isCorrect": false
       },
       {
-        "word": "PLANET",
-        "emoji": "🪐",
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": false
+      },
+      {
+        "word": "BRIGHT",
+        "emoji": "✨",
         "isCorrect": false
       }
     ]
@@ -1396,23 +1394,23 @@
     "correctAnswer": "SMALL",
     "options": [
       {
-        "word": "MIDDLE",
-        "emoji": "🎯",
-        "isCorrect": false
-      },
-      {
-        "word": "COLD",
-        "emoji": "❄️",
-        "isCorrect": false
-      },
-      {
         "word": "SMALL",
         "emoji": "🐁",
         "isCorrect": true
       },
       {
-        "word": "ATMOSPHERE",
-        "emoji": "🌫️",
+        "word": "CHANGE",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "EAST TO WEST",
+        "emoji": "⬅️➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "EARTH",
+        "emoji": "🌍",
         "isCorrect": false
       }
     ]
@@ -1423,19 +1421,19 @@
     "correctAnswer": "LARGE",
     "options": [
       {
-        "word": "INNER",
-        "emoji": "🔴⬅️",
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
+        "isCorrect": false
+      },
+      {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
         "word": "LARGE",
         "emoji": "🐘",
         "isCorrect": true
-      },
-      {
-        "word": "CHANGE",
-        "emoji": "🔄",
-        "isCorrect": false
       },
       {
         "word": "MERCURY",
@@ -1450,24 +1448,24 @@
     "correctAnswer": "HOT",
     "options": [
       {
-        "word": "SEASON",
-        "emoji": "🍂",
-        "isCorrect": false
-      },
-      {
-        "word": "FOUND IN",
-        "emoji": "📍✅",
-        "isCorrect": false
-      },
-      {
-        "word": "GROW",
-        "emoji": "🌱",
+        "word": "SPIN",
+        "emoji": "🌀",
         "isCorrect": false
       },
       {
         "word": "HOT",
         "emoji": "🔥",
         "isCorrect": true
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "WEATHER",
+        "emoji": "☁️",
+        "isCorrect": false
       }
     ]
   },
@@ -1487,13 +1485,13 @@
         "isCorrect": false
       },
       {
-        "word": "TIME",
-        "emoji": "⏰",
+        "word": "EARTH",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
-        "word": "PATH",
-        "emoji": "🛤️",
+        "word": "MIDDLE",
+        "emoji": "🎯",
         "isCorrect": false
       }
     ]
@@ -1509,18 +1507,18 @@
         "isCorrect": true
       },
       {
-        "word": "YEAR",
-        "emoji": "📅",
+        "word": "DESCRIBE",
+        "emoji": "📝",
         "isCorrect": false
       },
       {
-        "word": "CONTINENT",
-        "emoji": "🗺️",
+        "word": "SOLAR SYSTEM",
+        "emoji": "☀️🪐🌍",
         "isCorrect": false
       },
       {
-        "word": "HUGE",
-        "emoji": "🐘",
+        "word": "STAR",
+        "emoji": "⭐",
         "isCorrect": false
       }
     ]
@@ -1531,24 +1529,24 @@
     "correctAnswer": "DAY AND NIGHT",
     "options": [
       {
-        "word": "EASTERN",
-        "emoji": "➡️",
+        "word": "SUNNY",
+        "emoji": "☀️",
         "isCorrect": false
       },
       {
-        "word": "GIVE",
-        "emoji": "🎁",
-        "isCorrect": false
-      },
-      {
-        "word": "NORTHERN",
-        "emoji": "⬆️",
+        "word": "HEAT",
+        "emoji": "🔥",
         "isCorrect": false
       },
       {
         "word": "DAY AND NIGHT",
         "emoji": "☀️🌙",
         "isCorrect": true
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": false
       }
     ]
   },
@@ -1558,13 +1556,12 @@
     "correctAnswer": "YEAR",
     "options": [
       {
-        "word": "EDGE",
-        "emoji": "〰️",
+        "word": "AXIS",
         "isCorrect": false
       },
       {
-        "word": "CIRCLE",
-        "emoji": "⭕",
+        "word": "CALLED",
+        "emoji": "📛",
         "isCorrect": false
       },
       {
@@ -1573,8 +1570,8 @@
         "isCorrect": true
       },
       {
-        "word": "TOUCH",
-        "emoji": "👆",
+        "word": "SATURN",
+        "emoji": "🪐",
         "isCorrect": false
       }
     ]
@@ -1585,13 +1582,13 @@
     "correctAnswer": "BIGGER",
     "options": [
       {
-        "word": "TEMPERATURE",
-        "emoji": "🌡️",
+        "word": "YEAR",
+        "emoji": "📅",
         "isCorrect": false
       },
       {
-        "word": "PATH",
-        "emoji": "🛤️",
+        "word": "CIRCLE",
+        "emoji": "⭕",
         "isCorrect": false
       },
       {
@@ -1600,8 +1597,7 @@
         "isCorrect": true
       },
       {
-        "word": "EXIST",
-        "emoji": "✅",
+        "word": "ROTATE",
         "isCorrect": false
       }
     ]
@@ -1612,23 +1608,23 @@
     "correctAnswer": "LOCATED",
     "options": [
       {
+        "word": "AXIS",
+        "isCorrect": false
+      },
+      {
+        "word": "BIGGER",
+        "emoji": "📈",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": false
+      },
+      {
         "word": "LOCATED",
         "emoji": "📍",
         "isCorrect": true
-      },
-      {
-        "word": "CHANGE",
-        "emoji": "🔄",
-        "isCorrect": false
-      },
-      {
-        "word": "REVOLVE",
-        "isCorrect": false
-      },
-      {
-        "word": "EDGE",
-        "emoji": "〰️",
-        "isCorrect": false
       }
     ]
   },
@@ -1638,8 +1634,8 @@
     "correctAnswer": "DIVIDE",
     "options": [
       {
-        "word": "BRIGHT",
-        "emoji": "✨",
+        "word": "PATH",
+        "emoji": "🛤️",
         "isCorrect": false
       },
       {
@@ -1648,13 +1644,13 @@
         "isCorrect": true
       },
       {
-        "word": "SATURN",
-        "emoji": "🪐",
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
         "isCorrect": false
       },
       {
-        "word": "CIRCLE",
-        "emoji": "⭕",
+        "word": "PLACE",
+        "emoji": "📍",
         "isCorrect": false
       }
     ]
@@ -1665,24 +1661,24 @@
     "correctAnswer": "RUN",
     "options": [
       {
-        "word": "LONGITUDE",
-        "emoji": "🌍",
+        "word": "MARS",
+        "emoji": "♂️",
         "isCorrect": false
       },
       {
-        "word": "NORTH TO SOUTH",
-        "emoji": "⬆️⬇️",
-        "isCorrect": false
-      },
-      {
-        "word": "TRAVEL",
-        "emoji": "🚀",
+        "word": "YEAR",
+        "emoji": "📅",
         "isCorrect": false
       },
       {
         "word": "RUN",
         "emoji": "➡️",
         "isCorrect": true
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": false
       }
     ]
   },
@@ -1692,23 +1688,23 @@
     "correctAnswer": "SHOW",
     "options": [
       {
+        "word": "SMALL",
+        "emoji": "🐁",
+        "isCorrect": false
+      },
+      {
+        "word": "DESCRIBE",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
         "word": "SHOW",
         "emoji": "👉",
         "isCorrect": true
       },
       {
-        "word": "MADE OF",
-        "emoji": "🧱➡️🏠",
-        "isCorrect": false
-      },
-      {
-        "word": "SEASON",
-        "emoji": "🍂",
-        "isCorrect": false
-      },
-      {
-        "word": "TRAVEL",
-        "emoji": "🚀",
+        "word": "BELOW",
+        "emoji": "⬇️",
         "isCorrect": false
       }
     ]
@@ -1719,8 +1715,13 @@
     "correctAnswer": "FOUND IN",
     "options": [
       {
-        "word": "LIFE",
+        "word": "GROW",
         "emoji": "🌱",
+        "isCorrect": false
+      },
+      {
+        "word": "AVERAGE",
+        "emoji": "📊",
         "isCorrect": false
       },
       {
@@ -1729,13 +1730,8 @@
         "isCorrect": true
       },
       {
-        "word": "EXIST",
-        "emoji": "✅",
-        "isCorrect": false
-      },
-      {
-        "word": "RINGS",
-        "emoji": "💍",
+        "word": "PLACE",
+        "emoji": "📍",
         "isCorrect": false
       }
     ]
@@ -1746,13 +1742,13 @@
     "correctAnswer": "CIRCLE",
     "options": [
       {
-        "word": "RAINY",
-        "emoji": "🌧️",
+        "word": "GAS",
+        "emoji": "💨",
         "isCorrect": false
       },
       {
-        "word": "TEMPERATURE",
-        "emoji": "🌡️",
+        "word": "TRAVEL",
+        "emoji": "🚀",
         "isCorrect": false
       },
       {
@@ -1761,8 +1757,8 @@
         "isCorrect": true
       },
       {
-        "word": "COLD",
-        "emoji": "❄️",
+        "word": "CALLED",
+        "emoji": "📛",
         "isCorrect": false
       }
     ]
@@ -1773,24 +1769,23 @@
     "correctAnswer": "NORTH TO SOUTH",
     "options": [
       {
-        "word": "LARGE",
-        "emoji": "🐘",
-        "isCorrect": false
-      },
-      {
-        "word": "MERCURY",
-        "emoji": "☿️",
-        "isCorrect": false
-      },
-      {
-        "word": "OUTER",
-        "emoji": "🔵➡️",
-        "isCorrect": false
-      },
-      {
         "word": "NORTH TO SOUTH",
         "emoji": "⬆️⬇️",
         "isCorrect": true
+      },
+      {
+        "word": "HEMISPHERE",
+        "isCorrect": false
+      },
+      {
+        "word": "CLIMATE",
+        "emoji": "🌦️",
+        "isCorrect": false
+      },
+      {
+        "word": "BELOW",
+        "emoji": "⬇️",
+        "isCorrect": false
       }
     ]
   },
@@ -1800,8 +1795,8 @@
     "correctAnswer": "EAST TO WEST",
     "options": [
       {
-        "word": "EARTH",
-        "emoji": "🌍",
+        "word": "LIGHT",
+        "emoji": "💡",
         "isCorrect": false
       },
       {
@@ -1810,13 +1805,13 @@
         "isCorrect": true
       },
       {
-        "word": "SATURN",
-        "emoji": "🪐",
+        "word": "LOCATED",
+        "emoji": "📍",
         "isCorrect": false
       },
       {
-        "word": "JUPITER",
-        "emoji": "♃",
+        "word": "BETWEEN",
+        "emoji": "⬅️⭕➡️",
         "isCorrect": false
       }
     ]
@@ -1827,23 +1822,23 @@
     "correctAnswer": "ABOVE",
     "options": [
       {
-        "word": "ROCK",
-        "emoji": "🪨",
-        "isCorrect": false
-      },
-      {
-        "word": "OUTER",
-        "emoji": "🔵➡️",
-        "isCorrect": false
-      },
-      {
         "word": "ABOVE",
         "emoji": "⬆️",
         "isCorrect": true
       },
       {
-        "word": "LONG-TERM",
-        "emoji": "📅",
+        "word": "EASTERN",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": false
+      },
+      {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
         "isCorrect": false
       }
     ]
@@ -1854,18 +1849,18 @@
     "correctAnswer": "BELOW",
     "options": [
       {
-        "word": "AVERAGE",
-        "emoji": "📊",
+        "word": "JUPITER",
+        "emoji": "♃",
         "isCorrect": false
       },
       {
-        "word": "LATITUDE",
-        "emoji": "🌍",
+        "word": "GIVE",
+        "emoji": "🎁",
         "isCorrect": false
       },
       {
-        "word": "STAR",
-        "emoji": "⭐",
+        "word": "SATURN",
+        "emoji": "🪐",
         "isCorrect": false
       },
       {
@@ -1881,8 +1876,8 @@
     "correctAnswer": "ACROSS",
     "options": [
       {
-        "word": "TIME",
-        "emoji": "⏰",
+        "word": "EARTH",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
@@ -1891,13 +1886,13 @@
         "isCorrect": true
       },
       {
-        "word": "THROUGH",
-        "emoji": "➡️⭕",
+        "word": "SPHERE",
+        "emoji": "🌍",
         "isCorrect": false
       },
       {
-        "word": "PLANET",
-        "emoji": "🪐",
+        "word": "PATH",
+        "emoji": "🛤️",
         "isCorrect": false
       }
     ]
@@ -1908,24 +1903,23 @@
     "correctAnswer": "ALONG",
     "options": [
       {
-        "word": "GIVE",
-        "emoji": "🎁",
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
         "isCorrect": false
       },
       {
-        "word": "CHANGE",
-        "emoji": "🔄",
-        "isCorrect": false
-      },
-      {
-        "word": "HUGE",
-        "emoji": "🐘",
+        "word": "HEMISPHERE",
         "isCorrect": false
       },
       {
         "word": "ALONG",
         "emoji": "➡️➡️",
         "isCorrect": true
+      },
+      {
+        "word": "LIGHT",
+        "emoji": "💡",
+        "isCorrect": false
       }
     ]
   },
@@ -1935,23 +1929,23 @@
     "correctAnswer": "MIDDLE",
     "options": [
       {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
         "word": "MIDDLE",
         "emoji": "🎯",
         "isCorrect": true
       },
       {
-        "word": "HUGE",
-        "emoji": "🐘",
-        "isCorrect": false
-      },
-      {
-        "word": "MADE OF",
-        "emoji": "🧱➡️🏠",
-        "isCorrect": false
-      },
-      {
-        "word": "EDGE",
-        "emoji": "〰️",
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
         "isCorrect": false
       }
     ]
@@ -1962,22 +1956,23 @@
     "correctAnswer": "EDGE",
     "options": [
       {
-        "word": "MERCURY",
-        "emoji": "☿️",
-        "isCorrect": false
-      },
-      {
         "word": "EDGE",
         "emoji": "〰️",
         "isCorrect": true
       },
       {
-        "word": "DESCRIBE",
-        "emoji": "📝",
+        "word": "EXIST",
+        "emoji": "✅",
         "isCorrect": false
       },
       {
-        "word": "REVOLVE",
+        "word": "RINGS",
+        "emoji": "💍",
+        "isCorrect": false
+      },
+      {
+        "word": "URANUS",
+        "emoji": "♅",
         "isCorrect": false
       }
     ]
@@ -1988,8 +1983,8 @@
     "correctAnswer": "TOUCH",
     "options": [
       {
-        "word": "PATH",
-        "emoji": "🛤️",
+        "word": "USUAL",
+        "emoji": "✅",
         "isCorrect": false
       },
       {
@@ -1998,13 +1993,13 @@
         "isCorrect": true
       },
       {
-        "word": "CONTINENT",
-        "emoji": "🗺️",
+        "word": "ABOVE",
+        "emoji": "⬆️",
         "isCorrect": false
       },
       {
-        "word": "HOT",
-        "emoji": "🔥",
+        "word": "THROUGH",
+        "emoji": "➡️⭕",
         "isCorrect": false
       }
     ]
@@ -2015,23 +2010,23 @@
     "correctAnswer": "DESCRIBE",
     "options": [
       {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "EAST TO WEST",
+        "emoji": "⬅️➡️",
+        "isCorrect": false
+      },
+      {
         "word": "DESCRIBE",
         "emoji": "📝",
         "isCorrect": true
       },
       {
-        "word": "RINGS",
-        "emoji": "💍",
-        "isCorrect": false
-      },
-      {
-        "word": "HUGE",
-        "emoji": "🐘",
-        "isCorrect": false
-      },
-      {
-        "word": "WARM",
-        "emoji": "🌤️",
+        "word": "LATITUDE",
+        "emoji": "🌍",
         "isCorrect": false
       }
     ]
@@ -2042,23 +2037,24 @@
     "correctAnswer": "CHANGE",
     "options": [
       {
-        "word": "OCEAN",
-        "emoji": "🌊",
-        "isCorrect": false
-      },
-      {
-        "word": "KNOWN",
-        "emoji": "✅",
-        "isCorrect": false
-      },
-      {
-        "word": "ORBIT",
-        "isCorrect": false
-      },
-      {
         "word": "CHANGE",
         "emoji": "🔄",
         "isCorrect": true
+      },
+      {
+        "word": "BELOW",
+        "emoji": "⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "SHOW",
+        "emoji": "👉",
+        "isCorrect": false
+      },
+      {
+        "word": "SPHERE",
+        "emoji": "🌍",
+        "isCorrect": false
       }
     ]
   },
@@ -2068,8 +2064,13 @@
     "correctAnswer": "CONDITION",
     "options": [
       {
-        "word": "ALONG",
-        "emoji": "➡️➡️",
+        "word": "BELOW",
+        "emoji": "⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "URANUS",
+        "emoji": "♅",
         "isCorrect": false
       },
       {
@@ -2078,13 +2079,8 @@
         "isCorrect": true
       },
       {
-        "word": "PATH",
-        "emoji": "🛤️",
-        "isCorrect": false
-      },
-      {
-        "word": "CLIMATE",
-        "emoji": "🌦️",
+        "word": "MIDDLE",
+        "emoji": "🎯",
         "isCorrect": false
       }
     ]
@@ -2095,24 +2091,24 @@
     "correctAnswer": "AVERAGE",
     "options": [
       {
-        "word": "MERCURY",
-        "emoji": "☿️",
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
+        "word": "WARM",
+        "emoji": "🌤️",
         "isCorrect": false
       },
       {
         "word": "AVERAGE",
         "emoji": "📊",
         "isCorrect": true
-      },
-      {
-        "word": "TIME",
-        "emoji": "⏰",
-        "isCorrect": false
-      },
-      {
-        "word": "LATITUDE",
-        "emoji": "🌍",
-        "isCorrect": false
       }
     ]
   },
@@ -2122,23 +2118,24 @@
     "correctAnswer": "PATTERN",
     "options": [
       {
-        "word": "SMALL",
-        "emoji": "🐁",
-        "isCorrect": false
-      },
-      {
-        "word": "WESTERN",
-        "emoji": "⬅️",
-        "isCorrect": false
-      },
-      {
-        "word": "ORBIT",
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
         "isCorrect": false
       },
       {
         "word": "PATTERN",
         "emoji": "🔁",
         "isCorrect": true
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "LIGHT",
+        "emoji": "💡",
+        "isCorrect": false
       }
     ]
   },
@@ -2153,18 +2150,18 @@
         "isCorrect": true
       },
       {
-        "word": "SUNNY",
-        "emoji": "☀️",
-        "isCorrect": false
-      },
-      {
-        "word": "SHOW",
-        "emoji": "👉",
-        "isCorrect": false
-      },
-      {
-        "word": "LONG-TERM",
+        "word": "YEAR",
         "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      },
+      {
+        "word": "CALLED",
+        "emoji": "📛",
         "isCorrect": false
       }
     ]
@@ -2175,23 +2172,23 @@
     "correctAnswer": "RAINY",
     "options": [
       {
-        "word": "SHORT-TERM",
-        "emoji": "⏱️",
-        "isCorrect": false
-      },
-      {
         "word": "RAINY",
         "emoji": "🌧️",
         "isCorrect": true
       },
       {
-        "word": "MARS",
-        "emoji": "♂️",
+        "word": "ACROSS",
+        "emoji": "↔️",
         "isCorrect": false
       },
       {
-        "word": "DIVIDE",
-        "emoji": "✂️",
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": false
+      },
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
         "isCorrect": false
       }
     ]
@@ -2202,24 +2199,24 @@
     "correctAnswer": "SUNNY",
     "options": [
       {
-        "word": "SPIN",
-        "emoji": "🌀",
+        "word": "HEAT",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "HOT",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "VENUS",
+        "emoji": "♀️",
         "isCorrect": false
       },
       {
         "word": "SUNNY",
         "emoji": "☀️",
         "isCorrect": true
-      },
-      {
-        "word": "WEATHER",
-        "emoji": "☁️",
-        "isCorrect": false
-      },
-      {
-        "word": "RUN",
-        "emoji": "➡️",
-        "isCorrect": false
       }
     ]
   },
@@ -2229,13 +2226,12 @@
     "correctAnswer": "WARM",
     "options": [
       {
-        "word": "CLIMATE",
-        "emoji": "🌦️",
+        "word": "JUPITER",
+        "emoji": "♃",
         "isCorrect": false
       },
       {
-        "word": "LONGITUDE",
-        "emoji": "🌍",
+        "word": "ORBIT",
         "isCorrect": false
       },
       {
@@ -2256,13 +2252,8 @@
     "correctAnswer": "SHORT-TERM",
     "options": [
       {
-        "word": "DAY AND NIGHT",
-        "emoji": "☀️🌙",
-        "isCorrect": false
-      },
-      {
-        "word": "JUPITER",
-        "emoji": "♃",
+        "word": "AVERAGE",
+        "emoji": "📊",
         "isCorrect": false
       },
       {
@@ -2271,8 +2262,12 @@
         "isCorrect": true
       },
       {
-        "word": "TRAVEL",
-        "emoji": "🚀",
+        "word": "ROTATE",
+        "isCorrect": false
+      },
+      {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
         "isCorrect": false
       }
     ]
@@ -2283,8 +2278,13 @@
     "correctAnswer": "LONG-TERM",
     "options": [
       {
-        "word": "NEPTUNE",
-        "emoji": "♆",
+        "word": "DIVIDE",
+        "emoji": "✂️",
+        "isCorrect": false
+      },
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
         "isCorrect": false
       },
       {
@@ -2293,13 +2293,8 @@
         "isCorrect": true
       },
       {
-        "word": "CALLED",
-        "emoji": "📛",
-        "isCorrect": false
-      },
-      {
-        "word": "ALONG",
-        "emoji": "➡️➡️",
+        "word": "URANUS",
+        "emoji": "♅",
         "isCorrect": false
       }
     ]
@@ -2310,17 +2305,18 @@
     "correctAnswer": "ATMOSPHERE",
     "options": [
       {
-        "word": "BRIGHT",
-        "emoji": "✨",
+        "word": "SEASON",
+        "emoji": "🍂",
         "isCorrect": false
       },
       {
-        "word": "ROTATE",
+        "word": "EXIST",
+        "emoji": "✅",
         "isCorrect": false
       },
       {
-        "word": "NORTH TO SOUTH",
-        "emoji": "⬆️⬇️",
+        "word": "MIDDLE",
+        "emoji": "🎯",
         "isCorrect": false
       },
       {
@@ -2336,13 +2332,13 @@
     "correctAnswer": "GROW",
     "options": [
       {
-        "word": "LONG-TERM",
-        "emoji": "📅",
+        "word": "BETWEEN",
+        "emoji": "⬅️⭕➡️",
         "isCorrect": false
       },
       {
-        "word": "ROCK",
-        "emoji": "🪨",
+        "word": "SHOW",
+        "emoji": "👉",
         "isCorrect": false
       },
       {
@@ -2351,8 +2347,8 @@
         "isCorrect": true
       },
       {
-        "word": "CIRCLE",
-        "emoji": "⭕",
+        "word": "ACROSS",
+        "emoji": "↔️",
         "isCorrect": false
       }
     ]
@@ -2363,24 +2359,24 @@
     "correctAnswer": "USUAL",
     "options": [
       {
-        "word": "VENUS",
-        "emoji": "♀️",
-        "isCorrect": false
-      },
-      {
-        "word": "YEAR",
-        "emoji": "📅",
-        "isCorrect": false
-      },
-      {
-        "word": "SHOW",
-        "emoji": "👉",
+        "word": "MIDDLE",
+        "emoji": "🎯",
         "isCorrect": false
       },
       {
         "word": "USUAL",
         "emoji": "✅",
         "isCorrect": true
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": false
       }
     ]
   },
@@ -2390,24 +2386,23 @@
     "correctAnswer": "PLACE",
     "options": [
       {
+        "word": "SMALL",
+        "emoji": "🐁",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": false
+      },
+      {
+        "word": "AXIS",
+        "isCorrect": false
+      },
+      {
         "word": "PLACE",
         "emoji": "📍",
         "isCorrect": true
-      },
-      {
-        "word": "HOT",
-        "emoji": "🔥",
-        "isCorrect": false
-      },
-      {
-        "word": "RUN",
-        "emoji": "➡️",
-        "isCorrect": false
-      },
-      {
-        "word": "NORTHERN",
-        "emoji": "⬆️",
-        "isCorrect": false
       }
     ]
   }
