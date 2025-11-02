@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz - Interactive Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .progress-bar {
+            background: #f0f0f0;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 20px 30px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .quiz-info {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .question-container {
+            padding: 30px;
+            min-height: 400px;
+        }
+
+        .question {
+            display: none;
+        }
+
+        .question.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .exam-title {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: bold;
+            border-left: 4px solid #667eea;
+        }
+
+        .reading-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            border-left: 4px solid #764ba2;
+        }
+
+        .reading-section h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .question-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .option {
+            background: #f8f9fa;
+            padding: 18px 25px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .option:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .option.selected {
+            border-color: #667eea;
+            background: #e7e9ff;
+        }
+
+        .option.correct {
+            border-color: #28a745;
+            background: #d4edda;
+            animation: pulse 0.5s;
+        }
+
+        .option.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+            animation: shake 0.5s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .option-letter {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            display: none;
+            animation: slideDown 0.4s;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            color: #155724;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+            color: #721c24;
+        }
+
+        .feedback-title {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feedback-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .keyboard-hint {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffc107;
+            color: #856404;
+            font-size: 1em;
+        }
+
+        .keyboard-hint strong {
+            color: #856404;
+        }
+
+        .navigation {
+            padding: 30px;
+            border-top: 2px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .results {
+            display: none;
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .results.show {
+            display: block;
+        }
+
+        .results h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .results-details {
+            font-size: 1.3em;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            border: 3px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .fill-blank {
+            display: inline-block;
+            min-width: 150px;
+            border-bottom: 2px solid #667eea;
+            padding: 5px 10px;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .question-text {
+                font-size: 1.1em;
+            }
+
+            .option {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Science Quiz Review 🌟</h1>
+            <p>Interactive Practice for Jearlenis</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="quiz-info">
+            <div>Question: <strong><span id="currentQuestion">1</span> / <span id="totalQuestions">40</span></strong></div>
+            <div>Score: <strong><span id="score">0</span> / <span id="attempted">0</span></strong></div>
+        </div>
+
+        <div class="question-container" id="questionContainer">
+            <!-- Questions will be inserted here by JavaScript -->
+        </div>
+
+        <div class="navigation">
+            <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>🎉 Quiz Completed! 🎉</h2>
+            <div class="score-circle" id="finalScore">0%</div>
+            <div class="results-details">
+                You got <strong><span id="correctAnswers">0</span></strong> out of <strong><span id="totalQuiz">0</span></strong> questions correct!
+            </div>
+            <button class="btn btn-primary" onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <script>
+        const quizData = [
+            // EXAM 1: SOLAR SYSTEM & PLANETS
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                type: "reading",
+                content: `<h3>Written Comprehension: The Planets of Our Solar System</h3>
+                <p>Our Solar System is made up of the Sun and eight planets that move around it. The Sun is a huge star that gives light and heat to all the planets.</p>
+                <p>The planets are divided into two groups: the inner planets and the outer planets. The inner planets are Mercury, Venus, Earth, and Mars. They are smaller and made mostly of rock. Earth is the only planet known to have life.</p>
+                <p>The outer planets are Jupiter, Saturn, Uranus, and Neptune. These planets are much larger and are made mostly of gas. Jupiter is the biggest planet in our Solar System, and Saturn is famous for its beautiful rings.</p>
+                <p>All the planets travel around the Sun in paths called orbits. The time each planet takes to go around the Sun is called a year. For example, Earth takes 365 days to make one orbit.</p>`
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "The Sun is a planet that moves around the Earth.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. The Sun is a star, not a planet. The Earth and all other planets move around the Sun, not the other way around."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "There are eight planets in our Solar System.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. Our Solar System has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "The inner planets are made mostly of gas.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. The inner planets (Mercury, Venus, Earth, and Mars) are made mostly of rock. The outer planets are the ones made mostly of gas."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "Earth is the only planet where life is known to exist.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. Earth is the only planet in our Solar System where life is known to exist. It has water, air, and the right temperature for life."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "Jupiter is the smallest planet in our Solar System.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. Jupiter is actually the BIGGEST planet in our Solar System, not the smallest!"
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "Saturn is known for its rings.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. Saturn is famous for its beautiful rings made of ice and rock particles."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "The time a planet takes to go around the Sun is called a year.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. One complete orbit around the Sun equals one year for that planet. Earth takes 365 days to complete one year."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "The outer planets are larger than the inner planets.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. The outer planets (Jupiter, Saturn, Uranus, and Neptune) are much larger than the inner planets."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "Mars is one of the outer planets.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. Mars is one of the inner planets. The inner planets are Mercury, Venus, Earth, and Mars."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "All the planets move around the Sun in orbits.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. All planets travel around the Sun in paths called orbits. This is what keeps them in the Solar System."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "Choose: Which of the following is an inner planet?",
+                type: "multiple-choice",
+                options: ["Jupiter", "Mars", "Neptune", "Saturn"],
+                correctAnswer: 1,
+                explanation: "Mars is correct! Mars is one of the four inner planets (Mercury, Venus, Earth, and Mars). Jupiter, Neptune, and Saturn are outer planets."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "Pluto is no longer considered a planet because it does not meet all the requirements to orbit cleanly around the Sun.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. Pluto was reclassified as a 'dwarf planet' because it doesn't clear its orbital path of other objects."
+            },
+            {
+                exam: "Exam 1: The Planets of Our Solar System",
+                question: "The Earth rotates on its axis every:",
+                type: "multiple-choice",
+                options: ["24 hours", "365 days", "30 days", "12 hours"],
+                correctAnswer: 0,
+                explanation: "24 hours is correct! The Earth takes 24 hours to complete one full rotation on its axis, which gives us day and night."
+            },
+
+            // EXAM 2: GEOGRAPHY - HEMISPHERES & EARTH
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "The continent of Africa is located in 4 hemispheres.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. Africa is the only continent located in all four hemispheres: Northern, Southern, Eastern, and Western."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Alaska is in the Northern Hemisphere.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. Alaska is located in the Northern Hemisphere, above the Equator."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "South Africa is in both the Northern and Southern hemisphere.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. South Africa is only in the Southern Hemisphere, below the Equator."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Every place on earth can only be in one hemisphere.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. Places can be in TWO hemispheres at the same time. For example, a place can be in both the Northern and Eastern hemispheres."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "The continent of South America is in the Western hemisphere.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. South America is located in the Western Hemisphere, west of the Prime Meridian."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Antarctica is located in three hemispheres.",
+                type: "true-false",
+                correctAnswer: "F",
+                explanation: "This is FALSE. Antarctica is primarily in the Southern Hemisphere. While it technically touches multiple hemispheres at its edges, it's mainly considered to be in the Southern Hemisphere."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "The Indian Ocean is in three hemispheres.",
+                type: "true-false",
+                correctAnswer: "T",
+                explanation: "This is TRUE. The Indian Ocean is located in the Southern, Eastern, and parts of the Northern Hemisphere."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which hemisphere is shown by the picture? <img src='quiz_images/hemispheres.jpeg' class='question-image' alt='Globe showing Eastern Hemisphere'>",
+                type: "multiple-choice",
+                options: ["Western Hemisphere", "Northern Hemisphere", "Eastern Hemisphere", "Southern Hemisphere"],
+                correctAnswer: 2,
+                explanation: "Eastern Hemisphere is correct! The image shows Africa and Asia, which are continents in the Eastern Hemisphere."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "What do the lines in this picture show? <img src='quiz_images/globe.jpeg' class='question-image' alt='Globe with longitude lines'>",
+                type: "text-input",
+                correctAnswer: "longitude",
+                alternativeAnswers: ["lines of longitude", "meridians"],
+                explanation: "The correct answer is LONGITUDE (or meridians). These vertical lines that run from North Pole to South Pole are called lines of longitude or meridians."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which of the following explains why we have day and night?",
+                type: "multiple-choice",
+                options: [
+                    "The Earth revolves around the Sun",
+                    "The Earth rotates on its axis",
+                    "The Moon rotates on its axis",
+                    "The Sun rotates around the Earth"
+                ],
+                correctAnswer: 1,
+                explanation: "The Earth rotates on its axis is correct! As Earth spins on its axis, different parts face the Sun (day) while others face away (night). This rotation takes 24 hours."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which of the following explains why we have seasons?",
+                type: "multiple-choice",
+                options: [
+                    "The Earth rotates on its axis",
+                    "The Earth revolves around the Sun and the tilt of its axis",
+                    "The Moon revolves around the Earth",
+                    "The Sun changes its position"
+                ],
+                correctAnswer: 1,
+                explanation: "The Earth revolves around the Sun and the tilt of its axis is correct! The 23.5-degree tilt of Earth's axis causes different parts to receive varying amounts of sunlight throughout the year, creating seasons."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "The Equator is a line of:",
+                type: "multiple-choice",
+                options: ["Longitude", "Latitude", "Temperature", "Altitude"],
+                correctAnswer: 1,
+                explanation: "Latitude is correct! The Equator is the main line of latitude at 0 degrees. It divides Earth into Northern and Southern Hemispheres."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Lines of longitude run:",
+                type: "multiple-choice",
+                options: [
+                    "North to South",
+                    "East to West",
+                    "Around the poles only",
+                    "In circles around the equator"
+                ],
+                correctAnswer: 0,
+                explanation: "North to South is correct! Lines of longitude (meridians) run vertically from the North Pole to the South Pole."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "The Prime Meridian divides the Earth into:",
+                type: "multiple-choice",
+                options: [
+                    "Northern and Southern Hemispheres",
+                    "Eastern and Western Hemispheres",
+                    "Hot and cold zones",
+                    "Day and night"
+                ],
+                correctAnswer: 1,
+                explanation: "Eastern and Western Hemispheres is correct! The Prime Meridian (0 degrees longitude) divides Earth into Eastern and Western Hemispheres, just like the Equator divides it into Northern and Southern."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "What shape is the planet Earth?",
+                type: "multiple-choice",
+                options: ["Hemisphere", "Circle", "Hemicube", "Sphere"],
+                correctAnswer: 3,
+                explanation: "Sphere is correct! Earth is shaped like a sphere (a three-dimensional round ball). It's not a perfect sphere because it's slightly flattened at the poles."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which Hemisphere are both North America and South America found in?",
+                type: "multiple-choice",
+                options: [
+                    "Eastern Hemisphere",
+                    "Western Hemisphere",
+                    "Southern Hemisphere",
+                    "Northern Hemisphere"
+                ],
+                correctAnswer: 1,
+                explanation: "Western Hemisphere is correct! Both continents are located in the Western Hemisphere, west of the Prime Meridian."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which Hemisphere are Asia, Australia, and most of Europe found in?",
+                type: "multiple-choice",
+                options: [
+                    "Western Hemisphere",
+                    "Northern Hemisphere",
+                    "Southern Hemisphere",
+                    "Eastern Hemisphere"
+                ],
+                correctAnswer: 3,
+                explanation: "Eastern Hemisphere is correct! Asia, Australia, and most of Europe are located in the Eastern Hemisphere, east of the Prime Meridian."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which Hemisphere are both South America and Antarctica found in?",
+                type: "multiple-choice",
+                options: [
+                    "Southern Hemisphere",
+                    "Northern Hemisphere",
+                    "Eastern Hemisphere",
+                    "Western Hemisphere"
+                ],
+                correctAnswer: 0,
+                explanation: "Southern Hemisphere is correct! Both South America and Antarctica are primarily located in the Southern Hemisphere, below the Equator."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Weather describes:",
+                type: "multiple-choice",
+                options: [
+                    "The average conditions over a long time",
+                    "The short-term conditions of the atmosphere",
+                    "How plants grow in a region",
+                    "The shape of the land"
+                ],
+                correctAnswer: 1,
+                explanation: "The short-term conditions of the atmosphere is correct! Weather is what's happening right now or over a short period - like sunny, rainy, or snowy today."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Climate is:",
+                type: "multiple-choice",
+                options: [
+                    "The temperature on a single day",
+                    "The usual pattern of weather in a place over many years",
+                    "A type of rainfall",
+                    "None of the above"
+                ],
+                correctAnswer: 1,
+                explanation: "The usual pattern of weather in a place over many years is correct! Climate is the average weather conditions over a long period (30+ years), not just one day."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which of the following can describe weather?",
+                type: "multiple-choice",
+                options: [
+                    "Sunny and warm today",
+                    "Always rainy in the rainforest",
+                    "Cold winters and hot summers",
+                    "A desert has little rain"
+                ],
+                correctAnswer: 0,
+                explanation: "Sunny and warm today is correct! This describes current conditions (weather). The other options describe long-term patterns (climate)."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Which inner planet is known as the Red Planet?",
+                type: "multiple-choice",
+                options: ["Mercury", "Venus", "Earth", "Mars"],
+                correctAnswer: 3,
+                explanation: "Mars is correct! Mars is called the 'Red Planet' because of the reddish color of its surface, caused by iron oxide (rust) in its soil."
+            },
+            {
+                exam: "Exam 2: Geography - Hemispheres & Earth",
+                question: "Why Pluto is no longer considered a planet?",
+                type: "multiple-choice",
+                options: [
+                    "It is too small",
+                    "It is not round",
+                    "It does not clear its orbit of other objects",
+                    "It is too far from the Sun"
+                ],
+                correctAnswer: 2,
+                explanation: "It does not clear its orbit of other objects is correct! To be a planet, an object must clear its orbital path. Pluto shares its orbit with other objects in the Kuiper Belt, so it's classified as a 'dwarf planet.'"
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let attempted = 0;
+        let userAnswers = new Array(quizData.length).fill(null);
+        let answerSubmitted = false;
+
+        function initQuiz() {
+            document.getElementById('totalQuestions').textContent = quizData.filter(q => q.type !== 'reading').length;
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const questionContainer = document.getElementById('questionContainer');
+            const question = quizData[currentQuestionIndex];
+            answerSubmitted = false;
+
+            let questionHTML = '';
+
+            if (question.exam) {
+                questionHTML += `<div class="exam-title">${question.exam}</div>`;
+            }
+
+            if (question.type === 'reading') {
+                questionHTML += `<div class="reading-section">${question.content}</div>`;
+                questionHTML += `<p style="text-align: center; color: #667eea; font-size: 1.2em; margin-top: 20px;">Read carefully, then click Next to start the questions!</p>`;
+            } else if (question.type === 'true-false') {
+                questionHTML += `
+                    <div class="keyboard-hint">
+                        <strong>Keyboard Shortcut:</strong> Press <strong>T</strong> for True or <strong>F</strong> for False
+                    </div>
+                    <div class="question-text">${question.question}</div>
+                    <div class="options">
+                        <div class="option" onclick="selectTrueFalse('T')" data-answer="T">
+                            <div class="option-letter">T</div>
+                            <div>True</div>
+                        </div>
+                        <div class="option" onclick="selectTrueFalse('F')" data-answer="F">
+                            <div class="option-letter">F</div>
+                            <div>False</div>
+                        </div>
+                    </div>
+                    <div class="feedback" id="feedback"></div>
+                `;
+            } else if (question.type === 'multiple-choice') {
+                questionHTML += `
+                    <div class="keyboard-hint">
+                        <strong>Keyboard Shortcut:</strong> Press <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, or <strong>D</strong> to select
+                    </div>
+                    <div class="question-text">${question.question}</div>
+                    <div class="options">
+                `;
+                question.options.forEach((option, index) => {
+                    const letter = String.fromCharCode(65 + index);
+                    questionHTML += `
+                        <div class="option" onclick="selectMultipleChoice(${index})" data-answer="${index}">
+                            <div class="option-letter">${letter}</div>
+                            <div>${option}</div>
+                        </div>
+                    `;
+                });
+                questionHTML += `
+                    </div>
+                    <div class="feedback" id="feedback"></div>
+                `;
+            } else if (question.type === 'text-input') {
+                questionHTML += `
+                    <div class="keyboard-hint">
+                        <strong>Type your answer</strong> and press <strong>Enter</strong> to submit
+                    </div>
+                    <div class="question-text">${question.question}</div>
+                    <input type="text" class="input-field" id="textInput" placeholder="Type your answer here..." onkeypress="handleTextInputEnter(event)">
+                    <button class="btn btn-primary" onclick="submitTextInput()">Submit Answer</button>
+                    <div class="feedback" id="feedback"></div>
+                `;
+            }
+
+            questionContainer.innerHTML = questionHTML;
+            updateProgress();
+            updateNavigation();
+
+            // Restore previous answer if exists
+            if (userAnswers[currentQuestionIndex] !== null && question.type !== 'reading') {
+                restorePreviousAnswer();
+            }
+        }
+
+        function selectTrueFalse(answer) {
+            if (answerSubmitted) return;
+
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            const selectedOption = document.querySelector(`[data-answer="${answer}"]`);
+            selectedOption.classList.add('selected');
+
+            checkTrueFalseAnswer(answer);
+        }
+
+        function checkTrueFalseAnswer(answer) {
+            const question = quizData[currentQuestionIndex];
+            const feedback = document.getElementById('feedback');
+            const isCorrect = answer === question.correctAnswer;
+
+            answerSubmitted = true;
+            userAnswers[currentQuestionIndex] = answer;
+
+            if (userAnswers.filter(a => a !== null).length > attempted) {
+                attempted++;
+                if (isCorrect) score++;
+            }
+
+            const selectedOption = document.querySelector(`[data-answer="${answer}"]`);
+
+            if (isCorrect) {
+                selectedOption.classList.add('correct');
+                feedback.className = 'feedback correct show';
+                feedback.innerHTML = `
+                    <div class="feedback-title">✓ Correct!</div>
+                    <div class="feedback-text">${question.explanation}</div>
+                `;
+            } else {
+                selectedOption.classList.add('incorrect');
+                const correctOption = document.querySelector(`[data-answer="${question.correctAnswer}"]`);
+                correctOption.classList.add('correct');
+                feedback.className = 'feedback incorrect show';
+                feedback.innerHTML = `
+                    <div class="feedback-title">✗ Incorrect</div>
+                    <div class="feedback-text">The correct answer is <strong>${question.correctAnswer === 'T' ? 'TRUE' : 'FALSE'}</strong>.<br>${question.explanation}</div>
+                `;
+            }
+
+            updateScore();
+        }
+
+        function selectMultipleChoice(index) {
+            if (answerSubmitted) return;
+
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            const selectedOption = document.querySelector(`[data-answer="${index}"]`);
+            selectedOption.classList.add('selected');
+
+            checkMultipleChoiceAnswer(index);
+        }
+
+        function checkMultipleChoiceAnswer(index) {
+            const question = quizData[currentQuestionIndex];
+            const feedback = document.getElementById('feedback');
+            const isCorrect = index === question.correctAnswer;
+
+            answerSubmitted = true;
+            userAnswers[currentQuestionIndex] = index;
+
+            if (userAnswers.filter(a => a !== null).length > attempted) {
+                attempted++;
+                if (isCorrect) score++;
+            }
+
+            const selectedOption = document.querySelector(`[data-answer="${index}"]`);
+
+            if (isCorrect) {
+                selectedOption.classList.add('correct');
+                feedback.className = 'feedback correct show';
+                feedback.innerHTML = `
+                    <div class="feedback-title">✓ Correct!</div>
+                    <div class="feedback-text">${question.explanation}</div>
+                `;
+            } else {
+                selectedOption.classList.add('incorrect');
+                const correctOption = document.querySelector(`[data-answer="${question.correctAnswer}"]`);
+                correctOption.classList.add('correct');
+                feedback.className = 'feedback incorrect show';
+                feedback.innerHTML = `
+                    <div class="feedback-title">✗ Incorrect</div>
+                    <div class="feedback-text">The correct answer is <strong>${question.options[question.correctAnswer]}</strong>.<br>${question.explanation}</div>
+                `;
+            }
+
+            updateScore();
+        }
+
+        function submitTextInput() {
+            if (answerSubmitted) return;
+
+            const input = document.getElementById('textInput');
+            const answer = input.value.trim().toLowerCase();
+            const question = quizData[currentQuestionIndex];
+            const feedback = document.getElementById('feedback');
+
+            if (!answer) {
+                alert('Please type an answer first!');
+                return;
+            }
+
+            const correctAnswers = [question.correctAnswer.toLowerCase()];
+            if (question.alternativeAnswers) {
+                correctAnswers.push(...question.alternativeAnswers.map(a => a.toLowerCase()));
+            }
+
+            const isCorrect = correctAnswers.some(correct => answer.includes(correct));
+
+            answerSubmitted = true;
+            userAnswers[currentQuestionIndex] = answer;
+
+            if (userAnswers.filter(a => a !== null).length > attempted) {
+                attempted++;
+                if (isCorrect) score++;
+            }
+
+            input.disabled = true;
+
+            if (isCorrect) {
+                input.style.borderColor = '#28a745';
+                feedback.className = 'feedback correct show';
+                feedback.innerHTML = `
+                    <div class="feedback-title">✓ Correct!</div>
+                    <div class="feedback-text">${question.explanation}</div>
+                `;
+            } else {
+                input.style.borderColor = '#dc3545';
+                feedback.className = 'feedback incorrect show';
+                feedback.innerHTML = `
+                    <div class="feedback-title">✗ Incorrect</div>
+                    <div class="feedback-text">The correct answer is <strong>${question.correctAnswer}</strong>.<br>${question.explanation}</div>
+                `;
+            }
+
+            updateScore();
+        }
+
+        function handleTextInputEnter(event) {
+            if (event.key === 'Enter') {
+                submitTextInput();
+            }
+        }
+
+        function restorePreviousAnswer() {
+            const question = quizData[currentQuestionIndex];
+            const previousAnswer = userAnswers[currentQuestionIndex];
+
+            if (question.type === 'true-false') {
+                checkTrueFalseAnswer(previousAnswer);
+            } else if (question.type === 'multiple-choice') {
+                checkMultipleChoiceAnswer(previousAnswer);
+            } else if (question.type === 'text-input') {
+                document.getElementById('textInput').value = previousAnswer;
+            }
+        }
+
+        function updateScore() {
+            document.getElementById('score').textContent = score;
+            document.getElementById('attempted').textContent = attempted;
+        }
+
+        function updateProgress() {
+            const totalQuestions = quizData.filter(q => q.type !== 'reading').length;
+            const answeredQuestions = userAnswers.filter(a => a !== null).length;
+            const progress = (answeredQuestions / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+
+            let currentDisplayNumber = currentQuestionIndex + 1;
+            // Adjust for reading sections
+            quizData.slice(0, currentQuestionIndex).forEach(q => {
+                if (q.type === 'reading') currentDisplayNumber--;
+            });
+
+            document.getElementById('currentQuestion').textContent = currentDisplayNumber;
+        }
+
+        function updateNavigation() {
+            document.getElementById('prevBtn').disabled = currentQuestionIndex === 0;
+
+            if (currentQuestionIndex === quizData.length - 1) {
+                document.getElementById('nextBtn').textContent = 'Finish Quiz';
+            } else {
+                document.getElementById('nextBtn').textContent = 'Next';
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < quizData.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('questionContainer').style.display = 'none';
+            document.querySelector('.navigation').style.display = 'none';
+            document.querySelector('.quiz-info').style.display = 'none';
+
+            const results = document.getElementById('results');
+            const totalQuestions = quizData.filter(q => q.type !== 'reading').length;
+            const percentage = Math.round((score / totalQuestions) * 100);
+
+            document.getElementById('finalScore').textContent = percentage + '%';
+            document.getElementById('correctAnswers').textContent = score;
+            document.getElementById('totalQuiz').textContent = totalQuestions;
+
+            results.classList.add('show');
+        }
+
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            attempted = 0;
+            userAnswers = new Array(quizData.length).fill(null);
+            answerSubmitted = false;
+
+            document.getElementById('questionContainer').style.display = 'block';
+            document.querySelector('.navigation').style.display = 'flex';
+            document.querySelector('.quiz-info').style.display = 'flex';
+            document.getElementById('results').classList.remove('show');
+
+            loadQuestion();
+            updateScore();
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(event) {
+            if (answerSubmitted) return;
+
+            const question = quizData[currentQuestionIndex];
+            const key = event.key.toUpperCase();
+
+            if (question.type === 'true-false') {
+                if (key === 'T' || key === 'F') {
+                    selectTrueFalse(key);
+                }
+            } else if (question.type === 'multiple-choice') {
+                const index = key.charCodeAt(0) - 65; // A=0, B=1, C=2, D=3
+                if (index >= 0 && index < question.options.length) {
+                    selectMultipleChoice(index);
+                }
+            }
+        });
+
+        // Initialize quiz on page load
+        initQuiz();
+    </script>
+</body>
+</html>
