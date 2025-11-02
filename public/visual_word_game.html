@@ -31,6 +31,18 @@
             flex-direction: column;
         }
 
+        /* Ensure game container can scroll and navigation stays visible */
+        .game-container {
+            padding: 15px 20px;
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            /* Add padding at bottom to ensure content doesn't hide behind sticky navigation */
+            padding-bottom: 80px;
+        }
+
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -66,14 +78,6 @@
         .info-item strong {
             color: #667eea;
             font-size: 1.1em;
-        }
-
-        .game-container {
-            padding: 15px 20px;
-            flex: 1;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
         }
 
         .word-display {
@@ -310,6 +314,11 @@
             border-top: 2px solid #e0e0e0;
             text-align: center;
             flex-shrink: 0;
+            background: white;
+            position: sticky;
+            bottom: 0;
+            z-index: 100;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .btn {
@@ -479,7 +488,9 @@
 
             .game-container {
                 padding: 10px;
-                overflow-y: visible;
+                padding-bottom: 100px;
+                overflow-y: auto;
+                overflow-x: hidden;
             }
 
             .word-display {
