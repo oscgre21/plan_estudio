@@ -1,0 +1,2621 @@
+[
+  {
+    "word": "PLANET",
+    "spanish": "Planeta",
+    "sentenceEN": "Earth is a planet in our Solar System.",
+    "sentenceES": "La Tierra es un planeta en nuestro Sistema Solar.",
+    "options": [
+      {
+        "emoji": "🪐",
+        "label": "Planet",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⭐",
+        "label": "Star",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌌",
+        "label": "Galaxy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌙",
+        "label": "Moon",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A planet is a large celestial body that orbits around a star. Un planeta es un cuerpo celeste grande que orbita alrededor de una estrella."
+  },
+  {
+    "word": "STAR",
+    "spanish": "Estrella",
+    "sentenceEN": "The Sun is a star that gives us light.",
+    "sentenceES": "El Sol es una estrella que nos da luz.",
+    "options": [
+      {
+        "emoji": "⭐",
+        "label": "Star",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🪐",
+        "label": "Planet",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌌",
+        "label": "Galaxy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☄️",
+        "label": "Comet",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A star is a huge ball of burning gas that gives off light and heat. Una estrella es una enorme bola de gas ardiente que emite luz y calor."
+  },
+  {
+    "word": "ORBIT",
+    "spanish": "Órbita",
+    "sentenceEN": "Planets travel in an orbit around the Sun.",
+    "sentenceES": "Los planetas viajan en una órbita alrededor del Sol.",
+    "options": [
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU",
+        "label": "Planet orbiting Sun",
+        "isCorrect": true,
+        "fallbackEmoji": "🌍→☀️"
+      },
+      {
+        "emoji": "⭐",
+        "label": "Sun alone",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌌",
+        "label": "Space",
+        "isCorrect": false
+      },
+      {
+        "emoji": "✨",
+        "label": "Stars",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An orbit is the path that a planet takes around the Sun. Una órbita es el camino que un planeta toma alrededor del Sol."
+  },
+  {
+    "word": "ROTATE",
+    "spanish": "Rotar / Girar sobre su eje",
+    "sentenceEN": "Earth rotates once every 24 hours.",
+    "sentenceES": "La Tierra rota una vez cada 24 horas.",
+    "options": [
+      {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
+        "label": "Earth rotating",
+        "isCorrect": true,
+        "fallbackEmoji": "🔄"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU",
+        "label": "Orbiting",
+        "isCorrect": false,
+        "fallbackEmoji": "🌍↻"
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌙",
+        "label": "Moon",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rotate means to spin around on an axis. Earth rotates once every 24 hours. Rotar significa girar sobre un eje. La Tierra rota una vez cada 24 horas."
+  },
+  {
+    "word": "REVOLVE",
+    "spanish": "Girar alrededor de",
+    "sentenceEN": "Earth revolves around the Sun once a year.",
+    "sentenceES": "La Tierra gira alrededor del Sol una vez al año.",
+    "options": [
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU",
+        "label": "Earth revolving around Sun",
+        "isCorrect": true,
+        "fallbackEmoji": "🌍↻☀️"
+      },
+      {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
+        "label": "Rotating",
+        "isCorrect": false,
+        "fallbackEmoji": "🔄"
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun only",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌌",
+        "label": "Galaxy",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Revolve means to move around something else. Earth revolves around the Sun. Girar alrededor significa moverse alrededor de algo. La Tierra gira alrededor del Sol."
+  },
+  {
+    "word": "AXIS",
+    "spanish": "Eje",
+    "sentenceEN": "Earth spins on its axis every day.",
+    "sentenceES": "La Tierra gira sobre su eje cada día.",
+    "options": [
+      {
+        "image": "https://cdn.langeek.co/photo/31624/original/?type=jpeg",
+        "label": "Earth with axis line",
+        "isCorrect": true,
+        "fallbackEmoji": "🌍📏"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU",
+        "label": "Orbit",
+        "isCorrect": false,
+        "fallbackEmoji": "🌍↻☀️"
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun",
+        "isCorrect": false
+      },
+      {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
+        "label": "Rotating",
+        "isCorrect": false,
+        "fallbackEmoji": "🔄"
+      }
+    ],
+    "explanation": "An axis is an imaginary line through the center of a planet around which it rotates. Un eje es una línea imaginaria a través del centro de un planeta alrededor del cual gira."
+  },
+  {
+    "word": "INNER",
+    "spanish": "Interior / Interno",
+    "sentenceEN": "Mercury is an inner planet close to Sun.",
+    "sentenceES": "Mercurio es un planeta interior cerca del Sol.",
+    "options": [
+      {
+        "emoji": "🔴⬅️",
+        "label": "Close to center",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌌",
+        "label": "Far away",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔵",
+        "label": "Outside",
+        "isCorrect": false
+      },
+      {
+        "emoji": "✨",
+        "label": "Stars",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Inner means closer to the center. Inner planets are closer to the Sun. Interior significa más cerca del centro. Los planetas interiores están más cerca del Sol."
+  },
+  {
+    "word": "OUTER",
+    "spanish": "Exterior / Externo",
+    "sentenceEN": "Neptune is an outer planet far from Sun.",
+    "sentenceES": "Neptuno es un planeta exterior lejos del Sol.",
+    "options": [
+      {
+        "emoji": "🔵➡️",
+        "label": "Far from center",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔴",
+        "label": "Close to center",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Outer means farther from the center. Outer planets are farther from the Sun. Exterior significa más lejos del centro. Los planetas exteriores están más lejos del Sol."
+  },
+  {
+    "word": "MERCURY",
+    "spanish": "Mercurio",
+    "sentenceEN": "Mercury is the smallest planet in our system.",
+    "sentenceES": "Mercurio es el planeta más pequeño en nuestro sistema.",
+    "options": [
+      {
+        "emoji": "☿️",
+        "label": "Mercury (small, rocky)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "♀️",
+        "label": "Venus",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♂️",
+        "label": "Mars",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mercury is the smallest planet and closest to the Sun. It's an inner planet. Mercurio es el planeta más pequeño y más cercano al Sol. Es un planeta interior."
+  },
+  {
+    "word": "VENUS",
+    "spanish": "Venus",
+    "sentenceEN": "Venus is the second planet from the Sun.",
+    "sentenceES": "Venus es el segundo planeta desde el Sol.",
+    "options": [
+      {
+        "emoji": "♀️",
+        "label": "Venus (bright)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☿️",
+        "label": "Mercury",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♂️",
+        "label": "Mars",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Venus is the second planet from the Sun. It's very hot and is an inner planet. Venus es el segundo planeta desde el Sol. Es muy caliente y es un planeta interior."
+  },
+  {
+    "word": "EARTH",
+    "spanish": "Tierra",
+    "sentenceEN": "Earth is the only planet with life.",
+    "sentenceES": "La Tierra es el único planeta con vida.",
+    "options": [
+      {
+        "emoji": "🌍",
+        "label": "Earth (blue)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "♂️",
+        "label": "Mars",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♀️",
+        "label": "Venus",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☿️",
+        "label": "Mercury",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Earth is our home planet. It's the only planet known to have life. It's an inner planet. La Tierra es nuestro planeta hogar. Es el único planeta conocido que tiene vida. Es un planeta interior."
+  },
+  {
+    "word": "MARS",
+    "spanish": "Marte",
+    "sentenceEN": "Mars is called the Red Planet.",
+    "sentenceES": "Marte se llama el Planeta Rojo.",
+    "options": [
+      {
+        "emoji": "♂️",
+        "label": "Mars (red)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♀️",
+        "label": "Venus",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☿️",
+        "label": "Mercury",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mars is called the Red Planet because of its reddish color. It's an inner planet. Marte se llama el Planeta Rojo por su color rojizo. Es un planeta interior."
+  },
+  {
+    "word": "JUPITER",
+    "spanish": "Júpiter",
+    "sentenceEN": "Jupiter is the biggest planet in our system.",
+    "sentenceES": "Júpiter es el planeta más grande en nuestro sistema.",
+    "options": [
+      {
+        "emoji": "♃",
+        "label": "Jupiter (giant)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "♂️",
+        "label": "Mars",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Jupiter is the biggest planet in our Solar System. It's an outer planet made of gas. Júpiter es el planeta más grande de nuestro Sistema Solar. Es un planeta exterior hecho de gas."
+  },
+  {
+    "word": "SATURN",
+    "spanish": "Saturno",
+    "sentenceEN": "Saturn has beautiful rings around it.",
+    "sentenceES": "Saturno tiene hermosos anillos alrededor.",
+    "options": [
+      {
+        "emoji": "🪐",
+        "label": "Saturn (with rings)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "♃",
+        "label": "Jupiter",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♂️",
+        "label": "Mars",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Saturn is famous for its beautiful rings. It's an outer planet. Saturno es famoso por sus hermosos anillos. Es un planeta exterior."
+  },
+  {
+    "word": "URANUS",
+    "spanish": "Urano",
+    "sentenceEN": "Uranus is a cold outer planet.",
+    "sentenceES": "Urano es un planeta exterior frío.",
+    "options": [
+      {
+        "emoji": "♅",
+        "label": "Uranus (blue-green)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🪐",
+        "label": "Saturn",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♃",
+        "label": "Jupiter",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Earth",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uranus is a large, cold outer planet made of gas. Urano es un planeta exterior grande y frío hecho de gas."
+  },
+  {
+    "word": "HEMISPHERE",
+    "spanish": "Hemisferio",
+    "sentenceEN": "The equator divides Earth into two hemispheres.",
+    "sentenceES": "El ecuador divide la Tierra en dos hemisferios.",
+    "options": [
+      {
+        "image": "https://cdn.britannica.com/65/89965-004-9376899C.jpg",
+        "label": "Half of Earth",
+        "isCorrect": true,
+        "fallbackEmoji": "🌍"
+      },
+      {
+        "emoji": "🌎",
+        "label": "Whole Earth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧭",
+        "label": "Compass",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A hemisphere is half of the Earth. There are Northern, Southern, Eastern, and Western hemispheres. Un hemisferio es la mitad de la Tierra."
+  },
+  {
+    "word": "EQUATOR",
+    "spanish": "Ecuador",
+    "sentenceEN": "The equator is a line around Earth's middle.",
+    "sentenceES": "El ecuador es una línea alrededor del medio de la Tierra.",
+    "options": [
+      {
+        "emoji": "🌍",
+        "label": "Line around middle",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "North Pole",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "South Pole",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The Equator is an imaginary line around the middle of Earth at 0° latitude. El Ecuador es una línea imaginaria alrededor del medio de la Tierra."
+  },
+  {
+    "word": "LONGITUDE",
+    "spanish": "Longitud",
+    "sentenceEN": "Longitude lines run from north to south.",
+    "sentenceES": "Las líneas de longitud van de norte a sur.",
+    "options": [
+      {
+        "emoji": "🌍",
+        "label": "Vertical lines",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Horizontal lines",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧭",
+        "label": "Map",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌎",
+        "label": "Earth",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Longitude lines run from North to South Pole (vertical). Líneas de longitud corren de Polo Norte a Polo Sur (verticales)."
+  },
+  {
+    "word": "LATITUDE",
+    "spanish": "Latitud",
+    "sentenceEN": "Latitude lines run from east to west.",
+    "sentenceES": "Las líneas de latitud van de este a oeste.",
+    "options": [
+      {
+        "emoji": "🌍",
+        "label": "Horizontal lines",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧭",
+        "label": "Vertical lines",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Pole",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Latitude lines run East to West (horizontal), parallel to the Equator. Líneas de latitud corren de Este a Oeste (horizontales)."
+  },
+  {
+    "word": "CONTINENT",
+    "spanish": "Continente",
+    "sentenceEN": "Africa is a large continent with many countries.",
+    "sentenceES": "África es un continente grande con muchos países.",
+    "options": [
+      {
+        "emoji": "🗺️",
+        "label": "Large land mass",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌊",
+        "label": "Ocean",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏝️",
+        "label": "Island",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountain",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A continent is a large area of land. There are 7 continents. Un continente es una gran área de tierra. Hay 7 continentes."
+  },
+  {
+    "word": "OCEAN",
+    "spanish": "Océano",
+    "sentenceEN": "The Pacific Ocean is very large and deep.",
+    "sentenceES": "El Océano Pacífico es muy grande y profundo.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "Large body of water",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Continent",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountain",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏝️",
+        "label": "Island",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An ocean is a very large body of salt water. Un océano es un cuerpo de agua salada muy grande."
+  },
+  {
+    "word": "WEATHER",
+    "spanish": "Clima (del día)",
+    "sentenceEN": "Today's weather is sunny and warm.",
+    "sentenceES": "El clima de hoy es soleado y cálido.",
+    "options": [
+      {
+        "emoji": "☁️",
+        "label": "Today's conditions",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🍂",
+        "label": "Seasons",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountains",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Weather is the condition of the atmosphere right now or today. El clima es la condición de la atmósfera ahora o hoy."
+  },
+  {
+    "word": "CLIMATE",
+    "spanish": "Clima (largo plazo)",
+    "sentenceEN": "Alaska has a very cold climate.",
+    "sentenceES": "Alaska tiene un clima muy frío.",
+    "options": [
+      {
+        "emoji": "🌦️",
+        "label": "Long-term patterns",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☁️",
+        "label": "Today's weather",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌊",
+        "label": "Ocean",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Climate is the usual weather pattern over many years. El clima es el patrón usual del tiempo durante muchos años."
+  },
+  {
+    "word": "SEASON",
+    "spanish": "Estación",
+    "sentenceEN": "Summer is the warmest season of the year.",
+    "sentenceES": "El verano es la estación más cálida del año.",
+    "options": [
+      {
+        "emoji": "🍂",
+        "label": "Four seasons",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☁️",
+        "label": "Daily weather",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Globe",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Seasons are spring, summer, fall (autumn), and winter. Las estaciones son primavera, verano, otoño e invierno."
+  },
+  {
+    "word": "NORTHERN",
+    "spanish": "Norte / Del norte",
+    "sentenceEN": "Canada is in the Northern Hemisphere.",
+    "sentenceES": "Canadá está en el Hemisferio Norte.",
+    "options": [
+      {
+        "emoji": "⬆️",
+        "label": "North direction",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬇️",
+        "label": "South",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➡️",
+        "label": "East",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬅️",
+        "label": "West",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Northern means toward the north or in the north part. Norte significa hacia el norte o en la parte norte."
+  },
+  {
+    "word": "SOUTHERN",
+    "spanish": "Sur / Del sur",
+    "sentenceEN": "Australia is in the Southern Hemisphere.",
+    "sentenceES": "Australia está en el Hemisferio Sur.",
+    "options": [
+      {
+        "emoji": "⬇️",
+        "label": "South direction",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "North",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➡️",
+        "label": "East",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬅️",
+        "label": "West",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Southern means toward the south or in the south part. Sur significa hacia el sur o en la parte sur."
+  },
+  {
+    "word": "EASTERN",
+    "spanish": "Este / Del este",
+    "sentenceEN": "Japan is in the Eastern Hemisphere.",
+    "sentenceES": "Japón está en el Hemisferio Este.",
+    "options": [
+      {
+        "emoji": "➡️",
+        "label": "East direction",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬅️",
+        "label": "West",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬆️",
+        "label": "North",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "South",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Eastern means toward the east or in the east part. Este significa hacia el este o en la parte este."
+  },
+  {
+    "word": "WESTERN",
+    "spanish": "Oeste / Del oeste",
+    "sentenceEN": "Mexico is in the Western Hemisphere.",
+    "sentenceES": "México está en el Hemisferio Oeste.",
+    "options": [
+      {
+        "emoji": "⬅️",
+        "label": "West direction",
+        "isCorrect": true
+      },
+      {
+        "emoji": "➡️",
+        "label": "East",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬆️",
+        "label": "North",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "South",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Western means toward the west or in the west part. Oeste significa hacia el oeste o en la parte oeste."
+  },
+  {
+    "word": "SPHERE",
+    "spanish": "Esfera",
+    "sentenceEN": "Earth is shaped like a sphere or ball.",
+    "sentenceES": "La Tierra tiene forma de esfera o bola.",
+    "options": [
+      {
+        "emoji": "🌍",
+        "label": "Round ball shape",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌓",
+        "label": "Half circle",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Flat map",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬛",
+        "label": "Square",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A sphere is a round, 3D ball shape. Earth is shaped like a sphere. Una esfera es una forma redonda de bola en 3D."
+  },
+  {
+    "word": "NEPTUNE",
+    "spanish": "Neptuno",
+    "sentenceEN": "Neptune is the farthest planet from the Sun.",
+    "sentenceES": "Neptuno es el planeta más lejano del Sol.",
+    "options": [
+      {
+        "emoji": "♆",
+        "label": "Neptune (blue)",
+        "isCorrect": true
+      },
+      {
+        "emoji": "♅",
+        "label": "Uranus",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🪐",
+        "label": "Saturn",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♃",
+        "label": "Jupiter",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Neptune is the farthest outer planet from the Sun. It's cold and blue. Neptuno es el planeta exterior más lejano del Sol. Es frío y azul."
+  },
+  {
+    "word": "MOVE AROUND",
+    "spanish": "Moverse alrededor",
+    "sentenceEN": "Planets move around the Sun in orbits.",
+    "sentenceES": "Los planetas se mueven alrededor del Sol en órbitas.",
+    "options": [
+      {
+        "emoji": "🌍➡️🔄",
+        "label": "Moving in circle",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Moving up",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Standing still",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Moving down",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Move around means to go in a circle or path around something. Moverse alrededor significa ir en círculo o camino alrededor de algo."
+  },
+  {
+    "word": "TRAVEL",
+    "spanish": "Viajar",
+    "sentenceEN": "Earth travels around the Sun each year.",
+    "sentenceES": "La Tierra viaja alrededor del Sol cada año.",
+    "options": [
+      {
+        "emoji": "🚀",
+        "label": "Traveling",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏠",
+        "label": "Staying home",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😴",
+        "label": "Sleeping",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧍",
+        "label": "Standing",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Travel means to go from one place to another. Viajar significa ir de un lugar a otro."
+  },
+  {
+    "word": "SPIN",
+    "spanish": "Girar rápido",
+    "sentenceEN": "Earth spins on its axis every day.",
+    "sentenceES": "La Tierra gira sobre su eje cada día.",
+    "options": [
+      {
+        "emoji": "🌀",
+        "label": "Spinning",
+        "isCorrect": true
+      },
+      {
+        "emoji": "➡️",
+        "label": "Moving straight",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stopped",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Going up",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Spin means to turn around quickly. Girar rápido significa dar vueltas rápidamente."
+  },
+  {
+    "word": "GIVE",
+    "spanish": "Dar",
+    "sentenceEN": "The Sun gives us light and heat.",
+    "sentenceES": "El Sol nos da luz y calor.",
+    "options": [
+      {
+        "emoji": "🎁",
+        "label": "Giving",
+        "isCorrect": true
+      },
+      {
+        "emoji": "✋",
+        "label": "Taking",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "Refusing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👀",
+        "label": "Looking",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Give means to provide or offer something. The Sun gives light and heat. Dar significa proporcionar u ofrecer algo."
+  },
+  {
+    "word": "MADE OF",
+    "spanish": "Hecho de",
+    "sentenceEN": "Jupiter is made of gas and clouds.",
+    "sentenceES": "Júpiter está hecho de gas y nubes.",
+    "options": [
+      {
+        "emoji": "🧱➡️🏠",
+        "label": "Built from material",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎨",
+        "label": "Painting",
+        "isCorrect": false
+      },
+      {
+        "emoji": "✂️",
+        "label": "Cutting",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📝",
+        "label": "Writing",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Made of means composed or formed from a material. Inner planets are made of rock. Hecho de significa compuesto o formado de un material."
+  },
+  {
+    "word": "KNOWN",
+    "spanish": "Conocido",
+    "sentenceEN": "Earth is known to have water and life.",
+    "sentenceES": "La Tierra es conocida por tener agua y vida.",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Known/recognized",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❓",
+        "label": "Unknown",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "Searching",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Wrong",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Known means recognized or familiar. Earth is known to have life. Conocido significa reconocido o familiar."
+  },
+  {
+    "word": "CALLED",
+    "spanish": "Llamado",
+    "sentenceEN": "Saturn is called the ringed planet.",
+    "sentenceES": "Saturno se llama el planeta de los anillos.",
+    "options": [
+      {
+        "emoji": "📛",
+        "label": "Named",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📞",
+        "label": "Phone call",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👂",
+        "label": "Listening",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤫",
+        "label": "Silent",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Called means named or referred to as. Mars is called the Red Planet. Llamado significa nombrado o referido como."
+  },
+  {
+    "word": "EXIST",
+    "spanish": "Existir",
+    "sentenceEN": "Life exists only on planet Earth.",
+    "sentenceES": "La vida existe solo en el planeta Tierra.",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Exists/is real",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "Doesn't exist",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💭",
+        "label": "Imaginary",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👻",
+        "label": "Ghost",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Exist means to be real or present. Life exists on Earth. Existir significa ser real o estar presente."
+  },
+  {
+    "word": "HEAT",
+    "spanish": "Calor",
+    "sentenceEN": "The Sun gives heat to all the planets.",
+    "sentenceES": "El Sol da calor a todos los planetas.",
+    "options": [
+      {
+        "emoji": "🔥",
+        "label": "Heat/hot",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❄️",
+        "label": "Cold",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💨",
+        "label": "Wind",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💧",
+        "label": "Water",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Heat is warmth or high temperature. The Sun gives heat to all planets. Calor es calidez o temperatura alta."
+  },
+  {
+    "word": "LIGHT",
+    "spanish": "Luz",
+    "sentenceEN": "The Sun gives light during the day.",
+    "sentenceES": "El Sol da luz durante el día.",
+    "options": [
+      {
+        "emoji": "💡",
+        "label": "Light/bright",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌑",
+        "label": "Dark",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚫",
+        "label": "Black",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😴",
+        "label": "Sleep",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Light is brightness that lets us see. The Sun gives light to Earth. Luz es brillo que nos permite ver."
+  },
+  {
+    "word": "PATH",
+    "spanish": "Camino / Ruta",
+    "sentenceEN": "An orbit is the path planets travel.",
+    "sentenceES": "Una órbita es el camino que viajan los planetas.",
+    "options": [
+      {
+        "emoji": "🛤️",
+        "label": "Path/route",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏠",
+        "label": "House",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "Block",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬛",
+        "label": "Wall",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Path is a route or way to go. An orbit is the path a planet takes around the Sun. Camino es una ruta o manera de ir."
+  },
+  {
+    "word": "AROUND",
+    "spanish": "Alrededor",
+    "sentenceEN": "All planets go around the Sun.",
+    "sentenceES": "Todos los planetas van alrededor del Sol.",
+    "options": [
+      {
+        "emoji": "🔄",
+        "label": "Around/circular",
+        "isCorrect": true
+      },
+      {
+        "emoji": "➡️",
+        "label": "Straight",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Up",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Down",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Around means in a circle or surrounding something. Planets move around the Sun. Alrededor significa en círculo o rodeando algo."
+  },
+  {
+    "word": "THROUGH",
+    "spanish": "A través de",
+    "sentenceEN": "Earth's axis goes through its center.",
+    "sentenceES": "El eje de la Tierra va a través de su centro.",
+    "options": [
+      {
+        "emoji": "➡️⭕",
+        "label": "Going through",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚫",
+        "label": "Blocked",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stopped",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↩️",
+        "label": "Going back",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Through means passing from one side to the other. An axis goes through the center. A través significa pasar de un lado al otro."
+  },
+  {
+    "word": "TIME",
+    "spanish": "Tiempo",
+    "sentenceEN": "It takes time for Earth to orbit Sun.",
+    "sentenceES": "Toma tiempo para que la Tierra orbite el Sol.",
+    "options": [
+      {
+        "emoji": "⏰",
+        "label": "Time/clock",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📍",
+        "label": "Place",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👤",
+        "label": "Person",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "Color",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Time is the measure of duration. It takes time for a planet to orbit the Sun. Tiempo es la medida de duración."
+  },
+  {
+    "word": "BETWEEN",
+    "spanish": "Entre",
+    "sentenceEN": "Earth is between Venus and Mars.",
+    "sentenceES": "La Tierra está entre Venus y Marte.",
+    "options": [
+      {
+        "emoji": "⬅️⭕➡️",
+        "label": "Between/in the middle",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Above",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Below",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↔️",
+        "label": "Beside",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Between means in the middle of two things. Mercury is between the Sun and Venus. Entre significa en el medio de dos cosas."
+  },
+  {
+    "word": "SOLAR SYSTEM",
+    "spanish": "Sistema Solar",
+    "sentenceEN": "The Solar System has eight planets.",
+    "sentenceES": "El Sistema Solar tiene ocho planetas.",
+    "options": [
+      {
+        "emoji": "☀️🪐🌍",
+        "label": "Sun and planets",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌌",
+        "label": "Galaxy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Only Earth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⭐",
+        "label": "Only stars",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Solar System is the Sun and all planets that orbit around it. Sistema Solar es el Sol y todos los planetas que orbitan alrededor de él."
+  },
+  {
+    "word": "GAS",
+    "spanish": "Gas",
+    "sentenceEN": "Outer planets are made mostly of gas.",
+    "sentenceES": "Los planetas exteriores están hechos mayormente de gas.",
+    "options": [
+      {
+        "emoji": "💨",
+        "label": "Gas/air",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🪨",
+        "label": "Rock",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💧",
+        "label": "Water",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧊",
+        "label": "Ice",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Gas is a substance like air. Outer planets are made mostly of gas. Gas es una sustancia como el aire."
+  },
+  {
+    "word": "ROCK",
+    "spanish": "Roca",
+    "sentenceEN": "Inner planets are made mostly of rock.",
+    "sentenceES": "Los planetas interiores están hechos mayormente de roca.",
+    "options": [
+      {
+        "emoji": "🪨",
+        "label": "Rock/stone",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💨",
+        "label": "Gas",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💧",
+        "label": "Water",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☁️",
+        "label": "Cloud",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rock is hard, solid material. Inner planets are made mostly of rock. Roca es material duro y sólido."
+  },
+  {
+    "word": "LIFE",
+    "spanish": "Vida",
+    "sentenceEN": "Earth has life with plants and animals.",
+    "sentenceES": "La Tierra tiene vida con plantas y animales.",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Life/living",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💀",
+        "label": "Dead",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🪨",
+        "label": "Rock",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚫",
+        "label": "Empty",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Life means living things like plants and animals. Earth is the only planet known to have life. Vida significa seres vivos como plantas y animales."
+  },
+  {
+    "word": "RINGS",
+    "spanish": "Anillos",
+    "sentenceEN": "Saturn has many rings made of ice.",
+    "sentenceES": "Saturno tiene muchos anillos hechos de hielo.",
+    "options": [
+      {
+        "emoji": "💍",
+        "label": "Rings/circles",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬛",
+        "label": "Square",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔺",
+        "label": "Triangle",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⭐",
+        "label": "Star",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rings are circular bands around something. Saturn is famous for its beautiful rings. Anillos son bandas circulares alrededor de algo."
+  },
+  {
+    "word": "BEAUTIFUL",
+    "spanish": "Hermoso / Bonito",
+    "sentenceEN": "Saturn's rings are very beautiful to see.",
+    "sentenceES": "Los anillos de Saturno son muy hermosos de ver.",
+    "options": [
+      {
+        "emoji": "😍",
+        "label": "Beautiful/pretty",
+        "isCorrect": true
+      },
+      {
+        "emoji": "😢",
+        "label": "Sad",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😡",
+        "label": "Angry",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤢",
+        "label": "Ugly",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Beautiful means very pretty or attractive. Saturn has beautiful rings. Hermoso significa muy bonito o atractivo."
+  },
+  {
+    "word": "HUGE",
+    "spanish": "Enorme",
+    "sentenceEN": "The Sun is huge compared to Earth.",
+    "sentenceES": "El Sol es enorme comparado con la Tierra.",
+    "options": [
+      {
+        "emoji": "🐘",
+        "label": "Huge/giant",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🐁",
+        "label": "Tiny",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🐱",
+        "label": "Small",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🐜",
+        "label": "Very small",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Huge means very, very big. The Sun is huge. Enorme significa muy, muy grande."
+  },
+  {
+    "word": "SMALL",
+    "spanish": "Pequeño",
+    "sentenceEN": "Mercury is the smallest planet we know.",
+    "sentenceES": "Mercurio es el planeta más pequeño que conocemos.",
+    "options": [
+      {
+        "emoji": "🐁",
+        "label": "Small/little",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🐘",
+        "label": "Huge",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountain",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Big",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Small means not big. Mercury is the smallest planet. Pequeño significa no grande."
+  },
+  {
+    "word": "LARGE",
+    "spanish": "Grande",
+    "sentenceEN": "Jupiter is a very large gas planet.",
+    "sentenceES": "Júpiter es un planeta de gas muy grande.",
+    "options": [
+      {
+        "emoji": "🐘",
+        "label": "Large/big",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🐁",
+        "label": "Small",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🐜",
+        "label": "Tiny",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚫",
+        "label": "Dot",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Large means big in size. Jupiter is a large planet. Grande significa grande en tamaño."
+  },
+  {
+    "word": "HOT",
+    "spanish": "Caliente",
+    "sentenceEN": "Venus is very hot because of gases.",
+    "sentenceES": "Venus es muy caliente por los gases.",
+    "options": [
+      {
+        "emoji": "🔥",
+        "label": "Hot/burning",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❄️",
+        "label": "Cold",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧊",
+        "label": "Frozen",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌡️",
+        "label": "Cool",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Hot means very warm or high temperature. Venus is very hot. Caliente significa muy cálido o alta temperatura."
+  },
+  {
+    "word": "COLD",
+    "spanish": "Frío",
+    "sentenceEN": "Neptune is very cold and far away.",
+    "sentenceES": "Neptuno es muy frío y está lejos.",
+    "options": [
+      {
+        "emoji": "❄️",
+        "label": "Cold/frozen",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔥",
+        "label": "Hot",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☀️",
+        "label": "Warm",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌡️",
+        "label": "Hot",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Cold means low temperature. Neptune is very cold. Frío significa baja temperatura."
+  },
+  {
+    "word": "BRIGHT",
+    "spanish": "Brillante",
+    "sentenceEN": "The Sun is the brightest star we see.",
+    "sentenceES": "El Sol es la estrella más brillante que vemos.",
+    "options": [
+      {
+        "emoji": "✨",
+        "label": "Bright/shining",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌑",
+        "label": "Dark",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚫",
+        "label": "Black",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😴",
+        "label": "Dull",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bright means giving a lot of light. The Sun is very bright. Brillante significa dando mucha luz."
+  },
+  {
+    "word": "DAY AND NIGHT",
+    "spanish": "Día y Noche",
+    "sentenceEN": "Earth's rotation causes day and night.",
+    "sentenceES": "La rotación de la Tierra causa día y noche.",
+    "options": [
+      {
+        "emoji": "☀️🌙",
+        "label": "Day and night",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️☀️",
+        "label": "Only day",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌙🌙",
+        "label": "Only night",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏰",
+        "label": "Time",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Day is when the Sun is up, night is when it's dark. Earth has day and night. Día es cuando sale el Sol, noche es cuando está oscuro."
+  },
+  {
+    "word": "YEAR",
+    "spanish": "Año",
+    "sentenceEN": "One year is Earth's trip around Sun.",
+    "sentenceES": "Un año es el viaje de la Tierra alrededor del Sol.",
+    "options": [
+      {
+        "emoji": "📅",
+        "label": "Year/calendar",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏰",
+        "label": "Hour",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📆",
+        "label": "Day",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏱️",
+        "label": "Minute",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A year is the time it takes a planet to orbit the Sun once. Earth's year is 365 days. Un año es el tiempo que tarda un planeta en orbitar el Sol una vez."
+  },
+  {
+    "word": "BIGGER",
+    "spanish": "Más grande",
+    "sentenceEN": "Jupiter is bigger than all other planets.",
+    "sentenceES": "Júpiter es más grande que todos los otros planetas.",
+    "options": [
+      {
+        "emoji": "📈",
+        "label": "Bigger/larger",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📉",
+        "label": "Smaller",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Same size",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔻",
+        "label": "Decreasing",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bigger means larger than something else. Jupiter is bigger than Earth. Más grande significa mayor que otra cosa."
+  },
+  {
+    "word": "LOCATED",
+    "spanish": "Ubicado / Localizado",
+    "sentenceEN": "Africa is located in four different hemispheres.",
+    "sentenceES": "África está ubicada en cuatro hemisferios diferentes.",
+    "options": [
+      {
+        "emoji": "📍",
+        "label": "Located/positioned",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❓",
+        "label": "Lost",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "Searching",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Missing",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Located means positioned or found in a place. Africa is located in 4 hemispheres. Ubicado significa posicionado o encontrado en un lugar."
+  },
+  {
+    "word": "DIVIDE",
+    "spanish": "Dividir",
+    "sentenceEN": "The equator divides Earth into two halves.",
+    "sentenceES": "El ecuador divide la Tierra en dos mitades.",
+    "options": [
+      {
+        "emoji": "✂️",
+        "label": "Divide/split",
+        "isCorrect": true
+      },
+      {
+        "emoji": "➕",
+        "label": "Add",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔗",
+        "label": "Join",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⭕",
+        "label": "Circle",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Divide means to separate into parts. The Equator divides Earth into two halves. Dividir significa separar en partes."
+  },
+  {
+    "word": "RUN",
+    "spanish": "Correr / Extenderse",
+    "sentenceEN": "Longitude lines run from north to south.",
+    "sentenceES": "Las líneas de longitud se extienden de norte a sur.",
+    "options": [
+      {
+        "emoji": "➡️",
+        "label": "Run/extend",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stop",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↩️",
+        "label": "Return",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Fall",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Run means to extend or go in a direction. Lines of longitude run from North to South. Extenderse significa ir en una dirección."
+  },
+  {
+    "word": "SHOW",
+    "spanish": "Mostrar",
+    "sentenceEN": "Maps show us continents and oceans.",
+    "sentenceES": "Los mapas nos muestran continentes y océanos.",
+    "options": [
+      {
+        "emoji": "👉",
+        "label": "Show/point",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🙈",
+        "label": "Hide",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Close",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "Block",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Show means to display or make visible. Maps show continents and oceans. Mostrar significa exhibir o hacer visible."
+  },
+  {
+    "word": "FOUND IN",
+    "spanish": "Encontrado en",
+    "sentenceEN": "Penguins are found in cold places.",
+    "sentenceES": "Los pingüinos se encuentran en lugares fríos.",
+    "options": [
+      {
+        "emoji": "📍✅",
+        "label": "Found in/located",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "Not there",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❓",
+        "label": "Unknown",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "Looking for",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Found in means existing or present in a location. Many countries are found in Asia. Encontrado en significa existente o presente en un lugar."
+  },
+  {
+    "word": "CIRCLE",
+    "spanish": "Círculo",
+    "sentenceEN": "The equator is a circle around Earth.",
+    "sentenceES": "El ecuador es un círculo alrededor de la Tierra.",
+    "options": [
+      {
+        "emoji": "⭕",
+        "label": "Circle/round",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬛",
+        "label": "Square",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔺",
+        "label": "Triangle",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➖",
+        "label": "Line",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Circle is a round shape. Lines of latitude go in circles around Earth. Círculo es una forma redonda."
+  },
+  {
+    "word": "NORTH TO SOUTH",
+    "spanish": "Norte a Sur",
+    "sentenceEN": "Longitude lines go from north to south.",
+    "sentenceES": "Las líneas de longitud van de norte a sur.",
+    "options": [
+      {
+        "emoji": "⬆️⬇️",
+        "label": "North to South",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬅️➡️",
+        "label": "West to East",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↗️",
+        "label": "Diagonal",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔄",
+        "label": "Circle",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "North to South means from top to bottom. Longitude lines run North to South. Norte a Sur significa de arriba hacia abajo."
+  },
+  {
+    "word": "EAST TO WEST",
+    "spanish": "Este a Oeste",
+    "sentenceEN": "Latitude lines go from east to west.",
+    "sentenceES": "Las líneas de latitud van de este a oeste.",
+    "options": [
+      {
+        "emoji": "⬅️➡️",
+        "label": "East to West",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️⬇️",
+        "label": "North to South",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↗️",
+        "label": "Diagonal",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔄",
+        "label": "Circle",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "East to West means from right to left. Latitude lines run East to West. Este a Oeste significa de derecha a izquierda."
+  },
+  {
+    "word": "ABOVE",
+    "spanish": "Arriba / Sobre",
+    "sentenceEN": "Canada is above the United States.",
+    "sentenceES": "Canadá está arriba de los Estados Unidos.",
+    "options": [
+      {
+        "emoji": "⬆️",
+        "label": "Above/over",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Below",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➡️",
+        "label": "Beside",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↔️",
+        "label": "Between",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Above means higher than or over something. Alaska is above the Equator. Arriba significa más alto que o sobre algo."
+  },
+  {
+    "word": "BELOW",
+    "spanish": "Abajo / Debajo",
+    "sentenceEN": "Mexico is below the United States.",
+    "sentenceES": "México está abajo de los Estados Unidos.",
+    "options": [
+      {
+        "emoji": "⬇️",
+        "label": "Below/under",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Above",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➡️",
+        "label": "Beside",
+        "isCorrect": false
+      },
+      {
+        "emoji": "↔️",
+        "label": "Between",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Below means lower than or under something. South America is below the Equator. Abajo significa más bajo que o debajo de algo."
+  },
+  {
+    "word": "ACROSS",
+    "spanish": "A través / De un lado a otro",
+    "sentenceEN": "The equator goes across the middle of Earth.",
+    "sentenceES": "El ecuador va a través del medio de la Tierra.",
+    "options": [
+      {
+        "emoji": "↔️",
+        "label": "Across/from side to side",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Up",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Down",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stopped",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Across means from one side to the other. The Prime Meridian goes across Earth. A través significa de un lado al otro."
+  },
+  {
+    "word": "ALONG",
+    "spanish": "A lo largo de",
+    "sentenceEN": "Many countries are along the equator.",
+    "sentenceES": "Muchos países están a lo largo del ecuador.",
+    "options": [
+      {
+        "emoji": "➡️➡️",
+        "label": "Along/following",
+        "isCorrect": true
+      },
+      {
+        "emoji": "↩️",
+        "label": "Back",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stop",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Across",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Along means following the length or path of something. Countries along the Equator are hot. A lo largo significa siguiendo la longitud o camino de algo."
+  },
+  {
+    "word": "MIDDLE",
+    "spanish": "Medio / Centro",
+    "sentenceEN": "The equator is in the middle of Earth.",
+    "sentenceES": "El ecuador está en el medio de la Tierra.",
+    "options": [
+      {
+        "emoji": "🎯",
+        "label": "Middle/center",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬅️",
+        "label": "Left",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➡️",
+        "label": "Right",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Top",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Middle means the center or halfway point. The Equator is in the middle of Earth. Medio significa el centro o punto medio."
+  },
+  {
+    "word": "EDGE",
+    "spanish": "Borde / Orilla",
+    "sentenceEN": "The edge of the continent meets ocean.",
+    "sentenceES": "El borde del continente se encuentra con el océano.",
+    "options": [
+      {
+        "emoji": "〰️",
+        "label": "Edge/border",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎯",
+        "label": "Center",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⭕",
+        "label": "Inside",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➕",
+        "label": "Cross",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Edge means the outer limit or border. The edge of a continent meets the ocean. Borde significa el límite exterior o frontera."
+  },
+  {
+    "word": "TOUCH",
+    "spanish": "Tocar",
+    "sentenceEN": "Asia and Europe touch each other.",
+    "sentenceES": "Asia y Europa se tocan entre sí.",
+    "options": [
+      {
+        "emoji": "👆",
+        "label": "Touch/contact",
+        "isCorrect": true
+      },
+      {
+        "emoji": "↔️",
+        "label": "Far apart",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "Avoid",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Miss",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Touch means to be in contact with. Some continents touch each other. Tocar significa estar en contacto con."
+  },
+  {
+    "word": "DESCRIBE",
+    "spanish": "Describir",
+    "sentenceEN": "Weather words describe the sky and temperature.",
+    "sentenceES": "Las palabras de clima describen el cielo y la temperatura.",
+    "options": [
+      {
+        "emoji": "📝",
+        "label": "Describe/explain",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🙈",
+        "label": "Hide",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Delete",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❓",
+        "label": "Confuse",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Describe means to tell about something using words. Weather describes conditions in the atmosphere. Describir significa contar sobre algo usando palabras."
+  },
+  {
+    "word": "CHANGE",
+    "spanish": "Cambiar",
+    "sentenceEN": "Weather can change from sunny to rainy.",
+    "sentenceES": "El clima puede cambiar de soleado a lluvioso.",
+    "options": [
+      {
+        "emoji": "🔄",
+        "label": "Change/transform",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stay same",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Stop",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏸️",
+        "label": "Pause",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Change means to become different. Weather can change quickly. Cambiar significa volverse diferente."
+  },
+  {
+    "word": "CONDITION",
+    "spanish": "Condición",
+    "sentenceEN": "Today's weather condition is sunny and warm.",
+    "sentenceES": "La condición del clima hoy es soleado y cálido.",
+    "options": [
+      {
+        "emoji": "☁️🌡️",
+        "label": "Condition/state",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚫",
+        "label": "Nothing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Wrong",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❓",
+        "label": "Unknown",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Condition means the state or situation of something. Weather condition means how the weather is now. Condición significa el estado o situación de algo."
+  },
+  {
+    "word": "AVERAGE",
+    "spanish": "Promedio",
+    "sentenceEN": "Climate shows the average weather over years.",
+    "sentenceES": "El clima muestra el promedio del tiempo durante años.",
+    "options": [
+      {
+        "emoji": "📊",
+        "label": "Average/typical",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬆️",
+        "label": "Maximum",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬇️",
+        "label": "Minimum",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "None",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Average means typical or normal. Climate is the average weather over many years. Promedio significa típico o normal."
+  },
+  {
+    "word": "PATTERN",
+    "spanish": "Patrón",
+    "sentenceEN": "Seasons follow a pattern every year.",
+    "sentenceES": "Las estaciones siguen un patrón cada año.",
+    "options": [
+      {
+        "emoji": "🔁",
+        "label": "Pattern/repeat",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎲",
+        "label": "Random",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Chaos",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❓",
+        "label": "Unknown",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Pattern means something that repeats in a regular way. Climate is a pattern of weather. Patrón significa algo que se repite de manera regular."
+  },
+  {
+    "word": "TEMPERATURE",
+    "spanish": "Temperatura",
+    "sentenceEN": "Temperature tells us how hot or cold.",
+    "sentenceES": "La temperatura nos dice qué tan caliente o frío.",
+    "options": [
+      {
+        "emoji": "🌡️",
+        "label": "Temperature",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💨",
+        "label": "Wind",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💧",
+        "label": "Rain",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚡",
+        "label": "Lightning",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Temperature is how hot or cold something is. We measure temperature with a thermometer. Temperatura es qué tan caliente o frío está algo."
+  },
+  {
+    "word": "RAINY",
+    "spanish": "Lluvioso",
+    "sentenceEN": "Rainy weather brings water to plants.",
+    "sentenceES": "El clima lluvioso trae agua a las plantas.",
+    "options": [
+      {
+        "emoji": "🌧️",
+        "label": "Rainy/raining",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sunny",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❄️",
+        "label": "Snowy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "☁️",
+        "label": "Cloudy",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rainy means with rain or wet. Rainforests are always rainy. Lluvioso significa con lluvia o mojado."
+  },
+  {
+    "word": "SUNNY",
+    "spanish": "Soleado",
+    "sentenceEN": "Sunny days are bright and warm.",
+    "sentenceES": "Los días soleados son brillantes y cálidos.",
+    "options": [
+      {
+        "emoji": "☀️",
+        "label": "Sunny/bright",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌧️",
+        "label": "Rainy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛈️",
+        "label": "Stormy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌑",
+        "label": "Dark",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sunny means with bright sunshine. Today is sunny and warm. Soleado significa con sol brillante."
+  },
+  {
+    "word": "WARM",
+    "spanish": "Cálido / Tibio",
+    "sentenceEN": "Spring weather is usually warm and nice.",
+    "sentenceES": "El clima de primavera es usualmente cálido y agradable.",
+    "options": [
+      {
+        "emoji": "🌤️",
+        "label": "Warm/pleasant",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔥",
+        "label": "Very hot",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❄️",
+        "label": "Cold",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧊",
+        "label": "Frozen",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Warm means pleasantly hot, not too hot or cold. Spring weather is warm. Cálido significa agradablemente caliente, ni muy caliente ni frío."
+  },
+  {
+    "word": "SHORT-TERM",
+    "spanish": "Corto plazo",
+    "sentenceEN": "Weather is a short-term condition for today.",
+    "sentenceES": "El clima es una condición de corto plazo para hoy.",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "Short time",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📅",
+        "label": "Long time",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🕰️",
+        "label": "Forever",
+        "isCorrect": false
+      },
+      {
+        "emoji": "♾️",
+        "label": "Infinite",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Short-term means for a brief time. Weather is short-term conditions. Corto plazo significa por un tiempo breve."
+  },
+  {
+    "word": "LONG-TERM",
+    "spanish": "Largo plazo",
+    "sentenceEN": "Climate is a long-term weather pattern.",
+    "sentenceES": "El clima es un patrón de largo plazo.",
+    "options": [
+      {
+        "emoji": "📅",
+        "label": "Long time",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏱️",
+        "label": "Short time",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏰",
+        "label": "One hour",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📆",
+        "label": "One day",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Long-term means for a long time. Climate is long-term weather patterns. Largo plazo significa por mucho tiempo."
+  },
+  {
+    "word": "ATMOSPHERE",
+    "spanish": "Atmósfera",
+    "sentenceEN": "Earth's atmosphere is the air around us.",
+    "sentenceES": "La atmósfera de la Tierra es el aire alrededor de nosotros.",
+    "options": [
+      {
+        "emoji": "🌫️",
+        "label": "Atmosphere/air",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌊",
+        "label": "Ocean",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛰️",
+        "label": "Mountain",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏜️",
+        "label": "Desert",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Atmosphere is the layer of air around Earth. Weather happens in the atmosphere. Atmósfera es la capa de aire alrededor de la Tierra."
+  },
+  {
+    "word": "GROW",
+    "spanish": "Crecer",
+    "sentenceEN": "Plants grow better in warm climates.",
+    "sentenceES": "Las plantas crecen mejor en climas cálidos.",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Grow/get bigger",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📉",
+        "label": "Shrink",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⏹️",
+        "label": "Stop",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💀",
+        "label": "Die",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Grow means to get bigger or develop. Plants grow in warm climates. Crecer significa volverse más grande o desarrollarse."
+  },
+  {
+    "word": "USUAL",
+    "spanish": "Usual / Normal",
+    "sentenceEN": "Climate is the usual weather for a place.",
+    "sentenceES": "El clima es el tiempo usual para un lugar.",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Usual/normal",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❗",
+        "label": "Unusual",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎲",
+        "label": "Random",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "Never",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Usual means normal or common. Climate is the usual weather pattern. Usual significa normal o común."
+  },
+  {
+    "word": "PLACE",
+    "spanish": "Lugar",
+    "sentenceEN": "Each place has its own special climate.",
+    "sentenceES": "Cada lugar tiene su propio clima especial.",
+    "options": [
+      {
+        "emoji": "📍",
+        "label": "Place/location",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏰",
+        "label": "Time",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👤",
+        "label": "Person",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "Color",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Place is a location or area. Different places have different climates. Lugar es una ubicación o área."
+  }
+]

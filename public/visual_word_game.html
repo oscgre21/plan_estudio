@@ -89,17 +89,31 @@
             animation: fadeIn 0.5s;
         }
 
-        .word-spanish {
-            font-size: 1.3em;
-            color: #f5576c;
-            font-style: italic;
+        .word-context {
             display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
             cursor: pointer;
+            animation: fadeIn 0.3s;
         }
 
-        .word-spanish.show {
+        .word-context.show {
             display: block;
-            animation: fadeIn 0.3s;
+        }
+
+        .sentence-en {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .sentence-es {
+            font-size: 1.1em;
+            color: #f5576c;
+            font-style: italic;
         }
 
         .word-english {
@@ -362,8 +376,8 @@
                 font-size: 2em;
             }
 
-            .word-spanish {
-                font-size: 1.3em;
+            .word-context {
+                font-size: 0.9em;
             }
 
             .emoji-image {
@@ -394,8 +408,11 @@
 
             <div class="word-display">
                 <div class="word-english" id="wordEnglish" onclick="toggleTranslation()">PLANET</div>
-                <div class="word-spanish" id="wordSpanish">(Planeta)</div>
-                <div class="translation-hint">💡 Click on the word to see translation / Haz click en la palabra para ver traducción</div>
+                <div class="word-context" id="wordSpanish">
+                    <div class="sentence-en">Earth is a planet in our Solar System.</div>
+                    <div class="sentence-es">La Tierra es un planeta en nuestro Sistema Solar.</div>
+                </div>
+                <div class="translation-hint">💡 Click on the word to see example / Haz click en la palabra para ver ejemplo</div>
             </div>
 
             <div class="question-prompt">
@@ -427,12 +444,33 @@
     </div>
 
     <script>
-        // Complete vocabulary with images from the quiz
-        const vocabularyData = [
+        // Vocabulary data will be loaded from external JSON file
+        let vocabularyData = [];
+
+        // Load vocabulary data from JSON file
+        async function loadVocabularyData() {
+            try {
+                const response = await fetch('vocabulary-data.json');
+                vocabularyData = await response.json();
+                console.log(`Loaded ${vocabularyData.length} vocabulary words`);
+                init();
+            } catch (error) {
+                console.error('Error loading vocabulary data:', error);
+                alert('Error loading vocabulary data. Please refresh the page.');
+            }
+        }
+
+        // Call this when page loads
+        loadVocabularyData();
+
+        // REMOVED: Old inline vocabulary data - now loaded from vocabulary-data.json
+        /*
             // ROUND 1: Solar System Basics
             {
                 word: "PLANET",
                 spanish: "Planeta",
+                sentenceEN: "Earth is a planet in our Solar System.",
+                sentenceES: "La Tierra es un planeta en nuestro Sistema Solar.",
                 options: [
                     { emoji: "🪐", label: "Planet", isCorrect: true },
                     { emoji: "⭐", label: "Star", isCorrect: false },
@@ -444,6 +482,8 @@
             {
                 word: "STAR",
                 spanish: "Estrella",
+                sentenceEN: "The Sun is a star that gives us light.",
+                sentenceES: "El Sol es una estrella que nos da luz.",
                 options: [
                     { emoji: "⭐", label: "Star", isCorrect: true },
                     { emoji: "🪐", label: "Planet", isCorrect: false },
@@ -455,6 +495,8 @@
             {
                 word: "ORBIT",
                 spanish: "Órbita",
+                sentenceEN: "Planets travel in an orbit around the Sun.",
+                sentenceES: "Los planetas viajan en una órbita alrededor del Sol.",
                 options: [
                     { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Planet orbiting Sun", isCorrect: true, fallbackEmoji: "🌍→☀️" },
                     { emoji: "⭐", label: "Sun alone", isCorrect: false },
@@ -466,6 +508,8 @@
             {
                 word: "ROTATE",
                 spanish: "Rotar / Girar sobre su eje",
+                sentenceEN: "Earth rotates once every 24 hours.",
+                sentenceES: "La Tierra rota una vez cada 24 horas.",
                 options: [
                     { image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", label: "Earth rotating", isCorrect: true, fallbackEmoji: "🔄" },
                     { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Orbiting", isCorrect: false, fallbackEmoji: "🌍↻" },
@@ -477,6 +521,8 @@
             {
                 word: "REVOLVE",
                 spanish: "Girar alrededor de",
+                sentenceEN: "Earth revolves around the Sun once a year.",
+                sentenceES: "La Tierra gira alrededor del Sol una vez al año.",
                 options: [
                     { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Earth revolving around Sun", isCorrect: true, fallbackEmoji: "🌍↻☀️" },
                     { image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", label: "Rotating", isCorrect: false, fallbackEmoji: "🔄" },
@@ -488,6 +534,8 @@
             {
                 word: "AXIS",
                 spanish: "Eje",
+                sentenceEN: "Earth spins on its axis every day.",
+                sentenceES: "La Tierra gira sobre su eje cada día.",
                 options: [
                     { image: "https://cdn.langeek.co/photo/31624/original/?type=jpeg", label: "Earth with axis line", isCorrect: true, fallbackEmoji: "🌍📏" },
                     { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Orbit", isCorrect: false, fallbackEmoji: "🌍↻☀️" },
@@ -499,6 +547,8 @@
             {
                 word: "INNER",
                 spanish: "Interior / Interno",
+                sentenceEN: "Mercury is an inner planet close to Sun.",
+                sentenceES: "Mercurio es un planeta interior cerca del Sol.",
                 options: [
                     { emoji: "🔴⬅️", label: "Close to center", isCorrect: true },
                     { emoji: "🌌", label: "Far away", isCorrect: false },
@@ -510,6 +560,8 @@
             {
                 word: "OUTER",
                 spanish: "Exterior / Externo",
+                sentenceEN: "Neptune is an outer planet far from Sun.",
+                sentenceES: "Neptuno es un planeta exterior lejos del Sol.",
                 options: [
                     { emoji: "🔵➡️", label: "Far from center", isCorrect: true },
                     { emoji: "🔴", label: "Close to center", isCorrect: false },
@@ -521,6 +573,8 @@
             {
                 word: "MERCURY",
                 spanish: "Mercurio",
+                sentenceEN: "Mercury is the smallest planet in our system.",
+                sentenceES: "Mercurio es el planeta más pequeño en nuestro sistema.",
                 options: [
                     { emoji: "☿️", label: "Mercury (small, rocky)", isCorrect: true },
                     { emoji: "♀️", label: "Venus", isCorrect: false },
@@ -532,6 +586,8 @@
             {
                 word: "VENUS",
                 spanish: "Venus",
+                sentenceEN: "Venus is the second planet from the Sun.",
+                sentenceES: "Venus es el segundo planeta desde el Sol.",
                 options: [
                     { emoji: "♀️", label: "Venus (bright)", isCorrect: true },
                     { emoji: "☿️", label: "Mercury", isCorrect: false },
@@ -543,6 +599,8 @@
             {
                 word: "EARTH",
                 spanish: "Tierra",
+                sentenceEN: "Earth is the only planet with life.",
+                sentenceES: "La Tierra es el único planeta con vida.",
                 options: [
                     { emoji: "🌍", label: "Earth (blue)", isCorrect: true },
                     { emoji: "♂️", label: "Mars", isCorrect: false },
@@ -554,6 +612,8 @@
             {
                 word: "MARS",
                 spanish: "Marte",
+                sentenceEN: "Mars is called the Red Planet.",
+                sentenceES: "Marte se llama el Planeta Rojo.",
                 options: [
                     { emoji: "♂️", label: "Mars (red)", isCorrect: true },
                     { emoji: "🌍", label: "Earth", isCorrect: false },
@@ -565,6 +625,8 @@
             {
                 word: "JUPITER",
                 spanish: "Júpiter",
+                sentenceEN: "Jupiter is the biggest planet in our system.",
+                sentenceES: "Júpiter es el planeta más grande en nuestro sistema.",
                 options: [
                     { emoji: "♃", label: "Jupiter (giant)", isCorrect: true },
                     { emoji: "♂️", label: "Mars", isCorrect: false },
@@ -576,6 +638,8 @@
             {
                 word: "SATURN",
                 spanish: "Saturno",
+                sentenceEN: "Saturn has beautiful rings around it.",
+                sentenceES: "Saturno tiene hermosos anillos alrededor.",
                 options: [
                     { emoji: "🪐", label: "Saturn (with rings)", isCorrect: true },
                     { emoji: "♃", label: "Jupiter", isCorrect: false },
@@ -587,6 +651,8 @@
             {
                 word: "URANUS",
                 spanish: "Urano",
+                sentenceEN: "Uranus is a cold outer planet.",
+                sentenceES: "Urano es un planeta exterior frío.",
                 options: [
                     { emoji: "♅", label: "Uranus (blue-green)", isCorrect: true },
                     { emoji: "🪐", label: "Saturn", isCorrect: false },
@@ -600,6 +666,8 @@
             {
                 word: "HEMISPHERE",
                 spanish: "Hemisferio",
+                sentenceEN: "The equator divides Earth into two hemispheres.",
+                sentenceES: "El ecuador divide la Tierra en dos hemisferios.",
                 options: [
                     { image: "https://cdn.britannica.com/65/89965-004-9376899C.jpg", label: "Half of Earth", isCorrect: true, fallbackEmoji: "🌍" },
                     { emoji: "🌎", label: "Whole Earth", isCorrect: false },
@@ -611,6 +679,8 @@
             {
                 word: "EQUATOR",
                 spanish: "Ecuador",
+                sentenceEN: "The equator is a line around Earth's middle.",
+                sentenceES: "El ecuador es una línea alrededor del medio de la Tierra.",
                 options: [
                     { emoji: "🌍", label: "Line around middle", isCorrect: true },
                     { emoji: "⬆️", label: "North Pole", isCorrect: false },
@@ -622,6 +692,8 @@
             {
                 word: "LONGITUDE",
                 spanish: "Longitud",
+                sentenceEN: "Longitude lines run from north to south.",
+                sentenceES: "Las líneas de longitud van de norte a sur.",
                 options: [
                     { emoji: "🌍", label: "Vertical lines", isCorrect: true },
                     { emoji: "🗺️", label: "Horizontal lines", isCorrect: false },
@@ -633,6 +705,8 @@
             {
                 word: "LATITUDE",
                 spanish: "Latitud",
+                sentenceEN: "Latitude lines run from east to west.",
+                sentenceES: "Las líneas de latitud van de este a oeste.",
                 options: [
                     { emoji: "🌍", label: "Horizontal lines", isCorrect: true },
                     { emoji: "🧭", label: "Vertical lines", isCorrect: false },
@@ -644,6 +718,8 @@
             {
                 word: "CONTINENT",
                 spanish: "Continente",
+                sentenceEN: "Africa is a large continent with many countries.",
+                sentenceES: "África es un continente grande con muchos países.",
                 options: [
                     { emoji: "🗺️", label: "Large land mass", isCorrect: true },
                     { emoji: "🌊", label: "Ocean", isCorrect: false },
@@ -655,6 +731,8 @@
             {
                 word: "OCEAN",
                 spanish: "Océano",
+                sentenceEN: "The Pacific Ocean is very large and deep.",
+                sentenceES: "El Océano Pacífico es muy grande y profundo.",
                 options: [
                     { emoji: "🌊", label: "Large body of water", isCorrect: true },
                     { emoji: "🗺️", label: "Continent", isCorrect: false },
@@ -666,6 +744,8 @@
             {
                 word: "WEATHER",
                 spanish: "Clima (del día)",
+                sentenceEN: "Today's weather is sunny and warm.",
+                sentenceES: "El clima de hoy es soleado y cálido.",
                 options: [
                     { emoji: "☁️", label: "Today's conditions", isCorrect: true },
                     { emoji: "🍂", label: "Seasons", isCorrect: false },
@@ -677,6 +757,8 @@
             {
                 word: "CLIMATE",
                 spanish: "Clima (largo plazo)",
+                sentenceEN: "Alaska has a very cold climate.",
+                sentenceES: "Alaska tiene un clima muy frío.",
                 options: [
                     { emoji: "🌦️", label: "Long-term patterns", isCorrect: true },
                     { emoji: "☁️", label: "Today's weather", isCorrect: false },
@@ -688,6 +770,8 @@
             {
                 word: "SEASON",
                 spanish: "Estación",
+                sentenceEN: "Summer is the warmest season of the year.",
+                sentenceES: "El verano es la estación más cálida del año.",
                 options: [
                     { emoji: "🍂", label: "Four seasons", isCorrect: true },
                     { emoji: "☁️", label: "Daily weather", isCorrect: false },
@@ -699,6 +783,8 @@
             {
                 word: "NORTHERN",
                 spanish: "Norte / Del norte",
+                sentenceEN: "Canada is in the Northern Hemisphere.",
+                sentenceES: "Canadá está en el Hemisferio Norte.",
                 options: [
                     { emoji: "⬆️", label: "North direction", isCorrect: true },
                     { emoji: "⬇️", label: "South", isCorrect: false },
@@ -710,6 +796,8 @@
             {
                 word: "SOUTHERN",
                 spanish: "Sur / Del sur",
+                sentenceEN: "Australia is in the Southern Hemisphere.",
+                sentenceES: "Australia está en el Hemisferio Sur.",
                 options: [
                     { emoji: "⬇️", label: "South direction", isCorrect: true },
                     { emoji: "⬆️", label: "North", isCorrect: false },
@@ -721,6 +809,8 @@
             {
                 word: "EASTERN",
                 spanish: "Este / Del este",
+                sentenceEN: "Japan is in the Eastern Hemisphere.",
+                sentenceES: "Japón está en el Hemisferio Este.",
                 options: [
                     { emoji: "➡️", label: "East direction", isCorrect: true },
                     { emoji: "⬅️", label: "West", isCorrect: false },
@@ -732,6 +822,8 @@
             {
                 word: "WESTERN",
                 spanish: "Oeste / Del oeste",
+                sentenceEN: "Mexico is in the Western Hemisphere.",
+                sentenceES: "México está en el Hemisferio Oeste.",
                 options: [
                     { emoji: "⬅️", label: "West direction", isCorrect: true },
                     { emoji: "➡️", label: "East", isCorrect: false },
@@ -743,6 +835,8 @@
             {
                 word: "SPHERE",
                 spanish: "Esfera",
+                sentenceEN: "Earth is shaped like a sphere or ball.",
+                sentenceES: "La Tierra tiene forma de esfera o bola.",
                 options: [
                     { emoji: "🌍", label: "Round ball shape", isCorrect: true },
                     { emoji: "🌓", label: "Half circle", isCorrect: false },
@@ -754,6 +848,8 @@
             {
                 word: "NEPTUNE",
                 spanish: "Neptuno",
+                sentenceEN: "Neptune is the farthest planet from the Sun.",
+                sentenceES: "Neptuno es el planeta más lejano del Sol.",
                 options: [
                     { emoji: "♆", label: "Neptune (blue)", isCorrect: true },
                     { emoji: "♅", label: "Uranus", isCorrect: false },
@@ -767,6 +863,8 @@
             {
                 word: "MOVE AROUND",
                 spanish: "Moverse alrededor",
+                sentenceEN: "Planets move around the Sun in orbits.",
+                sentenceES: "Los planetas se mueven alrededor del Sol en órbitas.",
                 options: [
                     { emoji: "🌍➡️🔄", label: "Moving in circle", isCorrect: true },
                     { emoji: "⬆️", label: "Moving up", isCorrect: false },
@@ -778,6 +876,8 @@
             {
                 word: "TRAVEL",
                 spanish: "Viajar",
+                sentenceEN: "Earth travels around the Sun each year.",
+                sentenceES: "La Tierra viaja alrededor del Sol cada año.",
                 options: [
                     { emoji: "🚀", label: "Traveling", isCorrect: true },
                     { emoji: "🏠", label: "Staying home", isCorrect: false },
@@ -789,6 +889,8 @@
             {
                 word: "SPIN",
                 spanish: "Girar rápido",
+                sentenceEN: "Earth spins on its axis every day.",
+                sentenceES: "La Tierra gira sobre su eje cada día.",
                 options: [
                     { emoji: "🌀", label: "Spinning", isCorrect: true },
                     { emoji: "➡️", label: "Moving straight", isCorrect: false },
@@ -800,6 +902,8 @@
             {
                 word: "GIVE",
                 spanish: "Dar",
+                sentenceEN: "The Sun gives us light and heat.",
+                sentenceES: "El Sol nos da luz y calor.",
                 options: [
                     { emoji: "🎁", label: "Giving", isCorrect: true },
                     { emoji: "✋", label: "Taking", isCorrect: false },
@@ -811,6 +915,8 @@
             {
                 word: "MADE OF",
                 spanish: "Hecho de",
+                sentenceEN: "Jupiter is made of gas and clouds.",
+                sentenceES: "Júpiter está hecho de gas y nubes.",
                 options: [
                     { emoji: "🧱➡️🏠", label: "Built from material", isCorrect: true },
                     { emoji: "🎨", label: "Painting", isCorrect: false },
@@ -822,6 +928,8 @@
             {
                 word: "KNOWN",
                 spanish: "Conocido",
+                sentenceEN: "Earth is known to have water and life.",
+                sentenceES: "La Tierra es conocida por tener agua y vida.",
                 options: [
                     { emoji: "✅", label: "Known/recognized", isCorrect: true },
                     { emoji: "❓", label: "Unknown", isCorrect: false },
@@ -833,6 +941,8 @@
             {
                 word: "CALLED",
                 spanish: "Llamado",
+                sentenceEN: "Saturn is called the ringed planet.",
+                sentenceES: "Saturno se llama el planeta de los anillos.",
                 options: [
                     { emoji: "📛", label: "Named", isCorrect: true },
                     { emoji: "📞", label: "Phone call", isCorrect: false },
@@ -844,6 +954,8 @@
             {
                 word: "EXIST",
                 spanish: "Existir",
+                sentenceEN: "Life exists only on planet Earth.",
+                sentenceES: "La vida existe solo en el planeta Tierra.",
                 options: [
                     { emoji: "✅", label: "Exists/is real", isCorrect: true },
                     { emoji: "❌", label: "Doesn't exist", isCorrect: false },
@@ -855,6 +967,8 @@
             {
                 word: "HEAT",
                 spanish: "Calor",
+                sentenceEN: "The Sun gives heat to all the planets.",
+                sentenceES: "El Sol da calor a todos los planetas.",
                 options: [
                     { emoji: "🔥", label: "Heat/hot", isCorrect: true },
                     { emoji: "❄️", label: "Cold", isCorrect: false },
@@ -866,6 +980,8 @@
             {
                 word: "LIGHT",
                 spanish: "Luz",
+                sentenceEN: "The Sun gives light during the day.",
+                sentenceES: "El Sol da luz durante el día.",
                 options: [
                     { emoji: "💡", label: "Light/bright", isCorrect: true },
                     { emoji: "🌑", label: "Dark", isCorrect: false },
@@ -877,6 +993,8 @@
             {
                 word: "PATH",
                 spanish: "Camino / Ruta",
+                sentenceEN: "An orbit is the path planets travel.",
+                sentenceES: "Una órbita es el camino que viajan los planetas.",
                 options: [
                     { emoji: "🛤️", label: "Path/route", isCorrect: true },
                     { emoji: "🏠", label: "House", isCorrect: false },
@@ -888,6 +1006,8 @@
             {
                 word: "AROUND",
                 spanish: "Alrededor",
+                sentenceEN: "All planets go around the Sun.",
+                sentenceES: "Todos los planetas van alrededor del Sol.",
                 options: [
                     { emoji: "🔄", label: "Around/circular", isCorrect: true },
                     { emoji: "➡️", label: "Straight", isCorrect: false },
@@ -899,6 +1019,8 @@
             {
                 word: "THROUGH",
                 spanish: "A través de",
+                sentenceEN: "Earth's axis goes through its center.",
+                sentenceES: "El eje de la Tierra va a través de su centro.",
                 options: [
                     { emoji: "➡️⭕", label: "Going through", isCorrect: true },
                     { emoji: "🚫", label: "Blocked", isCorrect: false },
@@ -910,6 +1032,8 @@
             {
                 word: "TIME",
                 spanish: "Tiempo",
+                sentenceEN: "It takes time for Earth to orbit Sun.",
+                sentenceES: "Toma tiempo para que la Tierra orbite el Sol.",
                 options: [
                     { emoji: "⏰", label: "Time/clock", isCorrect: true },
                     { emoji: "📍", label: "Place", isCorrect: false },
@@ -921,6 +1045,8 @@
             {
                 word: "BETWEEN",
                 spanish: "Entre",
+                sentenceEN: "Earth is between Venus and Mars.",
+                sentenceES: "La Tierra está entre Venus y Marte.",
                 options: [
                     { emoji: "⬅️⭕➡️", label: "Between/in the middle", isCorrect: true },
                     { emoji: "⬆️", label: "Above", isCorrect: false },
@@ -934,6 +1060,8 @@
             {
                 word: "SOLAR SYSTEM",
                 spanish: "Sistema Solar",
+                sentenceEN: "The Solar System has eight planets.",
+                sentenceES: "El Sistema Solar tiene ocho planetas.",
                 options: [
                     { emoji: "☀️🪐🌍", label: "Sun and planets", isCorrect: true },
                     { emoji: "🌌", label: "Galaxy", isCorrect: false },
@@ -945,6 +1073,8 @@
             {
                 word: "GAS",
                 spanish: "Gas",
+                sentenceEN: "Outer planets are made mostly of gas.",
+                sentenceES: "Los planetas exteriores están hechos mayormente de gas.",
                 options: [
                     { emoji: "💨", label: "Gas/air", isCorrect: true },
                     { emoji: "🪨", label: "Rock", isCorrect: false },
@@ -956,6 +1086,8 @@
             {
                 word: "ROCK",
                 spanish: "Roca",
+                sentenceEN: "Inner planets are made mostly of rock.",
+                sentenceES: "Los planetas interiores están hechos mayormente de roca.",
                 options: [
                     { emoji: "🪨", label: "Rock/stone", isCorrect: true },
                     { emoji: "💨", label: "Gas", isCorrect: false },
@@ -967,6 +1099,8 @@
             {
                 word: "LIFE",
                 spanish: "Vida",
+                sentenceEN: "Earth has life with plants and animals.",
+                sentenceES: "La Tierra tiene vida con plantas y animales.",
                 options: [
                     { emoji: "🌱", label: "Life/living", isCorrect: true },
                     { emoji: "💀", label: "Dead", isCorrect: false },
@@ -978,6 +1112,8 @@
             {
                 word: "RINGS",
                 spanish: "Anillos",
+                sentenceEN: "Saturn has many rings made of ice.",
+                sentenceES: "Saturno tiene muchos anillos hechos de hielo.",
                 options: [
                     { emoji: "💍", label: "Rings/circles", isCorrect: true },
                     { emoji: "⬛", label: "Square", isCorrect: false },
@@ -989,6 +1125,8 @@
             {
                 word: "BEAUTIFUL",
                 spanish: "Hermoso / Bonito",
+                sentenceEN: "Saturn's rings are very beautiful to see.",
+                sentenceES: "Los anillos de Saturno son muy hermosos de ver.",
                 options: [
                     { emoji: "😍", label: "Beautiful/pretty", isCorrect: true },
                     { emoji: "😢", label: "Sad", isCorrect: false },
@@ -1000,6 +1138,8 @@
             {
                 word: "HUGE",
                 spanish: "Enorme",
+                sentenceEN: "The Sun is huge compared to Earth.",
+                sentenceES: "El Sol es enorme comparado con la Tierra.",
                 options: [
                     { emoji: "🐘", label: "Huge/giant", isCorrect: true },
                     { emoji: "🐁", label: "Tiny", isCorrect: false },
@@ -1011,6 +1151,8 @@
             {
                 word: "SMALL",
                 spanish: "Pequeño",
+                sentenceEN: "Mercury is the smallest planet we know.",
+                sentenceES: "Mercurio es el planeta más pequeño que conocemos.",
                 options: [
                     { emoji: "🐁", label: "Small/little", isCorrect: true },
                     { emoji: "🐘", label: "Huge", isCorrect: false },
@@ -1022,6 +1164,8 @@
             {
                 word: "LARGE",
                 spanish: "Grande",
+                sentenceEN: "Jupiter is a very large gas planet.",
+                sentenceES: "Júpiter es un planeta de gas muy grande.",
                 options: [
                     { emoji: "🐘", label: "Large/big", isCorrect: true },
                     { emoji: "🐁", label: "Small", isCorrect: false },
@@ -1033,6 +1177,8 @@
             {
                 word: "HOT",
                 spanish: "Caliente",
+                sentenceEN: "Venus is very hot because of gases.",
+                sentenceES: "Venus es muy caliente por los gases.",
                 options: [
                     { emoji: "🔥", label: "Hot/burning", isCorrect: true },
                     { emoji: "❄️", label: "Cold", isCorrect: false },
@@ -1044,6 +1190,8 @@
             {
                 word: "COLD",
                 spanish: "Frío",
+                sentenceEN: "Neptune is very cold and far away.",
+                sentenceES: "Neptuno es muy frío y está lejos.",
                 options: [
                     { emoji: "❄️", label: "Cold/frozen", isCorrect: true },
                     { emoji: "🔥", label: "Hot", isCorrect: false },
@@ -1055,6 +1203,8 @@
             {
                 word: "BRIGHT",
                 spanish: "Brillante",
+                sentenceEN: "The Sun is the brightest star we see.",
+                sentenceES: "El Sol es la estrella más brillante que vemos.",
                 options: [
                     { emoji: "✨", label: "Bright/shining", isCorrect: true },
                     { emoji: "🌑", label: "Dark", isCorrect: false },
@@ -1066,6 +1216,8 @@
             {
                 word: "DAY AND NIGHT",
                 spanish: "Día y Noche",
+                sentenceEN: "Earth's rotation causes day and night.",
+                sentenceES: "La rotación de la Tierra causa día y noche.",
                 options: [
                     { emoji: "☀️🌙", label: "Day and night", isCorrect: true },
                     { emoji: "☀️☀️", label: "Only day", isCorrect: false },
@@ -1077,6 +1229,8 @@
             {
                 word: "YEAR",
                 spanish: "Año",
+                sentenceEN: "One year is Earth's trip around Sun.",
+                sentenceES: "Un año es el viaje de la Tierra alrededor del Sol.",
                 options: [
                     { emoji: "📅", label: "Year/calendar", isCorrect: true },
                     { emoji: "⏰", label: "Hour", isCorrect: false },
@@ -1088,6 +1242,8 @@
             {
                 word: "BIGGER",
                 spanish: "Más grande",
+                sentenceEN: "Jupiter is bigger than all other planets.",
+                sentenceES: "Júpiter es más grande que todos los otros planetas.",
                 options: [
                     { emoji: "📈", label: "Bigger/larger", isCorrect: true },
                     { emoji: "📉", label: "Smaller", isCorrect: false },
@@ -1101,6 +1257,8 @@
             {
                 word: "LOCATED",
                 spanish: "Ubicado / Localizado",
+                sentenceEN: "Africa is located in four different hemispheres.",
+                sentenceES: "África está ubicada en cuatro hemisferios diferentes.",
                 options: [
                     { emoji: "📍", label: "Located/positioned", isCorrect: true },
                     { emoji: "❓", label: "Lost", isCorrect: false },
@@ -1112,6 +1270,8 @@
             {
                 word: "DIVIDE",
                 spanish: "Dividir",
+                sentenceEN: "The equator divides Earth into two halves.",
+                sentenceES: "El ecuador divide la Tierra en dos mitades.",
                 options: [
                     { emoji: "✂️", label: "Divide/split", isCorrect: true },
                     { emoji: "➕", label: "Add", isCorrect: false },
@@ -1123,6 +1283,8 @@
             {
                 word: "RUN",
                 spanish: "Correr / Extenderse",
+                sentenceEN: "Longitude lines run from north to south.",
+                sentenceES: "Las líneas de longitud se extienden de norte a sur.",
                 options: [
                     { emoji: "➡️", label: "Run/extend", isCorrect: true },
                     { emoji: "⏹️", label: "Stop", isCorrect: false },
@@ -1134,6 +1296,8 @@
             {
                 word: "SHOW",
                 spanish: "Mostrar",
+                sentenceEN: "Maps show us continents and oceans.",
+                sentenceES: "Los mapas nos muestran continentes y océanos.",
                 options: [
                     { emoji: "👉", label: "Show/point", isCorrect: true },
                     { emoji: "🙈", label: "Hide", isCorrect: false },
@@ -1145,6 +1309,8 @@
             {
                 word: "FOUND IN",
                 spanish: "Encontrado en",
+                sentenceEN: "Penguins are found in cold places.",
+                sentenceES: "Los pingüinos se encuentran en lugares fríos.",
                 options: [
                     { emoji: "📍✅", label: "Found in/located", isCorrect: true },
                     { emoji: "❌", label: "Not there", isCorrect: false },
@@ -1156,6 +1322,8 @@
             {
                 word: "CIRCLE",
                 spanish: "Círculo",
+                sentenceEN: "The equator is a circle around Earth.",
+                sentenceES: "El ecuador es un círculo alrededor de la Tierra.",
                 options: [
                     { emoji: "⭕", label: "Circle/round", isCorrect: true },
                     { emoji: "⬛", label: "Square", isCorrect: false },
@@ -1167,6 +1335,8 @@
             {
                 word: "NORTH TO SOUTH",
                 spanish: "Norte a Sur",
+                sentenceEN: "Longitude lines go from north to south.",
+                sentenceES: "Las líneas de longitud van de norte a sur.",
                 options: [
                     { emoji: "⬆️⬇️", label: "North to South", isCorrect: true },
                     { emoji: "⬅️➡️", label: "West to East", isCorrect: false },
@@ -1178,6 +1348,8 @@
             {
                 word: "EAST TO WEST",
                 spanish: "Este a Oeste",
+                sentenceEN: "Latitude lines go from east to west.",
+                sentenceES: "Las líneas de latitud van de este a oeste.",
                 options: [
                     { emoji: "⬅️➡️", label: "East to West", isCorrect: true },
                     { emoji: "⬆️⬇️", label: "North to South", isCorrect: false },
@@ -1189,6 +1361,8 @@
             {
                 word: "ABOVE",
                 spanish: "Arriba / Sobre",
+                sentenceEN: "Canada is above the United States.",
+                sentenceES: "Canadá está arriba de los Estados Unidos.",
                 options: [
                     { emoji: "⬆️", label: "Above/over", isCorrect: true },
                     { emoji: "⬇️", label: "Below", isCorrect: false },
@@ -1200,6 +1374,8 @@
             {
                 word: "BELOW",
                 spanish: "Abajo / Debajo",
+                sentenceEN: "Mexico is below the United States.",
+                sentenceES: "México está abajo de los Estados Unidos.",
                 options: [
                     { emoji: "⬇️", label: "Below/under", isCorrect: true },
                     { emoji: "⬆️", label: "Above", isCorrect: false },
@@ -1211,6 +1387,8 @@
             {
                 word: "ACROSS",
                 spanish: "A través / De un lado a otro",
+                sentenceEN: "The equator goes across the middle of Earth.",
+                sentenceES: "El ecuador va a través del medio de la Tierra.",
                 options: [
                     { emoji: "↔️", label: "Across/from side to side", isCorrect: true },
                     { emoji: "⬆️", label: "Up", isCorrect: false },
@@ -1222,6 +1400,8 @@
             {
                 word: "ALONG",
                 spanish: "A lo largo de",
+                sentenceEN: "Many countries are along the equator.",
+                sentenceES: "Muchos países están a lo largo del ecuador.",
                 options: [
                     { emoji: "➡️➡️", label: "Along/following", isCorrect: true },
                     { emoji: "↩️", label: "Back", isCorrect: false },
@@ -1233,6 +1413,8 @@
             {
                 word: "MIDDLE",
                 spanish: "Medio / Centro",
+                sentenceEN: "The equator is in the middle of Earth.",
+                sentenceES: "El ecuador está en el medio de la Tierra.",
                 options: [
                     { emoji: "🎯", label: "Middle/center", isCorrect: true },
                     { emoji: "⬅️", label: "Left", isCorrect: false },
@@ -1244,6 +1426,8 @@
             {
                 word: "EDGE",
                 spanish: "Borde / Orilla",
+                sentenceEN: "The edge of the continent meets ocean.",
+                sentenceES: "El borde del continente se encuentra con el océano.",
                 options: [
                     { emoji: "〰️", label: "Edge/border", isCorrect: true },
                     { emoji: "🎯", label: "Center", isCorrect: false },
@@ -1255,6 +1439,8 @@
             {
                 word: "TOUCH",
                 spanish: "Tocar",
+                sentenceEN: "Asia and Europe touch each other.",
+                sentenceES: "Asia y Europa se tocan entre sí.",
                 options: [
                     { emoji: "👆", label: "Touch/contact", isCorrect: true },
                     { emoji: "↔️", label: "Far apart", isCorrect: false },
@@ -1268,6 +1454,8 @@
             {
                 word: "DESCRIBE",
                 spanish: "Describir",
+                sentenceEN: "Weather words describe the sky and temperature.",
+                sentenceES: "Las palabras de clima describen el cielo y la temperatura.",
                 options: [
                     { emoji: "📝", label: "Describe/explain", isCorrect: true },
                     { emoji: "🙈", label: "Hide", isCorrect: false },
@@ -1279,6 +1467,8 @@
             {
                 word: "CHANGE",
                 spanish: "Cambiar",
+                sentenceEN: "Weather can change from sunny to rainy.",
+                sentenceES: "El clima puede cambiar de soleado a lluvioso.",
                 options: [
                     { emoji: "🔄", label: "Change/transform", isCorrect: true },
                     { emoji: "⏹️", label: "Stay same", isCorrect: false },
@@ -1290,6 +1480,8 @@
             {
                 word: "CONDITION",
                 spanish: "Condición",
+                sentenceEN: "Today's weather condition is sunny and warm.",
+                sentenceES: "La condición del clima hoy es soleado y cálido.",
                 options: [
                     { emoji: "☁️🌡️", label: "Condition/state", isCorrect: true },
                     { emoji: "🚫", label: "Nothing", isCorrect: false },
@@ -1301,6 +1493,8 @@
             {
                 word: "AVERAGE",
                 spanish: "Promedio",
+                sentenceEN: "Climate shows the average weather over years.",
+                sentenceES: "El clima muestra el promedio del tiempo durante años.",
                 options: [
                     { emoji: "📊", label: "Average/typical", isCorrect: true },
                     { emoji: "⬆️", label: "Maximum", isCorrect: false },
@@ -1312,6 +1506,8 @@
             {
                 word: "PATTERN",
                 spanish: "Patrón",
+                sentenceEN: "Seasons follow a pattern every year.",
+                sentenceES: "Las estaciones siguen un patrón cada año.",
                 options: [
                     { emoji: "🔁", label: "Pattern/repeat", isCorrect: true },
                     { emoji: "🎲", label: "Random", isCorrect: false },
@@ -1323,6 +1519,8 @@
             {
                 word: "TEMPERATURE",
                 spanish: "Temperatura",
+                sentenceEN: "Temperature tells us how hot or cold.",
+                sentenceES: "La temperatura nos dice qué tan caliente o frío.",
                 options: [
                     { emoji: "🌡️", label: "Temperature", isCorrect: true },
                     { emoji: "💨", label: "Wind", isCorrect: false },
@@ -1334,6 +1532,8 @@
             {
                 word: "RAINY",
                 spanish: "Lluvioso",
+                sentenceEN: "Rainy weather brings water to plants.",
+                sentenceES: "El clima lluvioso trae agua a las plantas.",
                 options: [
                     { emoji: "🌧️", label: "Rainy/raining", isCorrect: true },
                     { emoji: "☀️", label: "Sunny", isCorrect: false },
@@ -1345,6 +1545,8 @@
             {
                 word: "SUNNY",
                 spanish: "Soleado",
+                sentenceEN: "Sunny days are bright and warm.",
+                sentenceES: "Los días soleados son brillantes y cálidos.",
                 options: [
                     { emoji: "☀️", label: "Sunny/bright", isCorrect: true },
                     { emoji: "🌧️", label: "Rainy", isCorrect: false },
@@ -1356,6 +1558,8 @@
             {
                 word: "WARM",
                 spanish: "Cálido / Tibio",
+                sentenceEN: "Spring weather is usually warm and nice.",
+                sentenceES: "El clima de primavera es usualmente cálido y agradable.",
                 options: [
                     { emoji: "🌤️", label: "Warm/pleasant", isCorrect: true },
                     { emoji: "🔥", label: "Very hot", isCorrect: false },
@@ -1367,6 +1571,8 @@
             {
                 word: "SHORT-TERM",
                 spanish: "Corto plazo",
+                sentenceEN: "Weather is a short-term condition for today.",
+                sentenceES: "El clima es una condición de corto plazo para hoy.",
                 options: [
                     { emoji: "⏱️", label: "Short time", isCorrect: true },
                     { emoji: "📅", label: "Long time", isCorrect: false },
@@ -1378,6 +1584,8 @@
             {
                 word: "LONG-TERM",
                 spanish: "Largo plazo",
+                sentenceEN: "Climate is a long-term weather pattern.",
+                sentenceES: "El clima es un patrón de largo plazo.",
                 options: [
                     { emoji: "📅", label: "Long time", isCorrect: true },
                     { emoji: "⏱️", label: "Short time", isCorrect: false },
@@ -1389,6 +1597,8 @@
             {
                 word: "ATMOSPHERE",
                 spanish: "Atmósfera",
+                sentenceEN: "Earth's atmosphere is the air around us.",
+                sentenceES: "La atmósfera de la Tierra es el aire alrededor de nosotros.",
                 options: [
                     { emoji: "🌫️", label: "Atmosphere/air", isCorrect: true },
                     { emoji: "🌊", label: "Ocean", isCorrect: false },
@@ -1400,6 +1610,8 @@
             {
                 word: "GROW",
                 spanish: "Crecer",
+                sentenceEN: "Plants grow better in warm climates.",
+                sentenceES: "Las plantas crecen mejor en climas cálidos.",
                 options: [
                     { emoji: "🌱", label: "Grow/get bigger", isCorrect: true },
                     { emoji: "📉", label: "Shrink", isCorrect: false },
@@ -1411,6 +1623,8 @@
             {
                 word: "USUAL",
                 spanish: "Usual / Normal",
+                sentenceEN: "Climate is the usual weather for a place.",
+                sentenceES: "El clima es el tiempo usual para un lugar.",
                 options: [
                     { emoji: "✅", label: "Usual/normal", isCorrect: true },
                     { emoji: "❗", label: "Unusual", isCorrect: false },
@@ -1422,6 +1636,8 @@
             {
                 word: "PLACE",
                 spanish: "Lugar",
+                sentenceEN: "Each place has its own special climate.",
+                sentenceES: "Cada lugar tiene su propio clima especial.",
                 options: [
                     { emoji: "📍", label: "Place/location", isCorrect: true },
                     { emoji: "⏰", label: "Time", isCorrect: false },
@@ -1430,7 +1646,7 @@
                 ],
                 explanation: "Place is a location or area. Different places have different climates. Lugar es una ubicación o área."
             }
-        ];
+        */
 
         let currentRound = 1;
         let currentWordIndex = 0;
@@ -1455,9 +1671,12 @@
 
             // Update display
             document.getElementById('wordEnglish').textContent = word.word;
-            const spanishWord = document.getElementById('wordSpanish');
-            spanishWord.textContent = `(${word.spanish})`;
-            spanishWord.classList.remove('show'); // Hide translation by default
+            const contextDiv = document.getElementById('wordSpanish');
+            contextDiv.innerHTML = `
+                <div class="sentence-en">${word.sentenceEN}</div>
+                <div class="sentence-es">${word.sentenceES}</div>
+            `;
+            contextDiv.classList.remove('show'); // Hide context by default
             document.getElementById('currentRound').textContent = currentRound;
             document.getElementById('currentWord').textContent = (currentWordIndex % wordsPerRound) + 1;
             document.getElementById('totalWords').textContent = Math.min(wordsPerRound, vocabularyData.length - (currentRound - 1) * wordsPerRound);
@@ -1594,8 +1813,8 @@
             loadWord();
         }
 
-        // Initialize game
-        init();
+        // Initialize game - removed, now called after loading vocabulary data
+        // init() is now called by loadVocabularyData() after JSON is loaded
     </script>
 </body>
 </html>
