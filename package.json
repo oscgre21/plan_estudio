@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "generate-audio": "node generate-audio.js",
-    "editor": "node vocabulary-editor-server.js"
+    "generate-audio": "node generate-audio.js"
   },
   "keywords": [
     "education",

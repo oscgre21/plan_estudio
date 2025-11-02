@@ -39,16 +39,18 @@ Make sure your AllTalk TTS server is running on port 8880. This is required for 
 python server.py
 ```
 
-#### Step 2: Start the Vocabulary Editor Server
+#### Step 2: Start the Main Server
+
+The vocabulary editor is now integrated into the main server:
 
 ```bash
-npm run editor
+npm start
 ```
 
 Or manually:
 
 ```bash
-node vocabulary-editor-server.js
+node server.js
 ```
 
 #### Step 3: Open the Editor
@@ -56,8 +58,10 @@ node vocabulary-editor-server.js
 Open your browser and navigate to:
 
 ```
-http://localhost:3000/vocabulary-editor.html
+http://localhost:3000/editor
 ```
+
+**Note**: The CRUD editor is now integrated into the main server (port 3000), not a separate server.
 
 ## 📖 How to Use
 
