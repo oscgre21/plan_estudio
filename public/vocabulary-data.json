@@ -573,6 +573,7 @@
     "sentenceES": "Las líneas de latitud van de este a oeste.",
     "options": [
       {
+        "image": "https://cdn.kastatic.org/ka-content-images/6bf52a0ce38a00732b01693fce51554aa69b51fb.png",
         "emoji": "🌍",
         "label": "Horizontal lines",
         "isCorrect": true
