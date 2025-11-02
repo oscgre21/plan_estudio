@@ -1860,7 +1860,7 @@
                 <button class="audio-btn large" id="replayBtn" onclick="playWordAudio();" title="Listen again / Escuchar de nuevo">🔊</button>
             `;
 
-            // Show context with sentence
+            // Show context with sentence (English and Spanish)
             const contextDiv = document.getElementById('wordSpanish');
             contextDiv.innerHTML = `
                 <div class="sentence-en">
@@ -1869,6 +1869,7 @@
                 </div>
                 <div class="sentence-es">${word.sentenceES}</div>
             `;
+            contextDiv.style.display = 'block';
             contextDiv.classList.add('show');
 
             wordRevealed = true;
@@ -1887,9 +1888,10 @@
                 <button class="audio-btn large" id="replayBtn" onclick="playWordAudio();" title="Listen again / Escuchar de nuevo">🔊</button>
             `;
 
-            // Hide context initially
+            // Hide context completely initially (no text visible at all)
             const contextDiv = document.getElementById('wordSpanish');
             contextDiv.classList.remove('show');
+            contextDiv.style.display = 'none';
 
             document.getElementById('currentRound').textContent = currentRound;
             document.getElementById('currentWord').textContent = (currentWordIndex % wordsPerRound) + 1;
