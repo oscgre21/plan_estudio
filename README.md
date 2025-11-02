@@ -27,10 +27,37 @@ Interactive science quiz and vocabulary learning platform for kids, featuring vi
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (version 14 or higher)
-- npm (comes with Node.js)
+- Node.js (version 14 or higher) and npm, OR
+- Docker (recommended for easy setup)
 
-### Installation
+### Option 1: Run with Docker (Recommended)
+
+1. Build the Docker image:
+   ```bash
+   docker build -t jearlenis-quiz .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -d -p 3000:3000 --name jearlenis-quiz-container jearlenis-quiz
+   ```
+
+3. Open your browser and go to:
+   ```
+   http://localhost:3000
+   ```
+
+4. To stop the container:
+   ```bash
+   docker stop jearlenis-quiz-container
+   ```
+
+5. To remove the container:
+   ```bash
+   docker rm jearlenis-quiz-container
+   ```
+
+### Option 2: Run with Node.js
 
 1. Navigate to the project directory:
    ```bash
@@ -65,10 +92,12 @@ npm run dev
 Jearlenis_exam/
 ├── server.js              # Express server configuration
 ├── package.json           # Project dependencies
+├── Dockerfile            # Docker configuration
+├── .dockerignore         # Docker ignore file
 ├── README.md             # This file
 ├── public/               # Static files served by the server
 │   ├── index.html        # Home page with navigation menu
-│   ├── visual_word_game.html    # Visual word learning game
+│   ├── visual_word_game.html    # Visual word learning game (90 words, 6 rounds)
 │   ├── vocabulary_trainer.html  # Vocabulary practice games
 │   └── science_quiz.html        # Full science quiz
 └── quiz_images/          # Image assets for quizzes
@@ -93,7 +122,8 @@ Once the server is running, access these URLs:
 1. **Start with Visual Word Game**
    - Learn vocabulary by seeing images and animations
    - Click on English words to see Spanish translations
-   - Practice with 2 rounds of 15 words each
+   - Practice with 6 rounds of 15 words each (90 words total)
+   - Topics: Solar System (Basics, Actions, Descriptions) + Geography (Basics, Locations, Weather)
 
 2. **Practice with Vocabulary Trainer**
    - Use flashcards to memorize words
