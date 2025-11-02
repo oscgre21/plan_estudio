@@ -1,0 +1,2414 @@
+[
+  {
+    "question": "This is a large celestial body that orbits around a star.",
+    "audioQuestion": "audios/question-planet.mp3",
+    "correctAnswer": "PLANET",
+    "options": [
+      {
+        "word": "PLANET",
+        "emoji": "🪐",
+        "isCorrect": true
+      },
+      {
+        "word": "HEAT",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
+        "isCorrect": false
+      },
+      {
+        "word": "AROUND",
+        "emoji": "🔄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a huge ball of burning gas that gives off light and heat.",
+    "audioQuestion": "audios/question-star.mp3",
+    "correctAnswer": "STAR",
+    "options": [
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": true
+      },
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
+        "isCorrect": false
+      },
+      {
+        "word": "REVOLVE",
+        "isCorrect": false
+      },
+      {
+        "word": "NEPTUNE",
+        "emoji": "♆",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the path that a planet takes around the Sun.",
+    "audioQuestion": "audios/question-orbit.mp3",
+    "correctAnswer": "ORBIT",
+    "options": [
+      {
+        "word": "SPHERE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "ORBIT",
+        "isCorrect": true
+      },
+      {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "THROUGH",
+        "emoji": "➡️⭕",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to spin around on an axis.",
+    "audioQuestion": "audios/question-rotate.mp3",
+    "correctAnswer": "ROTATE",
+    "options": [
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "ROTATE",
+        "isCorrect": true
+      },
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
+        "isCorrect": false
+      },
+      {
+        "word": "LOCATED",
+        "emoji": "📍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to move around something else.",
+    "audioQuestion": "audios/question-revolve.mp3",
+    "correctAnswer": "REVOLVE",
+    "options": [
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
+        "word": "REVOLVE",
+        "isCorrect": true
+      },
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "BRIGHT",
+        "emoji": "✨",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an imaginary line through the center of a planet around which it rotates.",
+    "audioQuestion": "audios/question-axis.mp3",
+    "correctAnswer": "AXIS",
+    "options": [
+      {
+        "word": "MOVE AROUND",
+        "emoji": "🌍➡️🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "TIME",
+        "emoji": "⏰",
+        "isCorrect": false
+      },
+      {
+        "word": "AXIS",
+        "isCorrect": true
+      },
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means closer to the center.",
+    "audioQuestion": "audios/question-inner.mp3",
+    "correctAnswer": "INNER",
+    "options": [
+      {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": true
+      },
+      {
+        "word": "CLIMATE",
+        "emoji": "🌦️",
+        "isCorrect": false
+      },
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "AROUND",
+        "emoji": "🔄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means farther from the center.",
+    "audioQuestion": "audios/question-outer.mp3",
+    "correctAnswer": "OUTER",
+    "options": [
+      {
+        "word": "PLANET",
+        "emoji": "🪐",
+        "isCorrect": false
+      },
+      {
+        "word": "BIGGER",
+        "emoji": "📈",
+        "isCorrect": false
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "OUTER",
+        "emoji": "🔵➡️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is the smallest planet and closest to the Sun.",
+    "audioQuestion": "audios/question-mercury.mp3",
+    "correctAnswer": "MERCURY",
+    "options": [
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": true
+      },
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
+        "isCorrect": false
+      },
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is the second planet from the Sun.",
+    "audioQuestion": "audios/question-venus.mp3",
+    "correctAnswer": "VENUS",
+    "options": [
+      {
+        "word": "VENUS",
+        "emoji": "♀️",
+        "isCorrect": true
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is our home planet.",
+    "audioQuestion": "audios/question-earth.mp3",
+    "correctAnswer": "EARTH",
+    "options": [
+      {
+        "word": "EARTH",
+        "emoji": "🌍",
+        "isCorrect": true
+      },
+      {
+        "word": "EAST TO WEST",
+        "emoji": "⬅️➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "AVERAGE",
+        "emoji": "📊",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is called the Red Planet because of its reddish color.",
+    "audioQuestion": "audios/question-mars.mp3",
+    "correctAnswer": "MARS",
+    "options": [
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "MARS",
+        "emoji": "♂️",
+        "isCorrect": true
+      },
+      {
+        "word": "LOCATED",
+        "emoji": "📍",
+        "isCorrect": false
+      },
+      {
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is the biggest planet in our Solar System.",
+    "audioQuestion": "audios/question-jupiter.mp3",
+    "correctAnswer": "JUPITER",
+    "options": [
+      {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": true
+      },
+      {
+        "word": "OUTER",
+        "emoji": "🔵➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTHERN",
+        "emoji": "⬆️",
+        "isCorrect": false
+      },
+      {
+        "word": "SEASON",
+        "emoji": "🍂",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is famous for its beautiful rings.",
+    "audioQuestion": "audios/question-saturn.mp3",
+    "correctAnswer": "SATURN",
+    "options": [
+      {
+        "word": "RUN",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "SOLAR SYSTEM",
+        "emoji": "☀️🪐🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": true
+      },
+      {
+        "word": "EDGE",
+        "emoji": "〰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is a large, cold outer planet made of gas.",
+    "audioQuestion": "audios/question-uranus.mp3",
+    "correctAnswer": "URANUS",
+    "options": [
+      {
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "URANUS",
+        "emoji": "♅",
+        "isCorrect": true
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "EXIST",
+        "emoji": "✅",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is half of the Earth.",
+    "audioQuestion": "audios/question-hemisphere.mp3",
+    "correctAnswer": "HEMISPHERE",
+    "options": [
+      {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "HEMISPHERE",
+        "isCorrect": true
+      },
+      {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      },
+      {
+        "word": "BETWEEN",
+        "emoji": "⬅️⭕➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an imaginary line around the middle of Earth at 0° latitude.",
+    "audioQuestion": "audios/question-equator.mp3",
+    "correctAnswer": "EQUATOR",
+    "options": [
+      {
+        "word": "LATITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "COLD",
+        "emoji": "❄️",
+        "isCorrect": false
+      },
+      {
+        "word": "LIGHT",
+        "emoji": "💡",
+        "isCorrect": false
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it lines run from North to South Pole (vertical).",
+    "audioQuestion": "audios/question-longitude.mp3",
+    "correctAnswer": "LONGITUDE",
+    "options": [
+      {
+        "word": "ORBIT",
+        "isCorrect": false
+      },
+      {
+        "word": "COLD",
+        "emoji": "❄️",
+        "isCorrect": false
+      },
+      {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
+        "isCorrect": true
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it lines run East to West (horizontal), parallel to the Equator.",
+    "audioQuestion": "audios/question-latitude.mp3",
+    "correctAnswer": "LATITUDE",
+    "options": [
+      {
+        "word": "SPHERE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "WESTERN",
+        "emoji": "⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      },
+      {
+        "word": "LATITUDE",
+        "emoji": "🌍",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "This is a large area of land.",
+    "audioQuestion": "audios/question-continent.mp3",
+    "correctAnswer": "CONTINENT",
+    "options": [
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
+        "word": "WESTERN",
+        "emoji": "⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": true
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a very large body of salt water.",
+    "audioQuestion": "audios/question-ocean.mp3",
+    "correctAnswer": "OCEAN",
+    "options": [
+      {
+        "word": "PATTERN",
+        "emoji": "🔁",
+        "isCorrect": false
+      },
+      {
+        "word": "BIGGER",
+        "emoji": "📈",
+        "isCorrect": false
+      },
+      {
+        "word": "ABOVE",
+        "emoji": "⬆️",
+        "isCorrect": false
+      },
+      {
+        "word": "OCEAN",
+        "emoji": "🌊",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is the condition of the atmosphere right now or today.",
+    "audioQuestion": "audios/question-weather.mp3",
+    "correctAnswer": "WEATHER",
+    "options": [
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "WEATHER",
+        "emoji": "☁️",
+        "isCorrect": true
+      },
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "NEPTUNE",
+        "emoji": "♆",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is the usual weather pattern over many years.",
+    "audioQuestion": "audios/question-climate.mp3",
+    "correctAnswer": "CLIMATE",
+    "options": [
+      {
+        "word": "KNOWN",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "CLIMATE",
+        "emoji": "🌦️",
+        "isCorrect": true
+      },
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Seasons are spring, summer, fall (autumn), and winter.",
+    "audioQuestion": "audios/question-season.mp3",
+    "correctAnswer": "SEASON",
+    "options": [
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
+        "word": "SEASON",
+        "emoji": "🍂",
+        "isCorrect": true
+      },
+      {
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
+        "isCorrect": false
+      },
+      {
+        "word": "HEMISPHERE",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means toward the north or in the north part.",
+    "audioQuestion": "audios/question-northern.mp3",
+    "correctAnswer": "NORTHERN",
+    "options": [
+      {
+        "word": "NORTHERN",
+        "emoji": "⬆️",
+        "isCorrect": true
+      },
+      {
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
+        "isCorrect": false
+      },
+      {
+        "word": "HEMISPHERE",
+        "isCorrect": false
+      },
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means toward the south or in the south part.",
+    "audioQuestion": "audios/question-southern.mp3",
+    "correctAnswer": "SOUTHERN",
+    "options": [
+      {
+        "word": "SOUTHERN",
+        "emoji": "⬇️",
+        "isCorrect": true
+      },
+      {
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": false
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means toward the east or in the east part.",
+    "audioQuestion": "audios/question-eastern.mp3",
+    "correctAnswer": "EASTERN",
+    "options": [
+      {
+        "word": "THROUGH",
+        "emoji": "➡️⭕",
+        "isCorrect": false
+      },
+      {
+        "word": "VENUS",
+        "emoji": "♀️",
+        "isCorrect": false
+      },
+      {
+        "word": "CALLED",
+        "emoji": "📛",
+        "isCorrect": false
+      },
+      {
+        "word": "EASTERN",
+        "emoji": "➡️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means toward the west or in the west part.",
+    "audioQuestion": "audios/question-western.mp3",
+    "correctAnswer": "WESTERN",
+    "options": [
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": false
+      },
+      {
+        "word": "WESTERN",
+        "emoji": "⬅️",
+        "isCorrect": true
+      },
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": false
+      },
+      {
+        "word": "DESCRIBE",
+        "emoji": "📝",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a round, 3D ball shape.",
+    "audioQuestion": "audios/question-sphere.mp3",
+    "correctAnswer": "SPHERE",
+    "options": [
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "SPHERE",
+        "emoji": "🌍",
+        "isCorrect": true
+      },
+      {
+        "word": "HEAT",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "MOVE AROUND",
+        "emoji": "🌍➡️🔄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is the farthest outer planet from the Sun.",
+    "audioQuestion": "audios/question-neptune.mp3",
+    "correctAnswer": "NEPTUNE",
+    "options": [
+      {
+        "word": "NEPTUNE",
+        "emoji": "♆",
+        "isCorrect": true
+      },
+      {
+        "word": "SOUTHERN",
+        "emoji": "⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
+        "isCorrect": false
+      },
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to go in a circle or path around something.",
+    "audioQuestion": "audios/question-move around.mp3",
+    "correctAnswer": "MOVE AROUND",
+    "options": [
+      {
+        "word": "SPHERE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "MOVE AROUND",
+        "emoji": "🌍➡️🔄",
+        "isCorrect": true
+      },
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to go from one place to another.",
+    "audioQuestion": "audios/question-travel.mp3",
+    "correctAnswer": "TRAVEL",
+    "options": [
+      {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      },
+      {
+        "word": "SOUTHERN",
+        "emoji": "⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": true
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to turn around quickly.",
+    "audioQuestion": "audios/question-spin.mp3",
+    "correctAnswer": "SPIN",
+    "options": [
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "AVERAGE",
+        "emoji": "📊",
+        "isCorrect": false
+      },
+      {
+        "word": "SPIN",
+        "emoji": "🌀",
+        "isCorrect": true
+      },
+      {
+        "word": "SHOW",
+        "emoji": "👉",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to provide or offer something.",
+    "audioQuestion": "audios/question-give.mp3",
+    "correctAnswer": "GIVE",
+    "options": [
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": true
+      },
+      {
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
+        "isCorrect": false
+      },
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means composed or formed from a material.",
+    "audioQuestion": "audios/question-made of.mp3",
+    "correctAnswer": "MADE OF",
+    "options": [
+      {
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
+        "isCorrect": true
+      },
+      {
+        "word": "HEMISPHERE",
+        "isCorrect": false
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "EASTERN",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means recognized or familiar.",
+    "audioQuestion": "audios/question-known.mp3",
+    "correctAnswer": "KNOWN",
+    "options": [
+      {
+        "word": "KNOWN",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means named or referred to as.",
+    "audioQuestion": "audios/question-called.mp3",
+    "correctAnswer": "CALLED",
+    "options": [
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
+        "isCorrect": false
+      },
+      {
+        "word": "KNOWN",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "CALLED",
+        "emoji": "📛",
+        "isCorrect": true
+      },
+      {
+        "word": "ROCK",
+        "emoji": "🪨",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to be real or present.",
+    "audioQuestion": "audios/question-exist.mp3",
+    "correctAnswer": "EXIST",
+    "options": [
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      },
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
+        "word": "AXIS",
+        "isCorrect": false
+      },
+      {
+        "word": "EXIST",
+        "emoji": "✅",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is warmth or high temperature.",
+    "audioQuestion": "audios/question-heat.mp3",
+    "correctAnswer": "HEAT",
+    "options": [
+      {
+        "word": "HEAT",
+        "emoji": "🔥",
+        "isCorrect": true
+      },
+      {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      },
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is brightness that lets us see.",
+    "audioQuestion": "audios/question-light.mp3",
+    "correctAnswer": "LIGHT",
+    "options": [
+      {
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "LIGHT",
+        "emoji": "💡",
+        "isCorrect": true
+      },
+      {
+        "word": "EAST TO WEST",
+        "emoji": "⬅️➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "ACROSS",
+        "emoji": "↔️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is a route or way to go.",
+    "audioQuestion": "audios/question-path.mp3",
+    "correctAnswer": "PATH",
+    "options": [
+      {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "WARM",
+        "emoji": "🌤️",
+        "isCorrect": false
+      },
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": true
+      },
+      {
+        "word": "BELOW",
+        "emoji": "⬇️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means in a circle or surrounding something.",
+    "audioQuestion": "audios/question-around.mp3",
+    "correctAnswer": "AROUND",
+    "options": [
+      {
+        "word": "MOVE AROUND",
+        "emoji": "🌍➡️🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "AROUND",
+        "emoji": "🔄",
+        "isCorrect": true
+      },
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means passing from one side to the other.",
+    "audioQuestion": "audios/question-through.mp3",
+    "correctAnswer": "THROUGH",
+    "options": [
+      {
+        "word": "CALLED",
+        "emoji": "📛",
+        "isCorrect": false
+      },
+      {
+        "word": "AVERAGE",
+        "emoji": "📊",
+        "isCorrect": false
+      },
+      {
+        "word": "SEASON",
+        "emoji": "🍂",
+        "isCorrect": false
+      },
+      {
+        "word": "THROUGH",
+        "emoji": "➡️⭕",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is the measure of duration.",
+    "audioQuestion": "audios/question-time.mp3",
+    "correctAnswer": "TIME",
+    "options": [
+      {
+        "word": "ATMOSPHERE",
+        "emoji": "🌫️",
+        "isCorrect": false
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "TIME",
+        "emoji": "⏰",
+        "isCorrect": true
+      },
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means in the middle of two things.",
+    "audioQuestion": "audios/question-between.mp3",
+    "correctAnswer": "BETWEEN",
+    "options": [
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": false
+      },
+      {
+        "word": "HOT",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "OUTER",
+        "emoji": "🔵➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "BETWEEN",
+        "emoji": "⬅️⭕➡️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is the Sun and all planets that orbit around it.",
+    "audioQuestion": "audios/question-solar system.mp3",
+    "correctAnswer": "SOLAR SYSTEM",
+    "options": [
+      {
+        "word": "COLD",
+        "emoji": "❄️",
+        "isCorrect": false
+      },
+      {
+        "word": "SPIN",
+        "emoji": "🌀",
+        "isCorrect": false
+      },
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
+        "word": "SOLAR SYSTEM",
+        "emoji": "☀️🪐🌍",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is a substance like air.",
+    "audioQuestion": "audios/question-gas.mp3",
+    "correctAnswer": "GAS",
+    "options": [
+      {
+        "word": "NORTHERN",
+        "emoji": "⬆️",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "PATTERN",
+        "emoji": "🔁",
+        "isCorrect": false
+      },
+      {
+        "word": "GAS",
+        "emoji": "💨",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is hard, solid material.",
+    "audioQuestion": "audios/question-rock.mp3",
+    "correctAnswer": "ROCK",
+    "options": [
+      {
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": false
+      },
+      {
+        "word": "PATTERN",
+        "emoji": "🔁",
+        "isCorrect": false
+      },
+      {
+        "word": "ROCK",
+        "emoji": "🪨",
+        "isCorrect": true
+      },
+      {
+        "word": "LIFE",
+        "emoji": "🌱",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means living things like plants and animals.",
+    "audioQuestion": "audios/question-life.mp3",
+    "correctAnswer": "LIFE",
+    "options": [
+      {
+        "word": "WESTERN",
+        "emoji": "⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "LIFE",
+        "emoji": "🌱",
+        "isCorrect": true
+      },
+      {
+        "word": "AXIS",
+        "isCorrect": false
+      },
+      {
+        "word": "BETWEEN",
+        "emoji": "⬅️⭕➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it are circular bands around something.",
+    "audioQuestion": "audios/question-rings.mp3",
+    "correctAnswer": "RINGS",
+    "options": [
+      {
+        "word": "KNOWN",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "CALLED",
+        "emoji": "📛",
+        "isCorrect": false
+      },
+      {
+        "word": "URANUS",
+        "emoji": "♅",
+        "isCorrect": false
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means very pretty or attractive.",
+    "audioQuestion": "audios/question-beautiful.mp3",
+    "correctAnswer": "BEAUTIFUL",
+    "options": [
+      {
+        "word": "ORBIT",
+        "isCorrect": false
+      },
+      {
+        "word": "MARS",
+        "emoji": "♂️",
+        "isCorrect": false
+      },
+      {
+        "word": "EXIST",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "BEAUTIFUL",
+        "emoji": "😍",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means very, very big.",
+    "audioQuestion": "audios/question-huge.mp3",
+    "correctAnswer": "HUGE",
+    "options": [
+      {
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": false
+      },
+      {
+        "word": "HUGE",
+        "emoji": "🐘",
+        "isCorrect": true
+      },
+      {
+        "word": "EARTH",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "PLANET",
+        "emoji": "🪐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means not big.",
+    "audioQuestion": "audios/question-small.mp3",
+    "correctAnswer": "SMALL",
+    "options": [
+      {
+        "word": "MIDDLE",
+        "emoji": "🎯",
+        "isCorrect": false
+      },
+      {
+        "word": "COLD",
+        "emoji": "❄️",
+        "isCorrect": false
+      },
+      {
+        "word": "SMALL",
+        "emoji": "🐁",
+        "isCorrect": true
+      },
+      {
+        "word": "ATMOSPHERE",
+        "emoji": "🌫️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means big in size.",
+    "audioQuestion": "audios/question-large.mp3",
+    "correctAnswer": "LARGE",
+    "options": [
+      {
+        "word": "INNER",
+        "emoji": "🔴⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "LARGE",
+        "emoji": "🐘",
+        "isCorrect": true
+      },
+      {
+        "word": "CHANGE",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means very warm or high temperature.",
+    "audioQuestion": "audios/question-hot.mp3",
+    "correctAnswer": "HOT",
+    "options": [
+      {
+        "word": "SEASON",
+        "emoji": "🍂",
+        "isCorrect": false
+      },
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
+        "isCorrect": false
+      },
+      {
+        "word": "GROW",
+        "emoji": "🌱",
+        "isCorrect": false
+      },
+      {
+        "word": "HOT",
+        "emoji": "🔥",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means low temperature.",
+    "audioQuestion": "audios/question-cold.mp3",
+    "correctAnswer": "COLD",
+    "options": [
+      {
+        "word": "COLD",
+        "emoji": "❄️",
+        "isCorrect": true
+      },
+      {
+        "word": "EASTERN",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "TIME",
+        "emoji": "⏰",
+        "isCorrect": false
+      },
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means giving a lot of light.",
+    "audioQuestion": "audios/question-bright.mp3",
+    "correctAnswer": "BRIGHT",
+    "options": [
+      {
+        "word": "BRIGHT",
+        "emoji": "✨",
+        "isCorrect": true
+      },
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": false
+      },
+      {
+        "word": "HUGE",
+        "emoji": "🐘",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Day is when the Sun is up, night is when it's dark.",
+    "audioQuestion": "audios/question-day and night.mp3",
+    "correctAnswer": "DAY AND NIGHT",
+    "options": [
+      {
+        "word": "EASTERN",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTHERN",
+        "emoji": "⬆️",
+        "isCorrect": false
+      },
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "This is the time it takes a planet to orbit the Sun once.",
+    "audioQuestion": "audios/question-year.mp3",
+    "correctAnswer": "YEAR",
+    "options": [
+      {
+        "word": "EDGE",
+        "emoji": "〰️",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      },
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": true
+      },
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means larger than something else.",
+    "audioQuestion": "audios/question-bigger.mp3",
+    "correctAnswer": "BIGGER",
+    "options": [
+      {
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
+        "isCorrect": false
+      },
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      },
+      {
+        "word": "BIGGER",
+        "emoji": "📈",
+        "isCorrect": true
+      },
+      {
+        "word": "EXIST",
+        "emoji": "✅",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means positioned or found in a place.",
+    "audioQuestion": "audios/question-located.mp3",
+    "correctAnswer": "LOCATED",
+    "options": [
+      {
+        "word": "LOCATED",
+        "emoji": "📍",
+        "isCorrect": true
+      },
+      {
+        "word": "CHANGE",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "REVOLVE",
+        "isCorrect": false
+      },
+      {
+        "word": "EDGE",
+        "emoji": "〰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to separate into parts.",
+    "audioQuestion": "audios/question-divide.mp3",
+    "correctAnswer": "DIVIDE",
+    "options": [
+      {
+        "word": "BRIGHT",
+        "emoji": "✨",
+        "isCorrect": false
+      },
+      {
+        "word": "DIVIDE",
+        "emoji": "✂️",
+        "isCorrect": true
+      },
+      {
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to extend or go in a direction.",
+    "audioQuestion": "audios/question-run.mp3",
+    "correctAnswer": "RUN",
+    "options": [
+      {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": false
+      },
+      {
+        "word": "RUN",
+        "emoji": "➡️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means to display or make visible.",
+    "audioQuestion": "audios/question-show.mp3",
+    "correctAnswer": "SHOW",
+    "options": [
+      {
+        "word": "SHOW",
+        "emoji": "👉",
+        "isCorrect": true
+      },
+      {
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
+        "isCorrect": false
+      },
+      {
+        "word": "SEASON",
+        "emoji": "🍂",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means existing or present in a location.",
+    "audioQuestion": "audios/question-found in.mp3",
+    "correctAnswer": "FOUND IN",
+    "options": [
+      {
+        "word": "LIFE",
+        "emoji": "🌱",
+        "isCorrect": false
+      },
+      {
+        "word": "FOUND IN",
+        "emoji": "📍✅",
+        "isCorrect": true
+      },
+      {
+        "word": "EXIST",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is a round shape.",
+    "audioQuestion": "audios/question-circle.mp3",
+    "correctAnswer": "CIRCLE",
+    "options": [
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
+        "isCorrect": false
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": true
+      },
+      {
+        "word": "COLD",
+        "emoji": "❄️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means from top to bottom.",
+    "audioQuestion": "audios/question-north to south.mp3",
+    "correctAnswer": "NORTH TO SOUTH",
+    "options": [
+      {
+        "word": "LARGE",
+        "emoji": "🐘",
+        "isCorrect": false
+      },
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      },
+      {
+        "word": "OUTER",
+        "emoji": "🔵➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means from right to left.",
+    "audioQuestion": "audios/question-east to west.mp3",
+    "correctAnswer": "EAST TO WEST",
+    "options": [
+      {
+        "word": "EARTH",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "EAST TO WEST",
+        "emoji": "⬅️➡️",
+        "isCorrect": true
+      },
+      {
+        "word": "SATURN",
+        "emoji": "🪐",
+        "isCorrect": false
+      },
+      {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means higher than or over something.",
+    "audioQuestion": "audios/question-above.mp3",
+    "correctAnswer": "ABOVE",
+    "options": [
+      {
+        "word": "ROCK",
+        "emoji": "🪨",
+        "isCorrect": false
+      },
+      {
+        "word": "OUTER",
+        "emoji": "🔵➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "ABOVE",
+        "emoji": "⬆️",
+        "isCorrect": true
+      },
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means lower than or under something.",
+    "audioQuestion": "audios/question-below.mp3",
+    "correctAnswer": "BELOW",
+    "options": [
+      {
+        "word": "AVERAGE",
+        "emoji": "📊",
+        "isCorrect": false
+      },
+      {
+        "word": "LATITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "STAR",
+        "emoji": "⭐",
+        "isCorrect": false
+      },
+      {
+        "word": "BELOW",
+        "emoji": "⬇️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means from one side to the other.",
+    "audioQuestion": "audios/question-across.mp3",
+    "correctAnswer": "ACROSS",
+    "options": [
+      {
+        "word": "TIME",
+        "emoji": "⏰",
+        "isCorrect": false
+      },
+      {
+        "word": "ACROSS",
+        "emoji": "↔️",
+        "isCorrect": true
+      },
+      {
+        "word": "THROUGH",
+        "emoji": "➡️⭕",
+        "isCorrect": false
+      },
+      {
+        "word": "PLANET",
+        "emoji": "🪐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means following the length or path of something.",
+    "audioQuestion": "audios/question-along.mp3",
+    "correctAnswer": "ALONG",
+    "options": [
+      {
+        "word": "GIVE",
+        "emoji": "🎁",
+        "isCorrect": false
+      },
+      {
+        "word": "CHANGE",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "HUGE",
+        "emoji": "🐘",
+        "isCorrect": false
+      },
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means the center or halfway point.",
+    "audioQuestion": "audios/question-middle.mp3",
+    "correctAnswer": "MIDDLE",
+    "options": [
+      {
+        "word": "MIDDLE",
+        "emoji": "🎯",
+        "isCorrect": true
+      },
+      {
+        "word": "HUGE",
+        "emoji": "🐘",
+        "isCorrect": false
+      },
+      {
+        "word": "MADE OF",
+        "emoji": "🧱➡️🏠",
+        "isCorrect": false
+      },
+      {
+        "word": "EDGE",
+        "emoji": "〰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means the outer limit or border.",
+    "audioQuestion": "audios/question-edge.mp3",
+    "correctAnswer": "EDGE",
+    "options": [
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      },
+      {
+        "word": "EDGE",
+        "emoji": "〰️",
+        "isCorrect": true
+      },
+      {
+        "word": "DESCRIBE",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "REVOLVE",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to be in contact with.",
+    "audioQuestion": "audios/question-touch.mp3",
+    "correctAnswer": "TOUCH",
+    "options": [
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      },
+      {
+        "word": "TOUCH",
+        "emoji": "👆",
+        "isCorrect": true
+      },
+      {
+        "word": "CONTINENT",
+        "emoji": "🗺️",
+        "isCorrect": false
+      },
+      {
+        "word": "HOT",
+        "emoji": "🔥",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to tell about something using words.",
+    "audioQuestion": "audios/question-describe.mp3",
+    "correctAnswer": "DESCRIBE",
+    "options": [
+      {
+        "word": "DESCRIBE",
+        "emoji": "📝",
+        "isCorrect": true
+      },
+      {
+        "word": "RINGS",
+        "emoji": "💍",
+        "isCorrect": false
+      },
+      {
+        "word": "HUGE",
+        "emoji": "🐘",
+        "isCorrect": false
+      },
+      {
+        "word": "WARM",
+        "emoji": "🌤️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means to become different.",
+    "audioQuestion": "audios/question-change.mp3",
+    "correctAnswer": "CHANGE",
+    "options": [
+      {
+        "word": "OCEAN",
+        "emoji": "🌊",
+        "isCorrect": false
+      },
+      {
+        "word": "KNOWN",
+        "emoji": "✅",
+        "isCorrect": false
+      },
+      {
+        "word": "ORBIT",
+        "isCorrect": false
+      },
+      {
+        "word": "CHANGE",
+        "emoji": "🔄",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means the state or situation of something.",
+    "audioQuestion": "audios/question-condition.mp3",
+    "correctAnswer": "CONDITION",
+    "options": [
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "CONDITION",
+        "emoji": "☁️🌡️",
+        "isCorrect": true
+      },
+      {
+        "word": "PATH",
+        "emoji": "🛤️",
+        "isCorrect": false
+      },
+      {
+        "word": "CLIMATE",
+        "emoji": "🌦️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means typical or normal.",
+    "audioQuestion": "audios/question-average.mp3",
+    "correctAnswer": "AVERAGE",
+    "options": [
+      {
+        "word": "MERCURY",
+        "emoji": "☿️",
+        "isCorrect": false
+      },
+      {
+        "word": "AVERAGE",
+        "emoji": "📊",
+        "isCorrect": true
+      },
+      {
+        "word": "TIME",
+        "emoji": "⏰",
+        "isCorrect": false
+      },
+      {
+        "word": "LATITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means something that repeats in a regular way.",
+    "audioQuestion": "audios/question-pattern.mp3",
+    "correctAnswer": "PATTERN",
+    "options": [
+      {
+        "word": "SMALL",
+        "emoji": "🐁",
+        "isCorrect": false
+      },
+      {
+        "word": "WESTERN",
+        "emoji": "⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "ORBIT",
+        "isCorrect": false
+      },
+      {
+        "word": "PATTERN",
+        "emoji": "🔁",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is how hot or cold something is.",
+    "audioQuestion": "audios/question-temperature.mp3",
+    "correctAnswer": "TEMPERATURE",
+    "options": [
+      {
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
+        "isCorrect": true
+      },
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
+        "word": "SHOW",
+        "emoji": "👉",
+        "isCorrect": false
+      },
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means with rain or wet.",
+    "audioQuestion": "audios/question-rainy.mp3",
+    "correctAnswer": "RAINY",
+    "options": [
+      {
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "RAINY",
+        "emoji": "🌧️",
+        "isCorrect": true
+      },
+      {
+        "word": "MARS",
+        "emoji": "♂️",
+        "isCorrect": false
+      },
+      {
+        "word": "DIVIDE",
+        "emoji": "✂️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means with bright sunshine.",
+    "audioQuestion": "audios/question-sunny.mp3",
+    "correctAnswer": "SUNNY",
+    "options": [
+      {
+        "word": "SPIN",
+        "emoji": "🌀",
+        "isCorrect": false
+      },
+      {
+        "word": "SUNNY",
+        "emoji": "☀️",
+        "isCorrect": true
+      },
+      {
+        "word": "WEATHER",
+        "emoji": "☁️",
+        "isCorrect": false
+      },
+      {
+        "word": "RUN",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means pleasantly hot, not too hot or cold.",
+    "audioQuestion": "audios/question-warm.mp3",
+    "correctAnswer": "WARM",
+    "options": [
+      {
+        "word": "CLIMATE",
+        "emoji": "🌦️",
+        "isCorrect": false
+      },
+      {
+        "word": "LONGITUDE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "WARM",
+        "emoji": "🌤️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means for a brief time.",
+    "audioQuestion": "audios/question-short-term.mp3",
+    "correctAnswer": "SHORT-TERM",
+    "options": [
+      {
+        "word": "DAY AND NIGHT",
+        "emoji": "☀️🌙",
+        "isCorrect": false
+      },
+      {
+        "word": "JUPITER",
+        "emoji": "♃",
+        "isCorrect": false
+      },
+      {
+        "word": "SHORT-TERM",
+        "emoji": "⏱️",
+        "isCorrect": true
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🚀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means for a long time.",
+    "audioQuestion": "audios/question-long-term.mp3",
+    "correctAnswer": "LONG-TERM",
+    "options": [
+      {
+        "word": "NEPTUNE",
+        "emoji": "♆",
+        "isCorrect": false
+      },
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": true
+      },
+      {
+        "word": "CALLED",
+        "emoji": "📛",
+        "isCorrect": false
+      },
+      {
+        "word": "ALONG",
+        "emoji": "➡️➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it is the layer of air around Earth.",
+    "audioQuestion": "audios/question-atmosphere.mp3",
+    "correctAnswer": "ATMOSPHERE",
+    "options": [
+      {
+        "word": "BRIGHT",
+        "emoji": "✨",
+        "isCorrect": false
+      },
+      {
+        "word": "ROTATE",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTH TO SOUTH",
+        "emoji": "⬆️⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "ATMOSPHERE",
+        "emoji": "🌫️",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it means to get bigger or develop.",
+    "audioQuestion": "audios/question-grow.mp3",
+    "correctAnswer": "GROW",
+    "options": [
+      {
+        "word": "LONG-TERM",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "ROCK",
+        "emoji": "🪨",
+        "isCorrect": false
+      },
+      {
+        "word": "GROW",
+        "emoji": "🌱",
+        "isCorrect": true
+      },
+      {
+        "word": "CIRCLE",
+        "emoji": "⭕",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "it means normal or common.",
+    "audioQuestion": "audios/question-usual.mp3",
+    "correctAnswer": "USUAL",
+    "options": [
+      {
+        "word": "VENUS",
+        "emoji": "♀️",
+        "isCorrect": false
+      },
+      {
+        "word": "YEAR",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "SHOW",
+        "emoji": "👉",
+        "isCorrect": false
+      },
+      {
+        "word": "USUAL",
+        "emoji": "✅",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "it is a location or area.",
+    "audioQuestion": "audios/question-place.mp3",
+    "correctAnswer": "PLACE",
+    "options": [
+      {
+        "word": "PLACE",
+        "emoji": "📍",
+        "isCorrect": true
+      },
+      {
+        "word": "HOT",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "RUN",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "NORTHERN",
+        "emoji": "⬆️",
+        "isCorrect": false
+      }
+    ]
+  }
+]

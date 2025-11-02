@@ -264,7 +264,8 @@
       {
         "emoji": "☿️",
         "label": "Mercury (small, rocky)",
-        "isCorrect": true
+        "isCorrect": true,
+        "image": "https://science.nasa.gov/wp-content/uploads/2023/09/spectra-mercury.jpg?w=1024"
       },
       {
         "emoji": "♀️",
@@ -544,7 +545,8 @@
       {
         "emoji": "🌍",
         "label": "Vertical lines",
-        "isCorrect": true
+        "isCorrect": true,
+        "image": "https://images.twinkl.co.uk/tr/image/upload/illustation/Globe-Longitude-Diagram-KS3.png"
       },
       {
         "emoji": "🗺️",
@@ -917,7 +919,8 @@
       {
         "emoji": "♆",
         "label": "Neptune (blue)",
-        "isCorrect": true
+        "isCorrect": true,
+        "image": "https://cdn.mos.cms.futurecdn.net/PezBzd9Fehsq9XWgWMauVV.jpg"
       },
       {
         "emoji": "♅",
@@ -1134,7 +1137,8 @@
       {
         "emoji": "📛",
         "label": "Named",
-        "isCorrect": true
+        "isCorrect": true,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkGkpceDlXIh1EDAgBfDWFtq-qF4P-ZFyNw&s"
       },
       {
         "emoji": "📞",
@@ -1816,7 +1820,8 @@
       {
         "emoji": "📅",
         "label": "Year/calendar",
-        "isCorrect": true
+        "isCorrect": true,
+        "image": "https://cdn.guardian.ng/wp-content/uploads/2020/02/how-many-days-are-there-in-leap-year-1320x720.png"
       },
       {
         "emoji": "⏰",

@@ -42,6 +42,10 @@ app.get('/editor', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'vocabulary-editor.html'));
 });
 
+app.get('/definition-quiz', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'definition_quiz_game.html'));
+});
+
 // ============================================================
 // CRUD API Endpoints for Vocabulary Editor
 // ============================================================
@@ -154,6 +158,7 @@ app.listen(PORT, () => {
     ║   📚 Home (Menu):          http://localhost:${PORT}/           ║
     ║   🎨 Visual Word Game:     http://localhost:${PORT}/visual-game║
     ║   🎧 Audio Listening Game: http://localhost:${PORT}/audio-game ║
+    ║   🎯 Definition Quiz:      http://localhost:${PORT}/definition-quiz║
     ║   📖 Vocabulary Trainer:   http://localhost:${PORT}/vocabulary ║
     ║   ✅ Science Quiz:         http://localhost:${PORT}/quiz       ║
     ║   📝 Vocabulary Editor:    http://localhost:${PORT}/editor     ║
