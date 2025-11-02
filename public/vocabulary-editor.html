@@ -367,6 +367,9 @@
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="🔍 Search words...">
             </div>
+            <button class="btn btn-success" onclick="downloadJSON()">📥 Download JSON</button>
+            <button class="btn btn-primary" onclick="document.getElementById('uploadJSON').click()">📤 Upload JSON</button>
+            <input type="file" id="uploadJSON" accept=".json" style="display: none;" onchange="uploadJSON(event)">
             <button class="btn btn-primary" onclick="saveAll()">💾 Save All Changes</button>
             <a href="/" class="btn btn-secondary">🏠 Back to Games</a>
         </div>
@@ -722,6 +725,118 @@
             setTimeout(() => {
                 statusMessage.classList.remove('show');
             }, 5000);
+        }
+
+        // Download JSON file
+        function downloadJSON() {
+            try {
+                // Create a blob with the current vocabulary data
+                const dataStr = JSON.stringify(vocabularyData, null, 2);
+                const dataBlob = new Blob([dataStr], { type: 'application/json' });
+
+                // Create download link
+                const url = URL.createObjectURL(dataBlob);
+                const link = document.createElement('a');
+                link.href = url;
+
+                // Generate filename with timestamp
+                const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
+                link.download = `vocabulary-data-${timestamp}.json`;
+
+                // Trigger download
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                // Clean up
+                URL.revokeObjectURL(url);
+
+                showStatus('✅ JSON file downloaded successfully!', 'success');
+            } catch (error) {
+                console.error('Download error:', error);
+                showStatus('❌ Failed to download JSON: ' + error.message, 'error');
+            }
+        }
+
+        // Upload JSON file
+        function uploadJSON(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            // Check file type
+            if (!file.name.endsWith('.json')) {
+                showStatus('❌ Please select a valid JSON file', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                try {
+                    // Parse the JSON
+                    const newData = JSON.parse(e.target.result);
+
+                    // Validate it's an array
+                    if (!Array.isArray(newData)) {
+                        throw new Error('JSON must be an array of vocabulary items');
+                    }
+
+                    // Validate structure of first item
+                    if (newData.length > 0) {
+                        const firstItem = newData[0];
+                        const requiredFields = ['word', 'spanish', 'sentenceEN', 'sentenceES', 'options'];
+                        const missingFields = requiredFields.filter(field => !firstItem.hasOwnProperty(field));
+
+                        if (missingFields.length > 0) {
+                            throw new Error(`Missing required fields: ${missingFields.join(', ')}`);
+                        }
+                    }
+
+                    // Confirm replacement
+                    const confirmMsg = `Are you sure you want to replace the current vocabulary data?\n\n` +
+                                     `Current: ${vocabularyData.length} words\n` +
+                                     `New: ${newData.length} words\n\n` +
+                                     `This will replace all data in the editor (not saved to file until you click "Save All Changes")`;
+
+                    if (!confirm(confirmMsg)) {
+                        showStatus('Upload cancelled', 'success');
+                        return;
+                    }
+
+                    // Replace data
+                    vocabularyData = newData;
+                    currentEditingIndex = -1;
+                    hasUnsavedChanges = true;
+
+                    // Update UI
+                    renderWordsList();
+                    document.getElementById('editor').innerHTML = `
+                        <div class="editor-empty">
+                            <div class="editor-empty-icon">📖</div>
+                            <h2>JSON Uploaded Successfully!</h2>
+                            <p>Loaded ${newData.length} words. Select a word to edit.</p>
+                            <p style="color: #dc3545; font-weight: bold; margin-top: 20px;">
+                                ⚠️ Remember to click "Save All Changes" to persist to file
+                            </p>
+                        </div>
+                    `;
+
+                    showStatus(`✅ Loaded ${newData.length} words. Click "Save All Changes" to persist.`, 'success');
+
+                } catch (error) {
+                    console.error('Upload error:', error);
+                    showStatus('❌ Invalid JSON file: ' + error.message, 'error');
+                }
+            };
+
+            reader.onerror = function() {
+                showStatus('❌ Failed to read file', 'error');
+            };
+
+            reader.readAsText(file);
+
+            // Reset input so same file can be selected again
+            event.target.value = '';
         }
 
         // Search functionality
