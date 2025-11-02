@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jearlenis Science Learning Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome h2 {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 3px solid transparent;
+            text-decoration: none;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .card-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .card-1 { background: linear-gradient(135deg, #fff0f0 0%, #ffe0e0 100%); }
+        .card-2 { background: linear-gradient(135deg, #f0f0ff 0%, #e0e0ff 100%); }
+        .card-3 { background: linear-gradient(135deg, #f0fff0 0%, #e0ffe0 100%); }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 1em;
+        }
+
+        .instructions {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #ffc107;
+        }
+
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .instructions ul {
+            list-style-position: inside;
+            color: #856404;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Science Learning Center 🌟</h1>
+            <p>Centro de Aprendizaje de Ciencias para Jearlenis</p>
+        </div>
+
+        <div class="content">
+            <div class="welcome">
+                <h2>¡Bienvenida! Welcome!</h2>
+                <p>Choose a learning activity below to start practicing your science vocabulary!</p>
+                <p style="margin-top: 10px;">¡Elige una actividad de aprendizaje para comenzar a practicar tu vocabulario de ciencias!</p>
+            </div>
+
+            <div class="instructions">
+                <h3>📝 Recommended Learning Path / Ruta de Aprendizaje Recomendada:</h3>
+                <ul>
+                    <li><strong>Step 1:</strong> Start with Visual Word Game to learn vocabulary with images</li>
+                    <li><strong>Step 2:</strong> Practice with Vocabulary Trainer games and flashcards</li>
+                    <li><strong>Step 3:</strong> Take the full Science Quiz to test your knowledge</li>
+                </ul>
+            </div>
+
+            <div class="cards-grid">
+                <a href="/visual-game" class="card card-1">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-title">Visual Word Game</div>
+                    <div class="card-description">
+                        Learn vocabulary by matching words with images and animated GIFs!
+                        <br><br>
+                        ¡Aprende vocabulario emparejando palabras con imágenes animadas!
+                    </div>
+                </a>
+
+                <a href="/vocabulary" class="card card-2">
+                    <div class="card-icon">📚</div>
+                    <div class="card-title">Vocabulary Trainer</div>
+                    <div class="card-description">
+                        Practice with flashcards, planet games, and matching exercises!
+                        <br><br>
+                        ¡Practica con tarjetas, juegos de planetas y ejercicios!
+                    </div>
+                </a>
+
+                <a href="/quiz" class="card card-3">
+                    <div class="card-icon">✅</div>
+                    <div class="card-title">Science Quiz</div>
+                    <div class="card-description">
+                        Take the full exam with True/False and Multiple Choice questions!
+                        <br><br>
+                        ¡Haz el examen completo con preguntas de V/F y múltiple opción!
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ for Jearlenis | Created with Claude Code</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Server running on localhost:3000</p>
+        </div>
+    </div>
+</body>
+</html>

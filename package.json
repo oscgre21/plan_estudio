@@ -1,0 +1,25 @@
+{
+  "name": "jearlenis-science-quiz",
+  "version": "1.0.0",
+  "description": "Interactive Science Quiz for Kids - Sistema de repaso educativo interactivo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "education",
+    "quiz",
+    "science",
+    "kids",
+    "learning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

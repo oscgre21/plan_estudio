@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Word Learning Game - Juego Visual de Palabras</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e0e0e0;
+            flex-shrink: 0;
+        }
+
+        .info-item {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .info-item strong {
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .game-container {
+            padding: 15px 20px;
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .word-display {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .word-english {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+            animation: fadeIn 0.5s;
+        }
+
+        .word-spanish {
+            font-size: 1.3em;
+            color: #f5576c;
+            font-style: italic;
+            display: none;
+            cursor: pointer;
+        }
+
+        .word-spanish.show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        .word-english {
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .word-english:hover {
+            transform: scale(1.05);
+            color: #764ba2;
+        }
+
+        .translation-hint {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .question-prompt {
+            text-align: center;
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #fff3cd;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .image-option {
+            position: relative;
+            cursor: pointer;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            background: #f8f9fa;
+            aspect-ratio: 1;
+            min-height: 120px;
+            max-height: 180px;
+        }
+
+        .image-option:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-option img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .emoji-image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .image-option.selected {
+            border-color: #667eea;
+        }
+
+        .image-option.correct {
+            border-color: #28a745;
+            animation: pulse 0.5s;
+        }
+
+        .image-option.incorrect {
+            border-color: #dc3545;
+            animation: shake 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .image-label {
+            display: none;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 15px;
+            display: none;
+            animation: slideDown 0.4s;
+            text-align: center;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            border: 3px solid #28a745;
+            color: #155724;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            border: 3px solid #dc3545;
+            color: #721c24;
+        }
+
+        .feedback-icon {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .feedback-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .feedback-text {
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+
+        .navigation {
+            padding: 15px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .results {
+            display: none;
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .results.show {
+            display: block;
+        }
+
+        .results h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .round-info {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            background: #e0e0e0;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 10px 20px;
+            flex-shrink: 0;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .images-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .word-english {
+                font-size: 2em;
+            }
+
+            .word-spanish {
+                font-size: 1.3em;
+            }
+
+            .emoji-image {
+                font-size: 5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Visual Word Learning Game 🎨</h1>
+            <p>Juego Visual de Aprendizaje de Palabras</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="game-info">
+            <div class="info-item">Round: <strong><span id="currentRound">1</span></strong></div>
+            <div class="info-item">Word: <strong><span id="currentWord">1</span> / <span id="totalWords">15</span></strong></div>
+            <div class="info-item">Score: <strong><span id="score">0</span> / <span id="attempted">0</span></strong></div>
+        </div>
+
+        <div class="game-container" id="gameContainer">
+            <div class="round-info" id="roundInfo">Round 1 - Science Vocabulary</div>
+
+            <div class="word-display">
+                <div class="word-english" id="wordEnglish" onclick="toggleTranslation()">PLANET</div>
+                <div class="word-spanish" id="wordSpanish">(Planeta)</div>
+                <div class="translation-hint">💡 Click on the word to see translation / Haz click en la palabra para ver traducción</div>
+            </div>
+
+            <div class="question-prompt">
+                ❓ Which image represents this word? / ¿Qué imagen representa esta palabra?
+            </div>
+
+            <div class="images-grid" id="imagesGrid">
+                <!-- Images will be inserted here by JavaScript -->
+            </div>
+
+            <div class="feedback" id="feedback">
+                <!-- Feedback will be shown here -->
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="btn btn-primary" id="nextBtn" onclick="nextWord()" style="display: none;">Next Word / Siguiente</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>🎉 Round Completed! / ¡Ronda Completada! 🎉</h2>
+            <div class="score-circle" id="finalScore">0%</div>
+            <div style="font-size: 1.5em; color: #666; margin: 20px 0;">
+                You got <strong><span id="correctAnswers">0</span></strong> out of <strong><span id="totalAttempted">15</span></strong> correct!
+            </div>
+            <button class="btn btn-primary" onclick="nextRound()">Next Round / Siguiente Ronda</button>
+            <button class="btn btn-secondary" onclick="restartGame()">Restart / Reiniciar</button>
+        </div>
+    </div>
+
+    <script>
+        // Complete vocabulary with images from the quiz
+        const vocabularyData = [
+            // ROUND 1: Solar System Basics
+            {
+                word: "PLANET",
+                spanish: "Planeta",
+                options: [
+                    { emoji: "🪐", label: "Planet", isCorrect: true },
+                    { emoji: "⭐", label: "Star", isCorrect: false },
+                    { emoji: "🌌", label: "Galaxy", isCorrect: false },
+                    { emoji: "🌙", label: "Moon", isCorrect: false }
+                ],
+                explanation: "A planet is a large celestial body that orbits around a star. Un planeta es un cuerpo celeste grande que orbita alrededor de una estrella."
+            },
+            {
+                word: "STAR",
+                spanish: "Estrella",
+                options: [
+                    { emoji: "⭐", label: "Star", isCorrect: true },
+                    { emoji: "🪐", label: "Planet", isCorrect: false },
+                    { emoji: "🌌", label: "Galaxy", isCorrect: false },
+                    { emoji: "☄️", label: "Comet", isCorrect: false }
+                ],
+                explanation: "A star is a huge ball of burning gas that gives off light and heat. Una estrella es una enorme bola de gas ardiente que emite luz y calor."
+            },
+            {
+                word: "ORBIT",
+                spanish: "Órbita",
+                options: [
+                    { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Planet orbiting Sun", isCorrect: true, fallbackEmoji: "🌍→☀️" },
+                    { emoji: "⭐", label: "Sun alone", isCorrect: false },
+                    { emoji: "🌌", label: "Space", isCorrect: false },
+                    { emoji: "✨", label: "Stars", isCorrect: false }
+                ],
+                explanation: "An orbit is the path that a planet takes around the Sun. Una órbita es el camino que un planeta toma alrededor del Sol."
+            },
+            {
+                word: "ROTATE",
+                spanish: "Rotar / Girar sobre su eje",
+                options: [
+                    { image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", label: "Earth rotating", isCorrect: true, fallbackEmoji: "🔄" },
+                    { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Orbiting", isCorrect: false, fallbackEmoji: "🌍↻" },
+                    { emoji: "☀️", label: "Sun", isCorrect: false },
+                    { emoji: "🌙", label: "Moon", isCorrect: false }
+                ],
+                explanation: "Rotate means to spin around on an axis. Earth rotates once every 24 hours. Rotar significa girar sobre un eje. La Tierra rota una vez cada 24 horas."
+            },
+            {
+                word: "REVOLVE",
+                spanish: "Girar alrededor de",
+                options: [
+                    { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Earth revolving around Sun", isCorrect: true, fallbackEmoji: "🌍↻☀️" },
+                    { image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", label: "Rotating", isCorrect: false, fallbackEmoji: "🔄" },
+                    { emoji: "☀️", label: "Sun only", isCorrect: false },
+                    { emoji: "🌌", label: "Galaxy", isCorrect: false }
+                ],
+                explanation: "Revolve means to move around something else. Earth revolves around the Sun. Girar alrededor significa moverse alrededor de algo. La Tierra gira alrededor del Sol."
+            },
+            {
+                word: "AXIS",
+                spanish: "Eje",
+                options: [
+                    { image: "https://cdn.langeek.co/photo/31624/original/?type=jpeg", label: "Earth with axis line", isCorrect: true, fallbackEmoji: "🌍📏" },
+                    { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP67CFpeSFvK0g1Sn6fvzSRtXoAa7ZtluhHw_Q0ET3yx6TuSQiXJpIEMDHktg6Dt2_o&usqp=CAU", label: "Orbit", isCorrect: false, fallbackEmoji: "🌍↻☀️" },
+                    { emoji: "☀️", label: "Sun", isCorrect: false },
+                    { image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", label: "Rotating", isCorrect: false, fallbackEmoji: "🔄" }
+                ],
+                explanation: "An axis is an imaginary line through the center of a planet around which it rotates. Un eje es una línea imaginaria a través del centro de un planeta alrededor del cual gira."
+            },
+            {
+                word: "INNER",
+                spanish: "Interior / Interno",
+                options: [
+                    { emoji: "🔴⬅️", label: "Close to center", isCorrect: true },
+                    { emoji: "🌌", label: "Far away", isCorrect: false },
+                    { emoji: "🔵", label: "Outside", isCorrect: false },
+                    { emoji: "✨", label: "Stars", isCorrect: false }
+                ],
+                explanation: "Inner means closer to the center. Inner planets are closer to the Sun. Interior significa más cerca del centro. Los planetas interiores están más cerca del Sol."
+            },
+            {
+                word: "OUTER",
+                spanish: "Exterior / Externo",
+                options: [
+                    { emoji: "🔵➡️", label: "Far from center", isCorrect: true },
+                    { emoji: "🔴", label: "Close to center", isCorrect: false },
+                    { emoji: "☀️", label: "Sun", isCorrect: false },
+                    { emoji: "🌍", label: "Earth", isCorrect: false }
+                ],
+                explanation: "Outer means farther from the center. Outer planets are farther from the Sun. Exterior significa más lejos del centro. Los planetas exteriores están más lejos del Sol."
+            },
+            {
+                word: "MERCURY",
+                spanish: "Mercurio",
+                options: [
+                    { emoji: "☿️", label: "Mercury (small, rocky)", isCorrect: true },
+                    { emoji: "♀️", label: "Venus", isCorrect: false },
+                    { emoji: "🌍", label: "Earth", isCorrect: false },
+                    { emoji: "♂️", label: "Mars", isCorrect: false }
+                ],
+                explanation: "Mercury is the smallest planet and closest to the Sun. It's an inner planet. Mercurio es el planeta más pequeño y más cercano al Sol. Es un planeta interior."
+            },
+            {
+                word: "VENUS",
+                spanish: "Venus",
+                options: [
+                    { emoji: "♀️", label: "Venus (bright)", isCorrect: true },
+                    { emoji: "☿️", label: "Mercury", isCorrect: false },
+                    { emoji: "🌍", label: "Earth", isCorrect: false },
+                    { emoji: "♂️", label: "Mars", isCorrect: false }
+                ],
+                explanation: "Venus is the second planet from the Sun. It's very hot and is an inner planet. Venus es el segundo planeta desde el Sol. Es muy caliente y es un planeta interior."
+            },
+            {
+                word: "EARTH",
+                spanish: "Tierra",
+                options: [
+                    { emoji: "🌍", label: "Earth (blue)", isCorrect: true },
+                    { emoji: "♂️", label: "Mars", isCorrect: false },
+                    { emoji: "♀️", label: "Venus", isCorrect: false },
+                    { emoji: "☿️", label: "Mercury", isCorrect: false }
+                ],
+                explanation: "Earth is our home planet. It's the only planet known to have life. It's an inner planet. La Tierra es nuestro planeta hogar. Es el único planeta conocido que tiene vida. Es un planeta interior."
+            },
+            {
+                word: "MARS",
+                spanish: "Marte",
+                options: [
+                    { emoji: "♂️", label: "Mars (red)", isCorrect: true },
+                    { emoji: "🌍", label: "Earth", isCorrect: false },
+                    { emoji: "♀️", label: "Venus", isCorrect: false },
+                    { emoji: "☿️", label: "Mercury", isCorrect: false }
+                ],
+                explanation: "Mars is called the Red Planet because of its reddish color. It's an inner planet. Marte se llama el Planeta Rojo por su color rojizo. Es un planeta interior."
+            },
+            {
+                word: "JUPITER",
+                spanish: "Júpiter",
+                options: [
+                    { emoji: "♃", label: "Jupiter (giant)", isCorrect: true },
+                    { emoji: "♂️", label: "Mars", isCorrect: false },
+                    { emoji: "🌍", label: "Earth", isCorrect: false },
+                    { emoji: "☀️", label: "Sun", isCorrect: false }
+                ],
+                explanation: "Jupiter is the biggest planet in our Solar System. It's an outer planet made of gas. Júpiter es el planeta más grande de nuestro Sistema Solar. Es un planeta exterior hecho de gas."
+            },
+            {
+                word: "SATURN",
+                spanish: "Saturno",
+                options: [
+                    { emoji: "🪐", label: "Saturn (with rings)", isCorrect: true },
+                    { emoji: "♃", label: "Jupiter", isCorrect: false },
+                    { emoji: "♂️", label: "Mars", isCorrect: false },
+                    { emoji: "🌍", label: "Earth", isCorrect: false }
+                ],
+                explanation: "Saturn is famous for its beautiful rings. It's an outer planet. Saturno es famoso por sus hermosos anillos. Es un planeta exterior."
+            },
+            {
+                word: "URANUS",
+                spanish: "Urano",
+                options: [
+                    { emoji: "♅", label: "Uranus (blue-green)", isCorrect: true },
+                    { emoji: "🪐", label: "Saturn", isCorrect: false },
+                    { emoji: "♃", label: "Jupiter", isCorrect: false },
+                    { emoji: "🌍", label: "Earth", isCorrect: false }
+                ],
+                explanation: "Uranus is a large, cold outer planet made of gas. Urano es un planeta exterior grande y frío hecho de gas."
+            },
+
+            // ROUND 2: Geography
+            {
+                word: "HEMISPHERE",
+                spanish: "Hemisferio",
+                options: [
+                    { image: "https://cdn.britannica.com/65/89965-004-9376899C.jpg", label: "Half of Earth", isCorrect: true, fallbackEmoji: "🌍" },
+                    { emoji: "🌎", label: "Whole Earth", isCorrect: false },
+                    { emoji: "🗺️", label: "Map", isCorrect: false },
+                    { emoji: "🧭", label: "Compass", isCorrect: false }
+                ],
+                explanation: "A hemisphere is half of the Earth. There are Northern, Southern, Eastern, and Western hemispheres. Un hemisferio es la mitad de la Tierra."
+            },
+            {
+                word: "EQUATOR",
+                spanish: "Ecuador",
+                options: [
+                    { emoji: "🌍", label: "Line around middle", isCorrect: true },
+                    { emoji: "⬆️", label: "North Pole", isCorrect: false },
+                    { emoji: "⬇️", label: "South Pole", isCorrect: false },
+                    { emoji: "🗺️", label: "Map", isCorrect: false }
+                ],
+                explanation: "The Equator is an imaginary line around the middle of Earth at 0° latitude. El Ecuador es una línea imaginaria alrededor del medio de la Tierra."
+            },
+            {
+                word: "LONGITUDE",
+                spanish: "Longitud",
+                options: [
+                    { emoji: "🌍", label: "Vertical lines", isCorrect: true },
+                    { emoji: "🗺️", label: "Horizontal lines", isCorrect: false },
+                    { emoji: "🧭", label: "Map", isCorrect: false },
+                    { emoji: "🌎", label: "Earth", isCorrect: false }
+                ],
+                explanation: "Longitude lines run from North to South Pole (vertical). Líneas de longitud corren de Polo Norte a Polo Sur (verticales)."
+            },
+            {
+                word: "LATITUDE",
+                spanish: "Latitud",
+                options: [
+                    { emoji: "🌍", label: "Horizontal lines", isCorrect: true },
+                    { emoji: "🧭", label: "Vertical lines", isCorrect: false },
+                    { emoji: "🗺️", label: "Map", isCorrect: false },
+                    { emoji: "⬆️", label: "Pole", isCorrect: false }
+                ],
+                explanation: "Latitude lines run East to West (horizontal), parallel to the Equator. Líneas de latitud corren de Este a Oeste (horizontales)."
+            },
+            {
+                word: "CONTINENT",
+                spanish: "Continente",
+                options: [
+                    { emoji: "🗺️", label: "Large land mass", isCorrect: true },
+                    { emoji: "🌊", label: "Ocean", isCorrect: false },
+                    { emoji: "🏝️", label: "Island", isCorrect: false },
+                    { emoji: "🏔️", label: "Mountain", isCorrect: false }
+                ],
+                explanation: "A continent is a large area of land. There are 7 continents. Un continente es una gran área de tierra. Hay 7 continentes."
+            },
+            {
+                word: "OCEAN",
+                spanish: "Océano",
+                options: [
+                    { emoji: "🌊", label: "Large body of water", isCorrect: true },
+                    { emoji: "🗺️", label: "Continent", isCorrect: false },
+                    { emoji: "🏔️", label: "Mountain", isCorrect: false },
+                    { emoji: "🏝️", label: "Island", isCorrect: false }
+                ],
+                explanation: "An ocean is a very large body of salt water. Un océano es un cuerpo de agua salada muy grande."
+            },
+            {
+                word: "WEATHER",
+                spanish: "Clima (del día)",
+                options: [
+                    { emoji: "☁️", label: "Today's conditions", isCorrect: true },
+                    { emoji: "🍂", label: "Seasons", isCorrect: false },
+                    { emoji: "🏔️", label: "Mountains", isCorrect: false },
+                    { emoji: "🗺️", label: "Map", isCorrect: false }
+                ],
+                explanation: "Weather is the condition of the atmosphere right now or today. El clima es la condición de la atmósfera ahora o hoy."
+            },
+            {
+                word: "CLIMATE",
+                spanish: "Clima (largo plazo)",
+                options: [
+                    { emoji: "🌦️", label: "Long-term patterns", isCorrect: true },
+                    { emoji: "☁️", label: "Today's weather", isCorrect: false },
+                    { emoji: "☀️", label: "Sun", isCorrect: false },
+                    { emoji: "🌊", label: "Ocean", isCorrect: false }
+                ],
+                explanation: "Climate is the usual weather pattern over many years. El clima es el patrón usual del tiempo durante muchos años."
+            },
+            {
+                word: "SEASON",
+                spanish: "Estación",
+                options: [
+                    { emoji: "🍂", label: "Four seasons", isCorrect: true },
+                    { emoji: "☁️", label: "Daily weather", isCorrect: false },
+                    { emoji: "🌍", label: "Globe", isCorrect: false },
+                    { emoji: "🗺️", label: "Map", isCorrect: false }
+                ],
+                explanation: "Seasons are spring, summer, fall (autumn), and winter. Las estaciones son primavera, verano, otoño e invierno."
+            },
+            {
+                word: "NORTHERN",
+                spanish: "Norte / Del norte",
+                options: [
+                    { emoji: "⬆️", label: "North direction", isCorrect: true },
+                    { emoji: "⬇️", label: "South", isCorrect: false },
+                    { emoji: "➡️", label: "East", isCorrect: false },
+                    { emoji: "⬅️", label: "West", isCorrect: false }
+                ],
+                explanation: "Northern means toward the north or in the north part. Norte significa hacia el norte o en la parte norte."
+            },
+            {
+                word: "SOUTHERN",
+                spanish: "Sur / Del sur",
+                options: [
+                    { emoji: "⬇️", label: "South direction", isCorrect: true },
+                    { emoji: "⬆️", label: "North", isCorrect: false },
+                    { emoji: "➡️", label: "East", isCorrect: false },
+                    { emoji: "⬅️", label: "West", isCorrect: false }
+                ],
+                explanation: "Southern means toward the south or in the south part. Sur significa hacia el sur o en la parte sur."
+            },
+            {
+                word: "EASTERN",
+                spanish: "Este / Del este",
+                options: [
+                    { emoji: "➡️", label: "East direction", isCorrect: true },
+                    { emoji: "⬅️", label: "West", isCorrect: false },
+                    { emoji: "⬆️", label: "North", isCorrect: false },
+                    { emoji: "⬇️", label: "South", isCorrect: false }
+                ],
+                explanation: "Eastern means toward the east or in the east part. Este significa hacia el este o en la parte este."
+            },
+            {
+                word: "WESTERN",
+                spanish: "Oeste / Del oeste",
+                options: [
+                    { emoji: "⬅️", label: "West direction", isCorrect: true },
+                    { emoji: "➡️", label: "East", isCorrect: false },
+                    { emoji: "⬆️", label: "North", isCorrect: false },
+                    { emoji: "⬇️", label: "South", isCorrect: false }
+                ],
+                explanation: "Western means toward the west or in the west part. Oeste significa hacia el oeste o en la parte oeste."
+            },
+            {
+                word: "SPHERE",
+                spanish: "Esfera",
+                options: [
+                    { emoji: "🌍", label: "Round ball shape", isCorrect: true },
+                    { emoji: "🌓", label: "Half circle", isCorrect: false },
+                    { emoji: "🗺️", label: "Flat map", isCorrect: false },
+                    { emoji: "⬛", label: "Square", isCorrect: false }
+                ],
+                explanation: "A sphere is a round, 3D ball shape. Earth is shaped like a sphere. Una esfera es una forma redonda de bola en 3D."
+            },
+            {
+                word: "NEPTUNE",
+                spanish: "Neptuno",
+                options: [
+                    { emoji: "♆", label: "Neptune (blue)", isCorrect: true },
+                    { emoji: "♅", label: "Uranus", isCorrect: false },
+                    { emoji: "🪐", label: "Saturn", isCorrect: false },
+                    { emoji: "♃", label: "Jupiter", isCorrect: false }
+                ],
+                explanation: "Neptune is the farthest outer planet from the Sun. It's cold and blue. Neptuno es el planeta exterior más lejano del Sol. Es frío y azul."
+            }
+        ];
+
+        let currentRound = 1;
+        let currentWordIndex = 0;
+        let score = 0;
+        let attempted = 0;
+        let answerSubmitted = false;
+        const wordsPerRound = 15;
+        let currentShuffledOptions = [];
+
+        function init() {
+            loadWord();
+        }
+
+        function toggleTranslation() {
+            const spanishWord = document.getElementById('wordSpanish');
+            spanishWord.classList.toggle('show');
+        }
+
+        function loadWord() {
+            const word = vocabularyData[currentWordIndex];
+            answerSubmitted = false;
+
+            // Update display
+            document.getElementById('wordEnglish').textContent = word.word;
+            const spanishWord = document.getElementById('wordSpanish');
+            spanishWord.textContent = `(${word.spanish})`;
+            spanishWord.classList.remove('show'); // Hide translation by default
+            document.getElementById('currentRound').textContent = currentRound;
+            document.getElementById('currentWord').textContent = (currentWordIndex % wordsPerRound) + 1;
+            document.getElementById('totalWords').textContent = Math.min(wordsPerRound, vocabularyData.length - (currentRound - 1) * wordsPerRound);
+            document.getElementById('roundInfo').textContent = `Round ${currentRound} - ${currentRound === 1 ? 'Solar System' : currentRound === 2 ? 'Geography' : 'Science'} Vocabulary`;
+
+            // Update progress
+            const progress = ((currentWordIndex % wordsPerRound) / wordsPerRound) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+
+            // Shuffle and display images
+            currentShuffledOptions = [...word.options].sort(() => Math.random() - 0.5);
+            const imagesGrid = document.getElementById('imagesGrid');
+            imagesGrid.innerHTML = '';
+
+            currentShuffledOptions.forEach((option, index) => {
+                const imageDiv = document.createElement('div');
+                imageDiv.className = 'image-option';
+                imageDiv.onclick = () => selectImage(option.isCorrect, index);
+
+                if (option.emoji) {
+                    imageDiv.innerHTML = `<div class="emoji-image">${option.emoji}</div>`;
+                } else {
+                    imageDiv.innerHTML = `<img src="${option.image}" alt="${option.label}" onerror="this.parentElement.innerHTML='<div class=emoji-image>${option.fallbackEmoji || '❓'}</div>'">`;
+                }
+
+                imagesGrid.appendChild(imageDiv);
+            });
+
+            document.getElementById('feedback').classList.remove('show', 'correct', 'incorrect');
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        function selectImage(isCorrect, index) {
+            if (answerSubmitted) return;
+
+            answerSubmitted = true;
+            attempted++;
+
+            const imageOptions = document.querySelectorAll('.image-option');
+            const selectedOption = imageOptions[index];
+            const word = vocabularyData[currentWordIndex];
+
+            if (isCorrect) {
+                score++;
+                selectedOption.classList.add('correct');
+                showFeedback(true, word.explanation);
+            } else {
+                selectedOption.classList.add('incorrect');
+                // Show correct answer using the saved shuffled options
+                imageOptions.forEach((option, i) => {
+                    if (currentShuffledOptions[i] && currentShuffledOptions[i].isCorrect) {
+                        option.classList.add('correct');
+                    }
+                });
+                showFeedback(false, word.explanation);
+            }
+
+            updateScore();
+            // Always show Next button after answer is submitted
+            document.getElementById('nextBtn').style.display = 'block';
+        }
+
+        function showFeedback(isCorrect, explanation) {
+            const feedback = document.getElementById('feedback');
+            feedback.className = `feedback ${isCorrect ? 'correct' : 'incorrect'} show`;
+            feedback.innerHTML = `
+                <div class="feedback-icon">${isCorrect ? '✓' : '✗'}</div>
+                <div class="feedback-title">${isCorrect ? '¡Correcto! Correct!' : '¡Incorrecto! Incorrect'}</div>
+                <div class="feedback-text">${explanation}</div>
+            `;
+        }
+
+        function updateScore() {
+            document.getElementById('score').textContent = score;
+            document.getElementById('attempted').textContent = attempted;
+        }
+
+        function nextWord() {
+            currentWordIndex++;
+
+            // Check if round is complete
+            if (currentWordIndex % wordsPerRound === 0 || currentWordIndex >= vocabularyData.length) {
+                showResults();
+            } else {
+                loadWord();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('gameContainer').style.display = 'none';
+            document.getElementById('results').classList.add('show');
+
+            const wordsInRound = Math.min(wordsPerRound, vocabularyData.length - (currentRound - 1) * wordsPerRound);
+            const roundScore = score - ((currentRound - 1) * wordsPerRound);
+            const percentage = Math.round((roundScore / wordsInRound) * 100);
+
+            document.getElementById('finalScore').textContent = percentage + '%';
+            document.getElementById('correctAnswers').textContent = roundScore;
+            document.getElementById('totalAttempted').textContent = wordsInRound;
+        }
+
+        function nextRound() {
+            if (currentWordIndex >= vocabularyData.length) {
+                alert('🎉 ¡Felicidades! You completed all vocabulary! / ¡Completaste todo el vocabulario!');
+                restartGame();
+                return;
+            }
+
+            currentRound++;
+            document.getElementById('gameContainer').style.display = 'block';
+            document.getElementById('results').classList.remove('show');
+            loadWord();
+        }
+
+        function restartGame() {
+            currentRound = 1;
+            currentWordIndex = 0;
+            score = 0;
+            attempted = 0;
+            answerSubmitted = false;
+
+            document.getElementById('gameContainer').style.display = 'block';
+            document.getElementById('results').classList.remove('show');
+            updateScore();
+            loadWord();
+        }
+
+        // Initialize game
+        init();
+    </script>
+</body>
+</html>

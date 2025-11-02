@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Vocabulary Trainer - Entrenador de Vocabulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab {
+            background: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        .tab:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .section {
+            display: none;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.5s;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #f5576c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .flashcards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .flashcard {
+            perspective: 1000px;
+            height: 300px;
+            cursor: pointer;
+        }
+
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front, .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .flashcard-front {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .flashcard-back {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-image {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background: white;
+            padding: 10px;
+        }
+
+        .flashcard-word {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .flashcard-translation {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .flashcard-example {
+            font-size: 1em;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .flashcard-hint {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .planets-game {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .planet-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            cursor: grab;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .planet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .planet-card.dragging {
+            opacity: 0.5;
+            cursor: grabbing;
+        }
+
+        .planet-card.correct {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+
+        .planet-card.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .planet-image {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .planet-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .planet-type {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .drop-zones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .drop-zone {
+            min-height: 200px;
+            border: 3px dashed #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .drop-zone.drag-over {
+            background: #e7f3ff;
+            border-color: #667eea;
+        }
+
+        .drop-zone-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .inner-zone .drop-zone-title {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .outer-zone .drop-zone-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .match-game {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .match-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .match-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+            border: 3px solid transparent;
+        }
+
+        .match-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .match-item.selected {
+            border-color: #ffc107;
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+        }
+
+        .match-item.matched {
+            background: #28a745;
+            cursor: default;
+            opacity: 0.7;
+        }
+
+        .spanish-column .match-item {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .score-display {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff3cd;
+            border-radius: 10px;
+            color: #856404;
+            font-weight: bold;
+        }
+
+        .instructions {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+        }
+
+        .instructions h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .concept-image {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .concept-word {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .concept-translation {
+            font-size: 1.2em;
+            color: #f5576c;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .flashcards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .match-game {
+                grid-template-columns: 1fr;
+            }
+
+            .drop-zones {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Science Vocabulary Trainer 🌟</h1>
+            <p>Entrenador de Vocabulario para Ciencias</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showSection('flashcards')">📚 Flashcards</div>
+            <div class="tab" onclick="showSection('planets')">🪐 Planets Game</div>
+            <div class="tab" onclick="showSection('geography')">🌍 Geography</div>
+            <div class="tab" onclick="showSection('match')">🎯 Match Game</div>
+        </div>
+
+        <!-- FLASHCARDS SECTION -->
+        <div class="section active" id="flashcards">
+            <div class="section-title">📚 Flashcards - Tarjetas de Vocabulario</div>
+            <div class="instructions">
+                <h3>Instrucciones:</h3>
+                <p>Haz click en cada tarjeta para voltearla y ver la traducción y ejemplo. ¡Practica hasta que las recuerdes todas!</p>
+            </div>
+
+            <div class="flashcards-grid" id="flashcardsContainer">
+                <!-- Flashcards will be generated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- PLANETS GAME SECTION -->
+        <div class="section" id="planets">
+            <div class="section-title">🪐 Planet Classification Game</div>
+            <div class="instructions">
+                <h3>Instrucciones:</h3>
+                <p>Arrastra cada planeta a la categoría correcta: <strong>Inner Planets</strong> (Planetas Interiores) o <strong>Outer Planets</strong> (Planetas Exteriores)</p>
+            </div>
+
+            <div class="score-display" id="planetScore">Score: 0 / 8</div>
+
+            <div class="drop-zones">
+                <div class="drop-zone inner-zone" id="innerZone" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <div class="drop-zone-title">🔥 Inner Planets<br>(Planetas Interiores)</div>
+                    <p style="text-align: center; color: #666;">Smaller, rocky planets</p>
+                </div>
+                <div class="drop-zone outer-zone" id="outerZone" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <div class="drop-zone-title">❄️ Outer Planets<br>(Planetas Exteriores)</div>
+                    <p style="text-align: center; color: #666;">Larger, gas giants</p>
+                </div>
+            </div>
+
+            <div class="planets-game" id="planetsContainer">
+                <!-- Planets will be generated by JavaScript -->
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn" onclick="resetPlanetsGame()">🔄 Reset Game</button>
+            </div>
+        </div>
+
+        <!-- GEOGRAPHY SECTION -->
+        <div class="section" id="geography">
+            <div class="section-title">🌍 Geography Vocabulary</div>
+            <div class="instructions">
+                <h3>Instrucciones:</h3>
+                <p>Estudia estos conceptos importantes de geografía. Pasa el mouse sobre cada tarjeta para ver más detalles.</p>
+            </div>
+
+            <div class="concept-grid" id="geographyContainer">
+                <!-- Geography concepts will be generated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- MATCH GAME SECTION -->
+        <div class="section" id="match">
+            <div class="section-title">🎯 Match Game - Juego de Emparejar</div>
+            <div class="instructions">
+                <h3>Instrucciones:</h3>
+                <p>Haz click en una palabra en inglés y luego en su traducción en español. ¡Encuentra todas las parejas!</p>
+            </div>
+
+            <div class="score-display" id="matchScore">Matches: 0 / 10</div>
+
+            <div class="match-game">
+                <div class="match-column english-column" id="englishColumn">
+                    <!-- English words -->
+                </div>
+                <div class="match-column spanish-column" id="spanishColumn">
+                    <!-- Spanish words -->
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn" onclick="resetMatchGame()">🔄 Reset Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // FLASHCARDS DATA
+        const flashcardsData = [
+            {
+                word: "Planet",
+                translation: "Planeta",
+                image: "🪐",
+                example: "Earth is a planet"
+            },
+            {
+                word: "Star",
+                translation: "Estrella",
+                image: "⭐",
+                example: "The Sun is a star"
+            },
+            {
+                word: "Inner",
+                translation: "Interior",
+                image: "🔴",
+                example: "Inner planets are closer to the Sun"
+            },
+            {
+                word: "Outer",
+                translation: "Exterior",
+                image: "🔵",
+                example: "Outer planets are farther from the Sun"
+            },
+            {
+                word: "Orbit",
+                translation: "Órbita",
+                image: "🌀",
+                example: "Planets orbit around the Sun"
+            },
+            {
+                word: "Rotate",
+                translation: "Rotar / Girar",
+                image: "↻",
+                example: "Earth rotates on its axis"
+            },
+            {
+                word: "Revolve",
+                translation: "Girar alrededor de",
+                image: "🔄",
+                example: "Earth revolves around the Sun"
+            },
+            {
+                word: "Axis",
+                translation: "Eje",
+                image: "📏",
+                example: "Earth spins on its axis"
+            },
+            {
+                word: "Hemisphere",
+                translation: "Hemisferio",
+                image: "🌓",
+                example: "Northern Hemisphere"
+            },
+            {
+                word: "Equator",
+                translation: "Ecuador",
+                image: "➖",
+                example: "The Equator divides Earth"
+            },
+            {
+                word: "Longitude",
+                translation: "Longitud",
+                image: "📍",
+                example: "Lines of longitude run North to South"
+            },
+            {
+                word: "Latitude",
+                translation: "Latitud",
+                image: "↔️",
+                example: "Lines of latitude run East to West"
+            },
+            {
+                word: "Weather",
+                translation: "Clima (corto plazo)",
+                image: "⛅",
+                example: "Today's weather is sunny"
+            },
+            {
+                word: "Climate",
+                translation: "Clima (largo plazo)",
+                image: "🌡️",
+                example: "The climate here is hot"
+            },
+            {
+                word: "Continent",
+                translation: "Continente",
+                image: "🗺️",
+                example: "Africa is a continent"
+            },
+            {
+                word: "Ocean",
+                translation: "Océano",
+                image: "🌊",
+                example: "The Pacific Ocean"
+            }
+        ];
+
+        // PLANETS DATA
+        const planetsData = [
+            { name: "Mercury", spanish: "Mercurio", type: "inner", emoji: "☿️" },
+            { name: "Venus", spanish: "Venus", type: "inner", emoji: "♀️" },
+            { name: "Earth", spanish: "Tierra", type: "inner", emoji: "🌍" },
+            { name: "Mars", spanish: "Marte", type: "inner", emoji: "♂️" },
+            { name: "Jupiter", spanish: "Júpiter", type: "outer", emoji: "♃" },
+            { name: "Saturn", spanish: "Saturno", type: "outer", emoji: "♄" },
+            { name: "Uranus", spanish: "Urano", type: "outer", emoji: "♅" },
+            { name: "Neptune", spanish: "Neptuno", type: "outer", emoji: "♆" }
+        ];
+
+        // GEOGRAPHY CONCEPTS
+        const geographyData = [
+            { word: "Northern Hemisphere", spanish: "Hemisferio Norte", emoji: "🔝", description: "The half of Earth above the Equator" },
+            { word: "Southern Hemisphere", spanish: "Hemisferio Sur", emoji: "🔽", description: "The half of Earth below the Equator" },
+            { word: "Eastern Hemisphere", spanish: "Hemisferio Este", emoji: "➡️", description: "The half of Earth east of the Prime Meridian" },
+            { word: "Western Hemisphere", spanish: "Hemisferio Oeste", emoji: "⬅️", description: "The half of Earth west of the Prime Meridian" },
+            { word: "Prime Meridian", spanish: "Meridiano de Greenwich", emoji: "📍", description: "The line at 0° longitude" },
+            { word: "North Pole", spanish: "Polo Norte", emoji: "🧊", description: "The northernmost point on Earth" },
+            { word: "South Pole", spanish: "Polo Sur", emoji: "🐧", description: "The southernmost point on Earth" },
+            { word: "Season", spanish: "Estación", emoji: "🍂", description: "Spring, Summer, Fall, Winter" }
+        ];
+
+        // MATCH GAME DATA
+        const matchGameData = [
+            { english: "Rotate", spanish: "Rotar" },
+            { english: "Revolve", spanish: "Girar alrededor" },
+            { english: "Inner", spanish: "Interior" },
+            { english: "Outer", spanish: "Exterior" },
+            { english: "Planet", spanish: "Planeta" },
+            { english: "Star", spanish: "Estrella" },
+            { english: "Orbit", spanish: "Órbita" },
+            { english: "Hemisphere", spanish: "Hemisferio" },
+            { english: "Equator", spanish: "Ecuador" },
+            { english: "Weather", spanish: "Clima del día" }
+        ];
+
+        let planetScore = 0;
+        let matchScore = 0;
+        let selectedEnglish = null;
+        let selectedSpanish = null;
+
+        // INITIALIZE
+        function init() {
+            generateFlashcards();
+            generatePlanets();
+            generateGeography();
+            generateMatchGame();
+        }
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // FLASHCARDS
+        function generateFlashcards() {
+            const container = document.getElementById('flashcardsContainer');
+            flashcardsData.forEach((card, index) => {
+                const flashcard = document.createElement('div');
+                flashcard.className = 'flashcard';
+                flashcard.onclick = () => flipCard(index);
+                flashcard.innerHTML = `
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="flashcard-image" style="font-size: 3em;">${card.image}</div>
+                            <div class="flashcard-word">${card.word}</div>
+                            <div class="flashcard-hint">Click to flip!</div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-translation">${card.translation}</div>
+                            <div class="flashcard-example">"${card.example}"</div>
+                            <div class="flashcard-hint">Click to flip back!</div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(flashcard);
+            });
+        }
+
+        function flipCard(index) {
+            const cards = document.querySelectorAll('.flashcard');
+            cards[index].classList.toggle('flipped');
+        }
+
+        // PLANETS GAME
+        function generatePlanets() {
+            const container = document.getElementById('planetsContainer');
+            const shuffled = [...planetsData].sort(() => Math.random() - 0.5);
+
+            shuffled.forEach((planet, index) => {
+                const card = document.createElement('div');
+                card.className = 'planet-card';
+                card.draggable = true;
+                card.id = `planet-${index}`;
+                card.dataset.type = planet.type;
+                card.ondragstart = drag;
+                card.innerHTML = `
+                    <div class="planet-image" style="font-size: 4em;">${planet.emoji}</div>
+                    <div class="planet-name">${planet.name}</div>
+                    <div class="planet-type">${planet.spanish}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+            event.target.classList.add('dragging');
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+            event.currentTarget.classList.add('drag-over');
+        }
+
+        function dragLeave(event) {
+            event.currentTarget.classList.remove('drag-over');
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text");
+            const draggedElement = document.getElementById(data);
+            const dropZone = event.currentTarget;
+
+            dropZone.classList.remove('drag-over');
+            draggedElement.classList.remove('dragging');
+
+            const planetType = draggedElement.dataset.type;
+            const isInnerZone = dropZone.id === 'innerZone';
+            const isCorrect = (isInnerZone && planetType === 'inner') || (!isInnerZone && planetType === 'outer');
+
+            if (isCorrect) {
+                draggedElement.classList.add('correct');
+                draggedElement.draggable = false;
+                dropZone.appendChild(draggedElement);
+                planetScore++;
+                document.getElementById('planetScore').textContent = `Score: ${planetScore} / 8`;
+
+                if (planetScore === 8) {
+                    setTimeout(() => {
+                        alert('🎉 ¡Perfecto! You classified all planets correctly!\n¡Clasificaste todos los planetas correctamente!');
+                    }, 500);
+                }
+            } else {
+                draggedElement.classList.add('incorrect');
+                setTimeout(() => {
+                    draggedElement.classList.remove('incorrect');
+                }, 600);
+            }
+        }
+
+        function resetPlanetsGame() {
+            planetScore = 0;
+            document.getElementById('planetScore').textContent = 'Score: 0 / 8';
+            document.getElementById('planetsContainer').innerHTML = '';
+            document.getElementById('innerZone').querySelectorAll('.planet-card').forEach(card => card.remove());
+            document.getElementById('outerZone').querySelectorAll('.planet-card').forEach(card => card.remove());
+            generatePlanets();
+        }
+
+        // GEOGRAPHY
+        function generateGeography() {
+            const container = document.getElementById('geographyContainer');
+            geographyData.forEach(concept => {
+                const card = document.createElement('div');
+                card.className = 'concept-card';
+                card.innerHTML = `
+                    <div class="concept-image" style="font-size: 4em; line-height: 150px;">${concept.emoji}</div>
+                    <div class="concept-word">${concept.word}</div>
+                    <div class="concept-translation">${concept.spanish}</div>
+                    <p style="color: #666; margin-top: 10px; font-size: 0.9em;">${concept.description}</p>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // MATCH GAME
+        function generateMatchGame() {
+            const englishColumn = document.getElementById('englishColumn');
+            const spanishColumn = document.getElementById('spanishColumn');
+
+            const shuffledEnglish = [...matchGameData].sort(() => Math.random() - 0.5);
+            const shuffledSpanish = [...matchGameData].sort(() => Math.random() - 0.5);
+
+            shuffledEnglish.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.dataset.word = item.english;
+                div.textContent = item.english;
+                div.onclick = () => selectEnglish(div);
+                englishColumn.appendChild(div);
+            });
+
+            shuffledSpanish.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.dataset.translation = item.english;
+                div.textContent = item.spanish;
+                div.onclick = () => selectSpanish(div);
+                spanishColumn.appendChild(div);
+            });
+        }
+
+        function selectEnglish(element) {
+            if (element.classList.contains('matched')) return;
+
+            document.querySelectorAll('.english-column .match-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+
+            element.classList.add('selected');
+            selectedEnglish = element;
+
+            if (selectedSpanish) {
+                checkMatch();
+            }
+        }
+
+        function selectSpanish(element) {
+            if (element.classList.contains('matched')) return;
+
+            document.querySelectorAll('.spanish-column .match-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+
+            element.classList.add('selected');
+            selectedSpanish = element;
+
+            if (selectedEnglish) {
+                checkMatch();
+            }
+        }
+
+        function checkMatch() {
+            const englishWord = selectedEnglish.dataset.word;
+            const spanishTranslation = selectedSpanish.dataset.translation;
+
+            if (englishWord === spanishTranslation) {
+                selectedEnglish.classList.add('matched');
+                selectedSpanish.classList.add('matched');
+                selectedEnglish.classList.remove('selected');
+                selectedSpanish.classList.remove('selected');
+                matchScore++;
+                document.getElementById('matchScore').textContent = `Matches: ${matchScore} / 10`;
+
+                if (matchScore === 10) {
+                    setTimeout(() => {
+                        alert('🎉 ¡Excelente! You matched all words!\n¡Emparejaste todas las palabras!');
+                    }, 500);
+                }
+            } else {
+                setTimeout(() => {
+                    selectedEnglish.classList.remove('selected');
+                    selectedSpanish.classList.remove('selected');
+                }, 1000);
+            }
+
+            selectedEnglish = null;
+            selectedSpanish = null;
+        }
+
+        function resetMatchGame() {
+            matchScore = 0;
+            document.getElementById('matchScore').textContent = 'Matches: 0 / 10';
+            document.getElementById('englishColumn').innerHTML = '';
+            document.getElementById('spanishColumn').innerHTML = '';
+            selectedEnglish = null;
+            selectedSpanish = null;
+            generateMatchGame();
+        }
+
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>
