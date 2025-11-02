@@ -49,6 +49,7 @@
             padding: 15px;
             text-align: center;
             flex-shrink: 0;
+            position: relative;
         }
 
         .header h1 {
@@ -59,6 +60,32 @@
         .header p {
             font-size: 1em;
             opacity: 0.9;
+        }
+
+        .home-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .home-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-50%) scale(1.05);
         }
 
         .game-info {
@@ -487,6 +514,18 @@
                 font-size: 0.85em;
             }
 
+            .home-btn {
+                position: static;
+                transform: none;
+                margin-bottom: 10px;
+                font-size: 0.8em;
+                padding: 6px 12px;
+            }
+
+            .home-btn:hover {
+                transform: scale(1.05);
+            }
+
             .game-info {
                 padding: 8px 10px;
                 flex-wrap: wrap;
@@ -680,6 +719,7 @@
 <body>
     <div class="container">
         <div class="header">
+            <a href="/" class="home-btn">🏠 Home</a>
             <h1>🎧 Audio Listening Game 🎧</h1>
             <p>Juego de Escuchar - Listen and Match</p>
         </div>

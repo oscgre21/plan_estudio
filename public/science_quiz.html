@@ -32,6 +32,7 @@
             color: white;
             padding: 30px;
             text-align: center;
+            position: relative;
         }
 
         .header h1 {
@@ -42,6 +43,46 @@
         .header p {
             font-size: 1.2em;
             opacity: 0.9;
+        }
+
+        .home-btn {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .home-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .home-btn {
+                position: static;
+                transform: none;
+                margin-bottom: 15px;
+                font-size: 0.85em;
+                padding: 8px 16px;
+            }
+
+            .home-btn:hover {
+                transform: scale(1.05);
+            }
         }
 
         .progress-bar {
@@ -369,6 +410,7 @@
 <body>
     <div class="container">
         <div class="header">
+            <a href="/" class="home-btn">🏠 Home</a>
             <h1>🌟 Science Quiz Review 🌟</h1>
             <p>Interactive Practice for Jearlenis</p>
         </div>
