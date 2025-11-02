@@ -27,6 +27,10 @@ app.get('/quiz', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'science_quiz.html'));
 });
 
+app.get('/audio-game', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'audio_listening_game.html'));
+});
+
 // Start server
 app.listen(PORT, () => {
     console.log(`
@@ -40,6 +44,7 @@ app.listen(PORT, () => {
     ║   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ║
     ║   📚 Home (Menu):          http://localhost:${PORT}/           ║
     ║   🎨 Visual Word Game:     http://localhost:${PORT}/visual-game║
+    ║   🎧 Audio Listening Game: http://localhost:${PORT}/audio-game ║
     ║   📖 Vocabulary Trainer:   http://localhost:${PORT}/vocabulary ║
     ║   ✅ Science Quiz:         http://localhost:${PORT}/quiz       ║
     ║                                                           ║
