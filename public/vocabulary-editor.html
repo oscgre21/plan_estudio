@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Editor - CRUD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e0e0e0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .content {
+            display: flex;
+            min-height: 600px;
+        }
+
+        .sidebar {
+            width: 350px;
+            border-right: 2px solid #e0e0e0;
+            overflow-y: auto;
+            max-height: calc(100vh - 280px);
+        }
+
+        .word-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .word-item:hover {
+            background: #f8f9fa;
+        }
+
+        .word-item.active {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid #667eea;
+        }
+
+        .word-item-word {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .word-item-spanish {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .editor {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            max-height: calc(100vh - 280px);
+        }
+
+        .editor-empty {
+            text-align: center;
+            padding: 100px 20px;
+            color: #999;
+        }
+
+        .editor-empty-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .form-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-section-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .options-list {
+            margin-top: 15px;
+        }
+
+        .option-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+        }
+
+        .option-item.correct {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+
+        .option-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .option-header label {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .option-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .audio-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .audio-controls button {
+            flex: 1;
+        }
+
+        .save-actions {
+            display: flex;
+            gap: 15px;
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-top: 2px solid #e0e0e0;
+            justify-content: flex-end;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .status-message {
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px 30px;
+            display: none;
+        }
+
+        .status-message.show {
+            display: block;
+        }
+
+        .status-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #28a745;
+        }
+
+        .status-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #dc3545;
+        }
+
+        .image-preview {
+            max-width: 100px;
+            max-height: 100px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                max-height: 300px;
+                border-right: none;
+                border-bottom: 2px solid #e0e0e0;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Vocabulary Editor</h1>
+            <p>Edit words, translations, images, and regenerate audio files</p>
+        </div>
+
+        <div class="status-message" id="statusMessage"></div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search words...">
+            </div>
+            <button class="btn btn-primary" onclick="saveAll()">💾 Save All Changes</button>
+            <a href="/" class="btn btn-secondary">🏠 Back to Games</a>
+        </div>
+
+        <div class="content">
+            <div class="sidebar" id="wordsList">
+                <div class="loading">Loading vocabulary...</div>
+            </div>
+
+            <div class="editor" id="editor">
+                <div class="editor-empty">
+                    <div class="editor-empty-icon">📖</div>
+                    <h2>Select a word to edit</h2>
+                    <p>Choose a word from the list on the left</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let vocabularyData = [];
+        let currentEditingIndex = -1;
+        let hasUnsavedChanges = false;
+
+        // Load vocabulary data
+        async function loadVocabulary() {
+            try {
+                const response = await fetch('vocabulary-data.json');
+                vocabularyData = await response.json();
+                renderWordsList();
+            } catch (error) {
+                console.error('Error loading vocabulary:', error);
+                showStatus('Failed to load vocabulary data', 'error');
+            }
+        }
+
+        // Render words list in sidebar
+        function renderWordsList(filter = '') {
+            const wordsList = document.getElementById('wordsList');
+            const filtered = vocabularyData.filter(word =>
+                word.word.toLowerCase().includes(filter.toLowerCase()) ||
+                word.spanish.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            wordsList.innerHTML = filtered.map((word, index) => {
+                const originalIndex = vocabularyData.indexOf(word);
+                const activeClass = originalIndex === currentEditingIndex ? 'active' : '';
+                return `
+                    <div class="word-item ${activeClass}" onclick="editWord(${originalIndex})">
+                        <div class="word-item-word">${word.word}</div>
+                        <div class="word-item-spanish">${word.spanish}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Edit a word
+        function editWord(index) {
+            if (hasUnsavedChanges) {
+                if (!confirm('You have unsaved changes. Continue?')) {
+                    return;
+                }
+            }
+
+            currentEditingIndex = index;
+            const word = vocabularyData[index];
+
+            const editor = document.getElementById('editor');
+            editor.innerHTML = `
+                <div class="form-section">
+                    <div class="form-section-title">📝 Basic Information</div>
+
+                    <div class="form-group">
+                        <label>Word (English)</label>
+                        <input type="text" id="word" value="${word.word}" onchange="markUnsaved()">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Translation (Spanish)</label>
+                        <input type="text" id="spanish" value="${word.spanish}" onchange="markUnsaved()">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sentence (English)</label>
+                        <textarea id="sentenceEN" onchange="markUnsaved()">${word.sentenceEN}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sentence (Spanish)</label>
+                        <textarea id="sentenceES" onchange="markUnsaved()">${word.sentenceES}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Explanation</label>
+                        <textarea id="explanation" onchange="markUnsaved()">${word.explanation}</textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-section-title">🎵 Audio Files</div>
+
+                    <div class="form-group">
+                        <label>Word Audio File</label>
+                        <input type="text" id="audioWord" value="${word.audioWord}" onchange="markUnsaved()">
+                        <div class="audio-controls">
+                            <button class="btn btn-secondary" onclick="playAudio('${word.audioWord}')">▶️ Play</button>
+                            <button class="btn btn-primary" onclick="regenerateWordAudio()">🔄 Regenerate</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sentence Audio File</label>
+                        <input type="text" id="audioSentence" value="${word.audioSentence}" onchange="markUnsaved()">
+                        <div class="audio-controls">
+                            <button class="btn btn-secondary" onclick="playAudio('${word.audioSentence}')">▶️ Play</button>
+                            <button class="btn btn-primary" onclick="regenerateSentenceAudio()">🔄 Regenerate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-section-title">🖼️ Answer Options</div>
+                    <div class="options-list" id="optionsList">
+                        ${word.options.map((option, i) => `
+                            <div class="option-item ${option.isCorrect ? 'correct' : ''}">
+                                <div class="option-header">
+                                    <label>Option ${i + 1}</label>
+                                    <div class="option-controls">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="correct-${i}" ${option.isCorrect ? 'checked' : ''} onchange="markUnsaved()">
+                                            <label for="correct-${i}">Correct Answer</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                ${option.image ? `
+                                    <div class="form-group">
+                                        <label>Image URL</label>
+                                        <input type="text" id="option-image-${i}" value="${option.image}" onchange="markUnsaved(); updateImagePreview(${i})">
+                                        <img src="${option.image}" class="image-preview" id="preview-${i}" onerror="this.style.display='none'">
+                                    </div>
+                                ` : ''}
+
+                                <div class="form-group">
+                                    <label>Emoji</label>
+                                    <input type="text" id="option-emoji-${i}" value="${option.emoji || ''}" onchange="markUnsaved()">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Label</label>
+                                    <input type="text" id="option-label-${i}" value="${option.label}" onchange="markUnsaved()">
+                                </div>
+
+                                ${option.fallbackEmoji ? `
+                                    <div class="form-group">
+                                        <label>Fallback Emoji</label>
+                                        <input type="text" id="option-fallback-${i}" value="${option.fallbackEmoji}" onchange="markUnsaved()">
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="save-actions">
+                    <button class="btn btn-danger" onclick="cancelEdit()">❌ Cancel</button>
+                    <button class="btn btn-success" onclick="saveCurrentWord()">✅ Save Word</button>
+                </div>
+            `;
+
+            renderWordsList();
+        }
+
+        // Update image preview
+        function updateImagePreview(index) {
+            const input = document.getElementById(`option-image-${index}`);
+            const preview = document.getElementById(`preview-${index}`);
+            if (input && preview) {
+                preview.src = input.value;
+                preview.style.display = 'block';
+            }
+        }
+
+        // Mark as unsaved
+        function markUnsaved() {
+            hasUnsavedChanges = true;
+        }
+
+        // Save current word
+        function saveCurrentWord() {
+            const word = vocabularyData[currentEditingIndex];
+
+            // Update basic info
+            word.word = document.getElementById('word').value;
+            word.spanish = document.getElementById('spanish').value;
+            word.sentenceEN = document.getElementById('sentenceEN').value;
+            word.sentenceES = document.getElementById('sentenceES').value;
+            word.explanation = document.getElementById('explanation').value;
+            word.audioWord = document.getElementById('audioWord').value;
+            word.audioSentence = document.getElementById('audioSentence').value;
+
+            // Update options
+            word.options.forEach((option, i) => {
+                option.isCorrect = document.getElementById(`correct-${i}`).checked;
+                option.label = document.getElementById(`option-label-${i}`).value;
+
+                const emojiInput = document.getElementById(`option-emoji-${i}`);
+                if (emojiInput) option.emoji = emojiInput.value;
+
+                const imageInput = document.getElementById(`option-image-${i}`);
+                if (imageInput) option.image = imageInput.value;
+
+                const fallbackInput = document.getElementById(`option-fallback-${i}`);
+                if (fallbackInput) option.fallbackEmoji = fallbackInput.value;
+            });
+
+            hasUnsavedChanges = false;
+            showStatus('Word saved locally. Click "Save All Changes" to persist to file.', 'success');
+            renderWordsList();
+        }
+
+        // Cancel edit
+        function cancelEdit() {
+            if (hasUnsavedChanges) {
+                if (!confirm('You have unsaved changes. Are you sure?')) {
+                    return;
+                }
+            }
+            currentEditingIndex = -1;
+            hasUnsavedChanges = false;
+            document.getElementById('editor').innerHTML = `
+                <div class="editor-empty">
+                    <div class="editor-empty-icon">📖</div>
+                    <h2>Select a word to edit</h2>
+                    <p>Choose a word from the list on the left</p>
+                </div>
+            `;
+            renderWordsList();
+        }
+
+        // Save all to file
+        async function saveAll() {
+            try {
+                const response = await fetch('/api/save-vocabulary', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(vocabularyData)
+                });
+
+                if (response.ok) {
+                    showStatus('✅ All changes saved successfully!', 'success');
+                    hasUnsavedChanges = false;
+                } else {
+                    throw new Error('Failed to save');
+                }
+            } catch (error) {
+                showStatus('❌ Failed to save changes. See console for details.', 'error');
+                console.error('Save error:', error);
+            }
+        }
+
+        // Play audio
+        function playAudio(audioPath) {
+            const audio = new Audio(audioPath);
+            audio.play().catch(err => {
+                showStatus('Failed to play audio: ' + err.message, 'error');
+            });
+        }
+
+        // Regenerate word audio
+        async function regenerateWordAudio() {
+            const word = document.getElementById('word').value;
+            const filename = document.getElementById('audioWord').value.split('/').pop();
+
+            if (!confirm(`Regenerate audio for "${word}"?`)) return;
+
+            try {
+                showStatus('🎵 Generating audio...', 'success');
+                const response = await fetch('/api/regenerate-audio', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ text: word, filename })
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    showStatus('✅ Audio regenerated successfully!', 'success');
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                showStatus('❌ Failed to regenerate audio: ' + error.message, 'error');
+            }
+        }
+
+        // Regenerate sentence audio
+        async function regenerateSentenceAudio() {
+            const sentence = document.getElementById('sentenceEN').value;
+            const filename = document.getElementById('audioSentence').value.split('/').pop();
+
+            if (!confirm(`Regenerate audio for sentence?`)) return;
+
+            try {
+                showStatus('🎵 Generating audio...', 'success');
+                const response = await fetch('/api/regenerate-audio', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ text: sentence, filename })
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    showStatus('✅ Audio regenerated successfully!', 'success');
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                showStatus('❌ Failed to regenerate audio: ' + error.message, 'error');
+            }
+        }
+
+        // Show status message
+        function showStatus(message, type) {
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = message;
+            statusMessage.className = `status-message ${type} show`;
+            setTimeout(() => {
+                statusMessage.classList.remove('show');
+            }, 5000);
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            renderWordsList(e.target.value);
+        });
+
+        // Warn before leaving with unsaved changes
+        window.addEventListener('beforeunload', (e) => {
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        // Initialize
+        loadVocabulary();
+    </script>
+</body>
+</html>
