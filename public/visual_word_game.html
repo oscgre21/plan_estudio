@@ -1806,6 +1806,20 @@
 
             document.getElementById('feedback').classList.remove('show', 'correct', 'incorrect');
             document.getElementById('nextBtn').style.display = 'none';
+
+            // Auto-play word audio when loading new word
+            if (word.audioWord) {
+                setTimeout(() => {
+                    if (currentAudio) {
+                        currentAudio.pause();
+                        currentAudio.currentTime = 0;
+                    }
+                    currentAudio = new Audio(word.audioWord);
+                    currentAudio.play().catch(err => {
+                        console.log('Auto-play prevented by browser:', err);
+                    });
+                }, 300); // Small delay to ensure page is ready
+            }
         }
 
         function selectImage(isCorrect, index) {
