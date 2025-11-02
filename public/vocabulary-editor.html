@@ -502,17 +502,15 @@
                                     </div>
                                 </div>
 
-                                ${option.image ? `
-                                    <div class="form-group">
-                                        <label>Image URL</label>
-                                        <input type="text" id="option-image-${i}" value="${option.image}" onchange="markUnsaved(); updateImagePreview(${i})">
-                                        <img src="${option.image}" class="image-preview" id="preview-${i}" onerror="this.style.display='none'">
-                                    </div>
-                                ` : ''}
+                                <div class="form-group">
+                                    <label>Image URL (optional)</label>
+                                    <input type="text" id="option-image-${i}" value="${option.image || ''}" onchange="markUnsaved(); updateImagePreview(${i})" placeholder="https://example.com/image.png">
+                                    ${option.image ? `<img src="${option.image}" class="image-preview" id="preview-${i}" onerror="this.style.display='none'">` : `<img class="image-preview" id="preview-${i}" style="display:none">`}
+                                </div>
 
                                 <div class="form-group">
                                     <label>Emoji</label>
-                                    <input type="text" id="option-emoji-${i}" value="${option.emoji || ''}" onchange="markUnsaved()">
+                                    <input type="text" id="option-emoji-${i}" value="${option.emoji || ''}" onchange="markUnsaved()" placeholder="🌍">
                                 </div>
 
                                 <div class="form-group">
@@ -520,12 +518,10 @@
                                     <input type="text" id="option-label-${i}" value="${option.label}" onchange="markUnsaved()">
                                 </div>
 
-                                ${option.fallbackEmoji ? `
-                                    <div class="form-group">
-                                        <label>Fallback Emoji</label>
-                                        <input type="text" id="option-fallback-${i}" value="${option.fallbackEmoji}" onchange="markUnsaved()">
-                                    </div>
-                                ` : ''}
+                                <div class="form-group">
+                                    <label>Fallback Emoji (optional)</label>
+                                    <input type="text" id="option-fallback-${i}" value="${option.fallbackEmoji || ''}" onchange="markUnsaved()" placeholder="❓">
+                                </div>
                             </div>
                         `).join('')}
                     </div>
@@ -573,14 +569,38 @@
                 option.isCorrect = document.getElementById(`correct-${i}`).checked;
                 option.label = document.getElementById(`option-label-${i}`).value;
 
+                // Handle emoji
                 const emojiInput = document.getElementById(`option-emoji-${i}`);
-                if (emojiInput) option.emoji = emojiInput.value;
+                if (emojiInput) {
+                    const emojiValue = emojiInput.value.trim();
+                    if (emojiValue) {
+                        option.emoji = emojiValue;
+                    } else if (option.emoji) {
+                        delete option.emoji;
+                    }
+                }
 
+                // Handle image URL
                 const imageInput = document.getElementById(`option-image-${i}`);
-                if (imageInput) option.image = imageInput.value;
+                if (imageInput) {
+                    const imageValue = imageInput.value.trim();
+                    if (imageValue) {
+                        option.image = imageValue;
+                    } else if (option.image) {
+                        delete option.image;
+                    }
+                }
 
+                // Handle fallback emoji
                 const fallbackInput = document.getElementById(`option-fallback-${i}`);
-                if (fallbackInput) option.fallbackEmoji = fallbackInput.value;
+                if (fallbackInput) {
+                    const fallbackValue = fallbackInput.value.trim();
+                    if (fallbackValue) {
+                        option.fallbackEmoji = fallbackValue;
+                    } else if (option.fallbackEmoji) {
+                        delete option.fallbackEmoji;
+                    }
+                }
             });
 
             hasUnsavedChanges = false;
