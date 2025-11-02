@@ -556,6 +556,217 @@
             min-width: 200px;
         }
 
+        /* Mode Selection Styles */
+        .mode-selection {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .mode-selection.show {
+            display: block;
+        }
+
+        .mode-selection h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .mode-selection > p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .mode-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .mode-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .mode-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .mode-easy { border-color: #28a745; }
+        .mode-easy:hover { background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); }
+
+        .mode-medium { border-color: #ffc107; }
+        .mode-medium:hover { background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); }
+
+        .mode-hard { border-color: #fd7e14; }
+        .mode-hard:hover { background: linear-gradient(135deg, #ffe5d0 0%, #ffd4b3 100%); }
+
+        .mode-ultra { border-color: #dc3545; }
+        .mode-ultra:hover { background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%); }
+
+        .mode-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+
+        .mode-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .mode-time {
+            font-size: 1.1em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .mode-desc {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Timer Styles */
+        .timer-container {
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 20px;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .timer-safe {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border: 2px solid #28a745;
+        }
+
+        .timer-warning {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border: 2px solid #ffc107;
+        }
+
+        .timer-danger {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            border: 2px solid #dc3545;
+            animation: timerPulse 1s infinite;
+        }
+
+        @keyframes timerPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .timer-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .timer-display {
+            font-size: 3em;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
+
+        /* Game Over Styles */
+        .game-over-screen {
+            display: none;
+            padding: 30px 20px 120px;
+            text-align: center;
+            overflow-y: auto;
+            max-height: calc(100vh - 100px);
+        }
+
+        .game-over-screen.show {
+            display: block;
+        }
+
+        .game-over-screen h2 {
+            font-size: 2.5em;
+            color: #dc3545;
+            margin-bottom: 10px;
+            animation: fadeIn 0.5s;
+        }
+
+        .game-over-screen h3 {
+            font-size: 2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .game-over-stats {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #dc3545;
+        }
+
+        .game-over-stats > p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .stat-item {
+            font-size: 1.1em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .game-over-screen h4 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin: 30px 0 20px;
+            text-align: left;
+        }
+
+        .game-over-breakdown {
+            text-align: left;
+        }
+
+        .game-over-message {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe0b2 100%);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+        }
+
+        .game-over-message p {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #856404;
+            margin: 5px 0;
+        }
+
+        .game-over-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .game-over-actions .btn {
+            min-width: 200px;
+        }
+
         .round-info {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
@@ -840,6 +1051,38 @@
                 min-width: 150px;
                 font-size: 0.9em;
             }
+
+            .mode-selection h2 {
+                font-size: 1.8em;
+            }
+
+            .mode-selection > p {
+                font-size: 1em;
+            }
+
+            .mode-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .mode-icon {
+                font-size: 3em;
+            }
+
+            .timer-display {
+                font-size: 2em;
+            }
+
+            .game-over-screen h2 {
+                font-size: 1.8em;
+            }
+
+            .game-over-screen h3 {
+                font-size: 1.5em;
+            }
+
+            .game-over-actions .btn {
+                min-width: 150px;
+            }
         }
 
         /* Small phones */
@@ -894,14 +1137,255 @@
                 font-size: 0.75em;
             }
         }
+
+        /* Progress Tracker Styles */
+        .progress-tracker-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .progress-tracker-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .progress-tracker-btn .tracker-summary {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .progress-panel {
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            min-width: 320px;
+            max-width: 400px;
+            z-index: 1000;
+            display: none;
+            animation: slideDown 0.3s ease;
+        }
+
+        .progress-panel.active {
+            display: block;
+        }
+
+        .progress-panel-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .progress-panel-header h3 {
+            font-size: 1.3em;
+            color: #667eea;
+            margin: 0;
+        }
+
+        .progress-round-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .progress-round-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+        }
+
+        .progress-round-item.completed {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+        }
+
+        .progress-round-item.in-progress {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border: 2px solid #f39c12;
+        }
+
+        .progress-round-item.locked {
+            background: #e9ecef;
+            opacity: 0.6;
+        }
+
+        .round-label {
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .round-score {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .progress-total {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .progress-total-label {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .progress-total-score {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .progress-percentage {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Performance color coding */
+        .perf-excellent { color: #27ae60; }
+        .perf-good { color: #3498db; }
+        .perf-average { color: #f39c12; }
+        .perf-below { color: #e74c3c; }
+
+        @media (max-width: 768px) {
+            .progress-tracker-btn {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+                font-size: 0.75em;
+                padding: 6px 12px;
+            }
+
+            .progress-tracker-btn:hover {
+                transform: scale(1.05);
+            }
+
+            .progress-panel {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                right: auto;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                max-width: 350px;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            .progress-round-item {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Mode Selection Screen -->
+        <div class="mode-selection show" id="modeSelection">
+            <h2>🎮 Select Difficulty Mode 🎮</h2>
+            <p>Selecciona Modo de Dificultad</p>
+
+            <div class="mode-cards">
+                <div class="mode-card mode-easy" onclick="selectMode('easy')">
+                    <div class="mode-icon">🟢</div>
+                    <div class="mode-name">EASY / FÁCIL</div>
+                    <div class="mode-time">⏰ 30 Minutes</div>
+                    <div class="mode-desc">Perfect for learning<br>Perfecto para aprender</div>
+                </div>
+
+                <div class="mode-card mode-medium" onclick="selectMode('medium')">
+                    <div class="mode-icon">🟡</div>
+                    <div class="mode-name">MEDIUM / MEDIO</div>
+                    <div class="mode-time">⏰ 20 Minutes</div>
+                    <div class="mode-desc">Good challenge<br>Buen desafío</div>
+                </div>
+
+                <div class="mode-card mode-hard" onclick="selectMode('hard')">
+                    <div class="mode-icon">🟠</div>
+                    <div class="mode-name">HARD / DIFÍCIL</div>
+                    <div class="mode-time">⏰ 10 Minutes</div>
+                    <div class="mode-desc">For advanced learners<br>Para avanzados</div>
+                </div>
+
+                <div class="mode-card mode-ultra" onclick="selectMode('ultra')">
+                    <div class="mode-icon">🔴</div>
+                    <div class="mode-name">ULTRA</div>
+                    <div class="mode-time">⏰ 5 Minutes</div>
+                    <div class="mode-desc">Extreme speed challenge!<br>¡Desafío extremo!</div>
+                </div>
+            </div>
+
+            <a href="/" class="btn btn-secondary">🏠 Back to Menu / Volver al Menú</a>
+        </div>
+
         <div class="header">
             <a href="/" class="home-btn">🏠 Home</a>
             <h1>🎧 Audio Listening Game 🎧</h1>
             <p>Juego de Escuchar - Listen and Match</p>
+
+            <!-- Progress Tracker Button -->
+            <button class="progress-tracker-btn" id="progressTrackerBtn" onclick="toggleProgressPanel()" style="display: none;">
+                <span>📊</span>
+                <span class="tracker-summary" id="trackerSummary">R1 | 0/0</span>
+            </button>
+
+            <!-- Progress Panel (Dropdown) -->
+            <div class="progress-panel" id="progressPanel">
+                <div class="progress-panel-header">
+                    <span style="font-size: 1.5em;">📊</span>
+                    <h3>Your Progress / Tu Progreso</h3>
+                </div>
+
+                <div id="progressRoundsList">
+                    <!-- Round items will be dynamically inserted here -->
+                </div>
+
+                <div class="progress-total">
+                    <div class="progress-total-label">📈 Total Accumulated / Total Acumulado</div>
+                    <div class="progress-total-score" id="progressTotalScore">0 / 0</div>
+                    <div class="progress-percentage" id="progressTotalPercentage">(0%)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timer Display -->
+        <div class="timer-container timer-safe" id="timerContainer" style="display: none;">
+            <div class="timer-label">⏱️ Time Remaining / Tiempo Restante:</div>
+            <div class="timer-display" id="timerDisplay">30:00</div>
         </div>
 
         <div class="progress-bar">
@@ -983,6 +1467,38 @@
                 </a>
             </div>
         </div>
+
+        <!-- Game Over Screen -->
+        <div class="game-over-screen" id="gameOverScreen">
+            <h2>⏰ TIME'S UP! / ¡TIEMPO AGOTADO!</h2>
+            <h3>GAME OVER</h3>
+
+            <div class="game-over-stats">
+                <p>You completed / Completaste:</p>
+                <div class="stat-item">📊 Round: <strong><span id="gameOverRounds">0/6</span></strong></div>
+                <div class="stat-item">✅ Correct: <strong><span id="gameOverScore">0/0</span> (<span id="gameOverPercentage">0%</span>)</strong></div>
+                <div class="stat-item">⏱️ Mode: <strong><span id="gameOverMode">Medium</span></strong></div>
+            </div>
+
+            <h4>Round Results / Resultados por Ronda:</h4>
+            <div class="game-over-breakdown" id="gameOverBreakdown">
+                <!-- Round results will be inserted here by JavaScript -->
+            </div>
+
+            <div class="game-over-message">
+                <p>💪 Don't give up! / ¡No te rindas!</p>
+                <p>Try again to beat the clock! / ¡Intenta de nuevo!</p>
+            </div>
+
+            <div class="game-over-actions">
+                <button class="btn btn-primary" onclick="restartGame()">
+                    🔄 Try Again / Intentar de Nuevo
+                </button>
+                <a href="/" class="btn btn-secondary">
+                    🏠 Back to Menu / Volver al Menú
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -995,7 +1511,8 @@
                 const response = await fetch('vocabulary-data.json');
                 vocabularyData = await response.json();
                 console.log(`Loaded ${vocabularyData.length} vocabulary words`);
-                init();
+                // Don't auto-start game, wait for mode selection
+                // init() will be called when user selects a mode
             } catch (error) {
                 console.error('Error loading vocabulary data:', error);
                 alert('Error loading vocabulary data. Please refresh the page.');
@@ -1004,6 +1521,20 @@
 
         // Call this when page loads
         loadVocabularyData();
+
+        // Game mode configuration
+        const gameModes = {
+            easy: { time: 30 * 60, name: 'Easy / Fácil', emoji: '🟢' },
+            medium: { time: 20 * 60, name: 'Medium / Medio', emoji: '🟡' },
+            hard: { time: 10 * 60, name: 'Hard / Difícil', emoji: '🟠' },
+            ultra: { time: 5 * 60, name: 'Ultra', emoji: '🔴' }
+        };
+
+        // Game state
+        let selectedMode = null;
+        let timeRemaining = 0;  // in seconds
+        let timerInterval = null;
+        let timerRunning = false;
 
         let currentRound = 1;
         let currentWordIndex = 0;
@@ -1026,6 +1557,249 @@
             }
             return shuffled;
         }
+
+        // Timer functions
+        function selectMode(mode) {
+            selectedMode = mode;
+
+            // Hide mode selection
+            document.getElementById('modeSelection').classList.remove('show');
+
+            // Show game elements
+            document.getElementById('timerContainer').style.display = 'block';
+
+            // Initialize and start the game
+            init();
+            startTimer();
+
+            // Initialize progress tracker
+            updateProgressTracker();
+        }
+
+        function startTimer() {
+            timeRemaining = gameModes[selectedMode].time;
+
+            // Clear any existing timer
+            if (timerInterval) {
+                clearInterval(timerInterval);
+            }
+
+            // Start countdown
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerDisplay();
+
+                if (timeRemaining <= 0) {
+                    gameOver();
+                }
+            }, 1000);
+
+            timerRunning = true;
+            updateTimerDisplay();
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            const timeString = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+            document.getElementById('timerDisplay').textContent = timeString;
+
+            // Change color based on time remaining
+            const percentage = (timeRemaining / gameModes[selectedMode].time) * 100;
+            const timerElement = document.getElementById('timerContainer');
+
+            timerElement.classList.remove('timer-safe', 'timer-warning', 'timer-danger');
+
+            if (percentage > 50) {
+                timerElement.classList.add('timer-safe');
+            } else if (percentage > 25) {
+                timerElement.classList.add('timer-warning');
+            } else {
+                timerElement.classList.add('timer-danger');
+            }
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            timerRunning = false;
+        }
+
+        function gameOver() {
+            stopTimer();
+
+            // Hide game screen
+            document.getElementById('gameContainer').style.display = 'none';
+            document.getElementById('results').classList.remove('show');
+            document.getElementById('finalSummary').classList.remove('show');
+
+            // Show game over screen
+            const gameOverScreen = document.getElementById('gameOverScreen');
+            gameOverScreen.classList.add('show');
+
+            // Calculate stats
+            const completedRounds = roundResults.length;
+            const totalAttempted = attempted;
+            const percentage = totalAttempted > 0 ? Math.round((score / totalAttempted) * 100) : 0;
+
+            // Update game over screen with stats
+            document.getElementById('gameOverRounds').textContent = `${completedRounds}/6`;
+            document.getElementById('gameOverScore').textContent = `${score}/${totalAttempted}`;
+            document.getElementById('gameOverPercentage').textContent = `${percentage}%`;
+            document.getElementById('gameOverMode').textContent = gameModes[selectedMode].name;
+
+            // Show completed rounds breakdown
+            renderGameOverBreakdown();
+
+            // Scroll to top
+            gameOverScreen.scrollTop = 0;
+        }
+
+        function renderGameOverBreakdown() {
+            const breakdown = document.getElementById('gameOverBreakdown');
+            breakdown.innerHTML = '';
+
+            if (roundResults.length === 0) {
+                breakdown.innerHTML = '<p style="text-align: center; color: #666;">No rounds completed yet / No se completaron rondas aún</p>';
+                return;
+            }
+
+            roundResults.forEach((result) => {
+                const roundDiv = document.createElement('div');
+                roundDiv.className = 'round-result';
+
+                const progressClass = getProgressClass(result.percentage);
+                const star = result.percentage === 100 ? ' ⭐' : '';
+
+                roundDiv.innerHTML = `
+                    <div class="round-result-header">
+                        <div class="round-title">Round ${result.round}: ${result.theme}</div>
+                        <div class="round-score">${result.score}/${result.total} (${result.percentage}%)${star}</div>
+                    </div>
+                    <div class="progress-bar-round">
+                        <div class="progress-fill-round ${progressClass}" style="width: ${result.percentage}%">
+                            ${result.percentage}%
+                        </div>
+                    </div>
+                `;
+
+                breakdown.appendChild(roundDiv);
+            });
+        }
+
+        // Progress Tracker Functions
+        function toggleProgressPanel() {
+            const panel = document.getElementById('progressPanel');
+            panel.classList.toggle('active');
+        }
+
+        function updateProgressTracker() {
+            // Show the progress tracker button when game starts
+            const trackerBtn = document.getElementById('progressTrackerBtn');
+            trackerBtn.style.display = 'inline-flex';
+
+            // Update summary in button
+            const totalScore = roundResults.reduce((sum, r) => sum + r.score, 0);
+            const totalQuestions = roundResults.reduce((sum, r) => sum + r.total, 0);
+            const currentRoundTotal = totalQuestions + score;
+            const currentRoundAttempted = totalQuestions + attempted;
+
+            document.getElementById('trackerSummary').textContent =
+                `R${currentRound} | ${currentRoundTotal}/${currentRoundAttempted}`;
+
+            // Update the rounds list
+            const roundsList = document.getElementById('progressRoundsList');
+            roundsList.innerHTML = '';
+
+            // Define round themes
+            const roundThemes = [
+                'Solar System',
+                'Life Science',
+                'Earth Science',
+                'Matter & Energy',
+                'Scientific Method',
+                'Environment'
+            ];
+
+            // Create items for all 6 rounds
+            for (let i = 1; i <= 6; i++) {
+                const roundItem = document.createElement('div');
+                const result = roundResults.find(r => r.round === i);
+
+                if (result) {
+                    // Completed round
+                    const perfClass = getPerformanceClass(result.percentage);
+                    roundItem.className = 'progress-round-item completed';
+                    roundItem.innerHTML = `
+                        <div class="round-label">
+                            <span>✅</span>
+                            <span>Round ${i}: ${roundThemes[i-1]}</span>
+                        </div>
+                        <div class="round-score ${perfClass}">
+                            ${result.score}/${result.total} (${result.percentage}%)
+                        </div>
+                    `;
+                } else if (i === currentRound) {
+                    // Current round in progress
+                    roundItem.className = 'progress-round-item in-progress';
+                    roundItem.innerHTML = `
+                        <div class="round-label">
+                            <span>⏳</span>
+                            <span>Round ${i}: ${roundThemes[i-1]}</span>
+                        </div>
+                        <div class="round-score">
+                            ${currentWordIndex}/${wordsPerRound} words
+                        </div>
+                    `;
+                } else {
+                    // Locked/upcoming round
+                    roundItem.className = 'progress-round-item locked';
+                    roundItem.innerHTML = `
+                        <div class="round-label">
+                            <span>🔒</span>
+                            <span>Round ${i}: ${roundThemes[i-1]}</span>
+                        </div>
+                        <div class="round-score">
+                            Pending / Pendiente
+                        </div>
+                    `;
+                }
+
+                roundsList.appendChild(roundItem);
+            }
+
+            // Update total accumulated score
+            const overallPercentage = currentRoundAttempted > 0
+                ? Math.round((currentRoundTotal / currentRoundAttempted) * 100)
+                : 0;
+
+            document.getElementById('progressTotalScore').textContent =
+                `${currentRoundTotal} / ${currentRoundAttempted}`;
+            document.getElementById('progressTotalPercentage').textContent =
+                `(${overallPercentage}%)`;
+        }
+
+        function getPerformanceClass(percentage) {
+            if (percentage >= 90) return 'perf-excellent';
+            if (percentage >= 80) return 'perf-good';
+            if (percentage >= 70) return 'perf-average';
+            return 'perf-below';
+        }
+
+        // Close progress panel when clicking outside
+        document.addEventListener('click', function(event) {
+            const panel = document.getElementById('progressPanel');
+            const btn = document.getElementById('progressTrackerBtn');
+
+            if (panel && btn && panel.classList.contains('active')) {
+                if (!panel.contains(event.target) && !btn.contains(event.target)) {
+                    panel.classList.remove('active');
+                }
+            }
+        });
 
         function init() {
             // Shuffle the vocabulary data at the start of the game
@@ -1208,6 +1982,7 @@
             }
 
             updateScore();
+            updateProgressTracker(); // Update progress tracker after each answer
             // Always show Next button after answer is submitted
             document.getElementById('nextBtn').style.display = 'block';
         }
@@ -1279,6 +2054,7 @@
             currentRound++;
             document.getElementById('gameContainer').style.display = 'block';
             document.getElementById('results').classList.remove('show');
+            updateProgressTracker(); // Update tracker when starting new round
             loadWord();
         }
 
@@ -1304,6 +2080,9 @@
         }
 
         function showFinalSummary() {
+            // Stop timer when game is completed
+            stopTimer();
+
             // Hide other screens
             document.getElementById('gameContainer').style.display = 'none';
             document.getElementById('results').classList.remove('show');
@@ -1359,6 +2138,10 @@
         }
 
         function restartGame() {
+            // Stop timer
+            stopTimer();
+
+            // Reset all game variables
             currentRound = 1;
             currentWordIndex = 0;
             score = 0;
@@ -1366,15 +2149,21 @@
             answerSubmitted = false;
             wordRevealed = false;
             roundResults = []; // Clear round results
+            selectedMode = null;
+            timeRemaining = 0;
 
-            // Re-shuffle vocabulary data when restarting
-            shuffledVocabulary = shuffleArray(vocabularyData);
-
-            document.getElementById('gameContainer').style.display = 'block';
+            // Hide all game screens
+            document.getElementById('gameContainer').style.display = 'none';
             document.getElementById('results').classList.remove('show');
             document.getElementById('finalSummary').classList.remove('show');
+            document.getElementById('gameOverScreen').classList.remove('show');
+            document.getElementById('timerContainer').style.display = 'none';
+
+            // Show mode selection
+            document.getElementById('modeSelection').classList.add('show');
+
+            // Reset score display
             updateScore();
-            loadWord();
         }
 
         // Initialize game - removed, now called after loading vocabulary data
