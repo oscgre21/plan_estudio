@@ -1894,8 +1894,21 @@
         const wordsPerRound = 15;
         let currentShuffledOptions = [];
         let currentAudio = null;
+        let shuffledVocabulary = []; // Array to hold shuffled questions
+
+        // Fisher-Yates shuffle algorithm for randomizing array
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
 
         function init() {
+            // Shuffle the vocabulary data at the start of the game
+            shuffledVocabulary = shuffleArray(vocabularyData);
             loadWord();
         }
 
@@ -1905,7 +1918,7 @@
         }
 
         function playWordAudio() {
-            const word = vocabularyData[currentWordIndex];
+            const word = shuffledVocabulary[currentWordIndex];
             if (word.audioWord) {
                 // Stop any currently playing audio
                 if (currentAudio) {
@@ -1926,7 +1939,7 @@
         }
 
         function playSentenceAudio() {
-            const word = vocabularyData[currentWordIndex];
+            const word = shuffledVocabulary[currentWordIndex];
             if (word.audioSentence) {
                 // Stop any currently playing audio
                 if (currentAudio) {
@@ -1947,7 +1960,7 @@
         }
 
         function loadWord() {
-            const word = vocabularyData[currentWordIndex];
+            const word = shuffledVocabulary[currentWordIndex];
             answerSubmitted = false;
 
             // Update display with audio buttons
@@ -1969,7 +1982,7 @@
             contextDiv.classList.remove('show'); // Hide context by default
             document.getElementById('currentRound').textContent = currentRound;
             document.getElementById('currentWord').textContent = (currentWordIndex % wordsPerRound) + 1;
-            document.getElementById('totalWords').textContent = Math.min(wordsPerRound, vocabularyData.length - (currentRound - 1) * wordsPerRound);
+            document.getElementById('totalWords').textContent = Math.min(wordsPerRound, shuffledVocabulary.length - (currentRound - 1) * wordsPerRound);
             // Round names for 6 rounds
             const roundNames = {
                 1: 'Solar System - Basics',
@@ -2030,7 +2043,7 @@
 
             const imageOptions = document.querySelectorAll('.image-option');
             const selectedOption = imageOptions[index];
-            const word = vocabularyData[currentWordIndex];
+            const word = shuffledVocabulary[currentWordIndex];
 
             if (isCorrect) {
                 score++;
@@ -2071,7 +2084,7 @@
             currentWordIndex++;
 
             // Check if round is complete
-            if (currentWordIndex % wordsPerRound === 0 || currentWordIndex >= vocabularyData.length) {
+            if (currentWordIndex % wordsPerRound === 0 || currentWordIndex >= shuffledVocabulary.length) {
                 showResults();
             } else {
                 loadWord();
@@ -2082,7 +2095,7 @@
             document.getElementById('gameContainer').style.display = 'none';
             document.getElementById('results').classList.add('show');
 
-            const wordsInRound = Math.min(wordsPerRound, vocabularyData.length - (currentRound - 1) * wordsPerRound);
+            const wordsInRound = Math.min(wordsPerRound, shuffledVocabulary.length - (currentRound - 1) * wordsPerRound);
             const roundScore = score - ((currentRound - 1) * wordsPerRound);
             const percentage = Math.round((roundScore / wordsInRound) * 100);
 
@@ -2092,7 +2105,7 @@
         }
 
         function nextRound() {
-            if (currentWordIndex >= vocabularyData.length) {
+            if (currentWordIndex >= shuffledVocabulary.length) {
                 alert('🎉 ¡Felicidades! You completed all vocabulary! / ¡Completaste todo el vocabulario!');
                 restartGame();
                 return;
@@ -2110,6 +2123,9 @@
             score = 0;
             attempted = 0;
             answerSubmitted = false;
+
+            // Re-shuffle vocabulary data when restarting
+            shuffledVocabulary = shuffleArray(vocabularyData);
 
             document.getElementById('gameContainer').style.display = 'block';
             document.getElementById('results').classList.remove('show');
