@@ -26,7 +26,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "A planet is a large celestial body that orbits around a star. Un planeta es un cuerpo celeste grande que orbita alrededor de una estrella."
+    "explanation": "A planet is a large celestial body that orbits around a star. Un planeta es un cuerpo celeste grande que orbita alrededor de una estrella.",
+    "audioWord": "audios/word-planet.mp3",
+    "audioSentence": "audios/sentence-earth-is-a-planet-in-our-solar-system.mp3"
   },
   {
     "word": "STAR",
@@ -55,7 +57,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "A star is a huge ball of burning gas that gives off light and heat. Una estrella es una enorme bola de gas ardiente que emite luz y calor."
+    "explanation": "A star is a huge ball of burning gas that gives off light and heat. Una estrella es una enorme bola de gas ardiente que emite luz y calor.",
+    "audioWord": "audios/word-star.mp3",
+    "audioSentence": "audios/sentence-the-sun-is-a-star-that-gives-us-light.mp3"
   },
   {
     "word": "ORBIT",
@@ -85,7 +89,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "An orbit is the path that a planet takes around the Sun. Una órbita es el camino que un planeta toma alrededor del Sol."
+    "explanation": "An orbit is the path that a planet takes around the Sun. Una órbita es el camino que un planeta toma alrededor del Sol.",
+    "audioWord": "audios/word-orbit.mp3",
+    "audioSentence": "audios/sentence-planets-travel-in-an-orbit-around-the-sun.mp3"
   },
   {
     "word": "ROTATE",
@@ -116,7 +122,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Rotate means to spin around on an axis. Earth rotates once every 24 hours. Rotar significa girar sobre un eje. La Tierra rota una vez cada 24 horas."
+    "explanation": "Rotate means to spin around on an axis. Earth rotates once every 24 hours. Rotar significa girar sobre un eje. La Tierra rota una vez cada 24 horas.",
+    "audioWord": "audios/word-rotate.mp3",
+    "audioSentence": "audios/sentence-earth-rotates-once-every-24-hours.mp3"
   },
   {
     "word": "REVOLVE",
@@ -147,7 +155,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Revolve means to move around something else. Earth revolves around the Sun. Girar alrededor significa moverse alrededor de algo. La Tierra gira alrededor del Sol."
+    "explanation": "Revolve means to move around something else. Earth revolves around the Sun. Girar alrededor significa moverse alrededor de algo. La Tierra gira alrededor del Sol.",
+    "audioWord": "audios/word-revolve.mp3",
+    "audioSentence": "audios/sentence-earth-revolves-around-the-sun-once-a-year.mp3"
   },
   {
     "word": "AXIS",
@@ -179,7 +189,9 @@
         "fallbackEmoji": "🔄"
       }
     ],
-    "explanation": "An axis is an imaginary line through the center of a planet around which it rotates. Un eje es una línea imaginaria a través del centro de un planeta alrededor del cual gira."
+    "explanation": "An axis is an imaginary line through the center of a planet around which it rotates. Un eje es una línea imaginaria a través del centro de un planeta alrededor del cual gira.",
+    "audioWord": "audios/word-axis.mp3",
+    "audioSentence": "audios/sentence-earth-spins-on-its-axis-every-day.mp3"
   },
   {
     "word": "INNER",
@@ -208,7 +220,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Inner means closer to the center. Inner planets are closer to the Sun. Interior significa más cerca del centro. Los planetas interiores están más cerca del Sol."
+    "explanation": "Inner means closer to the center. Inner planets are closer to the Sun. Interior significa más cerca del centro. Los planetas interiores están más cerca del Sol.",
+    "audioWord": "audios/word-inner.mp3",
+    "audioSentence": "audios/sentence-mercury-is-an-inner-planet-close-to-sun.mp3"
   },
   {
     "word": "OUTER",
@@ -237,7 +251,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Outer means farther from the center. Outer planets are farther from the Sun. Exterior significa más lejos del centro. Los planetas exteriores están más lejos del Sol."
+    "explanation": "Outer means farther from the center. Outer planets are farther from the Sun. Exterior significa más lejos del centro. Los planetas exteriores están más lejos del Sol.",
+    "audioWord": "audios/word-outer.mp3",
+    "audioSentence": "audios/sentence-neptune-is-an-outer-planet-far-from-sun.mp3"
   },
   {
     "word": "MERCURY",
@@ -266,7 +282,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Mercury is the smallest planet and closest to the Sun. It's an inner planet. Mercurio es el planeta más pequeño y más cercano al Sol. Es un planeta interior."
+    "explanation": "Mercury is the smallest planet and closest to the Sun. It's an inner planet. Mercurio es el planeta más pequeño y más cercano al Sol. Es un planeta interior.",
+    "audioWord": "audios/word-mercury.mp3",
+    "audioSentence": "audios/sentence-mercury-is-the-smallest-planet-in-our-system.mp3"
   },
   {
     "word": "VENUS",
@@ -295,7 +313,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Venus is the second planet from the Sun. It's very hot and is an inner planet. Venus es el segundo planeta desde el Sol. Es muy caliente y es un planeta interior."
+    "explanation": "Venus is the second planet from the Sun. It's very hot and is an inner planet. Venus es el segundo planeta desde el Sol. Es muy caliente y es un planeta interior.",
+    "audioWord": "audios/word-venus.mp3",
+    "audioSentence": "audios/sentence-venus-is-the-second-planet-from-the-sun.mp3"
   },
   {
     "word": "EARTH",
@@ -324,7 +344,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Earth is our home planet. It's the only planet known to have life. It's an inner planet. La Tierra es nuestro planeta hogar. Es el único planeta conocido que tiene vida. Es un planeta interior."
+    "explanation": "Earth is our home planet. It's the only planet known to have life. It's an inner planet. La Tierra es nuestro planeta hogar. Es el único planeta conocido que tiene vida. Es un planeta interior.",
+    "audioWord": "audios/word-earth.mp3",
+    "audioSentence": "audios/sentence-earth-is-the-only-planet-with-life.mp3"
   },
   {
     "word": "MARS",
@@ -353,7 +375,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Mars is called the Red Planet because of its reddish color. It's an inner planet. Marte se llama el Planeta Rojo por su color rojizo. Es un planeta interior."
+    "explanation": "Mars is called the Red Planet because of its reddish color. It's an inner planet. Marte se llama el Planeta Rojo por su color rojizo. Es un planeta interior.",
+    "audioWord": "audios/word-mars.mp3",
+    "audioSentence": "audios/sentence-mars-is-called-the-red-planet.mp3"
   },
   {
     "word": "JUPITER",
@@ -382,7 +406,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Jupiter is the biggest planet in our Solar System. It's an outer planet made of gas. Júpiter es el planeta más grande de nuestro Sistema Solar. Es un planeta exterior hecho de gas."
+    "explanation": "Jupiter is the biggest planet in our Solar System. It's an outer planet made of gas. Júpiter es el planeta más grande de nuestro Sistema Solar. Es un planeta exterior hecho de gas.",
+    "audioWord": "audios/word-jupiter.mp3",
+    "audioSentence": "audios/sentence-jupiter-is-the-biggest-planet-in-our-system.mp3"
   },
   {
     "word": "SATURN",
@@ -411,7 +437,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Saturn is famous for its beautiful rings. It's an outer planet. Saturno es famoso por sus hermosos anillos. Es un planeta exterior."
+    "explanation": "Saturn is famous for its beautiful rings. It's an outer planet. Saturno es famoso por sus hermosos anillos. Es un planeta exterior.",
+    "audioWord": "audios/word-saturn.mp3",
+    "audioSentence": "audios/sentence-saturn-has-beautiful-rings-around-it.mp3"
   },
   {
     "word": "URANUS",
@@ -440,7 +468,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Uranus is a large, cold outer planet made of gas. Urano es un planeta exterior grande y frío hecho de gas."
+    "explanation": "Uranus is a large, cold outer planet made of gas. Urano es un planeta exterior grande y frío hecho de gas.",
+    "audioWord": "audios/word-uranus.mp3",
+    "audioSentence": "audios/sentence-uranus-is-a-cold-outer-planet.mp3"
   },
   {
     "word": "HEMISPHERE",
@@ -470,7 +500,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "A hemisphere is half of the Earth. There are Northern, Southern, Eastern, and Western hemispheres. Un hemisferio es la mitad de la Tierra."
+    "explanation": "A hemisphere is half of the Earth. There are Northern, Southern, Eastern, and Western hemispheres. Un hemisferio es la mitad de la Tierra.",
+    "audioWord": "audios/word-hemisphere.mp3",
+    "audioSentence": "audios/sentence-the-equator-divides-earth-into-two-hemispheres.mp3"
   },
   {
     "word": "EQUATOR",
@@ -499,7 +531,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "The Equator is an imaginary line around the middle of Earth at 0° latitude. El Ecuador es una línea imaginaria alrededor del medio de la Tierra."
+    "explanation": "The Equator is an imaginary line around the middle of Earth at 0° latitude. El Ecuador es una línea imaginaria alrededor del medio de la Tierra.",
+    "audioWord": "audios/word-equator.mp3",
+    "audioSentence": "audios/sentence-the-equator-is-a-line-around-earths-middle.mp3"
   },
   {
     "word": "LONGITUDE",
@@ -528,7 +562,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Longitude lines run from North to South Pole (vertical). Líneas de longitud corren de Polo Norte a Polo Sur (verticales)."
+    "explanation": "Longitude lines run from North to South Pole (vertical). Líneas de longitud corren de Polo Norte a Polo Sur (verticales).",
+    "audioWord": "audios/word-longitude.mp3",
+    "audioSentence": "audios/sentence-longitude-lines-run-from-north-to-south.mp3"
   },
   {
     "word": "LATITUDE",
@@ -557,7 +593,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Latitude lines run East to West (horizontal), parallel to the Equator. Líneas de latitud corren de Este a Oeste (horizontales)."
+    "explanation": "Latitude lines run East to West (horizontal), parallel to the Equator. Líneas de latitud corren de Este a Oeste (horizontales).",
+    "audioWord": "audios/word-latitude.mp3",
+    "audioSentence": "audios/sentence-latitude-lines-run-from-east-to-west.mp3"
   },
   {
     "word": "CONTINENT",
@@ -586,7 +624,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "A continent is a large area of land. There are 7 continents. Un continente es una gran área de tierra. Hay 7 continentes."
+    "explanation": "A continent is a large area of land. There are 7 continents. Un continente es una gran área de tierra. Hay 7 continentes.",
+    "audioWord": "audios/word-continent.mp3",
+    "audioSentence": "audios/sentence-africa-is-a-large-continent-with-many-countries.mp3"
   },
   {
     "word": "OCEAN",
@@ -615,7 +655,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "An ocean is a very large body of salt water. Un océano es un cuerpo de agua salada muy grande."
+    "explanation": "An ocean is a very large body of salt water. Un océano es un cuerpo de agua salada muy grande.",
+    "audioWord": "audios/word-ocean.mp3",
+    "audioSentence": "audios/sentence-the-pacific-ocean-is-very-large-and-deep.mp3"
   },
   {
     "word": "WEATHER",
@@ -644,7 +686,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Weather is the condition of the atmosphere right now or today. El clima es la condición de la atmósfera ahora o hoy."
+    "explanation": "Weather is the condition of the atmosphere right now or today. El clima es la condición de la atmósfera ahora o hoy.",
+    "audioWord": "audios/word-weather.mp3",
+    "audioSentence": "audios/sentence-todays-weather-is-sunny-and-warm.mp3"
   },
   {
     "word": "CLIMATE",
@@ -673,7 +717,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Climate is the usual weather pattern over many years. El clima es el patrón usual del tiempo durante muchos años."
+    "explanation": "Climate is the usual weather pattern over many years. El clima es el patrón usual del tiempo durante muchos años.",
+    "audioWord": "audios/word-climate.mp3",
+    "audioSentence": "audios/sentence-alaska-has-a-very-cold-climate.mp3"
   },
   {
     "word": "SEASON",
@@ -702,7 +748,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Seasons are spring, summer, fall (autumn), and winter. Las estaciones son primavera, verano, otoño e invierno."
+    "explanation": "Seasons are spring, summer, fall (autumn), and winter. Las estaciones son primavera, verano, otoño e invierno.",
+    "audioWord": "audios/word-season.mp3",
+    "audioSentence": "audios/sentence-summer-is-the-warmest-season-of-the-year.mp3"
   },
   {
     "word": "NORTHERN",
@@ -731,7 +779,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Northern means toward the north or in the north part. Norte significa hacia el norte o en la parte norte."
+    "explanation": "Northern means toward the north or in the north part. Norte significa hacia el norte o en la parte norte.",
+    "audioWord": "audios/word-northern.mp3",
+    "audioSentence": "audios/sentence-canada-is-in-the-northern-hemisphere.mp3"
   },
   {
     "word": "SOUTHERN",
@@ -760,7 +810,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Southern means toward the south or in the south part. Sur significa hacia el sur o en la parte sur."
+    "explanation": "Southern means toward the south or in the south part. Sur significa hacia el sur o en la parte sur.",
+    "audioWord": "audios/word-southern.mp3",
+    "audioSentence": "audios/sentence-australia-is-in-the-southern-hemisphere.mp3"
   },
   {
     "word": "EASTERN",
@@ -789,7 +841,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Eastern means toward the east or in the east part. Este significa hacia el este o en la parte este."
+    "explanation": "Eastern means toward the east or in the east part. Este significa hacia el este o en la parte este.",
+    "audioWord": "audios/word-eastern.mp3",
+    "audioSentence": "audios/sentence-japan-is-in-the-eastern-hemisphere.mp3"
   },
   {
     "word": "WESTERN",
@@ -818,7 +872,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Western means toward the west or in the west part. Oeste significa hacia el oeste o en la parte oeste."
+    "explanation": "Western means toward the west or in the west part. Oeste significa hacia el oeste o en la parte oeste.",
+    "audioWord": "audios/word-western.mp3",
+    "audioSentence": "audios/sentence-mexico-is-in-the-western-hemisphere.mp3"
   },
   {
     "word": "SPHERE",
@@ -847,7 +903,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "A sphere is a round, 3D ball shape. Earth is shaped like a sphere. Una esfera es una forma redonda de bola en 3D."
+    "explanation": "A sphere is a round, 3D ball shape. Earth is shaped like a sphere. Una esfera es una forma redonda de bola en 3D.",
+    "audioWord": "audios/word-sphere.mp3",
+    "audioSentence": "audios/sentence-earth-is-shaped-like-a-sphere-or-ball.mp3"
   },
   {
     "word": "NEPTUNE",
@@ -876,7 +934,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Neptune is the farthest outer planet from the Sun. It's cold and blue. Neptuno es el planeta exterior más lejano del Sol. Es frío y azul."
+    "explanation": "Neptune is the farthest outer planet from the Sun. It's cold and blue. Neptuno es el planeta exterior más lejano del Sol. Es frío y azul.",
+    "audioWord": "audios/word-neptune.mp3",
+    "audioSentence": "audios/sentence-neptune-is-the-farthest-planet-from-the-sun.mp3"
   },
   {
     "word": "MOVE AROUND",
@@ -905,7 +965,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Move around means to go in a circle or path around something. Moverse alrededor significa ir en círculo o camino alrededor de algo."
+    "explanation": "Move around means to go in a circle or path around something. Moverse alrededor significa ir en círculo o camino alrededor de algo.",
+    "audioWord": "audios/word-move-around.mp3",
+    "audioSentence": "audios/sentence-planets-move-around-the-sun-in-orbits.mp3"
   },
   {
     "word": "TRAVEL",
@@ -934,7 +996,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Travel means to go from one place to another. Viajar significa ir de un lugar a otro."
+    "explanation": "Travel means to go from one place to another. Viajar significa ir de un lugar a otro.",
+    "audioWord": "audios/word-travel.mp3",
+    "audioSentence": "audios/sentence-earth-travels-around-the-sun-each-year.mp3"
   },
   {
     "word": "SPIN",
@@ -963,7 +1027,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Spin means to turn around quickly. Girar rápido significa dar vueltas rápidamente."
+    "explanation": "Spin means to turn around quickly. Girar rápido significa dar vueltas rápidamente.",
+    "audioWord": "audios/word-spin.mp3",
+    "audioSentence": "audios/sentence-earth-spins-on-its-axis-every-day.mp3"
   },
   {
     "word": "GIVE",
@@ -992,7 +1058,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Give means to provide or offer something. The Sun gives light and heat. Dar significa proporcionar u ofrecer algo."
+    "explanation": "Give means to provide or offer something. The Sun gives light and heat. Dar significa proporcionar u ofrecer algo.",
+    "audioWord": "audios/word-give.mp3",
+    "audioSentence": "audios/sentence-the-sun-gives-us-light-and-heat.mp3"
   },
   {
     "word": "MADE OF",
@@ -1021,7 +1089,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Made of means composed or formed from a material. Inner planets are made of rock. Hecho de significa compuesto o formado de un material."
+    "explanation": "Made of means composed or formed from a material. Inner planets are made of rock. Hecho de significa compuesto o formado de un material.",
+    "audioWord": "audios/word-made-of.mp3",
+    "audioSentence": "audios/sentence-jupiter-is-made-of-gas-and-clouds.mp3"
   },
   {
     "word": "KNOWN",
@@ -1050,7 +1120,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Known means recognized or familiar. Earth is known to have life. Conocido significa reconocido o familiar."
+    "explanation": "Known means recognized or familiar. Earth is known to have life. Conocido significa reconocido o familiar.",
+    "audioWord": "audios/word-known.mp3",
+    "audioSentence": "audios/sentence-earth-is-known-to-have-water-and-life.mp3"
   },
   {
     "word": "CALLED",
@@ -1079,7 +1151,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Called means named or referred to as. Mars is called the Red Planet. Llamado significa nombrado o referido como."
+    "explanation": "Called means named or referred to as. Mars is called the Red Planet. Llamado significa nombrado o referido como.",
+    "audioWord": "audios/word-called.mp3",
+    "audioSentence": "audios/sentence-saturn-is-called-the-ringed-planet.mp3"
   },
   {
     "word": "EXIST",
@@ -1108,7 +1182,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Exist means to be real or present. Life exists on Earth. Existir significa ser real o estar presente."
+    "explanation": "Exist means to be real or present. Life exists on Earth. Existir significa ser real o estar presente.",
+    "audioWord": "audios/word-exist.mp3",
+    "audioSentence": "audios/sentence-life-exists-only-on-planet-earth.mp3"
   },
   {
     "word": "HEAT",
@@ -1137,7 +1213,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Heat is warmth or high temperature. The Sun gives heat to all planets. Calor es calidez o temperatura alta."
+    "explanation": "Heat is warmth or high temperature. The Sun gives heat to all planets. Calor es calidez o temperatura alta.",
+    "audioWord": "audios/word-heat.mp3",
+    "audioSentence": "audios/sentence-the-sun-gives-heat-to-all-the-planets.mp3"
   },
   {
     "word": "LIGHT",
@@ -1166,7 +1244,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Light is brightness that lets us see. The Sun gives light to Earth. Luz es brillo que nos permite ver."
+    "explanation": "Light is brightness that lets us see. The Sun gives light to Earth. Luz es brillo que nos permite ver.",
+    "audioWord": "audios/word-light.mp3",
+    "audioSentence": "audios/sentence-the-sun-gives-light-during-the-day.mp3"
   },
   {
     "word": "PATH",
@@ -1195,7 +1275,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Path is a route or way to go. An orbit is the path a planet takes around the Sun. Camino es una ruta o manera de ir."
+    "explanation": "Path is a route or way to go. An orbit is the path a planet takes around the Sun. Camino es una ruta o manera de ir.",
+    "audioWord": "audios/word-path.mp3",
+    "audioSentence": "audios/sentence-an-orbit-is-the-path-planets-travel.mp3"
   },
   {
     "word": "AROUND",
@@ -1224,7 +1306,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Around means in a circle or surrounding something. Planets move around the Sun. Alrededor significa en círculo o rodeando algo."
+    "explanation": "Around means in a circle or surrounding something. Planets move around the Sun. Alrededor significa en círculo o rodeando algo.",
+    "audioWord": "audios/word-around.mp3",
+    "audioSentence": "audios/sentence-all-planets-go-around-the-sun.mp3"
   },
   {
     "word": "THROUGH",
@@ -1253,7 +1337,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Through means passing from one side to the other. An axis goes through the center. A través significa pasar de un lado al otro."
+    "explanation": "Through means passing from one side to the other. An axis goes through the center. A través significa pasar de un lado al otro.",
+    "audioWord": "audios/word-through.mp3",
+    "audioSentence": "audios/sentence-earths-axis-goes-through-its-center.mp3"
   },
   {
     "word": "TIME",
@@ -1282,7 +1368,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Time is the measure of duration. It takes time for a planet to orbit the Sun. Tiempo es la medida de duración."
+    "explanation": "Time is the measure of duration. It takes time for a planet to orbit the Sun. Tiempo es la medida de duración.",
+    "audioWord": "audios/word-time.mp3",
+    "audioSentence": "audios/sentence-it-takes-time-for-earth-to-orbit-sun.mp3"
   },
   {
     "word": "BETWEEN",
@@ -1311,7 +1399,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Between means in the middle of two things. Mercury is between the Sun and Venus. Entre significa en el medio de dos cosas."
+    "explanation": "Between means in the middle of two things. Mercury is between the Sun and Venus. Entre significa en el medio de dos cosas.",
+    "audioWord": "audios/word-between.mp3",
+    "audioSentence": "audios/sentence-earth-is-between-venus-and-mars.mp3"
   },
   {
     "word": "SOLAR SYSTEM",
@@ -1340,7 +1430,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Solar System is the Sun and all planets that orbit around it. Sistema Solar es el Sol y todos los planetas que orbitan alrededor de él."
+    "explanation": "Solar System is the Sun and all planets that orbit around it. Sistema Solar es el Sol y todos los planetas que orbitan alrededor de él.",
+    "audioWord": "audios/word-solar-system.mp3",
+    "audioSentence": "audios/sentence-the-solar-system-has-eight-planets.mp3"
   },
   {
     "word": "GAS",
@@ -1369,7 +1461,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Gas is a substance like air. Outer planets are made mostly of gas. Gas es una sustancia como el aire."
+    "explanation": "Gas is a substance like air. Outer planets are made mostly of gas. Gas es una sustancia como el aire.",
+    "audioWord": "audios/word-gas.mp3",
+    "audioSentence": "audios/sentence-outer-planets-are-made-mostly-of-gas.mp3"
   },
   {
     "word": "ROCK",
@@ -1398,7 +1492,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Rock is hard, solid material. Inner planets are made mostly of rock. Roca es material duro y sólido."
+    "explanation": "Rock is hard, solid material. Inner planets are made mostly of rock. Roca es material duro y sólido.",
+    "audioWord": "audios/word-rock.mp3",
+    "audioSentence": "audios/sentence-inner-planets-are-made-mostly-of-rock.mp3"
   },
   {
     "word": "LIFE",
@@ -1427,7 +1523,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Life means living things like plants and animals. Earth is the only planet known to have life. Vida significa seres vivos como plantas y animales."
+    "explanation": "Life means living things like plants and animals. Earth is the only planet known to have life. Vida significa seres vivos como plantas y animales.",
+    "audioWord": "audios/word-life.mp3",
+    "audioSentence": "audios/sentence-earth-has-life-with-plants-and-animals.mp3"
   },
   {
     "word": "RINGS",
@@ -1456,7 +1554,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Rings are circular bands around something. Saturn is famous for its beautiful rings. Anillos son bandas circulares alrededor de algo."
+    "explanation": "Rings are circular bands around something. Saturn is famous for its beautiful rings. Anillos son bandas circulares alrededor de algo.",
+    "audioWord": "audios/word-rings.mp3",
+    "audioSentence": "audios/sentence-saturn-has-many-rings-made-of-ice.mp3"
   },
   {
     "word": "BEAUTIFUL",
@@ -1485,7 +1585,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Beautiful means very pretty or attractive. Saturn has beautiful rings. Hermoso significa muy bonito o atractivo."
+    "explanation": "Beautiful means very pretty or attractive. Saturn has beautiful rings. Hermoso significa muy bonito o atractivo.",
+    "audioWord": "audios/word-beautiful.mp3",
+    "audioSentence": "audios/sentence-saturns-rings-are-very-beautiful-to-see.mp3"
   },
   {
     "word": "HUGE",
@@ -1514,7 +1616,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Huge means very, very big. The Sun is huge. Enorme significa muy, muy grande."
+    "explanation": "Huge means very, very big. The Sun is huge. Enorme significa muy, muy grande.",
+    "audioWord": "audios/word-huge.mp3",
+    "audioSentence": "audios/sentence-the-sun-is-huge-compared-to-earth.mp3"
   },
   {
     "word": "SMALL",
@@ -1543,7 +1647,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Small means not big. Mercury is the smallest planet. Pequeño significa no grande."
+    "explanation": "Small means not big. Mercury is the smallest planet. Pequeño significa no grande.",
+    "audioWord": "audios/word-small.mp3",
+    "audioSentence": "audios/sentence-mercury-is-the-smallest-planet-we-know.mp3"
   },
   {
     "word": "LARGE",
@@ -1572,7 +1678,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Large means big in size. Jupiter is a large planet. Grande significa grande en tamaño."
+    "explanation": "Large means big in size. Jupiter is a large planet. Grande significa grande en tamaño.",
+    "audioWord": "audios/word-large.mp3",
+    "audioSentence": "audios/sentence-jupiter-is-a-very-large-gas-planet.mp3"
   },
   {
     "word": "HOT",
@@ -1601,7 +1709,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Hot means very warm or high temperature. Venus is very hot. Caliente significa muy cálido o alta temperatura."
+    "explanation": "Hot means very warm or high temperature. Venus is very hot. Caliente significa muy cálido o alta temperatura.",
+    "audioWord": "audios/word-hot.mp3",
+    "audioSentence": "audios/sentence-venus-is-very-hot-because-of-gases.mp3"
   },
   {
     "word": "COLD",
@@ -1630,7 +1740,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Cold means low temperature. Neptune is very cold. Frío significa baja temperatura."
+    "explanation": "Cold means low temperature. Neptune is very cold. Frío significa baja temperatura.",
+    "audioWord": "audios/word-cold.mp3",
+    "audioSentence": "audios/sentence-neptune-is-very-cold-and-far-away.mp3"
   },
   {
     "word": "BRIGHT",
@@ -1659,7 +1771,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Bright means giving a lot of light. The Sun is very bright. Brillante significa dando mucha luz."
+    "explanation": "Bright means giving a lot of light. The Sun is very bright. Brillante significa dando mucha luz.",
+    "audioWord": "audios/word-bright.mp3",
+    "audioSentence": "audios/sentence-the-sun-is-the-brightest-star-we-see.mp3"
   },
   {
     "word": "DAY AND NIGHT",
@@ -1688,7 +1802,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Day is when the Sun is up, night is when it's dark. Earth has day and night. Día es cuando sale el Sol, noche es cuando está oscuro."
+    "explanation": "Day is when the Sun is up, night is when it's dark. Earth has day and night. Día es cuando sale el Sol, noche es cuando está oscuro.",
+    "audioWord": "audios/word-day-and-night.mp3",
+    "audioSentence": "audios/sentence-earths-rotation-causes-day-and-night.mp3"
   },
   {
     "word": "YEAR",
@@ -1717,7 +1833,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "A year is the time it takes a planet to orbit the Sun once. Earth's year is 365 days. Un año es el tiempo que tarda un planeta en orbitar el Sol una vez."
+    "explanation": "A year is the time it takes a planet to orbit the Sun once. Earth's year is 365 days. Un año es el tiempo que tarda un planeta en orbitar el Sol una vez.",
+    "audioWord": "audios/word-year.mp3",
+    "audioSentence": "audios/sentence-one-year-is-earths-trip-around-sun.mp3"
   },
   {
     "word": "BIGGER",
@@ -1746,7 +1864,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Bigger means larger than something else. Jupiter is bigger than Earth. Más grande significa mayor que otra cosa."
+    "explanation": "Bigger means larger than something else. Jupiter is bigger than Earth. Más grande significa mayor que otra cosa.",
+    "audioWord": "audios/word-bigger.mp3",
+    "audioSentence": "audios/sentence-jupiter-is-bigger-than-all-other-planets.mp3"
   },
   {
     "word": "LOCATED",
@@ -1775,7 +1895,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Located means positioned or found in a place. Africa is located in 4 hemispheres. Ubicado significa posicionado o encontrado en un lugar."
+    "explanation": "Located means positioned or found in a place. Africa is located in 4 hemispheres. Ubicado significa posicionado o encontrado en un lugar.",
+    "audioWord": "audios/word-located.mp3",
+    "audioSentence": "audios/sentence-africa-is-located-in-four-different-hemispheres.mp3"
   },
   {
     "word": "DIVIDE",
@@ -1804,7 +1926,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Divide means to separate into parts. The Equator divides Earth into two halves. Dividir significa separar en partes."
+    "explanation": "Divide means to separate into parts. The Equator divides Earth into two halves. Dividir significa separar en partes.",
+    "audioWord": "audios/word-divide.mp3",
+    "audioSentence": "audios/sentence-the-equator-divides-earth-into-two-halves.mp3"
   },
   {
     "word": "RUN",
@@ -1833,7 +1957,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Run means to extend or go in a direction. Lines of longitude run from North to South. Extenderse significa ir en una dirección."
+    "explanation": "Run means to extend or go in a direction. Lines of longitude run from North to South. Extenderse significa ir en una dirección.",
+    "audioWord": "audios/word-run.mp3",
+    "audioSentence": "audios/sentence-longitude-lines-run-from-north-to-south.mp3"
   },
   {
     "word": "SHOW",
@@ -1862,7 +1988,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Show means to display or make visible. Maps show continents and oceans. Mostrar significa exhibir o hacer visible."
+    "explanation": "Show means to display or make visible. Maps show continents and oceans. Mostrar significa exhibir o hacer visible.",
+    "audioWord": "audios/word-show.mp3",
+    "audioSentence": "audios/sentence-maps-show-us-continents-and-oceans.mp3"
   },
   {
     "word": "FOUND IN",
@@ -1891,7 +2019,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Found in means existing or present in a location. Many countries are found in Asia. Encontrado en significa existente o presente en un lugar."
+    "explanation": "Found in means existing or present in a location. Many countries are found in Asia. Encontrado en significa existente o presente en un lugar.",
+    "audioWord": "audios/word-found-in.mp3",
+    "audioSentence": "audios/sentence-penguins-are-found-in-cold-places.mp3"
   },
   {
     "word": "CIRCLE",
@@ -1920,7 +2050,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Circle is a round shape. Lines of latitude go in circles around Earth. Círculo es una forma redonda."
+    "explanation": "Circle is a round shape. Lines of latitude go in circles around Earth. Círculo es una forma redonda.",
+    "audioWord": "audios/word-circle.mp3",
+    "audioSentence": "audios/sentence-the-equator-is-a-circle-around-earth.mp3"
   },
   {
     "word": "NORTH TO SOUTH",
@@ -1949,7 +2081,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "North to South means from top to bottom. Longitude lines run North to South. Norte a Sur significa de arriba hacia abajo."
+    "explanation": "North to South means from top to bottom. Longitude lines run North to South. Norte a Sur significa de arriba hacia abajo.",
+    "audioWord": "audios/word-north-to-south.mp3",
+    "audioSentence": "audios/sentence-longitude-lines-go-from-north-to-south.mp3"
   },
   {
     "word": "EAST TO WEST",
@@ -1978,7 +2112,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "East to West means from right to left. Latitude lines run East to West. Este a Oeste significa de derecha a izquierda."
+    "explanation": "East to West means from right to left. Latitude lines run East to West. Este a Oeste significa de derecha a izquierda.",
+    "audioWord": "audios/word-east-to-west.mp3",
+    "audioSentence": "audios/sentence-latitude-lines-go-from-east-to-west.mp3"
   },
   {
     "word": "ABOVE",
@@ -2007,7 +2143,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Above means higher than or over something. Alaska is above the Equator. Arriba significa más alto que o sobre algo."
+    "explanation": "Above means higher than or over something. Alaska is above the Equator. Arriba significa más alto que o sobre algo.",
+    "audioWord": "audios/word-above.mp3",
+    "audioSentence": "audios/sentence-canada-is-above-the-united-states.mp3"
   },
   {
     "word": "BELOW",
@@ -2036,7 +2174,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Below means lower than or under something. South America is below the Equator. Abajo significa más bajo que o debajo de algo."
+    "explanation": "Below means lower than or under something. South America is below the Equator. Abajo significa más bajo que o debajo de algo.",
+    "audioWord": "audios/word-below.mp3",
+    "audioSentence": "audios/sentence-mexico-is-below-the-united-states.mp3"
   },
   {
     "word": "ACROSS",
@@ -2065,7 +2205,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Across means from one side to the other. The Prime Meridian goes across Earth. A través significa de un lado al otro."
+    "explanation": "Across means from one side to the other. The Prime Meridian goes across Earth. A través significa de un lado al otro.",
+    "audioWord": "audios/word-across.mp3",
+    "audioSentence": "audios/sentence-the-equator-goes-across-the-middle-of-earth.mp3"
   },
   {
     "word": "ALONG",
@@ -2094,7 +2236,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Along means following the length or path of something. Countries along the Equator are hot. A lo largo significa siguiendo la longitud o camino de algo."
+    "explanation": "Along means following the length or path of something. Countries along the Equator are hot. A lo largo significa siguiendo la longitud o camino de algo.",
+    "audioWord": "audios/word-along.mp3",
+    "audioSentence": "audios/sentence-many-countries-are-along-the-equator.mp3"
   },
   {
     "word": "MIDDLE",
@@ -2123,7 +2267,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Middle means the center or halfway point. The Equator is in the middle of Earth. Medio significa el centro o punto medio."
+    "explanation": "Middle means the center or halfway point. The Equator is in the middle of Earth. Medio significa el centro o punto medio.",
+    "audioWord": "audios/word-middle.mp3",
+    "audioSentence": "audios/sentence-the-equator-is-in-the-middle-of-earth.mp3"
   },
   {
     "word": "EDGE",
@@ -2152,7 +2298,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Edge means the outer limit or border. The edge of a continent meets the ocean. Borde significa el límite exterior o frontera."
+    "explanation": "Edge means the outer limit or border. The edge of a continent meets the ocean. Borde significa el límite exterior o frontera.",
+    "audioWord": "audios/word-edge.mp3",
+    "audioSentence": "audios/sentence-the-edge-of-the-continent-meets-ocean.mp3"
   },
   {
     "word": "TOUCH",
@@ -2181,7 +2329,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Touch means to be in contact with. Some continents touch each other. Tocar significa estar en contacto con."
+    "explanation": "Touch means to be in contact with. Some continents touch each other. Tocar significa estar en contacto con.",
+    "audioWord": "audios/word-touch.mp3",
+    "audioSentence": "audios/sentence-asia-and-europe-touch-each-other.mp3"
   },
   {
     "word": "DESCRIBE",
@@ -2210,7 +2360,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Describe means to tell about something using words. Weather describes conditions in the atmosphere. Describir significa contar sobre algo usando palabras."
+    "explanation": "Describe means to tell about something using words. Weather describes conditions in the atmosphere. Describir significa contar sobre algo usando palabras.",
+    "audioWord": "audios/word-describe.mp3",
+    "audioSentence": "audios/sentence-weather-words-describe-the-sky-and-temperature.mp3"
   },
   {
     "word": "CHANGE",
@@ -2239,7 +2391,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Change means to become different. Weather can change quickly. Cambiar significa volverse diferente."
+    "explanation": "Change means to become different. Weather can change quickly. Cambiar significa volverse diferente.",
+    "audioWord": "audios/word-change.mp3",
+    "audioSentence": "audios/sentence-weather-can-change-from-sunny-to-rainy.mp3"
   },
   {
     "word": "CONDITION",
@@ -2268,7 +2422,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Condition means the state or situation of something. Weather condition means how the weather is now. Condición significa el estado o situación de algo."
+    "explanation": "Condition means the state or situation of something. Weather condition means how the weather is now. Condición significa el estado o situación de algo.",
+    "audioWord": "audios/word-condition.mp3",
+    "audioSentence": "audios/sentence-todays-weather-condition-is-sunny-and-warm.mp3"
   },
   {
     "word": "AVERAGE",
@@ -2297,7 +2453,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Average means typical or normal. Climate is the average weather over many years. Promedio significa típico o normal."
+    "explanation": "Average means typical or normal. Climate is the average weather over many years. Promedio significa típico o normal.",
+    "audioWord": "audios/word-average.mp3",
+    "audioSentence": "audios/sentence-climate-shows-the-average-weather-over-years.mp3"
   },
   {
     "word": "PATTERN",
@@ -2326,7 +2484,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Pattern means something that repeats in a regular way. Climate is a pattern of weather. Patrón significa algo que se repite de manera regular."
+    "explanation": "Pattern means something that repeats in a regular way. Climate is a pattern of weather. Patrón significa algo que se repite de manera regular.",
+    "audioWord": "audios/word-pattern.mp3",
+    "audioSentence": "audios/sentence-seasons-follow-a-pattern-every-year.mp3"
   },
   {
     "word": "TEMPERATURE",
@@ -2355,7 +2515,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Temperature is how hot or cold something is. We measure temperature with a thermometer. Temperatura es qué tan caliente o frío está algo."
+    "explanation": "Temperature is how hot or cold something is. We measure temperature with a thermometer. Temperatura es qué tan caliente o frío está algo.",
+    "audioWord": "audios/word-temperature.mp3",
+    "audioSentence": "audios/sentence-temperature-tells-us-how-hot-or-cold.mp3"
   },
   {
     "word": "RAINY",
@@ -2384,7 +2546,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Rainy means with rain or wet. Rainforests are always rainy. Lluvioso significa con lluvia o mojado."
+    "explanation": "Rainy means with rain or wet. Rainforests are always rainy. Lluvioso significa con lluvia o mojado.",
+    "audioWord": "audios/word-rainy.mp3",
+    "audioSentence": "audios/sentence-rainy-weather-brings-water-to-plants.mp3"
   },
   {
     "word": "SUNNY",
@@ -2413,7 +2577,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Sunny means with bright sunshine. Today is sunny and warm. Soleado significa con sol brillante."
+    "explanation": "Sunny means with bright sunshine. Today is sunny and warm. Soleado significa con sol brillante.",
+    "audioWord": "audios/word-sunny.mp3",
+    "audioSentence": "audios/sentence-sunny-days-are-bright-and-warm.mp3"
   },
   {
     "word": "WARM",
@@ -2442,7 +2608,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Warm means pleasantly hot, not too hot or cold. Spring weather is warm. Cálido significa agradablemente caliente, ni muy caliente ni frío."
+    "explanation": "Warm means pleasantly hot, not too hot or cold. Spring weather is warm. Cálido significa agradablemente caliente, ni muy caliente ni frío.",
+    "audioWord": "audios/word-warm.mp3",
+    "audioSentence": "audios/sentence-spring-weather-is-usually-warm-and-nice.mp3"
   },
   {
     "word": "SHORT-TERM",
@@ -2471,7 +2639,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Short-term means for a brief time. Weather is short-term conditions. Corto plazo significa por un tiempo breve."
+    "explanation": "Short-term means for a brief time. Weather is short-term conditions. Corto plazo significa por un tiempo breve.",
+    "audioWord": "audios/word-short-term.mp3",
+    "audioSentence": "audios/sentence-weather-is-a-short-term-condition-for-today.mp3"
   },
   {
     "word": "LONG-TERM",
@@ -2500,7 +2670,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Long-term means for a long time. Climate is long-term weather patterns. Largo plazo significa por mucho tiempo."
+    "explanation": "Long-term means for a long time. Climate is long-term weather patterns. Largo plazo significa por mucho tiempo.",
+    "audioWord": "audios/word-long-term.mp3",
+    "audioSentence": "audios/sentence-climate-is-a-long-term-weather-pattern.mp3"
   },
   {
     "word": "ATMOSPHERE",
@@ -2529,7 +2701,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Atmosphere is the layer of air around Earth. Weather happens in the atmosphere. Atmósfera es la capa de aire alrededor de la Tierra."
+    "explanation": "Atmosphere is the layer of air around Earth. Weather happens in the atmosphere. Atmósfera es la capa de aire alrededor de la Tierra.",
+    "audioWord": "audios/word-atmosphere.mp3",
+    "audioSentence": "audios/sentence-earths-atmosphere-is-the-air-around-us.mp3"
   },
   {
     "word": "GROW",
@@ -2558,7 +2732,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Grow means to get bigger or develop. Plants grow in warm climates. Crecer significa volverse más grande o desarrollarse."
+    "explanation": "Grow means to get bigger or develop. Plants grow in warm climates. Crecer significa volverse más grande o desarrollarse.",
+    "audioWord": "audios/word-grow.mp3",
+    "audioSentence": "audios/sentence-plants-grow-better-in-warm-climates.mp3"
   },
   {
     "word": "USUAL",
@@ -2587,7 +2763,9 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Usual means normal or common. Climate is the usual weather pattern. Usual significa normal o común."
+    "explanation": "Usual means normal or common. Climate is the usual weather pattern. Usual significa normal o común.",
+    "audioWord": "audios/word-usual.mp3",
+    "audioSentence": "audios/sentence-climate-is-the-usual-weather-for-a-place.mp3"
   },
   {
     "word": "PLACE",
@@ -2616,6 +2794,8 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Place is a location or area. Different places have different climates. Lugar es una ubicación o área."
+    "explanation": "Place is a location or area. Different places have different climates. Lugar es una ubicación o área.",
+    "audioWord": "audios/word-place.mp3",
+    "audioSentence": "audios/sentence-each-place-has-its-own-special-climate.mp3"
   }
 ]

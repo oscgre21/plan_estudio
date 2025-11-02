@@ -6,10 +6,12 @@ Interactive science quiz and vocabulary learning platform for kids, featuring vi
 
 ### 1. **Visual Word Game** 🎨
 - Learn vocabulary by matching words with images and animated GIFs
-- 30+ words covering Solar System and Geography topics
-- Interactive feedback with explanations
+- **90 words** across **6 rounds** covering Solar System and Geography topics
+- **Audio pronunciation** for all English words and sentences (180 audio files)
+- Interactive feedback with contextual example sentences
 - Click-to-reveal translations (English/Spanish)
 - Keyboard and mouse support
+- 🔊 Text-to-Speech integration for pronunciation practice
 
 ### 2. **Vocabulary Trainer** 📖
 - **Flashcards**: Flip cards to learn word meanings
@@ -86,11 +88,27 @@ For development with auto-restart on file changes:
 npm run dev
 ```
 
+### 🎵 Generate Audio Files (Optional)
+
+If you need to regenerate the audio files for vocabulary:
+
+**Prerequisites**: Text-to-Speech service running on `http://localhost:8880`
+
+```bash
+npm run generate-audio
+```
+
+This will:
+- Generate 180 MP3 files (90 words + 90 sentences)
+- Store them in `public/audios/`
+- Update `vocabulary-data.json` with audio paths
+
 ## 📂 Project Structure
 
 ```
 Jearlenis_exam/
 ├── server.js              # Express server configuration
+├── generate-audio.js      # Script to generate TTS audio files
 ├── package.json           # Project dependencies
 ├── Dockerfile            # Docker configuration
 ├── .dockerignore         # Docker ignore file
@@ -99,7 +117,12 @@ Jearlenis_exam/
 │   ├── index.html        # Home page with navigation menu
 │   ├── visual_word_game.html    # Visual word learning game (90 words, 6 rounds)
 │   ├── vocabulary_trainer.html  # Vocabulary practice games
-│   └── science_quiz.html        # Full science quiz
+│   ├── science_quiz.html        # Full science quiz
+│   ├── vocabulary-data.json     # Vocabulary data (words, sentences, audio paths)
+│   └── audios/           # Audio pronunciation files (180 MP3s)
+│       ├── word-planet.mp3
+│       ├── sentence-earth-is-a-planet.mp3
+│       └── ... (178 more files)
 └── quiz_images/          # Image assets for quizzes
     ├── globe.jpeg
     ├── hemispheres.jpeg

@@ -116,10 +116,48 @@
             font-style: italic;
         }
 
+        .audio-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+        }
+
+        .audio-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.5);
+        }
+
+        .audio-btn:active {
+            transform: scale(0.95);
+        }
+
+        .audio-btn.playing {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
         .word-english {
             cursor: pointer;
             position: relative;
             transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .word-english:hover {
@@ -1655,6 +1693,7 @@
         let answerSubmitted = false;
         const wordsPerRound = 15;
         let currentShuffledOptions = [];
+        let currentAudio = null;
 
         function init() {
             loadWord();
@@ -1665,15 +1704,66 @@
             spanishWord.classList.toggle('show');
         }
 
+        function playWordAudio() {
+            const word = vocabularyData[currentWordIndex];
+            if (word.audioWord) {
+                // Stop any currently playing audio
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+
+                currentAudio = new Audio(word.audioWord);
+                currentAudio.play();
+
+                // Add visual feedback
+                const btn = event.target;
+                btn.classList.add('playing');
+                currentAudio.onended = () => {
+                    btn.classList.remove('playing');
+                };
+            }
+        }
+
+        function playSentenceAudio() {
+            const word = vocabularyData[currentWordIndex];
+            if (word.audioSentence) {
+                // Stop any currently playing audio
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+
+                currentAudio = new Audio(word.audioSentence);
+                currentAudio.play();
+
+                // Add visual feedback
+                const btn = event.target;
+                btn.classList.add('playing');
+                currentAudio.onended = () => {
+                    btn.classList.remove('playing');
+                };
+            }
+        }
+
         function loadWord() {
             const word = vocabularyData[currentWordIndex];
             answerSubmitted = false;
 
-            // Update display
-            document.getElementById('wordEnglish').textContent = word.word;
+            // Update display with audio buttons
+            const wordEnglishDiv = document.getElementById('wordEnglish');
+            wordEnglishDiv.onclick = toggleTranslation;
+            wordEnglishDiv.innerHTML = `
+                <span>${word.word}</span>
+                ${word.audioWord ? '<button class="audio-btn" onclick="event.stopPropagation(); playWordAudio();" title="Listen to word">🔊</button>' : ''}
+            `;
+
             const contextDiv = document.getElementById('wordSpanish');
             contextDiv.innerHTML = `
-                <div class="sentence-en">${word.sentenceEN}</div>
+                <div class="sentence-en">
+                    ${word.sentenceEN}
+                    ${word.audioSentence ? '<button class="audio-btn" onclick="event.stopPropagation(); playSentenceAudio();" title="Listen to sentence">🔊</button>' : ''}
+                </div>
                 <div class="sentence-es">${word.sentenceES}</div>
             `;
             contextDiv.classList.remove('show'); // Hide context by default
