@@ -422,6 +422,140 @@
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         }
 
+        /* Final Summary Styles */
+        .final-summary {
+            display: none;
+            padding: 30px 20px 120px;
+            text-align: center;
+            overflow-y: auto;
+            max-height: calc(100vh - 100px);
+        }
+
+        .final-summary.show {
+            display: block;
+        }
+
+        .final-summary h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            animation: fadeIn 0.5s;
+        }
+
+        .final-summary h3 {
+            font-size: 1.8em;
+            color: #764ba2;
+            margin: 30px 0 20px;
+            text-align: left;
+        }
+
+        .overall-stats {
+            font-size: 1.3em;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .round-breakdown {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .round-result {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            animation: slideIn 0.5s;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .round-result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .round-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .round-score {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .progress-bar-round {
+            background: #e0e0e0;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill-round {
+            height: 100%;
+            transition: width 0.8s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+
+        .progress-excellent {
+            background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+        }
+        .progress-good {
+            background: linear-gradient(90deg, #17a2b8 0%, #20c997 100%);
+        }
+        .progress-average {
+            background: linear-gradient(90deg, #ffc107 0%, #fd7e14 100%);
+        }
+        .progress-below {
+            background: linear-gradient(90deg, #dc3545 0%, #e83e8c 100%);
+        }
+
+        .congrats-message {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe0b2 100%);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 15px;
+            border-left: 5px solid #ffc107;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #856404;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .final-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .final-actions .btn {
+            min-width: 200px;
+        }
+
         .round-info {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
@@ -668,6 +802,44 @@
                 font-size: 0.9em;
                 padding: 8px;
             }
+
+            .final-summary {
+                padding: 20px 15px 120px;
+            }
+
+            .final-summary h2 {
+                font-size: 1.5em;
+            }
+
+            .final-summary h3 {
+                font-size: 1.3em;
+            }
+
+            .overall-stats {
+                font-size: 1.1em;
+            }
+
+            .round-result {
+                padding: 12px;
+            }
+
+            .round-title {
+                font-size: 1em;
+            }
+
+            .round-score {
+                font-size: 1.1em;
+            }
+
+            .congrats-message {
+                font-size: 1.1em;
+                padding: 20px;
+            }
+
+            .final-actions .btn {
+                min-width: 150px;
+                font-size: 0.9em;
+            }
         }
 
         /* Small phones */
@@ -783,6 +955,34 @@
             <button class="btn btn-primary" onclick="nextRound()">Next Round / Siguiente Ronda</button>
             <button class="btn btn-secondary" onclick="restartGame()">Restart / Reiniciar</button>
         </div>
+
+        <div class="final-summary" id="finalSummary">
+            <h2>🎉 Game Completed! / ¡Juego Completado! 🎉</h2>
+            <div class="score-circle" id="overallScore">0%</div>
+            <div class="overall-stats" id="overallStats">
+                You got <strong><span id="totalCorrect">0</span></strong> out of <strong><span id="totalQuestions">90</span></strong> correct!
+                <br>
+                ¡Obtuviste <strong><span id="totalCorrect2">0</span></strong> de <strong><span id="totalQuestions2">90</span></strong> correctas!
+            </div>
+
+            <h3>📊 Results by Module / Resultados por Módulo</h3>
+            <div class="round-breakdown" id="roundBreakdown">
+                <!-- Round results will be inserted here by JavaScript -->
+            </div>
+
+            <div class="congrats-message" id="congratsMessage">
+                🌟 Excellent Work! / ¡Excelente Trabajo!
+            </div>
+
+            <div class="final-actions">
+                <button class="btn btn-primary" onclick="restartGame()">
+                    🔄 Play Again / Jugar de Nuevo
+                </button>
+                <a href="/" class="btn btn-secondary">
+                    🏠 Back to Menu / Volver al Menú
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -815,6 +1015,7 @@
         let currentAudio = null;
         let wordRevealed = false;
         let shuffledVocabulary = []; // Array to hold shuffled questions
+        let roundResults = []; // Array to store results of each round
 
         // Fisher-Yates shuffle algorithm for randomizing array
         function shuffleArray(array) {
@@ -1045,6 +1246,24 @@
             const roundScore = score - ((currentRound - 1) * wordsPerRound);
             const percentage = Math.round((roundScore / wordsInRound) * 100);
 
+            // Save round results
+            const roundNames = {
+                1: 'Solar System - Basics',
+                2: 'Solar System - Actions & Verbs',
+                3: 'Solar System - Descriptions',
+                4: 'Geography - Basics',
+                5: 'Geography - Actions & Locations',
+                6: 'Weather & Climate'
+            };
+
+            roundResults.push({
+                round: currentRound,
+                score: roundScore,
+                total: wordsInRound,
+                percentage: percentage,
+                theme: roundNames[currentRound]
+            });
+
             document.getElementById('finalScore').textContent = percentage + '%';
             document.getElementById('correctAnswers').textContent = roundScore;
             document.getElementById('totalAttempted').textContent = wordsInRound;
@@ -1052,8 +1271,8 @@
 
         function nextRound() {
             if (currentWordIndex >= shuffledVocabulary.length) {
-                alert('🎉 ¡Felicidades! You completed all vocabulary! / ¡Completaste todo el vocabulario!');
-                restartGame();
+                // Show final summary instead of restarting
+                showFinalSummary();
                 return;
             }
 
@@ -1063,6 +1282,82 @@
             loadWord();
         }
 
+        function getCongratsMessage(percentage) {
+            if (percentage >= 90) {
+                return '🏆 Outstanding! Perfect Mastery!<br>¡Excelente! ¡Dominio Perfecto!';
+            } else if (percentage >= 80) {
+                return '🌟 Excellent Work! Great Job!<br>¡Excelente Trabajo! ¡Muy Bien!';
+            } else if (percentage >= 70) {
+                return '👍 Good Job! Keep Practicing!<br>¡Buen Trabajo! ¡Sigue Practicando!';
+            } else if (percentage >= 60) {
+                return '💪 Nice Effort! You\'re Improving!<br>¡Buen Esfuerzo! ¡Estás Mejorando!';
+            } else {
+                return '📚 Keep Learning! Practice Makes Perfect!<br>¡Sigue Aprendiendo! ¡La Práctica Hace al Maestro!';
+            }
+        }
+
+        function getProgressClass(percentage) {
+            if (percentage >= 90) return 'progress-excellent';
+            if (percentage >= 80) return 'progress-good';
+            if (percentage >= 70) return 'progress-average';
+            return 'progress-below';
+        }
+
+        function showFinalSummary() {
+            // Hide other screens
+            document.getElementById('gameContainer').style.display = 'none';
+            document.getElementById('results').classList.remove('show');
+
+            // Show final summary
+            const finalSummary = document.getElementById('finalSummary');
+            finalSummary.classList.add('show');
+
+            // Calculate overall stats
+            const totalScore = roundResults.reduce((sum, r) => sum + r.score, 0);
+            const totalQuestions = roundResults.reduce((sum, r) => sum + r.total, 0);
+            const overallPercentage = Math.round((totalScore / totalQuestions) * 100);
+
+            // Update overall score
+            document.getElementById('overallScore').textContent = overallPercentage + '%';
+            document.getElementById('totalCorrect').textContent = totalScore;
+            document.getElementById('totalCorrect2').textContent = totalScore;
+            document.getElementById('totalQuestions').textContent = totalQuestions;
+            document.getElementById('totalQuestions2').textContent = totalQuestions;
+
+            // Update congratulations message
+            document.getElementById('congratsMessage').innerHTML = getCongratsMessage(overallPercentage);
+
+            // Build round breakdown
+            const roundBreakdown = document.getElementById('roundBreakdown');
+            roundBreakdown.innerHTML = '';
+
+            roundResults.forEach((result, index) => {
+                const roundDiv = document.createElement('div');
+                roundDiv.className = 'round-result';
+                roundDiv.style.animationDelay = (index * 0.1) + 's';
+
+                const progressClass = getProgressClass(result.percentage);
+                const star = result.percentage === 100 ? ' ⭐' : '';
+
+                roundDiv.innerHTML = `
+                    <div class="round-result-header">
+                        <div class="round-title">Round ${result.round}: ${result.theme}</div>
+                        <div class="round-score">${result.score}/${result.total} (${result.percentage}%)${star}</div>
+                    </div>
+                    <div class="progress-bar-round">
+                        <div class="progress-fill-round ${progressClass}" style="width: ${result.percentage}%">
+                            ${result.percentage}%
+                        </div>
+                    </div>
+                `;
+
+                roundBreakdown.appendChild(roundDiv);
+            });
+
+            // Scroll to top
+            finalSummary.scrollTop = 0;
+        }
+
         function restartGame() {
             currentRound = 1;
             currentWordIndex = 0;
@@ -1070,12 +1365,14 @@
             attempted = 0;
             answerSubmitted = false;
             wordRevealed = false;
+            roundResults = []; // Clear round results
 
             // Re-shuffle vocabulary data when restarting
             shuffledVocabulary = shuffleArray(vocabularyData);
 
             document.getElementById('gameContainer').style.display = 'block';
             document.getElementById('results').classList.remove('show');
+            document.getElementById('finalSummary').classList.remove('show');
             updateScore();
             loadWord();
         }
