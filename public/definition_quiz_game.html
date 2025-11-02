@@ -370,7 +370,265 @@
             box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
+        /* Mode Selection Styles */
+        .mode-selection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 40px 20px;
+        }
+
+        .mode-selection h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .mode-selection p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .mode-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .mode-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .mode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .mode-card.easy {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+        }
+
+        .mode-card.medium {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+        }
+
+        .mode-card.hard {
+            background: linear-gradient(135deg, #fab1a0 0%, #fd79a8 100%);
+        }
+
+        .mode-card.ultra {
+            background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
+            color: white;
+        }
+
+        .mode-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .mode-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .mode-time {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Timer Styles */
+        #timerContainer {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: none;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 15px auto;
+            font-size: 1.3em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        #timerContainer.timer-safe {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            color: #27ae60;
+        }
+
+        #timerContainer.timer-warning {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            color: #e67e22;
+        }
+
+        #timerContainer.timer-danger {
+            background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
+            color: white;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Progress Tracker Styles */
+        .progress-tracker-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .progress-tracker-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .progress-tracker-btn .tracker-summary {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .progress-panel {
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            min-width: 320px;
+            max-width: 400px;
+            z-index: 1000;
+            display: none;
+            animation: slideDown 0.3s ease;
+        }
+
+        .progress-panel.active {
+            display: block;
+        }
+
+        .progress-panel-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .progress-panel-header h3 {
+            font-size: 1.3em;
+            color: #667eea;
+            margin: 0;
+        }
+
+        .progress-summary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .progress-summary-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+        }
+
+        .summary-label {
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-value {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .progress-total {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .progress-total-label {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .progress-total-score {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .progress-percentage {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Performance color coding */
+        .perf-excellent { color: #27ae60; }
+        .perf-good { color: #3498db; }
+        .perf-average { color: #f39c12; }
+        .perf-below { color: #e74c3c; }
+
         @media (max-width: 768px) {
+            .mode-selection h2 {
+                font-size: 1.8em;
+            }
+
+            .mode-selection p {
+                font-size: 1em;
+            }
+
+            .mode-cards {
+                grid-template-columns: 1fr;
+            }
+
             .header h1 {
                 font-size: 1.4em;
             }
@@ -393,19 +651,113 @@
                 flex-direction: column;
                 gap: 20px;
             }
+
+            .progress-tracker-btn {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+                font-size: 0.75em;
+                padding: 6px 12px;
+            }
+
+            .progress-tracker-btn:hover {
+                transform: scale(1.05);
+            }
+
+            .progress-panel {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                right: auto;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                max-width: 350px;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            .progress-summary-item {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            #timerContainer {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <!-- Mode Selection Screen -->
+        <div class="mode-selection" id="modeSelection">
+            <h2>🎮 Select Difficulty Mode</h2>
+            <p>Selecciona el Modo de Dificultad</p>
+            <div class="mode-cards">
+                <div class="mode-card easy" onclick="selectMode('easy')">
+                    <div class="mode-icon">🟢</div>
+                    <div class="mode-title">Easy / Fácil</div>
+                    <div class="mode-time">No time limit / Sin límite</div>
+                </div>
+                <div class="mode-card medium" onclick="selectMode('medium')">
+                    <div class="mode-icon">🟡</div>
+                    <div class="mode-title">Medium / Medio</div>
+                    <div class="mode-time">30 minutes</div>
+                </div>
+                <div class="mode-card hard" onclick="selectMode('hard')">
+                    <div class="mode-icon">🟠</div>
+                    <div class="mode-title">Hard / Difícil</div>
+                    <div class="mode-time">20 minutes</div>
+                </div>
+                <div class="mode-card ultra" onclick="selectMode('ultra')">
+                    <div class="mode-icon">🔴</div>
+                    <div class="mode-title">Ultra</div>
+                    <div class="mode-time">10 minutes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header" style="display: none;">
             <a href="/" class="home-btn">🏠 Home</a>
             <h1>🎯 Definition Quiz Game</h1>
             <p>Listen to the definition and guess the correct word!</p>
             <p style="font-size: 0.9em; margin-top: 5px;">¡Escucha la definición y adivina la palabra correcta!</p>
+
+            <!-- Progress Tracker Button -->
+            <button class="progress-tracker-btn" id="progressTrackerBtn" onclick="toggleProgressPanel()" style="display: none;">
+                <span>📊</span>
+                <span class="tracker-summary" id="trackerSummary">0/0</span>
+            </button>
+
+            <!-- Progress Panel (Dropdown) -->
+            <div class="progress-panel" id="progressPanel">
+                <div class="progress-panel-header">
+                    <span style="font-size: 1.5em;">📊</span>
+                    <h3>Your Progress / Tu Progreso</h3>
+                </div>
+
+                <div id="progressSummaryList">
+                    <!-- Summary items will be dynamically inserted here -->
+                </div>
+
+                <div class="progress-total">
+                    <div class="progress-total-label">📈 Total Score / Puntuación Total</div>
+                    <div class="progress-total-score" id="progressTotalScore">0 / 0</div>
+                    <div class="progress-percentage" id="progressTotalPercentage">(0%)</div>
+                </div>
+            </div>
         </div>
 
-        <div class="game-info">
+        <!-- Timer Display -->
+        <div style="text-align: center;">
+            <div id="timerContainer" class="timer-safe">
+                <span>⏱️ Time:</span>
+                <span id="timerDisplay">--:--</span>
+            </div>
+        </div>
+
+        <div class="game-info" style="display: none;">
             <div class="info-item progress">
                 <span id="currentQuestion">0</span> / <span id="totalQuestions">0</span>
             </div>
@@ -414,7 +766,7 @@
             </div>
         </div>
 
-        <div class="game-container">
+        <div class="game-container" id="gameContainer" style="display: none;">
             <div id="gameArea">
                 <div class="card">
                     <div class="question-section">
@@ -484,6 +836,18 @@
         let answered = false;
         let currentAudio = null;
 
+        // Game modes and timer variables
+        const gameModes = {
+            easy: { time: null, name: 'Easy / Fácil', emoji: '🟢' },
+            medium: { time: 30 * 60, name: 'Medium / Medio', emoji: '🟡' },
+            hard: { time: 20 * 60, name: 'Hard / Difícil', emoji: '🟠' },
+            ultra: { time: 10 * 60, name: 'Ultra', emoji: '🔴' }
+        };
+
+        let selectedMode = null;
+        let timeRemaining = 0;
+        let timerInterval = null;
+
         // Load quiz data
         async function loadQuizData() {
             try {
@@ -494,7 +858,7 @@
                 quizData = shuffleArray(quizData);
 
                 document.getElementById('totalQuestions').textContent = quizData.length;
-                loadQuestion();
+                // Don't auto-start game, wait for mode selection
             } catch (error) {
                 console.error('Error loading quiz data:', error);
                 document.getElementById('questionText').textContent = 'Error loading quiz. Please refresh the page.';
@@ -536,6 +900,9 @@
 
             // Auto-play audio
             playQuestionAudio();
+
+            // Update progress tracker
+            updateProgressTracker();
         }
 
         // Load options
@@ -612,6 +979,9 @@
 
             // Enable next button
             document.getElementById('nextBtn').disabled = false;
+
+            // Update progress tracker
+            updateProgressTracker();
         }
 
         // Show feedback
@@ -643,6 +1013,9 @@
 
         // Show results
         function showResults() {
+            // Stop timer if running
+            stopTimer();
+
             document.getElementById('gameArea').style.display = 'none';
             document.querySelector('.navigation').style.display = 'none';
 
@@ -658,32 +1031,221 @@
             // Set message based on score
             const messageEl = document.getElementById('resultsMessage');
             if (percentage >= 90) {
-                messageEl.textContent = '🌟 Outstanding! You\'re a vocabulary master! / ¡Excepcional! ¡Eres un maestro del vocabulario!';
+                messageEl.textContent = `🌟 Outstanding! You\'re a vocabulary master! ${gameModes[selectedMode].emoji} (${gameModes[selectedMode].name}) / ¡Excepcional! ¡Eres un maestro del vocabulario!`;
             } else if (percentage >= 70) {
-                messageEl.textContent = '👏 Great job! Keep practicing! / ¡Buen trabajo! ¡Sigue practicando!';
+                messageEl.textContent = `👏 Great job! Keep practicing! ${gameModes[selectedMode].emoji} (${gameModes[selectedMode].name}) / ¡Buen trabajo! ¡Sigue practicando!`;
             } else if (percentage >= 50) {
-                messageEl.textContent = '👍 Good effort! Try again to improve! / ¡Buen esfuerzo! ¡Intenta de nuevo para mejorar!';
+                messageEl.textContent = `👍 Good effort! Try again to improve! ${gameModes[selectedMode].emoji} (${gameModes[selectedMode].name}) / ¡Buen esfuerzo! ¡Intenta de nuevo para mejorar!`;
             } else {
-                messageEl.textContent = '💪 Keep learning! Practice makes perfect! / ¡Sigue aprendiendo! ¡La práctica hace al maestro!';
+                messageEl.textContent = `💪 Keep learning! Practice makes perfect! ${gameModes[selectedMode].emoji} (${gameModes[selectedMode].name}) / ¡Sigue aprendiendo! ¡La práctica hace al maestro!`;
             }
         }
 
         // Restart game
         function restartGame() {
+            // Stop timer
+            stopTimer();
+
+            // Reset variables
             currentQuestionIndex = 0;
             score = 0;
             correctAnswers = 0;
             incorrectAnswers = 0;
             answered = false;
+            selectedMode = null;
+            timeRemaining = 0;
 
+            // Reset display
             document.getElementById('score').textContent = score;
-            document.getElementById('gameArea').style.display = 'block';
-            document.querySelector('.navigation').style.display = 'flex';
             document.getElementById('resultsScreen').classList.remove('show');
+            document.getElementById('gameArea').style.display = 'none';
+            document.querySelector('.navigation').style.display = 'none';
+            document.querySelector('.header').style.display = 'none';
+            document.querySelector('.game-info').style.display = 'none';
+            document.getElementById('timerContainer').style.display = 'none';
+            document.getElementById('gameContainer').style.display = 'none';
+
+            // Show mode selection again
+            document.getElementById('modeSelection').style.display = 'flex';
 
             // Shuffle questions again
             quizData = shuffleArray(quizData);
+        }
+
+        // Progress Tracker Functions
+        function toggleProgressPanel() {
+            const panel = document.getElementById('progressPanel');
+            panel.classList.toggle('active');
+        }
+
+        function updateProgressTracker() {
+            // Show the progress tracker button when game starts
+            const trackerBtn = document.getElementById('progressTrackerBtn');
+            if (quizData.length > 0) {
+                trackerBtn.style.display = 'inline-flex';
+            }
+
+            // Update summary in button
+            const currentScore = score;
+            const totalAnswered = correctAnswers + incorrectAnswers;
+
+            document.getElementById('trackerSummary').textContent = `${currentScore}/${totalAnswered * 10}`;
+
+            // Update the summary list
+            const summaryList = document.getElementById('progressSummaryList');
+            summaryList.innerHTML = '';
+
+            // Questions Answered
+            const answeredItem = document.createElement('div');
+            answeredItem.className = 'progress-summary-item';
+            answeredItem.innerHTML = `
+                <div class="summary-label">
+                    <span>❓</span>
+                    <span>Questions Answered / Preguntas Contestadas</span>
+                </div>
+                <div class="summary-value">${totalAnswered} / ${quizData.length}</div>
+            `;
+            summaryList.appendChild(answeredItem);
+
+            // Correct Answers
+            const correctItem = document.createElement('div');
+            correctItem.className = 'progress-summary-item';
+            const correctPercentage = totalAnswered > 0 ? Math.round((correctAnswers / totalAnswered) * 100) : 0;
+            const correctPerfClass = getPerformanceClass(correctPercentage);
+            correctItem.innerHTML = `
+                <div class="summary-label">
+                    <span>✅</span>
+                    <span>Correct Answers / Respuestas Correctas</span>
+                </div>
+                <div class="summary-value ${correctPerfClass}">${correctAnswers} (${correctPercentage}%)</div>
+            `;
+            summaryList.appendChild(correctItem);
+
+            // Incorrect Answers
+            const incorrectItem = document.createElement('div');
+            incorrectItem.className = 'progress-summary-item';
+            incorrectItem.innerHTML = `
+                <div class="summary-label">
+                    <span>❌</span>
+                    <span>Incorrect Answers / Respuestas Incorrectas</span>
+                </div>
+                <div class="summary-value">${incorrectAnswers}</div>
+            `;
+            summaryList.appendChild(incorrectItem);
+
+            // Remaining Questions
+            const remaining = quizData.length - totalAnswered;
+            const remainingItem = document.createElement('div');
+            remainingItem.className = 'progress-summary-item';
+            remainingItem.innerHTML = `
+                <div class="summary-label">
+                    <span>⏳</span>
+                    <span>Remaining / Restantes</span>
+                </div>
+                <div class="summary-value">${remaining}</div>
+            `;
+            summaryList.appendChild(remainingItem);
+
+            // Update total accumulated score
+            const overallPercentage = totalAnswered > 0
+                ? Math.round((correctAnswers / totalAnswered) * 100)
+                : 0;
+
+            document.getElementById('progressTotalScore').textContent = `${currentScore} / ${totalAnswered * 10}`;
+            document.getElementById('progressTotalPercentage').textContent = `(${overallPercentage}%)`;
+        }
+
+        function getPerformanceClass(percentage) {
+            if (percentage >= 90) return 'perf-excellent';
+            if (percentage >= 80) return 'perf-good';
+            if (percentage >= 70) return 'perf-average';
+            return 'perf-below';
+        }
+
+        // Close progress panel when clicking outside
+        document.addEventListener('click', function(event) {
+            const panel = document.getElementById('progressPanel');
+            const btn = document.getElementById('progressTrackerBtn');
+
+            if (panel && btn && panel.classList.contains('active')) {
+                if (!panel.contains(event.target) && !btn.contains(event.target)) {
+                    panel.classList.remove('active');
+                }
+            }
+        });
+
+        // Mode Selection and Timer Functions
+        function selectMode(mode) {
+            selectedMode = mode;
+
+            // Set timer if mode has time limit
+            if (gameModes[mode].time !== null) {
+                timeRemaining = gameModes[mode].time;
+                document.getElementById('timerContainer').style.display = 'inline-flex';
+                updateTimerDisplay();
+                startTimer();
+            }
+
+            // Hide mode selection, show game
+            document.getElementById('modeSelection').style.display = 'none';
+            document.querySelector('.header').style.display = 'block';
+            document.querySelector('.game-info').style.display = 'flex';
+            document.getElementById('gameContainer').style.display = 'block';
+            document.getElementById('gameArea').style.display = 'block';
+            document.querySelector('.navigation').style.display = 'flex';
+
+            // Start the game
             loadQuestion();
+            updateProgressTracker();
+        }
+
+        function startTimer() {
+            stopTimer(); // Clear any existing timer
+            if (selectedMode === 'easy') return; // No timer for easy mode
+
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerDisplay();
+
+                if (timeRemaining <= 0) {
+                    gameOver();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            const timeString = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('timerDisplay').textContent = timeString;
+
+            // Update timer color based on remaining time
+            const percentage = gameModes[selectedMode].time !== null
+                ? (timeRemaining / gameModes[selectedMode].time) * 100
+                : 100;
+
+            const timerElement = document.getElementById('timerContainer');
+            timerElement.classList.remove('timer-safe', 'timer-warning', 'timer-danger');
+
+            if (percentage > 50) {
+                timerElement.classList.add('timer-safe');
+            } else if (percentage > 25) {
+                timerElement.classList.add('timer-warning');
+            } else {
+                timerElement.classList.add('timer-danger');
+            }
+        }
+
+        function gameOver() {
+            stopTimer();
+            showResults();
         }
 
         // Initialize game
