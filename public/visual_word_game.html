@@ -14,19 +14,18 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 100vh;
+            min-height: 100vh;
             padding: 10px;
-            overflow: hidden;
         }
 
         .container {
             max-width: 1400px;
-            height: 100%;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
+            position: relative;
+            min-height: calc(100vh - 20px);
             display: flex;
             flex-direction: column;
         }
@@ -39,8 +38,8 @@
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
-            /* Add padding at bottom to ensure content doesn't hide behind sticky navigation */
-            padding-bottom: 80px;
+            /* Add padding at bottom to ensure content doesn't hide behind fixed navigation */
+            padding-bottom: 100px;
         }
 
         .header {
@@ -340,12 +339,15 @@
             padding: 15px;
             border-top: 2px solid #e0e0e0;
             text-align: center;
-            flex-shrink: 0;
             background: white;
-            position: sticky;
+            position: fixed;
             bottom: 0;
-            z-index: 100;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .btn {
@@ -527,9 +529,15 @@
 
             .game-container {
                 padding: 10px;
-                padding-bottom: 100px;
+                padding-bottom: 120px;
                 overflow-y: auto;
                 overflow-x: hidden;
+            }
+
+            .navigation {
+                left: 0;
+                right: 0;
+                border-radius: 0;
             }
 
             .word-display {
