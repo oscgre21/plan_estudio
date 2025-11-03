@@ -1,0 +1,16 @@
+[
+  {
+    "id": "jearle-social-science",
+    "name": "SOCIAL SCIENCE JEARLE",
+    "description": "Jearlenis's Social Science Test Set",
+    "vocabularyFile": "vocabulary-data.json",
+    "scienceQuizFile": "science-quiz-data.json"
+  },
+  {
+    "id": "aslan-social-science",
+    "name": "SOCIAL SCIENCE ASLAN",
+    "description": "Aslan's Social Science Test Set",
+    "vocabularyFile": "vocabulary-data_V2.json",
+    "scienceQuizFile": "science-quiz-data_V2.json"
+  }
+]

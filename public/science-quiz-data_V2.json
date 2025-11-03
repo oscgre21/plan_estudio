@@ -1,0 +1,244 @@
+[
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "type": "reading",
+    "content": "<h3>Written Comprehension: The Reproductive System</h3><p>The reproductive system allows humans to have children. There are two types: the female reproductive system and the male reproductive system.</p><p>The female reproductive system has internal organs like the vulva and external organs like the vagina. The ovaries are where eggs are formed. The fallopian tubes, the ovaries, the uterus and the vagina are the internal female reproductive organs.</p><p>The male reproductive system is formed only by external organs. These organs work together to allow reproduction.</p><p>During adolescence, the body begins to change. These changes are called puberty and happen between 12 to 16 years old.</p>"
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "The female reproductive system has both internal and external organs.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. The female reproductive system has internal organs like the ovaries, uterus and fallopian tubes, and external organs like the vulva and vagina."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "The ovaries are where eggs are formed and matured.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Ovaries are two organs with the size of an almond where eggs, which are the reproductive female cells, are formed and matured."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "The uterus is where the future baby develops.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. The uterus is a cavity with thick muscular walls where the future baby develops during pregnancy."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "The male reproductive system has only internal organs.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. The male reproductive system is formed only by external organs, not internal ones."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "Fallopian tubes communicate the ovaries with the uterus.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Fallopian tubes are two conduits that communicate the ovaries with the uterus, allowing eggs to travel."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "The vagina is an internal reproductive organ.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. The vagina is an internal organ that communicates the uterus with the outside."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "The vulva is formed by a set of folds that protect the entrance to the vagina.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. The vulva is the external part of the reproductive system formed by a set of folds that protect the entrance to the vagina."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "Choose: Which of the following is NOT part of the female reproductive system?",
+    "type": "multiple-choice",
+    "options": ["Ovaries", "Heart", "Uterus", "Vagina"],
+    "correctAnswer": 1,
+    "explanation": "Heart is correct! The heart is part of the circulatory system, not the reproductive system. The ovaries, uterus and vagina are all parts of the female reproductive system."
+  },
+  {
+    "exam": "Exam 1: The Reproductive System",
+    "question": "Choose: What are the two main functions of the female reproductive system?",
+    "type": "multiple-choice",
+    "options": ["Internal and External", "Production and Protection", "Breathing and Eating", "Walking and Running"],
+    "correctAnswer": 0,
+    "explanation": "Internal and External is correct! The female reproductive system has two main functions: internal organs (like ovaries and uterus) and external organs (like vulva)."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "type": "reading",
+    "content": "<h3>Sexual Characteristics</h3><p>When boys and girls are born, they are only differentiated by their reproductive organs. During early adolescence (from 12 to 16 years old), the body begins to change.</p><p>The differences from birth between men and women are known as sexual characteristics. There are two types:</p><p><strong>Primary:</strong> they are the reproductive organs and are already formed at birth.</p><p><strong>Secondary:</strong> they are the physical differences that are accentuated in adolescence, like body hair, voice changes, and physical development.</p>"
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Sexual characteristics can be primary or secondary.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. There are two types of sexual characteristics: primary (reproductive organs present at birth) and secondary (physical changes during puberty)."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Primary sexual characteristics appear during puberty.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Primary sexual characteristics are the reproductive organs that are already formed at birth, not during puberty."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Secondary sexual characteristics are accentuated during adolescence.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Secondary sexual characteristics are the physical differences that are accentuated in adolescence, such as body hair, voice changes, and physical development."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Puberty happens between 12 to 16 years old.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. During early adolescence (from 12 to 16 years old), the body begins to change. This period is called puberty."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Hair growth is a primary sexual characteristic.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Hair growth is a secondary sexual characteristic that appears during puberty, not a primary one."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Choose: Which is an example of a secondary sexual characteristic?",
+    "type": "multiple-choice",
+    "options": ["Ovaries", "Voice changes", "Uterus", "Vagina"],
+    "correctAnswer": 1,
+    "explanation": "Voice changes is correct! Voice changes are a secondary sexual characteristic that appears during puberty. Ovaries, uterus and vagina are primary sexual characteristics (reproductive organs)."
+  },
+  {
+    "exam": "Exam 2: Sexual Characteristics and Life Stages",
+    "question": "Choose: Primary sexual characteristics are:",
+    "type": "multiple-choice",
+    "options": ["Body hair", "Reproductive organs", "Voice changes", "Wide hips"],
+    "correctAnswer": 1,
+    "explanation": "Reproductive organs is correct! Primary sexual characteristics are the reproductive organs that are already formed at birth."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "type": "reading",
+    "content": "<h3>Stages of Life</h3><p>Humans have different stages of growth and development throughout their lives:</p><p><strong>Infancy (0-5 years):</strong> Babies are completely dependent on their parents.</p><p><strong>Childhood (6-11 years):</strong> Children have some independence and can do things like put on their clothes.</p><p><strong>Adolescence (12-18 years):</strong> Teenagers are very independent but still need their parents. Physical and emotional changes occur.</p><p><strong>Youth (19-25 years):</strong> Young adults transition to full independence.</p><p><strong>Maturity/Adulthood (26-70 years):</strong> People are fully developed mentally, physically and emotionally.</p><p><strong>Old age (From the 70s):</strong> The reproductive system stops working.</p>"
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Infancy is the stage from 0 to 5 years.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Infancy is the first stage of life from 0 to 5 years when babies are completely dependent on their parents."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "During childhood, children are completely dependent on their parents.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. During childhood (6-11 years), children have some independence and can do things like put on their clothes. Complete dependence is during infancy."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Adolescence is from 12 to 18 years.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Adolescence is the stage from 12 to 18 years when teenagers are very independent but still need their parents."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "In old age, the reproductive system stops working.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. In old age (from the 70s onwards), the reproductive system stops working."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Youth is the stage from 26 to 70 years.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Youth is from 19 to 25 years. The stage from 26 to 70 years is called maturity or adulthood."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Adults are fully developed mentally, physically and emotionally.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. During maturity/adulthood, people are fully developed mentally, physically and emotionally, which allows them to become independent."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Choose: What stage comes after childhood?",
+    "type": "multiple-choice",
+    "options": ["Infancy", "Adolescence", "Old age", "Youth"],
+    "correctAnswer": 1,
+    "explanation": "Adolescence is correct! After childhood (6-11 years) comes adolescence (12-18 years)."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Choose: In which stage are people completely dependent on their parents?",
+    "type": "multiple-choice",
+    "options": ["Infancy", "Childhood", "Adolescence", "Adulthood"],
+    "correctAnswer": 0,
+    "explanation": "Infancy is correct! During infancy (0-5 years), babies are completely dependent on their parents. In later stages, people gain more independence."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Choose: The longest stage of life is:",
+    "type": "multiple-choice",
+    "options": ["Childhood", "Adolescence", "Maturity", "Infancy"],
+    "correctAnswer": 2,
+    "explanation": "Maturity is correct! Maturity/adulthood is the longest stage from 26 to 70 years (44 years total)."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Choose: During which stage do the most physical changes occur?",
+    "type": "multiple-choice",
+    "options": ["Infancy", "Childhood", "Adolescence", "Old age"],
+    "correctAnswer": 2,
+    "explanation": "Adolescence is correct! During adolescence (12-18 years), many physical and emotional changes occur due to puberty."
+  },
+  {
+    "exam": "Exam 3: Life Stages",
+    "question": "Choose: What happens to the reproductive system in old age?",
+    "type": "multiple-choice",
+    "options": ["It grows stronger", "It stops working", "It produces more cells", "It doesn't change"],
+    "correctAnswer": 1,
+    "explanation": "It stops working is correct! In old age (from the 70s), the reproductive system stops working."
+  },
+  {
+    "exam": "Exam 4: Reproduction Function",
+    "question": "Reproduction is the function that allows humans to have children.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Reproduction is the biological function that allows humans to have children and continue the species."
+  },
+  {
+    "exam": "Exam 4: Reproduction Function",
+    "question": "All stages of life are related to reproduction.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Not all stages are related to reproduction. For example, infancy and old age are not reproductive stages."
+  },
+  {
+    "exam": "Exam 4: Reproduction Function",
+    "question": "Humans go through different stages of growth and development.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Humans have different stages of growth and development: infancy, childhood, adolescence, youth, maturity/adulthood and old age."
+  },
+  {
+    "exam": "Exam 4: Reproduction Function",
+    "question": "Choose: When can humans have children?",
+    "type": "multiple-choice",
+    "options": ["Infancy", "Childhood", "Adolescence and adulthood", "Old age"],
+    "correctAnswer": 2,
+    "explanation": "Adolescence and adulthood is correct! Humans can have children during adolescence (after puberty) and throughout adulthood, but not during infancy, childhood or old age."
+  }
+]

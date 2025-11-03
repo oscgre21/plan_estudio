@@ -413,6 +413,9 @@
             <a href="/" class="home-btn">🏠 Home</a>
             <h1>🌟 Science Quiz Review 🌟</h1>
             <p>Interactive Practice for Jearlenis</p>
+            <p style="font-size: 0.9em; margin-top: 5px; opacity: 0.9;">
+                📚 Test Set: <span id="currentTestSetName" style="font-weight: bold; display: none;"></span>
+            </p>
         </div>
 
         <div class="progress-bar">
@@ -443,352 +446,48 @@
         </div>
     </div>
 
+    <script src="test-set-manager.js"></script>
     <script>
-        const quizData = [
-            // EXAM 1: SOLAR SYSTEM & PLANETS
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                type: "reading",
-                content: `<h3>Written Comprehension: The Planets of Our Solar System</h3>
-                <p>Our Solar System is made up of the Sun and eight planets that move around it. The Sun is a huge star that gives light and heat to all the planets.</p>
-                <p>The planets are divided into two groups: the inner planets and the outer planets. The inner planets are Mercury, Venus, Earth, and Mars. They are smaller and made mostly of rock. Earth is the only planet known to have life.</p>
-                <p>The outer planets are Jupiter, Saturn, Uranus, and Neptune. These planets are much larger and are made mostly of gas. Jupiter is the biggest planet in our Solar System, and Saturn is famous for its beautiful rings.</p>
-                <p>All the planets travel around the Sun in paths called orbits. The time each planet takes to go around the Sun is called a year. For example, Earth takes 365 days to make one orbit.</p>`
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "The Sun is a planet that moves around the Earth.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. The Sun is a star, not a planet. The Earth and all other planets move around the Sun, not the other way around."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "There are eight planets in our Solar System.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. Our Solar System has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "The inner planets are made mostly of gas.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. The inner planets (Mercury, Venus, Earth, and Mars) are made mostly of rock. The outer planets are the ones made mostly of gas."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "Earth is the only planet where life is known to exist.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. Earth is the only planet in our Solar System where life is known to exist. It has water, air, and the right temperature for life."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "Jupiter is the smallest planet in our Solar System.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. Jupiter is actually the BIGGEST planet in our Solar System, not the smallest!"
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "Saturn is known for its rings.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. Saturn is famous for its beautiful rings made of ice and rock particles."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "The time a planet takes to go around the Sun is called a year.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. One complete orbit around the Sun equals one year for that planet. Earth takes 365 days to complete one year."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "The outer planets are larger than the inner planets.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. The outer planets (Jupiter, Saturn, Uranus, and Neptune) are much larger than the inner planets."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "Mars is one of the outer planets.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. Mars is one of the inner planets. The inner planets are Mercury, Venus, Earth, and Mars."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "All the planets move around the Sun in orbits.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. All planets travel around the Sun in paths called orbits. This is what keeps them in the Solar System."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "Choose: Which of the following is an inner planet?",
-                type: "multiple-choice",
-                options: ["Jupiter", "Mars", "Neptune", "Saturn"],
-                correctAnswer: 1,
-                explanation: "Mars is correct! Mars is one of the four inner planets (Mercury, Venus, Earth, and Mars). Jupiter, Neptune, and Saturn are outer planets."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "Pluto is no longer considered a planet because it does not meet all the requirements to orbit cleanly around the Sun.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. Pluto was reclassified as a 'dwarf planet' because it doesn't clear its orbital path of other objects."
-            },
-            {
-                exam: "Exam 1: The Planets of Our Solar System",
-                question: "The Earth rotates on its axis every:",
-                type: "multiple-choice",
-                options: ["24 hours", "365 days", "30 days", "12 hours"],
-                correctAnswer: 0,
-                explanation: "24 hours is correct! The Earth takes 24 hours to complete one full rotation on its axis, which gives us day and night."
-            },
-
-            // EXAM 2: GEOGRAPHY - HEMISPHERES & EARTH
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "The continent of Africa is located in 4 hemispheres.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. Africa is the only continent located in all four hemispheres: Northern, Southern, Eastern, and Western."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Alaska is in the Northern Hemisphere.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. Alaska is located in the Northern Hemisphere, above the Equator."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "South Africa is in both the Northern and Southern hemisphere.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. South Africa is only in the Southern Hemisphere, below the Equator."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Every place on earth can only be in one hemisphere.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. Places can be in TWO hemispheres at the same time. For example, a place can be in both the Northern and Eastern hemispheres."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "The continent of South America is in the Western hemisphere.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. South America is located in the Western Hemisphere, west of the Prime Meridian."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Antarctica is located in three hemispheres.",
-                type: "true-false",
-                correctAnswer: "F",
-                explanation: "This is FALSE. Antarctica is primarily in the Southern Hemisphere. While it technically touches multiple hemispheres at its edges, it's mainly considered to be in the Southern Hemisphere."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "The Indian Ocean is in three hemispheres.",
-                type: "true-false",
-                correctAnswer: "T",
-                explanation: "This is TRUE. The Indian Ocean is located in the Southern, Eastern, and parts of the Northern Hemisphere."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which hemisphere is shown by the picture? <img src='quiz_images/hemispheres.jpeg' class='question-image' alt='Globe showing Eastern Hemisphere'>",
-                type: "multiple-choice",
-                options: ["Western Hemisphere", "Northern Hemisphere", "Eastern Hemisphere", "Southern Hemisphere"],
-                correctAnswer: 2,
-                explanation: "Eastern Hemisphere is correct! The image shows Africa and Asia, which are continents in the Eastern Hemisphere."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "What do the lines in this picture show? <img src='quiz_images/globe.jpeg' class='question-image' alt='Globe with longitude lines'>",
-                type: "text-input",
-                correctAnswer: "longitude",
-                alternativeAnswers: ["lines of longitude", "meridians"],
-                explanation: "The correct answer is LONGITUDE (or meridians). These vertical lines that run from North Pole to South Pole are called lines of longitude or meridians."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which of the following explains why we have day and night?",
-                type: "multiple-choice",
-                options: [
-                    "The Earth revolves around the Sun",
-                    "The Earth rotates on its axis",
-                    "The Moon rotates on its axis",
-                    "The Sun rotates around the Earth"
-                ],
-                correctAnswer: 1,
-                explanation: "The Earth rotates on its axis is correct! As Earth spins on its axis, different parts face the Sun (day) while others face away (night). This rotation takes 24 hours."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which of the following explains why we have seasons?",
-                type: "multiple-choice",
-                options: [
-                    "The Earth rotates on its axis",
-                    "The Earth revolves around the Sun and the tilt of its axis",
-                    "The Moon revolves around the Earth",
-                    "The Sun changes its position"
-                ],
-                correctAnswer: 1,
-                explanation: "The Earth revolves around the Sun and the tilt of its axis is correct! The 23.5-degree tilt of Earth's axis causes different parts to receive varying amounts of sunlight throughout the year, creating seasons."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "The Equator is a line of:",
-                type: "multiple-choice",
-                options: ["Longitude", "Latitude", "Temperature", "Altitude"],
-                correctAnswer: 1,
-                explanation: "Latitude is correct! The Equator is the main line of latitude at 0 degrees. It divides Earth into Northern and Southern Hemispheres."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Lines of longitude run:",
-                type: "multiple-choice",
-                options: [
-                    "North to South",
-                    "East to West",
-                    "Around the poles only",
-                    "In circles around the equator"
-                ],
-                correctAnswer: 0,
-                explanation: "North to South is correct! Lines of longitude (meridians) run vertically from the North Pole to the South Pole."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "The Prime Meridian divides the Earth into:",
-                type: "multiple-choice",
-                options: [
-                    "Northern and Southern Hemispheres",
-                    "Eastern and Western Hemispheres",
-                    "Hot and cold zones",
-                    "Day and night"
-                ],
-                correctAnswer: 1,
-                explanation: "Eastern and Western Hemispheres is correct! The Prime Meridian (0 degrees longitude) divides Earth into Eastern and Western Hemispheres, just like the Equator divides it into Northern and Southern."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "What shape is the planet Earth?",
-                type: "multiple-choice",
-                options: ["Hemisphere", "Circle", "Hemicube", "Sphere"],
-                correctAnswer: 3,
-                explanation: "Sphere is correct! Earth is shaped like a sphere (a three-dimensional round ball). It's not a perfect sphere because it's slightly flattened at the poles."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which Hemisphere are both North America and South America found in?",
-                type: "multiple-choice",
-                options: [
-                    "Eastern Hemisphere",
-                    "Western Hemisphere",
-                    "Southern Hemisphere",
-                    "Northern Hemisphere"
-                ],
-                correctAnswer: 1,
-                explanation: "Western Hemisphere is correct! Both continents are located in the Western Hemisphere, west of the Prime Meridian."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which Hemisphere are Asia, Australia, and most of Europe found in?",
-                type: "multiple-choice",
-                options: [
-                    "Western Hemisphere",
-                    "Northern Hemisphere",
-                    "Southern Hemisphere",
-                    "Eastern Hemisphere"
-                ],
-                correctAnswer: 3,
-                explanation: "Eastern Hemisphere is correct! Asia, Australia, and most of Europe are located in the Eastern Hemisphere, east of the Prime Meridian."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which Hemisphere are both South America and Antarctica found in?",
-                type: "multiple-choice",
-                options: [
-                    "Southern Hemisphere",
-                    "Northern Hemisphere",
-                    "Eastern Hemisphere",
-                    "Western Hemisphere"
-                ],
-                correctAnswer: 0,
-                explanation: "Southern Hemisphere is correct! Both South America and Antarctica are primarily located in the Southern Hemisphere, below the Equator."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Weather describes:",
-                type: "multiple-choice",
-                options: [
-                    "The average conditions over a long time",
-                    "The short-term conditions of the atmosphere",
-                    "How plants grow in a region",
-                    "The shape of the land"
-                ],
-                correctAnswer: 1,
-                explanation: "The short-term conditions of the atmosphere is correct! Weather is what's happening right now or over a short period - like sunny, rainy, or snowy today."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Climate is:",
-                type: "multiple-choice",
-                options: [
-                    "The temperature on a single day",
-                    "The usual pattern of weather in a place over many years",
-                    "A type of rainfall",
-                    "None of the above"
-                ],
-                correctAnswer: 1,
-                explanation: "The usual pattern of weather in a place over many years is correct! Climate is the average weather conditions over a long period (30+ years), not just one day."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which of the following can describe weather?",
-                type: "multiple-choice",
-                options: [
-                    "Sunny and warm today",
-                    "Always rainy in the rainforest",
-                    "Cold winters and hot summers",
-                    "A desert has little rain"
-                ],
-                correctAnswer: 0,
-                explanation: "Sunny and warm today is correct! This describes current conditions (weather). The other options describe long-term patterns (climate)."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Which inner planet is known as the Red Planet?",
-                type: "multiple-choice",
-                options: ["Mercury", "Venus", "Earth", "Mars"],
-                correctAnswer: 3,
-                explanation: "Mars is correct! Mars is called the 'Red Planet' because of the reddish color of its surface, caused by iron oxide (rust) in its soil."
-            },
-            {
-                exam: "Exam 2: Geography - Hemispheres & Earth",
-                question: "Why Pluto is no longer considered a planet?",
-                type: "multiple-choice",
-                options: [
-                    "It is too small",
-                    "It is not round",
-                    "It does not clear its orbit of other objects",
-                    "It is too far from the Sun"
-                ],
-                correctAnswer: 2,
-                explanation: "It does not clear its orbit of other objects is correct! To be a planet, an object must clear its orbital path. Pluto shares its orbit with other objects in the Kuiper Belt, so it's classified as a 'dwarf planet.'"
-            }
-        ];
-
+        let quizData = [];
         let currentQuestionIndex = 0;
         let score = 0;
         let attempted = 0;
-        let userAnswers = new Array(quizData.length).fill(null);
+        let userAnswers = [];
         let answerSubmitted = false;
+
+        // Load quiz data from JSON file
+        async function loadQuizData() {
+            try {
+                // Get the science quiz file from the selected test set
+                const scienceQuizFile = await TestSetManager.getScienceQuizFile();
+                console.log(`Loading science quiz from: ${scienceQuizFile}`);
+
+                const response = await fetch(scienceQuizFile);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${scienceQuizFile}`);
+                }
+                quizData = await response.json();
+                userAnswers = new Array(quizData.length).fill(null);
+                console.log(`✅ Loaded ${quizData.length} quiz questions from ${scienceQuizFile}`);
+
+                // Display current test set name
+                TestSetManager.displayCurrentTestSet('currentTestSetName');
+
+                initQuiz();
+            } catch (error) {
+                console.error('Error loading quiz data:', error);
+                document.getElementById('questionContainer').innerHTML =
+                    '<div style="text-align: center; padding: 40px; color: #e74c3c;"><h2>Error Loading Quiz</h2><p>Could not load quiz questions. Please refresh the page or select a test set from the home page.</p></div>';
+            }
+        }
+
+        // Initialize game - ensure test set is selected first
+        async function initGameApp() {
+            const isTestSetSelected = await TestSetManager.ensureTestSetSelected('/');
+            if (isTestSetSelected) {
+                await loadQuizData();
+            }
+        }
 
         function initQuiz() {
             document.getElementById('totalQuestions').textContent = quizData.filter(q => q.type !== 'reading').length;
@@ -1134,7 +833,7 @@
         });
 
         // Initialize quiz on page load
-        initQuiz();
+        initGameApp();
     </script>
 </body>
 </html>

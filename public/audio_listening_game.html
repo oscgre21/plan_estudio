@@ -1375,6 +1375,9 @@
             <a href="/" class="home-btn">🏠 Home</a>
             <h1>🎧 Audio Listening Game 🎧</h1>
             <p>Juego de Escuchar - Listen and Match</p>
+            <p style="font-size: 0.9em; margin-top: 5px; opacity: 0.9;">
+                📚 Test Set: <span id="currentTestSetName" style="font-weight: bold; display: none;"></span>
+            </p>
 
             <!-- Progress Tracker Button -->
             <button class="progress-tracker-btn" id="progressTrackerBtn" onclick="toggleProgressPanel()" style="display: none;">
@@ -1520,6 +1523,7 @@
         </div>
     </div>
 
+    <script src="test-set-manager.js"></script>
     <script>
         // Vocabulary data will be loaded from external JSON file
         let vocabularyData = [];
@@ -1527,19 +1531,38 @@
         // Load vocabulary data from JSON file
         async function loadVocabularyData() {
             try {
-                const response = await fetch('vocabulary-data.json');
+                // Get the vocabulary file from the selected test set
+                const vocabularyFile = await TestSetManager.getVocabularyFile();
+                console.log(`Loading vocabulary from: ${vocabularyFile}`);
+
+                const response = await fetch(vocabularyFile);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${vocabularyFile}`);
+                }
                 vocabularyData = await response.json();
-                console.log(`Loaded ${vocabularyData.length} vocabulary words`);
+                console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from ${vocabularyFile}`);
+
+                // Display current test set name
+                TestSetManager.displayCurrentTestSet('currentTestSetName');
+
                 // Don't auto-start game, wait for mode selection
                 // init() will be called when user selects a mode
             } catch (error) {
                 console.error('Error loading vocabulary data:', error);
-                alert('Error loading vocabulary data. Please refresh the page.');
+                alert('Error loading vocabulary data. Please refresh the page or select a test set from the home page.');
             }
         }
 
-        // Call this when page loads
-        loadVocabularyData();
+        // Call this when page loads - ensure test set is selected first
+        async function initGame() {
+            const isTestSetSelected = await TestSetManager.ensureTestSetSelected('/');
+            if (isTestSetSelected) {
+                await loadVocabularyData();
+            }
+        }
+
+        // Initialize
+        initGame();
 
         // Game mode configuration
         const gameModes = {

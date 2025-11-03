@@ -1,0 +1,332 @@
+[
+  {
+    "word": "REPRODUCTIVE SYSTEM",
+    "spanish": "Sistema Reproductivo",
+    "sentenceEN": "The reproductive system allows humans to have children.",
+    "sentenceES": "El sistema reproductivo permite a los humanos tener hijos.",
+    "options": [
+      { "emoji": "👶", "label": "Reproduction", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🫁", "label": "Lungs", "isCorrect": false }
+    ],
+    "explanation": "The reproductive system is the biological system that allows humans to reproduce and have children. Un sistema reproductivo es el sistema biológico que permite a los humanos reproducirse y tener hijos.",
+    "audioWord": "audios/word-reproductive-system.mp3",
+    "audioSentence": "audios/sentence-the-reproductive-system-allows-humans-to-have-children.mp3"
+  },
+  {
+    "word": "OVARIES",
+    "spanish": "Ovarios",
+    "sentenceEN": "The ovaries are organs where eggs are formed.",
+    "sentenceES": "Los ovarios son órganos donde se forman los óvulos.",
+    "options": [
+      { "emoji": "🥚", "label": "Egg organs", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🫁", "label": "Lungs", "isCorrect": false }
+    ],
+    "explanation": "Ovaries are two organs with the size of an almond where eggs, which are the reproductive female cells, are formed and matured. Los ovarios son dos órganos del tamaño de una almendra donde se forman y maduran los óvulos.",
+    "audioWord": "audios/word-ovaries.mp3",
+    "audioSentence": "audios/sentence-the-ovaries-are-organs-where-eggs-are-formed.mp3"
+  },
+  {
+    "word": "UTERUS",
+    "spanish": "Útero",
+    "sentenceEN": "The uterus is where the future baby develops.",
+    "sentenceES": "El útero es donde se desarrolla el futuro bebé.",
+    "options": [
+      { "emoji": "🤰", "label": "Baby cavity", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🦴", "label": "Bone", "isCorrect": false }
+    ],
+    "explanation": "The uterus is a cavity with thick muscular walls where the future baby develops. El útero es una cavidad con paredes musculares gruesas donde se desarrolla el futuro bebé.",
+    "audioWord": "audios/word-uterus.mp3",
+    "audioSentence": "audios/sentence-the-uterus-is-where-the-future-baby-develops.mp3"
+  },
+  {
+    "word": "VAGINA",
+    "spanish": "Vagina",
+    "sentenceEN": "The vagina communicates the uterus with the outside.",
+    "sentenceES": "La vagina comunica el útero con el exterior.",
+    "options": [
+      { "emoji": "🚪", "label": "Birth canal", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🫁", "label": "Lungs", "isCorrect": false }
+    ],
+    "explanation": "The vagina communicates the uterus with the outside. La vagina comunica el útero con el exterior.",
+    "audioWord": "audios/word-vagina.mp3",
+    "audioSentence": "audios/sentence-the-vagina-communicates-the-uterus-with-the-outside.mp3"
+  },
+  {
+    "word": "FALLOPIAN TUBES",
+    "spanish": "Trompas de Falopio",
+    "sentenceEN": "Fallopian tubes are two conduits that communicate the ovaries with the uterus.",
+    "sentenceES": "Las trompas de Falopio son dos conductos que comunican los ovarios con el útero.",
+    "options": [
+      { "emoji": "🔗", "label": "Connecting tubes", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🫁", "label": "Lungs", "isCorrect": false }
+    ],
+    "explanation": "Fallopian tubes are two conduits that communicate the ovaries with the uterus. Las trompas de Falopio son dos conductos que comunican los ovarios con el útero.",
+    "audioWord": "audios/word-fallopian-tubes.mp3",
+    "audioSentence": "audios/sentence-fallopian-tubes-are-two-conduits-that-communicate-the-ovaries.mp3"
+  },
+  {
+    "word": "VULVA",
+    "spanish": "Vulva",
+    "sentenceEN": "The vulva is the external part of the reproductive system.",
+    "sentenceES": "La vulva es la parte externa del sistema reproductivo.",
+    "options": [
+      { "emoji": "🔆", "label": "External part", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🫁", "label": "Lungs", "isCorrect": false }
+    ],
+    "explanation": "The vulva is the external part of the reproductive system formed by a set of folds that protect the entrance to the vagina. La vulva es la parte externa del sistema reproductivo formada por un conjunto de pliegues.",
+    "audioWord": "audios/word-vulva.mp3",
+    "audioSentence": "audios/sentence-the-vulva-is-the-external-part-of-the-reproductive-system.mp3"
+  },
+  {
+    "word": "PUBERTY",
+    "spanish": "Pubertad",
+    "sentenceEN": "Puberty is when the body begins to change.",
+    "sentenceES": "La pubertad es cuando el cuerpo comienza a cambiar.",
+    "options": [
+      { "emoji": "🧒➡️👨", "label": "Body changes", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "👴", "label": "Old age", "isCorrect": false },
+      { "emoji": "🍼", "label": "Infancy", "isCorrect": false }
+    ],
+    "explanation": "Puberty is when the body begins to change during early adolescence from 12 to 16 years old. La pubertad es cuando el cuerpo comienza a cambiar durante la adolescencia temprana de 12 a 16 años.",
+    "audioWord": "audios/word-puberty.mp3",
+    "audioSentence": "audios/sentence-puberty-is-when-the-body-begins-to-change.mp3"
+  },
+  {
+    "word": "ADOLESCENCE",
+    "spanish": "Adolescencia",
+    "sentenceEN": "Adolescence is a stage of life between childhood and adulthood.",
+    "sentenceES": "La adolescencia es una etapa de la vida entre la niñez y la adultez.",
+    "options": [
+      { "emoji": "👦", "label": "Teenage years", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "👴", "label": "Old age", "isCorrect": false },
+      { "emoji": "🍼", "label": "Infancy", "isCorrect": false }
+    ],
+    "explanation": "Adolescence is a stage of life from 12 to 18 years when many physical and emotional changes occur. La adolescencia es una etapa de la vida de 12 a 18 años cuando ocurren muchos cambios físicos y emocionales.",
+    "audioWord": "audios/word-adolescence.mp3",
+    "audioSentence": "audios/sentence-adolescence-is-a-stage-of-life-between-childhood-and-adulthood.mp3"
+  },
+  {
+    "word": "PRIMARY",
+    "spanish": "Primario",
+    "sentenceEN": "Primary sexual characteristics are the reproductive organs.",
+    "sentenceES": "Las características sexuales primarias son los órganos reproductivos.",
+    "options": [
+      { "emoji": "1️⃣", "label": "First/Main", "isCorrect": true },
+      { "emoji": "2️⃣", "label": "Second", "isCorrect": false },
+      { "emoji": "3️⃣", "label": "Third", "isCorrect": false },
+      { "emoji": "🔚", "label": "Last", "isCorrect": false }
+    ],
+    "explanation": "Primary sexual characteristics are the reproductive organs that are already formed at birth. Las características sexuales primarias son los órganos reproductivos que ya están formados al nacer.",
+    "audioWord": "audios/word-primary.mp3",
+    "audioSentence": "audios/sentence-primary-sexual-characteristics-are-the-reproductive-organs.mp3"
+  },
+  {
+    "word": "SECONDARY",
+    "spanish": "Secundario",
+    "sentenceEN": "Secondary sexual characteristics appear in puberty.",
+    "sentenceES": "Las características sexuales secundarias aparecen en la pubertad.",
+    "options": [
+      { "emoji": "2️⃣", "label": "Second", "isCorrect": true },
+      { "emoji": "1️⃣", "label": "First", "isCorrect": false },
+      { "emoji": "3️⃣", "label": "Third", "isCorrect": false },
+      { "emoji": "🔚", "label": "Last", "isCorrect": false }
+    ],
+    "explanation": "Secondary sexual characteristics are the physical differences that are accentuated in adolescence like body hair and voice changes. Las características sexuales secundarias son las diferencias físicas que se acentúan en la adolescencia.",
+    "audioWord": "audios/word-secondary.mp3",
+    "audioSentence": "audios/sentence-secondary-sexual-characteristics-appear-in-puberty.mp3"
+  },
+  {
+    "word": "INFANCY",
+    "spanish": "Infancia",
+    "sentenceEN": "Infancy is the first stage of life from 0 to 5 years.",
+    "sentenceES": "La infancia es la primera etapa de la vida de 0 a 5 años.",
+    "options": [
+      { "emoji": "👶", "label": "Baby stage", "isCorrect": true },
+      { "emoji": "👦", "label": "Teenager", "isCorrect": false },
+      { "emoji": "👨", "label": "Adult", "isCorrect": false },
+      { "emoji": "👴", "label": "Old age", "isCorrect": false }
+    ],
+    "explanation": "Infancy is the first stage of life from 0 to 5 years when babies are completely dependent on their parents. La infancia es la primera etapa de la vida de 0 a 5 años cuando los bebés dependen completamente de sus padres.",
+    "audioWord": "audios/word-infancy.mp3",
+    "audioSentence": "audios/sentence-infancy-is-the-first-stage-of-life-from-0-to-5-years.mp3"
+  },
+  {
+    "word": "CHILDHOOD",
+    "spanish": "Niñez",
+    "sentenceEN": "Childhood is the stage from 6 to 11 years.",
+    "sentenceES": "La niñez es la etapa de 6 a 11 años.",
+    "options": [
+      { "emoji": "🧒", "label": "Child stage", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "👨", "label": "Adult", "isCorrect": false },
+      { "emoji": "👴", "label": "Old age", "isCorrect": false }
+    ],
+    "explanation": "Childhood is the stage from 6 to 11 years when children have some independence and can put on their clothes. La niñez es la etapa de 6 a 11 años cuando los niños tienen algo de independencia.",
+    "audioWord": "audios/word-childhood.mp3",
+    "audioSentence": "audios/sentence-childhood-is-the-stage-from-6-to-11-years.mp3"
+  },
+  {
+    "word": "ADULTHOOD",
+    "spanish": "Adultez",
+    "sentenceEN": "Adulthood is when people are fully developed.",
+    "sentenceES": "La adultez es cuando las personas están completamente desarrolladas.",
+    "options": [
+      { "emoji": "👨", "label": "Adult stage", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "🧒", "label": "Child", "isCorrect": false },
+      { "emoji": "👴", "label": "Old age", "isCorrect": false }
+    ],
+    "explanation": "Adulthood is when people are fully developed mentally, physically and emotionally. This allows them to become independent. La adultez es cuando las personas están completamente desarrolladas mental, física y emocionalmente.",
+    "audioWord": "audios/word-adulthood.mp3",
+    "audioSentence": "audios/sentence-adulthood-is-when-people-are-fully-developed.mp3"
+  },
+  {
+    "word": "OLD AGE",
+    "spanish": "Vejez",
+    "sentenceEN": "In old age, the reproductive system stops working.",
+    "sentenceES": "En la vejez, el sistema reproductivo deja de funcionar.",
+    "options": [
+      { "emoji": "👴", "label": "Elderly stage", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "🧒", "label": "Child", "isCorrect": false },
+      { "emoji": "👨", "label": "Adult", "isCorrect": false }
+    ],
+    "explanation": "Old age is the final stage of life from the 70s onwards when the reproductive system stops working. La vejez es la etapa final de la vida a partir de los 70 años cuando el sistema reproductivo deja de funcionar.",
+    "audioWord": "audios/word-old-age.mp3",
+    "audioSentence": "audios/sentence-in-old-age-the-reproductive-system-stops-working.mp3"
+  },
+  {
+    "word": "DEVELOPMENT",
+    "spanish": "Desarrollo",
+    "sentenceEN": "Development is the process of growth and change.",
+    "sentenceES": "El desarrollo es el proceso de crecimiento y cambio.",
+    "options": [
+      { "emoji": "📈", "label": "Growth process", "isCorrect": true },
+      { "emoji": "📉", "label": "Decline", "isCorrect": false },
+      { "emoji": "⏸️", "label": "Pause", "isCorrect": false },
+      { "emoji": "🔙", "label": "Reverse", "isCorrect": false }
+    ],
+    "explanation": "Development is the process of growth and change throughout different stages of life. El desarrollo es el proceso de crecimiento y cambio a través de las diferentes etapas de la vida.",
+    "audioWord": "audios/word-development.mp3",
+    "audioSentence": "audios/sentence-development-is-the-process-of-growth-and-change.mp3"
+  },
+  {
+    "word": "GROWTH",
+    "spanish": "Crecimiento",
+    "sentenceEN": "Growth is the increase in size of the body.",
+    "sentenceES": "El crecimiento es el aumento del tamaño del cuerpo.",
+    "options": [
+      { "emoji": "📏", "label": "Size increase", "isCorrect": true },
+      { "emoji": "📉", "label": "Decrease", "isCorrect": false },
+      { "emoji": "⏸️", "label": "Pause", "isCorrect": false },
+      { "emoji": "🔙", "label": "Shrink", "isCorrect": false }
+    ],
+    "explanation": "Growth is the increase in size and physical development of the body during childhood and adolescence. El crecimiento es el aumento del tamaño y desarrollo físico del cuerpo durante la niñez y adolescencia.",
+    "audioWord": "audios/word-growth.mp3",
+    "audioSentence": "audios/sentence-growth-is-the-increase-in-size-of-the-body.mp3"
+  },
+  {
+    "word": "STAGES",
+    "spanish": "Etapas",
+    "sentenceEN": "Life has different stages of growth and development.",
+    "sentenceES": "La vida tiene diferentes etapas de crecimiento y desarrollo.",
+    "options": [
+      { "emoji": "🪜", "label": "Life phases", "isCorrect": true },
+      { "emoji": "🎭", "label": "Theater", "isCorrect": false },
+      { "emoji": "🎪", "label": "Circus", "isCorrect": false },
+      { "emoji": "🎬", "label": "Movie", "isCorrect": false }
+    ],
+    "explanation": "Stages are different periods of life like infancy, childhood, adolescence, adulthood and old age. Las etapas son diferentes períodos de la vida como infancia, niñez, adolescencia, adultez y vejez.",
+    "audioWord": "audios/word-stages.mp3",
+    "audioSentence": "audios/sentence-life-has-different-stages-of-growth-and-development.mp3"
+  },
+  {
+    "word": "REPRODUCTION",
+    "spanish": "Reproducción",
+    "sentenceEN": "Reproduction is the function that allows humans to have children.",
+    "sentenceES": "La reproducción es la función que permite a los humanos tener hijos.",
+    "options": [
+      { "emoji": "👶", "label": "Having babies", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart beat", "isCorrect": false },
+      { "emoji": "🧠", "label": "Thinking", "isCorrect": false },
+      { "emoji": "🫁", "label": "Breathing", "isCorrect": false }
+    ],
+    "explanation": "Reproduction is the biological function that allows humans to have children and continue the species. La reproducción es la función biológica que permite a los humanos tener hijos y continuar la especie.",
+    "audioWord": "audios/word-reproduction.mp3",
+    "audioSentence": "audios/sentence-reproduction-is-the-function-that-allows-humans-to-have-children.mp3"
+  },
+  {
+    "word": "CHARACTERISTICS",
+    "spanish": "Características",
+    "sentenceEN": "Sexual characteristics are differences between boys and girls.",
+    "sentenceES": "Las características sexuales son diferencias entre niños y niñas.",
+    "options": [
+      { "emoji": "🔍", "label": "Features", "isCorrect": true },
+      { "emoji": "🫀", "label": "Heart", "isCorrect": false },
+      { "emoji": "🧠", "label": "Brain", "isCorrect": false },
+      { "emoji": "🫁", "label": "Lungs", "isCorrect": false }
+    ],
+    "explanation": "Characteristics are features or qualities that distinguish one person from another. Las características son rasgos o cualidades que distinguen a una persona de otra.",
+    "audioWord": "audios/word-characteristics.mp3",
+    "audioSentence": "audios/sentence-sexual-characteristics-are-differences-between-boys-and-girls.mp3"
+  },
+  {
+    "word": "YOUTH",
+    "spanish": "Juventud",
+    "sentenceEN": "Youth is the period from 19 to 25 years.",
+    "sentenceES": "La juventud es el período de 19 a 25 años.",
+    "options": [
+      { "emoji": "🧑", "label": "Young adult", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "🧒", "label": "Child", "isCorrect": false },
+      { "emoji": "👴", "label": "Old age", "isCorrect": false }
+    ],
+    "explanation": "Youth is the period from 19 to 25 years when people transition from adolescence to full adulthood. La juventud es el período de 19 a 25 años cuando las personas pasan de la adolescencia a la adultez completa.",
+    "audioWord": "audios/word-youth.mp3",
+    "audioSentence": "audios/sentence-youth-is-the-period-from-19-to-25-years.mp3"
+  },
+  {
+    "word": "MATURITY",
+    "spanish": "Madurez",
+    "sentenceEN": "Maturity is the period from 26 to 70 years.",
+    "sentenceES": "La madurez es el período de 26 a 70 años.",
+    "options": [
+      { "emoji": "👨‍💼", "label": "Mature adult", "isCorrect": true },
+      { "emoji": "👶", "label": "Baby", "isCorrect": false },
+      { "emoji": "🧒", "label": "Child", "isCorrect": false },
+      { "emoji": "👴", "label": "Elderly", "isCorrect": false }
+    ],
+    "explanation": "Maturity is the longest stage of life from 26 to 70 years when people are fully independent and responsible. La madurez es la etapa más larga de la vida de 26 a 70 años cuando las personas son completamente independientes y responsables.",
+    "audioWord": "audios/word-maturity.mp3",
+    "audioSentence": "audios/sentence-maturity-is-the-period-from-26-to-70-years.mp3"
+  },
+  {
+    "word": "INDEPENDENT",
+    "spanish": "Independiente",
+    "sentenceEN": "Teenagers are very independent but still need their parents.",
+    "sentenceES": "Los adolescentes son muy independientes pero aún necesitan a sus padres.",
+    "options": [
+      { "emoji": "🦅", "label": "Self-reliant", "isCorrect": true },
+      { "emoji": "🤝", "label": "Dependent", "isCorrect": false },
+      { "emoji": "👶", "label": "Baby-like", "isCorrect": false },
+      { "emoji": "🫂", "label": "Needy", "isCorrect": false }
+    ],
+    "explanation": "Independent means being able to do things by yourself without help. Independiente significa ser capaz de hacer cosas por ti mismo sin ayuda.",
+    "audioWord": "audios/word-independent.mp3",
+    "audioSentence": "audios/sentence-teenagers-are-very-independent-but-still-need-their-parents.mp3"
+  }
+]

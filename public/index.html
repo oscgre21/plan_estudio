@@ -144,6 +144,91 @@
             line-height: 1.8;
         }
 
+        .test-set-selector {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-set-selector h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .selector-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .test-set-dropdown {
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            border: 3px solid white;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .test-set-dropdown:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-set-dropdown:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .select-btn {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            border: none;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .select-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .select-btn:active {
+            transform: translateY(0);
+        }
+
+        .current-set-display {
+            text-align: center;
+            padding: 15px;
+            background: #d4edda;
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #155724;
+            font-weight: bold;
+        }
+
+        .current-set-display .set-name {
+            font-size: 1.2em;
+            color: #28a745;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
@@ -152,6 +237,14 @@
             .cards-grid {
                 grid-template-columns: 1fr;
             }
+
+            .selector-row {
+                flex-direction: column;
+            }
+
+            .test-set-dropdown {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -159,10 +252,26 @@
     <div class="container">
         <div class="header">
             <h1>🌟 Science Learning Center 🌟</h1>
-            <p>Centro de Aprendizaje de Ciencias para Jearlenis</p>
+            <p>Centro de Aprendizaje de Ciencias</p>
         </div>
 
         <div class="content">
+            <!-- Test Set Selector -->
+            <div class="test-set-selector">
+                <h3>📚 Select Test Set / Selecciona Set de Pruebas</h3>
+                <div class="selector-row">
+                    <select class="test-set-dropdown" id="testSetSelector">
+                        <option value="">Loading test sets... / Cargando...</option>
+                    </select>
+                    <button class="select-btn" onclick="selectTestSet()">
+                        Select / Seleccionar
+                    </button>
+                </div>
+                <div class="current-set-display" id="currentSetDisplay" style="display: none;">
+                    ✅ Current Set / Set Actual: <span class="set-name" id="currentSetName"></span>
+                </div>
+            </div>
+
             <div class="welcome">
                 <h2>¡Bienvenida! Welcome!</h2>
                 <p>Choose a learning activity below to start practicing your science vocabulary!</p>
@@ -238,5 +347,65 @@
             <p style="margin-top: 10px; font-size: 0.9em;">Server running on localhost:3000</p>
         </div>
     </div>
+
+    <script src="test-set-manager.js"></script>
+    <script>
+        // Load test sets on page load
+        async function loadTestSets() {
+            try {
+                const testSets = await TestSetManager.getTestSets();
+                const selector = document.getElementById('testSetSelector');
+
+                // Clear loading option
+                selector.innerHTML = '<option value="">-- Select a test set / Selecciona un set --</option>';
+
+                // Add test sets
+                testSets.forEach(set => {
+                    const option = document.createElement('option');
+                    option.value = set.id;
+                    option.textContent = set.name;
+                    selector.appendChild(option);
+                });
+
+                // Display current selection if exists
+                const currentTestSet = await TestSetManager.getSelectedTestSet();
+                if (currentTestSet) {
+                    selector.value = currentTestSet.id;
+                    showCurrentSet(currentTestSet.name);
+                }
+            } catch (error) {
+                console.error('Error loading test sets:', error);
+                const selector = document.getElementById('testSetSelector');
+                selector.innerHTML = '<option value="">Error loading test sets</option>';
+            }
+        }
+
+        // Select test set
+        function selectTestSet() {
+            const selector = document.getElementById('testSetSelector');
+            const selectedId = selector.value;
+
+            if (!selectedId) {
+                alert('Please select a test set / Por favor selecciona un set');
+                return;
+            }
+
+            TestSetManager.setSelectedTestSetId(selectedId);
+            const selectedText = selector.options[selector.selectedIndex].text;
+            showCurrentSet(selectedText);
+
+            // Show success message
+            alert(`✅ Test set selected: ${selectedText}\n\nNow you can start any learning activity!\n\n✅ Set seleccionado: ${selectedText}\n\n¡Ahora puedes comenzar cualquier actividad!`);
+        }
+
+        // Show current set display
+        function showCurrentSet(setName) {
+            document.getElementById('currentSetName').textContent = setName;
+            document.getElementById('currentSetDisplay').style.display = 'block';
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', loadTestSets);
+    </script>
 </body>
 </html>
