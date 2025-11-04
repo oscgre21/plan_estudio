@@ -9,158 +9,242 @@
     "question": "The Sun is a planet that moves around the Earth.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. The Sun is a star, not a planet. The Earth and all other planets move around the Sun, not the other way around."
+    "explanation": "This is FALSE. The Sun is a star, not a planet. The Earth and all other planets move around the Sun, not the other way around.",
+    "questionES": "El Sol es un planeta que se mueve alrededor de la Tierra.",
+    "explanationES": "Esto es FALSO. El Sol es una estrella, no un planeta. La Tierra y todos los demás planetas se mueven alrededor del Sol, no al revés.",
+    "audioQuestion": "audios/science-q2-the-sun-is-a-planet-that-moves-around-the-earth.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "There are eight planets in our Solar System.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Our Solar System has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    "explanation": "This is TRUE. Our Solar System has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+    "questionES": "Hay ocho planetas en nuestro Sistema Solar.",
+    "explanationES": "Esto es VERDADERO. Nuestro Sistema Solar tiene ocho planetas: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.",
+    "audioQuestion": "audios/science-q3-there-are-eight-planets-in-our-solar-system.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "The inner planets are made mostly of gas.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. The inner planets (Mercury, Venus, Earth, and Mars) are made mostly of rock. The outer planets are the ones made mostly of gas."
+    "explanation": "This is FALSE. The inner planets (Mercury, Venus, Earth, and Mars) are made mostly of rock. The outer planets are the ones made mostly of gas.",
+    "questionES": "Los planetas interiores están hechos principalmente de gas.",
+    "explanationES": "Esto es FALSO. Los planetas interiores (Mercurio, Venus, Tierra y Marte) están hechos principalmente de roca. Los planetas exteriores son los que están hechos principalmente de gas.",
+    "audioQuestion": "audios/science-q4-the-inner-planets-are-made-mostly-of-gas.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "Earth is the only planet where life is known to exist.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Earth is the only planet in our Solar System where life is known to exist. It has water, air, and the right temperature for life."
+    "explanation": "This is TRUE. Earth is the only planet in our Solar System where life is known to exist. It has water, air, and the right temperature for life.",
+    "questionES": "La Tierra es el único planeta donde se sabe que existe vida.",
+    "explanationES": "Esto es VERDADERO. La Tierra es el único planeta en nuestro Sistema Solar donde se sabe que existe vida. Tiene agua, aire y la temperatura adecuada para la vida.",
+    "audioQuestion": "audios/science-q5-earth-is-the-only-planet-where-life-is-known-to-ex.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "Jupiter is the smallest planet in our Solar System.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Jupiter is actually the BIGGEST planet in our Solar System, not the smallest!"
+    "explanation": "This is FALSE. Jupiter is actually the BIGGEST planet in our Solar System, not the smallest!",
+    "questionES": "Júpiter es el planeta más pequeño de nuestro Sistema Solar.",
+    "explanationES": "Esto es FALSO. Júpiter es en realidad el planeta MÁS GRANDE de nuestro Sistema Solar, ¡no el más pequeño!",
+    "audioQuestion": "audios/science-q6-jupiter-is-the-smallest-planet-in-our-solar-system.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "Saturn is known for its rings.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Saturn is famous for its beautiful rings made of ice and rock particles."
+    "explanation": "This is TRUE. Saturn is famous for its beautiful rings made of ice and rock particles.",
+    "questionES": "Saturno es conocido por sus anillos.",
+    "explanationES": "Esto es VERDADERO. Saturno es famoso por sus hermosos anillos hechos de partículas de hielo y roca.",
+    "audioQuestion": "audios/science-q7-saturn-is-known-for-its-rings.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "The time a planet takes to go around the Sun is called a year.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. One complete orbit around the Sun equals one year for that planet. Earth takes 365 days to complete one year."
+    "explanation": "This is TRUE. One complete orbit around the Sun equals one year for that planet. Earth takes 365 days to complete one year.",
+    "questionES": "El tiempo que tarda un planeta en dar la vuelta al Sol se llama año.",
+    "explanationES": "Esto es VERDADERO. Una órbita completa alrededor del Sol equivale a un año para ese planeta. La Tierra tarda 365 días en completar un año.",
+    "audioQuestion": "audios/science-q8-the-time-a-planet-takes-to-go-around-the-sun-is-ca.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "The outer planets are larger than the inner planets.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. The outer planets (Jupiter, Saturn, Uranus, and Neptune) are much larger than the inner planets."
+    "explanation": "This is TRUE. The outer planets (Jupiter, Saturn, Uranus, and Neptune) are much larger than the inner planets.",
+    "questionES": "Los planetas exteriores son más grandes que los planetas interiores.",
+    "explanationES": "Esto es VERDADERO. Los planetas exteriores (Júpiter, Saturno, Urano y Neptuno) son mucho más grandes que los planetas interiores.",
+    "audioQuestion": "audios/science-q9-the-outer-planets-are-larger-than-the-inner-planet.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "Mars is one of the outer planets.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Mars is one of the inner planets. The inner planets are Mercury, Venus, Earth, and Mars."
+    "explanation": "This is FALSE. Mars is one of the inner planets. The inner planets are Mercury, Venus, Earth, and Mars.",
+    "questionES": "Marte es uno de los planetas exteriores.",
+    "explanationES": "Esto es FALSO. Marte es uno de los planetas interiores. Los planetas interiores son Mercurio, Venus, Tierra y Marte.",
+    "audioQuestion": "audios/science-q10-mars-is-one-of-the-outer-planets.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "All the planets move around the Sun in orbits.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. All planets travel around the Sun in paths called orbits. This is what keeps them in the Solar System."
+    "explanation": "This is TRUE. All planets travel around the Sun in paths called orbits. This is what keeps them in the Solar System.",
+    "questionES": "Todos los planetas se mueven alrededor del Sol en órbitas.",
+    "explanationES": "Esto es VERDADERO. Todos los planetas viajan alrededor del Sol en caminos llamados órbitas. Esto es lo que los mantiene en el Sistema Solar.",
+    "audioQuestion": "audios/science-q11-all-the-planets-move-around-the-sun-in-orbits.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "Choose: Which of the following is an inner planet?",
     "type": "multiple-choice",
-    "options": ["Jupiter", "Mars", "Neptune", "Saturn"],
+    "options": [
+      "Jupiter",
+      "Mars",
+      "Neptune",
+      "Saturn"
+    ],
     "correctAnswer": 1,
-    "explanation": "Mars is correct! Mars is one of the four inner planets (Mercury, Venus, Earth, and Mars). Jupiter, Neptune, and Saturn are outer planets."
+    "explanation": "Mars is correct! Mars is one of the four inner planets (Mercury, Venus, Earth, and Mars). Jupiter, Neptune, and Saturn are outer planets.",
+    "questionES": "Elige: ¿Cuál de los siguientes es un planeta interior?",
+    "explanationES": "¡Marte es correcto! Marte es uno de los cuatro planetas interiores (Mercurio, Venus, Tierra y Marte). Júpiter, Neptuno y Saturno son planetas exteriores.",
+    "audioQuestion": "audios/science-q12-choose-which-of-the-following-is-an-inner-planet.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "Pluto is no longer considered a planet because it does not meet all the requirements to orbit cleanly around the Sun.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Pluto was reclassified as a 'dwarf planet' because it doesn't clear its orbital path of other objects."
+    "explanation": "This is TRUE. Pluto was reclassified as a 'dwarf planet' because it doesn't clear its orbital path of other objects.",
+    "questionES": "Plutón ya no se considera un planeta porque no cumple con todos los requisitos para orbitar limpiamente alrededor del Sol.",
+    "explanationES": "Esto es VERDADERO. Plutón fue reclasificado como 'planeta enano' porque no limpia su trayectoria orbital de otros objetos.",
+    "audioQuestion": "audios/science-q13-pluto-is-no-longer-considered-a-planet-because-it-.mp3"
   },
   {
     "exam": "Exam 1: The Planets of Our Solar System",
     "question": "The Earth rotates on its axis every:",
     "type": "multiple-choice",
-    "options": ["24 hours", "365 days", "30 days", "12 hours"],
+    "options": [
+      "24 hours",
+      "365 days",
+      "30 days",
+      "12 hours"
+    ],
     "correctAnswer": 0,
-    "explanation": "24 hours is correct! The Earth takes 24 hours to complete one full rotation on its axis, which gives us day and night."
+    "explanation": "24 hours is correct! The Earth takes 24 hours to complete one full rotation on its axis, which gives us day and night.",
+    "questionES": "La Tierra gira sobre su eje cada:",
+    "explanationES": "¡24 horas es correcto! La Tierra tarda 24 horas en completar una rotación completa sobre su eje, lo que nos da el día y la noche.",
+    "audioQuestion": "audios/science-q14-the-earth-rotates-on-its-axis-every.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "The continent of Africa is located in 4 hemispheres.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Africa is the only continent located in all four hemispheres: Northern, Southern, Eastern, and Western."
+    "explanation": "This is TRUE. Africa is the only continent located in all four hemispheres: Northern, Southern, Eastern, and Western.",
+    "questionES": "El continente de África está ubicado en 4 hemisferios.",
+    "explanationES": "Esto es VERDADERO. África es el único continente ubicado en los cuatro hemisferios: Norte, Sur, Este y Oeste.",
+    "audioQuestion": "audios/science-q15-the-continent-of-africa-is-located-in-4-hemisphere.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "Alaska is in the Northern Hemisphere.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Alaska is located in the Northern Hemisphere, above the Equator."
+    "explanation": "This is TRUE. Alaska is located in the Northern Hemisphere, above the Equator.",
+    "questionES": "Alaska está en el Hemisferio Norte.",
+    "explanationES": "Esto es VERDADERO. Alaska está ubicada en el Hemisferio Norte, sobre el Ecuador.",
+    "audioQuestion": "audios/science-q16-alaska-is-in-the-northern-hemisphere.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "South Africa is in both the Northern and Southern hemisphere.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. South Africa is only in the Southern Hemisphere, below the Equator."
+    "explanation": "This is FALSE. South Africa is only in the Southern Hemisphere, below the Equator.",
+    "questionES": "Sudáfrica está tanto en el hemisferio Norte como en el Sur.",
+    "explanationES": "Esto es FALSO. Sudáfrica solo está en el Hemisferio Sur, debajo del Ecuador.",
+    "audioQuestion": "audios/science-q17-south-africa-is-in-both-the-northern-and-southern-.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "Every place on earth can only be in one hemisphere.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Places can be in TWO hemispheres at the same time. For example, a place can be in both the Northern and Eastern hemispheres."
+    "explanation": "This is FALSE. Places can be in TWO hemispheres at the same time. For example, a place can be in both the Northern and Eastern hemispheres.",
+    "questionES": "Cada lugar en la tierra solo puede estar en un hemisferio.",
+    "explanationES": "Esto es FALSO. Los lugares pueden estar en DOS hemisferios al mismo tiempo. Por ejemplo, un lugar puede estar tanto en el hemisferio Norte como en el Este.",
+    "audioQuestion": "audios/science-q18-every-place-on-earth-can-only-be-in-one-hemisphere.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "The continent of South America is in the Western hemisphere.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. South America is located in the Western Hemisphere, west of the Prime Meridian."
+    "explanation": "This is TRUE. South America is located in the Western Hemisphere, west of the Prime Meridian.",
+    "questionES": "El continente de América del Sur está en el hemisferio Oeste.",
+    "explanationES": "Esto es VERDADERO. América del Sur está ubicada en el Hemisferio Oeste, al oeste del Meridiano de Greenwich.",
+    "audioQuestion": "audios/science-q19-the-continent-of-south-america-is-in-the-western-h.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "Antarctica is located in three hemispheres.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Antarctica is primarily in the Southern Hemisphere. While it technically touches multiple hemispheres at its edges, it's mainly considered to be in the Southern Hemisphere."
+    "explanation": "This is FALSE. Antarctica is primarily in the Southern Hemisphere. While it technically touches multiple hemispheres at its edges, it's mainly considered to be in the Southern Hemisphere.",
+    "questionES": "La Antártida está ubicada en tres hemisferios.",
+    "explanationES": "Esto es FALSO. La Antártida está principalmente en el Hemisferio Sur. Aunque técnicamente toca múltiples hemisferios en sus bordes, se considera principalmente en el Hemisferio Sur.",
+    "audioQuestion": "audios/science-q20-antarctica-is-located-in-three-hemispheres.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "The Indian Ocean is in three hemispheres.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. The Indian Ocean is located in the Southern, Eastern, and parts of the Northern Hemisphere."
+    "explanation": "This is TRUE. The Indian Ocean is located in the Southern, Eastern, and parts of the Northern Hemisphere.",
+    "questionES": "El Océano Índico está en tres hemisferios.",
+    "explanationES": "Esto es VERDADERO. El Océano Índico está ubicado en el Hemisferio Sur, Este y partes del Hemisferio Norte.",
+    "audioQuestion": "audios/science-q21-the-indian-ocean-is-in-three-hemispheres.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "Which hemisphere is shown by the picture? <img src='quiz_images/hemispheres.jpeg' class='question-image' alt='Globe showing Eastern Hemisphere'>",
     "type": "multiple-choice",
-    "options": ["Western Hemisphere", "Northern Hemisphere", "Eastern Hemisphere", "Southern Hemisphere"],
+    "options": [
+      "Western Hemisphere",
+      "Northern Hemisphere",
+      "Eastern Hemisphere",
+      "Southern Hemisphere"
+    ],
     "correctAnswer": 2,
-    "explanation": "Eastern Hemisphere is correct! The image shows Africa and Asia, which are continents in the Eastern Hemisphere."
+    "explanation": "Eastern Hemisphere is correct! The image shows Africa and Asia, which are continents in the Eastern Hemisphere.",
+    "questionES": "¿Qué hemisferio se muestra en la imagen? <img src='quiz_images/hemispheres.jpeg' class='question-image' alt='Globo mostrando Hemisferio Este'>",
+    "explanationES": "¡Hemisferio Este es correcto! La imagen muestra África y Asia, que son continentes en el Hemisferio Este.",
+    "audioQuestion": "audios/science-q22-which-hemisphere-is-shown-by-the-picture-.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "What do the lines in this picture show? <img src='quiz_images/globe.jpeg' class='question-image' alt='Globe with longitude lines'>",
     "type": "text-input",
     "correctAnswer": "longitude",
-    "alternativeAnswers": ["lines of longitude", "meridians"],
-    "explanation": "The correct answer is LONGITUDE (or meridians). These vertical lines that run from North Pole to South Pole are called lines of longitude or meridians."
+    "alternativeAnswers": [
+      "lines of longitude",
+      "meridians"
+    ],
+    "explanation": "The correct answer is LONGITUDE (or meridians). These vertical lines that run from North Pole to South Pole are called lines of longitude or meridians.",
+    "questionES": "¿Qué muestran las líneas en esta imagen? <img src='quiz_images/globe.jpeg' class='question-image' alt='Globo con líneas de longitud'>",
+    "explanationES": "La respuesta correcta es LONGITUD (o meridianos). Estas líneas verticales que van del Polo Norte al Polo Sur se llaman líneas de longitud o meridianos.",
+    "audioQuestion": "audios/science-q23-what-do-the-lines-in-this-picture-show-.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -173,7 +257,10 @@
       "The Sun rotates around the Earth"
     ],
     "correctAnswer": 1,
-    "explanation": "The Earth rotates on its axis is correct! As Earth spins on its axis, different parts face the Sun (day) while others face away (night). This rotation takes 24 hours."
+    "explanation": "The Earth rotates on its axis is correct! As Earth spins on its axis, different parts face the Sun (day) while others face away (night). This rotation takes 24 hours.",
+    "questionES": "¿Cuál de los siguientes explica por qué tenemos día y noche?",
+    "explanationES": "¡La Tierra gira sobre su eje es correcto! Mientras la Tierra gira sobre su eje, diferentes partes miran hacia el Sol (día) mientras otras miran hacia afuera (noche). Esta rotación tarda 24 horas.",
+    "audioQuestion": "audios/science-q24-which-of-the-following-explains-why-we-have-day-an.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -186,15 +273,26 @@
       "The Sun changes its position"
     ],
     "correctAnswer": 1,
-    "explanation": "The Earth revolves around the Sun and the tilt of its axis is correct! The 23.5-degree tilt of Earth's axis causes different parts to receive varying amounts of sunlight throughout the year, creating seasons."
+    "explanation": "The Earth revolves around the Sun and the tilt of its axis is correct! The 23.5-degree tilt of Earth's axis causes different parts to receive varying amounts of sunlight throughout the year, creating seasons.",
+    "questionES": "¿Cuál de los siguientes explica por qué tenemos estaciones?",
+    "explanationES": "¡La Tierra gira alrededor del Sol y la inclinación de su eje es correcto! La inclinación de 23.5 grados del eje de la Tierra hace que diferentes partes reciban cantidades variables de luz solar durante el año, creando las estaciones.",
+    "audioQuestion": "audios/science-q25-which-of-the-following-explains-why-we-have-season.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "The Equator is a line of:",
     "type": "multiple-choice",
-    "options": ["Longitude", "Latitude", "Temperature", "Altitude"],
+    "options": [
+      "Longitude",
+      "Latitude",
+      "Temperature",
+      "Altitude"
+    ],
     "correctAnswer": 1,
-    "explanation": "Latitude is correct! The Equator is the main line of latitude at 0 degrees. It divides Earth into Northern and Southern Hemispheres."
+    "explanation": "Latitude is correct! The Equator is the main line of latitude at 0 degrees. It divides Earth into Northern and Southern Hemispheres.",
+    "questionES": "El Ecuador es una línea de:",
+    "explanationES": "¡Latitud es correcto! El Ecuador es la línea principal de latitud a 0 grados. Divide la Tierra en Hemisferios Norte y Sur.",
+    "audioQuestion": "audios/science-q26-the-equator-is-a-line-of.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -207,7 +305,10 @@
       "In circles around the equator"
     ],
     "correctAnswer": 0,
-    "explanation": "North to South is correct! Lines of longitude (meridians) run vertically from the North Pole to the South Pole."
+    "explanation": "North to South is correct! Lines of longitude (meridians) run vertically from the North Pole to the South Pole.",
+    "questionES": "Las líneas de longitud van:",
+    "explanationES": "¡Norte a Sur es correcto! Las líneas de longitud (meridianos) corren verticalmente del Polo Norte al Polo Sur.",
+    "audioQuestion": "audios/science-q27-lines-of-longitude-run.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -220,15 +321,26 @@
       "Day and night"
     ],
     "correctAnswer": 1,
-    "explanation": "Eastern and Western Hemispheres is correct! The Prime Meridian (0 degrees longitude) divides Earth into Eastern and Western Hemispheres, just like the Equator divides it into Northern and Southern."
+    "explanation": "Eastern and Western Hemispheres is correct! The Prime Meridian (0 degrees longitude) divides Earth into Eastern and Western Hemispheres, just like the Equator divides it into Northern and Southern.",
+    "questionES": "El Meridiano de Greenwich divide la Tierra en:",
+    "explanationES": "¡Hemisferios Este y Oeste es correcto! El Meridiano de Greenwich (0 grados de longitud) divide la Tierra en Hemisferios Este y Oeste, al igual que el Ecuador la divide en Norte y Sur.",
+    "audioQuestion": "audios/science-q28-the-prime-meridian-divides-the-earth-into.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "What shape is the planet Earth?",
     "type": "multiple-choice",
-    "options": ["Hemisphere", "Circle", "Hemicube", "Sphere"],
+    "options": [
+      "Hemisphere",
+      "Circle",
+      "Hemicube",
+      "Sphere"
+    ],
     "correctAnswer": 3,
-    "explanation": "Sphere is correct! Earth is shaped like a sphere (a three-dimensional round ball). It's not a perfect sphere because it's slightly flattened at the poles."
+    "explanation": "Sphere is correct! Earth is shaped like a sphere (a three-dimensional round ball). It's not a perfect sphere because it's slightly flattened at the poles.",
+    "questionES": "¿Qué forma tiene el planeta Tierra?",
+    "explanationES": "¡Esfera es correcto! La Tierra tiene forma de esfera (una bola redonda tridimensional). No es una esfera perfecta porque está ligeramente aplanada en los polos.",
+    "audioQuestion": "audios/science-q29-what-shape-is-the-planet-earth.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -241,7 +353,10 @@
       "Northern Hemisphere"
     ],
     "correctAnswer": 1,
-    "explanation": "Western Hemisphere is correct! Both continents are located in the Western Hemisphere, west of the Prime Meridian."
+    "explanation": "Western Hemisphere is correct! Both continents are located in the Western Hemisphere, west of the Prime Meridian.",
+    "questionES": "¿En qué hemisferio se encuentran tanto América del Norte como América del Sur?",
+    "explanationES": "¡Hemisferio Oeste es correcto! Ambos continentes están ubicados en el Hemisferio Oeste, al oeste del Meridiano de Greenwich.",
+    "audioQuestion": "audios/science-q30-which-hemisphere-are-both-north-america-and-south-.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -254,7 +369,10 @@
       "Eastern Hemisphere"
     ],
     "correctAnswer": 3,
-    "explanation": "Eastern Hemisphere is correct! Asia, Australia, and most of Europe are located in the Eastern Hemisphere, east of the Prime Meridian."
+    "explanation": "Eastern Hemisphere is correct! Asia, Australia, and most of Europe are located in the Eastern Hemisphere, east of the Prime Meridian.",
+    "questionES": "¿En qué hemisferio se encuentran Asia, Australia y la mayor parte de Europa?",
+    "explanationES": "¡Hemisferio Este es correcto! Asia, Australia y la mayor parte de Europa están ubicadas en el Hemisferio Este, al este del Meridiano de Greenwich.",
+    "audioQuestion": "audios/science-q31-which-hemisphere-are-asia-australia-and-most-of-eu.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -267,7 +385,10 @@
       "Western Hemisphere"
     ],
     "correctAnswer": 0,
-    "explanation": "Southern Hemisphere is correct! Both South America and Antarctica are primarily located in the Southern Hemisphere, below the Equator."
+    "explanation": "Southern Hemisphere is correct! Both South America and Antarctica are primarily located in the Southern Hemisphere, below the Equator.",
+    "questionES": "¿En qué hemisferio se encuentran tanto América del Sur como la Antártida?",
+    "explanationES": "¡Hemisferio Sur es correcto! Tanto América del Sur como la Antártida están principalmente ubicadas en el Hemisferio Sur, debajo del Ecuador.",
+    "audioQuestion": "audios/science-q32-which-hemisphere-are-both-south-america-and-antarc.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -280,7 +401,10 @@
       "The shape of the land"
     ],
     "correctAnswer": 1,
-    "explanation": "The short-term conditions of the atmosphere is correct! Weather is what's happening right now or over a short period - like sunny, rainy, or snowy today."
+    "explanation": "The short-term conditions of the atmosphere is correct! Weather is what's happening right now or over a short period - like sunny, rainy, or snowy today.",
+    "questionES": "El tiempo (weather) describe:",
+    "explanationES": "¡Las condiciones a corto plazo de la atmósfera es correcto! El tiempo es lo que está pasando ahora o en un período corto - como soleado, lluvioso o nevado hoy.",
+    "audioQuestion": "audios/science-q33-weather-describes.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -293,7 +417,10 @@
       "None of the above"
     ],
     "correctAnswer": 1,
-    "explanation": "The usual pattern of weather in a place over many years is correct! Climate is the average weather conditions over a long period (30+ years), not just one day."
+    "explanation": "The usual pattern of weather in a place over many years is correct! Climate is the average weather conditions over a long period (30+ years), not just one day.",
+    "questionES": "El clima es:",
+    "explanationES": "¡El patrón usual del tiempo en un lugar durante muchos años es correcto! El clima es las condiciones meteorológicas promedio durante un período largo (más de 30 años), no solo un día.",
+    "audioQuestion": "audios/science-q34-climate-is.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -306,15 +433,26 @@
       "A desert has little rain"
     ],
     "correctAnswer": 0,
-    "explanation": "Sunny and warm today is correct! This describes current conditions (weather). The other options describe long-term patterns (climate)."
+    "explanation": "Sunny and warm today is correct! This describes current conditions (weather). The other options describe long-term patterns (climate).",
+    "questionES": "¿Cuál de los siguientes puede describir el tiempo (weather)?",
+    "explanationES": "¡Soleado y cálido hoy es correcto! Esto describe las condiciones actuales (tiempo). Las otras opciones describen patrones a largo plazo (clima).",
+    "audioQuestion": "audios/science-q35-which-of-the-following-can-describe-weather.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
     "question": "Which inner planet is known as the Red Planet?",
     "type": "multiple-choice",
-    "options": ["Mercury", "Venus", "Earth", "Mars"],
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
     "correctAnswer": 3,
-    "explanation": "Mars is correct! Mars is called the 'Red Planet' because of the reddish color of its surface, caused by iron oxide (rust) in its soil."
+    "explanation": "Mars is correct! Mars is called the 'Red Planet' because of the reddish color of its surface, caused by iron oxide (rust) in its soil.",
+    "questionES": "¿Qué planeta interior es conocido como el Planeta Rojo?",
+    "explanationES": "¡Marte es correcto! Marte es llamado el 'Planeta Rojo' debido al color rojizo de su superficie, causado por el óxido de hierro (óxido) en su suelo.",
+    "audioQuestion": "audios/science-q36-which-inner-planet-is-known-as-the-red-planet.mp3"
   },
   {
     "exam": "Exam 2: Geography - Hemispheres & Earth",
@@ -327,6 +465,9 @@
       "It is too far from the Sun"
     ],
     "correctAnswer": 2,
-    "explanation": "It does not clear its orbit of other objects is correct! To be a planet, an object must clear its orbital path. Pluto shares its orbit with other objects in the Kuiper Belt, so it's classified as a 'dwarf planet.'"
+    "explanation": "It does not clear its orbit of other objects is correct! To be a planet, an object must clear its orbital path. Pluto shares its orbit with other objects in the Kuiper Belt, so it's classified as a 'dwarf planet.'",
+    "questionES": "¿Por qué Plutón ya no se considera un planeta?",
+    "explanationES": "¡No limpia su órbita de otros objetos es correcto! Para ser un planeta, un objeto debe limpiar su trayectoria orbital. Plutón comparte su órbita con otros objetos en el Cinturón de Kuiper, por lo que se clasifica como 'planeta enano'.",
+    "audioQuestion": "audios/science-q37-why-pluto-is-no-longer-considered-a-planet.mp3"
   }
 ]

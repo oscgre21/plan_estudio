@@ -158,6 +158,90 @@
             margin-bottom: 25px;
             line-height: 1.6;
             font-weight: 500;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .question-text-content {
+            flex: 1;
+        }
+
+        .audio-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .audio-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+        }
+
+        .audio-btn:active {
+            transform: scale(0.95);
+        }
+
+        .translation-toggle {
+            background: #f8f9fa;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .translation-toggle:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .spanish-translation {
+            background: #e7e9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            display: none;
+            animation: slideDown 0.4s;
+        }
+
+        .spanish-translation.show {
+            display: block;
+        }
+
+        .spanish-translation-title {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .spanish-translation-text {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
 
         .question-image {
@@ -481,6 +565,47 @@
             }
         }
 
+        // Audio playback functionality
+        let currentAudio = null;
+
+        function playQuestionAudio() {
+            const question = quizData[currentQuestionIndex];
+
+            if (!question.audioQuestion) {
+                console.log('No audio available for this question');
+                return;
+            }
+
+            // Stop any currently playing audio
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            // Create and play new audio
+            currentAudio = new Audio(question.audioQuestion);
+            currentAudio.play().catch(error => {
+                console.error('Error playing audio:', error);
+                alert('Audio playback failed. Please try again.');
+            });
+        }
+
+        // Spanish translation toggle functionality
+        function toggleTranslation() {
+            const translation = document.getElementById('spanishTranslation');
+            const toggleText = document.getElementById('translationToggleText');
+
+            if (translation && toggleText) {
+                if (translation.classList.contains('show')) {
+                    translation.classList.remove('show');
+                    toggleText.textContent = 'Ver en Español';
+                } else {
+                    translation.classList.add('show');
+                    toggleText.textContent = 'Ocultar Español';
+                }
+            }
+        }
+
         // Initialize game - ensure test set is selected first
         async function initGameApp() {
             const isTestSetSelected = await TestSetManager.ensureTestSetSelected('/');
@@ -513,7 +638,19 @@
                     <div class="keyboard-hint">
                         <strong>Keyboard Shortcut:</strong> Press <strong>T</strong> for True or <strong>F</strong> for False
                     </div>
-                    <div class="question-text">${question.question}</div>
+                    <div class="question-text">
+                        <div class="question-text-content">${question.question}</div>
+                        ${question.audioQuestion ? `<button class="audio-btn" onclick="playQuestionAudio()" title="Listen to question">🔊</button>` : ''}
+                    </div>
+                    ${question.questionES ? `
+                        <button class="translation-toggle" onclick="toggleTranslation()">
+                            🌐 <span id="translationToggleText">Ver en Español</span>
+                        </button>
+                        <div class="spanish-translation" id="spanishTranslation">
+                            <div class="spanish-translation-title">🇪🇸 Traducción al Español:</div>
+                            <div class="spanish-translation-text">${question.questionES}</div>
+                        </div>
+                    ` : ''}
                     <div class="options">
                         <div class="option" onclick="selectTrueFalse('T')" data-answer="T">
                             <div class="option-letter">T</div>
@@ -531,7 +668,19 @@
                     <div class="keyboard-hint">
                         <strong>Keyboard Shortcut:</strong> Press <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, or <strong>D</strong> to select
                     </div>
-                    <div class="question-text">${question.question}</div>
+                    <div class="question-text">
+                        <div class="question-text-content">${question.question}</div>
+                        ${question.audioQuestion ? `<button class="audio-btn" onclick="playQuestionAudio()" title="Listen to question">🔊</button>` : ''}
+                    </div>
+                    ${question.questionES ? `
+                        <button class="translation-toggle" onclick="toggleTranslation()">
+                            🌐 <span id="translationToggleText">Ver en Español</span>
+                        </button>
+                        <div class="spanish-translation" id="spanishTranslation">
+                            <div class="spanish-translation-title">🇪🇸 Traducción al Español:</div>
+                            <div class="spanish-translation-text">${question.questionES}</div>
+                        </div>
+                    ` : ''}
                     <div class="options">
                 `;
                 question.options.forEach((option, index) => {
@@ -552,7 +701,19 @@
                     <div class="keyboard-hint">
                         <strong>Type your answer</strong> and press <strong>Enter</strong> to submit
                     </div>
-                    <div class="question-text">${question.question}</div>
+                    <div class="question-text">
+                        <div class="question-text-content">${question.question}</div>
+                        ${question.audioQuestion ? `<button class="audio-btn" onclick="playQuestionAudio()" title="Listen to question">🔊</button>` : ''}
+                    </div>
+                    ${question.questionES ? `
+                        <button class="translation-toggle" onclick="toggleTranslation()">
+                            🌐 <span id="translationToggleText">Ver en Español</span>
+                        </button>
+                        <div class="spanish-translation" id="spanishTranslation">
+                            <div class="spanish-translation-title">🇪🇸 Traducción al Español:</div>
+                            <div class="spanish-translation-text">${question.questionES}</div>
+                        </div>
+                    ` : ''}
                     <input type="text" class="input-field" id="textInput" placeholder="Type your answer here..." onkeypress="handleTextInputEnter(event)">
                     <button class="btn btn-primary" onclick="submitTextInput()">Submit Answer</button>
                     <div class="feedback" id="feedback"></div>

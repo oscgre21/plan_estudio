@@ -9,65 +9,102 @@
     "question": "The female reproductive system has both internal and external organs.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. The female reproductive system has internal organs like the ovaries, uterus and fallopian tubes, and external organs like the vulva and vagina."
+    "explanation": "This is TRUE. The female reproductive system has internal organs like the ovaries, uterus and fallopian tubes, and external organs like the vulva and vagina.",
+    "questionES": "El sistema reproductivo femenino tiene órganos internos y externos.",
+    "explanationES": "Esto es VERDADERO. El sistema reproductivo femenino tiene órganos internos como los ovarios, el útero y las trompas de Falopio, y órganos externos como la vulva y la vagina.",
+    "audioQuestion": "audios/science-v2-q1-the-female-reproductive-system-has-both-internal-a.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "The ovaries are where eggs are formed and matured.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Ovaries are two organs with the size of an almond where eggs, which are the reproductive female cells, are formed and matured."
+    "explanation": "This is TRUE. Ovaries are two organs with the size of an almond where eggs, which are the reproductive female cells, are formed and matured.",
+    "questionES": "Los ovarios son donde se forman y maduran los óvulos.",
+    "explanationES": "Esto es VERDADERO. Los ovarios son dos órganos del tamaño de una almendra donde se forman y maduran los óvulos, que son las células reproductivas femeninas.",
+    "audioQuestion": "audios/science-v2-q2-the-ovaries-are-where-eggs-are-formed-and-matured.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "The uterus is where the future baby develops.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. The uterus is a cavity with thick muscular walls where the future baby develops during pregnancy."
+    "explanation": "This is TRUE. The uterus is a cavity with thick muscular walls where the future baby develops during pregnancy.",
+    "questionES": "El útero es donde se desarrolla el futuro bebé.",
+    "explanationES": "Esto es VERDADERO. El útero es una cavidad con paredes musculares gruesas donde se desarrolla el futuro bebé durante el embarazo.",
+    "audioQuestion": "audios/science-v2-q3-the-uterus-is-where-the-future-baby-develops.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "The male reproductive system has only internal organs.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. The male reproductive system is formed only by external organs, not internal ones."
+    "explanation": "This is FALSE. The male reproductive system is formed only by external organs, not internal ones.",
+    "questionES": "El sistema reproductivo masculino solo tiene órganos internos.",
+    "explanationES": "Esto es FALSO. El sistema reproductivo masculino está formado solo por órganos externos, no internos.",
+    "audioQuestion": "audios/science-v2-q4-the-male-reproductive-system-has-only-internal-org.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "Fallopian tubes communicate the ovaries with the uterus.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Fallopian tubes are two conduits that communicate the ovaries with the uterus, allowing eggs to travel."
+    "explanation": "This is TRUE. Fallopian tubes are two conduits that communicate the ovaries with the uterus, allowing eggs to travel.",
+    "questionES": "Las trompas de Falopio comunican los ovarios con el útero.",
+    "explanationES": "Esto es VERDADERO. Las trompas de Falopio son dos conductos que comunican los ovarios con el útero, permitiendo que los óvulos viajen.",
+    "audioQuestion": "audios/science-v2-q5-fallopian-tubes-communicate-the-ovaries-with-the-u.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "The vagina is an internal reproductive organ.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. The vagina is an internal organ that communicates the uterus with the outside."
+    "explanation": "This is TRUE. The vagina is an internal organ that communicates the uterus with the outside.",
+    "questionES": "La vagina es un órgano reproductivo interno.",
+    "explanationES": "Esto es VERDADERO. La vagina es un órgano interno que comunica el útero con el exterior.",
+    "audioQuestion": "audios/science-v2-q6-the-vagina-is-an-internal-reproductive-organ.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "The vulva is formed by a set of folds that protect the entrance to the vagina.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. The vulva is the external part of the reproductive system formed by a set of folds that protect the entrance to the vagina."
+    "explanation": "This is TRUE. The vulva is the external part of the reproductive system formed by a set of folds that protect the entrance to the vagina.",
+    "questionES": "La vulva está formada por un conjunto de pliegues que protegen la entrada de la vagina.",
+    "explanationES": "Esto es VERDADERO. La vulva es la parte externa del sistema reproductivo formada por un conjunto de pliegues que protegen la entrada de la vagina.",
+    "audioQuestion": "audios/science-v2-q7-the-vulva-is-formed-by-a-set-of-folds-that-protect.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "Choose: Which of the following is NOT part of the female reproductive system?",
     "type": "multiple-choice",
-    "options": ["Ovaries", "Heart", "Uterus", "Vagina"],
+    "options": [
+      "Ovaries",
+      "Heart",
+      "Uterus",
+      "Vagina"
+    ],
     "correctAnswer": 1,
-    "explanation": "Heart is correct! The heart is part of the circulatory system, not the reproductive system. The ovaries, uterus and vagina are all parts of the female reproductive system."
+    "explanation": "Heart is correct! The heart is part of the circulatory system, not the reproductive system. The ovaries, uterus and vagina are all parts of the female reproductive system.",
+    "questionES": "Elige: ¿Cuál de los siguientes NO es parte del sistema reproductivo femenino?",
+    "explanationES": "¡Corazón es correcto! El corazón es parte del sistema circulatorio, no del sistema reproductivo. Los ovarios, el útero y la vagina son todos partes del sistema reproductivo femenino.",
+    "audioQuestion": "audios/science-v2-q8-choose-which-of-the-following-is-not-part-of-the-f.mp3"
   },
   {
     "exam": "Exam 1: The Reproductive System",
     "question": "Choose: What are the two main functions of the female reproductive system?",
     "type": "multiple-choice",
-    "options": ["Internal and External", "Production and Protection", "Breathing and Eating", "Walking and Running"],
+    "options": [
+      "Internal and External",
+      "Production and Protection",
+      "Breathing and Eating",
+      "Walking and Running"
+    ],
     "correctAnswer": 0,
-    "explanation": "Internal and External is correct! The female reproductive system has two main functions: internal organs (like ovaries and uterus) and external organs (like vulva)."
+    "explanation": "Internal and External is correct! The female reproductive system has two main functions: internal organs (like ovaries and uterus) and external organs (like vulva).",
+    "questionES": "Elige: ¿Cuáles son las dos funciones principales del sistema reproductivo femenino?",
+    "explanationES": "¡Interna y Externa es correcto! El sistema reproductivo femenino tiene dos funciones principales: órganos internos (como ovarios y útero) y órganos externos (como la vulva).",
+    "audioQuestion": "audios/science-v2-q9-choose-what-are-the-two-main-functions-of-the-fema.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
@@ -79,51 +116,82 @@
     "question": "Sexual characteristics can be primary or secondary.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. There are two types of sexual characteristics: primary (reproductive organs present at birth) and secondary (physical changes during puberty)."
+    "explanation": "This is TRUE. There are two types of sexual characteristics: primary (reproductive organs present at birth) and secondary (physical changes during puberty).",
+    "questionES": "Las características sexuales pueden ser primarias o secundarias.",
+    "explanationES": "Esto es VERDADERO. Hay dos tipos de características sexuales: primarias (órganos reproductivos presentes al nacer) y secundarias (cambios físicos durante la pubertad).",
+    "audioQuestion": "audios/science-v2-q10-sexual-characteristics-can-be-primary-or-secondary.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
     "question": "Primary sexual characteristics appear during puberty.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Primary sexual characteristics are the reproductive organs that are already formed at birth, not during puberty."
+    "explanation": "This is FALSE. Primary sexual characteristics are the reproductive organs that are already formed at birth, not during puberty.",
+    "questionES": "Las características sexuales primarias aparecen durante la pubertad.",
+    "explanationES": "Esto es FALSO. Las características sexuales primarias son los órganos reproductivos que ya están formados al nacer, no durante la pubertad.",
+    "audioQuestion": "audios/science-v2-q11-primary-sexual-characteristics-appear-during-puber.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
     "question": "Secondary sexual characteristics are accentuated during adolescence.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Secondary sexual characteristics are the physical differences that are accentuated in adolescence, such as body hair, voice changes, and physical development."
+    "explanation": "This is TRUE. Secondary sexual characteristics are the physical differences that are accentuated in adolescence, such as body hair, voice changes, and physical development.",
+    "questionES": "Las características sexuales secundarias se acentúan durante la adolescencia.",
+    "explanationES": "Esto es VERDADERO. Las características sexuales secundarias son las diferencias físicas que se acentúan en la adolescencia, como el vello corporal, los cambios de voz y el desarrollo físico.",
+    "audioQuestion": "audios/science-v2-q12-secondary-sexual-characteristics-are-accentuated-d.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
     "question": "Puberty happens between 12 to 16 years old.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. During early adolescence (from 12 to 16 years old), the body begins to change. This period is called puberty."
+    "explanation": "This is TRUE. During early adolescence (from 12 to 16 years old), the body begins to change. This period is called puberty.",
+    "questionES": "La pubertad ocurre entre los 12 y 16 años.",
+    "explanationES": "Esto es VERDADERO. Durante la adolescencia temprana (de 12 a 16 años), el cuerpo comienza a cambiar. Este período se llama pubertad.",
+    "audioQuestion": "audios/science-v2-q13-puberty-happens-between-12-to-16-years-old.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
     "question": "Hair growth is a primary sexual characteristic.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Hair growth is a secondary sexual characteristic that appears during puberty, not a primary one."
+    "explanation": "This is FALSE. Hair growth is a secondary sexual characteristic that appears during puberty, not a primary one.",
+    "questionES": "El crecimiento del vello es una característica sexual primaria.",
+    "explanationES": "Esto es FALSO. El crecimiento del vello es una característica sexual secundaria que aparece durante la pubertad, no una primaria.",
+    "audioQuestion": "audios/science-v2-q14-hair-growth-is-a-primary-sexual-characteristic.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
     "question": "Choose: Which is an example of a secondary sexual characteristic?",
     "type": "multiple-choice",
-    "options": ["Ovaries", "Voice changes", "Uterus", "Vagina"],
+    "options": [
+      "Ovaries",
+      "Voice changes",
+      "Uterus",
+      "Vagina"
+    ],
     "correctAnswer": 1,
-    "explanation": "Voice changes is correct! Voice changes are a secondary sexual characteristic that appears during puberty. Ovaries, uterus and vagina are primary sexual characteristics (reproductive organs)."
+    "explanation": "Voice changes is correct! Voice changes are a secondary sexual characteristic that appears during puberty. Ovaries, uterus and vagina are primary sexual characteristics (reproductive organs).",
+    "questionES": "Elige: ¿Cuál es un ejemplo de una característica sexual secundaria?",
+    "explanationES": "¡Cambios de voz es correcto! Los cambios de voz son una característica sexual secundaria que aparece durante la pubertad. Los ovarios, el útero y la vagina son características sexuales primarias (órganos reproductivos).",
+    "audioQuestion": "audios/science-v2-q15-choose-which-is-an-example-of-a-secondary-sexual-c.mp3"
   },
   {
     "exam": "Exam 2: Sexual Characteristics and Life Stages",
     "question": "Choose: Primary sexual characteristics are:",
     "type": "multiple-choice",
-    "options": ["Body hair", "Reproductive organs", "Voice changes", "Wide hips"],
+    "options": [
+      "Body hair",
+      "Reproductive organs",
+      "Voice changes",
+      "Wide hips"
+    ],
     "correctAnswer": 1,
-    "explanation": "Reproductive organs is correct! Primary sexual characteristics are the reproductive organs that are already formed at birth."
+    "explanation": "Reproductive organs is correct! Primary sexual characteristics are the reproductive organs that are already formed at birth.",
+    "questionES": "Elige: Las características sexuales primarias son:",
+    "explanationES": "¡Órganos reproductivos es correcto! Las características sexuales primarias son los órganos reproductivos que ya están formados al nacer.",
+    "audioQuestion": "audios/science-v2-q16-choose-primary-sexual-characteristics-are.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
@@ -135,110 +203,185 @@
     "question": "Infancy is the stage from 0 to 5 years.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Infancy is the first stage of life from 0 to 5 years when babies are completely dependent on their parents."
+    "explanation": "This is TRUE. Infancy is the first stage of life from 0 to 5 years when babies are completely dependent on their parents.",
+    "questionES": "La infancia es la etapa de 0 a 5 años.",
+    "explanationES": "Esto es VERDADERO. La infancia es la primera etapa de la vida de 0 a 5 años cuando los bebés dependen completamente de sus padres.",
+    "audioQuestion": "audios/science-v2-q17-infancy-is-the-stage-from-0-to-5-years.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "During childhood, children are completely dependent on their parents.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. During childhood (6-11 years), children have some independence and can do things like put on their clothes. Complete dependence is during infancy."
+    "explanation": "This is FALSE. During childhood (6-11 years), children have some independence and can do things like put on their clothes. Complete dependence is during infancy.",
+    "questionES": "Durante la niñez, los niños dependen completamente de sus padres.",
+    "explanationES": "Esto es FALSO. Durante la niñez (6-11 años), los niños tienen algo de independencia y pueden hacer cosas como ponerse la ropa. La dependencia completa es durante la infancia.",
+    "audioQuestion": "audios/science-v2-q18-during-childhood-children-are-completely-dependent.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Adolescence is from 12 to 18 years.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Adolescence is the stage from 12 to 18 years when teenagers are very independent but still need their parents."
+    "explanation": "This is TRUE. Adolescence is the stage from 12 to 18 years when teenagers are very independent but still need their parents.",
+    "questionES": "La adolescencia es de 12 a 18 años.",
+    "explanationES": "Esto es VERDADERO. La adolescencia es la etapa de 12 a 18 años cuando los adolescentes son muy independientes pero aún necesitan a sus padres.",
+    "audioQuestion": "audios/science-v2-q19-adolescence-is-from-12-to-18-years.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "In old age, the reproductive system stops working.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. In old age (from the 70s onwards), the reproductive system stops working."
+    "explanation": "This is TRUE. In old age (from the 70s onwards), the reproductive system stops working.",
+    "questionES": "En la vejez, el sistema reproductivo deja de funcionar.",
+    "explanationES": "Esto es VERDADERO. En la vejez (a partir de los 70 años), el sistema reproductivo deja de funcionar.",
+    "audioQuestion": "audios/science-v2-q20-in-old-age-the-reproductive-system-stops-working.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Youth is the stage from 26 to 70 years.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Youth is from 19 to 25 years. The stage from 26 to 70 years is called maturity or adulthood."
+    "explanation": "This is FALSE. Youth is from 19 to 25 years. The stage from 26 to 70 years is called maturity or adulthood.",
+    "questionES": "La juventud es la etapa de 26 a 70 años.",
+    "explanationES": "Esto es FALSO. La juventud es de 19 a 25 años. La etapa de 26 a 70 años se llama madurez o adultez.",
+    "audioQuestion": "audios/science-v2-q21-youth-is-the-stage-from-26-to-70-years.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Adults are fully developed mentally, physically and emotionally.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. During maturity/adulthood, people are fully developed mentally, physically and emotionally, which allows them to become independent."
+    "explanation": "This is TRUE. During maturity/adulthood, people are fully developed mentally, physically and emotionally, which allows them to become independent.",
+    "questionES": "Los adultos están completamente desarrollados mental, física y emocionalmente.",
+    "explanationES": "Esto es VERDADERO. Durante la madurez/adultez, las personas están completamente desarrolladas mental, física y emocionalmente, lo que les permite volverse independientes.",
+    "audioQuestion": "audios/science-v2-q22-adults-are-fully-developed-mentally-physically-and.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Choose: What stage comes after childhood?",
     "type": "multiple-choice",
-    "options": ["Infancy", "Adolescence", "Old age", "Youth"],
+    "options": [
+      "Infancy",
+      "Adolescence",
+      "Old age",
+      "Youth"
+    ],
     "correctAnswer": 1,
-    "explanation": "Adolescence is correct! After childhood (6-11 years) comes adolescence (12-18 years)."
+    "explanation": "Adolescence is correct! After childhood (6-11 years) comes adolescence (12-18 years).",
+    "questionES": "Elige: ¿Qué etapa viene después de la niñez?",
+    "explanationES": "¡Adolescencia es correcto! Después de la niñez (6-11 años) viene la adolescencia (12-18 años).",
+    "audioQuestion": "audios/science-v2-q23-choose-what-stage-comes-after-childhood.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Choose: In which stage are people completely dependent on their parents?",
     "type": "multiple-choice",
-    "options": ["Infancy", "Childhood", "Adolescence", "Adulthood"],
+    "options": [
+      "Infancy",
+      "Childhood",
+      "Adolescence",
+      "Adulthood"
+    ],
     "correctAnswer": 0,
-    "explanation": "Infancy is correct! During infancy (0-5 years), babies are completely dependent on their parents. In later stages, people gain more independence."
+    "explanation": "Infancy is correct! During infancy (0-5 years), babies are completely dependent on their parents. In later stages, people gain more independence.",
+    "questionES": "Elige: ¿En qué etapa las personas dependen completamente de sus padres?",
+    "explanationES": "¡Infancia es correcto! Durante la infancia (0-5 años), los bebés dependen completamente de sus padres. En etapas posteriores, las personas ganan más independencia.",
+    "audioQuestion": "audios/science-v2-q24-choose-in-which-stage-are-people-completely-depend.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Choose: The longest stage of life is:",
     "type": "multiple-choice",
-    "options": ["Childhood", "Adolescence", "Maturity", "Infancy"],
+    "options": [
+      "Childhood",
+      "Adolescence",
+      "Maturity",
+      "Infancy"
+    ],
     "correctAnswer": 2,
-    "explanation": "Maturity is correct! Maturity/adulthood is the longest stage from 26 to 70 years (44 years total)."
+    "explanation": "Maturity is correct! Maturity/adulthood is the longest stage from 26 to 70 years (44 years total).",
+    "questionES": "Elige: La etapa más larga de la vida es:",
+    "explanationES": "¡Madurez es correcto! La madurez/adultez es la etapa más larga de 26 a 70 años (44 años en total).",
+    "audioQuestion": "audios/science-v2-q25-choose-the-longest-stage-of-life-is.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Choose: During which stage do the most physical changes occur?",
     "type": "multiple-choice",
-    "options": ["Infancy", "Childhood", "Adolescence", "Old age"],
+    "options": [
+      "Infancy",
+      "Childhood",
+      "Adolescence",
+      "Old age"
+    ],
     "correctAnswer": 2,
-    "explanation": "Adolescence is correct! During adolescence (12-18 years), many physical and emotional changes occur due to puberty."
+    "explanation": "Adolescence is correct! During adolescence (12-18 years), many physical and emotional changes occur due to puberty.",
+    "questionES": "Elige: ¿Durante qué etapa ocurren más cambios físicos?",
+    "explanationES": "¡Adolescencia es correcto! Durante la adolescencia (12-18 años), ocurren muchos cambios físicos y emocionales debido a la pubertad.",
+    "audioQuestion": "audios/science-v2-q26-choose-during-which-stage-do-the-most-physical-cha.mp3"
   },
   {
     "exam": "Exam 3: Life Stages",
     "question": "Choose: What happens to the reproductive system in old age?",
     "type": "multiple-choice",
-    "options": ["It grows stronger", "It stops working", "It produces more cells", "It doesn't change"],
+    "options": [
+      "It grows stronger",
+      "It stops working",
+      "It produces more cells",
+      "It doesn't change"
+    ],
     "correctAnswer": 1,
-    "explanation": "It stops working is correct! In old age (from the 70s), the reproductive system stops working."
+    "explanation": "It stops working is correct! In old age (from the 70s), the reproductive system stops working.",
+    "questionES": "Elige: ¿Qué le sucede al sistema reproductivo en la vejez?",
+    "explanationES": "¡Deja de funcionar es correcto! En la vejez (a partir de los 70 años), el sistema reproductivo deja de funcionar.",
+    "audioQuestion": "audios/science-v2-q27-choose-what-happens-to-the-reproductive-system-in-.mp3"
   },
   {
     "exam": "Exam 4: Reproduction Function",
     "question": "Reproduction is the function that allows humans to have children.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Reproduction is the biological function that allows humans to have children and continue the species."
+    "explanation": "This is TRUE. Reproduction is the biological function that allows humans to have children and continue the species.",
+    "questionES": "La reproducción es la función que permite a los humanos tener hijos.",
+    "explanationES": "Esto es VERDADERO. La reproducción es la función biológica que permite a los humanos tener hijos y continuar la especie.",
+    "audioQuestion": "audios/science-v2-q28-reproduction-is-the-function-that-allows-humans-to.mp3"
   },
   {
     "exam": "Exam 4: Reproduction Function",
     "question": "All stages of life are related to reproduction.",
     "type": "true-false",
     "correctAnswer": "F",
-    "explanation": "This is FALSE. Not all stages are related to reproduction. For example, infancy and old age are not reproductive stages."
+    "explanation": "This is FALSE. Not all stages are related to reproduction. For example, infancy and old age are not reproductive stages.",
+    "questionES": "Todas las etapas de la vida están relacionadas con la reproducción.",
+    "explanationES": "Esto es FALSO. No todas las etapas están relacionadas con la reproducción. Por ejemplo, la infancia y la vejez no son etapas reproductivas.",
+    "audioQuestion": "audios/science-v2-q29-all-stages-of-life-are-related-to-reproduction.mp3"
   },
   {
     "exam": "Exam 4: Reproduction Function",
     "question": "Humans go through different stages of growth and development.",
     "type": "true-false",
     "correctAnswer": "T",
-    "explanation": "This is TRUE. Humans have different stages of growth and development: infancy, childhood, adolescence, youth, maturity/adulthood and old age."
+    "explanation": "This is TRUE. Humans have different stages of growth and development: infancy, childhood, adolescence, youth, maturity/adulthood and old age.",
+    "questionES": "Los humanos pasan por diferentes etapas de crecimiento y desarrollo.",
+    "explanationES": "Esto es VERDADERO. Los humanos tienen diferentes etapas de crecimiento y desarrollo: infancia, niñez, adolescencia, juventud, madurez/adultez y vejez.",
+    "audioQuestion": "audios/science-v2-q30-humans-go-through-different-stages-of-growth-and-d.mp3"
   },
   {
     "exam": "Exam 4: Reproduction Function",
     "question": "Choose: When can humans have children?",
     "type": "multiple-choice",
-    "options": ["Infancy", "Childhood", "Adolescence and adulthood", "Old age"],
+    "options": [
+      "Infancy",
+      "Childhood",
+      "Adolescence and adulthood",
+      "Old age"
+    ],
     "correctAnswer": 2,
-    "explanation": "Adolescence and adulthood is correct! Humans can have children during adolescence (after puberty) and throughout adulthood, but not during infancy, childhood or old age."
+    "explanation": "Adolescence and adulthood is correct! Humans can have children during adolescence (after puberty) and throughout adulthood, but not during infancy, childhood or old age.",
+    "questionES": "Elige: ¿Cuándo pueden los humanos tener hijos?",
+    "explanationES": "¡Adolescencia y adultez es correcto! Los humanos pueden tener hijos durante la adolescencia (después de la pubertad) y durante toda la adultez, pero no durante la infancia, la niñez o la vejez.",
+    "audioQuestion": "audios/science-v2-q31-choose-when-can-humans-have-children.mp3"
   }
 ]
