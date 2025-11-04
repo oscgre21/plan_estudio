@@ -46,6 +46,10 @@ app.get('/definition-quiz', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'definition_quiz_game.html'));
 });
 
+app.get('/ecf-viewer', (req, res) => {
+    res.sendFile(path.join(__dirname, 'ecf-products-viewer.html'));
+});
+
 // ============================================================
 // CRUD API Endpoints for Vocabulary Editor
 // ============================================================
@@ -142,6 +146,18 @@ app.get('/api/vocabulary', (req, res) => {
     }
 });
 
+// API endpoint to get ECF products data
+app.get('/api/ecf-products', (_req, res) => {
+    try {
+        const ECF_PRODUCTS_FILE = path.join(__dirname, 'public', 'ecf-products-summary.json');
+        const data = fs.readFileSync(ECF_PRODUCTS_FILE, 'utf8');
+        res.json(JSON.parse(data));
+    } catch (error) {
+        console.error('Error reading ECF products:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // ============================================================
 // Start server
 // ============================================================
@@ -162,6 +178,7 @@ app.listen(PORT, () => {
     ║   📖 Vocabulary Trainer:   http://localhost:${PORT}/vocabulary ║
     ║   ✅ Science Quiz:         http://localhost:${PORT}/quiz       ║
     ║   📝 Vocabulary Editor:    http://localhost:${PORT}/editor     ║
+    ║   📊 ECF Products Viewer:  http://localhost:${PORT}/ecf-viewer ║
     ║                                                           ║
     ║   API Endpoints (CRUD):                                   ║
     ║   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ║
