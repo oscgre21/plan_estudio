@@ -108,6 +108,56 @@
             color: #666;
         }
 
+        .stats-panel {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 30px 20px;
+            padding: 20px;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-value.good {
+            color: #28a745;
+        }
+
+        .stat-value.medium {
+            color: #ffc107;
+        }
+
+        .stat-value.low {
+            color: #dc3545;
+        }
+
         .question-container {
             padding: 30px;
             min-height: 400px;
@@ -145,11 +195,40 @@
             margin-bottom: 20px;
             line-height: 1.8;
             border-left: 4px solid #764ba2;
+            position: relative;
         }
 
         .reading-section h3 {
             color: #764ba2;
             margin-bottom: 15px;
+        }
+
+        .reading-audio-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+        }
+
+        .reading-audio-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(118, 75, 162, 0.5);
+        }
+
+        .reading-audio-btn:active {
+            transform: scale(0.95);
         }
 
         .question-text {
@@ -511,6 +590,25 @@
             <div>Score: <strong><span id="score">0</span> / <span id="attempted">0</span></strong></div>
         </div>
 
+        <div class="stats-panel" id="statsPanel">
+            <div class="stat-item">
+                <div class="stat-label">📊 Progreso</div>
+                <div class="stat-value" id="statProgress">0%</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">✅ Aciertos</div>
+                <div class="stat-value good" id="statCorrect">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">❌ Errores</div>
+                <div class="stat-value low" id="statIncorrect">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">🎯 % Acierto</div>
+                <div class="stat-value" id="statAccuracy">0%</div>
+            </div>
+        </div>
+
         <div class="question-container" id="questionContainer">
             <!-- Questions will be inserted here by JavaScript -->
         </div>
@@ -538,6 +636,84 @@
         let attempted = 0;
         let userAnswers = [];
         let answerSubmitted = false;
+        let correctAnswers = 0;
+        let incorrectAnswers = 0;
+
+        // Shuffle array using Fisher-Yates algorithm
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Shuffle questions while keeping reading sections in their relative positions
+        function shuffleQuestions(data) {
+            // Separate reading sections from questions
+            const sections = [];
+            let currentSection = [];
+
+            data.forEach(item => {
+                if (item.type === 'reading') {
+                    if (currentSection.length > 0) {
+                        sections.push(currentSection);
+                        currentSection = [];
+                    }
+                    sections.push([item]); // Reading section stays in place relative to its questions
+                } else {
+                    currentSection.push(item);
+                }
+            });
+
+            if (currentSection.length > 0) {
+                sections.push(currentSection);
+            }
+
+            // Shuffle questions within each section
+            const shuffled = [];
+            sections.forEach(section => {
+                if (section[0].type === 'reading') {
+                    shuffled.push(...section); // Keep reading section as is
+                } else {
+                    shuffled.push(...shuffleArray(section)); // Shuffle questions
+                }
+            });
+
+            return shuffled;
+        }
+
+        // Update statistics panel
+        function updateStatistics() {
+            const totalQuestions = quizData.filter(q => q.type !== 'reading').length;
+            const answeredQuestions = userAnswers.filter(a => a !== null).length;
+            const progressPercentage = Math.round((answeredQuestions / totalQuestions) * 100);
+            const accuracyPercentage = attempted > 0 ? Math.round((correctAnswers / attempted) * 100) : 0;
+
+            // Update progress
+            document.getElementById('statProgress').textContent = progressPercentage + '%';
+
+            // Update correct/incorrect counts
+            document.getElementById('statCorrect').textContent = correctAnswers;
+            document.getElementById('statIncorrect').textContent = incorrectAnswers;
+
+            // Update accuracy with color coding
+            const accuracyElement = document.getElementById('statAccuracy');
+            accuracyElement.textContent = accuracyPercentage + '%';
+
+            // Remove previous classes
+            accuracyElement.classList.remove('good', 'medium', 'low');
+
+            // Add color class based on accuracy
+            if (accuracyPercentage >= 80) {
+                accuracyElement.classList.add('good');
+            } else if (accuracyPercentage >= 60) {
+                accuracyElement.classList.add('medium');
+            } else if (attempted > 0) {
+                accuracyElement.classList.add('low');
+            }
+        }
 
         // Load quiz data from JSON file
         async function loadQuizData() {
@@ -550,9 +726,12 @@
                 if (!response.ok) {
                     throw new Error(`Failed to load ${scienceQuizFile}`);
                 }
-                quizData = await response.json();
+                const rawData = await response.json();
+
+                // Shuffle questions
+                quizData = shuffleQuestions(rawData);
                 userAnswers = new Array(quizData.length).fill(null);
-                console.log(`✅ Loaded ${quizData.length} quiz questions from ${scienceQuizFile}`);
+                console.log(`✅ Loaded and shuffled ${quizData.length} quiz questions from ${scienceQuizFile}`);
 
                 // Display current test set name
                 TestSetManager.displayCurrentTestSet('currentTestSetName');
@@ -588,6 +767,47 @@
                 console.error('Error playing audio:', error);
                 alert('Audio playback failed. Please try again.');
             });
+        }
+
+        function playReadingAudio() {
+            const question = quizData[currentQuestionIndex];
+
+            if (!question.audioContent) {
+                console.log('No audio available for this reading section');
+                return;
+            }
+
+            // Stop any currently playing audio
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            // Create and play new audio
+            currentAudio = new Audio(question.audioContent);
+            currentAudio.play().catch(error => {
+                console.error('Error playing audio:', error);
+                alert('Audio playback failed. Please try again.');
+            });
+        }
+
+        // Function to auto-play audio when question loads
+        function autoPlayAudio() {
+            const question = quizData[currentQuestionIndex];
+
+            // Auto-play for questions (not reading sections)
+            if (question.type !== 'reading' && question.audioQuestion) {
+                // Small delay to ensure DOM is ready
+                setTimeout(() => {
+                    playQuestionAudio();
+                }, 300);
+            }
+            // Auto-play for reading sections
+            else if (question.type === 'reading' && question.audioContent) {
+                setTimeout(() => {
+                    playReadingAudio();
+                }, 300);
+            }
         }
 
         // Spanish translation toggle functionality
@@ -631,7 +851,12 @@
             }
 
             if (question.type === 'reading') {
-                questionHTML += `<div class="reading-section">${question.content}</div>`;
+                questionHTML += `
+                    <div class="reading-section">
+                        ${question.audioContent ? `<button class="reading-audio-btn" onclick="playReadingAudio()" title="Listen to reading">🔊</button>` : ''}
+                        ${question.content}
+                    </div>
+                `;
                 questionHTML += `<p style="text-align: center; color: #667eea; font-size: 1.2em; margin-top: 20px;">Read carefully, then click Next to start the questions!</p>`;
             } else if (question.type === 'true-false') {
                 questionHTML += `
@@ -728,6 +953,9 @@
             if (userAnswers[currentQuestionIndex] !== null && question.type !== 'reading') {
                 restorePreviousAnswer();
             }
+
+            // Auto-play audio when question loads
+            autoPlayAudio();
         }
 
         function selectTrueFalse(answer) {
@@ -753,7 +981,12 @@
 
             if (userAnswers.filter(a => a !== null).length > attempted) {
                 attempted++;
-                if (isCorrect) score++;
+                if (isCorrect) {
+                    score++;
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
             }
 
             const selectedOption = document.querySelector(`[data-answer="${answer}"]`);
@@ -777,6 +1010,7 @@
             }
 
             updateScore();
+            updateStatistics();
         }
 
         function selectMultipleChoice(index) {
@@ -802,7 +1036,12 @@
 
             if (userAnswers.filter(a => a !== null).length > attempted) {
                 attempted++;
-                if (isCorrect) score++;
+                if (isCorrect) {
+                    score++;
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
             }
 
             const selectedOption = document.querySelector(`[data-answer="${index}"]`);
@@ -826,6 +1065,7 @@
             }
 
             updateScore();
+            updateStatistics();
         }
 
         function submitTextInput() {
@@ -853,7 +1093,12 @@
 
             if (userAnswers.filter(a => a !== null).length > attempted) {
                 attempted++;
-                if (isCorrect) score++;
+                if (isCorrect) {
+                    score++;
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
             }
 
             input.disabled = true;
@@ -875,6 +1120,7 @@
             }
 
             updateScore();
+            updateStatistics();
         }
 
         function handleTextInputEnter(event) {
@@ -927,6 +1173,13 @@
         }
 
         function nextQuestion() {
+            // Stop any currently playing audio before moving to next question
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                currentAudio = null;
+            }
+
             if (currentQuestionIndex < quizData.length - 1) {
                 currentQuestionIndex++;
                 loadQuestion();
@@ -936,6 +1189,13 @@
         }
 
         function previousQuestion() {
+            // Stop any currently playing audio before moving to previous question
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                currentAudio = null;
+            }
+
             if (currentQuestionIndex > 0) {
                 currentQuestionIndex--;
                 loadQuestion();
@@ -943,9 +1203,17 @@
         }
 
         function showResults() {
+            // Stop any currently playing audio when showing results
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                currentAudio = null;
+            }
+
             document.getElementById('questionContainer').style.display = 'none';
             document.querySelector('.navigation').style.display = 'none';
             document.querySelector('.quiz-info').style.display = 'none';
+            document.getElementById('statsPanel').style.display = 'none';
 
             const results = document.getElementById('results');
             const totalQuestions = quizData.filter(q => q.type !== 'reading').length;
@@ -959,19 +1227,29 @@
         }
 
         function restartQuiz() {
+            // Shuffle questions again for a new quiz
+            const rawData = [...quizData]; // Make a copy
+            quizData = shuffleQuestions(rawData);
+
             currentQuestionIndex = 0;
             score = 0;
             attempted = 0;
+            correctAnswers = 0;
+            incorrectAnswers = 0;
             userAnswers = new Array(quizData.length).fill(null);
             answerSubmitted = false;
 
             document.getElementById('questionContainer').style.display = 'block';
             document.querySelector('.navigation').style.display = 'flex';
             document.querySelector('.quiz-info').style.display = 'flex';
+            document.getElementById('statsPanel').style.display = 'grid';
             document.getElementById('results').classList.remove('show');
 
             loadQuestion();
             updateScore();
+            updateStatistics();
+
+            console.log('✅ Quiz restarted and reshuffled');
         }
 
         // Keyboard shortcuts
