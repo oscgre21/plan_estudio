@@ -448,20 +448,5 @@
     "explanation": "Use 'for' with periods of time (six months). Usa 'for' con períodos de tiempo (seis meses).",
     "audioWord": "audios/word-skateboarding-time.mp3",
     "audioSentence": "audios/sentence-skateboarding-has-been-my-favorite-sport-for-six-months.mp3"
-  },
-  {
-    "word": "SNOWBOARDING",
-    "spanish": "Snowboard",
-    "sentenceEN": "Snowboarding has been popular since the 1980s.",
-    "sentenceES": "El snowboard ha sido popular desde los años 80.",
-    "options": [
-      { "emoji": "✅", "label": "since", "isCorrect": true },
-      { "emoji": "❌", "label": "for", "isCorrect": false },
-      { "emoji": "❌", "label": "during", "isCorrect": false },
-      { "emoji": "❌", "label": "from", "isCorrect": false }
-    ],
-    "explanation": "Use 'since' with specific points in time (the 1980s). Usa 'since' con puntos específicos en el tiempo (los años 80).",
-    "audioWord": "audios/word-snowboarding-time.mp3",
-    "audioSentence": "audios/sentence-snowboarding-has-been-popular-since-the-1980s.mp3"
   }
 ]
