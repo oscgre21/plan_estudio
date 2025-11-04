@@ -1,0 +1,590 @@
+[
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Write the sport shown in the image: <img src='quiz_images/surfing.jpeg' class='question-image' alt='Person surfing on ocean waves'>",
+    "type": "text-input",
+    "correctAnswer": "kite surfing",
+    "alternativeAnswers": [
+      "kite-surfing",
+      "kitesurfing"
+    ],
+    "explanation": "The correct answer is KITE SURFING (also written as kite-surfing or kitesurfing). This extreme sport combines surfing with flying a large kite to move across the water.",
+    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/surfing.jpeg' class='question-image' alt='Persona haciendo surf en olas del océano'>",
+    "explanationES": "La respuesta correcta es KITE SURFING (también escrito como kite-surfing o kitesurfing). Este deporte extremo combina el surf con volar una cometa grande para moverse por el agua.",
+    "audioQuestion": "audios/english-q1-write-the-sport-shown-in-the-image-surfing.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Write the sport shown in the image: <img src='quiz_images/motocross.jpeg' class='question-image' alt='Person riding a motorcycle on dirt track'>",
+    "type": "text-input",
+    "correctAnswer": "motocross",
+    "alternativeAnswers": [
+      "moto cross",
+      "motorcycle racing"
+    ],
+    "explanation": "The correct answer is MOTOCROSS. This is an extreme sport where riders race motorcycles on rough outdoor tracks with jumps and obstacles.",
+    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/motocross.jpeg' class='question-image' alt='Persona montando una motocicleta en pista de tierra'>",
+    "explanationES": "La respuesta correcta es MOTOCROSS. Este es un deporte extremo donde los pilotos corren motocicletas en pistas al aire libre con saltos y obstáculos.",
+    "audioQuestion": "audios/english-q2-write-the-sport-shown-in-the-image-motocross.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Write the sport shown in the image: <img src='quiz_images/skiing.jpeg' class='question-image' alt='Person skiing down snowy mountain'>",
+    "type": "text-input",
+    "correctAnswer": "skiing",
+    "alternativeAnswers": [
+      "ski",
+      "alpine skiing"
+    ],
+    "explanation": "The correct answer is SKIING. This winter sport involves sliding down snowy mountains on skis.",
+    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/skiing.jpeg' class='question-image' alt='Persona esquiando por montaña nevada'>",
+    "explanationES": "La respuesta correcta es SKIING (esquí). Este deporte de invierno consiste en deslizarse por montañas nevadas en esquís.",
+    "audioQuestion": "audios/english-q3-write-the-sport-shown-in-the-image-skiing.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Write the sport shown in the image: <img src='quiz_images/skateboarding.jpeg' class='question-image' alt='Person riding skateboard'>",
+    "type": "text-input",
+    "correctAnswer": "skateboarding",
+    "alternativeAnswers": [
+      "hang-gliding",
+      "hang gliding",
+      "hanggliding"
+    ],
+    "explanation": "The correct answer is HANG-GLIDING. This extreme sport involves flying through the air using a lightweight glider that you hang from.",
+    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/skateboarding.jpeg' class='question-image' alt='Persona montando patineta'>",
+    "explanationES": "La respuesta correcta es HANG-GLIDING (ala delta). Este deporte extremo consiste en volar por el aire usando un planeador ligero del cual cuelgas.",
+    "audioQuestion": "audios/english-q4-write-the-sport-shown-in-the-image-skateboarding.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Write the sport shown in the image: <img src='quiz_images/hang-gliding.jpeg' class='question-image' alt='Person hang-gliding'>",
+    "type": "text-input",
+    "correctAnswer": "hang-gliding",
+    "alternativeAnswers": [
+      "hang gliding",
+      "hanggliding",
+      "skateboarding"
+    ],
+    "explanation": "The correct answer is SKATEBOARDING. This sport involves performing tricks and riding on a board with wheels.",
+    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/hang-gliding.jpeg' class='question-image' alt='Persona en ala delta'>",
+    "explanationES": "La respuesta correcta es SKATEBOARDING (patineta). Este deporte consiste en realizar trucos y montar en una tabla con ruedas.",
+    "audioQuestion": "audios/english-q5-write-the-sport-shown-in-the-image-hang-gliding.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Write the sport shown in the image: <img src='quiz_images/surfing2.jpeg' class='question-image' alt='Person surfing'>",
+    "type": "text-input",
+    "correctAnswer": "surfing",
+    "alternativeAnswers": [
+      "surf",
+      "wave riding"
+    ],
+    "explanation": "The correct answer is SURFING. This water sport involves riding ocean waves on a surfboard.",
+    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/surfing2.jpeg' class='question-image' alt='Persona surfeando'>",
+    "explanationES": "La respuesta correcta es SURFING (surf). Este deporte acuático consiste en montar olas del océano en una tabla de surf.",
+    "audioQuestion": "audios/english-q6-write-the-sport-shown-in-the-image-surfing2.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Skateboarding has been my favorite sport _____ six months.",
+    "type": "multiple-choice",
+    "options": [
+      "for",
+      "since"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct answer is FOR. We use 'for' with periods of time (six months is a period). We use 'since' with specific points in time.",
+    "questionES": "Elige: Skateboarding has been my favorite sport _____ six months.",
+    "explanationES": "La respuesta correcta es FOR. Usamos 'for' con períodos de tiempo (seis meses es un período). Usamos 'since' con puntos específicos en el tiempo.",
+    "audioQuestion": "audios/english-q7-skateboarding-has-been-my-favorite-sport-six-months.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Snowboarding has been popular _____ the 1980s.",
+    "type": "multiple-choice",
+    "options": [
+      "for",
+      "since"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct answer is SINCE. We use 'since' with specific points in time (the 1980s is a specific starting point). We use 'for' with periods of time.",
+    "questionES": "Elige: Snowboarding has been popular _____ the 1980s.",
+    "explanationES": "La respuesta correcta es SINCE. Usamos 'since' con puntos específicos en el tiempo (los años 1980 es un punto de inicio específico). Usamos 'for' con períodos de tiempo.",
+    "audioQuestion": "audios/english-q8-snowboarding-has-been-popular-the-1980s.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Skiing has been part of the Olympics _____ 1936.",
+    "type": "multiple-choice",
+    "options": [
+      "for",
+      "since"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct answer is SINCE. We use 'since' with specific points in time (1936 is a specific year). We use 'for' with periods of time.",
+    "questionES": "Elige: Skiing has been part of the Olympics _____ 1936.",
+    "explanationES": "La respuesta correcta es SINCE. Usamos 'since' con puntos específicos en el tiempo (1936 es un año específico). Usamos 'for' con períodos de tiempo.",
+    "audioQuestion": "audios/english-q9-skiing-has-been-part-of-the-olympics-1936.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: _____ the 1930s, millions of people have tried skiing.",
+    "type": "multiple-choice",
+    "options": [
+      "For",
+      "Since"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct answer is SINCE. We use 'since' with specific points in time (the 1930s is a specific starting point). We use 'for' with periods of time.",
+    "questionES": "Elige: _____ the 1930s, millions of people have tried skiing.",
+    "explanationES": "La respuesta correcta es SINCE. Usamos 'since' con puntos específicos en el tiempo (los años 1930 es un punto de inicio específico). Usamos 'for' con períodos de tiempo.",
+    "audioQuestion": "audios/english-q10-the-1930s-millions-of-people-have-tried-skiing.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Kitesurfing has been popular _____ twenty years.",
+    "type": "multiple-choice",
+    "options": [
+      "for",
+      "since"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct answer is FOR. We use 'for' with periods of time (twenty years is a period). We use 'since' with specific points in time.",
+    "questionES": "Elige: Kitesurfing has been popular _____ twenty years.",
+    "explanationES": "La respuesta correcta es FOR. Usamos 'for' con períodos de tiempo (veinte años es un período). Usamos 'since' con puntos específicos en el tiempo.",
+    "audioQuestion": "audios/english-q11-kitesurfing-has-been-popular-twenty-years.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Which sentence correctly uses the adverb of emphasis?",
+    "type": "multiple-choice",
+    "options": [
+      "Extreme skiing can be super dangerous.",
+      "Extreme skiing can super be dangerous."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Option A is correct! Adverbs of emphasis (super, really, so, extremely, incredibly, very) come BEFORE adjectives. The correct order is: can be + super + dangerous.",
+    "questionES": "Elige: ¿Qué oración usa correctamente el adverbio de énfasis?",
+    "explanationES": "¡La opción A es correcta! Los adverbios de énfasis (super, really, so, extremely, incredibly, very) vienen ANTES de los adjetivos. El orden correcto es: can be + super + dangerous.",
+    "audioQuestion": "audios/english-q12-which-sentence-correctly-uses-adverb-super.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Which sentence correctly uses the adverb of emphasis?",
+    "type": "multiple-choice",
+    "options": [
+      "Our kayaking trip so was amazing.",
+      "Our kayaking trip was so amazing."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Option B is correct! The adverb 'so' must come before the adjective 'amazing'. The correct structure is: was + so + amazing.",
+    "questionES": "Elige: ¿Qué oración usa correctamente el adverbio de énfasis?",
+    "explanationES": "¡La opción B es correcta! El adverbio 'so' debe venir antes del adjetivo 'amazing'. La estructura correcta es: was + so + amazing.",
+    "audioQuestion": "audios/english-q13-which-sentence-correctly-uses-adverb-so.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Which sentence correctly uses the adverb of emphasis?",
+    "type": "multiple-choice",
+    "options": [
+      "The mountain bike riders incredibly are careful.",
+      "The mountain bike riders are incredibly careful."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Option B is correct! The adverb 'incredibly' must come before the adjective 'careful'. The correct structure is: are + incredibly + careful.",
+    "questionES": "Elige: ¿Qué oración usa correctamente el adverbio de énfasis?",
+    "explanationES": "¡La opción B es correcta! El adverbio 'incredibly' debe venir antes del adjetivo 'careful'. La estructura correcta es: are + incredibly + careful.",
+    "audioQuestion": "audios/english-q14-which-sentence-correctly-uses-adverb-incredibly.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Which sentence correctly uses the adverb of emphasis?",
+    "type": "multiple-choice",
+    "options": [
+      "He was extremely lucky he did not get injured.",
+      "He extremely was lucky he did not get injured."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Option A is correct! The adverb 'extremely' must come before the adjective 'lucky'. The correct structure is: was + extremely + lucky.",
+    "questionES": "Elige: ¿Qué oración usa correctamente el adverbio de énfasis?",
+    "explanationES": "¡La opción A es correcta! El adverbio 'extremely' debe venir antes del adjetivo 'lucky'. La estructura correcta es: was + extremely + lucky.",
+    "audioQuestion": "audios/english-q15-which-sentence-correctly-uses-adverb-extremely.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Which sentence correctly uses the adverb of emphasis?",
+    "type": "multiple-choice",
+    "options": [
+      "Skiing very is fun on a sunny day.",
+      "Skiing is very fun on a sunny day."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Option B is correct! The adverb 'very' must come before the adjective 'fun'. The correct structure is: is + very + fun.",
+    "questionES": "Elige: ¿Qué oración usa correctamente el adverbio de énfasis?",
+    "explanationES": "¡La opción B es correcta! El adverbio 'very' debe venir antes del adjetivo 'fun'. La estructura correcta es: is + very + fun.",
+    "audioQuestion": "audios/english-q16-which-sentence-correctly-uses-adverb-very.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Match the definition: 'To study something closely and carefully' corresponds to which vocabulary word?",
+    "type": "multiple-choice",
+    "options": [
+      "excavate",
+      "analyze",
+      "discover",
+      "bury"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct answer is ANALYZE. To analyze means to study something closely and carefully to understand it better.",
+    "questionES": "Empareja la definición: 'Estudiar algo de cerca y cuidadosamente' corresponde a qué palabra de vocabulario?",
+    "explanationES": "La respuesta correcta es ANALYZE (analizar). Analizar significa estudiar algo de cerca y cuidadosamente para entenderlo mejor.",
+    "audioQuestion": "audios/english-q17-match-definition-analyze.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Match the definition: 'To put a dead person or animal in the ground' corresponds to which vocabulary word?",
+    "type": "multiple-choice",
+    "options": [
+      "excavate",
+      "die",
+      "bury",
+      "discover"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct answer is BURY. To bury means to put a dead person or animal in the ground or in a tomb.",
+    "questionES": "Empareja la definición: 'Poner a una persona o animal muerto en el suelo' corresponde a qué palabra de vocabulario?",
+    "explanationES": "La respuesta correcta es BURY (enterrar). Enterrar significa poner a una persona o animal muerto en el suelo o en una tumba.",
+    "audioQuestion": "audios/english-q18-match-definition-bury.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Match the definition: 'To stop living' corresponds to which vocabulary word?",
+    "type": "multiple-choice",
+    "options": [
+      "bury",
+      "die",
+      "excavate",
+      "discover"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct answer is DIE. To die means to stop living, when a living being ceases to be alive.",
+    "questionES": "Empareja la definición: 'Dejar de vivir' corresponde a qué palabra de vocabulario?",
+    "explanationES": "La respuesta correcta es DIE (morir). Morir significa dejar de vivir, cuando un ser vivo deja de estar vivo.",
+    "audioQuestion": "audios/english-q19-match-definition-die.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Match the definition: 'To see or find for the first time' corresponds to which vocabulary word?",
+    "type": "multiple-choice",
+    "options": [
+      "excavate",
+      "analyze",
+      "discover",
+      "bury"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct answer is DISCOVER. To discover means to see or find something for the first time, to learn about something new.",
+    "questionES": "Empareja la definición: 'Ver o encontrar por primera vez' corresponde a qué palabra de vocabulario?",
+    "explanationES": "La respuesta correcta es DISCOVER (descubrir). Descubrir significa ver o encontrar algo por primera vez, aprender sobre algo nuevo.",
+    "audioQuestion": "audios/english-q20-match-definition-discover.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Match the definition: 'To uncover something by removing the soil that is covering it' corresponds to which vocabulary word?",
+    "type": "multiple-choice",
+    "options": [
+      "excavate",
+      "bury",
+      "analyze",
+      "discover"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct answer is EXCAVATE. To excavate means to uncover something by removing the soil or earth that is covering it, often used in archaeology.",
+    "questionES": "Empareja la definición: 'Descubrir algo quitando la tierra que lo cubre' corresponde a qué palabra de vocabulario?",
+    "explanationES": "La respuesta correcta es EXCAVATE (excavar). Excavar significa descubrir algo quitando la tierra que lo cubre, a menudo usado en arqueología.",
+    "audioQuestion": "audios/english-q21-match-definition-excavate.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: The Sphinx _____ in Egypt a very long time ago.",
+    "type": "multiple-choice",
+    "options": [
+      "was build",
+      "were built",
+      "was built"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct answer is WAS BUILT. We use 'was' because 'The Sphinx' is singular, and we need the past participle 'built' (not 'build') for passive voice.",
+    "questionES": "Elige: The Sphinx _____ in Egypt a very long time ago.",
+    "explanationES": "La respuesta correcta es WAS BUILT. Usamos 'was' porque 'The Sphinx' es singular, y necesitamos el participio pasado 'built' (no 'build') para la voz pasiva.",
+    "audioQuestion": "audios/english-q22-the-sphinx-in-egypt.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: The people of Pompeii _____ under a volcano.",
+    "type": "multiple-choice",
+    "options": [
+      "were buried",
+      "was bury",
+      "was buried"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct answer is WERE BURIED. We use 'were' because 'people' is plural, and we need the past participle 'buried' for passive voice.",
+    "questionES": "Elige: The people of Pompeii _____ under a volcano.",
+    "explanationES": "La respuesta correcta es WERE BURIED. Usamos 'were' porque 'people' es plural, y necesitamos el participio pasado 'buried' para la voz pasiva.",
+    "audioQuestion": "audios/english-q23-the-people-of-pompeii.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: Gold treasures _____ in England.",
+    "type": "multiple-choice",
+    "options": [
+      "was found",
+      "were found",
+      "was find"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct answer is WERE FOUND. We use 'were' because 'treasures' is plural, and we need the past participle 'found' (not 'find') for passive voice.",
+    "questionES": "Elige: Gold treasures _____ in England.",
+    "explanationES": "La respuesta correcta es WERE FOUND. Usamos 'were' porque 'treasures' es plural, y necesitamos el participio pasado 'found' (no 'find') para la voz pasiva.",
+    "audioQuestion": "audios/english-q24-gold-treasures-in-england.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Choose: The treasures _____ in a tomb.",
+    "type": "multiple-choice",
+    "options": [
+      "weren't hidden",
+      "not were hidden",
+      "wasn't hidden"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct answer is WEREN'T HIDDEN. We use 'weren't' (were not) because 'treasures' is plural, and this is the correct negative form of passive voice.",
+    "questionES": "Elige: The treasures _____ in a tomb.",
+    "explanationES": "La respuesta correcta es WEREN'T HIDDEN. Usamos 'weren't' (were not) porque 'treasures' es plural, y esta es la forma negativa correcta de la voz pasiva.",
+    "audioQuestion": "audios/english-q25-the-treasures-in-a-tomb.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Complete: A _____ is a place that archaeologists want to excavate or explore.",
+    "type": "text-input",
+    "correctAnswer": "site",
+    "alternativeAnswers": [
+      "archeological site",
+      "archaeological site"
+    ],
+    "explanation": "The correct answer is SITE. A site is a location or place where archaeologists conduct their work to excavate and explore ancient remains.",
+    "questionES": "Completa: A _____ is a place that archaeologists want to excavate or explore.",
+    "explanationES": "La respuesta correcta es SITE (sitio). Un sitio es un lugar o ubicación donde los arqueólogos realizan su trabajo para excavar y explorar restos antiguos.",
+    "audioQuestion": "audios/english-q26-a-is-a-place-that-archaeologists.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Complete: _____ are objects found at the site. They are not living things. They were made by someone.",
+    "type": "text-input",
+    "correctAnswer": "artifacts",
+    "alternativeAnswers": [
+      "artefacts",
+      "archaeological artifacts"
+    ],
+    "explanation": "The correct answer is ARTIFACTS. Artifacts are human-made objects discovered by archaeologists at excavation sites. They provide clues about past civilizations.",
+    "questionES": "Completa: _____ are objects found at the site. They are not living things. They were made by someone.",
+    "explanationES": "La respuesta correcta es ARTIFACTS (artefactos). Los artefactos son objetos hechos por humanos descubiertos por arqueólogos en sitios de excavación. Proporcionan pistas sobre civilizaciones pasadas.",
+    "audioQuestion": "audios/english-q27-are-objects-found-at-the-site.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Complete: A _____ is a way to discover what is in the body's cells. It can help you find your relatives.",
+    "type": "text-input",
+    "correctAnswer": "DNA test",
+    "alternativeAnswers": [
+      "dna test",
+      "DNA testing",
+      "genetic test"
+    ],
+    "explanation": "The correct answer is DNA TEST. A DNA test analyzes genetic material in cells to provide information about ancestry, relatives, and hereditary traits.",
+    "questionES": "Completa: A _____ is a way to discover what is in the body's cells. It can help you find your relatives.",
+    "explanationES": "La respuesta correcta es DNA TEST (prueba de ADN). Una prueba de ADN analiza material genético en las células para proporcionar información sobre ascendencia, parientes y rasgos hereditarios.",
+    "audioQuestion": "audios/english-q28-a-is-a-way-to-discover-body-cells.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Complete: A _____ is a way to see inside a body. You can discover if a person has illnesses.",
+    "type": "text-input",
+    "correctAnswer": "CT scan",
+    "alternativeAnswers": [
+      "ct scan",
+      "CAT scan",
+      "computed tomography"
+    ],
+    "explanation": "The correct answer is CT SCAN. A CT scan (computed tomography scan) is a medical imaging technique that creates detailed pictures of the inside of the body to diagnose illnesses.",
+    "questionES": "Completa: A _____ is a way to see inside a body. You can discover if a person has illnesses.",
+    "explanationES": "La respuesta correcta es CT SCAN (tomografía computarizada). Una tomografía es una técnica de imagen médica que crea imágenes detalladas del interior del cuerpo para diagnosticar enfermedades.",
+    "audioQuestion": "audios/english-q29-a-is-a-way-to-see-inside-body.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Complete: _____ is a small amount of something, such as food, that someone analyzes.",
+    "type": "text-input",
+    "correctAnswer": "a sample",
+    "alternativeAnswers": [
+      "sample",
+      "A sample"
+    ],
+    "explanation": "The correct answer is A SAMPLE. A sample is a small portion of something taken for testing, analysis, or examination to learn more about the whole.",
+    "questionES": "Completa: _____ is a small amount of something, such as food, that someone analyzes.",
+    "explanationES": "La respuesta correcta es A SAMPLE (una muestra). Una muestra es una pequeña porción de algo tomada para pruebas, análisis o examen para aprender más sobre el conjunto.",
+    "audioQuestion": "audios/english-q30-is-a-small-amount-of-something.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Surfing is an extreme sport where you ride waves on a board in the ocean.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Surfing is a water sport where you ride ocean waves standing on a surfboard.",
+    "questionES": "El surf es un deporte extremo donde montas olas en una tabla en el océano.",
+    "explanationES": "Esto es VERDADERO. El surf es un deporte acuático donde montas olas del océano de pie en una tabla de surf.",
+    "audioQuestion": "audios/english-tf1-surfing-is-an-extreme-sport.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Hang-gliding is racing motorcycles on rough outdoor tracks.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Hang-gliding is flying through the air using a lightweight glider. Racing motorcycles on rough outdoor tracks is called motocross.",
+    "questionES": "El ala delta es correr motocicletas en pistas al aire libre con terreno irregular.",
+    "explanationES": "Esto es FALSO. El ala delta es volar por el aire usando un planeador ligero. Correr motocicletas en pistas al aire libre con terreno irregular se llama motocross.",
+    "audioQuestion": "audios/english-tf2-hang-gliding-is-racing-motorcycles.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "We use 'for' with specific points in time and 'since' with periods of time.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. It's the opposite! We use 'since' with specific points in time (since 1990, since Monday) and 'for' with periods of time (for 5 years, for two months).",
+    "questionES": "Usamos 'for' con puntos específicos en el tiempo y 'since' con períodos de tiempo.",
+    "explanationES": "Esto es FALSO. ¡Es lo contrario! Usamos 'since' con puntos específicos en el tiempo (since 1990, since Monday) y 'for' con períodos de tiempo (for 5 years, for two months).",
+    "audioQuestion": "audios/english-tf3-we-use-for-with-specific-points.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Skiing has been part of the Olympics since the 1980s.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. According to the exam, skiing has been part of the Olympics since 1936, not the 1980s. Snowboarding has been popular since the 1980s.",
+    "questionES": "El esquí ha sido parte de las Olimpiadas desde los años 1980.",
+    "explanationES": "Esto es FALSO. Según el examen, el esquí ha sido parte de las Olimpiadas desde 1936, no desde los años 1980. El snowboard ha sido popular desde los años 1980.",
+    "audioQuestion": "audios/english-tf4-skiing-olympics-since-1980s.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Adverbs of emphasis like 'super', 'extremely', and 'incredibly' always come after the adjective they modify.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Adverbs of emphasis come BEFORE the adjective they modify. For example: 'super dangerous' (not 'dangerous super'), 'extremely lucky' (not 'lucky extremely').",
+    "questionES": "Los adverbios de énfasis como 'super', 'extremely' e 'incredibly' siempre vienen después del adjetivo que modifican.",
+    "explanationES": "Esto es FALSO. Los adverbios de énfasis vienen ANTES del adjetivo que modifican. Por ejemplo: 'super dangerous' (no 'dangerous super'), 'extremely lucky' (no 'lucky extremely').",
+    "audioQuestion": "audios/english-tf5-adverbs-come-after-adjective.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "The sentence 'Our kayaking trip was so amazing' correctly uses an adverb of emphasis.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. The adverb 'so' is correctly placed before the adjective 'amazing'. The structure 'was + so + amazing' is correct.",
+    "questionES": "La oración 'Our kayaking trip was so amazing' usa correctamente un adverbio de énfasis.",
+    "explanationES": "Esto es VERDADERO. El adverbio 'so' está correctamente colocado antes del adjetivo 'amazing'. La estructura 'was + so + amazing' es correcta.",
+    "audioQuestion": "audios/english-tf6-kayaking-trip-was-so-amazing.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "To 'analyze' means to put a dead person or animal in the ground.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. To 'analyze' means to study something closely and carefully. The word that means 'to put a dead person or animal in the ground' is 'bury'.",
+    "questionES": "'Analyze' significa poner a una persona o animal muerto en el suelo.",
+    "explanationES": "Esto es FALSO. 'Analyze' significa estudiar algo de cerca y cuidadosamente. La palabra que significa 'poner a una persona o animal muerto en el suelo' es 'bury' (enterrar).",
+    "audioQuestion": "audios/english-tf7-analyze-means-bury.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "To 'excavate' means to uncover something by removing the soil that is covering it.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. To excavate means to dig up and uncover objects or sites by removing the earth or soil that covers them, which is commonly done in archaeology.",
+    "questionES": "'Excavate' significa descubrir algo quitando la tierra que lo cubre.",
+    "explanationES": "Esto es VERDADERO. Excavar significa desenterrar y descubrir objetos o sitios quitando la tierra que los cubre, lo cual se hace comúnmente en arqueología.",
+    "audioQuestion": "audios/english-tf8-excavate-means-uncover.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "In passive voice, we say 'The Sphinx were built in Egypt' because it's an old structure.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. We say 'The Sphinx was built' (not 'were built') because 'The Sphinx' is singular. We use 'was' with singular subjects and 'were' with plural subjects in passive voice.",
+    "questionES": "En voz pasiva, decimos 'The Sphinx were built in Egypt' porque es una estructura antigua.",
+    "explanationES": "Esto es FALSO. Decimos 'The Sphinx was built' (no 'were built') porque 'The Sphinx' es singular. Usamos 'was' con sujetos singulares y 'were' con sujetos plurales en voz pasiva.",
+    "audioQuestion": "audios/english-tf9-sphinx-were-built.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Artifacts are living things found by archaeologists at excavation sites.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. Artifacts are NOT living things. They are objects made by humans that are found at archaeological sites. The exam specifically states that artifacts 'are not living things' and 'were made by someone'.",
+    "questionES": "Los artefactos son seres vivos encontrados por arqueólogos en sitios de excavación.",
+    "explanationES": "Esto es FALSO. Los artefactos NO son seres vivos. Son objetos hechos por humanos que se encuentran en sitios arqueológicos. El examen específicamente dice que los artefactos 'no son seres vivos' y 'fueron hechos por alguien'.",
+    "audioQuestion": "audios/english-tf10-artifacts-are-living-things.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "A DNA test can help you find your relatives by analyzing what is in the body's cells.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. A DNA test is a way to discover what is in the body's cells, and this genetic information can help identify relatives and family connections.",
+    "questionES": "Una prueba de ADN puede ayudarte a encontrar a tus parientes analizando lo que hay en las células del cuerpo.",
+    "explanationES": "Esto es VERDADERO. Una prueba de ADN es una forma de descubrir qué hay en las células del cuerpo, y esta información genética puede ayudar a identificar parientes y conexiones familiares.",
+    "audioQuestion": "audios/english-tf11-dna-test-find-relatives.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "A CT scan and a sample are the same thing in archaeology.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. A CT scan is a way to see inside a body to discover illnesses, while a sample is a small amount of something (like food) that someone analyzes. They are completely different things with different purposes.",
+    "questionES": "Una tomografía y una muestra son la misma cosa en arqueología.",
+    "explanationES": "Esto es FALSO. Una tomografía es una forma de ver dentro del cuerpo para descubrir enfermedades, mientras que una muestra es una pequeña cantidad de algo (como comida) que alguien analiza. Son cosas completamente diferentes con propósitos diferentes.",
+    "audioQuestion": "audios/english-tf12-ct-scan-and-sample-same.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "The correct sentence is: 'The people of Pompeii was buried under a volcano.'",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. The correct sentence is 'The people of Pompeii WERE buried under a volcano' (not 'was buried') because 'people' is plural, so we must use 'were' in passive voice.",
+    "questionES": "La oración correcta es: 'The people of Pompeii was buried under a volcano.'",
+    "explanationES": "Esto es FALSO. La oración correcta es 'The people of Pompeii WERE buried under a volcano' (no 'was buried') porque 'people' es plural, entonces debemos usar 'were' en voz pasiva.",
+    "audioQuestion": "audios/english-tf13-people-was-buried.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Skateboarding and snowboarding both use boards, but skateboarding has wheels while snowboarding is done on snow.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "This is TRUE. Both sports involve riding on boards, but skateboarding is performed on a board with wheels (usually on streets or skateparks), while snowboarding is performed on a single board sliding down snowy slopes.",
+    "questionES": "La patineta y el snowboard usan tablas, pero la patineta tiene ruedas mientras que el snowboard se hace en la nieve.",
+    "explanationES": "Esto es VERDADERO. Ambos deportes implican montar en tablas, pero la patineta se realiza en una tabla con ruedas (usualmente en calles o skateparks), mientras que el snowboard se realiza en una sola tabla deslizándose por pendientes nevadas.",
+    "audioQuestion": "audios/english-tf14-skateboarding-snowboarding-comparison.mp3"
+  },
+  {
+    "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
+    "question": "Millions of people have tried skiing for the 1930s.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "This is FALSE. The correct sentence is 'Millions of people have tried skiing SINCE the 1930s' (not 'for'). We use 'since' with specific points in time like 'the 1930s', and 'for' with periods of time.",
+    "questionES": "Millones de personas han probado el esquí for the 1930s.",
+    "explanationES": "Esto es FALSO. La oración correcta es 'Millions of people have tried skiing SINCE the 1930s' (no 'for'). Usamos 'since' con puntos específicos en el tiempo como 'the 1930s', y 'for' con períodos de tiempo.",
+    "audioQuestion": "audios/english-tf15-skiing-for-the-1930s.mp3"
+  }
+]

@@ -1,0 +1,839 @@
+[
+  {
+    "question": "This is a place that archaeologists want to excavate or explore.",
+    "audioQuestion": "audios/question-site.mp3",
+    "correctAnswer": "SITE",
+    "options": [
+      {
+        "word": "SITE",
+        "emoji": "🏛️",
+        "isCorrect": true
+      },
+      {
+        "word": "ARTIFACT",
+        "emoji": "🗿",
+        "isCorrect": false
+      },
+      {
+        "word": "SAMPLE",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "DNA TEST",
+        "emoji": "🧬",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "These are objects found at the site. They are not living things. They were made by someone.",
+    "audioQuestion": "audios/question-artifacts.mp3",
+    "correctAnswer": "ARTIFACTS",
+    "options": [
+      {
+        "word": "ARTIFACTS",
+        "emoji": "🗿",
+        "isCorrect": true
+      },
+      {
+        "word": "SITE",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "SAMPLE",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "CT SCAN",
+        "emoji": "🏥",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a way to discover what is in the body's cells. It can help you find your relatives.",
+    "audioQuestion": "audios/question-dna-test.mp3",
+    "correctAnswer": "DNA TEST",
+    "options": [
+      {
+        "word": "DNA TEST",
+        "emoji": "🧬",
+        "isCorrect": true
+      },
+      {
+        "word": "CT SCAN",
+        "emoji": "🏥",
+        "isCorrect": false
+      },
+      {
+        "word": "SAMPLE",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "ARTIFACT",
+        "emoji": "🗿",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a way to see inside a body. You can discover if a person has illnesses.",
+    "audioQuestion": "audios/question-ct-scan.mp3",
+    "correctAnswer": "CT SCAN",
+    "options": [
+      {
+        "word": "CT SCAN",
+        "emoji": "🏥",
+        "isCorrect": true
+      },
+      {
+        "word": "DNA TEST",
+        "emoji": "🧬",
+        "isCorrect": false
+      },
+      {
+        "word": "SAMPLE",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "ANALYZE",
+        "emoji": "🔍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a small amount of something, such as food, that someone analyzes.",
+    "audioQuestion": "audios/question-sample.mp3",
+    "correctAnswer": "SAMPLE",
+    "options": [
+      {
+        "word": "SAMPLE",
+        "emoji": "🔬",
+        "isCorrect": true
+      },
+      {
+        "word": "ARTIFACT",
+        "emoji": "🗿",
+        "isCorrect": false
+      },
+      {
+        "word": "SITE",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "DNA TEST",
+        "emoji": "🧬",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This means to uncover something by removing the soil that is covering it.",
+    "audioQuestion": "audios/question-excavate.mp3",
+    "correctAnswer": "EXCAVATE",
+    "options": [
+      {
+        "word": "EXCAVATE",
+        "emoji": "⛏️",
+        "isCorrect": true
+      },
+      {
+        "word": "BURY",
+        "emoji": "⚰️",
+        "isCorrect": false
+      },
+      {
+        "word": "ANALYZE",
+        "emoji": "🔍",
+        "isCorrect": false
+      },
+      {
+        "word": "DISCOVER",
+        "emoji": "👀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This means to study something closely and carefully.",
+    "audioQuestion": "audios/question-analyze.mp3",
+    "correctAnswer": "ANALYZE",
+    "options": [
+      {
+        "word": "ANALYZE",
+        "emoji": "🔍",
+        "isCorrect": true
+      },
+      {
+        "word": "EXCAVATE",
+        "emoji": "⛏️",
+        "isCorrect": false
+      },
+      {
+        "word": "DISCOVER",
+        "emoji": "👀",
+        "isCorrect": false
+      },
+      {
+        "word": "BURY",
+        "emoji": "⚰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This means to put a dead person or animal in the ground.",
+    "audioQuestion": "audios/question-bury.mp3",
+    "correctAnswer": "BURY",
+    "options": [
+      {
+        "word": "BURY",
+        "emoji": "⚰️",
+        "isCorrect": true
+      },
+      {
+        "word": "EXCAVATE",
+        "emoji": "⛏️",
+        "isCorrect": false
+      },
+      {
+        "word": "DIE",
+        "emoji": "💀",
+        "isCorrect": false
+      },
+      {
+        "word": "DISCOVER",
+        "emoji": "👀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This means to stop living.",
+    "audioQuestion": "audios/question-die.mp3",
+    "correctAnswer": "DIE",
+    "options": [
+      {
+        "word": "DIE",
+        "emoji": "💀",
+        "isCorrect": true
+      },
+      {
+        "word": "BURY",
+        "emoji": "⚰️",
+        "isCorrect": false
+      },
+      {
+        "word": "EXCAVATE",
+        "emoji": "⛏️",
+        "isCorrect": false
+      },
+      {
+        "word": "DISCOVER",
+        "emoji": "👀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This means to see or find something for the first time.",
+    "audioQuestion": "audios/question-discover.mp3",
+    "correctAnswer": "DISCOVER",
+    "options": [
+      {
+        "word": "DISCOVER",
+        "emoji": "👀",
+        "isCorrect": true
+      },
+      {
+        "word": "EXCAVATE",
+        "emoji": "⛏️",
+        "isCorrect": false
+      },
+      {
+        "word": "ANALYZE",
+        "emoji": "🔍",
+        "isCorrect": false
+      },
+      {
+        "word": "BURY",
+        "emoji": "⚰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is riding waves on a board in the ocean.",
+    "audioQuestion": "audios/question-surfing.mp3",
+    "correctAnswer": "SURFING",
+    "options": [
+      {
+        "word": "SURFING",
+        "emoji": "🏄",
+        "isCorrect": true
+      },
+      {
+        "word": "KITE-SURFING",
+        "emoji": "🪁",
+        "isCorrect": false
+      },
+      {
+        "word": "SKIING",
+        "emoji": "⛷️",
+        "isCorrect": false
+      },
+      {
+        "word": "SKATEBOARDING",
+        "emoji": "🛹",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is flying through the air using a special glider.",
+    "audioQuestion": "audios/question-hang-gliding.mp3",
+    "correctAnswer": "HANG-GLIDING",
+    "options": [
+      {
+        "word": "HANG-GLIDING",
+        "emoji": "🪂",
+        "isCorrect": true
+      },
+      {
+        "word": "KITE-SURFING",
+        "emoji": "🪁",
+        "isCorrect": false
+      },
+      {
+        "word": "SKIING",
+        "emoji": "⛷️",
+        "isCorrect": false
+      },
+      {
+        "word": "SURFING",
+        "emoji": "🏄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is sliding down snowy mountains on skis.",
+    "audioQuestion": "audios/question-skiing.mp3",
+    "correctAnswer": "SKIING",
+    "options": [
+      {
+        "word": "SKIING",
+        "emoji": "⛷️",
+        "isCorrect": true
+      },
+      {
+        "word": "SNOWBOARDING",
+        "emoji": "🏂",
+        "isCorrect": false
+      },
+      {
+        "word": "SKATEBOARDING",
+        "emoji": "🛹",
+        "isCorrect": false
+      },
+      {
+        "word": "SURFING",
+        "emoji": "🏄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This combines surfing with flying a large kite.",
+    "audioQuestion": "audios/question-kite-surfing.mp3",
+    "correctAnswer": "KITE-SURFING",
+    "options": [
+      {
+        "word": "KITE-SURFING",
+        "emoji": "🪁",
+        "isCorrect": true
+      },
+      {
+        "word": "SURFING",
+        "emoji": "🏄",
+        "isCorrect": false
+      },
+      {
+        "word": "HANG-GLIDING",
+        "emoji": "🪂",
+        "isCorrect": false
+      },
+      {
+        "word": "SKIING",
+        "emoji": "⛷️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is performing tricks and riding on a board with wheels.",
+    "audioQuestion": "audios/question-skateboarding.mp3",
+    "correctAnswer": "SKATEBOARDING",
+    "options": [
+      {
+        "word": "SKATEBOARDING",
+        "emoji": "🛹",
+        "isCorrect": true
+      },
+      {
+        "word": "SNOWBOARDING",
+        "emoji": "🏂",
+        "isCorrect": false
+      },
+      {
+        "word": "SURFING",
+        "emoji": "🏄",
+        "isCorrect": false
+      },
+      {
+        "word": "MOTOCROSS",
+        "emoji": "🏍️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is racing motorcycles on rough outdoor tracks.",
+    "audioQuestion": "audios/question-motocross.mp3",
+    "correctAnswer": "MOTOCROSS",
+    "options": [
+      {
+        "word": "MOTOCROSS",
+        "emoji": "🏍️",
+        "isCorrect": true
+      },
+      {
+        "word": "SKATEBOARDING",
+        "emoji": "🛹",
+        "isCorrect": false
+      },
+      {
+        "word": "SNOWBOARDING",
+        "emoji": "🏂",
+        "isCorrect": false
+      },
+      {
+        "word": "SKIING",
+        "emoji": "⛷️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is sliding down snowy slopes on a single board.",
+    "audioQuestion": "audios/question-snowboarding.mp3",
+    "correctAnswer": "SNOWBOARDING",
+    "options": [
+      {
+        "word": "SNOWBOARDING",
+        "emoji": "🏂",
+        "isCorrect": true
+      },
+      {
+        "word": "SKIING",
+        "emoji": "⛷️",
+        "isCorrect": false
+      },
+      {
+        "word": "SKATEBOARDING",
+        "emoji": "🛹",
+        "isCorrect": false
+      },
+      {
+        "word": "SURFING",
+        "emoji": "🏄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "The Sphinx ____ in Egypt a very long time ago.",
+    "audioQuestion": "audios/question-sphinx-passive.mp3",
+    "correctAnswer": "WAS BUILT",
+    "options": [
+      {
+        "word": "WAS BUILT",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "WERE BUILT",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "IS BUILD",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "ARE BUILT",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "The people of Pompeii ____ under a volcano.",
+    "audioQuestion": "audios/question-pompeii-passive.mp3",
+    "correctAnswer": "WERE BURIED",
+    "options": [
+      {
+        "word": "WERE BURIED",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "WAS BURY",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "WAS BURIED",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "ARE BURIED",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Gold treasures ____ in England.",
+    "audioQuestion": "audios/question-treasures-passive.mp3",
+    "correctAnswer": "WERE FOUND",
+    "options": [
+      {
+        "word": "WERE FOUND",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "WAS FOUND",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "WAS FIND",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "WERE FIND",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "The treasures ____ in a tomb.",
+    "audioQuestion": "audios/question-tomb-passive.mp3",
+    "correctAnswer": "WEREN'T HIDDEN",
+    "options": [
+      {
+        "word": "WEREN'T HIDDEN",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "NOT WERE HIDDEN",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "WASN'T HIDDEN",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "NOT WAS HIDDEN",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Skiing has been part of the Olympics ____ 1936.",
+    "audioQuestion": "audios/question-olympics-since-for.mp3",
+    "correctAnswer": "SINCE",
+    "options": [
+      {
+        "word": "SINCE",
+        "emoji": "📅",
+        "isCorrect": true
+      },
+      {
+        "word": "FOR",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "DURING",
+        "emoji": "🕐",
+        "isCorrect": false
+      },
+      {
+        "word": "FROM",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "____ the 1930s, millions of people have tried skiing.",
+    "audioQuestion": "audios/question-1930s-since-for.mp3",
+    "correctAnswer": "SINCE",
+    "options": [
+      {
+        "word": "SINCE",
+        "emoji": "📅",
+        "isCorrect": true
+      },
+      {
+        "word": "FOR",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "DURING",
+        "emoji": "🕐",
+        "isCorrect": false
+      },
+      {
+        "word": "FROM",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kitesurfing has been popular ____ twenty years.",
+    "audioQuestion": "audios/question-kitesurfing-since-for.mp3",
+    "correctAnswer": "FOR",
+    "options": [
+      {
+        "word": "FOR",
+        "emoji": "⏱️",
+        "isCorrect": true
+      },
+      {
+        "word": "SINCE",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "DURING",
+        "emoji": "🕐",
+        "isCorrect": false
+      },
+      {
+        "word": "FROM",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Skateboarding has been my favorite sport ____ six months.",
+    "audioQuestion": "audios/question-skateboarding-since-for.mp3",
+    "correctAnswer": "FOR",
+    "options": [
+      {
+        "word": "FOR",
+        "emoji": "⏱️",
+        "isCorrect": true
+      },
+      {
+        "word": "SINCE",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "DURING",
+        "emoji": "🕐",
+        "isCorrect": false
+      },
+      {
+        "word": "FROM",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Snowboarding has been popular ____ the 1980s.",
+    "audioQuestion": "audios/question-snowboarding-since-for.mp3",
+    "correctAnswer": "SINCE",
+    "options": [
+      {
+        "word": "SINCE",
+        "emoji": "📅",
+        "isCorrect": true
+      },
+      {
+        "word": "FOR",
+        "emoji": "⏱️",
+        "isCorrect": false
+      },
+      {
+        "word": "DURING",
+        "emoji": "🕐",
+        "isCorrect": false
+      },
+      {
+        "word": "FROM",
+        "emoji": "➡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Which sentence correctly uses an adverb of emphasis? 'Extreme skiing can be ____ dangerous.'",
+    "audioQuestion": "audios/question-adverb-super.mp3",
+    "correctAnswer": "SUPER",
+    "options": [
+      {
+        "word": "SUPER",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "VERY MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "TOO MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "A LOT",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Which sentence is correct? 'Our kayaking trip was ____ amazing.'",
+    "audioQuestion": "audios/question-adverb-so.mp3",
+    "correctAnswer": "SO",
+    "options": [
+      {
+        "word": "SO",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "TOO",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "VERY MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Which adverb fits best? 'The mountain bike riders are ____ careful.'",
+    "audioQuestion": "audios/question-adverb-incredibly.mp3",
+    "correctAnswer": "INCREDIBLY",
+    "options": [
+      {
+        "word": "INCREDIBLY",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "TOO",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "SUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Complete correctly: 'He was ____ lucky he did not get injured.'",
+    "audioQuestion": "audios/question-adverb-extremely.mp3",
+    "correctAnswer": "EXTREMELY",
+    "options": [
+      {
+        "word": "EXTREMELY",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "TOO",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "SUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Which is correct? 'Skiing is ____ fun on a sunny day.'",
+    "audioQuestion": "audios/question-adverb-very.mp3",
+    "correctAnswer": "VERY",
+    "options": [
+      {
+        "word": "VERY",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "MUCH",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "TOO",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "A LOT",
+        "emoji": "❌",
+        "isCorrect": false
+      }
+    ]
+  }
+]

@@ -12,5 +12,12 @@
     "description": "Aslan's Social Science Test Set",
     "vocabularyFile": "vocabulary-data_V2.json",
     "scienceQuizFile": "science-quiz-data_V2.json"
+  },
+  {
+    "id": "aslan-english",
+    "name": "ENGLISH",
+    "description": "Aslan's English Test Set",
+    "vocabularyFile": "vocabulary-dataV3.json",
+    "scienceQuizFile": "science-quiz-data-v3.json"
   }
 ]
