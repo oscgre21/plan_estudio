@@ -260,10 +260,10 @@
     "sentenceEN": "The Sphinx was built in Egypt a very long time ago.",
     "sentenceES": "La Esfinge fue construida en Egipto hace mucho tiempo.",
     "options": [
-      { "emoji": "🗿", "label": "was built", "isCorrect": true },
-      { "emoji": "🏗️", "label": "were built", "isCorrect": false },
-      { "emoji": "🔨", "label": "is build", "isCorrect": false },
-      { "emoji": "🏛️", "label": "are built", "isCorrect": false }
+      { "emoji": "✅", "label": "was built", "isCorrect": true },
+      { "emoji": "❌", "label": "were built", "isCorrect": false },
+      { "emoji": "❌", "label": "is build", "isCorrect": false },
+      { "emoji": "❌", "label": "are built", "isCorrect": false }
     ],
     "explanation": "Use 'was built' because The Sphinx is singular and the action happened in the past. Usa 'was built' porque la Esfinge es singular y la acción ocurrió en el pasado.",
     "audioWord": "audios/word-sphinx.mp3",
@@ -275,10 +275,10 @@
     "sentenceEN": "The people of Pompeii were buried under a volcano.",
     "sentenceES": "La gente de Pompeya fue enterrada bajo un volcán.",
     "options": [
-      { "emoji": "🌋", "label": "were buried", "isCorrect": true },
-      { "emoji": "⚰️", "label": "was bury", "isCorrect": false },
-      { "emoji": "🏛️", "label": "was buried", "isCorrect": false },
-      { "emoji": "👥", "label": "are buried", "isCorrect": false }
+      { "emoji": "✅", "label": "were buried", "isCorrect": true },
+      { "emoji": "❌", "label": "was bury", "isCorrect": false },
+      { "emoji": "❌", "label": "was buried", "isCorrect": false },
+      { "emoji": "❌", "label": "are buried", "isCorrect": false }
     ],
     "explanation": "Use 'were buried' because 'people' is plural and the action happened in the past. Usa 'were buried' porque 'gente' es plural y la acción ocurrió en el pasado.",
     "audioWord": "audios/word-pompeii.mp3",
@@ -290,10 +290,10 @@
     "sentenceEN": "Gold treasures were found in England.",
     "sentenceES": "Tesoros de oro fueron encontrados en Inglaterra.",
     "options": [
-      { "emoji": "👑", "label": "were found", "isCorrect": true },
-      { "emoji": "💰", "label": "was found", "isCorrect": false },
-      { "emoji": "🔍", "label": "was find", "isCorrect": false },
-      { "emoji": "💎", "label": "were find", "isCorrect": false }
+      { "emoji": "✅", "label": "were found", "isCorrect": true },
+      { "emoji": "❌", "label": "was found", "isCorrect": false },
+      { "emoji": "❌", "label": "was find", "isCorrect": false },
+      { "emoji": "❌", "label": "were find", "isCorrect": false }
     ],
     "explanation": "Use 'were found' because 'treasures' is plural and the action happened in the past. Usa 'were found' porque 'tesoros' es plural y la acción ocurrió en el pasado.",
     "audioWord": "audios/word-treasures.mp3",
@@ -305,10 +305,10 @@
     "sentenceEN": "The treasures weren't hidden in a tomb.",
     "sentenceES": "Los tesoros no estaban escondidos en una tumba.",
     "options": [
-      { "emoji": "🏺", "label": "weren't hidden", "isCorrect": true },
-      { "emoji": "⚰️", "label": "not were hidden", "isCorrect": false },
-      { "emoji": "🗿", "label": "wasn't hidden", "isCorrect": false },
-      { "emoji": "🏛️", "label": "not was hidden", "isCorrect": false }
+      { "emoji": "✅", "label": "weren't hidden", "isCorrect": true },
+      { "emoji": "❌", "label": "not were hidden", "isCorrect": false },
+      { "emoji": "❌", "label": "wasn't hidden", "isCorrect": false },
+      { "emoji": "❌", "label": "not was hidden", "isCorrect": false }
     ],
     "explanation": "Use 'weren't hidden' because 'treasures' is plural and we need the negative form. Usa 'weren't hidden' porque 'tesoros' es plural y necesitamos la forma negativa.",
     "audioWord": "audios/word-tomb.mp3",
@@ -320,10 +320,10 @@
     "sentenceEN": "Skiing has been part of the Olympics since 1936.",
     "sentenceES": "El esquí ha sido parte de las Olimpiadas desde 1936.",
     "options": [
-      { "emoji": "🏅", "label": "since", "isCorrect": true },
-      { "emoji": "⏱️", "label": "for", "isCorrect": false },
-      { "emoji": "📅", "label": "during", "isCorrect": false },
-      { "emoji": "🔜", "label": "from", "isCorrect": false }
+      { "emoji": "✅", "label": "since", "isCorrect": true },
+      { "emoji": "❌", "label": "for", "isCorrect": false },
+      { "emoji": "❌", "label": "during", "isCorrect": false },
+      { "emoji": "❌", "label": "from", "isCorrect": false }
     ],
     "explanation": "Use 'since' with specific points in time (1936). Use 'for' with periods of time. Usa 'since' con puntos específicos en el tiempo (1936). Usa 'for' con períodos de tiempo.",
     "audioWord": "audios/word-olympics.mp3",
@@ -335,10 +335,10 @@
     "sentenceEN": "Since the 1930s, millions of people have tried skiing.",
     "sentenceES": "Desde los años 30, millones de personas han probado el esquí.",
     "options": [
-      { "emoji": "📆", "label": "Since", "isCorrect": true },
-      { "emoji": "⏱️", "label": "For", "isCorrect": false },
-      { "emoji": "🕐", "label": "During", "isCorrect": false },
-      { "emoji": "➡️", "label": "From", "isCorrect": false }
+      { "emoji": "✅", "label": "Since", "isCorrect": true },
+      { "emoji": "❌", "label": "For", "isCorrect": false },
+      { "emoji": "❌", "label": "During", "isCorrect": false },
+      { "emoji": "❌", "label": "From", "isCorrect": false }
     ],
     "explanation": "Use 'Since' with specific points in time (the 1930s). Usa 'Since' con puntos específicos en el tiempo (los años 30).",
     "audioWord": "audios/word-1930s.mp3",
@@ -350,10 +350,10 @@
     "sentenceEN": "Kitesurfing has been popular for twenty years.",
     "sentenceES": "El kitesurf ha sido popular durante veinte años.",
     "options": [
-      { "emoji": "⏱️", "label": "for", "isCorrect": true },
-      { "emoji": "📆", "label": "since", "isCorrect": false },
-      { "emoji": "🕐", "label": "during", "isCorrect": false },
-      { "emoji": "➡️", "label": "from", "isCorrect": false }
+      { "emoji": "✅", "label": "for", "isCorrect": true },
+      { "emoji": "❌", "label": "since", "isCorrect": false },
+      { "emoji": "❌", "label": "during", "isCorrect": false },
+      { "emoji": "❌", "label": "from", "isCorrect": false }
     ],
     "explanation": "Use 'for' with periods of time (twenty years). Use 'since' with specific points in time. Usa 'for' con períodos de tiempo (veinte años). Usa 'since' con puntos específicos en el tiempo.",
     "audioWord": "audios/word-kitesurfing.mp3",
@@ -440,10 +440,10 @@
     "sentenceEN": "Skateboarding has been my favorite sport for six months.",
     "sentenceES": "La patineta ha sido mi deporte favorito durante seis meses.",
     "options": [
-      { "emoji": "⏱️", "label": "for", "isCorrect": true },
-      { "emoji": "📆", "label": "since", "isCorrect": false },
-      { "emoji": "🕐", "label": "during", "isCorrect": false },
-      { "emoji": "➡️", "label": "from", "isCorrect": false }
+      { "emoji": "✅", "label": "for", "isCorrect": true },
+      { "emoji": "❌", "label": "since", "isCorrect": false },
+      { "emoji": "❌", "label": "during", "isCorrect": false },
+      { "emoji": "❌", "label": "from", "isCorrect": false }
     ],
     "explanation": "Use 'for' with periods of time (six months). Usa 'for' con períodos de tiempo (seis meses).",
     "audioWord": "audios/word-skateboarding-time.mp3",
@@ -455,10 +455,10 @@
     "sentenceEN": "Snowboarding has been popular since the 1980s.",
     "sentenceES": "El snowboard ha sido popular desde los años 80.",
     "options": [
-      { "emoji": "📆", "label": "since", "isCorrect": true },
-      { "emoji": "⏱️", "label": "for", "isCorrect": false },
-      { "emoji": "🕐", "label": "during", "isCorrect": false },
-      { "emoji": "➡️", "label": "from", "isCorrect": false }
+      { "emoji": "✅", "label": "since", "isCorrect": true },
+      { "emoji": "❌", "label": "for", "isCorrect": false },
+      { "emoji": "❌", "label": "during", "isCorrect": false },
+      { "emoji": "❌", "label": "from", "isCorrect": false }
     ],
     "explanation": "Use 'since' with specific points in time (the 1980s). Usa 'since' con puntos específicos en el tiempo (los años 80).",
     "audioWord": "audios/word-snowboarding-time.mp3",
