@@ -5,14 +5,32 @@
     "sentenceEN": "A site is a place that archaeologists want to excavate or explore.",
     "sentenceES": "Un sitio es un lugar que los arqueólogos quieren excavar o explorar.",
     "options": [
-      { "emoji": "🏛️", "label": "Site", "isCorrect": true },
-      { "emoji": "🧪", "label": "Sample", "isCorrect": false },
-      { "emoji": "🗿", "label": "Artifact", "isCorrect": false },
-      { "emoji": "🧬", "label": "DNA", "isCorrect": false }
+      {
+        "emoji": "🏛️",
+        "label": "Site",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧪",
+        "label": "Sample",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗿",
+        "label": "Artifact",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧬",
+        "label": "DNA",
+        "isCorrect": false
+      }
     ],
     "explanation": "A site is the location where archaeological work takes place. Un sitio es el lugar donde se realiza el trabajo arqueológico.",
     "audioWord": "audios/word-site.mp3",
-    "audioSentence": "audios/sentence-a-site-is-a-place-that-archaeologists-want-to-excavate-or-explore.mp3"
+    "audioSentence": "audios/sentence-a-site-is-a-place-that-archaeologists-want-to-excavate-or-explore.mp3",
+    "wordEmoji": "🏛️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3db.png"
   },
   {
     "word": "ARTIFACTS",
@@ -20,14 +38,32 @@
     "sentenceEN": "Artifacts are objects found at the site. They are not living things. They were made by someone.",
     "sentenceES": "Los artefactos son objetos encontrados en el sitio. No son seres vivos. Fueron hechos por alguien.",
     "options": [
-      { "emoji": "🗿", "label": "Artifacts", "isCorrect": true },
-      { "emoji": "🏛️", "label": "Site", "isCorrect": false },
-      { "emoji": "🧪", "label": "Sample", "isCorrect": false },
-      { "emoji": "📍", "label": "Location", "isCorrect": false }
+      {
+        "emoji": "🗿",
+        "label": "Artifacts",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏛️",
+        "label": "Site",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧪",
+        "label": "Sample",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📍",
+        "label": "Location",
+        "isCorrect": false
+      }
     ],
     "explanation": "Artifacts are human-made objects discovered by archaeologists. Los artefactos son objetos hechos por humanos descubiertos por arqueólogos.",
     "audioWord": "audios/word-artifacts.mp3",
-    "audioSentence": "audios/sentence-artifacts-are-objects-found-at-the-site.mp3"
+    "audioSentence": "audios/sentence-artifacts-are-objects-found-at-the-site.mp3",
+    "wordEmoji": "🗿",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f5ff.png"
   },
   {
     "word": "DNA TEST",
@@ -35,14 +71,32 @@
     "sentenceEN": "A DNA test is a way to discover what is in the body's cells. It can help you find your relatives.",
     "sentenceES": "Una prueba de ADN es una forma de descubrir qué hay en las células del cuerpo. Puede ayudarte a encontrar a tus parientes.",
     "options": [
-      { "emoji": "🧬", "label": "DNA Test", "isCorrect": true },
-      { "emoji": "🩻", "label": "CT Scan", "isCorrect": false },
-      { "emoji": "🧪", "label": "Sample", "isCorrect": false },
-      { "emoji": "💉", "label": "Blood Test", "isCorrect": false }
+      {
+        "emoji": "🧬",
+        "label": "DNA Test",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🩻",
+        "label": "CT Scan",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧪",
+        "label": "Sample",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💉",
+        "label": "Blood Test",
+        "isCorrect": false
+      }
     ],
     "explanation": "A DNA test analyzes genetic material to provide information about ancestry and relatives. Una prueba de ADN analiza material genético para proporcionar información sobre ascendencia y parientes.",
     "audioWord": "audios/word-dna-test.mp3",
-    "audioSentence": "audios/sentence-a-dna-test-is-a-way-to-discover-what-is-in-the-body-cells.mp3"
+    "audioSentence": "audios/sentence-a-dna-test-is-a-way-to-discover-what-is-in-the-body-cells.mp3",
+    "wordEmoji": "🧬",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9ec.png"
   },
   {
     "word": "CT SCAN",
@@ -50,14 +104,32 @@
     "sentenceEN": "A CT Scan is a way to see inside a body. You can discover if a person has illnesses.",
     "sentenceES": "Una tomografía es una forma de ver dentro del cuerpo. Puedes descubrir si una persona tiene enfermedades.",
     "options": [
-      { "emoji": "🩻", "label": "CT Scan", "isCorrect": true },
-      { "emoji": "🧬", "label": "DNA", "isCorrect": false },
-      { "emoji": "💊", "label": "Medicine", "isCorrect": false },
-      { "emoji": "🔬", "label": "Microscope", "isCorrect": false }
+      {
+        "emoji": "🩻",
+        "label": "CT Scan",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧬",
+        "label": "DNA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💊",
+        "label": "Medicine",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔬",
+        "label": "Microscope",
+        "isCorrect": false
+      }
     ],
     "explanation": "A CT Scan is a medical imaging technique used to see inside the body. Una tomografía es una técnica de imagen médica utilizada para ver dentro del cuerpo.",
     "audioWord": "audios/word-ct-scan.mp3",
-    "audioSentence": "audios/sentence-a-ct-scan-is-a-way-to-see-inside-a-body.mp3"
+    "audioSentence": "audios/sentence-a-ct-scan-is-a-way-to-see-inside-a-body.mp3",
+    "wordEmoji": "🩻",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1fa7b.png"
   },
   {
     "word": "SAMPLE",
@@ -65,14 +137,32 @@
     "sentenceEN": "A sample is a small amount of something, such as food, that someone analyzes.",
     "sentenceES": "Una muestra es una pequeña cantidad de algo, como comida, que alguien analiza.",
     "options": [
-      { "emoji": "🧪", "label": "Sample", "isCorrect": true },
-      { "emoji": "🍽️", "label": "Full meal", "isCorrect": false },
-      { "emoji": "📦", "label": "Package", "isCorrect": false },
-      { "emoji": "⚗️", "label": "Chemical", "isCorrect": false }
+      {
+        "emoji": "🧪",
+        "label": "Sample",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🍽️",
+        "label": "Full meal",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📦",
+        "label": "Package",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚗️",
+        "label": "Chemical",
+        "isCorrect": false
+      }
     ],
     "explanation": "A sample is a small portion taken for testing or analysis. Una muestra es una pequeña porción tomada para pruebas o análisis.",
     "audioWord": "audios/word-sample.mp3",
-    "audioSentence": "audios/sentence-a-sample-is-a-small-amount-of-something.mp3"
+    "audioSentence": "audios/sentence-a-sample-is-a-small-amount-of-something.mp3",
+    "wordEmoji": "🧪",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9ea.png"
   },
   {
     "word": "EXCAVATE",
@@ -80,14 +170,32 @@
     "sentenceEN": "To excavate means to uncover something by removing the soil that is covering it.",
     "sentenceES": "Excavar significa descubrir algo quitando la tierra que lo cubre.",
     "options": [
-      { "emoji": "⛏️", "label": "Excavate", "isCorrect": true },
-      { "emoji": "🔬", "label": "Analyze", "isCorrect": false },
-      { "emoji": "⚰️", "label": "Bury", "isCorrect": false },
-      { "emoji": "🔍", "label": "Discover", "isCorrect": false }
+      {
+        "emoji": "⛏️",
+        "label": "Excavate",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔬",
+        "label": "Analyze",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚰️",
+        "label": "Bury",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "Discover",
+        "isCorrect": false
+      }
     ],
     "explanation": "To excavate is to dig up or uncover objects buried in the ground. Excavar es desenterrar o descubrir objetos enterrados en el suelo.",
     "audioWord": "audios/word-excavate.mp3",
-    "audioSentence": "audios/sentence-to-excavate-means-to-uncover-something.mp3"
+    "audioSentence": "audios/sentence-to-excavate-means-to-uncover-something.mp3",
+    "wordEmoji": "⛏️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/26cf.png"
   },
   {
     "word": "ANALYZE",
@@ -95,14 +203,32 @@
     "sentenceEN": "To analyze means to study something closely and carefully.",
     "sentenceES": "Analizar significa estudiar algo de cerca y cuidadosamente.",
     "options": [
-      { "emoji": "🔬", "label": "Analyze", "isCorrect": true },
-      { "emoji": "⛏️", "label": "Excavate", "isCorrect": false },
-      { "emoji": "⚰️", "label": "Bury", "isCorrect": false },
-      { "emoji": "💀", "label": "Die", "isCorrect": false }
+      {
+        "emoji": "🔬",
+        "label": "Analyze",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⛏️",
+        "label": "Excavate",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚰️",
+        "label": "Bury",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💀",
+        "label": "Die",
+        "isCorrect": false
+      }
     ],
     "explanation": "To analyze means to examine something in detail to understand it better. Analizar significa examinar algo en detalle para entenderlo mejor.",
     "audioWord": "audios/word-analyze.mp3",
-    "audioSentence": "audios/sentence-to-analyze-means-to-study-something-closely.mp3"
+    "audioSentence": "audios/sentence-to-analyze-means-to-study-something-closely.mp3",
+    "wordEmoji": "🔬",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f52c.png"
   },
   {
     "word": "BURY",
@@ -110,14 +236,32 @@
     "sentenceEN": "To bury means to put a dead person or animal in the ground.",
     "sentenceES": "Enterrar significa poner a una persona o animal muerto en el suelo.",
     "options": [
-      { "emoji": "⚰️", "label": "Bury", "isCorrect": true },
-      { "emoji": "⛏️", "label": "Excavate", "isCorrect": false },
-      { "emoji": "🔍", "label": "Discover", "isCorrect": false },
-      { "emoji": "🔬", "label": "Analyze", "isCorrect": false }
+      {
+        "emoji": "⚰️",
+        "label": "Bury",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⛏️",
+        "label": "Excavate",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "Discover",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔬",
+        "label": "Analyze",
+        "isCorrect": false
+      }
     ],
     "explanation": "To bury means to place a body in the earth or a tomb. Enterrar significa colocar un cuerpo en la tierra o una tumba.",
     "audioWord": "audios/word-bury.mp3",
-    "audioSentence": "audios/sentence-to-bury-means-to-put-a-dead-person-in-the-ground.mp3"
+    "audioSentence": "audios/sentence-to-bury-means-to-put-a-dead-person-in-the-ground.mp3",
+    "wordEmoji": "⚰️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/26b0.png"
   },
   {
     "word": "DIE",
@@ -125,14 +269,32 @@
     "sentenceEN": "To die means to stop living.",
     "sentenceES": "Morir significa dejar de vivir.",
     "options": [
-      { "emoji": "💀", "label": "Die", "isCorrect": true },
-      { "emoji": "⚰️", "label": "Bury", "isCorrect": false },
-      { "emoji": "❤️", "label": "Live", "isCorrect": false },
-      { "emoji": "🔍", "label": "Discover", "isCorrect": false }
+      {
+        "emoji": "💀",
+        "label": "Die",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚰️",
+        "label": "Bury",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❤️",
+        "label": "Live",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "Discover",
+        "isCorrect": false
+      }
     ],
     "explanation": "To die means when a living being ceases to be alive. Morir significa cuando un ser vivo deja de estar vivo.",
     "audioWord": "audios/word-die.mp3",
-    "audioSentence": "audios/sentence-to-die-means-to-stop-living.mp3"
+    "audioSentence": "audios/sentence-to-die-means-to-stop-living.mp3",
+    "wordEmoji": "💀",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f480.png"
   },
   {
     "word": "DISCOVER",
@@ -140,14 +302,32 @@
     "sentenceEN": "To discover means to see or find something for the first time.",
     "sentenceES": "Descubrir significa ver o encontrar algo por primera vez.",
     "options": [
-      { "emoji": "🔍", "label": "Discover", "isCorrect": true },
-      { "emoji": "⛏️", "label": "Excavate", "isCorrect": false },
-      { "emoji": "🔬", "label": "Analyze", "isCorrect": false },
-      { "emoji": "⚰️", "label": "Bury", "isCorrect": false }
+      {
+        "emoji": "🔍",
+        "label": "Discover",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⛏️",
+        "label": "Excavate",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔬",
+        "label": "Analyze",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚰️",
+        "label": "Bury",
+        "isCorrect": false
+      }
     ],
     "explanation": "To discover means to find or learn about something new. Descubrir significa encontrar o aprender sobre algo nuevo.",
     "audioWord": "audios/word-discover.mp3",
-    "audioSentence": "audios/sentence-to-discover-means-to-see-or-find-for-the-first-time.mp3"
+    "audioSentence": "audios/sentence-to-discover-means-to-see-or-find-for-the-first-time.mp3",
+    "wordEmoji": "🔍",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f50d.png"
   },
   {
     "word": "SURFING",
@@ -155,14 +335,32 @@
     "sentenceEN": "Surfing is riding waves on a board in the ocean.",
     "sentenceES": "El surf es montar olas en una tabla en el océano.",
     "options": [
-      { "emoji": "🏄", "label": "Surfing", "isCorrect": true },
-      { "emoji": "🪂", "label": "Hang-gliding", "isCorrect": false },
-      { "emoji": "⛷️", "label": "Skiing", "isCorrect": false },
-      { "emoji": "🏂", "label": "Snowboarding", "isCorrect": false }
+      {
+        "emoji": "🏄",
+        "label": "Surfing",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🪂",
+        "label": "Hang-gliding",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛷️",
+        "label": "Skiing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏂",
+        "label": "Snowboarding",
+        "isCorrect": false
+      }
     ],
     "explanation": "Surfing is a water sport where you ride ocean waves on a surfboard. El surf es un deporte acuático donde montas olas del océano en una tabla de surf.",
     "audioWord": "audios/word-surfing.mp3",
-    "audioSentence": "audios/sentence-surfing-is-riding-waves-on-a-board.mp3"
+    "audioSentence": "audios/sentence-surfing-is-riding-waves-on-a-board.mp3",
+    "wordEmoji": "🏄",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3c4.png"
   },
   {
     "word": "HANG-GLIDING",
@@ -170,14 +368,32 @@
     "sentenceEN": "Hang-gliding is flying through the air using a special glider.",
     "sentenceES": "El ala delta es volar por el aire usando un planeador especial.",
     "options": [
-      { "emoji": "🪂", "label": "Hang-gliding", "isCorrect": true },
-      { "emoji": "🏄", "label": "Surfing", "isCorrect": false },
-      { "emoji": "🛹", "label": "Skateboarding", "isCorrect": false },
-      { "emoji": "🏍️", "label": "Motocross", "isCorrect": false }
+      {
+        "emoji": "🪂",
+        "label": "Hang-gliding",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏄",
+        "label": "Surfing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛹",
+        "label": "Skateboarding",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏍️",
+        "label": "Motocross",
+        "isCorrect": false
+      }
     ],
     "explanation": "Hang-gliding is an air sport where you fly using a lightweight glider. El ala delta es un deporte aéreo donde vuelas usando un planeador ligero.",
     "audioWord": "audios/word-hang-gliding.mp3",
-    "audioSentence": "audios/sentence-hang-gliding-is-flying-through-the-air.mp3"
+    "audioSentence": "audios/sentence-hang-gliding-is-flying-through-the-air.mp3",
+    "wordEmoji": "🪂",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1fa82.png"
   },
   {
     "word": "SKIING",
@@ -185,14 +401,32 @@
     "sentenceEN": "Skiing is sliding down snowy mountains on skis.",
     "sentenceES": "El esquí es deslizarse por montañas nevadas en esquís.",
     "options": [
-      { "emoji": "⛷️", "label": "Skiing", "isCorrect": true },
-      { "emoji": "🏂", "label": "Snowboarding", "isCorrect": false },
-      { "emoji": "🛹", "label": "Skateboarding", "isCorrect": false },
-      { "emoji": "🏄", "label": "Surfing", "isCorrect": false }
+      {
+        "emoji": "⛷️",
+        "label": "Skiing",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏂",
+        "label": "Snowboarding",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛹",
+        "label": "Skateboarding",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏄",
+        "label": "Surfing",
+        "isCorrect": false
+      }
     ],
     "explanation": "Skiing is a winter sport where you glide down snow-covered slopes on skis. El esquí es un deporte de invierno donde te deslizas por pendientes nevadas en esquís.",
     "audioWord": "audios/word-skiing.mp3",
-    "audioSentence": "audios/sentence-skiing-is-sliding-down-snowy-mountains.mp3"
+    "audioSentence": "audios/sentence-skiing-is-sliding-down-snowy-mountains.mp3",
+    "wordEmoji": "⛷️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/26f7.png"
   },
   {
     "word": "KITE-SURFING",
@@ -200,14 +434,32 @@
     "sentenceEN": "Kite-surfing combines surfing with flying a large kite.",
     "sentenceES": "El kitesurf combina el surf con volar una cometa grande.",
     "options": [
-      { "emoji": "🪁", "label": "Kite-surfing", "isCorrect": true },
-      { "emoji": "🏄", "label": "Surfing", "isCorrect": false },
-      { "emoji": "⛷️", "label": "Skiing", "isCorrect": false },
-      { "emoji": "🪂", "label": "Hang-gliding", "isCorrect": false }
+      {
+        "emoji": "🪁",
+        "label": "Kite-surfing",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏄",
+        "label": "Surfing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛷️",
+        "label": "Skiing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🪂",
+        "label": "Hang-gliding",
+        "isCorrect": false
+      }
     ],
     "explanation": "Kite-surfing is a water sport where a large kite pulls you across the water on a board. El kitesurf es un deporte acuático donde una cometa grande te arrastra por el agua en una tabla.",
     "audioWord": "audios/word-kite-surfing.mp3",
-    "audioSentence": "audios/sentence-kite-surfing-combines-surfing-with-flying-a-kite.mp3"
+    "audioSentence": "audios/sentence-kite-surfing-combines-surfing-with-flying-a-kite.mp3",
+    "wordEmoji": "🪁",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1fa81.png"
   },
   {
     "word": "SKATEBOARDING",
@@ -215,14 +467,32 @@
     "sentenceEN": "Skateboarding is performing tricks and riding on a skateboard.",
     "sentenceES": "La patineta es realizar trucos y montar en una patineta.",
     "options": [
-      { "emoji": "🛹", "label": "Skateboarding", "isCorrect": true },
-      { "emoji": "🏍️", "label": "Motocross", "isCorrect": false },
-      { "emoji": "⛷️", "label": "Skiing", "isCorrect": false },
-      { "emoji": "🏄", "label": "Surfing", "isCorrect": false }
+      {
+        "emoji": "🛹",
+        "label": "Skateboarding",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏍️",
+        "label": "Motocross",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛷️",
+        "label": "Skiing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏄",
+        "label": "Surfing",
+        "isCorrect": false
+      }
     ],
     "explanation": "Skateboarding is a sport where you perform tricks and ride on a board with wheels. La patineta es un deporte donde realizas trucos y montas en una tabla con ruedas.",
     "audioWord": "audios/word-skateboarding.mp3",
-    "audioSentence": "audios/sentence-skateboarding-is-performing-tricks-on-a-skateboard.mp3"
+    "audioSentence": "audios/sentence-skateboarding-is-performing-tricks-on-a-skateboard.mp3",
+    "wordEmoji": "🛹",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f6f9.png"
   },
   {
     "word": "MOTOCROSS",
@@ -230,14 +500,32 @@
     "sentenceEN": "Motocross is racing motorcycles on rough outdoor tracks.",
     "sentenceES": "El motocross es carreras de motocicletas en pistas al aire libre con terreno irregular.",
     "options": [
-      { "emoji": "🏍️", "label": "Motocross", "isCorrect": true },
-      { "emoji": "🛹", "label": "Skateboarding", "isCorrect": false },
-      { "emoji": "🚴", "label": "Cycling", "isCorrect": false },
-      { "emoji": "🏁", "label": "Racing", "isCorrect": false }
+      {
+        "emoji": "🏍️",
+        "label": "Motocross",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🛹",
+        "label": "Skateboarding",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚴",
+        "label": "Cycling",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏁",
+        "label": "Racing",
+        "isCorrect": false
+      }
     ],
     "explanation": "Motocross is an off-road motorcycle racing sport on rough terrain. El motocross es un deporte de carreras de motocicletas fuera de carretera en terreno irregular.",
     "audioWord": "audios/word-motocross.mp3",
-    "audioSentence": "audios/sentence-motocross-is-racing-motorcycles-on-rough-tracks.mp3"
+    "audioSentence": "audios/sentence-motocross-is-racing-motorcycles-on-rough-tracks.mp3",
+    "wordEmoji": "🏍️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3cd.png"
   },
   {
     "word": "SNOWBOARDING",
@@ -245,14 +533,32 @@
     "sentenceEN": "Snowboarding is sliding down snowy slopes on a single board.",
     "sentenceES": "El snowboard es deslizarse por pendientes nevadas en una sola tabla.",
     "options": [
-      { "emoji": "🏂", "label": "Snowboarding", "isCorrect": true },
-      { "emoji": "⛷️", "label": "Skiing", "isCorrect": false },
-      { "emoji": "🛹", "label": "Skateboarding", "isCorrect": false },
-      { "emoji": "🏔️", "label": "Mountain", "isCorrect": false }
+      {
+        "emoji": "🏂",
+        "label": "Snowboarding",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⛷️",
+        "label": "Skiing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛹",
+        "label": "Skateboarding",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountain",
+        "isCorrect": false
+      }
     ],
     "explanation": "Snowboarding is a winter sport where you ride down snow-covered slopes on a single board. El snowboard es un deporte de invierno donde desciendes por pendientes nevadas en una sola tabla.",
     "audioWord": "audios/word-snowboarding.mp3",
-    "audioSentence": "audios/sentence-snowboarding-is-sliding-down-snowy-slopes.mp3"
+    "audioSentence": "audios/sentence-snowboarding-is-sliding-down-snowy-slopes.mp3",
+    "wordEmoji": "🏂",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3c2.png"
   },
   {
     "word": "THE SPHINX",
@@ -260,14 +566,32 @@
     "sentenceEN": "The Sphinx was built in Egypt a very long time ago.",
     "sentenceES": "La Esfinge fue construida en Egipto hace mucho tiempo.",
     "options": [
-      { "emoji": "✅", "label": "was built", "isCorrect": true },
-      { "emoji": "❌", "label": "were built", "isCorrect": false },
-      { "emoji": "❌", "label": "is build", "isCorrect": false },
-      { "emoji": "❌", "label": "are built", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "was built",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "were built",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "is build",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "are built",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'was built' because The Sphinx is singular and the action happened in the past. Usa 'was built' porque la Esfinge es singular y la acción ocurrió en el pasado.",
     "audioWord": "audios/word-sphinx.mp3",
-    "audioSentence": "audios/sentence-the-sphinx-was-built-in-egypt.mp3"
+    "audioSentence": "audios/sentence-the-sphinx-was-built-in-egypt.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "POMPEII",
@@ -275,14 +599,32 @@
     "sentenceEN": "The people of Pompeii were buried under a volcano.",
     "sentenceES": "La gente de Pompeya fue enterrada bajo un volcán.",
     "options": [
-      { "emoji": "✅", "label": "were buried", "isCorrect": true },
-      { "emoji": "❌", "label": "was bury", "isCorrect": false },
-      { "emoji": "❌", "label": "was buried", "isCorrect": false },
-      { "emoji": "❌", "label": "are buried", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "were buried",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "was bury",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "was buried",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "are buried",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'were buried' because 'people' is plural and the action happened in the past. Usa 'were buried' porque 'gente' es plural y la acción ocurrió en el pasado.",
     "audioWord": "audios/word-pompeii.mp3",
-    "audioSentence": "audios/sentence-the-people-of-pompeii-were-buried.mp3"
+    "audioSentence": "audios/sentence-the-people-of-pompeii-were-buried.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "TREASURES",
@@ -290,14 +632,32 @@
     "sentenceEN": "Gold treasures were found in England.",
     "sentenceES": "Tesoros de oro fueron encontrados en Inglaterra.",
     "options": [
-      { "emoji": "✅", "label": "were found", "isCorrect": true },
-      { "emoji": "❌", "label": "was found", "isCorrect": false },
-      { "emoji": "❌", "label": "was find", "isCorrect": false },
-      { "emoji": "❌", "label": "were find", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "were found",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "was found",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "was find",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "were find",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'were found' because 'treasures' is plural and the action happened in the past. Usa 'were found' porque 'tesoros' es plural y la acción ocurrió en el pasado.",
     "audioWord": "audios/word-treasures.mp3",
-    "audioSentence": "audios/sentence-gold-treasures-were-found-in-england.mp3"
+    "audioSentence": "audios/sentence-gold-treasures-were-found-in-england.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "TOMB",
@@ -305,14 +665,32 @@
     "sentenceEN": "The treasures weren't hidden in a tomb.",
     "sentenceES": "Los tesoros no estaban escondidos en una tumba.",
     "options": [
-      { "emoji": "✅", "label": "weren't hidden", "isCorrect": true },
-      { "emoji": "❌", "label": "not were hidden", "isCorrect": false },
-      { "emoji": "❌", "label": "wasn't hidden", "isCorrect": false },
-      { "emoji": "❌", "label": "not was hidden", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "weren't hidden",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "not were hidden",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "wasn't hidden",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "not was hidden",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'weren't hidden' because 'treasures' is plural and we need the negative form. Usa 'weren't hidden' porque 'tesoros' es plural y necesitamos la forma negativa.",
     "audioWord": "audios/word-tomb.mp3",
-    "audioSentence": "audios/sentence-the-treasures-werent-hidden-in-a-tomb.mp3"
+    "audioSentence": "audios/sentence-the-treasures-werent-hidden-in-a-tomb.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "OLYMPICS",
@@ -320,14 +698,32 @@
     "sentenceEN": "Skiing has been part of the Olympics since 1936.",
     "sentenceES": "El esquí ha sido parte de las Olimpiadas desde 1936.",
     "options": [
-      { "emoji": "✅", "label": "since", "isCorrect": true },
-      { "emoji": "❌", "label": "for", "isCorrect": false },
-      { "emoji": "❌", "label": "during", "isCorrect": false },
-      { "emoji": "❌", "label": "from", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "since",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "for",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "during",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "from",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'since' with specific points in time (1936). Use 'for' with periods of time. Usa 'since' con puntos específicos en el tiempo (1936). Usa 'for' con períodos de tiempo.",
     "audioWord": "audios/word-olympics.mp3",
-    "audioSentence": "audios/sentence-skiing-has-been-part-of-the-olympics-since-1936.mp3"
+    "audioSentence": "audios/sentence-skiing-has-been-part-of-the-olympics-since-1936.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "1930s",
@@ -335,14 +731,32 @@
     "sentenceEN": "Since the 1930s, millions of people have tried skiing.",
     "sentenceES": "Desde los años 30, millones de personas han probado el esquí.",
     "options": [
-      { "emoji": "✅", "label": "Since", "isCorrect": true },
-      { "emoji": "❌", "label": "For", "isCorrect": false },
-      { "emoji": "❌", "label": "During", "isCorrect": false },
-      { "emoji": "❌", "label": "From", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "Since",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "For",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "During",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "From",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'Since' with specific points in time (the 1930s). Usa 'Since' con puntos específicos en el tiempo (los años 30).",
     "audioWord": "audios/word-1930s.mp3",
-    "audioSentence": "audios/sentence-since-the-1930s-millions-of-people-have-tried-skiing.mp3"
+    "audioSentence": "audios/sentence-since-the-1930s-millions-of-people-have-tried-skiing.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "KITESURFING",
@@ -350,14 +764,32 @@
     "sentenceEN": "Kitesurfing has been popular for twenty years.",
     "sentenceES": "El kitesurf ha sido popular durante veinte años.",
     "options": [
-      { "emoji": "✅", "label": "for", "isCorrect": true },
-      { "emoji": "❌", "label": "since", "isCorrect": false },
-      { "emoji": "❌", "label": "during", "isCorrect": false },
-      { "emoji": "❌", "label": "from", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "for",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "since",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "during",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "from",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'for' with periods of time (twenty years). Use 'since' with specific points in time. Usa 'for' con períodos de tiempo (veinte años). Usa 'since' con puntos específicos en el tiempo.",
     "audioWord": "audios/word-kitesurfing.mp3",
-    "audioSentence": "audios/sentence-kitesurfing-has-been-popular-for-twenty-years.mp3"
+    "audioSentence": "audios/sentence-kitesurfing-has-been-popular-for-twenty-years.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   },
   {
     "word": "SUPER",
@@ -365,14 +797,32 @@
     "sentenceEN": "Extreme skiing can be super dangerous.",
     "sentenceES": "El esquí extremo puede ser súper peligroso.",
     "options": [
-      { "emoji": "⭐", "label": "can be super dangerous", "isCorrect": true },
-      { "emoji": "❌", "label": "can super be dangerous", "isCorrect": false },
-      { "emoji": "🔀", "label": "super can be dangerous", "isCorrect": false },
-      { "emoji": "🚫", "label": "be super can dangerous", "isCorrect": false }
+      {
+        "emoji": "⭐",
+        "label": "can be super dangerous",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "can super be dangerous",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔀",
+        "label": "super can be dangerous",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "be super can dangerous",
+        "isCorrect": false
+      }
     ],
     "explanation": "Adverbs of emphasis (super, really, so) come before adjectives. Los adverbios de énfasis (super, really, so) vienen antes de los adjetivos.",
     "audioWord": "audios/word-super.mp3",
-    "audioSentence": "audios/sentence-extreme-skiing-can-be-super-dangerous.mp3"
+    "audioSentence": "audios/sentence-extreme-skiing-can-be-super-dangerous.mp3",
+    "wordEmoji": "⭐",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2b50.png"
   },
   {
     "word": "SO",
@@ -380,14 +830,32 @@
     "sentenceEN": "Our kayaking trip was so amazing.",
     "sentenceES": "Nuestro viaje en kayak fue tan increíble.",
     "options": [
-      { "emoji": "✨", "label": "was so amazing", "isCorrect": true },
-      { "emoji": "❌", "label": "so was amazing", "isCorrect": false },
-      { "emoji": "🔀", "label": "amazing was so", "isCorrect": false },
-      { "emoji": "🚫", "label": "was amazing so", "isCorrect": false }
+      {
+        "emoji": "✨",
+        "label": "was so amazing",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "so was amazing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔀",
+        "label": "amazing was so",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "was amazing so",
+        "isCorrect": false
+      }
     ],
     "explanation": "The adverb 'so' comes before the adjective 'amazing'. El adverbio 'so' viene antes del adjetivo 'amazing'.",
     "audioWord": "audios/word-so.mp3",
-    "audioSentence": "audios/sentence-our-kayaking-trip-was-so-amazing.mp3"
+    "audioSentence": "audios/sentence-our-kayaking-trip-was-so-amazing.mp3",
+    "wordEmoji": "✨",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2728.png"
   },
   {
     "word": "INCREDIBLY",
@@ -395,14 +863,32 @@
     "sentenceEN": "The mountain bike riders are incredibly careful.",
     "sentenceES": "Los ciclistas de montaña son increíblemente cuidadosos.",
     "options": [
-      { "emoji": "💯", "label": "are incredibly careful", "isCorrect": true },
-      { "emoji": "❌", "label": "incredibly are careful", "isCorrect": false },
-      { "emoji": "🔀", "label": "are careful incredibly", "isCorrect": false },
-      { "emoji": "🚫", "label": "incredibly careful are", "isCorrect": false }
+      {
+        "emoji": "💯",
+        "label": "are incredibly careful",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "incredibly are careful",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔀",
+        "label": "are careful incredibly",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "incredibly careful are",
+        "isCorrect": false
+      }
     ],
     "explanation": "The adverb 'incredibly' comes before the adjective 'careful'. El adverbio 'incredibly' viene antes del adjetivo 'careful'.",
     "audioWord": "audios/word-incredibly.mp3",
-    "audioSentence": "audios/sentence-the-mountain-bike-riders-are-incredibly-careful.mp3"
+    "audioSentence": "audios/sentence-the-mountain-bike-riders-are-incredibly-careful.mp3",
+    "wordEmoji": "💯",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4af.png"
   },
   {
     "word": "EXTREMELY",
@@ -410,14 +896,32 @@
     "sentenceEN": "He was extremely lucky he did not get injured.",
     "sentenceES": "Él fue extremadamente afortunado de no lesionarse.",
     "options": [
-      { "emoji": "🍀", "label": "was extremely lucky", "isCorrect": true },
-      { "emoji": "❌", "label": "extremely was lucky", "isCorrect": false },
-      { "emoji": "🔀", "label": "was lucky extremely", "isCorrect": false },
-      { "emoji": "🚫", "label": "lucky extremely was", "isCorrect": false }
+      {
+        "emoji": "🍀",
+        "label": "was extremely lucky",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "extremely was lucky",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔀",
+        "label": "was lucky extremely",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "lucky extremely was",
+        "isCorrect": false
+      }
     ],
     "explanation": "The adverb 'extremely' comes before the adjective 'lucky'. El adverbio 'extremely' viene antes del adjetivo 'lucky'.",
     "audioWord": "audios/word-extremely.mp3",
-    "audioSentence": "audios/sentence-he-was-extremely-lucky-he-did-not-get-injured.mp3"
+    "audioSentence": "audios/sentence-he-was-extremely-lucky-he-did-not-get-injured.mp3",
+    "wordEmoji": "🍀",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f340.png"
   },
   {
     "word": "VERY",
@@ -425,14 +929,32 @@
     "sentenceEN": "Skiing is very fun on a sunny day.",
     "sentenceES": "El esquí es muy divertido en un día soleado.",
     "options": [
-      { "emoji": "😊", "label": "is very fun", "isCorrect": true },
-      { "emoji": "❌", "label": "very is fun", "isCorrect": false },
-      { "emoji": "🔀", "label": "is fun very", "isCorrect": false },
-      { "emoji": "🚫", "label": "fun very is", "isCorrect": false }
+      {
+        "emoji": "😊",
+        "label": "is very fun",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "very is fun",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔀",
+        "label": "is fun very",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚫",
+        "label": "fun very is",
+        "isCorrect": false
+      }
     ],
     "explanation": "The adverb 'very' comes before the adjective 'fun'. El adverbio 'very' viene antes del adjetivo 'fun'.",
     "audioWord": "audios/word-very.mp3",
-    "audioSentence": "audios/sentence-skiing-is-very-fun-on-a-sunny-day.mp3"
+    "audioSentence": "audios/sentence-skiing-is-very-fun-on-a-sunny-day.mp3",
+    "wordEmoji": "😊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f60a.png"
   },
   {
     "word": "SKATEBOARDING",
@@ -440,13 +962,31 @@
     "sentenceEN": "Skateboarding has been my favorite sport for six months.",
     "sentenceES": "La patineta ha sido mi deporte favorito durante seis meses.",
     "options": [
-      { "emoji": "✅", "label": "for", "isCorrect": true },
-      { "emoji": "❌", "label": "since", "isCorrect": false },
-      { "emoji": "❌", "label": "during", "isCorrect": false },
-      { "emoji": "❌", "label": "from", "isCorrect": false }
+      {
+        "emoji": "✅",
+        "label": "for",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❌",
+        "label": "since",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "during",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "from",
+        "isCorrect": false
+      }
     ],
     "explanation": "Use 'for' with periods of time (six months). Usa 'for' con períodos de tiempo (seis meses).",
     "audioWord": "audios/word-skateboarding-time.mp3",
-    "audioSentence": "audios/sentence-skateboarding-has-been-my-favorite-sport-for-six-months.mp3"
+    "audioSentence": "audios/sentence-skateboarding-has-been-my-favorite-sport-for-six-months.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
   }
 ]

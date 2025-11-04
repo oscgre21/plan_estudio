@@ -1,87 +1,97 @@
 [
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
-    "question": "Write the sport shown in the image: <img src='quiz_images/surfing.jpeg' class='question-image' alt='Person surfing on ocean waves'>",
-    "type": "text-input",
-    "correctAnswer": "kite surfing",
-    "alternativeAnswers": [
-      "kite-surfing",
-      "kitesurfing"
+    "question": "Choose the sport shown in the image: <img src='quiz_images/surfing.jpeg' class='question-image' alt='Person surfing on ocean waves'>",
+    "type": "multiple-choice",
+    "options": [
+      "surfing",
+      "kite surfing",
+      "windsurfing",
+      "paddleboarding"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is KITE SURFING (also written as kite-surfing or kitesurfing). This extreme sport combines surfing with flying a large kite to move across the water.",
-    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/surfing.jpeg' class='question-image' alt='Persona haciendo surf en olas del océano'>",
+    "questionES": "Elige el deporte que se muestra en la imagen: <img src='quiz_images/surfing.jpeg' class='question-image' alt='Persona haciendo surf en olas del océano'>",
     "explanationES": "La respuesta correcta es KITE SURFING (también escrito como kite-surfing o kitesurfing). Este deporte extremo combina el surf con volar una cometa grande para moverse por el agua.",
     "audioQuestion": "audios/english-q1-write-the-sport-shown-in-the-image-surfing.mp3"
   },
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
-    "question": "Write the sport shown in the image: <img src='quiz_images/motocross.jpeg' class='question-image' alt='Person riding a motorcycle on dirt track'>",
-    "type": "text-input",
-    "correctAnswer": "motocross",
-    "alternativeAnswers": [
-      "moto cross",
-      "motorcycle racing"
+    "question": "Choose the sport shown in the image: <img src='quiz_images/motocross.jpeg' class='question-image' alt='Person riding a motorcycle on dirt track'>",
+    "type": "multiple-choice",
+    "options": [
+      "motocross",
+      "BMX racing",
+      "supercross",
+      "enduro racing"
     ],
+    "correctAnswer": 0,
     "explanation": "The correct answer is MOTOCROSS. This is an extreme sport where riders race motorcycles on rough outdoor tracks with jumps and obstacles.",
-    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/motocross.jpeg' class='question-image' alt='Persona montando una motocicleta en pista de tierra'>",
+    "questionES": "Elige el deporte que se muestra en la imagen: <img src='quiz_images/motocross.jpeg' class='question-image' alt='Persona montando una motocicleta en pista de tierra'>",
     "explanationES": "La respuesta correcta es MOTOCROSS. Este es un deporte extremo donde los pilotos corren motocicletas en pistas al aire libre con saltos y obstáculos.",
     "audioQuestion": "audios/english-q2-write-the-sport-shown-in-the-image-motocross.mp3"
   },
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
-    "question": "Write the sport shown in the image: <img src='quiz_images/skiing.jpeg' class='question-image' alt='Person skiing down snowy mountain'>",
-    "type": "text-input",
-    "correctAnswer": "skiing",
-    "alternativeAnswers": [
-      "ski",
-      "alpine skiing"
+    "question": "Choose the sport shown in the image: <img src='quiz_images/skiing.jpeg' class='question-image' alt='Person skiing down snowy mountain'>",
+    "type": "multiple-choice",
+    "options": [
+      "snowboarding",
+      "skiing",
+      "ski jumping",
+      "cross-country skiing"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is SKIING. This winter sport involves sliding down snowy mountains on skis.",
-    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/skiing.jpeg' class='question-image' alt='Persona esquiando por montaña nevada'>",
+    "questionES": "Elige el deporte que se muestra en la imagen: <img src='quiz_images/skiing.jpeg' class='question-image' alt='Persona esquiando por montaña nevada'>",
     "explanationES": "La respuesta correcta es SKIING (esquí). Este deporte de invierno consiste en deslizarse por montañas nevadas en esquís.",
     "audioQuestion": "audios/english-q3-write-the-sport-shown-in-the-image-skiing.mp3"
   },
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
-    "question": "Write the sport shown in the image: <img src='quiz_images/skateboarding.jpeg' class='question-image' alt='Person riding skateboard'>",
-    "type": "text-input",
-    "correctAnswer": "skateboarding",
-    "alternativeAnswers": [
-      "hang-gliding",
-      "hang gliding",
-      "hanggliding"
+    "question": "Choose the sport shown in the image: <img src='quiz_images/skateboarding.jpeg' class='question-image' alt='Person riding skateboard'>",
+    "type": "multiple-choice",
+    "options": [
+      "skateboarding",
+      "longboarding",
+      "rollerblading",
+      "scootering"
     ],
-    "explanation": "The correct answer is HANG-GLIDING. This extreme sport involves flying through the air using a lightweight glider that you hang from.",
-    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/skateboarding.jpeg' class='question-image' alt='Persona montando patineta'>",
-    "explanationES": "La respuesta correcta es HANG-GLIDING (ala delta). Este deporte extremo consiste en volar por el aire usando un planeador ligero del cual cuelgas.",
+    "correctAnswer": 0,
+    "explanation": "The correct answer is SKATEBOARDING. This sport involves performing tricks and riding on a board with wheels.",
+    "questionES": "Elige el deporte que se muestra en la imagen: <img src='quiz_images/skateboarding.jpeg' class='question-image' alt='Persona montando patineta'>",
+    "explanationES": "La respuesta correcta es SKATEBOARDING (patineta). Este deporte consiste en realizar trucos y montar en una tabla con ruedas.",
     "audioQuestion": "audios/english-q4-write-the-sport-shown-in-the-image-skateboarding.mp3"
   },
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
-    "question": "Write the sport shown in the image: <img src='quiz_images/hang-gliding.jpeg' class='question-image' alt='Person hang-gliding'>",
-    "type": "text-input",
-    "correctAnswer": "hang-gliding",
-    "alternativeAnswers": [
-      "hang gliding",
-      "hanggliding",
-      "skateboarding"
+    "question": "Choose the sport shown in the image: <img src='quiz_images/hang-gliding.jpeg' class='question-image' alt='Person hang-gliding'>",
+    "type": "multiple-choice",
+    "options": [
+      "paragliding",
+      "hang-gliding",
+      "skydiving",
+      "base jumping"
     ],
-    "explanation": "The correct answer is SKATEBOARDING. This sport involves performing tricks and riding on a board with wheels.",
-    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/hang-gliding.jpeg' class='question-image' alt='Persona en ala delta'>",
-    "explanationES": "La respuesta correcta es SKATEBOARDING (patineta). Este deporte consiste en realizar trucos y montar en una tabla con ruedas.",
+    "correctAnswer": 1,
+    "explanation": "The correct answer is HANG-GLIDING. This extreme sport involves flying through the air using a lightweight glider that you hang from.",
+    "questionES": "Elige el deporte que se muestra en la imagen: <img src='quiz_images/hang-gliding.jpeg' class='question-image' alt='Persona en ala delta'>",
+    "explanationES": "La respuesta correcta es HANG-GLIDING (ala delta). Este deporte extremo consiste en volar por el aire usando un planeador ligero del cual cuelgas.",
     "audioQuestion": "audios/english-q5-write-the-sport-shown-in-the-image-hang-gliding.mp3"
   },
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
-    "question": "Write the sport shown in the image: <img src='quiz_images/surfing2.jpeg' class='question-image' alt='Person surfing'>",
-    "type": "text-input",
-    "correctAnswer": "surfing",
-    "alternativeAnswers": [
-      "surf",
-      "wave riding"
+    "question": "Choose the sport shown in the image: <img src='quiz_images/surfing2.jpeg' class='question-image' alt='Person surfing'>",
+    "type": "multiple-choice",
+    "options": [
+      "bodyboarding",
+      "surfing",
+      "kite surfing",
+      "wakeboarding"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is SURFING. This water sport involves riding ocean waves on a surfboard.",
-    "questionES": "Escribe el deporte que se muestra en la imagen: <img src='quiz_images/surfing2.jpeg' class='question-image' alt='Persona surfeando'>",
+    "questionES": "Elige el deporte que se muestra en la imagen: <img src='quiz_images/surfing2.jpeg' class='question-image' alt='Persona surfeando'>",
     "explanationES": "La respuesta correcta es SURFING (surf). Este deporte acuático consiste en montar olas del océano en una tabla de surf.",
     "audioQuestion": "audios/english-q6-write-the-sport-shown-in-the-image-surfing2.mp3"
   },
@@ -368,12 +378,14 @@
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
     "question": "Complete: A _____ is a place that archaeologists want to excavate or explore.",
-    "type": "text-input",
-    "correctAnswer": "site",
-    "alternativeAnswers": [
-      "archeological site",
-      "archaeological site"
+    "type": "multiple-choice",
+    "options": [
+      "sample",
+      "site",
+      "tomb",
+      "museum"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is SITE. A site is a location or place where archaeologists conduct their work to excavate and explore ancient remains.",
     "questionES": "Completa: A _____ is a place that archaeologists want to excavate or explore.",
     "explanationES": "La respuesta correcta es SITE (sitio). Un sitio es un lugar o ubicación donde los arqueólogos realizan su trabajo para excavar y explorar restos antiguos.",
@@ -382,12 +394,14 @@
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
     "question": "Complete: _____ are objects found at the site. They are not living things. They were made by someone.",
-    "type": "text-input",
-    "correctAnswer": "artifacts",
-    "alternativeAnswers": [
-      "artefacts",
-      "archaeological artifacts"
+    "type": "multiple-choice",
+    "options": [
+      "fossils",
+      "artifacts",
+      "bones",
+      "minerals"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is ARTIFACTS. Artifacts are human-made objects discovered by archaeologists at excavation sites. They provide clues about past civilizations.",
     "questionES": "Completa: _____ are objects found at the site. They are not living things. They were made by someone.",
     "explanationES": "La respuesta correcta es ARTIFACTS (artefactos). Los artefactos son objetos hechos por humanos descubiertos por arqueólogos en sitios de excavación. Proporcionan pistas sobre civilizaciones pasadas.",
@@ -396,13 +410,14 @@
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
     "question": "Complete: A _____ is a way to discover what is in the body's cells. It can help you find your relatives.",
-    "type": "text-input",
-    "correctAnswer": "DNA test",
-    "alternativeAnswers": [
-      "dna test",
-      "DNA testing",
-      "genetic test"
+    "type": "multiple-choice",
+    "options": [
+      "blood test",
+      "DNA test",
+      "X-ray",
+      "biopsy"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is DNA TEST. A DNA test analyzes genetic material in cells to provide information about ancestry, relatives, and hereditary traits.",
     "questionES": "Completa: A _____ is a way to discover what is in the body's cells. It can help you find your relatives.",
     "explanationES": "La respuesta correcta es DNA TEST (prueba de ADN). Una prueba de ADN analiza material genético en las células para proporcionar información sobre ascendencia, parientes y rasgos hereditarios.",
@@ -411,13 +426,14 @@
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
     "question": "Complete: A _____ is a way to see inside a body. You can discover if a person has illnesses.",
-    "type": "text-input",
-    "correctAnswer": "CT scan",
-    "alternativeAnswers": [
-      "ct scan",
-      "CAT scan",
-      "computed tomography"
+    "type": "multiple-choice",
+    "options": [
+      "X-ray",
+      "CT scan",
+      "blood test",
+      "stethoscope"
     ],
+    "correctAnswer": 1,
     "explanation": "The correct answer is CT SCAN. A CT scan (computed tomography scan) is a medical imaging technique that creates detailed pictures of the inside of the body to diagnose illnesses.",
     "questionES": "Completa: A _____ is a way to see inside a body. You can discover if a person has illnesses.",
     "explanationES": "La respuesta correcta es CT SCAN (tomografía computarizada). Una tomografía es una técnica de imagen médica que crea imágenes detalladas del interior del cuerpo para diagnosticar enfermedades.",
@@ -426,12 +442,14 @@
   {
     "exam": "E1 - Ms. Gabriela Senior: Language Department French, English, SS - 8th Grade",
     "question": "Complete: _____ is a small amount of something, such as food, that someone analyzes.",
-    "type": "text-input",
-    "correctAnswer": "a sample",
-    "alternativeAnswers": [
-      "sample",
-      "A sample"
+    "type": "multiple-choice",
+    "options": [
+      "a sample",
+      "an artifact",
+      "a container",
+      "a portion"
     ],
+    "correctAnswer": 0,
     "explanation": "The correct answer is A SAMPLE. A sample is a small portion of something taken for testing, analysis, or examination to learn more about the whole.",
     "questionES": "Completa: _____ is a small amount of something, such as food, that someone analyzes.",
     "explanationES": "La respuesta correcta es A SAMPLE (una muestra). Una muestra es una pequeña porción de algo tomada para pruebas, análisis o examen para aprender más sobre el conjunto.",
