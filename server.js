@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002
 
 // Configuration for CRUD API
 const TTS_ENDPOINT = 'http://localhost:8880/v1/audio/speech';

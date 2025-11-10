@@ -1,0 +1,332 @@
+[
+  {
+    "word": "TRENCHES",
+    "spanish": "Trincheras",
+    "sentenceEN": "Soldiers lived in muddy trenches during World War I.",
+    "sentenceES": "Los soldados vivían en trincheras embarradas durante la Primera Guerra Mundial.",
+    "options": [
+      {
+        "emoji": "🕳️",
+        "label": "Trenches",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏠",
+        "label": "Houses",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏰",
+        "label": "Castles",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛺",
+        "label": "Tents",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Deep ditches where soldiers fought and lived in WWI. Zanjas profundas donde los soldados luchaban y vivían en la Primera Guerra Mundial.",
+    "audioWord": "audios/word-trenches.mp3",
+    "audioSentence": "audios/sentence-trenches.mp3",
+    "wordEmoji": "🕳️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f573.png"
+  },
+  {
+    "word": "ALLIES",
+    "spanish": "Aliados",
+    "sentenceEN": "The United States and United Kingdom were allies in both world wars.",
+    "sentenceES": "Estados Unidos y el Reino Unido fueron aliados en ambas guerras mundiales.",
+    "options": [
+      {
+        "emoji": "🤝",
+        "label": "Allies",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚔️",
+        "label": "Enemies",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛡️",
+        "label": "Shields",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💣",
+        "label": "Bombs",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Countries that unite to fight together in war. Países que se unen para luchar juntos en la guerra.",
+    "audioWord": "audios/word-allies.mp3",
+    "audioSentence": "audios/sentence-allies.mp3",
+    "wordEmoji": "🤝",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f91d.png"
+  },
+  {
+    "word": "DICTATOR",
+    "spanish": "Dictador",
+    "sentenceEN": "Hitler was a dictator who controlled Germany during World War II.",
+    "sentenceES": "Hitler fue un dictador que controló Alemania durante la Segunda Guerra Mundial.",
+    "options": [
+      {
+        "emoji": "👑",
+        "label": "Dictator",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🗳️",
+        "label": "Voter",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏛️",
+        "label": "Senator",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎯",
+        "label": "Target",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A leader with absolute power who controls everything. Un líder con poder absoluto que controla todo.",
+    "audioWord": "audios/word-dictator.mp3",
+    "audioSentence": "audios/sentence-dictator.mp3",
+    "wordEmoji": "👑",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f451.png"
+  },
+  {
+    "word": "HOLOCAUST",
+    "spanish": "Holocausto",
+    "sentenceEN": "The Holocaust was a terrible genocide during World War II.",
+    "sentenceES": "El Holocausto fue un terrible genocidio durante la Segunda Guerra Mundial.",
+    "options": [
+      {
+        "emoji": "🕯️",
+        "label": "Holocaust",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎆",
+        "label": "Fireworks",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌅",
+        "label": "Sunrise",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔥",
+        "label": "Fire",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The genocide of Jews and other groups during WWII. El genocidio de judíos y otros grupos durante la Segunda Guerra Mundial.",
+    "audioWord": "audios/word-holocaust.mp3",
+    "audioSentence": "audios/sentence-holocaust.mp3",
+    "wordEmoji": "🕯️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f56f.png"
+  },
+  {
+    "word": "TREATY",
+    "spanish": "Tratado",
+    "sentenceEN": "The Treaty of Versailles ended World War I in 1919.",
+    "sentenceES": "El Tratado de Versalles terminó la Primera Guerra Mundial en 1919.",
+    "options": [
+      {
+        "emoji": "📜",
+        "label": "Treaty",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📰",
+        "label": "Newspaper",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📚",
+        "label": "Book",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📋",
+        "label": "List",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A formal agreement between countries to end conflict. Un acuerdo formal entre países para terminar un conflicto.",
+    "audioWord": "audios/word-treaty.mp3",
+    "audioSentence": "audios/sentence-treaty.mp3",
+    "wordEmoji": "📜",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4dc.png"
+  },
+  {
+    "word": "SUPERPOWER",
+    "spanish": "Superpotencia",
+    "sentenceEN": "The United States and Soviet Union became superpowers after World War II.",
+    "sentenceES": "Estados Unidos y la Unión Soviética se convirtieron en superpotencias después de la Segunda Guerra Mundial.",
+    "options": [
+      {
+        "emoji": "🌟",
+        "label": "Superpower",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⭐",
+        "label": "Star",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💫",
+        "label": "Sparkles",
+        "isCorrect": false
+      },
+      {
+        "emoji": "✨",
+        "label": "Magic",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An extremely powerful country with global influence. Un país extremadamente poderoso con influencia global.",
+    "audioWord": "audios/word-superpower.mp3",
+    "audioSentence": "audios/sentence-superpower.mp3",
+    "wordEmoji": "🌟",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f31f.png"
+  },
+  {
+    "word": "NATIONALISM",
+    "spanish": "Nacionalismo",
+    "sentenceEN": "Extreme nationalism led countries to compete for power before World War I.",
+    "sentenceES": "El nacionalismo extremo llevó a los países a competir por poder antes de la Primera Guerra Mundial.",
+    "options": [
+      {
+        "emoji": "🇺🇸",
+        "label": "Nationalism",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌍",
+        "label": "Globalism",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤝",
+        "label": "Cooperation",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🕊️",
+        "label": "Peace",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Strong pride in one's own country and belief it's superior. Fuerte orgullo en el propio país y creencia de que es superior.",
+    "audioWord": "audios/word-nationalism.mp3",
+    "audioSentence": "audios/sentence-nationalism.mp3",
+    "wordEmoji": "🇺🇸",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f1fa-1f1f8.png"
+  },
+  {
+    "word": "COMMUNISM",
+    "spanish": "Comunismo",
+    "sentenceEN": "The Soviet Union followed communism during the Cold War.",
+    "sentenceES": "La Unión Soviética siguió el comunismo durante la Guerra Fría.",
+    "options": [
+      {
+        "emoji": "🔴",
+        "label": "Communism",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💰",
+        "label": "Capitalism",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚖️",
+        "label": "Democracy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗳️",
+        "label": "Voting",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A system where the government controls the economy and owns all property. Un sistema donde el gobierno controla la economía y posee toda la propiedad.",
+    "audioWord": "audios/word-communism.mp3",
+    "audioSentence": "audios/sentence-communism.mp3",
+    "wordEmoji": "🔴",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f534.png"
+  },
+  {
+    "word": "CAPITALISM",
+    "spanish": "Capitalismo",
+    "sentenceEN": "The United States promoted capitalism as an economic system during the Cold War.",
+    "sentenceES": "Estados Unidos promovió el capitalismo como sistema económico durante la Guerra Fría.",
+    "options": [
+      {
+        "emoji": "💰",
+        "label": "Capitalism",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔴",
+        "label": "Communism",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏛️",
+        "label": "Government",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📊",
+        "label": "Statistics",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An economic system based on private property and free market. Un sistema económico basado en la propiedad privada y el mercado libre.",
+    "audioWord": "audios/word-capitalism.mp3",
+    "audioSentence": "audios/sentence-capitalism.mp3",
+    "wordEmoji": "💰",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4b0.png"
+  },
+  {
+    "word": "ARMISTICE",
+    "spanish": "Armisticio",
+    "sentenceEN": "The armistice in 1918 stopped the fighting in World War I.",
+    "sentenceES": "El armisticio en 1918 detuvo los combates en la Primera Guerra Mundial.",
+    "options": [
+      {
+        "emoji": "✋",
+        "label": "Armistice",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚔️",
+        "label": "Battle",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💥",
+        "label": "Explosion",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏃",
+        "label": "Running",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An agreement to stop fighting in a war. Un acuerdo para detener los combates en una guerra.",
+    "audioWord": "audios/word-armistice.mp3",
+    "audioSentence": "audios/sentence-armistice.mp3",
+    "wordEmoji": "✋",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/270b.png"
+  }
+]

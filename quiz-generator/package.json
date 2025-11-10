@@ -1,0 +1,25 @@
+{
+  "name": "quiz-generator",
+  "version": "1.0.0",
+  "description": "Automated quiz generation system using Ollama and kimi-k2:1t-cloud",
+  "main": "generate-quiz.js",
+  "scripts": {
+    "generate": "node generate-quiz.js",
+    "test": "node generate-quiz.js --test"
+  },
+  "keywords": [
+    "quiz",
+    "ollama",
+    "ai",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.6.0",
+    "ora": "^5.4.1"
+  }
+}

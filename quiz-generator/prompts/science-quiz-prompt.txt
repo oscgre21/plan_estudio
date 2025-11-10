@@ -1,0 +1,55 @@
+You are an expert educational content creator. Based on the following study material, generate a comprehensive quiz in JSON format.
+
+STUDY MATERIAL:
+{DOCUMENT_TEXT}
+
+INSTRUCTIONS:
+1. Analyze the study material carefully
+2. Create a mix of question types: multiple-choice, true-false
+3. Generate 20-40 questions covering all key concepts
+4. Each question must have:
+   - Clear, educational question text
+   - Correct answer
+   - Helpful explanation
+   - Spanish translation (questionES and explanationES)
+5. For multiple-choice: provide 4 plausible options
+6. For true-false: the statement should test understanding, not just memorization
+
+IMPORTANT FORMAT RULES:
+- Use ONLY double quotes for strings
+- Do NOT include any text before or after the JSON array
+- Return ONLY valid JSON - no markdown, no comments, no explanations
+- Audio filenames should follow pattern: "audios/english-qN-short-description.mp3"
+
+JSON STRUCTURE:
+Return a JSON array where each element follows ONE of these formats:
+
+MULTIPLE-CHOICE:
+{
+  "exam": "Subject Name - Grade",
+  "question": "Question text here",
+  "type": "multiple-choice",
+  "options": ["Option A", "Option B", "Option C", "Option D"],
+  "correctAnswer": 0,
+  "explanation": "Explanation in English",
+  "questionES": "Pregunta en español",
+  "explanationES": "Explicación en español",
+  "audioQuestion": "audios/english-q1-question-description.mp3"
+}
+
+TRUE-FALSE:
+{
+  "exam": "Subject Name - Grade",
+  "question": "Statement to evaluate",
+  "type": "true-false",
+  "correctAnswer": "T",
+  "explanation": "Explanation in English",
+  "questionES": "Afirmación en español",
+  "explanationES": "Explicación en español",
+  "audioQuestion": "audios/english-tf1-statement-description.mp3"
+}
+
+EXAM NAME FORMAT:
+Use format: "E1 - Teacher Name: Department - Grade"
+
+Generate the quiz now. Return ONLY the JSON array, nothing else.

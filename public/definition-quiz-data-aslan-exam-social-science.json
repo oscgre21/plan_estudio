@@ -1,0 +1,378 @@
+[
+  {
+    "question": "This is a global conflict from 1914-1918 known as 'The Great War' where countries fought in trenches and used new weapons like tanks and poison gas.",
+    "audioQuestion": "audios/question-wwi.mp3",
+    "correctAnswer": "WORLD WAR I",
+    "options": [
+      {
+        "word": "WORLD WAR I",
+        "emoji": "⚔️",
+        "isCorrect": true
+      },
+      {
+        "word": "WORLD WAR II",
+        "emoji": "💣",
+        "isCorrect": false
+      },
+      {
+        "word": "COLD WAR",
+        "emoji": "❄️",
+        "isCorrect": false
+      },
+      {
+        "word": "THE GREAT DEPRESSION",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the systematic murder of millions of Jews and other groups by the Nazi government during World War II.",
+    "audioQuestion": "audios/question-holocaust.mp3",
+    "correctAnswer": "HOLOCAUST",
+    "options": [
+      {
+        "word": "HOLOCAUST",
+        "emoji": "🔯",
+        "isCorrect": true
+      },
+      {
+        "word": "GENOCIDE",
+        "isCorrect": false
+      },
+      {
+        "word": "CONCENTRATION CAMPS",
+        "isCorrect": false
+      },
+      {
+        "word": "ATOMIC BOMB",
+        "emoji": "☢️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a period of tension from 1947-1991 between the United States and Soviet Union without direct fighting, involving the Space Race and nuclear weapons.",
+    "audioQuestion": "audios/question-coldwar.mp3",
+    "correctAnswer": "COLD WAR",
+    "options": [
+      {
+        "word": "COLD WAR",
+        "emoji": "❄️",
+        "isCorrect": true
+      },
+      {
+        "word": "WORLD WAR III",
+        "isCorrect": false
+      },
+      {
+        "word": "VIETNAM WAR",
+        "isCorrect": false
+      },
+      {
+        "word": "KOREAN WAR",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a wall built in 1961 that divided Berlin into East and West, symbolizing the division between communist and democratic countries.",
+    "audioQuestion": "audios/question-berlinwall.mp3",
+    "correctAnswer": "BERLIN WALL",
+    "options": [
+      {
+        "word": "BERLIN WALL",
+        "emoji": "🧱",
+        "isCorrect": true
+      },
+      {
+        "word": "IRON CURTAIN",
+        "isCorrect": false
+      },
+      {
+        "word": "GREAT WALL",
+        "emoji": "🏯",
+        "isCorrect": false
+      },
+      {
+        "word": "WALL STREET",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a deep ditch where soldiers fought during World War I, creating a system of defensive fighting.",
+    "audioQuestion": "audios/question-trenches.mp3",
+    "correctAnswer": "TRENCHES",
+    "options": [
+      {
+        "word": "TRENCHES",
+        "emoji": "🕳️",
+        "isCorrect": true
+      },
+      {
+        "word": "BUNKERS",
+        "isCorrect": false
+      },
+      {
+        "word": "FOXHOLES",
+        "isCorrect": false
+      },
+      {
+        "word": "TUNNELS",
+        "emoji": "🚇",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an economic system where the government controls the economy and property, practiced by the Soviet Union during the Cold War.",
+    "audioQuestion": "audios/question-communism.mp3",
+    "correctAnswer": "COMMUNISM",
+    "options": [
+      {
+        "word": "COMMUNISM",
+        "emoji": "🔴",
+        "isCorrect": true
+      },
+      {
+        "word": "CAPITALISM",
+        "emoji": "💰",
+        "isCorrect": false
+      },
+      {
+        "word": "SOCIALISM",
+        "isCorrect": false
+      },
+      {
+        "word": "DEMOCRACY",
+        "emoji": "🗳️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a surprise attack by Japan on December 7, 1941 that brought the United States into World War II.",
+    "audioQuestion": "audios/question-pearlharbor.mp3",
+    "correctAnswer": "PEARL HARBOR",
+    "options": [
+      {
+        "word": "PEARL HARBOR",
+        "emoji": "⚓",
+        "isCorrect": true
+      },
+      {
+        "word": "HIROSHIMA",
+        "emoji": "💥",
+        "isCorrect": false
+      },
+      {
+        "word": "NORMANDY",
+        "emoji": "🏖️",
+        "isCorrect": false
+      },
+      {
+        "word": "MIDWAY",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the first human to walk on the Moon in 1969, winning the Space Race for the United States.",
+    "audioQuestion": "audios/question-neilarmstrong.mp3",
+    "correctAnswer": "NEIL ARMSTRONG",
+    "options": [
+      {
+        "word": "NEIL ARMSTRONG",
+        "emoji": "🚀",
+        "isCorrect": true
+      },
+      {
+        "word": "YURI GAGARIN",
+        "emoji": "🛰️",
+        "isCorrect": false
+      },
+      {
+        "word": "BUZZ ALDRIN",
+        "isCorrect": false
+      },
+      {
+        "word": "JOHN GLENN",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a leader with absolute power who controls the government, like Hitler, Mussolini, or Stalin during World War II.",
+    "audioQuestion": "audios/question-dictator.mp3",
+    "correctAnswer": "DICTATOR",
+    "options": [
+      {
+        "word": "DICTATOR",
+        "emoji": "👑",
+        "isCorrect": true
+      },
+      {
+        "word": "PRESIDENT",
+        "emoji": "🇺🇸",
+        "isCorrect": false
+      },
+      {
+        "word": "KING",
+        "emoji": "👑",
+        "isCorrect": false
+      },
+      {
+        "word": "PRIME MINISTER",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the peace treaty that ended World War I in 1919 and required Germany to pay war reparations.",
+    "audioQuestion": "audios/question-treatyversailles.mp3",
+    "correctAnswer": "TREATY OF VERSAILLES",
+    "options": [
+      {
+        "word": "TREATY OF VERSAILLES",
+        "emoji": "📜",
+        "isCorrect": true
+      },
+      {
+        "word": "TREATY OF PARIS",
+        "isCorrect": false
+      },
+      {
+        "word": "ARMISTICE",
+        "isCorrect": false
+      },
+      {
+        "word": "LEAGUE OF NATIONS",
+        "emoji": "🌐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an organization created after World War II to maintain world peace and prevent future conflicts.",
+    "audioQuestion": "audios/question-unitednations.mp3",
+    "correctAnswer": "UNITED NATIONS",
+    "options": [
+      {
+        "word": "UNITED NATIONS",
+        "emoji": "🌐",
+        "isCorrect": true
+      },
+      {
+        "word": "LEAGUE OF NATIONS",
+        "isCorrect": false
+      },
+      {
+        "word": "NATO",
+        "isCorrect": false
+      },
+      {
+        "word": "WARSAW PACT",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the most dangerous moment of the Cold War in 1962 when the USSR placed nuclear missiles in Cuba near the United States.",
+    "audioQuestion": "audios/question-cubanmissilecrisis.mp3",
+    "correctAnswer": "CUBAN MISSILE CRISIS",
+    "options": [
+      {
+        "word": "CUBAN MISSILE CRISIS",
+        "emoji": "🚀",
+        "isCorrect": true
+      },
+      {
+        "word": "BAY OF PIGS",
+        "isCorrect": false
+      },
+      {
+        "word": "KOREAN WAR",
+        "isCorrect": false
+      },
+      {
+        "word": "VIETNAM WAR",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a strong feeling of pride in one's own country, which was a main cause of World War I.",
+    "audioQuestion": "audios/question-nationalism.mp3",
+    "correctAnswer": "NATIONALISM",
+    "options": [
+      {
+        "word": "NATIONALISM",
+        "emoji": "🇺🇸",
+        "isCorrect": true
+      },
+      {
+        "word": "PATRIOTISM",
+        "emoji": "🇺🇸",
+        "isCorrect": false
+      },
+      {
+        "word": "IMPERIALISM",
+        "isCorrect": false
+      },
+      {
+        "word": "ALLIANCES",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the event on June 6, 1944 when Allied forces landed in Normandy, France to liberate Europe from Nazi control.",
+    "audioQuestion": "audios/question-dday.mp3",
+    "correctAnswer": "D-DAY",
+    "options": [
+      {
+        "word": "D-DAY",
+        "emoji": "🏖️",
+        "isCorrect": true
+      },
+      {
+        "word": "PEARL HARBOR",
+        "emoji": "⚓",
+        "isCorrect": false
+      },
+      {
+        "word": "V-E DAY",
+        "isCorrect": false
+      },
+      {
+        "word": "V-J DAY",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an extremely powerful country that emerged after World War II, like the United States and Soviet Union.",
+    "audioQuestion": "audios/question-superpower.mp3",
+    "correctAnswer": "SUPERPOWER",
+    "options": [
+      {
+        "word": "SUPERPOWER",
+        "emoji": "💪",
+        "isCorrect": true
+      },
+      {
+        "word": "EMPIRE",
+        "isCorrect": false
+      },
+      {
+        "word": "KINGDOM",
+        "emoji": "👑",
+        "isCorrect": false
+      },
+      {
+        "word": "REPUBLIC",
+        "isCorrect": false
+      }
+    ]
+  }
+]

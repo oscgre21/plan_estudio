@@ -19,5 +19,12 @@
     "description": "Aslan's English Test Set",
     "vocabularyFile": "vocabulary-dataV3.json",
     "scienceQuizFile": "science-quiz-data-v3.json"
+  },
+  {
+    "id": "aslan-exam-social-science",
+    "name": "Aslan Exam Social Science",
+    "description": "Generated from Study_Guide_World_Wars.md.pdf",
+    "vocabularyFile": "vocabulary-data-aslan-exam-social-science.json",
+    "scienceQuizFile": "science-quiz-data-aslan-exam-social-science.json"
   }
 ]

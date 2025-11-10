@@ -1,0 +1,392 @@
+[
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which event directly triggered the start of World War I?",
+    "type": "multiple-choice",
+    "options": [
+      "Germany invaded Poland",
+      "The assassination of Archduke Franz Ferdinand",
+      "The Great Depression began",
+      "Italy joined the Allies"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The assassination of Archduke Franz Ferdinand of Austria in 1914 was the immediate spark that led to the outbreak of World War I.",
+    "questionES": "¿Qué evento desencadenó directamente el inicio de la Primera Guerra Mundial?",
+    "explanationES": "El asesinato del archiduque Francisco Fernando de Austria en 1914 fue la chispa inmediata que llevó al estallido de la Primera Guerra Mundial.",
+    "audioQuestion": "audios/english-q1-wwi-trigger-event.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The United States entered World War I in 1917.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The United States joined the Allied Powers in 1917, helping turn the tide of World War I.",
+    "questionES": "Estados Unidos entró en la Primera Guerra Mundial en 1917.",
+    "explanationES": "Verdadero. Estados Unidos se unió a las Potencias Aliadas en 1917, ayudando a cambiar el curso de la Primera Guerra Mundial.",
+    "audioQuestion": "audios/english-tf1-usa-wwi-entry.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which countries made up the Central Powers during World War I?",
+    "type": "multiple-choice",
+    "options": [
+      "Germany, Austria-Hungary, Ottoman Empire, Bulgaria",
+      "USA, UK, France, Russia",
+      "Germany, Italy, Japan",
+      "France, UK, Russia, China"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Central Powers consisted of Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria.",
+    "questionES": "¿Qué países formaban las Potencias Centrales durante la Primera Guerra Mundial?",
+    "explanationES": "Las Potencias Centrales estaban formadas por Alemania, Austria-Hungría, el Imperio Otomano y Bulgaria.",
+    "audioQuestion": "audios/english-q2-central-powers-wwi.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Trench warfare was a common fighting method used during World War II.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. Trench warfare was characteristic of World War I, not World War II.",
+    "questionES": "La guerra de trincheras fue un método de combate común durante la Segunda Guerra Mundial.",
+    "explanationES": "Falso. La guerra de trincheras fue característica de la Primera Guerra Mundial, no de la Segunda Guerra Mundial.",
+    "audioQuestion": "audios/english-tf2-trench-warfare-wwii.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "What new weapons were introduced during World War I?",
+    "type": "multiple-choice",
+    "options": [
+      "Smart bombs and drones",
+      "Tanks, airplanes, and poison gas",
+      "Nuclear missiles",
+      "Machine guns only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "World War I saw the first use of tanks, airplanes, and poison gas in combat.",
+    "questionES": "¿Qué nuevas armas se introdujeron durante la Primera Guerra Mundial?",
+    "explanationES": "La Primera Guerra Mundial vio el primer uso de tanques, aviones y gas venenoso en combate.",
+    "audioQuestion": "audios/english-q3-new-weapons-wwi.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Treaty of Versailles ended World War I and required Germany to pay reparations.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The Treaty of Versailles officially ended World War I in 1919 and imposed heavy reparations on Germany.",
+    "questionES": "El Tratado de Versalles terminó la Primera Guerra Mundial y exigió a Alemania pagar reparaciones.",
+    "explanationES": "Verdadero. El Tratado de Versalles terminó oficialmente la Primera Guerra Mundial en 1919 e impuso fuertes reparaciones a Alemania.",
+    "audioQuestion": "audios/english-tf3-treaty-versailles.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which of the following was NOT a cause of World War II?",
+    "type": "multiple-choice",
+    "options": [
+      "The Treaty of Versailles",
+      "The Great Depression",
+      "The assassination of Archduke Franz Ferdinand",
+      "Rise of dictators"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The assassination of Archduke Franz Ferdinand caused World War I, not World War II.",
+    "questionES": "¿Cuál de los siguientes NO fue una causa de la Segunda Guerra Mundial?",
+    "explanationES": "El asesinato del archiduque Francisco Fernando causó la Primera Guerra Mundial, no la Segunda Guerra Mundial.",
+    "audioQuestion": "audios/english-q4-not-cause-wwii.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Axis Powers during World War II included Germany, Italy, and Japan.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The main Axis Powers were Nazi Germany, Fascist Italy, and Imperial Japan.",
+    "questionES": "Las Potencias del Eje durante la Segunda Guerra Mundial incluían a Alemania, Italia y Japón.",
+    "explanationES": "Verdadero. Las principales Potencias del Eje eran la Alemania nazi, la Italia fascista y el Japón imperial.",
+    "audioQuestion": "audios/english-tf4-axis-powers-wwii.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "What event brought the United States into World War II?",
+    "type": "multiple-choice",
+    "options": [
+      "Germany invaded France",
+      "Japan attacked Pearl Harbor",
+      "D-Day invasion",
+      "The Battle of Britain"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Japan's surprise attack on Pearl Harbor on December 7, 1941, led the United States to enter World War II.",
+    "questionES": "¿Qué evento llevó a Estados Unidos a entrar en la Segunda Guerra Mundial?",
+    "explanationES": "El ataque sorpresa de Japón a Pearl Harbor el 7 de diciembre de 1941 llevó a Estados Unidos a entrar en la Segunda Guerra Mundial.",
+    "audioQuestion": "audios/english-q5-pearl-harbor-usa-entry.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "D-Day refers to the Allied invasion of Normandy, France, in 1944.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. D-Day on June 6, 1944, marked the Allied invasion of Nazi-occupied France.",
+    "questionES": "El Día D se refiere a la invasión aliada de Normandía, Francia, en 1944.",
+    "explanationES": "Verdadero. El Día D, el 6 de junio de 1944, marcó la invasión aliada de la Francia ocupada por los nazis.",
+    "audioQuestion": "audios/english-tf5-d-day-normandy.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Holocaust was:",
+    "type": "multiple-choice",
+    "options": [
+      "A celebration of German culture",
+      "The Nazi persecution and murder of millions, especially Jews",
+      "A peace treaty",
+      "A type of weapon"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Holocaust was the systematic persecution and murder of six million Jews and millions of others by the Nazi regime.",
+    "questionES": "El Holocausto fue:",
+    "explanationES": "El Holocausto fue la persecución y asesinato sistemáticos de seis millones de judíos y millones de otras personas por el régimen nazi.",
+    "audioQuestion": "audios/english-q6-holocaust-definition.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The United States dropped atomic bombs on Hiroshima and Nagasaki in August 1945.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The U.S. dropped atomic bombs on these Japanese cities, leading to Japan's surrender.",
+    "questionES": "Estados Unidos lanzó bombas atómicas sobre Hiroshima y Nagasaki en agosto de 1945.",
+    "explanationES": "Verdadero. EE.UU. lanzó bombas atómicas sobre estas ciudades japonesas, lo que llevó a la rendición de Japón.",
+    "audioQuestion": "audios/english-tf6-atomic-bombs-japan.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Why was the Cold War called 'cold'?",
+    "type": "multiple-choice",
+    "options": [
+      "Because it happened in winter",
+      "Because there was no direct fighting between the USA and USSR",
+      "Because it took place in cold countries",
+      "Because nuclear weapons were cold"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It was called 'cold' because the USA and USSR never directly fought each other, though they competed globally.",
+    "questionES": "¿Por qué se llamó 'Guerra Fría' a la Guerra Fría?",
+    "explanationES": "Se llamó 'fría' porque EE.UU. y la URSS nunca lucharon directamente entre sí, aunque compitieron globalmente.",
+    "audioQuestion": "audios/english-q7-cold-war-name.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Berlin Wall was built to separate East and West Germany during the Cold War.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The Berlin Wall symbolized the division between communist East and democratic West.",
+    "questionES": "El Muro de Berlín fue construido para separar Alemania del Este y del Oeste durante la Guerra Fría.",
+    "explanationES": "Verdadero. El Muro de Berlín simbolizó la división entre el Este comunista y el Oeste democrático.",
+    "audioQuestion": "audios/english-tf7-berlin-wall-purpose.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Who was the first human to walk on the Moon?",
+    "type": "multiple-choice",
+    "options": [
+      "Yuri Gagarin",
+      "John Glenn",
+      "Neil Armstrong",
+      "Buzz Aldrin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Neil Armstrong, an American astronaut, was the first human to walk on the Moon in 1969.",
+    "questionES": "¿Quién fue el primer humano en caminar sobre la Luna?",
+    "explanationES": "Neil Armstrong, un astronauta estadounidense, fue el primer humano en caminar sobre la Luna en 1969.",
+    "audioQuestion": "audios/english-q8-first-moon-walker.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Cuban Missile Crisis in 1962 brought the world to the brink of nuclear war.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The USSR placing missiles in Cuba was the closest the Cold War came to nuclear conflict.",
+    "questionES": "La Crisis de los Misiles Cubanos en 1962 llevó al mundo al borde de una guerra nuclear.",
+    "explanationES": "Verdadero. La colocación de misiles por la URSS en Cuba fue el momento más cercano a un conflicto nuclear durante la Guerra Fría.",
+    "audioQuestion": "audios/english-tf8-cuban-missile-crisis.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which organization was created after World War II to maintain world peace?",
+    "type": "multiple-choice",
+    "options": [
+      "League of Nations",
+      "United Nations",
+      "NATO",
+      "Warsaw Pact"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The United Nations was established in 1945 after World War II to prevent future global conflicts.",
+    "questionES": "¿Qué organización se creó después de la Segunda Guerra Mundial para mantener la paz mundial?",
+    "explanationES": "Las Naciones Unidas se establecieron en 1945 después de la Segunda Guerra Mundial para prevenir futuros conflictos globales.",
+    "audioQuestion": "audios/english-q9-un-after-wwii.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Cold War ended when the Soviet Union dissolved in 1991.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The dissolution of the USSR in 1991 marked the end of the Cold War era.",
+    "questionES": "La Guerra Fría terminó cuando la Unión Soviética se disolvió en 1991.",
+    "explanationES": "Verdadero. La disolución de la URSS en 1991 marcó el fin de la era de la Guerra Fría.",
+    "audioQuestion": "audios/english-tf9-cold-war-end.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which is the correct chronological order of these wars?",
+    "type": "multiple-choice",
+    "options": [
+      "WWII, WWI, Cold War",
+      "Cold War, WWI, WWII",
+      "WWI, WWII, Cold War",
+      "WWII, Cold War, WWI"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct order is: World War I (1914-1918), World War II (1939-1945), Cold War (1947-1991).",
+    "questionES": "¿Cuál es el orden cronológico correcto de estas guerras?",
+    "explanationES": "El orden correcto es: Primera Guerra Mundial (1914-1918), Segunda Guerra Mundial (1939-1945), Guerra Fría (1947-1991).",
+    "audioQuestion": "audios/english-q10-war-chronology.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Nationalism, or strong pride in one's country, was a cause of World War I.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. Nationalism contributed to tensions as countries sought to prove their superiority.",
+    "questionES": "El nacionalismo, o el fuerte orgullo por el propio país, fue una causa de la Primera Guerra Mundial.",
+    "explanationES": "Verdadero. El nacionalismo contribuyó a las tensiones mientras los países buscaban probar su superioridad.",
+    "audioQuestion": "audios/english-tf10-nationalism-wwi.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "What was the Space Race primarily about?",
+    "type": "multiple-choice",
+    "options": [
+      "Colonizing Mars",
+      "USA and USSR competing in space exploration",
+      "Finding aliens",
+      "Building space weapons"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Space Race was a Cold War competition between the USA and USSR to achieve superior space exploration milestones.",
+    "questionES": "¿Qué fue principalmente la Carrera Espacial?",
+    "explanationES": "La Carrera Espacial fue una competencia durante la Guerra Fría entre EE.UU. y la URSS para lograr hitos superiores en la exploración espacial.",
+    "audioQuestion": "audios/english-q11-space-race-purpose.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The League of Nations was created after World War II.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. The League of Nations was created after World War I. The United Nations was created after World War II.",
+    "questionES": "La Sociedad de Naciones se creó después de la Segunda Guerra Mundial.",
+    "explanationES": "Falso. La Sociedad de Naciones se creó después de la Primera Guerra Mundial. Las Naciones Unidas se crearon después de la Segunda Guerra Mundial.",
+    "audioQuestion": "audios/english-tf11-league-nations-timing.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which best describes the main difference between World War II and the Cold War?",
+    "type": "multiple-choice",
+    "options": [
+      "WWII was in Europe, Cold War was in Asia",
+      "WWII was a shooting war, Cold War was tension without direct superpower conflict",
+      "WWII lasted longer",
+      "Only the USA fought in the Cold War"
+    ],
+    "correctAnswer": 1,
+    "explanation": "While WWII involved direct combat between many nations, the Cold War was primarily political tension and competition without direct fighting between the USA and USSR.",
+    "questionES": "¿Qué describe mejor la diferencia principal entre la Segunda Guerra Mundial y la Guerra Fría?",
+    "explanationES": "Mientras que la Segunda Guerra Mundial involucró combate directo entre muchas naciones, la Guerra Fría fue principalmente tensión política y competencia sin lucha directa entre EE.UU. y la URSS.",
+    "audioQuestion": "audios/english-q12-wwii-vs-coldwar.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Communism is an economic system where the government controls the economy.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. In a communist system, the government owns and controls most property and economic decisions.",
+    "questionES": "El comunismo es un sistema económico donde el gobierno controla la economía.",
+    "explanationES": "Verdadero. En un sistema comunista, el gobierno posee y controla la mayoría de la propiedad y las decisiones económicas.",
+    "audioQuestion": "audios/english-tf13-communism-definition.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "What year did World War I end?",
+    "type": "multiple-choice",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1919"
+    ],
+    "correctAnswer": 2,
+    "explanation": "World War I ended in 1918, though the peace treaty (Treaty of Versailles) was signed in 1919.",
+    "questionES": "¿En qué año terminó la Primera Guerra Mundial?",
+    "explanationES": "La Primera Guerra Mundial terminó en 1918, aunque el tratado de paz (Tratado de Versalles) se firmó en 1919.",
+    "audioQuestion": "audios/english-q14-wwi-end-year.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Great Depression was one of the causes of World War II.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The worldwide economic crisis of the 1930s contributed to political instability and the rise of dictators.",
+    "questionES": "La Gran Depresión fue una de las causas de la Segunda Guerra Mundial.",
+    "explanationES": "Verdadero. La crisis económica mundial de los años 30 contribuyó a la inestabilidad política y al ascenso de dictadores.",
+    "audioQuestion": "audios/english-tf15-great-depression-wwii.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "Which country launched the first satellite, Sputnik, in 1957?",
+    "type": "multiple-choice",
+    "options": [
+      "United States",
+      "Germany",
+      "Soviet Union",
+      "Japan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Soviet Union launched Sputnik in 1957, marking the beginning of the Space Race.",
+    "questionES": "¿Qué país lanzó el primer satélite, Sputnik, en 1957?",
+    "explanationES": "La Unión Soviética lanzó Sputnik en 1957, marcando el comienzo de la Carrera Espacial.",
+    "audioQuestion": "audios/english-q16-sputnik-launch.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The Warsaw Pact was led by the United States during the Cold War.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. The Warsaw Pact was led by the Soviet Union. NATO was led by the United States.",
+    "questionES": "El Pacto de Varsovia fue liderado por Estados Unidos durante la Guerra Fría.",
+    "explanationES": "Falso. El Pacto de Varsovia fue liderado por la Unión Soviética. La OTAN fue liderada por Estados Unidos.",
+    "audioQuestion": "audios/english-tf17-warsaw-pact-leader.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "What was the main purpose of creating the United Nations?",
+    "type": "multiple-choice",
+    "options": [
+      "To colonize space",
+      "To maintain world peace and prevent future wars",
+      "To promote capitalism",
+      "To support dictators"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The United Nations was created after World War II to maintain international peace and security.",
+    "questionES": "¿Cuál fue el propósito principal de crear las Naciones Unidas?",
+    "explanationES": "Las Naciones Unidas se crearon después de la Segunda Guerra Mundial para mantener la paz internacional y la seguridad.",
+    "audioQuestion": "audios/english-q18-un-purpose.mp3"
+  },
+  {
+    "exam": "E1 - The World at War: Social Studies - 6th Grade",
+    "question": "The United States and Soviet Union became superpowers after World War II.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. After WWII, the USA and USSR emerged as the two most powerful nations, leading to the Cold War.",
+    "questionES": "Estados Unidos y la Unión Soviética se convirtieron en superpotencias después de la Segunda Guerra Mundial.",
+    "explanationES": "Verdadero. Después de la Segunda Guerra Mundial, EE.UU. y la URSS surgieron como las dos naciones más poderosas, lo que llevó a la Guerra Fría.",
+    "audioQuestion": "audios/english-tf19-postwwii-superpowers.mp3"
+  }
+]

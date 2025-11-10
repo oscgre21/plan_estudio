@@ -1,0 +1,85 @@
+You are an expert educational content creator. Based on the following study material, generate a definition-matching quiz in JSON format.
+
+STUDY MATERIAL:
+{DOCUMENT_TEXT}
+
+INSTRUCTIONS:
+1. Extract 10-20 key concepts/terms from the material
+2. For each term, create a definition-based question
+3. Provide 4 word options with emojis (one correct, three plausible distractors)
+4. Use clear, educational definitions
+5. Choose appropriate emojis for each word option
+
+IMPORTANT FORMAT RULES:
+- Use ONLY double quotes for strings
+- Do NOT include any text before or after the JSON array
+- Return ONLY valid JSON - no markdown, no comments
+- Audio filenames pattern: "audios/question-{word}.mp3"
+
+JSON STRUCTURE:
+Return a JSON array where each element follows this format:
+
+{
+  "question": "This is a [definition of the concept].",
+  "audioQuestion": "audios/question-word.mp3",
+  "correctAnswer": "CORRECT WORD",
+  "options": [
+    {
+      "word": "CORRECT WORD",
+      "emoji": "✅",
+      "isCorrect": true
+    },
+    {
+      "word": "DISTRACTOR 1",
+      "emoji": "❌",
+      "isCorrect": false
+    },
+    {
+      "word": "DISTRACTOR 2",
+      "emoji": "🔴",
+      "isCorrect": false
+    },
+    {
+      "word": "DISTRACTOR 3",
+      "isCorrect": false
+    }
+  ]
+}
+
+GUIDELINES:
+- Definitions should be clear and educational (not just dictionary style)
+- Pattern: "This is a/an [description that clearly identifies the concept]"
+- Distractors should be related terms that could plausibly fit but are incorrect
+- Not all options need emojis (optional for distractors)
+- All words should be UPPERCASE
+- Make sure correctAnswer exactly matches the correct option's word
+
+EXAMPLE:
+{
+  "question": "This is a large celestial body that orbits around a star.",
+  "audioQuestion": "audios/question-planet.mp3",
+  "correctAnswer": "PLANET",
+  "options": [
+    {
+      "word": "PLANET",
+      "emoji": "🪐",
+      "isCorrect": true
+    },
+    {
+      "word": "ORBIT",
+      "isCorrect": false
+    },
+    {
+      "word": "STAR",
+      "emoji": "⭐",
+      "isCorrect": false
+    },
+    {
+      "word": "MOON",
+      "emoji": "🌙",
+      "isCorrect": false
+    }
+  ]
+}
+
+Generate the definition quiz now. Return ONLY the JSON array, nothing else.
