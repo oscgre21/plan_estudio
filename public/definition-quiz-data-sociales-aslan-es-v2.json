@@ -1,0 +1,854 @@
+[
+  {
+    "question": "This is a ancient civilization that developed between the Tigris and Euphrates rivers.",
+    "audioQuestion": "audios/question-mesopotamia.mp3",
+    "correctAnswer": "MESOPOTAMIA",
+    "options": [
+      {
+        "word": "MESOPOTAMIA",
+        "emoji": "🏛️",
+        "isCorrect": true
+      },
+      {
+        "word": "EGIPTO",
+        "emoji": "🇪🇬",
+        "isCorrect": false
+      },
+      {
+        "word": "BABILONIA",
+        "emoji": "🏰",
+        "isCorrect": false
+      },
+      {
+        "word": "ASIRIA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the longest river in Africa that was essential for ancient Egyptian civilization.",
+    "audioQuestion": "audios/question-nilo.mp3",
+    "correctAnswer": "NILO",
+    "options": [
+      {
+        "word": "NILO",
+        "emoji": "🌊",
+        "isCorrect": true
+      },
+      {
+        "word": "TIGRIS",
+        "emoji": "🌊",
+        "isCorrect": false
+      },
+      {
+        "word": "ÉUFRATES",
+        "isCorrect": false
+      },
+      {
+        "word": "AMAZONAS",
+        "emoji": "🌊",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the world's first writing system developed by the Mesopotamians using wedge-shaped symbols.",
+    "audioQuestion": "audios/question-cuneiforme.mp3",
+    "correctAnswer": "CUNEIFORME",
+    "options": [
+      {
+        "word": "CUNEIFORME",
+        "emoji": "📜",
+        "isCorrect": true
+      },
+      {
+        "word": "JEROGÍFICOS",
+        "emoji": "🖼️",
+        "isCorrect": false
+      },
+      {
+        "word": "ALFABETO",
+        "emoji": "🔤",
+        "isCorrect": false
+      },
+      {
+        "word": "PAPIRO",
+        "emoji": "📄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a stepped temple built by the Mesopotamians for religious ceremonies.",
+    "audioQuestion": "audios/question-zigurat.mp3",
+    "correctAnswer": "ZIGURAT",
+    "options": [
+      {
+        "word": "ZIGURAT",
+        "emoji": "🏛️",
+        "isCorrect": true
+      },
+      {
+        "word": "PIRÁMIDE",
+        "emoji": "🔺",
+        "isCorrect": false
+      },
+      {
+        "word": "TEMPLO",
+        "emoji": "⛪",
+        "isCorrect": false
+      },
+      {
+        "word": "PALACIO",
+        "emoji": "🏰",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is one of the first written codes of law created by King Hammurabi.",
+    "audioQuestion": "audios/question-codigo-hammurabi.mp3",
+    "correctAnswer": "CÓDIGO DE HAMMURABI",
+    "options": [
+      {
+        "word": "CÓDIGO DE HAMMURABI",
+        "emoji": "⚖️",
+        "isCorrect": true
+      },
+      {
+        "word": "LEY DE MOISÉS",
+        "emoji": "📖",
+        "isCorrect": false
+      },
+      {
+        "word": "CONSTITUCIÓN",
+        "emoji": "📜",
+        "isCorrect": false
+      },
+      {
+        "word": "CÓDIGO NAPOLEÓNICO",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian writing system that used pictures and symbols.",
+    "audioQuestion": "audios/question-jeroglificos.mp3",
+    "correctAnswer": "JERÓLIFICOS",
+    "options": [
+      {
+        "word": "JERÓLIFICOS",
+        "emoji": "🖼️",
+        "isCorrect": true
+      },
+      {
+        "word": "CUNEIFORME",
+        "emoji": "📜",
+        "isCorrect": false
+      },
+      {
+        "word": "ALFABETO LATINO",
+        "emoji": "🔤",
+        "isCorrect": false
+      },
+      {
+        "word": "SANSKRITO",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the process used by Egyptians to preserve bodies after death for the afterlife.",
+    "audioQuestion": "audios/question-momificacion.mp3",
+    "correctAnswer": "MOMIFICACIÓN",
+    "options": [
+      {
+        "word": "MOMIFICACIÓN",
+        "emoji": "🗿",
+        "isCorrect": true
+      },
+      {
+        "word": "CREMACIÓN",
+        "emoji": "🔥",
+        "isCorrect": false
+      },
+      {
+        "word": "EMBALSAMIENTO",
+        "emoji": "💀",
+        "isCorrect": false
+      },
+      {
+        "word": "FORENSIS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian rulers who were considered living gods.",
+    "audioQuestion": "audios/question-faraon.mp3",
+    "correctAnswer": "FARAÓN",
+    "options": [
+      {
+        "word": "FARAÓN",
+        "emoji": "👑",
+        "isCorrect": true
+      },
+      {
+        "word": "REY",
+        "emoji": "🤴",
+        "isCorrect": false
+      },
+      {
+        "word": "EMPERADOR",
+        "emoji": "👑",
+        "isCorrect": false
+      },
+      {
+        "word": "CESAR",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a monumental tomb built for Egyptian pharaohs, shaped like a triangle.",
+    "audioQuestion": "audios/question-piramide.mp3",
+    "correctAnswer": "PIRÁMIDE",
+    "options": [
+      {
+        "word": "PIRÁMIDE",
+        "emoji": "🔺",
+        "isCorrect": true
+      },
+      {
+        "word": "ZIGURAT",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "OBELISCO",
+        "emoji": "📏",
+        "isCorrect": false
+      },
+      {
+        "word": "ESFINGE",
+        "emoji": "🦁",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an ancient writing material made from papyrus plants that grew along the Nile.",
+    "audioQuestion": "audios/question-papiro.mp3",
+    "correctAnswer": "PAPIRO",
+    "options": [
+      {
+        "word": "PAPIRO",
+        "emoji": "📄",
+        "isCorrect": true
+      },
+      {
+        "word": "PAPEL",
+        "emoji": "📃",
+        "isCorrect": false
+      },
+      {
+        "word": "PERGAMINO",
+        "emoji": "📜",
+        "isCorrect": false
+      },
+      {
+        "word": "CORTEZA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the invention that revolutionized transportation and was created in Mesopotamia.",
+    "audioQuestion": "audios/question-rueda.mp3",
+    "correctAnswer": "RUEDA",
+    "options": [
+      {
+        "word": "RUEDA",
+        "emoji": "⚙️",
+        "isCorrect": true
+      },
+      {
+        "word": "ARADO",
+        "emoji": "🚜",
+        "isCorrect": false
+      },
+      {
+        "word": "PALANCA",
+        "emoji": "🔧",
+        "isCorrect": false
+      },
+      {
+        "word": "POLEA",
+        "emoji": "🏗️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a farming tool invented by Mesopotamians to break soil for planting.",
+    "audioQuestion": "audios/question-arado.mp3",
+    "correctAnswer": "ARADO",
+    "options": [
+      {
+        "word": "ARADO",
+        "emoji": "🚜",
+        "isCorrect": true
+      },
+      {
+        "word": "AZADA",
+        "emoji": "⚒️",
+        "isCorrect": false
+      },
+      {
+        "word": "HOZ",
+        "emoji": "🌾",
+        "isCorrect": false
+      },
+      {
+        "word": "TRILLADORA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the belief held by Egyptians that existence continues after physical death.",
+    "audioQuestion": "audios/question-vida-despues-muerte.mp3",
+    "correctAnswer": "VIDA DESPUÉS DE LA MUERTE",
+    "options": [
+      {
+        "word": "VIDA DESPUÉS DE LA MUERTE",
+        "emoji": "🌟",
+        "isCorrect": true
+      },
+      {
+        "word": "REENCARNACIÓN",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "INMORTALIDAD",
+        "emoji": "💫",
+        "isCorrect": false
+      },
+      {
+        "word": "RESURRECCIÓN",
+        "emoji": "✨",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a system developed by Mesopotamians to control water distribution for farming.",
+    "audioQuestion": "audios/question-irrigacion.mp3",
+    "correctAnswer": "IRRIGACIÓN",
+    "options": [
+      {
+        "word": "IRRIGACIÓN",
+        "emoji": "💧",
+        "isCorrect": true
+      },
+      {
+        "word": "CANALIZACIÓN",
+        "emoji": "🚰",
+        "isCorrect": false
+      },
+      {
+        "word": "DRENAGE",
+        "emoji": "🕳️",
+        "isCorrect": false
+      },
+      {
+        "word": "ACUEDUCTO",
+        "emoji": "🏛️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the fertile soil left by rivers after flooding that helps crops grow.",
+    "audioQuestion": "audios/question-tierra-fertil.mp3",
+    "correctAnswer": "TIERRA FÉRTIL",
+    "options": [
+      {
+        "word": "TIERRA FÉRTIL",
+        "emoji": "🌱",
+        "isCorrect": true
+      },
+      {
+        "word": "TIERRA ARCILLOSA",
+        "emoji": "🏔️",
+        "isCorrect": false
+      },
+      {
+        "word": "TIERRA ARENOSA",
+        "emoji": "🏜️",
+        "isCorrect": false
+      },
+      {
+        "word": "SEDIMENTO",
+        "emoji": "⛰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is one of the main Mesopotamian cities known for its great civilization.",
+    "audioQuestion": "audios/question-babilonia.mp3",
+    "correctAnswer": "BABILONIA",
+    "options": [
+      {
+        "word": "BABILONIA",
+        "emoji": "🏰",
+        "isCorrect": true
+      },
+      {
+        "word": "UR",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "NÍNIVE",
+        "emoji": "🏯",
+        "isCorrect": false
+      },
+      {
+        "word": "ACADIO",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the location where the most famous Egyptian pyramids are found.",
+    "audioQuestion": "audios/question-giza.mp3",
+    "correctAnswer": "GIZA",
+    "options": [
+      {
+        "word": "GIZA",
+        "emoji": "🔺",
+        "isCorrect": true
+      },
+      {
+        "word": "LUXOR",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "KARNAK",
+        "emoji": "⛩️",
+        "isCorrect": false
+      },
+      {
+        "word": "MEMFIS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the clay tablets used by Mesopotamians to write cuneiform script.",
+    "audioQuestion": "audios/question-tablillas-arcilla.mp3",
+    "correctAnswer": "TABLILLAS DE ARCILLA",
+    "options": [
+      {
+        "word": "TABLILLAS DE ARCILLA",
+        "emoji": "🏺",
+        "isCorrect": true
+      },
+      {
+        "word": "PAPIRO",
+        "emoji": "📄",
+        "isCorrect": false
+      },
+      {
+        "word": "PIEDRA",
+        "emoji": "🪨",
+        "isCorrect": false
+      },
+      {
+        "word": "PERGAMINO",
+        "emoji": "📜",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian practice of preserving bodies through special treatment.",
+    "audioQuestion": "audios/question-momia.mp3",
+    "correctAnswer": "MOMIA",
+    "options": [
+      {
+        "word": "MOMIA",
+        "emoji": "🗿",
+        "isCorrect": true
+      },
+      {
+        "word": "ESQUELETO",
+        "emoji": "💀",
+        "isCorrect": false
+      },
+      {
+        "word": "FÓSIL",
+        "emoji": "🦴",
+        "isCorrect": false
+      },
+      {
+        "word": "RESTOS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian rulers who were both political and religious leaders.",
+    "audioQuestion": "audios/question-gobernantes-egipcios.mp3",
+    "correctAnswer": "FARAONES",
+    "options": [
+      {
+        "word": "FARAONES",
+        "emoji": "👑",
+        "isCorrect": true
+      },
+      {
+        "word": "REYES",
+        "emoji": "🤴",
+        "isCorrect": false
+      },
+      {
+        "word": "EMPERADORES",
+        "emoji": "👑",
+        "isCorrect": false
+      },
+      {
+        "word": "DIOSES",
+        "emoji": "⚡",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the Mesopotamian king who created one of the first written law codes.",
+    "audioQuestion": "audios/question-hammurabi.mp3",
+    "correctAnswer": "HAMMURABI",
+    "options": [
+      {
+        "word": "HAMMURABI",
+        "emoji": "⚖️",
+        "isCorrect": true
+      },
+      {
+        "word": "NABUCODONOSOR",
+        "emoji": "🏰",
+        "isCorrect": false
+      },
+      {
+        "word": "SARGÓN",
+        "emoji": "⚔️",
+        "isCorrect": false
+      },
+      {
+        "word": "ASURBANIPAL",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the main occupation that allowed ancient civilizations to develop near rivers.",
+    "audioQuestion": "audios/question-agricultura.mp3",
+    "correctAnswer": "AGRICULTURA",
+    "options": [
+      {
+        "word": "AGRICULTURA",
+        "emoji": "🌾",
+        "isCorrect": true
+      },
+      {
+        "word": "GANADERÍA",
+        "emoji": "🐄",
+        "isCorrect": false
+      },
+      {
+        "word": "PESCA",
+        "emoji": "🎣",
+        "isCorrect": false
+      },
+      {
+        "word": "COMERCIO",
+        "emoji": "💰",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the exchange of goods and services that developed between ancient cities.",
+    "audioQuestion": "audios/question-comercio.mp3",
+    "correctAnswer": "COMERCIO",
+    "options": [
+      {
+        "word": "COMERCIO",
+        "emoji": "💰",
+        "isCorrect": true
+      },
+      {
+        "word": "TRUEQUE",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "MERCADO",
+        "emoji": "🏪",
+        "isCorrect": false
+      },
+      {
+        "word": "ECONOMÍA",
+        "emoji": "📊",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the organized system of leadership that governed ancient civilizations.",
+    "audioQuestion": "audios/question-gobierno.mp3",
+    "correctAnswer": "GOBIERNO",
+    "options": [
+      {
+        "word": "GOBIERNO",
+        "emoji": "🏛️",
+        "isCorrect": true
+      },
+      {
+        "word": "MONARQUÍA",
+        "emoji": "👑",
+        "isCorrect": false
+      },
+      {
+        "word": "DEMOCRACIA",
+        "emoji": "🗳️",
+        "isCorrect": false
+      },
+      {
+        "word": "IMPERIO",
+        "emoji": "⚔️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian monuments built as eternal tombs for their rulers.",
+    "audioQuestion": "audios/question-piramides-giza.mp3",
+    "correctAnswer": "PIRÁMIDES DE GIZA",
+    "options": [
+      {
+        "word": "PIRÁMIDES DE GIZA",
+        "emoji": "🔺",
+        "isCorrect": true
+      },
+      {
+        "word": "ZIGURATS DE UR",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "TEMPLO DE KARNAK",
+        "emoji": "⛩️",
+        "isCorrect": false
+      },
+      {
+        "word": "ESFINGE DE GIZA",
+        "emoji": "🦁",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the Mesopotamian name meaning 'land between rivers'.",
+    "audioQuestion": "audios/question-tierra-entre-rios.mp3",
+    "correctAnswer": "MESOPOTAMIA",
+    "options": [
+      {
+        "word": "MESOPOTAMIA",
+        "emoji": "🏞️",
+        "isCorrect": true
+      },
+      {
+        "word": "CALDEA",
+        "emoji": "🏜️",
+        "isCorrect": false
+      },
+      {
+        "word": "ASIRIA",
+        "emoji": "⚔️",
+        "isCorrect": false
+      },
+      {
+        "word": "SUMERIA",
+        "emoji": "🏛️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian plant-based material used for writing before paper was invented.",
+    "audioQuestion": "audios/question-papiro-nilo.mp3",
+    "correctAnswer": "PAPIRO",
+    "options": [
+      {
+        "word": "PAPIRO",
+        "emoji": "📄",
+        "isCorrect": true
+      },
+      {
+        "word": "CORTEZA",
+        "emoji": "🌳",
+        "isCorrect": false
+      },
+      {
+        "word": "HOJA",
+        "emoji": "🍃",
+        "isCorrect": false
+      },
+      {
+        "word": "TELA",
+        "emoji": "🧵",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the scientific and cultural progress made by ancient civilizations in various fields.",
+    "audioQuestion": "audios/question-desarrollo-cultural.mp3",
+    "correctAnswer": "DESARROLLO CULTURAL",
+    "options": [
+      {
+        "word": "DESARROLLO CULTURAL",
+        "emoji": "🎨",
+        "isCorrect": true
+      },
+      {
+        "word": "TECNOLOGÍA",
+        "emoji": "🔧",
+        "isCorrect": false
+      },
+      {
+        "word": "CIVILIZACIÓN",
+        "emoji": "🏛️",
+        "isCorrect": false
+      },
+      {
+        "word": "PROGRESO",
+        "emoji": "📈",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the natural phenomenon that deposited fertile soil along river banks in ancient times.",
+    "audioQuestion": "audios/question-inundaciones.mp3",
+    "correctAnswer": "INUNDACIONES",
+    "options": [
+      {
+        "word": "INUNDACIONES",
+        "emoji": "🌊",
+        "isCorrect": true
+      },
+      {
+        "word": "LLUVIAS",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
+        "word": "TORMENTAS",
+        "emoji": "⛈️",
+        "isCorrect": false
+      },
+      {
+        "word": "DESBORDAMIENTOS",
+        "emoji": "💧",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian process of removing organs and drying the body for preservation.",
+    "audioQuestion": "audios/question-proceso-momificacion.mp3",
+    "correctAnswer": "MOMIFICACIÓN",
+    "options": [
+      {
+        "word": "MOMIFICACIÓN",
+        "emoji": "🗿",
+        "isCorrect": true
+      },
+      {
+        "word": "EMBALSAMAMIENTO",
+        "emoji": "💀",
+        "isCorrect": false
+      },
+      {
+        "word": "DESSECACIÓN",
+        "emoji": "🌵",
+        "isCorrect": false
+      },
+      {
+        "word": "CONSERVACIÓN",
+        "emoji": "🧪",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the Mesopotamian innovation that helped farmers cultivate land more efficiently.",
+    "audioQuestion": "audios/question-arado-rueda.mp3",
+    "correctAnswer": "ARADO",
+    "options": [
+      {
+        "word": "ARADO",
+        "emoji": "🚜",
+        "isCorrect": true
+      },
+      {
+        "word": "AZADA",
+        "emoji": "⚒️",
+        "isCorrect": false
+      },
+      {
+        "word": "PALA",
+        "emoji": "🔨",
+        "isCorrect": false
+      },
+      {
+        "word": "TRILLA",
+        "emoji": "🌾",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the ancient Egyptian structure that served as eternal resting places for pharaohs.",
+    "audioQuestion": "audios/question-tumba-faraon.mp3",
+    "correctAnswer": "PIRÁMIDE",
+    "options": [
+      {
+        "word": "PIRÁMIDE",
+        "emoji": "🔺",
+        "isCorrect": true
+      },
+      {
+        "word": "MAUSOLEO",
+        "emoji": "⛪",
+        "isCorrect": false
+      },
+      {
+        "word": "SEPULCRO",
+        "emoji": "⚰️",
+        "isCorrect": false
+      },
+      {
+        "word": "Cripta",
+        "emoji": "🗝️",
+        "isCorrect": false
+      }
+    ]
+  }
+]

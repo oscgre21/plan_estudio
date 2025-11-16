@@ -12,5 +12,12 @@
     "description": "Generated from social-science-study-guide.md.pdf",
     "vocabularyFile": "vocabulary-data-social-science-jearlenis.json",
     "scienceQuizFile": "science-quiz-data-social-science-jearlenis.json"
+  },
+  {
+    "id": "sociales-aslan-es-v2",
+    "name": "SOCIALES Aslan ES V2",
+    "description": "Generated from Guia_Estudio_Sociales.md.pdf",
+    "vocabularyFile": "vocabulary-data-sociales-aslan-es-v2.json",
+    "scienceQuizFile": "science-quiz-data-sociales-aslan-es-v2.json"
   }
 ]

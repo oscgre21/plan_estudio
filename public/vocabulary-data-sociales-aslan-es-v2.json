@@ -1,0 +1,1190 @@
+[
+  {
+    "word": "CIVILIZACIONES",
+    "en": "Civilizations",
+    "sentenceES": "Las civilizaciones antiguas se desarrollaron cerca de los ríos.",
+    "sentenceEN": "Ancient civilizations developed near rivers.",
+    "options": [
+      {
+        "emoji": "🏛️",
+        "label": "CIVILIZACIONES",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏗️",
+        "label": "CONSTRUCCIONES",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "CONTINENTES",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌊",
+        "label": "CORRIENTES",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Grupos humanos organizados con cultura, gobierno y tecnología. / Groups of organized humans with culture, government and technology.",
+    "audioWord": "audios/word-civilizaciones.mp3",
+    "audioSentence": "audios/sentence-las-civilizaciones-antiguas-se-desarrollaron-cerca-de-los-rios.mp3",
+    "wordEmoji": "🏛️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3db.png"
+  },
+  {
+    "word": "MESOPOTAMIA",
+    "en": "Mesopotamia",
+    "sentenceES": "Mesopotamia significa 'tierra entre ríos'.",
+    "sentenceEN": "Mesopotamia means 'land between rivers'.",
+    "options": [
+      {
+        "emoji": "🏞️",
+        "label": "MESOPOTAMIA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🗻",
+        "label": "MONTAÑA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏜️",
+        "label": "DESIERTO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌴",
+        "label": "OASIS",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Antigua civilización entre los ríos Tigris y Éufrates. / Ancient civilization between the Tigris and Euphrates rivers.",
+    "audioWord": "audios/word-mesopotamia.mp3",
+    "audioSentence": "audios/sentence-mesopotamia-significa-tierra-entre-rios.mp3",
+    "wordEmoji": "🏞️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3de.png"
+  },
+  {
+    "word": "RÍOS",
+    "en": "Rivers",
+    "sentenceES": "Los ríos proporcionaban agua y alimento a las civilizaciones.",
+    "sentenceEN": "Rivers provided water and food to civilizations.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "RÍOS",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💧",
+        "label": "GOTAS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌧️",
+        "label": "LLUVIAS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚡",
+        "label": "RAYOS",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Corrientes de agua natural que eran esenciales para la vida. / Natural water currents that were essential for life.",
+    "audioWord": "audios/word-rios.mp3",
+    "audioSentence": "audios/sentence-los-rios-proporcionaban-agua-y-alimento-a-las-civilizaciones.mp3",
+    "wordEmoji": "🌊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30a.png"
+  },
+  {
+    "word": "TIGRIS",
+    "en": "Tigris",
+    "sentenceES": "El río Tigris era uno de los ríos principales de Mesopotamia.",
+    "sentenceEN": "The Tigris River was one of the main rivers of Mesopotamia.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "TIGRIS",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🐅",
+        "label": "TIGRE",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌾",
+        "label": "TRIGO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌲",
+        "label": "ÁRBOL",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uno de los dos ríos entre los que se desarrolló Mesopotamia. / One of the two rivers between which Mesopotamia developed.",
+    "audioWord": "audios/word-tigris.mp3",
+    "audioSentence": "audios/sentence-el-rio-tigris-era-uno-de-los-rios-principales-de-mesopotamia.mp3",
+    "wordEmoji": "🌊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30a.png"
+  },
+  {
+    "word": "ÉUFRATES",
+    "en": "Euphrates",
+    "sentenceES": "El Éufrates era el segundo río importante de Mesopotamia.",
+    "sentenceEN": "The Euphrates was the second important river of Mesopotamia.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "ÉUFRATES",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌡️",
+        "label": "TEMPERATURA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌪️",
+        "label": "TORMENTA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌈",
+        "label": "ARCOÍRIS",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Segundo río que formaba Mesopotamia junto al Tigris. / Second river that formed Mesopotamia together with the Tigris.",
+    "audioWord": "audios/word-eufrates.mp3",
+    "audioSentence": "audios/sentence-el-eufrates-era-el-segundo-rio-importante-de-mesopotamia.mp3",
+    "wordEmoji": "🌊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30a.png"
+  },
+  {
+    "word": "NILO",
+    "en": "Nile",
+    "sentenceES": "El río Nilo era fundamental para la civilización egipcia.",
+    "sentenceEN": "The Nile River was fundamental for Egyptian civilization.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "NILO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🐊",
+        "label": "COCODRILO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌙",
+        "label": "LUNA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⭐",
+        "label": "ESTRELLA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Río más largo del mundo, cuna de la civilización egipcia. / Longest river in the world, cradle of Egyptian civilization.",
+    "audioWord": "audios/word-nilo.mp3",
+    "audioSentence": "audios/sentence-el-rio-nilo-era-fundamental-para-la-civilizacion-egipcia.mp3",
+    "wordEmoji": "🌊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30a.png"
+  },
+  {
+    "word": "CUNEIFORME",
+    "en": "Cuneiform",
+    "sentenceES": "La escritura cuneiforme usaba símbolos en forma de cuña.",
+    "sentenceEN": "Cuneiform writing used wedge-shaped symbols.",
+    "options": [
+      {
+        "emoji": "🔺",
+        "label": "CUNEIFORME",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📐",
+        "label": "GEOMÉTRICO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌀",
+        "label": "ESPIRAL",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚪",
+        "label": "CÍRCULO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Primer sistema de escritura con símbolos de forma triangular. / First writing system with triangular symbols.",
+    "audioWord": "audios/word-cuneiforme.mp3",
+    "audioSentence": "audios/sentence-la-escritura-cuneiforme-usaba-simbolos-en-forma-de-cuna.mp3",
+    "wordEmoji": "🔺",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f53a.png"
+  },
+  {
+    "word": "JEROGLÍFICOS",
+    "en": "Hieroglyphs",
+    "sentenceES": "Los jeroglíficos egipcios usaban imágenes y símbolos.",
+    "sentenceEN": "Egyptian hieroglyphs used images and symbols.",
+    "options": [
+      {
+        "emoji": "🖼️",
+        "label": "JEROGLÍFICOS",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔤",
+        "label": "ABECEDARIO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔢",
+        "label": "NÚMEROS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔣",
+        "label": "CÓDIGO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sistema de escritura egipcio con dibujos y símbolos. / Egyptian writing system with drawings and symbols.",
+    "audioWord": "audios/word-jeroglificos.mp3",
+    "audioSentence": "audios/sentence-los-jeroglificos-egipcios-usaban-imagenes-y-simbolos.mp3",
+    "wordEmoji": "🖼️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f5bc.png"
+  },
+  {
+    "word": "ZIGURAT",
+    "en": "Ziggurat",
+    "sentenceES": "Los zigurats eran templos escalonados en Mesopotamia.",
+    "sentenceEN": "Ziggurats were stepped temples in Mesopotamia.",
+    "options": [
+      {
+        "emoji": "🔺",
+        "label": "ZIGURAT",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⛪",
+        "label": "IGLESIA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🕌",
+        "label": "MEZQUITA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⛩️",
+        "label": "TEMPLO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Templo mesopotámico en forma de pirámide escalonada. / Mesopotamian temple in the shape of a stepped pyramid.",
+    "audioWord": "audios/word-zigurat.mp3",
+    "audioSentence": "audios/sentence-los-zigurats-eran-templos-escalonados-en-mesopotamia.mp3",
+    "wordEmoji": "🔺",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f53a.png"
+  },
+  {
+    "word": "PIRÁMIDES",
+    "en": "Pyramids",
+    "sentenceES": "Las pirámides de Egipto eran tumbas para los faraones.",
+    "sentenceEN": "The pyramids of Egypt were tombs for the pharaohs.",
+    "options": [
+      {
+        "emoji": "🔺",
+        "label": "PIRÁMIDES",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏰",
+        "label": "CASTILLOS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏯",
+        "label": "PALACIOS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏛️",
+        "label": "MONUMENTOS",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Construcciones egipcias en forma de pirámide para enterrar faraones. / Egyptian pyramid-shaped buildings to bury pharaohs.",
+    "audioWord": "audios/word-piramides.mp3",
+    "audioSentence": "audios/sentence-las-piramides-de-egipto-eran-tumbas-para-los-faraones.mp3",
+    "wordEmoji": "🔺",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f53a.png"
+  },
+  {
+    "word": "FARAÓN",
+    "en": "Pharaoh",
+    "sentenceES": "El faraón era considerado un dios viviente en Egipto.",
+    "sentenceEN": "The pharaoh was considered a living god in Egypt.",
+    "options": [
+      {
+        "emoji": "👑",
+        "label": "FARAÓN",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🤴",
+        "label": "PRÍNCIPE",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👸",
+        "label": "REINA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🦸",
+        "label": "HÉROE",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rey de Egipto considerado dios en la Tierra. / King of Egypt considered a god on Earth.",
+    "audioWord": "audios/word-faraon.mp3",
+    "audioSentence": "audios/sentence-el-faraon-era-considerado-un-dios-viviente-en-egipto.mp3",
+    "wordEmoji": "👑",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f451.png"
+  },
+  {
+    "word": "MOMIFICACIÓN",
+    "en": "Mummification",
+    "sentenceES": "La momificación preservaba el cuerpo para la vida después de la muerte.",
+    "sentenceEN": "Mummification preserved the body for the afterlife.",
+    "options": [
+      {
+        "emoji": "🧻",
+        "label": "MOMIFICACIÓN",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧪",
+        "label": "EXPERIMENTO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔬",
+        "label": "INVESTIGACIÓN",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💉",
+        "label": "INYECCIÓN",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Proceso egipcio para conservar cuerpos después de la muerte. / Egyptian process to preserve bodies after death.",
+    "audioWord": "audios/word-momificacion.mp3",
+    "audioSentence": "audios/sentence-la-momificacion-preservaba-el-cuerpo-para-la-vida-despues-de-la-muerte.mp3",
+    "wordEmoji": "🧻",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9fb.png"
+  },
+  {
+    "word": "PAPIRO",
+    "en": "Papyrus",
+    "sentenceES": "El papiro era un material para escribir hecho de plantas.",
+    "sentenceEN": "Papyrus was a writing material made from plants.",
+    "options": [
+      {
+        "emoji": "📜",
+        "label": "PAPIRO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📄",
+        "label": "PAPEL",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📰",
+        "label": "PERIÓDICO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📖",
+        "label": "LIBRO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Material de escritura egipcio hecho de plantas del Nilo. / Egyptian writing material made from Nile plants.",
+    "audioWord": "audios/word-papiro.mp3",
+    "audioSentence": "audios/sentence-el-papiro-era-un-material-para-escribir-hecho-de-plantas.mp3",
+    "wordEmoji": "📜",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4dc.png"
+  },
+  {
+    "word": "IRRIGACIÓN",
+    "en": "Irrigation",
+    "sentenceES": "Los sistemas de irrigación controlaban el agua para los cultivos.",
+    "sentenceEN": "Irrigation systems controlled water for crops.",
+    "options": [
+      {
+        "emoji": "💧",
+        "label": "IRRIGACIÓN",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚡",
+        "label": "ELECTRICIDAD",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔥",
+        "label": "CALOR",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❄️",
+        "label": "FRÍO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sistema para llevar agua a los campos de cultivo. / System to bring water to crop fields.",
+    "audioWord": "audios/word-irrigacion.mp3",
+    "audioSentence": "audios/sentence-los-sistemas-de-irrigacion-controlaban-el-agua-para-los-cultivos.mp3",
+    "wordEmoji": "💧",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4a7.png"
+  },
+  {
+    "word": "RUEDA",
+    "en": "Wheel",
+    "sentenceES": "La rueda fue un invento revolucionario en Mesopotamia.",
+    "sentenceEN": "The wheel was a revolutionary invention in Mesopotamia.",
+    "options": [
+      {
+        "emoji": "⚙️",
+        "label": "RUEDA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔨",
+        "label": "MARTILLO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔧",
+        "label": "LLAVE",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🪓",
+        "label": "HACHA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Invento mesopotámico que revolucionó el transporte. / Mesopotamian invention that revolutionized transportation.",
+    "audioWord": "audios/word-rueda.mp3",
+    "audioSentence": "audios/sentence-la-rueda-fue-un-invento-revolucionario-en-mesopotamia.mp3",
+    "wordEmoji": "⚙️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2699.png"
+  },
+  {
+    "word": "ARADO",
+    "en": "Plow",
+    "sentenceES": "El arado mejoró la agricultura en Mesopotamia.",
+    "sentenceEN": "The plow improved agriculture in Mesopotamia.",
+    "options": [
+      {
+        "emoji": "🚜",
+        "label": "ARADO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌾",
+        "label": "TRIGO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌱",
+        "label": "SEMILLA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌽",
+        "label": "MAÍZ",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Herramienta para labrar la tierra y sembrar cultivos. / Tool for plowing land and planting crops.",
+    "audioWord": "audios/word-arado.mp3",
+    "audioSentence": "audios/sentence-el-arado-mejoró-la-agricultura-en-mesopotamia.mp3",
+    "wordEmoji": "🚜",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f69c.png"
+  },
+  {
+    "word": "CÓDIGO",
+    "en": "Code",
+    "sentenceES": "El Código de Hammurabi tenía 282 leyes escritas.",
+    "sentenceEN": "The Code of Hammurabi had 282 written laws.",
+    "options": [
+      {
+        "emoji": "📜",
+        "label": "CÓDIGO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📋",
+        "label": "LISTA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📊",
+        "label": "GRÁFICO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📈",
+        "label": "ESTADÍSTICA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Conjunto de leyes escritas de la antigua Mesopotamia. / Set of written laws from ancient Mesopotamia.",
+    "audioWord": "audios/word-codigo.mp3",
+    "audioSentence": "audios/sentence-el-codigo-de-hammurabi-tenia-282-leyes-escritas.mp3",
+    "wordEmoji": "📜",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4dc.png"
+  },
+  {
+    "word": "INUNDACIONES",
+    "en": "Floods",
+    "sentenceES": "Las inundaciones dejaban tierra fértil para cultivar.",
+    "sentenceEN": "Floods left fertile land for cultivation.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "INUNDACIONES",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌪️",
+        "label": "TORNADO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌋",
+        "label": "VOLCÁN",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌩️",
+        "label": "TORMENTA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Desbordamiento de ríos que depositaba tierra fértil. / River overflow that deposited fertile soil.",
+    "audioWord": "audios/word-inundaciones.mp3",
+    "audioSentence": "audios/sentence-las-inundaciones-dejaban-tierra-fertil-para-cultivar.mp3",
+    "wordEmoji": "🌊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30a.png"
+  },
+  {
+    "word": "FÉRTIL",
+    "en": "Fertile",
+    "sentenceES": "La tierra fértil permitía mejores cosechas.",
+    "sentenceEN": "Fertile land allowed better harvests.",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "FÉRTIL",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏜️",
+        "label": "ÁRIDA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗻",
+        "label": "ROCOSA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❄️",
+        "label": "HELADA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tierra rica en nutrientes para cultivos. / Soil rich in nutrients for crops.",
+    "audioWord": "audios/word-fertil.mp3",
+    "audioSentence": "audios/sentence-la-tierra-fertil-permitia-mejores-cosechas.mp3",
+    "wordEmoji": "🌱",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f331.png"
+  },
+  {
+    "word": "AGRICULTURA",
+    "en": "Agriculture",
+    "sentenceES": "La agricultura era la base de las civilizaciones antiguas.",
+    "sentenceEN": "Agriculture was the basis of ancient civilizations.",
+    "options": [
+      {
+        "emoji": "🌾",
+        "label": "AGRICULTURA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏭",
+        "label": "INDUSTRIA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏗️",
+        "label": "CONSTRUCCIÓN",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "ARTE",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Cultivo de plantas y crianza de animales para alimento. / Cultivation of plants and raising of animals for food.",
+    "audioWord": "audios/word-agricultura.mp3",
+    "audioSentence": "audios/sentence-la-agricultura-era-la-base-de-las-civilizaciones-antiguas.mp3",
+    "wordEmoji": "🌾",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f33e.png"
+  },
+  {
+    "word": "COMERCIO",
+    "en": "Trade",
+    "sentenceES": "El comercio entre ciudades era muy importante.",
+    "sentenceEN": "Trade between cities was very important.",
+    "options": [
+      {
+        "emoji": "💰",
+        "label": "COMERCIO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚔️",
+        "label": "GUERRA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "TEATRO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎪",
+        "label": "CIRCO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Intercambio de productos entre diferentes pueblos. / Exchange of products between different peoples.",
+    "audioWord": "audios/word-comercio.mp3",
+    "audioSentence": "audios/sentence-el-comercio-entre-ciudades-era-muy-importante.mp3",
+    "wordEmoji": "💰",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4b0.png"
+  },
+  {
+    "word": "ESCRITURA",
+    "en": "Writing",
+    "sentenceES": "La escritura permitía registrar información permanentemente.",
+    "sentenceEN": "Writing allowed information to be recorded permanently.",
+    "options": [
+      {
+        "emoji": "✍️",
+        "label": "ESCRITURA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🗣️",
+        "label": "HABLA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👂",
+        "label": "OIDO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👁️",
+        "label": "VISTA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sistema de símbolos para representar palabras e ideas. / System of symbols to represent words and ideas.",
+    "audioWord": "audios/word-escritura.mp3",
+    "audioSentence": "audios/sentence-la-escritura-permitia-registrar-informacion-permanentemente.mp3",
+    "wordEmoji": "✍️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/270d.png"
+  },
+  {
+    "word": "GOBIERNO",
+    "en": "Government",
+    "sentenceES": "Las civilizaciones tenían un gobierno organizado.",
+    "sentenceEN": "Civilizations had an organized government.",
+    "options": [
+      {
+        "emoji": "🏛️",
+        "label": "GOBIERNO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏫",
+        "label": "ESCUELA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏥",
+        "label": "HOSPITAL",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏪",
+        "label": "TIENDA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sistema de organización y control de una sociedad. / System of organization and control of a society.",
+    "audioWord": "audios/word-gobierno.mp3",
+    "audioSentence": "audios/sentence-las-civilizaciones-tenian-un-gobierno-organizado.mp3",
+    "wordEmoji": "🏛️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3db.png"
+  },
+  {
+    "word": "TABLILLAS",
+    "en": "Tablets",
+    "sentenceES": "Las tablillas de arcilla guardaban la escritura cuneiforme.",
+    "sentenceEN": "Clay tablets preserved cuneiform writing.",
+    "options": [
+      {
+        "emoji": "📋",
+        "label": "TABLILLAS",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📚",
+        "label": "LIBROS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📰",
+        "label": "PERIÓDICOS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📓",
+        "label": "CUADERNOS",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Placas de arcilla donde escribían los mesopotámicos. / Clay plates where Mesopotamians wrote.",
+    "audioWord": "audios/word-tablillas.mp3",
+    "audioSentence": "audios/sentence-las-tablillas-de-arcilla-guardaban-la-escritura-cuneiforme.mp3",
+    "wordEmoji": "📋",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4cb.png"
+  },
+  {
+    "word": "ESTILETE",
+    "en": "Stylus",
+    "sentenceES": "El estilete era una herramienta puntiaguda para escribir.",
+    "sentenceEN": "The stylus was a pointed tool for writing.",
+    "options": [
+      {
+        "emoji": "✏️",
+        "label": "ESTILETE",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🖊️",
+        "label": "PLUMA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🖍️",
+        "label": "LÁPIZ",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🖌️",
+        "label": "PINCEL",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Instrumento de metal o madera para grabar en arcilla. / Metal or wood instrument for engraving on clay.",
+    "audioWord": "audios/word-estilete.mp3",
+    "audioSentence": "audios/sentence-el-estilete-era-una-herramienta-puntiaguda-para-escribir.mp3",
+    "wordEmoji": "✏️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/270f.png"
+  },
+  {
+    "word": "UR",
+    "en": "Ur",
+    "sentenceES": "Ur era una de las principales ciudades de Mesopotamia.",
+    "sentenceEN": "Ur was one of the main cities of Mesopotamia.",
+    "options": [
+      {
+        "emoji": "🏙️",
+        "label": "UR",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌆",
+        "label": "URUK",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌃",
+        "label": "NÍNIVE",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌇",
+        "label": "BABILONIA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Importante ciudad estado de la antigua Mesopotamia. / Important city-state of ancient Mesopotamia.",
+    "audioWord": "audios/word-ur.mp3",
+    "audioSentence": "audios/sentence-ur-era-una-de-las-principales-ciudades-de-mesopotamia.mp3",
+    "wordEmoji": "🏙️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3d9.png"
+  },
+  {
+    "word": "BABILONIA",
+    "en": "Babylon",
+    "sentenceES": "Babilonia fue una gran ciudad mesopotámica.",
+    "sentenceEN": "Babylon was a great Mesopotamian city.",
+    "options": [
+      {
+        "emoji": "🏰",
+        "label": "BABILONIA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏛️",
+        "label": "ATENAS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏯",
+        "label": "ROMA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏗️",
+        "label": "TROYA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Ciudad famosa por el Código de Hammurabi. / City famous for the Code of Hammurabi.",
+    "audioWord": "audios/word-babilonia.mp3",
+    "audioSentence": "audios/sentence-babilonia-fue-una-gran-ciudad-mesopotamica.mp3",
+    "wordEmoji": "🏰",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3f0.png"
+  },
+  {
+    "word": "GIZA",
+    "en": "Giza",
+    "sentenceES": "Las pirámides más famosas están en Giza.",
+    "sentenceEN": "The most famous pyramids are in Giza.",
+    "options": [
+      {
+        "emoji": "🔺",
+        "label": "GIZA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏜️",
+        "label": "SAQQARA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌅",
+        "label": "LUXOR",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌄",
+        "label": "KARNAK",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Lugar donde están las grandes pirámides de Egipto. / Place where the great pyramids of Egypt are located.",
+    "audioWord": "audios/word-giza.mp3",
+    "audioSentence": "audios/sentence-las-piramides-mas-famosas-estan-en-giza.mp3",
+    "wordEmoji": "🔺",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f53a.png"
+  },
+  {
+    "word": "ESCribas",
+    "en": "Scribes",
+    "sentenceES": "Los escribas eran los únicos que conocían los jeroglíficos.",
+    "sentenceEN": "Scribes were the only ones who knew hieroglyphs.",
+    "options": [
+      {
+        "emoji": "✍️",
+        "label": "ESCribas",
+        "isCorrect": true
+      },
+      {
+        "emoji": "👨‍🌾",
+        "label": "GRANJEROS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👨‍🔧",
+        "label": "ARTESANOS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👨‍⚕️",
+        "label": "MÉDICOS",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Personas especializadas en escribir jeroglíficos en el antiguo Egipto. / People specialized in writing hieroglyphs in ancient Egypt.",
+    "audioWord": "audios/word-escribas.mp3",
+    "audioSentence": "audios/sentence-los-escribas-eran-los-unicos-que-conocian-los-jeroglificos.mp3",
+    "wordEmoji": "✍️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/270d.png"
+  },
+  {
+    "word": "MÉDICINA",
+    "en": "Medicine",
+    "sentenceES": "Los egipcios desarrollaron avances en medicina.",
+    "sentenceEN": "The Egyptians developed advances in medicine.",
+    "options": [
+      {
+        "emoji": "⚕️",
+        "label": "MÉDICINA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔬",
+        "label": "CIENCIA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧮",
+        "label": "MATEMÁTICAS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "ARTE",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Conocimientos sobre salud y enfermedades en el antiguo Egipto. / Knowledge about health and diseases in ancient Egypt.",
+    "audioWord": "audios/word-medicina.mp3",
+    "audioSentence": "audios/sentence-los-egipcios-desarrollaron-avances-en-medicina.mp3",
+    "wordEmoji": "⚕️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2695.png"
+  },
+  {
+    "word": "MATEMÁTICAS",
+    "en": "Mathematics",
+    "sentenceES": "Los egipcios usaban las matemáticas para construir.",
+    "sentenceEN": "The Egyptians used mathematics for building.",
+    "options": [
+      {
+        "emoji": "🔢",
+        "label": "MATEMÁTICAS",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎵",
+        "label": "MÚSICA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "PINTURA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "TEATRO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Ciencia de los números usada en construcción y astronomía. / Science of numbers used in construction and astronomy.",
+    "audioWord": "audios/word-matematicas.mp3",
+    "audioSentence": "audios/sentence-los-egipcios-usaban-las-matematicas-para-construir.mp3",
+    "wordEmoji": "🔢",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f522.png"
+  },
+  {
+    "word": "ARQUITECTURA",
+    "en": "Architecture",
+    "sentenceES": "La arquitectura egipcia creó monumentos impresionantes.",
+    "sentenceEN": "Egyptian architecture created impressive monuments.",
+    "options": [
+      {
+        "emoji": "🏗️",
+        "label": "ARQUITECTURA",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎨",
+        "label": "ESCULTURA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "DANZA",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎼",
+        "label": "MÚSICA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Arte de diseñar y construir edificios monumentales. / Art of designing and constructing monumental buildings.",
+    "audioWord": "audios/word-arquitectura.mp3",
+    "audioSentence": "audios/sentence-la-arquitectura-egipcia-creo-monumentos-impresionantes.mp3",
+    "wordEmoji": "🏗️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3d7.png"
+  },
+  {
+    "word": "CALENDARIO",
+    "en": "Calendar",
+    "sentenceES": "Los egipcios inventaron un calendario basado en el Nilo.",
+    "sentenceEN": "The Egyptians invented a calendar based on the Nile.",
+    "options": [
+      {
+        "emoji": "📅",
+        "label": "CALENDARIO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏰",
+        "label": "RELOJ",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⌛",
+        "label": "TIEMPO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🕐",
+        "label": "HORA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sistema para medir el tiempo basado en las inundaciones del Nilo. / System for measuring time based on Nile floods.",
+    "audioWord": "audios/word-calendario.mp3",
+    "audioSentence": "audios/sentence-los-egipcios-inventaron-un-calendario-basado-en-el-nilo.mp3",
+    "wordEmoji": "📅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4c5.png"
+  },
+  {
+    "word": "TRANSPORTE",
+    "en": "Transportation",
+    "sentenceES": "Los ríos servían como vía de transporte y comercio.",
+    "sentenceEN": "Rivers served as transportation and trade routes.",
+    "options": [
+      {
+        "emoji": "🚢",
+        "label": "TRANSPORTE",
+        "isCorrect": true
+      },
+      {
+        "emoji": "✈️",
+        "label": "AVIÓN",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚗",
+        "label": "COCHE",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚂",
+        "label": "TREN",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Movimiento de personas y productos por los ríos. / Movement of people and products along rivers.",
+    "audioWord": "audios/word-transporte.mp3",
+    "audioSentence": "audios/sentence-los-rios-servian-como-via-de-transporte-y-comercio.mp3",
+    "wordEmoji": "🚢",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f6a2.png"
+  },
+  {
+    "word": "DESARROLLO",
+    "en": "Development",
+    "sentenceES": "El desarrollo cultural fue posible gracias a los ríos.",
+    "sentenceEN": "Cultural development was possible thanks to rivers.",
+    "options": [
+      {
+        "emoji": "📈",
+        "label": "DESARROLLO",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📉",
+        "label": "DISMINUCIÓN",
+        "isCorrect": false
+      },
+      {
+        "emoji": "➖",
+        "label": "REDUCCIÓN",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❌",
+        "label": "DESTRUCCIÓN",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Progreso y avance de las civilizaciones antiguas. / Progress and advancement of ancient civilizations.",
+    "audioWord": "audios/word-desarrollo.mp3",
+    "audioSentence": "audios/sentence-el-desarrollo-cultural-fue-posible-gracias-a-los-rios.mp3",
+    "wordEmoji": "📈",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4c8.png"
+  },
+  {
+    "word": "AVANCES",
+    "en": "Advances",
+    "sentenceES": "Los avances tecnológicos mejoraban la vida diaria.",
+    "sentenceEN": "Technological advances improved daily life.",
+    "options": [
+      {
+        "emoji": "🚀",
+        "label": "AVANCES",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏳",
+        "label": "ATRASOS",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔙",
+        "label": "RETROCESO",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⬅️",
+        "label": "REGRESO",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mejoras e innovaciones en tecnología y cultura. / Improvements and innovations in technology and culture.",
+    "audioWord": "audios/word-avances.mp3",
+    "audioSentence": "audios/sentence-los-avances-tecnologicos-mejoraban-la-vida-diaria.mp3",
+    "wordEmoji": "🚀",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f680.png"
+  }
+]
