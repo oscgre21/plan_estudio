@@ -1,9 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const { LanguageManager } = require('../utils/language-config');
 
 class ScienceQuizGenerator {
-    constructor(ollamaClient) {
+    constructor(ollamaClient, languageConfig) {
         this.ollamaClient = ollamaClient;
+        this.languageConfig = languageConfig;
         this.promptTemplate = fs.readFileSync(
             path.join(__dirname, '../prompts/science-quiz-prompt.txt'),
             'utf8'
@@ -17,9 +19,9 @@ class ScienceQuizGenerator {
      * @returns {Promise<Array>} - Quiz data array
      */
     async generate(documentText, examName = 'Generated Quiz') {
-        console.log('\n📚 Generating Science Quiz...');
+        console.log(`\n📚 Generating Science Quiz in ${this.languageConfig.nativeName}...`);
 
-        const prompt = this.promptTemplate.replace('{DOCUMENT_TEXT}', documentText);
+        const prompt = this.preparePrompt(documentText);
 
         try {
             const quizData = await this.ollamaClient.generateJSONWithRetry(prompt, 3, {
@@ -43,6 +45,43 @@ class ScienceQuizGenerator {
             console.error('❌ Error generating science quiz:', error.message);
             throw error;
         }
+    }
+
+    /**
+     * Prepare prompt with language-specific placeholders replaced
+     */
+    preparePrompt(documentText) {
+        let prompt = this.promptTemplate
+            .replace(/{DOCUMENT_TEXT}/g, documentText)
+            .replace(/{PRIMARY_LANGUAGE}/g, this.languageConfig.name)
+            .replace(/{PRIMARY_LANGUAGE_NATIVE}/g, this.languageConfig.nativeName)
+            .replace(/{AUDIO_PREFIX}/g, this.languageConfig.audioPrefix);
+
+        // Add secondary language info if available
+        if (this.languageConfig.secondaryLanguage) {
+            const secondaryInfo = `- Secondary Language: ${this.languageConfig.secondaryName} (${this.languageConfig.secondaryNativeName})`;
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_INFO}/g, secondaryInfo);
+
+            // Add translation instruction
+            const translationInstruction = LanguageManager.getTranslationInstruction(this.languageConfig);
+            prompt = prompt.replace(/{TRANSLATION_INSTRUCTION}/g, translationInstruction);
+
+            // Add secondary fields example
+            const secondaryFields = LanguageManager.getSecondaryFieldsExample(this.languageConfig);
+            prompt = prompt.replace(/{SECONDARY_FIELDS_EXAMPLE}/g, secondaryFields);
+
+            // Add secondary language rules
+            const secondaryRules = `- Secondary language fields (${this.languageConfig.secondaryQuestionField}, ${this.languageConfig.secondaryExplanationField}) are REQUIRED`;
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_RULES}/g, secondaryRules);
+        } else {
+            // Remove placeholders for monolingual generation
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_INFO}/g, '');
+            prompt = prompt.replace(/{TRANSLATION_INSTRUCTION}/g, '');
+            prompt = prompt.replace(/{SECONDARY_FIELDS_EXAMPLE}/g, '');
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_RULES}/g, '');
+        }
+
+        return prompt;
     }
 
     /**
@@ -82,22 +121,24 @@ class ScienceQuizGenerator {
                 }
             }
 
-            // Ensure translations exist
-            if (!item.questionES) {
-                console.warn(`⚠️  Question ${index + 1} missing Spanish translation`);
-                item.questionES = item.question;
-            }
+            // Ensure secondary language fields exist if configured
+            if (this.languageConfig.secondaryLanguage) {
+                if (!item[this.languageConfig.secondaryQuestionField]) {
+                    console.warn(`⚠️  Question ${index + 1} missing secondary language question (${this.languageConfig.secondaryQuestionField})`);
+                    item[this.languageConfig.secondaryQuestionField] = item.question;
+                }
 
-            if (!item.explanationES) {
-                console.warn(`⚠️  Question ${index + 1} missing Spanish explanation`);
-                item.explanationES = item.explanation || '';
+                if (!item[this.languageConfig.secondaryExplanationField]) {
+                    console.warn(`⚠️  Question ${index + 1} missing secondary language explanation (${this.languageConfig.secondaryExplanationField})`);
+                    item[this.languageConfig.secondaryExplanationField] = item.explanation || '';
+                }
             }
 
             // Generate audio filename if missing
             if (!item.audioQuestion) {
                 const type = item.type === 'true-false' ? 'tf' : 'q';
                 const slug = this.slugify(item.question.substring(0, 50));
-                item.audioQuestion = `audios/english-${type}${index + 1}-${slug}.mp3`;
+                item.audioQuestion = `audios/${this.languageConfig.audioPrefix}-${type}${index + 1}-${slug}.mp3`;
             }
 
             return item;

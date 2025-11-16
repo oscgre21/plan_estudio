@@ -1,0 +1,992 @@
+[
+  {
+    "word": "ARTÍCULO EXPOSITIVO",
+    "en": "expository article",
+    "sentenceES": "El artículo expositivo sobre los delfines explicó muchas curiosidades marinas.",
+    "sentenceEN": "The expository article about dolphins explained many marine curiosities.",
+    "options": [
+      {
+        "emoji": "📰",
+        "label": "artículo expositivo",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📝",
+        "label": "cuento corto",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📖",
+        "label": "poema lírico",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📚",
+        "label": "novela histórica",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Texto que informa o explica un tema de forma clara y objetiva. / A text that informs or explains a topic clearly and objectively.",
+    "audioWord": "audios/word-articulo-expositivo.mp3",
+    "audioSentence": "audios/sentence-articulo-expositivo.mp3",
+    "wordEmoji": "📰",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4f0.png"
+  },
+  {
+    "word": "INTRODUCCIÓN",
+    "en": "introduction",
+    "sentenceES": "La introducción del artículo presentó el tema de los delfines.",
+    "sentenceEN": "The introduction of the article presented the topic of dolphins.",
+    "options": [
+      {
+        "emoji": "🔑",
+        "label": "introducción",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔚",
+        "label": "conclusión",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📌",
+        "label": "desarrollo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📍",
+        "label": "resumen",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Primera parte que presenta el tema y capta la atención. / First part that presents the topic and captures attention.",
+    "audioWord": "audios/word-introduccion.mp3",
+    "audioSentence": "audios/sentence-introduccion.mp3",
+    "wordEmoji": "🔑",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f511.png"
+  },
+  {
+    "word": "DESARROLLO",
+    "en": "body",
+    "sentenceES": "El desarrollo del texto incluye datos y ejemplos sobre los delfines.",
+    "sentenceEN": "The body of the text includes data and examples about dolphins.",
+    "options": [
+      {
+        "emoji": "📈",
+        "label": "desarrollo",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚪",
+        "label": "introducción",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎯",
+        "label": "conclusión",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📊",
+        "label": "título",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Parte central que explica el tema con detalles y ejemplos. / Central part that explains the topic with details and examples.",
+    "audioWord": "audios/word-desarrollo.mp3",
+    "audioSentence": "audios/sentence-desarrollo.mp3",
+    "wordEmoji": "📈",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4c8.png"
+  },
+  {
+    "word": "CONCLUSIÓN",
+    "en": "conclusion",
+    "sentenceES": "La conclusión resume las ideas principales del artículo.",
+    "sentenceEN": "The conclusion summarizes the main ideas of the article.",
+    "options": [
+      {
+        "emoji": "🔚",
+        "label": "conclusión",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔑",
+        "label": "introducción",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📌",
+        "label": "desarrollo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📖",
+        "label": "párrafo",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Parte final que cierra el tema y resume ideas clave. / Final part that closes the topic and summarizes key ideas.",
+    "audioWord": "audios/word-conclusion.mp3",
+    "audioSentence": "audios/sentence-conclusion.mp3",
+    "wordEmoji": "🔚",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f51a.png"
+  },
+  {
+    "word": "OBJETIVO",
+    "en": "objective",
+    "sentenceES": "El artículo presentó información objetiva sobre los delfines.",
+    "sentenceEN": "The article presented objective information about dolphins.",
+    "options": [
+      {
+        "emoji": "⚖️",
+        "label": "objetivo",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💭",
+        "label": "opinativo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❤️",
+        "label": "emotivo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "subjetivo",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sin opiniones personales, basado solo en hechos verificables. / Without personal opinions, based only on verifiable facts.",
+    "audioWord": "audios/word-objetivo.mp3",
+    "audioSentence": "audios/sentence-objetivo.mp3",
+    "wordEmoji": "⚖️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2696.png"
+  },
+  {
+    "word": "CLASIFICACIÓN",
+    "en": "classification",
+    "sentenceES": "La clasificación de las palabras ayuda a entender su formación.",
+    "sentenceEN": "The classification of words helps understand their formation.",
+    "options": [
+      {
+        "emoji": "📊",
+        "label": "clasificación",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔍",
+        "label": "definición",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📏",
+        "label": "comparación",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📝",
+        "label": "descripción",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Agrupar elementos en categorías según sus características. / Grouping elements into categories according to their characteristics.",
+    "audioWord": "audios/word-clasificacion.mp3",
+    "audioSentence": "audios/sentence-clasificacion.mp3",
+    "wordEmoji": "📊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4ca.png"
+  },
+  {
+    "word": "PALABRA SIMPLE",
+    "en": "simple word",
+    "sentenceES": "Casa es una palabra simple porque no se puede dividir.",
+    "sentenceEN": "Casa is a simple word because it cannot be divided.",
+    "options": [
+      {
+        "emoji": "🔤",
+        "label": "palabra simple",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔗",
+        "label": "palabra compuesta",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔧",
+        "label": "palabra parasintética",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📚",
+        "label": "palabra compleja",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tiene una sola raíz y no se puede dividir en partes con significado. / It has a single root and cannot be divided into meaningful parts.",
+    "audioWord": "audios/word-palabra-simple.mp3",
+    "audioSentence": "audios/sentence-palabra-simple.mp3",
+    "wordEmoji": "🔤",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f524.png"
+  },
+  {
+    "word": "PALABRA COMPUESTA",
+    "en": "compound word",
+    "sentenceES": "Paraguas es una palabra compuesta: para + aguas.",
+    "sentenceEN": "Paraguas is a compound word: para + aguas.",
+    "options": [
+      {
+        "emoji": "🔗",
+        "label": "palabra compuesta",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔤",
+        "label": "palabra simple",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔧",
+        "label": "palabra parasintética",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📖",
+        "label": "palabra derivada",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Se forma uniendo dos o más palabras simples. / It is formed by joining two or more simple words.",
+    "audioWord": "audios/word-palabra-compuesta.mp3",
+    "audioSentence": "audios/sentence-palabra-compuesta.mp3",
+    "wordEmoji": "🔗",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f517.png"
+  },
+  {
+    "word": "PALABRA PARASINTÉTICA",
+    "en": "parasynthetic word",
+    "sentenceES": "Aterrizar es una palabra parasintética: a- + tierra + -izar.",
+    "sentenceEN": "Aterrizar is a parasynthetic word: a- + tierra + -izar.",
+    "options": [
+      {
+        "emoji": "🔧",
+        "label": "palabra parasintética",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔗",
+        "label": "palabra compuesta",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔤",
+        "label": "palabra simple",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚙️",
+        "label": "palabra técnica",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Se forma con prefijo + palabra + sufijo; al quitar una parte no existe. / It is formed with prefix + word + suffix; removing one part makes it nonexistent.",
+    "audioWord": "audios/word-palabra-parasintetica.mp3",
+    "audioSentence": "audios/sentence-palabra-parasintetica.mp3",
+    "wordEmoji": "🔧",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f527.png"
+  },
+  {
+    "word": "PARAGUAS",
+    "en": "umbrella",
+    "sentenceES": "El paraguas protege de la lluvia.",
+    "sentenceEN": "The umbrella protects from the rain.",
+    "options": [
+      {
+        "emoji": "☂️",
+        "label": "paraguas",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧥",
+        "label": "abrigo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👒",
+        "label": "sombrero",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧤",
+        "label": "guantes",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: para + aguas. Sirve para protegerse de la lluvia. / Compound word: para + aguas. Used to protect from rain.",
+    "audioWord": "audios/word-paraguas.mp3",
+    "audioSentence": "audios/sentence-paraguas.mp3",
+    "wordEmoji": "☂️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2602.png"
+  },
+  {
+    "word": "GIRASOL",
+    "en": "sunflower",
+    "sentenceES": "El girasol gira hacia el sol durante el día.",
+    "sentenceEN": "The sunflower turns toward the sun during the day.",
+    "options": [
+      {
+        "emoji": "🌻",
+        "label": "girasol",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌹",
+        "label": "rosa",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌷",
+        "label": "tulipán",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌺",
+        "label": "hibisco",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: gira + sol. Flor que sigue al sol. / Compound word: gira + sol. Flower that follows the sun.",
+    "audioWord": "audios/word-girasol.mp3",
+    "audioSentence": "audios/sentence-girasol.mp3",
+    "wordEmoji": "🌻",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f33b.png"
+  },
+  {
+    "word": "ROMPECABEZAS",
+    "en": "puzzle",
+    "sentenceES": "Armé un rompecabezas de mil piezas.",
+    "sentenceEN": "I assembled a thousand-piece puzzle.",
+    "options": [
+      {
+        "emoji": "🧩",
+        "label": "rompecabezas",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎯",
+        "label": "diana",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎲",
+        "label": "dados",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎮",
+        "label": "videojuego",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: rompe + cabezas. Juego de armar piezas. / Compound word: rompe + cabezas. Game of assembling pieces.",
+    "audioWord": "audios/word-rompecabezas.mp3",
+    "audioSentence": "audios/sentence-rompecabezas.mp3",
+    "wordEmoji": "🧩",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9e9.png"
+  },
+  {
+    "word": "ATERIZAR",
+    "en": "to land",
+    "sentenceES": "El avión va a aterrizar en diez minutos.",
+    "sentenceEN": "The plane is going to land in ten minutes.",
+    "options": [
+      {
+        "emoji": "✈️",
+        "label": "aterrizar",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🛫",
+        "label": "despegar",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚁",
+        "label": "volar",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛩️",
+        "label": "pilotar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra parasintética: a- + tierra + -izar. No existe 'terrizar'. / Parasynthetic word: a- + tierra + -izar. 'Terrizar' does not exist.",
+    "audioWord": "audios/word-aterrizar.mp3",
+    "audioSentence": "audios/sentence-aterrizar.mp3",
+    "wordEmoji": "✈️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2708.png"
+  },
+  {
+    "word": "EMPAPLEAR",
+    "en": "to wallpaper",
+    "sentenceES": "Vamos a empapelar la habitación de flores.",
+    "sentenceEN": "We are going to wallpaper the room with flowers.",
+    "options": [
+      {
+        "emoji": "🧻",
+        "label": "empapelar",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🖌️",
+        "label": "pintar",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔨",
+        "label": "clavar",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔧",
+        "label": "construir",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra parasintética: em- + papel + -ar. No existe 'papelar'. / Parasynthetic word: em- + papel + -ar. 'Papelar' does not exist.",
+    "audioWord": "audios/word-empapelar.mp3",
+    "audioSentence": "audios/sentence-empapelar.mp3",
+    "wordEmoji": "🧻",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9fb.png"
+  },
+  {
+    "word": "DESALMADO",
+    "en": "heartless",
+    "sentenceES": "El villano fue desalmado con los pobres.",
+    "sentenceEN": "The villain was heartless with the poor.",
+    "options": [
+      {
+        "emoji": "💔",
+        "label": "desalmado",
+        "isCorrect": true
+      },
+      {
+        "emoji": "😇",
+        "label": "bondadoso",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤗",
+        "label": "cariñoso",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😊",
+        "label": "amable",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra parasintética: des- + alma + -ado. No existe 'almado'. / Parasynthetic word: des- + alma + -ado. 'Almado' does not exist.",
+    "audioWord": "audios/word-desalmado.mp3",
+    "audioSentence": "audios/sentence-desalmado.mp3",
+    "wordEmoji": "💔",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f494.png"
+  },
+  {
+    "word": "ENROJECER",
+    "en": "to redden",
+    "sentenceES": "El sol hace enrojecer la piel.",
+    "sentenceEN": "The sun makes the skin redden.",
+    "options": [
+      {
+        "emoji": "🔴",
+        "label": "enrojecer",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔵",
+        "label": "enazular",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🟢",
+        "label": "enverdecer",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🟡",
+        "label": "enamarillar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra parasintética: en- + rojo + -ecer. No existe 'rojecer'. / Parasynthetic word: en- + rojo + -ecer. 'Rojecer' does not exist.",
+    "audioWord": "audios/word-enrojecer.mp3",
+    "audioSentence": "audios/sentence-enrojecer.mp3",
+    "wordEmoji": "🔴",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f534.png"
+  },
+  {
+    "word": "SACAPUNTAS",
+    "en": "pencil sharpener",
+    "sentenceES": "El sacapuntas dejó el lápiz muy afilado.",
+    "sentenceEN": "The pencil sharpener left the pencil very sharp.",
+    "options": [
+      {
+        "emoji": "✏️",
+        "label": "sacapuntas",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🖊️",
+        "label": "pluma",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📐",
+        "label": "regla",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📎",
+        "label": "clip",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: saca + puntas. Útil para afilar lápices. / Compound word: saca + puntas. Tool for sharpening pencils.",
+    "audioWord": "audios/word-sacapuntas.mp3",
+    "audioSentence": "audios/sentence-sacapuntas.mp3",
+    "wordEmoji": "✏️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/270f.png"
+  },
+  {
+    "word": "ABRELATAS",
+    "en": "can opener",
+    "sentenceES": "Necesito el abrelatas para abrir la lata de tomate.",
+    "sentenceEN": "I need the can opener to open the tomato can.",
+    "options": [
+      {
+        "emoji": "",
+        "label": "abrelatas",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔪",
+        "label": "cuchillo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🥄",
+        "label": "cuchara",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🍴",
+        "label": "tenedor",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: abre + latas. Utensilio para abrir latas. / Compound word: abre + latas. Utensil for opening cans.",
+    "audioWord": "audios/word-abrelatas.mp3",
+    "audioSentence": "audios/sentence-abrelatas.mp3",
+    "wordEmoji": "🥫",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f96b.png"
+  },
+  {
+    "word": "LAVAVAJILLAS",
+    "en": "dishwasher",
+    "sentenceES": "El lavavajillas limpió todos los platos.",
+    "sentenceEN": "The dishwasher cleaned all the dishes.",
+    "options": [
+      {
+        "emoji": "🍽️",
+        "label": "lavavajillas",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧽",
+        "label": "esponja",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧼",
+        "label": "jabón",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧹",
+        "label": "escoba",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: lava + vajillas. Máquina para lavar platos. / Compound word: lava + vajillas. Machine for washing dishes.",
+    "audioWord": "audios/word-lavavajillas.mp3",
+    "audioSentence": "audios/sentence-lavavajillas.mp3",
+    "wordEmoji": "🍽️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f37d.png"
+  },
+  {
+    "word": "PASATIEMPO",
+    "en": "pastime",
+    "sentenceES": "Leer es mi pasatiempo favorito.",
+    "sentenceEN": "Reading is my favorite pastime.",
+    "options": [
+      {
+        "emoji": "📚",
+        "label": "pasatiempo",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏰",
+        "label": "tiempo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📅",
+        "label": "calendario",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🕐",
+        "label": "reloj",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: pasa + tiempo. Actividad que entretiene. / Compound word: pasa + tiempo. Activity that entertains.",
+    "audioWord": "audios/word-pasatiempo.mp3",
+    "audioSentence": "audios/sentence-pasatiempo.mp3",
+    "wordEmoji": "📚",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4da.png"
+  },
+  {
+    "word": "MEDIANOCHE",
+    "en": "midnight",
+    "sentenceES": "La fiesta terminó a medianoche.",
+    "sentenceEN": "The party ended at midnight.",
+    "options": [
+      {
+        "emoji": "🕛",
+        "label": "medianoche",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌅",
+        "label": "amanecer",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌄",
+        "label": "atardecer",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌞",
+        "label": "mediodía",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: media + noche. Las doce de la noche. / Compound word: media + noche. Twelve o'clock at night.",
+    "audioWord": "audios/word-medianoche.mp3",
+    "audioSentence": "audios/sentence-medianoche.mp3",
+    "wordEmoji": "🕛",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f55b.png"
+  },
+  {
+    "word": "TELARAÑA",
+    "en": "spider web",
+    "sentenceES": "La telaraña brillaba en la luz del sol.",
+    "sentenceEN": "The spider web shone in the sunlight.",
+    "options": [
+      {
+        "emoji": "🕸️",
+        "label": "telaraña",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🕷️",
+        "label": "araña",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧵",
+        "label": "hilo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🪡",
+        "label": "aguja",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Palabra compuesta: tela + araña. Red que hacen las arañas. / Compound word: tela + araña. Net made by spiders.",
+    "audioWord": "audios/word-telarana.mp3",
+    "audioSentence": "audios/sentence-telarana.mp3",
+    "wordEmoji": "🕸️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f578.png"
+  },
+  {
+    "word": "TONO FORMAL",
+    "en": "formal tone",
+    "sentenceES": "El artículo usa un tono formal y serio.",
+    "sentenceEN": "The article uses a formal and serious tone.",
+    "options": [
+      {
+        "emoji": "👔",
+        "label": "tono formal",
+        "isCorrect": true
+      },
+      {
+        "emoji": "😂",
+        "label": "tono cómico",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😎",
+        "label": "tono informal",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤪",
+        "label": "tono loco",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Estilo serio y profesional, sin coloquialismos. / Serious and professional style, without colloquialisms.",
+    "audioWord": "audios/word-tono-formal.mp3",
+    "audioSentence": "audios/sentence-tono-formal.mp3",
+    "wordEmoji": "👔",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f454.png"
+  },
+  {
+    "word": "INFORMACIÓN VERIFICABLE",
+    "en": "verifiable information",
+    "sentenceES": "Los datos del artículo son información verificable.",
+    "sentenceEN": "The article's data is verifiable information.",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "información verificable",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❓",
+        "label": "información dudosa",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤥",
+        "label": "información falsa",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💭",
+        "label": "información imaginaria",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Datos que pueden comprobarse con fuentes confiables. / Data that can be checked with reliable sources.",
+    "audioWord": "audios/word-informacion-verificable.mp3",
+    "audioSentence": "audios/sentence-informacion-verificable.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
+  },
+  {
+    "word": "ESTRUCTURA ORGANIZADA",
+    "en": "organized structure",
+    "sentenceES": "El artículo tiene una estructura organizada en párrafos.",
+    "sentenceEN": "The article has an organized structure in paragraphs.",
+    "options": [
+      {
+        "emoji": "📋",
+        "label": "estructura organizada",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌀",
+        "label": "estructura caótica",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤯",
+        "label": "estructura confusa",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗑️",
+        "label": "estructura desordenada",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Presenta las ideas con un orden lógico y claro. / Presents ideas in a logical and clear order.",
+    "audioWord": "audios/word-estructura-organizada.mp3",
+    "audioSentence": "audios/sentence-estructura-organizada.mp3",
+    "wordEmoji": "📋",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4cb.png"
+  },
+  {
+    "word": "DATOS NUMÉRICOS",
+    "en": "numerical data",
+    "sentenceES": "El artículo incluye datos numéricos sobre los delfines.",
+    "sentenceEN": "The article includes numerical data about dolphins.",
+    "options": [
+      {
+        "emoji": "🔢",
+        "label": "datos numéricos",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎨",
+        "label": "datos artísticos",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "datos culturales",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌈",
+        "label": "datos coloridos",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Estadísticas, fechas, cantidades que respaldan la información. / Statistics, dates, quantities that support the information.",
+    "audioWord": "audios/word-datos-numericos.mp3",
+    "audioSentence": "audios/sentence-datos-numericos.mp3",
+    "wordEmoji": "🔢",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f522.png"
+  },
+  {
+    "word": "DEFINICIÓN",
+    "en": "definition",
+    "sentenceES": "La definición explica qué significa una palabra.",
+    "sentenceEN": "The definition explains what a word means.",
+    "options": [
+      {
+        "emoji": "📖",
+        "label": "definición",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🖼️",
+        "label": "imagen",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗣️",
+        "label": "opinión",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧩",
+        "label": "adivinanza",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Explicación clara del significado de un término. / Clear explanation of the meaning of a term.",
+    "audioWord": "audios/word-definicion.mp3",
+    "audioSentence": "audios/sentence-definicion.mp3",
+    "wordEmoji": "📖",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4d6.png"
+  },
+  {
+    "word": "COMPARACIÓN",
+    "en": "comparison",
+    "sentenceES": "La comparación muestra semejanzas entre dos cosas.",
+    "sentenceEN": "The comparison shows similarities between two things.",
+    "options": [
+      {
+        "emoji": "⚖️",
+        "label": "comparación",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧬",
+        "label": "clasificación",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔍",
+        "label": "definición",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📏",
+        "label": "medición",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Recuso que muestra cómo se parecen dos elementos. / Resource that shows how two elements are alike.",
+    "audioWord": "audios/word-comparacion.mp3",
+    "audioSentence": "audios/sentence-comparacion.mp3",
+    "wordEmoji": "⚖️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2696.png"
+  },
+  {
+    "word": "DESCRIPCIÓN",
+    "en": "description",
+    "sentenceES": "La descripción detalla cómo es el objeto.",
+    "sentenceEN": "The description details what the object is like.",
+    "options": [
+      {
+        "emoji": "📝",
+        "label": "descripción",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧮",
+        "label": "cálculo",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔬",
+        "label": "experimento",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📊",
+        "label": "estadística",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Detalle de las características de algo. / Detail of the characteristics of something.",
+    "audioWord": "audios/word-descripcion.mp3",
+    "audioSentence": "audios/sentence-descripcion.mp3",
+    "wordEmoji": "📝",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4dd.png"
+  },
+  {
+    "word": "EJEMPLO",
+    "en": "example",
+    "sentenceES": "El ejemplo ayuda a entender mejor el concepto.",
+    "sentenceEN": "The example helps to better understand the concept.",
+    "options": [
+      {
+        "emoji": "💡",
+        "label": "ejemplo",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎲",
+        "label": "azar",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧩",
+        "label": "rompecabezas",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌫️",
+        "label": "confusión",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Caso concreto que ilustra un tema o idea. / Concrete case that illustrates a topic or idea.",
+    "audioWord": "audios/word-ejemplo.mp3",
+    "audioSentence": "audios/sentence-ejemplo.mp3",
+    "wordEmoji": "💡",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4a1.png"
+  }
+]

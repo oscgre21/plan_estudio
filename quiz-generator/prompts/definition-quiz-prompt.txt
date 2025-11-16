@@ -3,58 +3,65 @@ You are an expert educational content creator. Based on the following study mate
 STUDY MATERIAL:
 {DOCUMENT_TEXT}
 
+LANGUAGE SETTINGS:
+- Primary Language: {PRIMARY_LANGUAGE} ({PRIMARY_LANGUAGE_NATIVE})
+{SECONDARY_LANGUAGE_INFO}
+
 INSTRUCTIONS:
 1. Extract 30-40 key concepts/terms from the material (aim for at least 30, maximum 40)
-2. For each term, create a definition-based question
-3. Provide 4 word options with emojis (one correct, three plausible distractors)
-4. Use clear, educational definitions
+2. For each term, create a definition-based question in {PRIMARY_LANGUAGE}
+3. Provide 4 word options with emojis (one correct, three plausible distractors) in {PRIMARY_LANGUAGE}
+4. Use clear, educational definitions in {PRIMARY_LANGUAGE}
 5. Choose appropriate emojis for each word option
+{TRANSLATION_INSTRUCTION}
 
 IMPORTANT FORMAT RULES:
 - Use ONLY double quotes for strings
 - Do NOT include any text before or after the JSON array
 - Return ONLY valid JSON - no markdown, no comments
 - Audio filenames pattern: "audios/question-{word}.mp3"
+- ALL content MUST be in {PRIMARY_LANGUAGE}
+{SECONDARY_LANGUAGE_RULES}
 
 JSON STRUCTURE:
 Return a JSON array where each element follows this format:
 
 {
-  "question": "This is a [definition of the concept].",
+  "question": "This is a [definition of the concept in {PRIMARY_LANGUAGE}].",
   "audioQuestion": "audios/question-word.mp3",
-  "correctAnswer": "CORRECT WORD",
+  "correctAnswer": "CORRECT WORD IN {PRIMARY_LANGUAGE}",
   "options": [
     {
-      "word": "CORRECT WORD",
+      "word": "CORRECT WORD IN {PRIMARY_LANGUAGE}",
       "emoji": "✅",
       "isCorrect": true
     },
     {
-      "word": "DISTRACTOR 1",
+      "word": "DISTRACTOR 1 IN {PRIMARY_LANGUAGE}",
       "emoji": "❌",
       "isCorrect": false
     },
     {
-      "word": "DISTRACTOR 2",
+      "word": "DISTRACTOR 2 IN {PRIMARY_LANGUAGE}",
       "emoji": "🔴",
       "isCorrect": false
     },
     {
-      "word": "DISTRACTOR 3",
+      "word": "DISTRACTOR 3 IN {PRIMARY_LANGUAGE}",
       "isCorrect": false
     }
   ]
 }
 
 GUIDELINES:
-- Definitions should be clear and educational (not just dictionary style)
+- Definitions should be clear and educational in {PRIMARY_LANGUAGE} (not just dictionary style)
 - Pattern: "This is a/an [description that clearly identifies the concept]"
-- Distractors should be related terms that could plausibly fit but are incorrect
+- Distractors should be related terms in {PRIMARY_LANGUAGE} that could plausibly fit but are incorrect
 - Not all options need emojis (optional for distractors)
 - All words should be UPPERCASE
 - Make sure correctAnswer exactly matches the correct option's word
 
-EXAMPLE:
+EXAMPLE FOR {PRIMARY_LANGUAGE}:
 {
   "question": "This is a large celestial body that orbits around a star.",
   "audioQuestion": "audios/question-planet.mp3",
@@ -81,5 +88,10 @@ EXAMPLE:
     }
   ]
 }
+
+CRITICAL:
+- ALL definitions and words must be in {PRIMARY_LANGUAGE}
+- Generate at least 30 definition questions
+- Clear, educational style
 
 Generate the definition quiz now. Return ONLY the JSON array, nothing else.

@@ -1,0 +1,69 @@
+You are an expert educational content creator specializing in vocabulary learning. Based on the following study material, generate vocabulary data in JSON format.
+
+STUDY MATERIAL:
+{DOCUMENT_TEXT}
+
+INSTRUCTIONS:
+1. Extract 30-40 key vocabulary words from the material (aim for at least 30, maximum 40)
+2. For each word, create:
+   - English word (uppercase)
+   - Spanish translation
+   - English sentence using the word
+   - Spanish sentence translation
+   - 4 emoji options (one correct, three distractors)
+   - Explanation in both languages
+   - Appropriate emoji representation
+3. Choose emojis that clearly represent the concepts
+4. Make distractor words related but incorrect
+
+IMPORTANT FORMAT RULES:
+- Use ONLY double quotes for strings
+- Do NOT include any text before or after the JSON array
+- Return ONLY valid JSON - no markdown, no comments
+- Audio filenames pattern: "audios/word-{word}.mp3" and "audios/sentence-{description}.mp3"
+- Emoji images from: "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/{unicode}.png"
+
+JSON STRUCTURE:
+Return a JSON array where each element follows this format:
+
+{
+  "word": "WORD",
+  "spanish": "Palabra",
+  "sentenceEN": "Example sentence in English using the word.",
+  "sentenceES": "Oración de ejemplo en español usando la palabra.",
+  "options": [
+    {
+      "emoji": "✅",
+      "label": "Correct Word",
+      "isCorrect": true
+    },
+    {
+      "emoji": "❌",
+      "label": "Distractor 1",
+      "isCorrect": false
+    },
+    {
+      "emoji": "🔴",
+      "label": "Distractor 2",
+      "isCorrect": false
+    },
+    {
+      "emoji": "🟦",
+      "label": "Distractor 3",
+      "isCorrect": false
+    }
+  ],
+  "explanation": "Explanation in English. Explicación en español.",
+  "audioWord": "audios/word-word.mp3",
+  "audioSentence": "audios/sentence-description.mp3",
+  "wordEmoji": "✅",
+  "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
+}
+
+EMOJI SELECTION TIPS:
+- Use clear, recognizable emojis
+- Match the concept directly when possible
+- Use consistent emoji categories (flags, objects, symbols)
+- Common emojis: 🏛️ (site), 🗿 (artifact), 🧬 (DNA), 🔬 (science), 📚 (book), etc.
+
+Generate the vocabulary data now. Return ONLY the JSON array, nothing else.

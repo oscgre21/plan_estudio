@@ -1,35 +1,30 @@
 const fs = require('fs');
 const path = require('path');
+const { LanguageManager } = require('../utils/language-config');
 
 class VocabularyGenerator {
-    constructor(ollamaClient) {
+    constructor(ollamaClient, languageConfig) {
         this.ollamaClient = ollamaClient;
+        this.languageConfig = languageConfig;
         this.promptTemplate = fs.readFileSync(
             path.join(__dirname, '../prompts/vocabulary-prompt.txt'),
             'utf8'
         );
     }
 
-    /**
-     * Generate vocabulary data from document text
-     * @param {string} documentText - The source material
-     * @returns {Promise<Array>} - Vocabulary data array
-     */
     async generate(documentText) {
-        console.log('\n📖 Generating Vocabulary Data...');
+        console.log(`\n📖 Generating Vocabulary Data in ${this.languageConfig.nativeName}...`);
 
-        const prompt = this.promptTemplate.replace('{DOCUMENT_TEXT}', documentText);
+        const prompt = this.preparePrompt(documentText);
 
         try {
             const vocabularyData = await this.ollamaClient.generateJSONWithRetry(prompt, 3, {
                 temperature: 0.7,
-                num_predict: 12000  // Increased for 30-40 words
+                num_predict: 12000
             });
 
-            // Validate and clean the data
             const validatedData = this.validateAndClean(vocabularyData);
 
-            // Check if we have enough vocabulary items
             if (validatedData.length < 30) {
                 console.warn(`⚠️  Warning: Only generated ${validatedData.length} vocabulary items (expected 30-40)`);
                 console.warn(`   Consider using a larger document or regenerating.`);
@@ -44,35 +39,59 @@ class VocabularyGenerator {
         }
     }
 
-    /**
-     * Validate and clean vocabulary data
-     */
+    preparePrompt(documentText) {
+        let prompt = this.promptTemplate
+            .replace(/{DOCUMENT_TEXT}/g, documentText)
+            .replace(/{PRIMARY_LANGUAGE}/g, this.languageConfig.name)
+            .replace(/{PRIMARY_LANGUAGE_NATIVE}/g, this.languageConfig.nativeName)
+            .replace(/{SENTENCE_FIELD}/g, this.languageConfig.sentenceField);
+
+        if (this.languageConfig.secondaryLanguage) {
+            const secondaryInfo = `- Secondary Language: ${this.languageConfig.secondaryName} (${this.languageConfig.secondaryNativeName})`;
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_INFO}/g, secondaryInfo);
+
+            const translationInstruction = `3. Include secondary language translation:
+   - Translation of word in ${this.languageConfig.secondaryName}
+   - Sentence in ${this.languageConfig.secondaryName}`;
+            prompt = prompt.replace(/{TRANSLATION_INSTRUCTION}/g, translationInstruction);
+
+            const secondaryWordField = `  "${this.languageConfig.secondaryLanguageCode}": "Translation in ${this.languageConfig.secondaryName}",`;
+            prompt = prompt.replace(/{SECONDARY_WORD_FIELD}/g, secondaryWordField);
+
+            const secondarySentenceField = `  "${this.languageConfig.secondarySentenceField}": "Example sentence in ${this.languageConfig.secondaryName}.",`;
+            prompt = prompt.replace(/{SECONDARY_SENTENCE_FIELD}/g, secondarySentenceField);
+
+            const secondaryExplanation = ` Explanation in ${this.languageConfig.secondaryName}`;
+            prompt = prompt.replace(/{SECONDARY_EXPLANATION}/g, secondaryExplanation);
+
+            const secondaryRules = `- Both primary and secondary language fields are REQUIRED`;
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_RULES}/g, secondaryRules);
+        } else {
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_INFO}/g, '');
+            prompt = prompt.replace(/{TRANSLATION_INSTRUCTION}/g, '');
+            prompt = prompt.replace(/{SECONDARY_WORD_FIELD}/g, '');
+            prompt = prompt.replace(/{SECONDARY_SENTENCE_FIELD}/g, '');
+            prompt = prompt.replace(/{SECONDARY_EXPLANATION}/g, '');
+            prompt = prompt.replace(/{SECONDARY_LANGUAGE_RULES}/g, '');
+        }
+
+        return prompt;
+    }
+
     validateAndClean(data) {
         if (!Array.isArray(data)) {
             throw new Error('Vocabulary data must be an array');
         }
 
         return data.map((item, index) => {
-            // Ensure required fields
             if (!item.word) {
                 throw new Error(`Vocabulary item ${index + 1} missing 'word' field`);
             }
 
-            if (!item.spanish) {
-                console.warn(`⚠️  Item ${index + 1} (${item.word}) missing Spanish translation`);
-                item.spanish = item.word;
+            if (!item[this.languageConfig.sentenceField]) {
+                throw new Error(`Vocabulary item ${index + 1} (${item.word}) missing sentence field`);
             }
 
-            if (!item.sentenceEN) {
-                throw new Error(`Vocabulary item ${index + 1} (${item.word}) missing 'sentenceEN' field`);
-            }
-
-            if (!item.sentenceES) {
-                console.warn(`⚠️  Item ${index + 1} (${item.word}) missing Spanish sentence`);
-                item.sentenceES = item.sentenceEN;
-            }
-
-            // Validate options
             if (!Array.isArray(item.options) || item.options.length !== 4) {
                 throw new Error(`Vocabulary item ${index + 1} (${item.word}) must have exactly 4 options`);
             }
@@ -82,51 +101,41 @@ class VocabularyGenerator {
                 throw new Error(`Vocabulary item ${index + 1} (${item.word}) must have exactly one correct option`);
             }
 
-            // Generate audio filenames if missing
             if (!item.audioWord) {
                 item.audioWord = `audios/word-${this.slugify(item.word)}.mp3`;
             }
 
             if (!item.audioSentence) {
-                const slug = this.slugify(item.sentenceEN.substring(0, 50));
+                const slug = this.slugify(item[this.languageConfig.sentenceField].substring(0, 50));
                 item.audioSentence = `audios/sentence-${slug}.mp3`;
             }
 
-            // Ensure wordEmoji exists
             if (!item.wordEmoji) {
                 const correctOption = item.options.find(opt => opt.isCorrect);
                 item.wordEmoji = correctOption.emoji || '📚';
             }
 
-            // Generate wordEmojiImage if missing
             if (!item.wordEmojiImage) {
                 item.wordEmojiImage = this.getEmojiImageURL(item.wordEmoji);
             }
 
-            // Ensure explanation exists
             if (!item.explanation) {
-                item.explanation = `${item.sentenceEN} ${item.sentenceES}`;
+                item.explanation = item[this.languageConfig.sentenceField];
             }
 
             return item;
         });
     }
 
-    /**
-     * Get Twemoji CDN URL for an emoji
-     */
     getEmojiImageURL(emoji) {
         try {
             const codePoint = emoji.codePointAt(0).toString(16);
             return `https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/${codePoint}.png`;
         } catch (error) {
-            return 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4da.png'; // Default book emoji
+            return 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4da.png';
         }
     }
 
-    /**
-     * Create URL-friendly slug from text
-     */
     slugify(text) {
         return text
             .toLowerCase()
@@ -136,9 +145,6 @@ class VocabularyGenerator {
             .substring(0, 40);
     }
 
-    /**
-     * Save vocabulary data to file
-     */
     saveToFile(data, outputPath) {
         const dir = path.dirname(outputPath);
         if (!fs.existsSync(dir)) {

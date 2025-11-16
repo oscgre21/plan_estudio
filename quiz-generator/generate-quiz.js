@@ -7,6 +7,7 @@ const path = require('path');
 const OllamaClient = require('./utils/ollama-client');
 const DocumentParser = require('./utils/document-parser');
 const AudioGenerator = require('./utils/audio-generator');
+const { LanguageManager } = require('./utils/language-config');
 
 // Import generators
 const ScienceQuizGenerator = require('./generators/science-quiz-generator');
@@ -28,11 +29,19 @@ const CONFIG = {
  * Main quiz generation function
  */
 async function generateQuiz(documentPath, testSetName, options = {}) {
+    // Get language configuration
+    const languageCode = options.language || 'en';
+    const languageConfig = LanguageManager.getLanguageConfig(languageCode);
+
     console.log('\n' + '='.repeat(60));
     console.log('🎓 AUTOMATED QUIZ GENERATOR');
     console.log('='.repeat(60));
     console.log(`📄 Document: ${documentPath}`);
     console.log(`📝 Test Set: ${testSetName}`);
+    console.log(`🌐 Language: ${languageConfig.nativeName} (${languageConfig.code})`);
+    if (languageConfig.secondaryLanguage) {
+        console.log(`   Secondary: ${languageConfig.secondaryNativeName} (${languageConfig.secondaryLanguage})`);
+    }
     console.log('='.repeat(60));
 
     try {
@@ -75,7 +84,7 @@ async function generateQuiz(documentPath, testSetName, options = {}) {
         // Step 4: Generate Science Quiz
         if (!options.skipScienceQuiz) {
             console.log('\n📚 Step 4: Generating Science Quiz...');
-            const scienceQuizGen = new ScienceQuizGenerator(ollamaClient);
+            const scienceQuizGen = new ScienceQuizGenerator(ollamaClient, languageConfig);
             const scienceQuizData = await scienceQuizGen.generate(cleanText, testSetName);
             const scienceQuizPath = path.join(CONFIG.outputDir, filenames.scienceQuiz);
             scienceQuizGen.saveToFile(scienceQuizData, scienceQuizPath);
@@ -92,7 +101,7 @@ async function generateQuiz(documentPath, testSetName, options = {}) {
         // Step 5: Generate Vocabulary Data
         if (!options.skipVocabulary) {
             console.log('\n📖 Step 5: Generating Vocabulary Data...');
-            const vocabularyGen = new VocabularyGenerator(ollamaClient);
+            const vocabularyGen = new VocabularyGenerator(ollamaClient, languageConfig);
             const vocabularyData = await vocabularyGen.generate(cleanText);
             const vocabularyPath = path.join(CONFIG.outputDir, filenames.vocabulary);
             vocabularyGen.saveToFile(vocabularyData, vocabularyPath);
@@ -109,7 +118,7 @@ async function generateQuiz(documentPath, testSetName, options = {}) {
         // Step 6: Generate Definition Quiz
         if (!options.skipDefinitionQuiz) {
             console.log('\n🔍 Step 6: Generating Definition Quiz...');
-            const definitionQuizGen = new DefinitionQuizGenerator(ollamaClient);
+            const definitionQuizGen = new DefinitionQuizGenerator(ollamaClient, languageConfig);
             const definitionQuizData = await definitionQuizGen.generate(cleanText);
             const definitionQuizPath = path.join(CONFIG.outputDir, filenames.definitionQuiz);
             definitionQuizGen.saveToFile(definitionQuizData, definitionQuizPath);
@@ -173,14 +182,39 @@ function parseArguments() {
         process.exit(0);
     }
 
+    // List supported languages
+    if (args.includes('--list-languages')) {
+        LanguageManager.printSupportedLanguages();
+        process.exit(0);
+    }
+
     const documentPath = args[0];
     const testSetName = args[1] || path.basename(documentPath, path.extname(documentPath));
+
+    // Extract language parameter
+    const languageIndex = args.findIndex(arg =>
+        arg === '--language' || arg === '-l' || arg === '--lang'
+    );
+
+    let languageCode = 'en'; // Default to English
+    if (languageIndex >= 0 && args[languageIndex + 1]) {
+        languageCode = args[languageIndex + 1].toLowerCase();
+
+        // Validate language
+        if (!LanguageManager.isSupported(languageCode)) {
+            console.error(`\n❌ Error: Unsupported language '${languageCode}'`);
+            console.error(`\nSupported languages: ${LanguageManager.getSupportedLanguages().join(', ')}`);
+            console.error(`\nUse --list-languages to see all available languages.\n`);
+            process.exit(1);
+        }
+    }
 
     const options = {
         skipScienceQuiz: args.includes('--skip-science-quiz'),
         skipVocabulary: args.includes('--skip-vocabulary'),
         skipDefinitionQuiz: args.includes('--skip-definition-quiz'),
-        skipAudio: args.includes('--skip-audio')
+        skipAudio: args.includes('--skip-audio'),
+        language: languageCode
     };
 
     return { documentPath, testSetName, options };
@@ -204,21 +238,38 @@ ARGUMENTS:
   test-set-name    Name for the test set (optional, defaults to filename)
 
 OPTIONS:
-  --skip-science-quiz       Skip science quiz generation
-  --skip-vocabulary         Skip vocabulary generation
-  --skip-definition-quiz    Skip definition quiz generation
-  --skip-audio             Skip audio generation
-  -h, --help               Show this help message
+  -l, --language, --lang <code>   Set output language (default: en)
+  --list-languages                Show all supported languages
+  --skip-science-quiz             Skip science quiz generation
+  --skip-vocabulary               Skip vocabulary generation
+  --skip-definition-quiz          Skip definition quiz generation
+  --skip-audio                    Skip audio generation
+  -h, --help                      Show this help message
+
+LANGUAGE OPTIONS:
+  en    English (with Spanish translation) - DEFAULT
+  es    Spanish (Español, with English translation)
+  fr    French (Français, monolingual)
+  de    German (Deutsch, monolingual)
+  pt    Portuguese (Português, monolingual)
+  it    Italian (Italiano, monolingual)
 
 EXAMPLES:
-  # Generate all quizzes from a PDF
+  # Generate all quizzes from a PDF in English (default)
   node generate-quiz.js study-material.pdf "Math Test"
 
-  # Generate only vocabulary and skip audio
-  node generate-quiz.js chapter1.txt --skip-science-quiz --skip-audio
+  # Generate in Spanish with English translation
+  node generate-quiz.js documento.pdf "Quiz de Matemáticas" --language es
+  node generate-quiz.js documento.pdf "Quiz de Matemáticas" -l es
 
-  # Generate from DOCX with custom name
-  node generate-quiz.js notes.docx "Biology Chapter 3"
+  # Generate in French (no translation)
+  node generate-quiz.js document.pdf "Quiz de Mathématiques" --lang fr
+
+  # Generate only vocabulary in Spanish, skip audio
+  node generate-quiz.js notas.txt "Vocabulario" -l es --skip-science-quiz --skip-audio
+
+  # List all available languages
+  node generate-quiz.js --list-languages
 
 REQUIREMENTS:
   - Ollama running locally (http://localhost:11434)

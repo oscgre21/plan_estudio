@@ -3,18 +3,22 @@ You are an expert educational content creator specializing in vocabulary learnin
 STUDY MATERIAL:
 {DOCUMENT_TEXT}
 
+LANGUAGE SETTINGS:
+- Primary Language: {PRIMARY_LANGUAGE} ({PRIMARY_LANGUAGE_NATIVE})
+{SECONDARY_LANGUAGE_INFO}
+
 INSTRUCTIONS:
 1. Extract 30-40 key vocabulary words from the material (aim for at least 30, maximum 40)
 2. For each word, create:
-   - English word (uppercase)
-   - Spanish translation
-   - English sentence using the word
-   - Spanish sentence translation
+   - Word in {PRIMARY_LANGUAGE} (uppercase)
+   - {PRIMARY_LANGUAGE} sentence using the word
    - 4 emoji options (one correct, three distractors)
-   - Explanation in both languages
+   - Explanation in {PRIMARY_LANGUAGE}
    - Appropriate emoji representation
+{TRANSLATION_INSTRUCTION}
 3. Choose emojis that clearly represent the concepts
 4. Make distractor words related but incorrect
+5. ALL primary content MUST be in {PRIMARY_LANGUAGE}
 
 IMPORTANT FORMAT RULES:
 - Use ONLY double quotes for strings
@@ -22,38 +26,37 @@ IMPORTANT FORMAT RULES:
 - Return ONLY valid JSON - no markdown, no comments
 - Audio filenames pattern: "audios/word-{word}.mp3" and "audios/sentence-{description}.mp3"
 - Emoji images from: "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/{unicode}.png"
+{SECONDARY_LANGUAGE_RULES}
 
 JSON STRUCTURE:
 Return a JSON array where each element follows this format:
 
 {
-  "word": "WORD",
-  "spanish": "Palabra",
-  "sentenceEN": "Example sentence in English using the word.",
-  "sentenceES": "Oración de ejemplo en español usando la palabra.",
-  "options": [
+  "word": "WORD IN {PRIMARY_LANGUAGE}",
+{SECONDARY_WORD_FIELD}  "{SENTENCE_FIELD}": "Example sentence in {PRIMARY_LANGUAGE} using the word.",
+{SECONDARY_SENTENCE_FIELD}  "options": [
     {
       "emoji": "✅",
-      "label": "Correct Word",
+      "label": "Correct Word in {PRIMARY_LANGUAGE}",
       "isCorrect": true
     },
     {
       "emoji": "❌",
-      "label": "Distractor 1",
+      "label": "Distractor 1 in {PRIMARY_LANGUAGE}",
       "isCorrect": false
     },
     {
       "emoji": "🔴",
-      "label": "Distractor 2",
+      "label": "Distractor 2 in {PRIMARY_LANGUAGE}",
       "isCorrect": false
     },
     {
       "emoji": "🟦",
-      "label": "Distractor 3",
+      "label": "Distractor 3 in {PRIMARY_LANGUAGE}",
       "isCorrect": false
     }
   ],
-  "explanation": "Explanation in English. Explicación en español.",
+  "explanation": "Explanation in {PRIMARY_LANGUAGE}.{SECONDARY_EXPLANATION}",
   "audioWord": "audios/word-word.mp3",
   "audioSentence": "audios/sentence-description.mp3",
   "wordEmoji": "✅",
@@ -65,5 +68,10 @@ EMOJI SELECTION TIPS:
 - Match the concept directly when possible
 - Use consistent emoji categories (flags, objects, symbols)
 - Common emojis: 🏛️ (site), 🗿 (artifact), 🧬 (DNA), 🔬 (science), 📚 (book), etc.
+
+CRITICAL:
+- ALL words, labels, sentences must be in {PRIMARY_LANGUAGE}
+- Generate at least 30 vocabulary items
+- Clear educational explanations
 
 Generate the vocabulary data now. Return ONLY the JSON array, nothing else.

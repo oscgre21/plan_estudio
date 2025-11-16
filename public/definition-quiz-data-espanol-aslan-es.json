@@ -1,0 +1,785 @@
+[
+  {
+    "question": "This is a text that explains or informs about a topic in a clear and objective way.",
+    "audioQuestion": "audios/question-articuloexpositivo.mp3",
+    "correctAnswer": "ARTÍCULO EXPOSITIVO",
+    "options": [
+      {
+        "word": "ARTÍCULO EXPOSITIVO",
+        "emoji": "📄",
+        "isCorrect": true
+      },
+      {
+        "word": "CUENTO",
+        "emoji": "📚",
+        "isCorrect": false
+      },
+      {
+        "word": "POEMA",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "CARTA",
+        "emoji": "✉️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the first part of an expository article that presents the topic and captures the reader's attention.",
+    "audioQuestion": "audios/question-introduccion.mp3",
+    "correctAnswer": "INTRODUCCIÓN",
+    "options": [
+      {
+        "word": "INTRODUCCIÓN",
+        "emoji": "🚪",
+        "isCorrect": true
+      },
+      {
+        "word": "DESARROLLO",
+        "emoji": "🔍",
+        "isCorrect": false
+      },
+      {
+        "word": "CONCLUSIÓN",
+        "emoji": "🔚",
+        "isCorrect": false
+      },
+      {
+        "word": "RESUMEN",
+        "emoji": "📋",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the part of an expository article where the topic is explained with details, examples, and arguments.",
+    "audioQuestion": "audios/question-desarrollo.mp3",
+    "correctAnswer": "DESARROLLO",
+    "options": [
+      {
+        "word": "DESARROLLO",
+        "emoji": "📈",
+        "isCorrect": true
+      },
+      {
+        "word": "INTRODUCCIÓN",
+        "emoji": "🚪",
+        "isCorrect": false
+      },
+      {
+        "word": "TÍTULO",
+        "emoji": "📖",
+        "isCorrect": false
+      },
+      {
+        "word": "CONCLUSIÓN",
+        "emoji": "🔚",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the final part of an expository article that summarizes the main ideas and closes the topic.",
+    "audioQuestion": "audios/question-conclusion.mp3",
+    "correctAnswer": "CONCLUSIÓN",
+    "options": [
+      {
+        "word": "CONCLUSIÓN",
+        "emoji": "🎯",
+        "isCorrect": true
+      },
+      {
+        "word": "DESARROLLO",
+        "emoji": "📈",
+        "isCorrect": false
+      },
+      {
+        "word": "INTRODUCCIÓN",
+        "emoji": "🚪",
+        "isCorrect": false
+      },
+      {
+        "word": "ÍNDICE",
+        "emoji": "📑",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a word that has only one root and cannot be divided into smaller meaningful parts.",
+    "audioQuestion": "audios/question-palabrasimple.mp3",
+    "correctAnswer": "PALABRA SIMPLE",
+    "options": [
+      {
+        "word": "PALABRA SIMPLE",
+        "emoji": "🔤",
+        "isCorrect": true
+      },
+      {
+        "word": "PALABRA COMPUESTA",
+        "emoji": "🔗",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRA PARASINTÉTICA",
+        "emoji": "🧩",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRA DERIVADA",
+        "emoji": "🌱",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a word formed by joining two or more simple words to create a new meaning.",
+    "audioQuestion": "audios/question-palabracompuesta.mp3",
+    "correctAnswer": "PALABRA COMPUESTA",
+    "options": [
+      {
+        "word": "PALABRA COMPUESTA",
+        "emoji": "🔗",
+        "isCorrect": true
+      },
+      {
+        "word": "PALABRA SIMPLE",
+        "emoji": "🔤",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRA PARASINTÉTICA",
+        "emoji": "🧩",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRA LARGA",
+        "emoji": "📏",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a word formed by adding a prefix and suffix to a root at the same time.",
+    "audioQuestion": "audios/question-palabraparasintetica.mp3",
+    "correctAnswer": "PALABRA PARASINTÉTICA",
+    "options": [
+      {
+        "word": "PALABRA PARASINTÉTICA",
+        "emoji": "🧩",
+        "isCorrect": true
+      },
+      {
+        "word": "PALABRA COMPUESTA",
+        "emoji": "🔗",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRA SIMPLE",
+        "emoji": "🔤",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRA COMPLEJA",
+        "emoji": "🧠",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an example of a simple word that means the star that illuminates our planet.",
+    "audioQuestion": "audios/question-sol.mp3",
+    "correctAnswer": "SOL",
+    "options": [
+      {
+        "word": "SOL",
+        "emoji": "☀️",
+        "isCorrect": true
+      },
+      {
+        "word": "GIRASOL",
+        "emoji": "🌻",
+        "isCorrect": false
+      },
+      {
+        "word": "PARASOL",
+        "emoji": "☂️",
+        "isCorrect": false
+      },
+      {
+        "word": "SOLEADO",
+        "emoji": "🌞",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means an object used to remove pencil points.",
+    "audioQuestion": "audios/question-sacapuntas.mp3",
+    "correctAnswer": "SACAPUNTAS",
+    "options": [
+      {
+        "word": "SACAPUNTAS",
+        "emoji": "✏️",
+        "isCorrect": true
+      },
+      {
+        "word": "PUNTA",
+        "emoji": "📍",
+        "isCorrect": false
+      },
+      {
+        "word": "LÁPIZ",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "PUNTILLA",
+        "emoji": "🔪",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word that means to descend from the air to the ground.",
+    "audioQuestion": "audios/question-aterrizar.mp3",
+    "correctAnswer": "ATERRIZAR",
+    "options": [
+      {
+        "word": "ATERRIZAR",
+        "emoji": "✈️",
+        "isCorrect": true
+      },
+      {
+        "word": "TIERRA",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "TERRAZA",
+        "emoji": "🏠",
+        "isCorrect": false
+      },
+      {
+        "word": "TERRITORIO",
+        "emoji": "🗺️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the characteristic of expository texts that means they present information without personal opinions.",
+    "audioQuestion": "audios/question-objetivo.mp3",
+    "correctAnswer": "OBJETIVO",
+    "options": [
+      {
+        "word": "OBJETIVO",
+        "emoji": "🎯",
+        "isCorrect": true
+      },
+      {
+        "word": "SUBJETIVO",
+        "emoji": "💭",
+        "isCorrect": false
+      },
+      {
+        "word": "PERSUASIVO",
+        "emoji": "🗣️",
+        "isCorrect": false
+      },
+      {
+        "word": "EMOTIVO",
+        "emoji": "❤️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the type of language used in expository articles that everyone can understand.",
+    "audioQuestion": "audios/question-lenguajeclaro.mp3",
+    "correctAnswer": "LENGUAJE CLARO",
+    "options": [
+      {
+        "word": "LENGUAJE CLARO",
+        "emoji": "💡",
+        "isCorrect": true
+      },
+      {
+        "word": "LENGUAJE TÉCNICO",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "LENGUAJE POÉTICO",
+        "emoji": "🌹",
+        "isCorrect": false
+      },
+      {
+        "word": "LENGUAJE VULGAR",
+        "emoji": "😤",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means a flower that turns toward the sun.",
+    "audioQuestion": "audios/question-girasol.mp3",
+    "correctAnswer": "GIRASOL",
+    "options": [
+      {
+        "word": "GIRASOL",
+        "emoji": "🌻",
+        "isCorrect": true
+      },
+      {
+        "word": "GIRAR",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "FLOR",
+        "emoji": "🌸",
+        "isCorrect": false
+      },
+      {
+        "word": "SOL",
+        "emoji": "☀️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word that means to cover walls with paper.",
+    "audioQuestion": "audios/question-empapelar.mp3",
+    "correctAnswer": "EMPAPELAR",
+    "options": [
+      {
+        "word": "EMPAPELAR",
+        "emoji": "🖼️",
+        "isCorrect": true
+      },
+      {
+        "word": "PAPEL",
+        "emoji": "📄",
+        "isCorrect": false
+      },
+      {
+        "word": "PARED",
+        "emoji": "🧱",
+        "isCorrect": false
+      },
+      {
+        "word": "PAPELERA",
+        "emoji": "🗑️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a simple word that means a place where people live.",
+    "audioQuestion": "audios/question-casa.mp3",
+    "correctAnswer": "CASA",
+    "options": [
+      {
+        "word": "CASA",
+        "emoji": "🏠",
+        "isCorrect": true
+      },
+      {
+        "word": "CASACA",
+        "emoji": "🧥",
+        "isCorrect": false
+      },
+      {
+        "word": "CASERO",
+        "emoji": "👨‍🍳",
+        "isCorrect": false
+      },
+      {
+        "word": "CASUCHA",
+        "emoji": "🏚️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means an object used to open cans.",
+    "audioQuestion": "audios/question-abrelatas.mp3",
+    "correctAnswer": "ABRELATAS",
+    "options": [
+      {
+        "word": "ABRELATAS",
+        "emoji": "🥫",
+        "isCorrect": true
+      },
+      {
+        "word": "ABRIR",
+        "emoji": "🚪",
+        "isCorrect": false
+      },
+      {
+        "word": "LATA",
+        "emoji": "🥤",
+        "isCorrect": false
+      },
+      {
+        "word": "LATERO",
+        "emoji": "👨‍🏭",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the characteristic of expository texts that means the information can be verified.",
+    "audioQuestion": "audios/question-informacionverificable.mp3",
+    "correctAnswer": "INFORMACIÓN VERIFICABLE",
+    "options": [
+      {
+        "word": "INFORMACIÓN VERIFICABLE",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "INFORMACIÓN FALSA",
+        "emoji": "❌",
+        "isCorrect": false
+      },
+      {
+        "word": "INFORMACIÓN SECRETA",
+        "emoji": "🤫",
+        "isCorrect": false
+      },
+      {
+        "word": "INFORMACIÓN OPINABLE",
+        "emoji": "🤔",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the tone used in expository articles that is serious and professional.",
+    "audioQuestion": "audios/question-tonoformal.mp3",
+    "correctAnswer": "TONO FORMAL",
+    "options": [
+      {
+        "word": "TONO FORMAL",
+        "emoji": "👔",
+        "isCorrect": true
+      },
+      {
+        "word": "TONO INFORMAL",
+        "emoji": "😎",
+        "isCorrect": false
+      },
+      {
+        "word": "TONO HUMORÍSTICO",
+        "emoji": "😂",
+        "isCorrect": false
+      },
+      {
+        "word": "TONO IRÓNICO",
+        "emoji": "🙄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a simple word that means a book or text to read.",
+    "audioQuestion": "audios/question-libro.mp3",
+    "correctAnswer": "LIBRO",
+    "options": [
+      {
+        "word": "LIBRO",
+        "emoji": "📚",
+        "isCorrect": true
+      },
+      {
+        "word": "LIBRETO",
+        "emoji": "🎭",
+        "isCorrect": false
+      },
+      {
+        "word": "LIBRERO",
+        "emoji": "📖",
+        "isCorrect": false
+      },
+      {
+        "word": "LIBRERÍA",
+        "emoji": "🏪",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means an activity to pass the time.",
+    "audioQuestion": "audios/question-pasatiempo.mp3",
+    "correctAnswer": "PASATIEMPO",
+    "options": [
+      {
+        "word": "PASATIEMPO",
+        "emoji": "🎮",
+        "isCorrect": true
+      },
+      {
+        "word": "TIEMPO",
+        "emoji": "⏰",
+        "isCorrect": false
+      },
+      {
+        "word": "PASAR",
+        "emoji": "🚶",
+        "isCorrect": false
+      },
+      {
+        "word": "PASAJE",
+        "emoji": "🎫",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word that means to become sad.",
+    "audioQuestion": "audios/question-entristecer.mp3",
+    "correctAnswer": "ENTRISTECER",
+    "options": [
+      {
+        "word": "ENTRISTECER",
+        "emoji": "😢",
+        "isCorrect": true
+      },
+      {
+        "word": "TRISTE",
+        "emoji": "😔",
+        "isCorrect": false
+      },
+      {
+        "word": "TRISTEZA",
+        "emoji": "💔",
+        "isCorrect": false
+      },
+      {
+        "word": "TRISTÓN",
+        "emoji": "😞",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a simple word that means the color of grass and leaves.",
+    "audioQuestion": "audios/question-verde.mp3",
+    "correctAnswer": "VERDE",
+    "options": [
+      {
+        "word": "VERDE",
+        "emoji": "🟢",
+        "isCorrect": true
+      },
+      {
+        "word": "VERDOSO",
+        "emoji": "🍃",
+        "isCorrect": false
+      },
+      {
+        "word": "VERDECER",
+        "emoji": "🌱",
+        "isCorrect": false
+      },
+      {
+        "word": "VERDURA",
+        "emoji": "🥬",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means midnight.",
+    "audioQuestion": "audios/question-medianoche.mp3",
+    "correctAnswer": "MEDIANOCHE",
+    "options": [
+      {
+        "word": "MEDIANOCHE",
+        "emoji": "🕛",
+        "isCorrect": true
+      },
+      {
+        "word": "NOCHE",
+        "emoji": "🌙",
+        "isCorrect": false
+      },
+      {
+        "word": "MEDIA",
+        "emoji": "➗",
+        "isCorrect": false
+      },
+      {
+        "word": "MEDIODÍA",
+        "emoji": "☀️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word that means to become red.",
+    "audioQuestion": "audios/question-enrojecer.mp3",
+    "correctAnswer": "ENROJECER",
+    "options": [
+      {
+        "word": "ENROJECER",
+        "emoji": "🔴",
+        "isCorrect": true
+      },
+      {
+        "word": "ROJO",
+        "emoji": "❤️",
+        "isCorrect": false
+      },
+      {
+        "word": "ROJEZ",
+        "emoji": "🍅",
+        "isCorrect": false
+      },
+      {
+        "word": "ROJIZO",
+        "emoji": "🌹",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a resource used in expository texts that explains what something means.",
+    "audioQuestion": "audios/question-definicion.mp3",
+    "correctAnswer": "DEFINICIÓN",
+    "options": [
+      {
+        "word": "DEFINICIÓN",
+        "emoji": "📖",
+        "isCorrect": true
+      },
+      {
+        "word": "DESCRIPCIÓN",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "COMPARACIÓN",
+        "emoji": "⚖️",
+        "isCorrect": false
+      },
+      {
+        "word": "CLASIFICACIÓN",
+        "emoji": "📊",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a resource used in expository texts that shows similarities between two things.",
+    "audioQuestion": "audios/question-comparacion.mp3",
+    "correctAnswer": "COMPARACIÓN",
+    "options": [
+      {
+        "word": "COMPARACIÓN",
+        "emoji": "⚖️",
+        "isCorrect": true
+      },
+      {
+        "word": "CONTRASTE",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "EJEMPLO",
+        "emoji": "💡",
+        "isCorrect": false
+      },
+      {
+        "word": "ANÁLOGO",
+        "emoji": "🔗",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the part of a word that carries its basic meaning and cannot be divided in simple words.",
+    "audioQuestion": "audios/question-raiz.mp3",
+    "correctAnswer": "RAÍZ",
+    "options": [
+      {
+        "word": "RAÍZ",
+        "emoji": "🌳",
+        "isCorrect": true
+      },
+      {
+        "word": "PREFIJO",
+        "emoji": "⬅️",
+        "isCorrect": false
+      },
+      {
+        "word": "SUFIJO",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "LEXEMA",
+        "emoji": "🔤",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means a spider's web.",
+    "audioQuestion": "audios/question-telarana.mp3",
+    "correctAnswer": "TELARAÑA",
+    "options": [
+      {
+        "word": "TELARAÑA",
+        "emoji": "🕸️",
+        "isCorrect": true
+      },
+      {
+        "word": "ARAÑA",
+        "emoji": "🕷️",
+        "isCorrect": false
+      },
+      {
+        "word": "TELA",
+        "emoji": "🧵",
+        "isCorrect": false
+      },
+      {
+        "word": "RED",
+        "emoji": "🕸️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word that means a person who works with stone.",
+    "audioQuestion": "audios/question-picapedrero.mp3",
+    "correctAnswer": "PICAPEDRERO",
+    "options": [
+      {
+        "word": "PICAPEDRERO",
+        "emoji": "⛏️",
+        "isCorrect": true
+      },
+      {
+        "word": "PIEDRA",
+        "emoji": "🪨",
+        "isCorrect": false
+      },
+      {
+        "word": "PICAR",
+        "emoji": "🔨",
+        "isCorrect": false
+      },
+      {
+        "word": "PEDRERO",
+        "emoji": "👷",
+        "isCorrect": false
+      }
+    ]
+  }
+]
