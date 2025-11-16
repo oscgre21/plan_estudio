@@ -1,0 +1,668 @@
+[
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Por qué las civilizaciones antiguas se establecían cerca de los ríos?",
+    "type": "multiple-choice",
+    "options": [
+      "Porque los ríos ofrecían agua, alimento, tierra fértil y transporte",
+      "Porque los ríos eran sagrados y protegían de enemigos",
+      "Porque los ríos evitaban las guerras entre ciudades",
+      "Porque los ríos generaban oro y plata"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Los ríos eran esenciales para la supervivencia: proporcionaban agua potable, peces como alimento, tierra fértil tras las inundaciones y vías naturales de comercio y transporte.",
+    "questionEN": "Why did ancient civilizations settle near rivers?",
+    "explanationEN": "Rivers were essential for survival: they provided drinking water, fish as food, fertile land after floods, and natural trade and transport routes.",
+    "audioQuestion": "audios/spanish-q1-rivers-civilizations.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Las inundaciones de los ríos dejaban sedimentos que enriquecían la tierra para la agricultura.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Las crecidas anuales depositaban limo y nutrientes, creando suelo fértil ideal para cultivos abundantes.",
+    "questionEN": "River floods left sediments that enriched the land for agriculture.",
+    "explanationEN": "Annual floods deposited silt and nutrients, creating fertile soil ideal for abundant crops.",
+    "audioQuestion": "audios/spanish-tf1-floods-fertility.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué significa literalmente 'Mesopotamia'?",
+    "type": "multiple-choice",
+    "options": [
+      "Tierra entre ríos",
+      "Río sagrado",
+      "Ciudad de las palmeras",
+      "Valle de los reyes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "El término griego 'Mesopotamia' significa 'tierra entre ríos', refiriéndose al Tigris y el Éufrates.",
+    "questionEN": "What does 'Mesopotamia' literally mean?",
+    "explanationEN": "The Greek term 'Mesopotamia' means 'land between rivers', referring to the Tigris and Euphrates.",
+    "audioQuestion": "audios/spanish-q2-mesopotamia-meaning.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "La escritura cuneiforme se realizaba sobre hojas de papiro.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "La cuneiforme se grababa en tablillas de arcilla húmeda con un estilete; el papiro se usaba en Egipto.",
+    "questionEN": "Cuneiform writing was done on papyrus sheets.",
+    "explanationEN": "Cuneiform was pressed into wet clay tablets with a stylus; papyrus was used in Egypt.",
+    "audioQuestion": "audios/spanish-tf2-cuneiform-papyrus.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Cuál fue el primer sistema de escritura del mundo?",
+    "type": "multiple-choice",
+    "options": [
+      "Cuneiforme mesopotámico",
+      "Jeroglíficos egipcios",
+      "Sánscrito de la India",
+      "Oráculos chinos"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Los sumerios en Mesopotamia desarrollaron la escritura cuneiforme hacia 3200 a.C., la más antigua conocida.",
+    "questionEN": "What was the world's first writing system?",
+    "explanationEN": "The Sumerians in Mesopotamia developed cuneiform around 3200 BC, the oldest known.",
+    "audioQuestion": "audios/spanish-q3-first-writing.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los zigurats eran tumbas de los faraones mesopotámicos.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Los zigurats eran templos escalonados, no tumbas; las pirámides egipcias sí eran tumbas de faraones.",
+    "questionEN": "Ziggurats were tombs of Mesopotamian pharaohs.",
+    "explanationEN": "Ziggurats were stepped temples, not tombs; Egyptian pyramids were pharaohs' tombs.",
+    "audioQuestion": "audios/spanish-tf3-ziggurats-tombs.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué invento mesopotámico revolucionó el transporte?",
+    "type": "multiple-choice",
+    "options": [
+      "La rueda",
+      "El arado",
+      "El papiro",
+      "La moneda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La invención de la rueda, hacia 3500 a.C., permitió carros y transporte eficiente de mercancías.",
+    "questionEN": "Which Mesopotamian invention revolutionized transport?",
+    "explanationEN": "The invention of the wheel, around 3500 BC, enabled carts and efficient goods transport.",
+    "audioQuestion": "audios/spanish-q4-wheel-invention.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El Código de Hammurabi contenía 282 leyes escritas.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Este código legal, uno de los primeros, regulaba comercio, familia, delitos y castigos en Babilonia.",
+    "questionEN": "The Code of Hammurabi contained 282 written laws.",
+    "explanationEN": "This legal code, one of the first, regulated trade, family, crimes and punishments in Babylon.",
+    "audioQuestion": "audios/spanish-tf4-hammurabi-282.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Dónde se desarrolló la civilización egipcia?",
+    "type": "multiple-choice",
+    "options": [
+      "A lo largo del río Nilo",
+      "Entre el Tigris y el Éufrates",
+      "En el valle del Indo",
+      "En la cuenca del Amarillo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Egipto surgió y vivió gracias al Nilo, que atraviesa el desierto desde África oriental hasta el Mediterráneo.",
+    "questionEN": "Where did the Egyptian civilization develop?",
+    "explanationEN": "Egypt arose and lived thanks to the Nile, which crosses the desert from eastern Africa to the Mediterranean.",
+    "audioQuestion": "audios/spanish-q5-egypt-location.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los faraones eran considerados dioses vivientes por los egipcios.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "El faraón era visto como una deidad en tierra, intermediario entre dioses y hombres, con poder absoluto.",
+    "questionEN": "Pharaohs were considered living gods by the Egyptians.",
+    "explanationEN": "The pharaoh was seen as a deity on earth, intermediary between gods and men, with absolute power.",
+    "audioQuestion": "audios/spanish-tf5-pharaohs-gods.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Para qué servían principalmente las pirámides egipcias?",
+    "type": "multiple-choice",
+    "options": [
+      "Tumbas de los faraones",
+      "Templos para los dioses",
+      "Graneros del Estado",
+      "Palacios reales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Las pirámides protegían el cuerpo momificado y objetos del faraón para su vida después de la muerte.",
+    "questionEN": "What were Egyptian pyramids mainly used for?",
+    "explanationEN": "Pyramids protected the mummified body and belongings of the pharaoh for his afterlife.",
+    "audioQuestion": "audios/spanish-q6-pyramids-purpose.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los jeroglíficos egipcios usaban solo imágenes de animales.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Incluían figuras humanas, objetos, símbolos abstractos y señales fonéticas, no solo animales.",
+    "questionEN": "Egyptian hieroglyphs used only images of animals.",
+    "explanationEN": "They included human figures, objects, abstract symbols and phonetic signs, not just animals.",
+    "audioQuestion": "audios/spanish-tf6-hieroglyphs-animals.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué proceso usaban los egipcios para preservar los cuerpos?",
+    "type": "multiple-choice",
+    "options": [
+      "Momificación",
+      "Cremación",
+      "Embalsamado con vino",
+      "Secado al sol"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La momificación quitaba órganos, secaba el cuerpo con natrón y lo envolvía en vendas para conservarlo.",
+    "questionEN": "What process did Egyptians use to preserve bodies?",
+    "explanationEN": "Mummification removed organs, dried the body with natron and wrapped it in linen to preserve it.",
+    "audioQuestion": "audios/spanish-q7-mummification.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El papiro fue un material de escritura hecho de plantas del Nilo.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Se elaboraba cortando tiras del tallo de papiro, superponiéndolas y presionándolas hasta formar hojas.",
+    "questionEN": "Papyrus was a writing material made from Nile plants.",
+    "explanationEN": "It was made by cutting strips from the papyrus stem, layering and pressing them into sheets.",
+    "audioQuestion": "audios/spanish-tf7-papyrus-plant.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué civilización desarrolló el sistema de escritura cuneiforme?",
+    "type": "multiple-choice",
+    "options": [
+      "Mesopotamia",
+      "Egipto",
+      "China",
+      "India"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Los pueblos de Mesopotamia, especialmente los sumerios, crearon la cuneiforme hacia 3200 a.C.",
+    "questionEN": "Which civilization developed the cuneiform writing system?",
+    "explanationEN": "The peoples of Mesopotamia, especially the Sumerians, created cuneiform around 3200 BC.",
+    "audioQuestion": "audios/spanish-q8-cuneiform-civilization.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Las pirámides más famosas de Egipto se encuentran en Menfis.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Las más célebres están en Giza, cerca de El Cairo, incluyendo la Gran Pirámide de Keops.",
+    "questionEN": "The most famous pyramids of Egypt are in Memphis.",
+    "explanationEN": "The most renowned are in Giza, near Cairo, including the Great Pyramid of Khufu.",
+    "audioQuestion": "audios/spanish-tf8-pyramids-memphis.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué nutriente dejaban las inundaciones en la tierra?",
+    "type": "multiple-choice",
+    "options": [
+      "Limo fértil",
+      "Arena silícea",
+      "Sal común",
+      "Piedras volcánicas"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Las aguas traían limo rico en minerales que renovaban la fertilidad del suelo cada año.",
+    "questionEN": "What nutrient did floods leave in the soil?",
+    "explanationEN": "The waters brought silt rich in minerals that renewed soil fertility every year.",
+    "audioQuestion": "audios/spanish-q9-flood-silt.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los egipcios creían en la vida después de la muerte.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Su religión sostenía que el alma continuaba en el Más Allá, por eso momificaban y construían tumbas.",
+    "questionEN": "Egyptians believed in life after death.",
+    "explanationEN": "Their religion held that the soul continued in the Afterlife, hence mummification and tombs.",
+    "audioQuestion": "audios/spanish-tf9-afterlife-belief.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué ciudad mesopotámica fue famosa por su código de leyes?",
+    "type": "multiple-choice",
+    "options": [
+      "Babilonia",
+      "Ur",
+      "Nínive",
+      "Akkad"
+    ],
+    "correctAnswer": 0,
+    "explanation": "El rey Hammurabi de Babilonia promulgó el código que lleva su nombre, hacia 1750 a.C.",
+    "questionEN": "Which Mesopotamian city was famous for its law code?",
+    "explanationEN": "King Hammurabi of Babylon issued the code that bears his name, around 1750 BC.",
+    "audioQuestion": "audios/spanish-q10-babylon-laws.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El arado mejoró la agricultura en Mesopotamia.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Permitía surcar la tierra dura del río de forma más rápida y profunda que con herramientas manuales.",
+    "questionEN": "The plow improved agriculture in Mesopotamia.",
+    "explanationEN": "It allowed furrowing the hard river land faster and deeper than with hand tools.",
+    "audioQuestion": "audios/spanish-tf10-plow-agriculture.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué material usaban los egipcios para escribir jeroglíficos?",
+    "type": "multiple-choice",
+    "options": [
+      "Papiro",
+      "Tablillas de arcilla",
+      "Hojas de palma",
+      "Piedras de jade"
+    ],
+    "correctAnswer": 0,
+    "explanation": "El papiro, hecho de Cyperus papyrus, era ligero y fácil de enrollar para libros y documentos.",
+    "questionEN": "What material did Egyptians use to write hieroglyphs?",
+    "explanationEN": "Papyrus, made from Cyperus papyrus, was light and easy to roll into books and documents.",
+    "audioQuestion": "audios/spanish-q11-papyrus-writing.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los zigurats eran construcciones de forma circular.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Tenían forma de pirámide escalonada rectangular o cuadrada, no circular.",
+    "questionEN": "Ziggurats were circular-shaped buildings.",
+    "explanationEN": "They had a stepped rectangular or square pyramid shape, not circular.",
+    "audioQuestion": "audios/spanish-tf11-ziggurat-circular.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué ríos rodeaban la región de Mesopotamia?",
+    "type": "multiple-choice",
+    "options": [
+      "Tigris y Éufrates",
+      "Nilo y Chad",
+      "Indo y Ganges",
+      "Amarillo y Yangtsé"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Estos dos grandes ríos nacen en Turquía y convergen en el Shatt al-Arab, desembocando en el Golfo Pérsico.",
+    "questionEN": "Which rivers surrounded the region of Mesopotamia?",
+    "explanationEN": "These two great rivers rise in Turkey and converge in the Shatt al-Arab, flowing into the Persian Gulf.",
+    "audioQuestion": "audios/spanish-q12-mesopotamia-rivers.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Las momificaciones conservaban el cuerpo para la vida después de la muerte.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Creían que el ka (alma) necesitaba regresar al cuerpo, por lo que debía permanecer intacto.",
+    "questionEN": "Mummifications preserved the body for life after death.",
+    "explanationEN": "They believed the ka (soul) needed to return to the body, so it had to remain intact.",
+    "audioQuestion": "audios/spanish-tf12-mummy-afterlife.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué usaban los escribas mesopotámicos para grabar la cuneiforme?",
+    "type": "multiple-choice",
+    "options": [
+      "Estilete de caña o madera",
+      "Pincel de pelo",
+      "Pluma de metal",
+      "Cuchillo de obsidiana"
+    ],
+    "correctAnswer": 0,
+    "explanation": "El calamo (estilete) dejaba marcas en forma de cuña en la arcilla blanda antes de secarla.",
+    "questionEN": "What did Mesopotamian scribes use to engrave cuneiform?",
+    "explanationEN": "The stylus (reed pen) left wedge-shaped marks in soft clay before drying it.",
+    "audioQuestion": "audios/spanish-q13-cuneiform-stylus.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El río Nilo desemboca en el mar Mediterráneo.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Su delta norte da a la costa mediterránea de Egipto, formando un fértil fanjal.",
+    "questionEN": "The Nile River flows into the Mediterranean Sea.",
+    "explanationEN": "Its northern delta opens onto Egypt's Mediterranean coast, forming a fertile fan.",
+    "audioQuestion": "audios/spanish-tf13-nile-mediterranean.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué construcción egipcia protegía la entrada a una pirámide?",
+    "type": "multiple-choice",
+    "options": [
+      "La Esfinge de Guiza",
+      "Un zigurat",
+      "Un obelisco",
+      "Un hipogeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La Gran Esfinge, con cabeza humana y cuerpo de león, custodiaba el complejo funerario de Guiza.",
+    "questionEN": "Which Egyptian construction guarded the entrance to a pyramid?",
+    "explanationEN": "The Great Sphinx, with human head and lion body, guarded the Giza funerary complex.",
+    "audioQuestion": "audios/spanish-q14-giza-sphinx.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los sistemas de irrigación ayudaron a controlar las aguas del Tigris y el Éufrates.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Canales y diques regulaban caudales impredecibles, llevando agua a los campos en época seca.",
+    "questionEN": "Irrigation systems helped control the waters of the Tigris and Euphrates.",
+    "explanationEN": "Canals and dikes regulated unpredictable flows, bringing water to fields in dry season.",
+    "audioQuestion": "audios/spanish-tf14-irrigation-control.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué afirmación compara correctamente a Mesopotamia y Egipto?",
+    "type": "multiple-choice",
+    "options": [
+      "Ambas dependían de ríos para su agricultura y transporte",
+      "Ambas usaban papiro para escribir",
+      "Ambas construían pirámides para sus reyes",
+      "Ambas tenían faraones como gobernantes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ambas civilizaciones se asentaron junto a grandes ríos que fertilizaban la tierra y servían de vías fluviales.",
+    "questionEN": "Which statement correctly compares Mesopotamia and Egypt?",
+    "explanationEN": "Both civilizations settled along great rivers that fertilized the land and served as waterways.",
+    "audioQuestion": "audios/spanish-q15-compare-rivers.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "La Gran Pirámide de Keops es la más grande de Egipto.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Mide 146 m de altura original y contuvo unos 2,3 millones de bloques de piedra caliza.",
+    "questionEN": "The Great Pyramid of Khufu is the largest in Egypt.",
+    "explanationEN": "It measures 146 m in original height and contained about 2.3 million limestone blocks.",
+    "audioQuestion": "audios/spanish-tf15-khufu-largest.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué producto intercambiaban mucho los mesopotámicos por mar?",
+    "type": "multiple-choice",
+    "options": [
+      "Lana y textiles",
+      "Oro del Nilo",
+      "Especias de la India",
+      "Seda de China"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Con excedente de lana de ovejas, tejían telas que comerciaban río abajo hasta el Golfo Pérsico.",
+    "questionEN": "What product did Mesopotamians trade extensively by sea?",
+    "explanationEN": "With surplus sheep wool, they wove textiles traded downstream to the Persian Gulf.",
+    "audioQuestion": "audios/spanish-q16-mesopotamia-trade.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los egipcios desarrollaron avances en medicina y matemáticas.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Practicaban cirugías, usaban vendas con medicamentos y calcularon áreas para construir pirámides.",
+    "questionEN": "Egyptians developed advances in medicine and mathematics.",
+    "explanationEN": "They performed surgeries, used medicated bandages and calculated areas to build pyramids.",
+    "audioQuestion": "audios/spanish-tf16-egypt-science.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué objeto servía como centro religioso y administrativo en Mesopotamia?",
+    "type": "multiple-choice",
+    "options": [
+      "El zigurat",
+      "La pirámide",
+      "El obelisco",
+      "El sarcófago"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Además de templo, almacenaba granos y actuaba como fortaleza en tiempos de guerra.",
+    "questionEN": "What object served as religious and administrative center in Mesopotamia?",
+    "explanationEN": "Besides temple, it stored grain and acted as a fortress in wartime.",
+    "audioQuestion": "audios/spanish-q17-ziggurat-center.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El Nilo es el río más largo del mundo.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "El Amazonas es el más largo; el Nilo mide 6 650 km, el Amazonas unos 7 062 km.",
+    "questionEN": "The Nile is the longest river in the world.",
+    "explanationEN": "The Amazon is the longest; the Nile measures 6,650 km, the Amazon about 7,062 km.",
+    "audioQuestion": "audios/spanish-tf17-nile-longest.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué rey unificó Babilonia y creó su famoso código?",
+    "type": "multiple-choice",
+    "options": [
+      "Hammurabi",
+      "Sargón",
+      "Nabucodonosor",
+      "Gilgamesh"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hammurabi gobernó 1792-1750 a.C.; su código unificó leyes y castigos de las ciudades mesopotámicas.",
+    "questionEN": "Which king unified Babylon and created his famous code?",
+    "explanationEN": "Hammurabi ruled 1792-1750 BC; his code unified laws and punishments of Mesopotamian cities.",
+    "audioQuestion": "audios/spanish-q18-hammurabi-king.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los mesopotámicos inventaron la rueda antes que los egipcios.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "La rueda aparece hacia 3500 a.C. en Mesopotamia; Egipto la adopta siglos después.",
+    "questionEN": "Mesopotamians invented the wheel before the Egyptians.",
+    "explanationEN": "The wheel appears around 3500 BC in Mesopotamia; Egypt adopted it centuries later.",
+    "audioQuestion": "audios/spanish-tf18-wheel-mesopotamia-first.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué animal representaba al dios Horus en el panteón egipcio?",
+    "type": "multiple-choice",
+    "options": [
+      "Halcón",
+      "León",
+      "Cocodrilo",
+      "Escarabajo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Horus, dios del cielo y realeza, se representaba con cabeza de halcón o como halcón mismo.",
+    "questionEN": "Which animal represented the god Horus in the Egyptian pantheon?",
+    "explanationEN": "Horus, god of sky and kingship, was depicted with a falcon head or as a falcon itself.",
+    "audioQuestion": "audios/spanish-q19-horus-falcon.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Las tablillas cuneiformes se cocían para endurecerlas y conservarlas.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Después de grabar, se dejaban secar al sol o se horneaban, creando archivos duraderos.",
+    "questionEN": "Cuneiform tablets were baked to harden and preserve them.",
+    "explanationEN": "After inscribing, they were sun-dried or baked, creating durable records.",
+    "audioQuestion": "audios/spanish-tf19-tablets-baked.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué factor natural ayudó a preservar los papiros egipcios?",
+    "type": "multiple-choice",
+    "options": [
+      "Clima seco del desierto",
+      "Lluvias ácidas",
+      "Nieve perpetua",
+      "Humedad tropical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "El aire árido de Egipto evitó la descomposición de papiros enterrados en tumbas o cuevas.",
+    "questionEN": "What natural factor helped preserve Egyptian papyri?",
+    "explanationEN": "Egypt's arid air prevented decay of papyri buried in tombs or caves.",
+    "audioQuestion": "audios/spanish-q20-desert-preserve.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El calendario de 365 días fue inventado en Mesopotamia.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "El calendario solar de 365 días fue desarrollado por los egipcios basándose en el ciclo del Nilo.",
+    "questionEN": "The 365-day calendar was invented in Mesopotamia.",
+    "explanationEN": "The 365-day solar calendar was developed by Egyptians based on the Nile cycle.",
+    "audioQuestion": "audios/spanish-tf20-calendar-egypt.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué ciudad mesopotámica fue capital del Imperio Asirio?",
+    "type": "multiple-choice",
+    "options": [
+      "Nínive",
+      "Ur",
+      "Uruk",
+      "Mari"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nínive, en la orilla del Tigris, fue centro político y cultural de Asiria en su apogeo.",
+    "questionEN": "Which Mesopotamian city was capital of the Assyrian Empire?",
+    "explanationEN": "Nineveh, on the Tigris bank, was the political and cultural center of Assyria at its height.",
+    "audioQuestion": "audios/spanish-q21-nineveh-capital.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Las pirámides egipcias tenían tumbas ocultas para evitar saqueos.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Construían cámaras secretas y pasadizos falsos, aunque muchas fueron saqueadas igual.",
+    "questionEN": "Egyptian pyramids had hidden tombs to avoid looting.",
+    "explanationEN": "They built secret chambers and false passages, though many were still looted.",
+    "audioQuestion": "audios/spanish-tf21-hidden-tombs.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué recurso del Nilo usaban para fabricar cuerdas y barcos?",
+    "type": "multiple-choice",
+    "options": [
+      "Juncos y papiro",
+      "Troncos de cedro",
+      "Bambú importado",
+      "Raíces de loto"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Las plantas ribereñas proporcionaban fibra resistente para cuerdas y madera ligera para embarcaciones.",
+    "questionEN": "What Nile resource did they use to make ropes and boats?",
+    "explanationEN": "Riverbank plants provided strong fiber for ropes and light wood for boats.",
+    "audioQuestion": "audios/spanish-q22-nile-reeds.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los zigurats solían tener siete pisos escalonados.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Muchos zigurats, como el de Ur, tenían 3 a 7 niveles que ascendían hacia el templo superior.",
+    "questionEN": "Ziggurats often had seven stepped stories.",
+    "explanationEN": "Many ziggurats, like Ur's, had 3 to 7 levels ascending toward the upper temple.",
+    "audioQuestion": "audios/spanish-tf23-seven-steps.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué importancia tenía el nilómetro para los egipcios?",
+    "type": "multiple-choice",
+    "options": [
+      "Medía el nivel del Nilo para predecir cosechas",
+      "Calculaba distancias entre ciudades",
+      "Marcaba el horizonte para astronomía",
+      "Pesaba el oro de las tributaciones"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Escalas graduadas en paredes o pozos indicaban si la crecida sería buena o mala para la agricultura.",
+    "questionEN": "What importance did the nilometer have for Egyptians?",
+    "explanationEN": "Graduated scales on walls or wells indicated whether the flood would be good or bad for farming.",
+    "audioQuestion": "audios/spanish-q24-nilometer.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "El comercio fluvial unía las ciudades mesopotámicas entre sí.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Barcos de junco transportaban granos, metales y ladrillos por el Tigris y el Éufrates.",
+    "questionEN": "River trade linked Mesopotamian cities together.",
+    "explanationEN": "Reed boats transported grain, metals and bricks along the Tigris and Euphrates.",
+    "audioQuestion": "audios/spanish-tf25-river-trade.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué técnica usaban los egipcios para subir bloques durante la construcción de pirámides?",
+    "type": "multiple-choice",
+    "options": [
+      "Rampas de tierra y trineos",
+      "Grúas de madera",
+      "Poleas metálicas",
+      "Elevadores de contrapeso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Construían rampas inclinadas de lodo y ladrillo; los bloques se deslizaban sobre trineos lubricados.",
+    "questionEN": "What technique did Egyptians use to lift blocks during pyramid building?",
+    "explanationEN": "They built sloped ramps of mud and brick; blocks slid on lubricated sleds.",
+    "audioQuestion": "audios/spanish-q26-pyramid-ramps.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "En Mesopotamia las ciudades-estado eran independientes y a menudo se guerreaban.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Ur, Uruk, Lagash, etc. tenían sus propios reyes y ejércitos; competían por agua y tierras.",
+    "questionEN": "In Mesopotamia city-states were independent and often warred.",
+    "explanationEN": "Ur, Uruk, Lagash, etc. had their own kings and armies; they competed for water and land.",
+    "audioQuestion": "audios/spanish-tf27-city-states-war.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué objeto simboliza la unificación del Alto y Bajo Egipto?",
+    "type": "multiple-choice",
+    "options": [
+      "La corona pschent",
+      "El ankh",
+      "El cetro was",
+      "El escarabajo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La pschent combinaba la corona blanca del Alto Egipto y la roja del Bajo Egipto.",
+    "questionEN": "What object symbolizes the unification of Upper and Lower Egypt?",
+    "explanationEN": "The pschent combined the white crown of Upper Egypt and the red crown of Lower Egypt.",
+    "audioQuestion": "audios/spanish-q28-pschent-unification.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "Los faraones llevaban el título de 'Señor de las Dos Tierras'.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Esto remarcaba que gobernaban tanto el Alto Egipto (sur) como el Bajo Egipto (norte).",
+    "questionEN": "Pharaohs bore the title 'Lord of the Two Lands'.",
+    "explanationEN": "This emphasized they ruled both Upper Egypt (south) and Lower Egypt (north).",
+    "audioQuestion": "audios/spanish-tf29-lord-two-lands.mp3"
+  },
+  {
+    "exam": "E1 - García: Estudios Sociales - 6º",
+    "question": "¿Qué civilización antigua se desarrolló entre los ríos Amarillo y Yangtsé?",
+    "type": "multiple-choice",
+    "options": [
+      "China",
+      "India",
+      "Persia",
+      "Anatolia"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La civilización china creció en esa cuenca, al igual que Mesopotamia y Egipto lo hicieron junto a sus ríos.",
+    "questionEN": "Which ancient civilization developed between the Yellow and Yangtze rivers?",
+    "explanationEN": "Chinese civilization grew in that basin, just as Mesopotamia and Egypt did along their rivers.",
+    "audioQuestion": "audios/spanish-q30-china-rivers.mp3"
+  }
+]

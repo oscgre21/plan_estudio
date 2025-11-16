@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const { setupMediaRoutes, initializeMediaDirectory } = require('./media-api');
 
 const app = express();
 const PORT = process.env.PORT || 3002
@@ -49,6 +50,15 @@ app.get('/definition-quiz', (req, res) => {
 app.get('/ecf-viewer', (req, res) => {
     res.sendFile(path.join(__dirname, 'ecf-products-viewer.html'));
 });
+
+app.get('/media-library', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'media-library.html'));
+});
+
+// ============================================================
+// Media Library API Endpoints
+// ============================================================
+setupMediaRoutes(app);
 
 // ============================================================
 // CRUD API Endpoints for Vocabulary Editor
@@ -161,7 +171,10 @@ app.get('/api/ecf-products', (_req, res) => {
 // ============================================================
 // Start server
 // ============================================================
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+    // Initialize media directory
+    await initializeMediaDirectory();
+
     console.log(`
     ╔═══════════════════════════════════════════════════════════╗
     ║                                                           ║
@@ -179,12 +192,21 @@ app.listen(PORT, () => {
     ║   ✅ Science Quiz:         http://localhost:${PORT}/quiz       ║
     ║   📝 Vocabulary Editor:    http://localhost:${PORT}/editor     ║
     ║   📊 ECF Products Viewer:  http://localhost:${PORT}/ecf-viewer ║
+    ║   🎬 Media Library:        http://localhost:${PORT}/media-library║
     ║                                                           ║
     ║   API Endpoints (CRUD):                                   ║
     ║   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ║
     ║   POST /api/save-vocabulary   - Save vocabulary changes   ║
     ║   POST /api/regenerate-audio  - Regenerate audio file    ║
     ║   GET  /api/vocabulary        - Get vocabulary data      ║
+    ║                                                           ║
+    ║   Media Library API:                                      ║
+    ║   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ║
+    ║   GET    /api/media/topics/:testSetId - Get topics       ║
+    ║   POST   /api/media/topics            - Create topic     ║
+    ║   DELETE /api/media/topics/:topicId   - Delete topic     ║
+    ║   POST   /api/media/upload            - Upload file      ║
+    ║   DELETE /api/media/file/:fileId      - Delete file      ║
     ║                                                           ║
     ║   Press CTRL+C to stop the server                         ║
     ║                                                           ║

@@ -1,0 +1,893 @@
+[
+  {
+    "question": "This is where a river begins, usually in mountains or hills where water comes from rain, melting snow, or underground springs.",
+    "audioQuestion": "audios/question-source.mp3",
+    "correctAnswer": "SOURCE",
+    "options": [
+      {
+        "word": "SOURCE",
+        "emoji": "⛰️",
+        "isCorrect": true
+      },
+      {
+        "word": "MOUTH",
+        "emoji": "🌊",
+        "isCorrect": false
+      },
+      {
+        "word": "TRIBUTARY",
+        "emoji": "🌿",
+        "isCorrect": false
+      },
+      {
+        "word": "DELTA",
+        "emoji": "🔺",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is where a river ends, flowing into a sea, ocean, or lake, sometimes forming a triangle-shaped land.",
+    "audioQuestion": "audios/question-mouth.mp3",
+    "correctAnswer": "MOUTH",
+    "options": [
+      {
+        "word": "MOUTH",
+        "emoji": "🌊",
+        "isCorrect": true
+      },
+      {
+        "word": "SOURCE",
+        "emoji": "⛰️",
+        "isCorrect": false
+      },
+      {
+        "word": "RIVERBED",
+        "emoji": "🏞️",
+        "isCorrect": false
+      },
+      {
+        "word": "BANKS",
+        "emoji": "🌾",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a smaller river that flows into a bigger river, adding more water to the main river.",
+    "audioQuestion": "audios/question-tributary.mp3",
+    "correctAnswer": "TRIBUTARY",
+    "options": [
+      {
+        "word": "TRIBUTARY",
+        "emoji": "🌿",
+        "isCorrect": true
+      },
+      {
+        "word": "DELTA",
+        "emoji": "🔺",
+        "isCorrect": false
+      },
+      {
+        "word": "MEANDER",
+        "emoji": "🌀",
+        "isCorrect": false
+      },
+      {
+        "word": "VALLEY",
+        "emoji": "🏔️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the average weather in a place over a long time, including temperature, rainfall, wind, and sunshine.",
+    "audioQuestion": "audios/question-climate.mp3",
+    "correctAnswer": "CLIMATE",
+    "options": [
+      {
+        "word": "CLIMATE",
+        "emoji": "🌍",
+        "isCorrect": true
+      },
+      {
+        "word": "WEATHER",
+        "emoji": "☀️",
+        "isCorrect": false
+      },
+      {
+        "word": "SEASON",
+        "emoji": "🍂",
+        "isCorrect": false
+      },
+      {
+        "word": "TEMPERATURE",
+        "emoji": "🌡️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the daily condition of the atmosphere with sun, rain, clouds, or wind at a specific time.",
+    "audioQuestion": "audios/question-weather.mp3",
+    "correctAnswer": "WEATHER",
+    "options": [
+      {
+        "word": "WEATHER",
+        "emoji": "☀️",
+        "isCorrect": true
+      },
+      {
+        "word": "CLIMATE",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "PRECIPITATION",
+        "emoji": "🌧️",
+        "isCorrect": false
+      },
+      {
+        "word": "ATMOSPHERE",
+        "emoji": "🌬️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a very hot climate all year with lots of rain, found near the Equator, where rainforests grow.",
+    "audioQuestion": "audios/question-tropical.mp3",
+    "correctAnswer": "TROPICAL",
+    "options": [
+      {
+        "word": "TROPICAL",
+        "emoji": "🌴",
+        "isCorrect": true
+      },
+      {
+        "word": "TEMPERATE",
+        "emoji": "🍃",
+        "isCorrect": false
+      },
+      {
+        "word": "DESERT",
+        "emoji": "🏜️",
+        "isCorrect": false
+      },
+      {
+        "word": "POLAR",
+        "emoji": "❄️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a very dry climate with almost no rain, very hot days and cold nights, where deserts form.",
+    "audioQuestion": "audios/question-desert.mp3",
+    "correctAnswer": "DESERT",
+    "options": [
+      {
+        "word": "DESERT",
+        "emoji": "🏜️",
+        "isCorrect": true
+      },
+      {
+        "word": "TROPICAL",
+        "emoji": "🌴",
+        "isCorrect": false
+      },
+      {
+        "word": "MEDITERRANEAN",
+        "emoji": "🍇",
+        "isCorrect": false
+      },
+      {
+        "word": "TUNDRA",
+        "emoji": "🧊",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the total number of people living in a place like a city, country, or the world.",
+    "audioQuestion": "audios/question-population.mp3",
+    "correctAnswer": "POPULATION",
+    "options": [
+      {
+        "word": "POPULATION",
+        "emoji": "👥",
+        "isCorrect": true
+      },
+      {
+        "word": "DENSITY",
+        "emoji": "📊",
+        "isCorrect": false
+      },
+      {
+        "word": "SETTLEMENT",
+        "emoji": "🏘️",
+        "isCorrect": false
+      },
+      {
+        "word": "MIGRATION",
+        "emoji": "✈️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This describes how crowded or empty an area is, measured by the number of people per square kilometer.",
+    "audioQuestion": "audios/question-density.mp3",
+    "correctAnswer": "DENSITY",
+    "options": [
+      {
+        "word": "DENSITY",
+        "emoji": "📊",
+        "isCorrect": true
+      },
+      {
+        "word": "POPULATION",
+        "emoji": "👥",
+        "isCorrect": false
+      },
+      {
+        "word": "SETTLEMENT",
+        "emoji": "🏘️",
+        "isCorrect": false
+      },
+      {
+        "word": "AREA",
+        "emoji": "📍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a countryside area with small villages and farms where few people are spread out.",
+    "audioQuestion": "audios/question-rural.mp3",
+    "correctAnswer": "RURAL",
+    "options": [
+      {
+        "word": "RURAL",
+        "emoji": "🌾",
+        "isCorrect": true
+      },
+      {
+        "word": "URBAN",
+        "emoji": "🏙️",
+        "isCorrect": false
+      },
+      {
+        "word": "SUBURBAN",
+        "emoji": "🏡",
+        "isCorrect": false
+      },
+      {
+        "word": "CITY",
+        "emoji": "🏢",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a city or large town area where many people live close together with tall buildings and busy streets.",
+    "audioQuestion": "audios/question-urban.mp3",
+    "correctAnswer": "URBAN",
+    "options": [
+      {
+        "word": "URBAN",
+        "emoji": "🏙️",
+        "isCorrect": true
+      },
+      {
+        "word": "RURAL",
+        "emoji": "🌾",
+        "isCorrect": false
+      },
+      {
+        "word": "SUBURBAN",
+        "emoji": "🏡",
+        "isCorrect": false
+      },
+      {
+        "word": "VILLAGE",
+        "emoji": "🏘️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the movement of people from one place to another to live there, like moving to a new country or city.",
+    "audioQuestion": "audios/question-migration.mp3",
+    "correctAnswer": "MIGRATION",
+    "options": [
+      {
+        "word": "MIGRATION",
+        "emoji": "✈️",
+        "isCorrect": true
+      },
+      {
+        "word": "IMMIGRATION",
+        "emoji": "🛬",
+        "isCorrect": false
+      },
+      {
+        "word": "EMIGRATION",
+        "emoji": "🛫",
+        "isCorrect": false
+      },
+      {
+        "word": "TRAVEL",
+        "emoji": "🧳",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is when a person moves INTO a new country to live there permanently.",
+    "audioQuestion": "audios/question-immigration.mp3",
+    "correctAnswer": "IMMIGRATION",
+    "options": [
+      {
+        "word": "IMMIGRATION",
+        "emoji": "🛬",
+        "isCorrect": true
+      },
+      {
+        "word": "EMIGRATION",
+        "emoji": "🛫",
+        "isCorrect": false
+      },
+      {
+        "word": "MIGRATION",
+        "emoji": "✈️",
+        "isCorrect": false
+      },
+      {
+        "word": "VISITING",
+        "emoji": "📸",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is when a person moves OUT of their country to live somewhere else permanently.",
+    "audioQuestion": "audios/question-emigration.mp3",
+    "correctAnswer": "EMIGRATION",
+    "options": [
+      {
+        "word": "EMIGRATION",
+        "emoji": "🛫",
+        "isCorrect": true
+      },
+      {
+        "word": "IMMIGRATION",
+        "emoji": "🛬",
+        "isCorrect": false
+      },
+      {
+        "word": "MIGRATION",
+        "emoji": "✈️",
+        "isCorrect": false
+      },
+      {
+        "word": "VACATION",
+        "emoji": "🏖️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a reason that makes people want to leave their current place, like war, poverty, or natural disasters.",
+    "audioQuestion": "audios/question-pushfactor.mp3",
+    "correctAnswer": "PUSH FACTOR",
+    "options": [
+      {
+        "word": "PUSH FACTOR",
+        "emoji": "👎",
+        "isCorrect": true
+      },
+      {
+        "word": "PULL FACTOR",
+        "emoji": "👍",
+        "isCorrect": false
+      },
+      {
+        "word": "MIGRATION",
+        "emoji": "✈️",
+        "isCorrect": false
+      },
+      {
+        "word": "REASON",
+        "emoji": "❓",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a reason that attracts people to move to a new place, like better jobs, safety, or education.",
+    "audioQuestion": "audios/question-pullfactor.mp3",
+    "correctAnswer": "PULL FACTOR",
+    "options": [
+      {
+        "word": "PULL FACTOR",
+        "emoji": "👍",
+        "isCorrect": true
+      },
+      {
+        "word": "PUSH FACTOR",
+        "emoji": "👎",
+        "isCorrect": false
+      },
+      {
+        "word": "OPPORTUNITY",
+        "emoji": "💼",
+        "isCorrect": false
+      },
+      {
+        "word": "ATTRACTION",
+        "emoji": "🎯",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the number of babies born in a place, which can make the population grow if it's high.",
+    "audioQuestion": "audios/question-birthrate.mp3",
+    "correctAnswer": "BIRTH RATE",
+    "options": [
+      {
+        "word": "BIRTH RATE",
+        "emoji": "👶",
+        "isCorrect": true
+      },
+      {
+        "word": "DEATH RATE",
+        "emoji": "💀",
+        "isCorrect": false
+      },
+      {
+        "word": "POPULATION",
+        "emoji": "👥",
+        "isCorrect": false
+      },
+      {
+        "word": "GROWTH",
+        "emoji": "📈",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the number of people who die in a place, which can make the population shrink if it's high.",
+    "audioQuestion": "audios/question-deathrate.mp3",
+    "correctAnswer": "DEATH RATE",
+    "options": [
+      {
+        "word": "DEATH RATE",
+        "emoji": "💀",
+        "isCorrect": true
+      },
+      {
+        "word": "BIRTH RATE",
+        "emoji": "👶",
+        "isCorrect": false
+      },
+      {
+        "word": "LIFE EXPECTANCY",
+        "emoji": "⏳",
+        "isCorrect": false
+      },
+      {
+        "word": "MORTALITY",
+        "emoji": "📉",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is triangle-shaped land made of soil and sand that forms at the mouth of some rivers.",
+    "audioQuestion": "audios/question-delta.mp3",
+    "correctAnswer": "DELTA",
+    "options": [
+      {
+        "word": "DELTA",
+        "emoji": "🔺",
+        "isCorrect": true
+      },
+      {
+        "word": "VALLEY",
+        "emoji": "🏔️",
+        "isCorrect": false
+      },
+      {
+        "word": "MEANDER",
+        "emoji": "🌀",
+        "isCorrect": false
+      },
+      {
+        "word": "ESTUARY",
+        "emoji": "🌊",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "These are the curves and bends that form in a river when it flows through flat land in its middle course.",
+    "audioQuestion": "audios/question-meander.mp3",
+    "correctAnswer": "MEANDER",
+    "options": [
+      {
+        "word": "MEANDER",
+        "emoji": "🌀",
+        "isCorrect": true
+      },
+      {
+        "word": "DELTA",
+        "emoji": "🔺",
+        "isCorrect": false
+      },
+      {
+        "word": "VALLEY",
+        "emoji": "🏔️",
+        "isCorrect": false
+      },
+      {
+        "word": "CURVE",
+        "emoji": "〰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a moderate climate with four distinct seasons and regular rainfall, where deciduous forests grow.",
+    "audioQuestion": "audios/question-temperate.mp3",
+    "correctAnswer": "TEMPERATE",
+    "options": [
+      {
+        "word": "TEMPERATE",
+        "emoji": "🍂",
+        "isCorrect": true
+      },
+      {
+        "word": "TROPICAL",
+        "emoji": "🌴",
+        "isCorrect": false
+      },
+      {
+        "word": "MEDITERRANEAN",
+        "emoji": "🍇",
+        "isCorrect": false
+      },
+      {
+        "word": "CONTINENTAL",
+        "emoji": "🌲",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a very cold climate near the North and South Poles with ice caps, glaciers, and tundra landscape.",
+    "audioQuestion": "audios/question-polar.mp3",
+    "correctAnswer": "POLAR",
+    "options": [
+      {
+        "word": "POLAR",
+        "emoji": "❄️",
+        "isCorrect": true
+      },
+      {
+        "word": "ARCTIC",
+        "emoji": "🧊",
+        "isCorrect": false
+      },
+      {
+        "word": "TUNDRA",
+        "emoji": "🌨️",
+        "isCorrect": false
+      },
+      {
+        "word": "ALPINE",
+        "emoji": "🏔️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is frozen land with no trees that is found in very cold climates near the polar regions.",
+    "audioQuestion": "audios/question-tundra.mp3",
+    "correctAnswer": "TUNDRA",
+    "options": [
+      {
+        "word": "TUNDRA",
+        "emoji": "🧊",
+        "isCorrect": true
+      },
+      {
+        "word": "TAIGA",
+        "emoji": "🌲",
+        "isCorrect": false
+      },
+      {
+        "word": "STEPPE",
+        "emoji": "🌾",
+        "isCorrect": false
+      },
+      {
+        "word": "PRAIRIE",
+        "emoji": "🦬",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "These are trees that lose their leaves in autumn and grow new ones in spring, common in temperate climates.",
+    "audioQuestion": "audios/question-deciduous.mp3",
+    "correctAnswer": "DECIDUOUS",
+    "options": [
+      {
+        "word": "DECIDUOUS",
+        "emoji": "🍁",
+        "isCorrect": true
+      },
+      {
+        "word": "EVERGREEN",
+        "emoji": "🌲",
+        "isCorrect": false
+      },
+      {
+        "word": "CONIFEROUS",
+        "emoji": "🌲",
+        "isCorrect": false
+      },
+      {
+        "word": "BROADLEAF",
+        "emoji": "🍃",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is rain, snow, or hail that falls from the sky to the ground.",
+    "audioQuestion": "audios/question-precipitation.mp3",
+    "correctAnswer": "PRECIPITATION",
+    "options": [
+      {
+        "word": "PRECIPITATION",
+        "emoji": "🌧️",
+        "isCorrect": true
+      },
+      {
+        "word": "CONDENSATION",
+        "emoji": "☁️",
+        "isCorrect": false
+      },
+      {
+        "word": "EVAPORATION",
+        "emoji": "💨",
+        "isCorrect": false
+      },
+      {
+        "word": "MOISTURE",
+        "emoji": "💧",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the imaginary line around Earth's middle where tropical climates are found.",
+    "audioQuestion": "audios/question-equator.mp3",
+    "correctAnswer": "EQUATOR",
+    "options": [
+      {
+        "word": "EQUATOR",
+        "emoji": "🌍",
+        "isCorrect": true
+      },
+      {
+        "word": "POLES",
+        "emoji": "🧭",
+        "isCorrect": false
+      },
+      {
+        "word": "TROPICS",
+        "emoji": "🌴",
+        "isCorrect": false
+      },
+      {
+        "word": "MERIDIAN",
+        "emoji": "📍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the bottom of the river where the water flows, also called the river floor.",
+    "audioQuestion": "audios/question-riverbed.mp3",
+    "correctAnswer": "RIVERBED",
+    "options": [
+      {
+        "word": "RIVERBED",
+        "emoji": "🏞️",
+        "isCorrect": true
+      },
+      {
+        "word": "BANKS",
+        "emoji": "🌾",
+        "isCorrect": false
+      },
+      {
+        "word": "BOTTOM",
+        "emoji": "⬇️",
+        "isCorrect": false
+      },
+      {
+        "word": "FLOOR",
+        "emoji": "⬇️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "These are the sides of a river that hold the water in its channel.",
+    "audioQuestion": "audios/question-banks.mp3",
+    "correctAnswer": "BANKS",
+    "options": [
+      {
+        "word": "BANKS",
+        "emoji": "🌾",
+        "isCorrect": true
+      },
+      {
+        "word": "SHORES",
+        "emoji": "🏖️",
+        "isCorrect": false
+      },
+      {
+        "word": "SIDES",
+        "emoji": "↔️",
+        "isCorrect": false
+      },
+      {
+        "word": "EDGES",
+        "emoji": "〰️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is good soil where crops can grow easily, making people want to settle in an area.",
+    "audioQuestion": "audios/question-fertile.mp3",
+    "correctAnswer": "FERTILE",
+    "options": [
+      {
+        "word": "FERTILE",
+        "emoji": "🌱",
+        "isCorrect": true
+      },
+      {
+        "word": "RICH",
+        "emoji": "💰",
+        "isCorrect": false
+      },
+      {
+        "word": "PRODUCTIVE",
+        "emoji": "🌾",
+        "isCorrect": false
+      },
+      {
+        "word": "NUTRITIOUS",
+        "emoji": "🥕",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a place where people live, ranging from small villages to large cities.",
+    "audioQuestion": "audios/question-settlement.mp3",
+    "correctAnswer": "SETTLEMENT",
+    "options": [
+      {
+        "word": "SETTLEMENT",
+        "emoji": "🏘️",
+        "isCorrect": true
+      },
+      {
+        "word": "COMMUNITY",
+        "emoji": "👥",
+        "isCorrect": false
+      },
+      {
+        "word": "COLONY",
+        "emoji": "🏰",
+        "isCorrect": false
+      },
+      {
+        "word": "HABITAT",
+        "emoji": "🏠",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the average number of years people live in a particular place, which increases with better healthcare.",
+    "audioQuestion": "audios/question-lifeexpectancy.mp3",
+    "correctAnswer": "LIFE EXPECTANCY",
+    "options": [
+      {
+        "word": "LIFE EXPECTANCY",
+        "emoji": "⏳",
+        "isCorrect": true
+      },
+      {
+        "word": "LIFESPAN",
+        "emoji": "📏",
+        "isCorrect": false
+      },
+      {
+        "word": "LONGEVITY",
+        "emoji": "👴",
+        "isCorrect": false
+      },
+      {
+        "word": "DURATION",
+        "emoji": "⌛",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is when a population gets bigger with more people, usually from high birth rates or immigration.",
+    "audioQuestion": "audios/question-populationgrowth.mp3",
+    "correctAnswer": "POPULATION GROWTH",
+    "options": [
+      {
+        "word": "POPULATION GROWTH",
+        "emoji": "📈",
+        "isCorrect": true
+      },
+      {
+        "word": "POPULATION DECLINE",
+        "emoji": "📉",
+        "isCorrect": false
+      },
+      {
+        "word": "POPULATION CHANGE",
+        "emoji": "📊",
+        "isCorrect": false
+      },
+      {
+        "word": "POPULATION SHIFT",
+        "emoji": "🔄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is when a population gets smaller with fewer people, usually from high death rates or emigration.",
+    "audioQuestion": "audios/question-populationdecline.mp3",
+    "correctAnswer": "POPULATION DECLINE",
+    "options": [
+      {
+        "word": "POPULATION DECLINE",
+        "emoji": "📉",
+        "isCorrect": true
+      },
+      {
+        "word": "POPULATION GROWTH",
+        "emoji": "📈",
+        "isCorrect": false
+      },
+      {
+        "word": "POPULATION STABILITY",
+        "emoji": "➡️",
+        "isCorrect": false
+      },
+      {
+        "word": "DEPOPULATION",
+        "emoji": "🏃",
+        "isCorrect": false
+      }
+    ]
+  }
+]

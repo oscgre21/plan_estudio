@@ -1,0 +1,414 @@
+[
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Where does a river usually begin?",
+    "type": "multiple-choice",
+    "options": [
+      "Mountains or hills",
+      "Deserts",
+      "Oceans",
+      "Lakes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A river begins at its source, which is usually found in high areas like mountains or hills where rain, melting snow, or springs provide water.",
+    "questionES": "¿Dónde suele comenzar un río?",
+    "explanationES": "Un río comienza en su naciente, que suele encontrarse en zonas altas como montañas o colinas donde la lluvia, el deshielo o los manantiales proporcionan agua.",
+    "audioQuestion": "audios/english-q1-river-source.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: A tributary is a large river that flows into a smaller river.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "A tributary is a smaller river that flows into a larger, main river, adding more water to it.",
+    "questionES": "Verdadero o falso: Un afluente es un río grande que desemboca en un río más pequeño.",
+    "explanationES": "Un afluente es un río más pequeño que desemboca en un río principal más grande, aportándole más agua.",
+    "audioQuestion": "audios/english-tf1-tributary-definition.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "In which part of a river does the water flow the fastest?",
+    "type": "multiple-choice",
+    "options": [
+      "Lower course",
+      "Middle course",
+      "Upper course",
+      "Mouth"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the upper course, the river is young, narrow, and steep, so water flows downhill very quickly.",
+    "questionES": "¿En qué parte de un río el agua fluye más rápido?",
+    "explanationES": "En el curso alto, el río es joven, estrecho y empinado, por lo que el agua fluye cuesta abajo muy rápidamente.",
+    "audioQuestion": "audios/english-q2-fastest-flow.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "What shape of valley does a river create in its upper course?",
+    "type": "multiple-choice",
+    "options": [
+      "U-shaped",
+      "V-shaped",
+      "Flat plain",
+      "Circular"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fast-moving water in the upper course erodes the land to form steep, V-shaped valleys.",
+    "questionES": "¿Qué forma de valle crea un río en su curso alto?",
+    "explanationES": "El agua de rápido movimiento en el curso alto erosiona la tierra formando valles empinados en forma de V.",
+    "audioQuestion": "audios/english-q3-valley-shape.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Climate is the weather on a single day.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Climate is the average weather pattern over many years, not just one day.",
+    "questionES": "Verdadero o falso: El clima es el tiempo de un solo día.",
+    "explanationES": "El clima es el patrón promedio del tiempo durante muchos años, no solo un día.",
+    "audioQuestion": "audios/english-tf2-climate-vs-weather.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which climate is hot and rainy all year round?",
+    "type": "multiple-choice",
+    "options": [
+      "Temperate",
+      "Polar",
+      "Tropical",
+      "Mediterranean"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tropical climates near the Equator have high temperatures and heavy rainfall throughout the year, supporting rainforests.",
+    "questionES": "¿Qué clima es cálido y lluvioso durante todo el año?",
+    "explanationES": "Los climas tropicales cerca del Ecuador tienen altas temperaturas y mucha lluvia durante todo el año, lo que permite selvas tropicales.",
+    "audioQuestion": "audios/english-q4-tropical-climate.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Where would you most likely find polar bears?",
+    "type": "multiple-choice",
+    "options": [
+      "Tropical rainforest",
+      "Cold polar regions",
+      "Mediterranean coast",
+      "Temperate forest"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Polar bears live in cold polar climates near the North Pole, such as the Arctic and northern Canada.",
+    "questionES": "¿Dónde es más probable encontrar osos polares?",
+    "explanationES": "Los osos polares viven en climas polares fríos cerca del Polo Norte, como el Ártico y el norte de Canadá.",
+    "audioQuestion": "audios/english-q5-polar-bears.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Deserts receive less than 25 cm of rain per year.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Deserts are defined as very dry places that get less than 25 cm of rain each year, making it hard for most plants and animals to survive.",
+    "questionES": "Verdadero o falso: Los desiertos reciben menos de 25 cm de lluvia al año.",
+    "explanationES": "Los desiertos se definen como lugares muy secos que reciben menos de 25 cm de lluvia cada año, lo que dificulta la supervivencia de la mayoría de plantas y animales.",
+    "audioQuestion": "audios/english-tf3-desert-rainfall.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "What is the total number of people living in a place called?",
+    "type": "multiple-choice",
+    "options": [
+      "Density",
+      "Settlement",
+      "Population",
+      "Community"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Population refers to the total number of people living in a specific area like a city, country, or the whole world.",
+    "questionES": "¿Cómo se llama el número total de personas que viven en un lugar?",
+    "explanationES": "Población se refiere al número total de personas que viven en un área específica como una ciudad, país o el mundo entero.",
+    "audioQuestion": "audios/english-q6-population-definition.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Rural areas have many tall buildings and busy streets.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Rural areas are countryside places with few people, open spaces, and quiet surroundings, unlike crowded urban cities.",
+    "questionES": "Verdadero o falso: Las zonas rurales tienen muchos edificios altos y calles concurridas.",
+    "explanationES": "Las zonas rurales son lugares del campo con pocas personas, espacios abiertos y entornos tranquilos, a diferencia de las ciudades urbanas concurridas.",
+    "audioQuestion": "audios/english-tf4-rural-characteristics.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which factor most encourages people to settle near rivers?",
+    "type": "multiple-choice",
+    "options": [
+      "Entertainment",
+      "Water supply",
+      "Mining",
+      "Flat roads"
+    ],
+    "correctAnswer": 1,
+    "explanation": "People settle near rivers mainly for fresh water needed for drinking, cooking, farming, and transportation.",
+    "questionES": "¿Qué factor anima más a las personas a asentarse cerca de ríos?",
+    "explanationES": "Las personas se asientan cerca de ríos principalmente por el agua dulce necesaria para beber, cocinar, cultivar y transportarse.",
+    "audioQuestion": "audios/english-q7-settle-near-rivers.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Immigration means people moving out of a country.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Immigration is when people move INTO a new country; emigration is when people move OUT of their original country.",
+    "questionES": "Verdadero o falso: Inmigración significa que las personas se mudan fuera de un país.",
+    "explanationES": "Inmigración es cuando las personas se mudan A un nuevo país; emigración es cuando las personas se mudan FUERA de su país de origen.",
+    "audioQuestion": "audios/english-tf5-immigration-definition.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which of these is a push factor for migration?",
+    "type": "multiple-choice",
+    "options": [
+      "Better job opportunities",
+      "Safety and peace",
+      "War or conflict",
+      "Higher standard of living"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Push factors are negative reasons that force people to leave a place, such as war, poverty, or natural disasters.",
+    "questionES": "¿Cuál de estos es un factor de expulsión para la migración?",
+    "explanationES": "Los factores de expulsión son razones negativas que obligan a las personas a abandonar un lugar, como guerras, pobreza o desastres naturales.",
+    "audioQuestion": "audios/english-q8-push-factor.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: A growing population always has only positive effects.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Population growth can bring both positives (more workers, ideas) and negatives (crowding, pollution, strain on resources).",
+    "questionES": "Verdadero o falso: Una población en crecimiento siempre tiene solo efectos positivos.",
+    "explanationES": "El crecimiento poblacional puede traer tanto aspectos positivos (más trabajadores, ideas) como negativos (hacinamiento, contaminación, presión sobre recursos).",
+    "audioQuestion": "audios/english-tf6-population-growth-effects.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "What type of trees lose their leaves in autumn?",
+    "type": "multiple-choice",
+    "options": [
+      "Coniferous",
+      "Deciduous",
+      "Palm",
+      "Cactus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Deciduous trees, common in temperate climates, lose their leaves each autumn and grow new ones in spring.",
+    "questionES": "¿Qué tipo de árboles pierden sus hojas en otoño?",
+    "explanationES": "Los árboles de hoja caduca, comunes en climas templados, pierden sus hojas cada otoño y desarrollan nuevas en primavera.",
+    "audioQuestion": "audios/english-q9-deciduous-trees.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Population density measures how many people live per square kilometer.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Population density tells us how crowded an area is by counting the number of people living in each square kilometer.",
+    "questionES": "Verdadero o falso: La densidad de población mide cuántas personas viven por kilómetro cuadrado.",
+    "explanationES": "La densidad de población nos indica qué tan congestionada está un área contando el número de personas que viven en cada kilómetro cuadrado.",
+    "audioQuestion": "audios/english-tf7-density-definition.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which landscape would you expect in a Mediterranean climate?",
+    "type": "multiple-choice",
+    "options": [
+      "Ice caps",
+      "Rainforest",
+      "Olive groves",
+      "Tundra"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mediterranean climates have hot, dry summers and mild, wet winters, perfect for growing olive trees and grapevines.",
+    "questionES": "¿Qué paisaje esperarías en un clima mediterráneo?",
+    "explanationES": "Los climas mediterráneos tienen veranos calurosos y secos e inviernos suaves y lluviosos, perfectos para cultivar olivos y vides.",
+    "audioQuestion": "audios/english-q10-mediterranean-landscape.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Better healthcare can cause population increase.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Improved healthcare lowers death rates and helps babies survive, leading to population growth.",
+    "questionES": "Verdadero o falso: Una mejor atención médica puede causar aumento de población.",
+    "explanationES": "La atención médica mejorada reduce las tasas de mortalidad y ayuda a que los bebés sobrevivan, llevando al crecimiento poblacional.",
+    "audioQuestion": "audios/english-tf8-healthcare-population.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "What is the end of a river called where it meets the sea?",
+    "type": "multiple-choice",
+    "options": [
+      "Source",
+      "Mouth",
+      "Tributary",
+      "Bank"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The mouth is where a river ends by flowing into a sea, ocean, or lake, sometimes forming a delta.",
+    "questionES": "¿Cómo se llama el final de un río donde se encuentra con el mar?",
+    "explanationES": "La desembocadura es donde un río termina al fluir hacia un mar, océano o lago, a veces formando un delta.",
+    "audioQuestion": "audios/english-q11-river-mouth.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Suburban areas are more crowded than urban areas.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "Suburban areas are residential neighborhoods between rural and urban zones, with more space than crowded urban cities.",
+    "questionES": "Verdadero o falso: Las zonas suburbanas están más congestionadas que las urbanas.",
+    "explanationES": "Las zonas suburbanas son vecindarios residenciales entre zonas rurales y urbanas, con más espacio que las ciudades urbanas congestionadas.",
+    "audioQuestion": "audios/english-tf9-suburban-crowding.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which factor would most likely cause population decrease?",
+    "type": "multiple-choice",
+    "options": [
+      "More hospitals",
+      "Immigration",
+      "High birth rate",
+      "Natural disaster"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Natural disasters like earthquakes or floods can cause many deaths and force people to leave, decreasing population.",
+    "questionES": "¿Qué factor probablemente causaría disminución de población?",
+    "explanationES": "Los desastres naturales como terremotos o inundaciones pueden causar muchas muertes y forzar a las personas a irse, disminuyendo la población.",
+    "audioQuestion": "audios/english-q12-population-decrease.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: The Nile Delta is an example of a river mouth feature.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "The Nile Delta in Egypt is a triangle-shaped land formed by soil and sand deposited at the Nile River's mouth.",
+    "questionES": "Verdadero o falso: El Delta del Nilo es un ejemplo de característica de desembocadura de río.",
+    "explanationES": "El Delta del Nilo en Egipto es una tierra en forma de triángulo formada por suelo y arena depositada en la desembocadura del río Nilo.",
+    "audioQuestion": "audios/english-tf10-nile-delta.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "What animals would you most likely find in a temperate climate?",
+    "type": "multiple-choice",
+    "options": [
+      "Camels and scorpions",
+      "Polar bears and penguins",
+      "Deer and squirrels",
+      "Monkeys and parrots"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Temperate climates with moderate temperatures and seasons are home to animals like deer, squirrels, foxes, and rabbits.",
+    "questionES": "¿Qué animales probablemente encontrarías en un clima templado?",
+    "explanationES": "Los climas templados con temperaturas moderadas y estaciones albergan animales como ciervos, ardillas, zorros y conejos.",
+    "audioQuestion": "audios/english-q13-temperate-animals.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: People often migrate to find better education opportunities.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Better education is a common pull factor that attracts people to move to new places for schooling and learning opportunities.",
+    "questionES": "Verdadero o falso: Las personas a menudo migran para encontrar mejores oportunidades educativas.",
+    "explanationES": "Una mejor educación es un factor de atracción común que atrae a las personas a mudarse a nuevos lugares por oportunidades escolares y de aprendizaje.",
+    "audioQuestion": "audios/english-tf11-education-migration.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which best describes why people avoid living in deserts?",
+    "type": "multiple-choice",
+    "options": [
+      "Too many trees",
+      "Extreme cold",
+      "Too hot and no water",
+      "Too much snow"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Deserts are extremely hot with little to no water, making it difficult to grow food and survive comfortably.",
+    "questionES": "¿Qué describe mejor por qué las personas evitan vivir en desiertos?",
+    "explanationES": "Los desiertos son extremadamente calientes con poca o ninguna agua, lo que dificulta cultivar alimentos y sobrevivir cómodamente.",
+    "audioQuestion": "audios/english-q14-desert-settlement.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: A wide base on a population pyramid indicates an aging population.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "A wide base shows many young people, indicating a growing population, while a narrow base suggests an aging or shrinking population.",
+    "questionES": "Verdadero o falso: Una base ancha en una pirámide poblacional indica una población envejecida.",
+    "explanationES": "Una base ancha muestra muchas personas jóvenes, indicando una población en crecimiento, mientras que una base estrecha sugiere una población envejecida o decreciente.",
+    "audioQuestion": "audios/english-tf12-pyramid-base.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "What is the main difference between weather and climate?",
+    "type": "multiple-choice",
+    "options": [
+      "Weather is long-term, climate is daily",
+      "Weather is daily, climate is long-term",
+      "They mean the same",
+      "Climate is only temperature"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Weather describes daily conditions, while climate is the average weather pattern over many years.",
+    "questionES": "¿Cuál es la diferencia principal entre tiempo y clima?",
+    "explanationES": "El tiempo describe las condiciones diarias, mientras que el clima es el patrón promedio del tiempo durante muchos años.",
+    "audioQuestion": "audios/english-q15-weather-vs-climate.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Flat land makes it easier to build houses and farms.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "Flat land is preferred for settlements because it's easier to construct buildings, roads, and cultivate crops than on steep mountains.",
+    "questionES": "Verdadero o falso: El terreno plano facilita construir casas y granjas.",
+    "explanationES": "El terreno plano es preferido para asentamientos porque es más fácil construir edificios, carreteras y cultivar que en montañas empinadas.",
+    "audioQuestion": "audios/english-tf13-flat-land.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which sequence correctly shows a river's journey?",
+    "type": "multiple-choice",
+    "options": [
+      "Mouth → Source → Middle → Upper",
+      "Source → Upper → Middle → Mouth",
+      "Middle → Upper → Mouth → Source",
+      "Upper → Mouth → Middle → Source"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A river flows from its source in mountains (upper course), through middle course with meanders, to its mouth at the sea.",
+    "questionES": "¿Qué secuencia muestra correctamente el viaje de un río?",
+    "explanationES": "Un río fluye desde su naciente en montañas (curso alto), a través del curso medio con meandros, hasta su desembocadura en el mar.",
+    "audioQuestion": "audios/english-q16-river-journey.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "True or False: Emigration decreases the population of the country people leave.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "When people emigrate (move out), they reduce the population of their original country while increasing the population of their new country.",
+    "questionES": "Verdadero o falso: La emigración disminuye la población del país que las personas abandonan.",
+    "explanationES": "Cuando las personas emigran (se mudan fuera), reducen la población de su país original mientras aumentan la población de su nuevo país.",
+    "audioQuestion": "audios/english-tf14-emigration-effect.mp3"
+  },
+  {
+    "exam": "E1 - Rivera: Social Science - Grade 5",
+    "question": "Which climate type has hot, dry summers and mild, wet winters?",
+    "type": "multiple-choice",
+    "options": [
+      "Tropical",
+      "Polar",
+      "Mediterranean",
+      "Desert"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mediterranean climates feature hot, dry summers and mild, rainy winters, supporting crops like olives and grapes.",
+    "questionES": "¿Qué tipo de clima tiene veranos calurosos y secos e inviernos suaves y lluviosos?",
+    "explanationES": "Los climas mediterráneos presentan veranos calurosos y secos e inviernos suaves y lluviosos, permitiendo cultivos como olivos y uvas.",
+    "audioQuestion": "audios/english-q17-mediterranean-climate.mp3"
+  }
+]

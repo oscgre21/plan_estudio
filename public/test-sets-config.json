@@ -1,44 +1,16 @@
 [
   {
-    "id": "jearle-social-science",
-    "name": "SOCIAL SCIENCE JEARLE",
-    "description": "Jearlenis's Social Science Test Set",
-    "vocabularyFile": "vocabulary-data.json",
-    "scienceQuizFile": "science-quiz-data.json"
-  },
-  {
-    "id": "aslan-social-science",
-    "name": "SOCIAL SCIENCE ASLAN",
-    "description": "Aslan's Social Science Test Set",
-    "vocabularyFile": "vocabulary-data_V2.json",
-    "scienceQuizFile": "science-quiz-data_V2.json"
-  },
-  {
-    "id": "aslan-english",
-    "name": "ENGLISH",
-    "description": "Aslan's English Test Set",
-    "vocabularyFile": "vocabulary-dataV3.json",
-    "scienceQuizFile": "science-quiz-data-v3.json"
-  },
-  {
-    "id": "aslan-exam-social-science",
-    "name": "Aslan Exam Social Science",
-    "description": "Generated from Study_Guide_World_Wars.md.pdf",
-    "vocabularyFile": "vocabulary-data-aslan-exam-social-science.json",
-    "scienceQuizFile": "science-quiz-data-aslan-exam-social-science.json"
-  },
-  {
-    "id": "espanol-aslan",
-    "name": "Espanol Aslan",
-    "description": "Generated from guia_estudio_espanol.md.pdf",
-    "vocabularyFile": "vocabulary-data-espanol-aslan.json",
-    "scienceQuizFile": "science-quiz-data-espanol-aslan.json"
-  },
-  {
     "id": "espanol-aslan-es",
     "name": "Espanol Aslan ES",
     "description": "Generated from guia_estudio_espanol.md.pdf",
     "vocabularyFile": "vocabulary-data-espanol-aslan-es.json",
     "scienceQuizFile": "science-quiz-data-espanol-aslan-es.json"
+  },
+  {
+    "id": "social-science-jearlenis",
+    "name": "Social SCIENCE Jearlenis",
+    "description": "Generated from social-science-study-guide.md.pdf",
+    "vocabularyFile": "vocabulary-data-social-science-jearlenis.json",
+    "scienceQuizFile": "science-quiz-data-social-science-jearlenis.json"
   }
 ]

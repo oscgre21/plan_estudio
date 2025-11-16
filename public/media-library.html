@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Library - Topics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .home-btn {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .home-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        /* View Switcher */
+        .view-container {
+            display: none;
+        }
+
+        .view-container.active {
+            display: block;
+        }
+
+        /* Topics List View */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .add-topic-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .add-topic-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .add-topic-form {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .topic-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            border: 3px solid white;
+            background: white;
+        }
+
+        .topic-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .topic-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .topic-card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .topic-card-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .topic-card-info {
+            text-align: center;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .topic-card-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .topic-card-actions button {
+            padding: 8px 20px;
+            font-size: 0.9em;
+        }
+
+        .no-topics {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .no-topics-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+
+        .no-topics p {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        /* Files View */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .upload-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .drop-zone {
+            border: 3px dashed #667eea;
+            border-radius: 15px;
+            padding: 50px;
+            text-align: center;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .drop-zone:hover,
+        .drop-zone.drag-over {
+            background: #f0f4ff;
+            border-color: #5568d3;
+            transform: scale(1.02);
+        }
+
+        .drop-zone-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+
+        .drop-zone p {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .drop-zone-hint {
+            font-size: 1em;
+            color: #999;
+        }
+
+        .browse-btn {
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .browse-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .upload-progress {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            background: #f0f0f0;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .upload-status {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* Media Gallery */
+        .media-gallery {
+            margin-bottom: 30px;
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+
+        .tab.active,
+        .tab:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .media-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+
+        .media-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .media-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .media-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            word-break: break-word;
+            font-size: 0.9em;
+        }
+
+        .media-details {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .media-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .media-actions button {
+            padding: 8px 15px;
+            border: none;
+            background: #667eea;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .media-actions button:hover {
+            background: #5568d3;
+        }
+
+        .no-media {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .no-media-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+
+        .no-media p {
+            font-size: 1.2em;
+        }
+
+        /* Media Player */
+        .media-player {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .player-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        video, audio {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            max-height: 500px;
+        }
+
+        .file-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .file-info h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .file-info p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .home-btn {
+                position: static;
+                transform: none;
+                margin-bottom: 15px;
+            }
+
+            .home-btn:hover {
+                transform: scale(1.05);
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .media-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .add-topic-form {
+                flex-direction: column;
+            }
+
+            .topic-input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/" class="home-btn">← Home</a>
+            <h1>🎬 Media Library</h1>
+            <p id="testSetName">Loading...</p>
+        </div>
+
+        <div class="content">
+            <!-- Topics List View -->
+            <div id="topicsView" class="view-container active">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Your Topics</h2>
+                </div>
+
+                <!-- Add New Topic -->
+                <div class="add-topic-section">
+                    <h3>➕ Add New Topic</h3>
+                    <div class="add-topic-form">
+                        <input
+                            type="text"
+                            id="newTopicInput"
+                            class="topic-input"
+                            placeholder="Enter topic name (e.g., World War I, Ancient Egypt)"
+                            onkeypress="if(event.key === 'Enter') createTopic()"
+                        >
+                        <button class="btn btn-primary" onclick="createTopic()">Create Topic</button>
+                    </div>
+                </div>
+
+                <!-- Topics Grid -->
+                <div id="topicsGrid" class="topics-grid">
+                    <!-- Topics will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Files View -->
+            <div id="filesView" class="view-container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="#" onclick="showTopicsView()">📚 Topics</a>
+                    <span>›</span>
+                    <span id="currentTopicName">-</span>
+                </div>
+
+                <!-- Upload Section -->
+                <div class="upload-section">
+                    <h3>📤 Upload Files to "<span id="uploadTopicName">-</span>"</h3>
+
+                    <!-- Drag & Drop Zone -->
+                    <div class="drop-zone" id="dropZone">
+                        <div class="drop-zone-icon">📁</div>
+                        <p>Drag and drop audio/video files here</p>
+                        <p class="drop-zone-hint">or</p>
+                        <button class="browse-btn" onclick="document.getElementById('fileInput').click()">
+                            Browse Files
+                        </button>
+                        <input type="file" id="fileInput" accept="audio/*,video/*" multiple style="display:none">
+                    </div>
+
+                    <!-- Upload Progress -->
+                    <div class="upload-progress" id="uploadProgress" style="display:none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p class="upload-status" id="uploadStatus">Uploading...</p>
+                    </div>
+                </div>
+
+                <!-- Media Gallery -->
+                <div class="media-gallery">
+                    <h3>📂 Files in this Topic</h3>
+
+                    <!-- Filter Tabs -->
+                    <div class="filter-tabs">
+                        <button class="tab active" onclick="filterMedia('all')">All</button>
+                        <button class="tab" onclick="filterMedia('audio')">🎵 Audio</button>
+                        <button class="tab" onclick="filterMedia('video')">🎬 Video</button>
+                    </div>
+
+                    <!-- Media Grid -->
+                    <div class="media-grid" id="mediaGrid">
+                        <!-- Media files will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Media Player -->
+                <div class="media-player" id="mediaPlayer" style="display:none;">
+                    <h3>🎵 Now Playing</h3>
+
+                    <div class="player-container">
+                        <!-- Video Player -->
+                        <video id="videoPlayer" controls style="display:none;">
+                            <source id="videoSource" src="" type="">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Audio Player -->
+                        <audio id="audioPlayer" controls style="display:none;">
+                            <source id="audioSource" src="" type="">
+                            Your browser does not support the audio tag.
+                        </audio>
+
+                        <!-- File Info -->
+                        <div class="file-info">
+                            <h3 id="fileName">-</h3>
+                            <p id="fileDetails">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="test-set-manager.js"></script>
+    <script src="media-manager.js"></script>
+    <script>
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', async () => {
+            await mediaManager.init();
+        });
+    </script>
+</body>
+</html>

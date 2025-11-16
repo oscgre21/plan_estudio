@@ -1,0 +1,893 @@
+[
+  {
+    "word": "SOURCE",
+    "es": "Fuente",
+    "sentenceEN": "The source of the river is high in the snowy mountains.",
+    "sentenceES": "La fuente del río está en las montañas nevadas.",
+    "options": [
+      {
+        "emoji": "⛰️",
+        "label": "Source",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌊",
+        "label": "Mouth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌳",
+        "label": "Forest",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏖️",
+        "label": "Delta",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The source is the beginning of a river, usually found in mountains or hills. / La fuente es el inicio de un río, normalmente en montañas o colinas.",
+    "audioWord": "audios/word-source.mp3",
+    "audioSentence": "audios/sentence-source.mp3",
+    "wordEmoji": "⛰️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/26f0.png"
+  },
+  {
+    "word": "TRIBUTARY",
+    "es": "Afluente",
+    "sentenceEN": "A small tributary flows into the main river adding more water.",
+    "sentenceES": "Un pequeño afluente fluye hacia el río principal añadiendo más agua.",
+    "options": [
+      {
+        "emoji": "🌊",
+        "label": "Tributary",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏞️",
+        "label": "Lake",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏖️",
+        "label": "Delta",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌅",
+        "label": "Sunrise",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A tributary is a smaller river that joins a larger river. / Un afluente es un río pequeño que se une a uno más grande.",
+    "audioWord": "audios/word-tributary.mp3",
+    "audioSentence": "audios/sentence-tributary.mp3",
+    "wordEmoji": "🌊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30a.png"
+  },
+  {
+    "word": "MEANDER",
+    "es": "Meandro",
+    "sentenceEN": "The river makes a big meander as it curves across the plain.",
+    "sentenceES": "El río forma un gran meandro mientras serpentea por la llanura.",
+    "options": [
+      {
+        "emoji": "〰️",
+        "label": "Meander",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌀",
+        "label": "Whirlpool",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌊",
+        "label": "Wave",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌅",
+        "label": "Sunrise",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A meander is a curve or bend in a river's course. / Un meandro es una curva o recodo en el curso de un río.",
+    "audioWord": "audios/word-meander.mp3",
+    "audioSentence": "audios/sentence-meander.mp3",
+    "wordEmoji": "〰️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/3030.png"
+  },
+  {
+    "word": "DELTA",
+    "es": "Delta",
+    "sentenceEN": "The Nile Delta is a triangle-shaped land at the river's mouth.",
+    "sentenceES": "El Delta del Nilo es una tierra en forma de triángulo en la desembocadura del río.",
+    "options": [
+      {
+        "emoji": "🔺",
+        "label": "Delta",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏝️",
+        "label": "Island",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏜️",
+        "label": "Desert",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌅",
+        "label": "Sunset",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A delta is triangle-shaped land formed by soil at a river's mouth. / Un delta es una tierra en forma de triángulo formada por el suelo en la desembocadura de un río.",
+    "audioWord": "audios/word-delta.mp3",
+    "audioSentence": "audios/sentence-delta.mp3",
+    "wordEmoji": "🔺",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f53a.png"
+  },
+  {
+    "word": "CLIMATE",
+    "es": "Clima",
+    "sentenceEN": "The climate of the Sahara is hot and dry all year.",
+    "sentenceES": "El clima del Sahara es caliente y seco todo el año.",
+    "options": [
+      {
+        "emoji": "🌡️",
+        "label": "Climate",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sun",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌧️",
+        "label": "Rain",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❄️",
+        "label": "Snow",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Climate is the average weather in a place over many years. / El clima es el promedio del tiempo en un lugar durante muchos años.",
+    "audioWord": "audios/word-climate.mp3",
+    "audioSentence": "audios/sentence-climate.mp3",
+    "wordEmoji": "🌡️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f321.png"
+  },
+  {
+    "word": "TROPICAL",
+    "es": "Tropical",
+    "sentenceEN": "Tropical rainforests are hot and rainy all year round.",
+    "sentenceES": "Las selvas tropicales son cálidas y lluviosas durante todo el año.",
+    "options": [
+      {
+        "emoji": "🌴",
+        "label": "Tropical",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❄️",
+        "label": "Polar",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌵",
+        "label": "Desert",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🍂",
+        "label": "Temperate",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tropical climate is very hot and rainy all year, near the Equator. / El clima tropical es muy cálido y lluvioso todo el año, cerca del Ecuador.",
+    "audioWord": "audios/word-tropical.mp3",
+    "audioSentence": "audios/sentence-tropical.mp3",
+    "wordEmoji": "🌴",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f334.png"
+  },
+  {
+    "word": "DESERT",
+    "es": "Desierto",
+    "sentenceEN": "Camels store water to survive in the hot desert.",
+    "sentenceES": "Los camellos almacenan agua para sobrevivir en el caluroso desierto.",
+    "options": [
+      {
+        "emoji": "🏜️",
+        "label": "Desert",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌲",
+        "label": "Forest",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌊",
+        "label": "Ocean",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountain",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A desert is a dry place with very little rain and hot days. / Un desierto es un lugar seco con muy poca lluvia y días calurosos.",
+    "audioWord": "audios/word-desert.mp3",
+    "audioSentence": "audios/sentence-desert.mp3",
+    "wordEmoji": "🏜️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3dc.png"
+  },
+  {
+    "word": "TEMPERATE",
+    "es": "Templado",
+    "sentenceEN": "Temperate forests have four seasons and trees lose their leaves.",
+    "sentenceES": "Los bosques templados tienen cuatro estaciones y los árboles pierden sus hojas.",
+    "options": [
+      {
+        "emoji": "🍂",
+        "label": "Temperate",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌵",
+        "label": "Arid",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌴",
+        "label": "Tropical",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❄️",
+        "label": "Polar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Temperate climate has moderate temperatures and four seasons. / El clima templado tiene temperaturas moderadas y cuatro estaciones.",
+    "audioWord": "audios/word-temperate.mp3",
+    "audioSentence": "audios/sentence-temperate.mp3",
+    "wordEmoji": "🍂",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f342.png"
+  },
+  {
+    "word": "POLAR",
+    "es": "Polar",
+    "sentenceEN": "Polar bears live in the cold polar regions near the North Pole.",
+    "sentenceES": "Los osos polares viven en las frías regiones polares cerca del Polo Norte.",
+    "options": [
+      {
+        "emoji": "❄️",
+        "label": "Polar",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌴",
+        "label": "Tropical",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌵",
+        "label": "Desert",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🍂",
+        "label": "Temperate",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Polar climate is very cold all year with ice and snow. / El clima polar es muy frío todo el año con hielo y nieve.",
+    "audioWord": "audios/word-polar.mp3",
+    "audioSentence": "audios/sentence-polar.mp3",
+    "wordEmoji": "❄️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2744.png"
+  },
+  {
+    "word": "TUNDRA",
+    "es": "Tundra",
+    "sentenceEN": "The tundra has frozen ground and no trees can grow.",
+    "sentenceES": "La tundra tiene el suelo congelado y no pueden crecer árboles.",
+    "options": [
+      {
+        "emoji": "🧊",
+        "label": "Tundra",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌲",
+        "label": "Taiga",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌴",
+        "label": "Jungle",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌾",
+        "label": "Prairie",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tundra is frozen land in cold climates where trees cannot grow. / La tundra es tierra congelada en climas fríos donde no crecen árboles.",
+    "audioWord": "audios/word-tundra.mp3",
+    "audioSentence": "audios/sentence-tundra.mp3",
+    "wordEmoji": "🧊",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9ca.png"
+  },
+  {
+    "word": "DECIDUOUS",
+    "es": "Caducifolio",
+    "sentenceEN": "Deciduous trees lose their leaves in autumn every year.",
+    "sentenceES": "Los árboles caducifolios pierden sus hojas en otoño cada año.",
+    "options": [
+      {
+        "emoji": "🍁",
+        "label": "Deciduous",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌲",
+        "label": "Coniferous",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌴",
+        "label": "Palm",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌵",
+        "label": "Cactus",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Deciduous trees shed their leaves seasonally in autumn. / Los árboles caducifolios se deshojan estacionalmente en otoño.",
+    "audioWord": "audios/word-deciduous.mp3",
+    "audioSentence": "audios/sentence-deciduous.mp3",
+    "wordEmoji": "🍁",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f341.png"
+  },
+  {
+    "word": "PRECIPITATION",
+    "es": "Precipitación",
+    "sentenceEN": "Rain and snow are types of precipitation from the sky.",
+    "sentenceES": "La lluvia y la nieve son tipos de precipitación del cielo.",
+    "options": [
+      {
+        "emoji": "🌧️",
+        "label": "Precipitation",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sunshine",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💨",
+        "label": "Wind",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌈",
+        "label": "Rainbow",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Precipitation is water that falls from clouds as rain, snow, or hail. / La precipitación es agua que cae de las nubes como lluvia, nieve o granizo.",
+    "audioWord": "audios/word-precipitation.mp3",
+    "audioSentence": "audios/sentence-precipitation.mp3",
+    "wordEmoji": "🌧️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f327.png"
+  },
+  {
+    "word": "POPULATION",
+    "es": "Población",
+    "sentenceEN": "The population of Tokyo is over 14 million people.",
+    "sentenceES": "La población de Tokio es de más de 14 millones de personas.",
+    "options": [
+      {
+        "emoji": "👥",
+        "label": "Population",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏙️",
+        "label": "City",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏠",
+        "label": "House",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "World",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Population is the total number of people living in a place. / Población es el número total de personas que viven en un lugar.",
+    "audioWord": "audios/word-population.mp3",
+    "audioSentence": "audios/sentence-population.mp3",
+    "wordEmoji": "👥",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f465.png"
+  },
+  {
+    "word": "DENSITY",
+    "es": "Densidad",
+    "sentenceEN": "New York City has a high population density with many people per square mile.",
+    "sentenceES": "Nueva York tiene una alta densidad de población con muchas personas por milla cuadrada.",
+    "options": [
+      {
+        "emoji": "📈",
+        "label": "Density",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📏",
+        "label": "Distance",
+        "isCorrect": false
+      },
+      {
+        "emoji": "⚖️",
+        "label": "Weight",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧮",
+        "label": "Math",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Density measures how crowded an area is with people. / La densidad mide cuán congestionada está un área con personas.",
+    "audioWord": "audios/word-density.mp3",
+    "audioSentence": "audios/sentence-density.mp3",
+    "wordEmoji": "📈",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4c8.png"
+  },
+  {
+    "word": "RURAL",
+    "es": "Rural",
+    "sentenceEN": "Rural areas have farms and small villages with few people.",
+    "sentenceES": "Las áreas rurales tienen granjas y pequeños pueblos con pocas personas.",
+    "options": [
+      {
+        "emoji": "🌾",
+        "label": "Rural",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏙️",
+        "label": "Urban",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏘️",
+        "label": "Suburban",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏔️",
+        "label": "Mountain",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rural means countryside areas with farms and open spaces. / Rural significa áreas del campo con granjas y espacios abiertos.",
+    "audioWord": "audios/word-rural.mp3",
+    "audioSentence": "audios/sentence-rural.mp3",
+    "wordEmoji": "🌾",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f33e.png"
+  },
+  {
+    "word": "URBAN",
+    "es": "Urbano",
+    "sentenceEN": "Urban cities have tall buildings and many people living close together.",
+    "sentenceES": "Las ciudades urbanas tienen edificios altos y muchas personas viviendo cerca unas de otras.",
+    "options": [
+      {
+        "emoji": "🏙️",
+        "label": "Urban",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌾",
+        "label": "Rural",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏘️",
+        "label": "Suburban",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏖️",
+        "label": "Coastal",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Urban refers to cities with many people and buildings. / Urbano se refiere a ciudades con muchas personas y edificios.",
+    "audioWord": "audios/word-urban.mp3",
+    "audioSentence": "audios/sentence-urban.mp3",
+    "wordEmoji": "🏙️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3d9.png"
+  },
+  {
+    "word": "FERTILE",
+    "es": "Fértil",
+    "sentenceEN": "Fertile soil helps farmers grow lots of healthy crops.",
+    "sentenceES": "El suelo fértil ayuda a los agricultores a cultivar muchos productos saludables.",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Fertile",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🪨",
+        "label": "Rocky",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏜️",
+        "label": "Dry",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧂",
+        "label": "Salty",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Fertile means good soil that helps plants grow well. / Fértil significa buen suelo que ayuda a las plantas a crecer bien.",
+    "audioWord": "audios/word-fertile.mp3",
+    "audioSentence": "audios/sentence-fertile.mp3",
+    "wordEmoji": "🌱",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f331.png"
+  },
+  {
+    "word": "IMMIGRATION",
+    "es": "Inmigración",
+    "sentenceEN": "Immigration to Canada increased when people moved there for jobs.",
+    "sentenceES": "La inmigración a Canadá aumentó cuando la gente se mudó allí por trabajos.",
+    "options": [
+      {
+        "emoji": "✈️",
+        "label": "Immigration",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚪",
+        "label": "Emigration",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Global",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📊",
+        "label": "Census",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Immigration is when people move into a new country to live. / Inmigración es cuando las personas se mudan a un nuevo país para vivir.",
+    "audioWord": "audios/word-immigration.mp3",
+    "audioSentence": "audios/sentence-immigration.mp3",
+    "wordEmoji": "✈️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2708.png"
+  },
+  {
+    "word": "EMIGRATION",
+    "es": "Emigración",
+    "sentenceEN": "Emigration from the village increased when the factory closed.",
+    "sentenceES": "La emigración del pueblo aumentó cuando la fábrica cerró.",
+    "options": [
+      {
+        "emoji": "🚪",
+        "label": "Emigration",
+        "isCorrect": true
+      },
+      {
+        "emoji": "✈️",
+        "label": "Immigration",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏠",
+        "label": "Housing",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "World",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Emigration is when people leave their country to move somewhere else. / Emigración es cuando las personas dejan su país para mudarse a otro lugar.",
+    "audioWord": "audios/word-emigration.mp3",
+    "audioSentence": "audios/sentence-emigration.mp3",
+    "wordEmoji": "🚪",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f6aa.png"
+  },
+  {
+    "word": "MIGRATION",
+    "es": "Migración",
+    "sentenceEN": "Bird migration happens when they fly south for winter.",
+    "sentenceES": "La migración de aves ocurre cuando vuelan hacia el sur en invierno.",
+    "options": [
+      {
+        "emoji": "🕊️",
+        "label": "Migration",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🏠",
+        "label": "Staying",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "Planet",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📍",
+        "label": "Location",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Migration is the movement of people or animals from one place to another. / Migración es el movimiento de personas o animales de un lugar a otro.",
+    "audioWord": "audios/word-migration.mp3",
+    "audioSentence": "audios/sentence-migration.mp3",
+    "wordEmoji": "🕊️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f54a.png"
+  },
+  {
+    "word": "PUSH FACTOR",
+    "es": "Factor de expulsión",
+    "sentenceEN": "War is a push factor that makes people leave their homes.",
+    "sentenceES": "La guerra es un factor de expulsión que hace que las personas abandonen sus hogares.",
+    "options": [
+      {
+        "emoji": "⚔️",
+        "label": "Push Factor",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💰",
+        "label": "Pull Factor",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏠",
+        "label": "Home",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌍",
+        "label": "World",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A push factor is a reason that makes people want to leave a place. / Un factor de expulsión es una razón que hace que las personas quieran abandonar un lugar.",
+    "audioWord": "audios/word-pushfactor.mp3",
+    "audioSentence": "audios/sentence-pushfactor.mp3",
+    "wordEmoji": "⚔️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2694.png"
+  },
+  {
+    "word": "PULL FACTOR",
+    "es": "Factor de atracción",
+    "sentenceEN": "Good jobs are a pull factor that attract people to cities.",
+    "sentenceES": "Los buenos trabajos son un factor de atracción que atrae a las personas a las ciudades.",
+    "options": [
+      {
+        "emoji": "💰",
+        "label": "Pull Factor",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚔️",
+        "label": "Push Factor",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏠",
+        "label": "House",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📉",
+        "label": "Decline",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A pull factor is a reason that attracts people to move to a new place. / Un factor de atracción es una razón que atrae a las personas a mudarse a un nuevo lugar.",
+    "audioWord": "audios/word-pullfactor.mp3",
+    "audioSentence": "audios/sentence-pullfactor.mp3",
+    "wordEmoji": "💰",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4b0.png"
+  },
+  {
+    "word": "BIRTH RATE",
+    "es": "Tasa de natalidad",
+    "sentenceEN": "The birth rate increased when more families had babies.",
+    "sentenceES": "La tasa de natalidad aumentó cuando más familias tuvieron bebés.",
+    "options": [
+      {
+        "emoji": "👶",
+        "label": "Birth Rate",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⚰️",
+        "label": "Death Rate",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📈",
+        "label": "Growth",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏥",
+        "label": "Hospital",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Birth rate is the number of babies born in a population. / Tasa de natalidad es el número de bebés nacidos en una población.",
+    "audioWord": "audios/word-birthrate.mp3",
+    "audioSentence": "audios/sentence-birthrate.mp3",
+    "wordEmoji": "👶",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f476.png"
+  },
+  {
+    "word": "DEATH RATE",
+    "es": "Tasa de mortalidad",
+    "sentenceEN": "Better medicine lowered the death rate in the country.",
+    "sentenceES": "Mejor medicina redujo la tasa de mortalidad en el país.",
+    "options": [
+      {
+        "emoji": "⚰️",
+        "label": "Death Rate",
+        "isCorrect": true
+      },
+      {
+        "emoji": "👶",
+        "label": "Birth Rate",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💊",
+        "label": "Medicine",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📉",
+        "label": "Decline",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Death rate is the number of people who die in a population. / Tasa de mortalidad es el número de personas que mueren en una población.",
+    "audioWord": "audios/word-deathrate.mp3",
+    "audioSentence": "audios/sentence-deathrate.mp3",
+    "wordEmoji": "⚰️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/26b0.png"
+  },
+  {
+    "word": "LIFE EXPECTANCY",
+    "es": "Esperanza de vida",
+    "sentenceEN": "Life expectancy increased due to better healthcare and food.",
+    "sentenceES": "La esperanza de vida aumentó debido a mejor atención médica y alimentos.",
+    "options": [
+      {
+        "emoji": "🧬",
+        "label": "Life Expectancy",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⏳",
+        "label": "Lifetime",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📊",
+        "label": "Statistics",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏥",
+        "label": "Hospital",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Life expectancy is how long people are expected to live on average. / Esperanza de vida es cuánto tiempo se espera que vivan las personas en promedio.",
+    "audioWord": "audios/word-lifeexpectancy.mp3",
+    "audioSentence": "audios/sentence-lifeexpectancy.mp3",
+    "wordEmoji": "🧬",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9ec.png"
+  },
+  {
+    "word": "SETTLEMENT",
+    "es": "Asentamiento",
+    "sentenceEN": "Early settlements were built near rivers for water.",
+    "sentenceES": "Los primeros asentamientos se construyeron cerca de ríos por agua.",
+    "options": [
+      {
+        "emoji": "🏘️",
+        "label": "Settlement",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌍",
+        "label": "World",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏛️",
+        "label": "Museum",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "A settlement is a place where people live together, like a town or village. / Un asentamiento es un lugar donde viven personas juntas, como un pueblo o aldea.",
+    "audioWord": "audios/word-settlement.mp3",
+    "audioSentence": "audios/sentence-settlement.mp3",
+    "wordEmoji": "🏘️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3d8.png"
+  },
+  {
+    "word": "EQUATOR",
+    "es": "Ecuador",
+    "sentenceEN": "The Equator is an imaginary line around Earth's middle.",
+    "sentenceES": "El Ecuador es una línea imaginaria alrededor del medio de la Tierra.",
+    "options": [
+      {
+        "emoji": "🌍",
+        "label": "Equator",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧭",
+        "label": "Compass",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🗺️",
+        "label": "Map",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌐",
+        "label": "Globe",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The Equator is the imaginary line that divides Earth into northern and southern halves. / El Ecuador es la línea imaginaria que divide la Tierra en mitades norte y sur.",
+    "audioWord": "audios/word-equator.mp3",
+    "audioSentence": "audios/sentence-equator.mp3",
+    "wordEmoji": "🌍",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f30d.png"
+  }
+]
