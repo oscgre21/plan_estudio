@@ -23,11 +23,17 @@ class DefinitionQuizGenerator {
         try {
             const quizData = await this.ollamaClient.generateJSONWithRetry(prompt, 3, {
                 temperature: 0.7,
-                num_predict: 6000
+                num_predict: 12000  // Increased for 30-40 questions
             });
 
             // Validate and clean the data
             const validatedData = this.validateAndClean(quizData);
+
+            // Check if we have enough questions
+            if (validatedData.length < 30) {
+                console.warn(`⚠️  Warning: Only generated ${validatedData.length} definition questions (expected 30-40)`);
+                console.warn(`   Consider using a larger document or regenerating.`);
+            }
 
             console.log(`✅ Generated ${validatedData.length} definition quiz questions`);
             return validatedData;

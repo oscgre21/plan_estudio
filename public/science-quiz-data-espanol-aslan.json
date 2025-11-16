@@ -1,0 +1,398 @@
+[
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "What is the main purpose of an expository article?",
+    "type": "multiple-choice",
+    "options": [
+      "To entertain readers with stories",
+      "To explain or inform about a topic clearly and objectively",
+      "To persuade readers to take action",
+      "To express the author's personal feelings"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An expository article aims to explain or inform about a topic in a clear and objective way, transmitting knowledge to the reader.",
+    "questionES": "¿Cuál es el propósito principal de un artículo expositivo?",
+    "explanationES": "Un artículo expositivo tiene como objetivo explicar o informar sobre un tema de manera clara y objetiva, transmitiendo conocimientos al lector.",
+    "audioQuestion": "audios/english-q1-purpose-expository.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which of the following is NOT a characteristic of an expository article?",
+    "type": "multiple-choice",
+    "options": [
+      "Clear and precise language",
+      "Objective presentation",
+      "Personal opinions of the author",
+      "Verifiable information"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Expository articles avoid personal opinions; they present information objectively and factually.",
+    "questionES": "¿Cuál de las siguientes NO es una característica de un artículo expositivo?",
+    "explanationES": "Los artículos expositivos evitan las opiniones personales; presentan la información de forma objetiva y verificable.",
+    "audioQuestion": "audios/english-q2-not-characteristic.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The three main parts of an expository article are introduction, development, and conclusion.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. An expository article is structured into introduction (presents the topic), development (explains with details), and conclusion (summarizes main ideas).",
+    "questionES": "Las tres partes principales de un artículo expositivo son introducción, desarrollo y conclusión.",
+    "explanationES": "Verdadero. Un artículo expositivo está estructurado en introducción (presenta el tema), desarrollo (explica con detalles) y conclusión (resume las ideas principales).",
+    "audioQuestion": "audios/english-tf3-three-parts.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which section of an expository article presents data, examples, and arguments?",
+    "type": "multiple-choice",
+    "options": [
+      "Introduction",
+      "Development",
+      "Conclusion",
+      "Title"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The development section explains the topic in detail, presenting data, examples, and arguments organized in paragraphs.",
+    "questionES": "¿Qué sección de un artículo expositivo presenta datos, ejemplos y argumentos?",
+    "explanationES": "La sección de desarrollo explica el tema con detalle, presentando datos, ejemplos y argumentos organizados en párrafos.",
+    "audioQuestion": "audios/english-q4-development-section.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "A simple word can be divided into smaller parts that have meaning.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. Simple words have only one root and cannot be divided into smaller meaningful parts.",
+    "questionES": "Una palabra simple puede dividirse en partes más pequeñas que tengan significado.",
+    "explanationES": "Falso. Las palabras simples tienen una sola raíz y no se pueden dividir en partes más pequeñas con significado.",
+    "audioQuestion": "audios/english-tf5-simple-division.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which of these is a simple word?",
+    "type": "multiple-choice",
+    "options": [
+      "girasol",
+      "paraguas",
+      "mar",
+      "sacapuntas"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Mar' is a simple word because it has one root and cannot be divided into smaller meaningful parts.",
+    "questionES": "¿Cuál de estas es una palabra simple?",
+    "explanationES": "'Mar' es una palabra simple porque tiene una sola raíz y no se puede dividir en partes más pequeñas con significado.",
+    "audioQuestion": "audios/english-q6-simple-word.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Compound words are formed by joining two or more simple words.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. Compound words are created by combining two or more simple words to form a new word with a new meaning.",
+    "questionES": "Las palabras compuestas se forman uniendo dos o más palabras simples.",
+    "explanationES": "Verdadero. Las palabras compuestas se crean combinando dos o más palabras simples para formar una nueva palabra con un nuevo significado.",
+    "audioQuestion": "audios/english-tf7-compound-formation.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The word 'paraguas' is formed from which simple words?",
+    "type": "multiple-choice",
+    "options": [
+      "para + guante",
+      "para + aguas",
+      "parar + agua",
+      "parque + agua"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Paraguas' comes from 'para' (to stop) + 'aguas' (waters), meaning it protects from rain.",
+    "questionES": "La palabra 'paraguas' está formada por qué palabras simples?",
+    "explanationES": "'Paraguas' proviene de 'para' (detener) + 'aguas' (aguas), significa que protege de la lluvia.",
+    "audioQuestion": "audios/english-q8-paraguas-formation.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "In the word 'sacapuntas', each part has meaning on its own.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. 'Saca' (takes out) and 'puntas' (points) are both meaningful words that form 'sacapuntas' (pencil sharpener).",
+    "questionES": "En la palabra 'sacapuntas', cada parte tiene significado por sí sola.",
+    "explanationES": "Verdadero. 'Saca' (extrae) y 'puntas' (puntas) son palabras con significado que forman 'sacapuntas'.",
+    "audioQuestion": "audios/english-tf9-sacapuntas-meaning.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which of these is a parasynthetic word?",
+    "type": "multiple-choice",
+    "options": [
+      "flor",
+      "abrelatas",
+      "aterrizar",
+      "sol"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Aterrizar' is parasynthetic because it's formed with prefix 'a-' + root 'tierra' + suffix '-izar', and 'terrizar' doesn't exist alone.",
+    "questionES": "¿Cuál de estas es una palabra parasintética?",
+    "explanationES": "'Aterrizar' es parasintética porque se forma con prefijo 'a-' + raíz 'tierra' + sufijo '-izar', y 'terrizar' no existe solo.",
+    "audioQuestion": "audios/english-q10-parasynthetic-word.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Parasynthetic words can be identified because removing the prefix or suffix leaves a word that doesn't exist in Spanish.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. In parasynthetic words like 'aterrizar', neither 'terrizar' nor 'aterrir' exist as valid Spanish words.",
+    "questionES": "Las palabras parasintéticas se identifican porque al quitar el prefijo o sufijo queda una palabra que no existe en español.",
+    "explanationES": "Verdadero. En palabras parasintéticas como 'aterrizar', ni 'terrizar' ni 'aterrir' existen como palabras válidas en español.",
+    "audioQuestion": "audios/english-tf11-parasynthetic-identification.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The word 'quinceañero' is formed by which process?",
+    "type": "multiple-choice",
+    "options": [
+      "Simple word",
+      "Compound word",
+      "Parasynthetic: compound + suffix",
+      "Parasynthetic: prefix + word + suffix"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Quinceañero' is parasynthetic type 1: compound word 'quince + año' + suffix '-ero'.",
+    "questionES": "La palabra 'quinceañero' se forma por qué proceso?",
+    "explanationES": "'Quinceañero' es parasintética tipo 1: palabra compuesta 'quince + año' + sufijo '-ero'.",
+    "audioQuestion": "audios/english-q12-quinceanero-formation.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Expository articles should use informal language to connect with young readers.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. Expository articles use formal, serious, and professional language, not informal language.",
+    "questionES": "Los artículos expositivos deben usar lenguaje informal para conectar con lectores jóvenes.",
+    "explanationES": "Falso. Los artículos expositivos usan lenguaje formal, serio y profesional, no informal.",
+    "audioQuestion": "audios/english-tf13-formal-language.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which resource is commonly used in expository articles to explain what something means?",
+    "type": "multiple-choice",
+    "options": [
+      "Comparisons",
+      "Definitions",
+      "Classifications",
+      "Numerical data"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Definitions are used in expository articles to explain the meaning of terms or concepts.",
+    "questionES": "¿Qué recurso se usa comúnmente en artículos expositivos para explicar qué significa algo?",
+    "explanationES": "Las definiciones se usan en artículos expositivos para explicar el significado de términos o conceptos.",
+    "audioQuestion": "audios/english-q14-definitions-resource.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The word 'empapelar' is parasynthetic because it combines a prefix, a root, and a suffix.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. 'Empapelar' is formed with prefix 'em-' + root 'papel' + suffix '-ar', and 'papelar' doesn't exist alone.",
+    "questionES": "La palabra 'empapelar' es parasintética porque combina prefijo, raíz y sufijo.",
+    "explanationES": "Verdadero. 'Empapelar' se forma con prefijo 'em-' + raíz 'papel' + sufijo '-ar', y 'papelar' no existe solo.",
+    "audioQuestion": "audios/english-tf15-empapelar-parasynthetic.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which of these words is NOT compound?",
+    "type": "multiple-choice",
+    "options": [
+      "lavavajillas",
+      "correcaminos",
+      "libro",
+      "mapamundi"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Libro' is a simple word, while the others are compound words formed by joining two words.",
+    "questionES": "¿Cuál de estas palabras NO es compuesta?",
+    "explanationES": "'Libro' es una palabra simple, mientras que las demás son palabras compuestas formadas al unir dos palabras.",
+    "audioQuestion": "audios/english-q16-not-compound.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The conclusion of an expository article should introduce new information to surprise the reader.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. The conclusion summarizes main ideas and closes the topic; it shouldn't introduce new information.",
+    "questionES": "La conclusión de un artículo expositivo debe introducir nueva información para sorprender al lector.",
+    "explanationES": "Falso. La conclusión resume las ideas principales y cierra el tema; no debe introducir nueva información.",
+    "audioQuestion": "audios/english-tf17-conclusion-new-info.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "What type of word is 'desalmado'?",
+    "type": "multiple-choice",
+    "options": [
+      "Simple",
+      "Compound",
+      "Parasynthetic: prefix + word + suffix",
+      "Parasynthetic: compound + suffix"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Desalmado' is parasynthetic type 2: prefix 'des-' + word 'alma' + suffix '-ado', and 'almado' doesn't exist.",
+    "questionES": "¿Qué tipo de palabra es 'desalmado'?",
+    "explanationES": "'Desalmado' es parasintética tipo 2: prefijo 'des-' + palabra 'alma' + sufijo '-ado', y 'almado' no existe.",
+    "audioQuestion": "audios/english-q18-desalmado-type.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Simple words serve as the base for forming other words.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. Simple words like 'sol', 'mar', 'pan' are the foundation for creating compound and derived words.",
+    "questionES": "Las palabras simples sirven como base para formar otras palabras.",
+    "explanationES": "Verdadero. Las palabras simples como 'sol', 'mar', 'pan' son la base para crear palabras compuestas y derivadas.",
+    "audioQuestion": "audios/english-tf19-simple-base.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which resource would be most helpful to show how two animals are similar?",
+    "type": "multiple-choice",
+    "options": [
+      "Numerical data",
+      "Comparisons",
+      "Definitions",
+      "Classifications"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Comparisons are used to show similarities between two things, like two animals.",
+    "questionES": "¿Qué recurso sería más útil para mostrar cómo se parecen dos animales?",
+    "explanationES": "Las comparaciones se usan para mostrar semejanzas entre dos cosas, como dos animales.",
+    "audioQuestion": "audios/english-q20-comparisons-animals.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The introduction of an expository article should indicate what the text will be about.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The introduction presents the topic and indicates what the article will cover.",
+    "questionES": "La introducción de un artículo expositivo debe indicar de qué tratará el texto.",
+    "explanationES": "Verdadero. La introducción presenta el tema e indica qué cubrirá el artículo.",
+    "audioQuestion": "audios/english-tf21-introduction-purpose.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "How can you identify a compound word?",
+    "type": "multiple-choice",
+    "options": [
+      "It has more than 5 letters",
+      "It ends in a vowel",
+      "You can separate it into parts and each has meaning",
+      "It always has a hyphen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Compound words can be separated into two or more words that each have meaning on their own.",
+    "questionES": "¿Cómo puedes identificar una palabra compuesta?",
+    "explanationES": "Las palabras compuestas se pueden separar en dos o más palabras que tienen significado por sí solas.",
+    "audioQuestion": "audios/english-q22-identify-compound.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "All parasynthetic words are formed by adding only a suffix to a compound word.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. Parasynthetic words can be formed two ways: compound + suffix, or prefix + word + suffix.",
+    "questionES": "Todas las palabras parasintéticas se forman agregando solo un sufijo a una palabra compuesta.",
+    "explanationES": "Falso. Las palabras parasintéticas se forman de dos maneras: compuesta + sufijo, o prefijo + palabra + sufijo.",
+    "audioQuestion": "audios/english-tf23-parasynthetic-only-suffix.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which of these is an example of a parasynthetic word formed with prefix + word + suffix?",
+    "type": "multiple-choice",
+    "options": [
+      "quinceañero",
+      "picapedrero",
+      "enrojecer",
+      "ropavejero"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Enrojecer' is parasynthetic type 2: prefix 'en-' + word 'rojo' + suffix '-ecer', and 'rojecer' doesn't exist.",
+    "questionES": "¿Cuál de estos es ejemplo de palabra parasintética formada con prefijo + palabra + sufijo?",
+    "explanationES": "'Enrojecer' es parasintética tipo 2: prefijo 'en-' + palabra 'rojo' + sufijo '-ecer', y 'rojecer' no existe.",
+    "audioQuestion": "audios/english-q24-prefix-word-suffix.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The development section of an expository article can include subtopics to organize information.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. The development section can be organized with subtopics to present information logically.",
+    "questionES": "La sección de desarrollo de un artículo expositivo puede incluir subtemas para organizar la información.",
+    "explanationES": "Verdadero. La sección de desarrollo puede organizarse con subtemas para presentar la información lógicamente.",
+    "audioQuestion": "audios/english-tf25-development-subtopics.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "What makes 'picapedrero' a parasynthetic word?",
+    "type": "multiple-choice",
+    "options": [
+      "It's a simple word with suffix",
+      "It's compound without suffix",
+      "It's compound 'pica + piedra' + suffix '-ero'",
+      "It's prefix + simple word"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Picapedrero' is parasynthetic type 1: compound 'pica + piedra' + suffix '-ero' meaning stone worker.",
+    "questionES": "¿Qué hace de 'picapedrero' una palabra parasintética?",
+    "explanationES": "'Picapedrero' es parasintética tipo 1: compuesta 'pica + piedra' + sufijo '-ero' que significa trabajador de piedra.",
+    "audioQuestion": "audios/english-q26-picapedrero-parasynthetic.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Expository articles should present information that can be verified by the reader.",
+    "type": "true-false",
+    "correctAnswer": "T",
+    "explanation": "True. A key characteristic of expository articles is that they present verifiable information that can be checked.",
+    "questionES": "Los artículos expositivos deben presentar información que pueda ser verificada por el lector.",
+    "explanationES": "Verdadero. Una característica clave de los artículos expositivos es que presentan información verificable que puede comprobarse.",
+    "audioQuestion": "audios/english-tf27-verifiable-information.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "Which type of word formation is demonstrated by 'sietemesino'?",
+    "type": "multiple-choice",
+    "options": [
+      "Simple word",
+      "Compound word",
+      "Parasynthetic: compound + suffix",
+      "Parasynthetic: prefix + word + suffix"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Sietemesino' is parasynthetic type 1: compound 'siete + mes' + suffix '-ino'.",
+    "questionES": "¿Qué tipo de formación de palabras demuestra 'sietemesino'?",
+    "explanationES": "'Sietemesino' es parasintética tipo 1: compuesta 'siete + mes' + sufijo '-ino'.",
+    "audioQuestion": "audios/english-q28-sietemesino-type.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "The word 'anochecer' is parasynthetic because 'nochecer' exists as a valid Spanish word.",
+    "type": "true-false",
+    "correctAnswer": "F",
+    "explanation": "False. 'Anochecer' is parasynthetic because 'nochecer' doesn't exist as a valid word in Spanish.",
+    "questionES": "La palabra 'anochecer' es parasintética porque 'nochecer' existe como palabra válida en español.",
+    "explanationES": "Falso. 'Anochecer' es parasintética porque 'nochecer' no existe como palabra válida en español.",
+    "audioQuestion": "audios/english-tf29-anochecer-nochecer.mp3"
+  },
+  {
+    "exam": "E1 - Spanish Language: Language Arts - Grade 6",
+    "question": "What should the tone of an expository article be?",
+    "type": "multiple-choice",
+    "options": [
+      "Humorous and casual",
+      "Formal and professional",
+      "Emotional and personal",
+      "Poetic and artistic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Expository articles are written in a formal, serious, and professional tone.",
+    "questionES": "¿Cuál debe ser el tono de un artículo expositivo?",
+    "explanationES": "Los artículos expositivos se escriben con un tono formal, serio y profesional.",
+    "audioQuestion": "audios/english-q30-expository-tone.mp3"
+  }
+]

@@ -1,0 +1,730 @@
+[
+  {
+    "question": "This is a text that explains or informs about a topic in a clear and objective way.",
+    "audioQuestion": "audios/question-articulo.mp3",
+    "correctAnswer": "ARTICULO EXPOSITIVO",
+    "options": [
+      {
+        "word": "ARTICULO EXPOSITIVO",
+        "emoji": "📰",
+        "isCorrect": true
+      },
+      {
+        "word": "ARTICULO OPINION",
+        "emoji": "🗣️",
+        "isCorrect": false
+      },
+      {
+        "word": "ARTICULO CIENTIFICO",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "ARTICULO DEPORTIVO",
+        "emoji": "⚽",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the first part of an expository article that presents the topic and captures the reader's attention.",
+    "audioQuestion": "audios/question-introduccion.mp3",
+    "correctAnswer": "INTRODUCCION",
+    "options": [
+      {
+        "word": "INTRODUCCION",
+        "emoji": "🚪",
+        "isCorrect": true
+      },
+      {
+        "word": "DESARROLLO",
+        "emoji": "📈",
+        "isCorrect": false
+      },
+      {
+        "word": "CONCLUSION",
+        "emoji": "🏁",
+        "isCorrect": false
+      },
+      {
+        "word": "RESUMEN",
+        "emoji": "📋",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the part of an expository article that explains the topic with details, examples, and arguments.",
+    "audioQuestion": "audios/question-desarrollo.mp3",
+    "correctAnswer": "DESARROLLO",
+    "options": [
+      {
+        "word": "DESARROLLO",
+        "emoji": "📖",
+        "isCorrect": true
+      },
+      {
+        "word": "INTRODUCCION",
+        "emoji": "🚪",
+        "isCorrect": false
+      },
+      {
+        "word": "CONCLUSION",
+        "emoji": "🏁",
+        "isCorrect": false
+      },
+      {
+        "word": "TITULO",
+        "emoji": "📍",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the final part of an expository article that summarizes the main ideas and closes the topic.",
+    "audioQuestion": "audios/question-conclusion.mp3",
+    "correctAnswer": "CONCLUSION",
+    "options": [
+      {
+        "word": "CONCLUSION",
+        "emoji": "🎯",
+        "isCorrect": true
+      },
+      {
+        "word": "DESARROLLO",
+        "emoji": "📖",
+        "isCorrect": false
+      },
+      {
+        "word": "INTRODUCCION",
+        "emoji": "🚪",
+        "isCorrect": false
+      },
+      {
+        "word": "EPILOGO",
+        "emoji": "📚",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a word that has only one root and cannot be divided into smaller meaningful parts.",
+    "audioQuestion": "audios/question-simples.mp3",
+    "correctAnswer": "PALABRAS SIMPLES",
+    "options": [
+      {
+        "word": "PALABRAS SIMPLES",
+        "emoji": "🔤",
+        "isCorrect": true
+      },
+      {
+        "word": "PALABRAS COMPUESTAS",
+        "emoji": "🔗",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRAS PARASINTETICAS",
+        "emoji": "🧩",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRAS DERIVADAS",
+        "emoji": "🌱",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a word formed by joining two or more simple words to create a new meaning.",
+    "audioQuestion": "audios/question-compuestas.mp3",
+    "correctAnswer": "PALABRAS COMPUESTAS",
+    "options": [
+      {
+        "word": "PALABRAS COMPUESTAS",
+        "emoji": "🔗",
+        "isCorrect": true
+      },
+      {
+        "word": "PALABRAS SIMPLES",
+        "emoji": "🔤",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRAS PARASINTETICAS",
+        "emoji": "🧩",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRAS LARGAS",
+        "emoji": "📏",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a word formed by adding a suffix to a compound word or by adding both prefix and suffix simultaneously.",
+    "audioQuestion": "audios/question-parasinteticas.mp3",
+    "correctAnswer": "PALABRAS PARASINTETICAS",
+    "options": [
+      {
+        "word": "PALABRAS PARASINTETICAS",
+        "emoji": "🧩",
+        "isCorrect": true
+      },
+      {
+        "word": "PALABRAS COMPUESTAS",
+        "emoji": "🔗",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRAS SIMPLES",
+        "emoji": "🔤",
+        "isCorrect": false
+      },
+      {
+        "word": "PALABRAS COMPLEJAS",
+        "emoji": "🌀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an example of a compound word that means 'object for sharpening pencils'.",
+    "audioQuestion": "audios/question-sacapuntas.mp3",
+    "correctAnswer": "SACAPUNTAS",
+    "options": [
+      {
+        "word": "SACAPUNTAS",
+        "emoji": "✏️",
+        "isCorrect": true
+      },
+      {
+        "word": "ABRELATAS",
+        "emoji": "🥫",
+        "isCorrect": false
+      },
+      {
+        "word": "PARAGUAS",
+        "emoji": "☂️",
+        "isCorrect": false
+      },
+      {
+        "word": "ROMPECABEZAS",
+        "emoji": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is an example of a simple word that refers to a celestial body that gives light.",
+    "audioQuestion": "audios/question-sol.mp3",
+    "correctAnswer": "SOL",
+    "options": [
+      {
+        "word": "SOL",
+        "emoji": "☀️",
+        "isCorrect": true
+      },
+      {
+        "word": "GIRASOL",
+        "emoji": "🌻",
+        "isCorrect": false
+      },
+      {
+        "word": "LUZ",
+        "emoji": "💡",
+        "isCorrect": false
+      },
+      {
+        "word": "ESTRELLA",
+        "emoji": "⭐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means 'flower that turns toward the sun'.",
+    "audioQuestion": "audios/question-girasol.mp3",
+    "correctAnswer": "GIRASOL",
+    "options": [
+      {
+        "word": "GIRASOL",
+        "emoji": "🌻",
+        "isCorrect": true
+      },
+      {
+        "word": "GIRAMUNDO",
+        "emoji": "🌍",
+        "isCorrect": false
+      },
+      {
+        "word": "GIRATORIO",
+        "emoji": "🔄",
+        "isCorrect": false
+      },
+      {
+        "word": "GIRAR",
+        "emoji": "🌀",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word formed from 'quince + year + suffix' meaning a fifteen-year-old person.",
+    "audioQuestion": "audios/question-quinceañero.mp3",
+    "correctAnswer": "QUINCEAÑERO",
+    "options": [
+      {
+        "word": "QUINCEAÑERO",
+        "emoji": "🎂",
+        "isCorrect": true
+      },
+      {
+        "word": "SIETEMESINO",
+        "emoji": "👶",
+        "isCorrect": false
+      },
+      {
+        "word": "VEINTEAÑERO",
+        "emoji": "🧑",
+        "isCorrect": false
+      },
+      {
+        "word": "QUINCEAÑOS",
+        "emoji": "🎉",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word meaning 'to land' that doesn't exist if you remove the prefix or suffix.",
+    "audioQuestion": "audios/question-aterrizar.mp3",
+    "correctAnswer": "ATERRIZAR",
+    "options": [
+      {
+        "word": "ATERRIZAR",
+        "emoji": "✈️",
+        "isCorrect": true
+      },
+      {
+        "word": "EMPAPALAR",
+        "emoji": "📄",
+        "isCorrect": false
+      },
+      {
+        "word": "DESPEgar",
+        "emoji": "🛫",
+        "isCorrect": false
+      },
+      {
+        "word": "ENLOQUECER",
+        "emoji": "🤪",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the characteristic of expository articles that means presenting information without personal opinions.",
+    "audioQuestion": "audios/question-objetivo.mp3",
+    "correctAnswer": "OBJETIVO",
+    "options": [
+      {
+        "word": "OBJETIVO",
+        "emoji": "🎯",
+        "isCorrect": true
+      },
+      {
+        "word": "SUBJETIVO",
+        "emoji": "👤",
+        "isCorrect": false
+      },
+      {
+        "word": "PERSUASIVO",
+        "emoji": "🗣️",
+        "isCorrect": false
+      },
+      {
+        "word": "EMOTIVO",
+        "emoji": "❤️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the characteristic of expository articles that means using words everyone can understand.",
+    "audioQuestion": "audios/question-claro.mp3",
+    "correctAnswer": "CLARO Y PRECISO",
+    "options": [
+      {
+        "word": "CLARO Y PRECISO",
+        "emoji": "🔍",
+        "isCorrect": true
+      },
+      {
+        "word": "COMPLEJO Y TECNICO",
+        "emoji": "🔬",
+        "isCorrect": false
+      },
+      {
+        "word": "POETICO Y FLUIDO",
+        "emoji": "🎭",
+        "isCorrect": false
+      },
+      {
+        "word": "ABSTRACTO Y VAGO",
+        "emoji": "☁️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a resource used in expository articles that explains what something means.",
+    "audioQuestion": "audios/question-definicion.mp3",
+    "correctAnswer": "DEFINICION",
+    "options": [
+      {
+        "word": "DEFINICION",
+        "emoji": "📖",
+        "isCorrect": true
+      },
+      {
+        "word": "EJEMPLO",
+        "emoji": "💡",
+        "isCorrect": false
+      },
+      {
+        "word": "COMPARACION",
+        "emoji": "⚖️",
+        "isCorrect": false
+      },
+      {
+        "word": "CLASIFICACION",
+        "emoji": "📊",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means 'tool for opening bottles'.",
+    "audioQuestion": "audios/question-sacacorchos.mp3",
+    "correctAnswer": "SACACORCHOS",
+    "options": [
+      {
+        "word": "SACACORCHOS",
+        "emoji": "🍾",
+        "isCorrect": true
+      },
+      {
+        "word": "ABRELATAS",
+        "emoji": "🥫",
+        "isCorrect": false
+      },
+      {
+        "word": "SACAPUNTAS",
+        "emoji": "✏️",
+        "isCorrect": false
+      },
+      {
+        "word": "DESTAPADOR",
+        "emoji": "🍺",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a simple word that refers to a place where people live.",
+    "audioQuestion": "audios/question-casa.mp3",
+    "correctAnswer": "CASA",
+    "options": [
+      {
+        "word": "CASA",
+        "emoji": "🏠",
+        "isCorrect": true
+      },
+      {
+        "word": "HOGAR",
+        "emoji": "🏡",
+        "isCorrect": false
+      },
+      {
+        "word": "VIVIENDA",
+        "emoji": "🏘️",
+        "isCorrect": false
+      },
+      {
+        "word": "DEPARTAMENTO",
+        "emoji": "🏢",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word formed with 'paper + suffix' meaning 'to cover with paper'.",
+    "audioQuestion": "audios/question-empapelar.mp3",
+    "correctAnswer": "EMPAPALAR",
+    "options": [
+      {
+        "word": "EMPAPALAR",
+        "emoji": "📄",
+        "isCorrect": true
+      },
+      {
+        "word": "ATERRIZAR",
+        "emoji": "✈️",
+        "isCorrect": false
+      },
+      {
+        "word": "ENMOHECER",
+        "emoji": "🍄",
+        "isCorrect": false
+      },
+      {
+        "word": "EMBELLECER",
+        "emoji": "💄",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means 'product for removing stains'.",
+    "audioQuestion": "audios/question-quitamanchas.mp3",
+    "correctAnswer": "QUITAMANCHAS",
+    "options": [
+      {
+        "word": "QUITAMANCHAS",
+        "emoji": "🧼",
+        "isCorrect": true
+      },
+      {
+        "word": "LIMPIADOR",
+        "emoji": "🧽",
+        "isCorrect": false
+      },
+      {
+        "word": "DESMANCHADOR",
+        "emoji": "💧",
+        "isCorrect": false
+      },
+      {
+        "word": "MANCHADOR",
+        "emoji": "🎨",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the characteristic of expository articles that means information can be verified.",
+    "audioQuestion": "audios/question-verificable.mp3",
+    "correctAnswer": "INFORMACION VERIFICABLE",
+    "options": [
+      {
+        "word": "INFORMACION VERIFICABLE",
+        "emoji": "✅",
+        "isCorrect": true
+      },
+      {
+        "word": "INFORMACION OPINABLE",
+        "emoji": "🤔",
+        "isCorrect": false
+      },
+      {
+        "word": "INFORMACION CUESTIONABLE",
+        "emoji": "❓",
+        "isCorrect": false
+      },
+      {
+        "word": "INFORMACION RELATIVA",
+        "emoji": "↔️",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a resource used in expository articles that groups elements by categories.",
+    "audioQuestion": "audios/question-clasificacion.mp3",
+    "correctAnswer": "CLASIFICACION",
+    "options": [
+      {
+        "word": "CLASIFICACION",
+        "emoji": "📊",
+        "isCorrect": true
+      },
+      {
+        "word": "DESCRIPCION",
+        "emoji": "📝",
+        "isCorrect": false
+      },
+      {
+        "word": "COMPARACION",
+        "emoji": "⚖️",
+        "isCorrect": false
+      },
+      {
+        "word": "ENUMERACION",
+        "emoji": "🔢",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means 'activity for entertaining oneself'.",
+    "audioQuestion": "audios/question-pasatiempo.mp3",
+    "correctAnswer": "PASATIEMPO",
+    "options": [
+      {
+        "word": "PASATIEMPO",
+        "emoji": "🎮",
+        "isCorrect": true
+      },
+      {
+        "word": "DIVERSION",
+        "emoji": "🎪",
+        "isCorrect": false
+      },
+      {
+        "word": "ENTRETENIMIENTO",
+        "emoji": "🎭",
+        "isCorrect": false
+      },
+      {
+        "word": "HOBBY",
+        "emoji": "🏸",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word that means 'to become sad' and doesn't exist without its prefix or suffix.",
+    "audioQuestion": "audios/question-entristecer.mp3",
+    "correctAnswer": "ENTRISTECER",
+    "options": [
+      {
+        "word": "ENTRISTECER",
+        "emoji": "😢",
+        "isCorrect": true
+      },
+      {
+        "word": "ENMOHECER",
+        "emoji": "🍄",
+        "isCorrect": false
+      },
+      {
+        "word": "EMBELLECER",
+        "emoji": "💄",
+        "isCorrect": false
+      },
+      {
+        "word": "ENTRISTE",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is the characteristic tone used in expository articles that is serious and professional.",
+    "audioQuestion": "audios/question-formal.mp3",
+    "correctAnswer": "TONO FORMAL",
+    "options": [
+      {
+        "word": "TONO FORMAL",
+        "emoji": "👔",
+        "isCorrect": true
+      },
+      {
+        "word": "TONO INFORMAL",
+        "emoji": "👕",
+        "isCorrect": false
+      },
+      {
+        "word": "TONO HUMORISTICO",
+        "emoji": "😄",
+        "isCorrect": false
+      },
+      {
+        "word": "TONO IRONICO",
+        "emoji": "🙃",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a simple word that refers to a body of salt water.",
+    "audioQuestion": "audios/question-mar.mp3",
+    "correctAnswer": "MAR",
+    "options": [
+      {
+        "word": "MAR",
+        "emoji": "🌊",
+        "isCorrect": true
+      },
+      {
+        "word": "OCEANO",
+        "emoji": "🌊",
+        "isCorrect": false
+      },
+      {
+        "word": "MAREMOTO",
+        "emoji": "🌊",
+        "isCorrect": false
+      },
+      {
+        "word": "MARINO",
+        "emoji": "🐟",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a compound word that means 'entrance of a street'.",
+    "audioQuestion": "audios/question-bocacalle.mp3",
+    "correctAnswer": "BOCACALLE",
+    "options": [
+      {
+        "word": "BOCACALLE",
+        "emoji": "🛣️",
+        "isCorrect": true
+      },
+      {
+        "word": "BOCADILLO",
+        "emoji": "🥪",
+        "isCorrect": false
+      },
+      {
+        "word": "CALLEJON",
+        "emoji": "🏚️",
+        "isCorrect": false
+      },
+      {
+        "word": "ENTRADA",
+        "emoji": "🚪",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "This is a parasynthetic word formed from 'seven + month + suffix' meaning something that lasts seven months.",
+    "audioQuestion": "audios/question-sietemesino.mp3",
+    "correctAnswer": "SIETEMESINO",
+    "options": [
+      {
+        "word": "SIETEMESINO",
+        "emoji": "👶",
+        "isCorrect": true
+      },
+      {
+        "word": "QUINCEAÑERO",
+        "emoji": "🎂",
+        "isCorrect": false
+      },
+      {
+        "word": "MENSUAL",
+        "emoji": "📅",
+        "isCorrect": false
+      },
+      {
+        "word": "SEMANAL",
+        "emoji": "📆",
+        "isCorrect": false
+      }
+    ]
+  }
+]

@@ -26,5 +26,12 @@
     "description": "Generated from Study_Guide_World_Wars.md.pdf",
     "vocabularyFile": "vocabulary-data-aslan-exam-social-science.json",
     "scienceQuizFile": "science-quiz-data-aslan-exam-social-science.json"
+  },
+  {
+    "id": "espanol-aslan",
+    "name": "Espanol Aslan",
+    "description": "Generated from guia_estudio_espanol.md.pdf",
+    "vocabularyFile": "vocabulary-data-espanol-aslan.json",
+    "scienceQuizFile": "science-quiz-data-espanol-aslan.json"
   }
 ]

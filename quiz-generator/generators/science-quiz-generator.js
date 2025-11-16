@@ -24,11 +24,17 @@ class ScienceQuizGenerator {
         try {
             const quizData = await this.ollamaClient.generateJSONWithRetry(prompt, 3, {
                 temperature: 0.7,
-                num_predict: 8000
+                num_predict: 16000  // Increased for 30-50 questions
             });
 
             // Validate and clean the data
             const validatedData = this.validateAndClean(quizData, examName);
+
+            // Check if we have enough questions
+            if (validatedData.length < 30) {
+                console.warn(`⚠️  Warning: Only generated ${validatedData.length} quiz questions (expected 30-50)`);
+                console.warn(`   Consider using a larger document or regenerating.`);
+            }
 
             console.log(`✅ Generated ${validatedData.length} quiz questions`);
             return validatedData;

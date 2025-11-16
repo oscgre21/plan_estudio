@@ -6,7 +6,7 @@ STUDY MATERIAL:
 INSTRUCTIONS:
 1. Analyze the study material carefully
 2. Create a mix of question types: multiple-choice, true-false
-3. Generate 20-40 questions covering all key concepts
+3. Generate 30-50 questions covering all key concepts (aim for at least 30, maximum 50)
 4. Each question must have:
    - Clear, educational question text
    - Correct answer

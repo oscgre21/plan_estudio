@@ -23,11 +23,17 @@ class VocabularyGenerator {
         try {
             const vocabularyData = await this.ollamaClient.generateJSONWithRetry(prompt, 3, {
                 temperature: 0.7,
-                num_predict: 6000
+                num_predict: 12000  // Increased for 30-40 words
             });
 
             // Validate and clean the data
             const validatedData = this.validateAndClean(vocabularyData);
+
+            // Check if we have enough vocabulary items
+            if (validatedData.length < 30) {
+                console.warn(`⚠️  Warning: Only generated ${validatedData.length} vocabulary items (expected 30-40)`);
+                console.warn(`   Consider using a larger document or regenerating.`);
+            }
 
             console.log(`✅ Generated ${validatedData.length} vocabulary items`);
             return validatedData;

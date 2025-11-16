@@ -4,7 +4,7 @@ STUDY MATERIAL:
 {DOCUMENT_TEXT}
 
 INSTRUCTIONS:
-1. Extract 10-20 key vocabulary words from the material
+1. Extract 30-40 key vocabulary words from the material (aim for at least 30, maximum 40)
 2. For each word, create:
    - English word (uppercase)
    - Spanish translation

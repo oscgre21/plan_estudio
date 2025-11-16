@@ -1,0 +1,992 @@
+[
+  {
+    "word": "ARTICLE",
+    "spanish": "Artículo",
+    "sentenceEN": "The teacher asked us to write an article about marine animals.",
+    "sentenceES": "El maestro nos pidió escribir un artículo sobre animales marinos.",
+    "options": [
+      {
+        "emoji": "📰",
+        "label": "Article",
+        "isCorrect": true
+      },
+      {
+        "emoji": "📖",
+        "label": "Book",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📝",
+        "label": "Note",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📄",
+        "label": "Sheet",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An article is a written text that explains or informs about a topic. Un artículo es un texto escrito que explica o informa sobre un tema.",
+    "audioWord": "audios/word-article.mp3",
+    "audioSentence": "audios/sentence-article.mp3",
+    "wordEmoji": "📰",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4f0.png"
+  },
+  {
+    "word": "EXPOSITORY",
+    "spanish": "Expositivo",
+    "sentenceEN": "An expository text presents facts without opinions.",
+    "sentenceES": "Un texto expositivo presenta hechos sin opiniones.",
+    "options": [
+      {
+        "emoji": "🔍",
+        "label": "Expository",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💭",
+        "label": "Opinion",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "Dramatic",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "Creative",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Expository refers to writing that explains or informs. Expositivo se refiere a la escritura que explica o informa.",
+    "audioWord": "audios/word-expository.mp3",
+    "audioSentence": "audios/sentence-expository.mp3",
+    "wordEmoji": "🔍",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f50d.png"
+  },
+  {
+    "word": "INTRODUCTION",
+    "spanish": "Introducción",
+    "sentenceEN": "The introduction presents the topic of the article.",
+    "sentenceES": "La introducción presenta el tema del artículo.",
+    "options": [
+      {
+        "emoji": "🚪",
+        "label": "Introduction",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧩",
+        "label": "Development",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏁",
+        "label": "Conclusion",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📌",
+        "label": "Summary",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Introduction is the beginning part that presents the topic. Introducción es la parte inicial que presenta el tema.",
+    "audioWord": "audios/word-introduction.mp3",
+    "audioSentence": "audios/sentence-introduction.mp3",
+    "wordEmoji": "🚪",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f6aa.png"
+  },
+  {
+    "word": "DEVELOPMENT",
+    "spanish": "Desarrollo",
+    "sentenceEN": "The development section explains the topic with details.",
+    "sentenceES": "La sección de desarrollo explica el tema con detalles.",
+    "options": [
+      {
+        "emoji": "🧩",
+        "label": "Development",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚪",
+        "label": "Introduction",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🏁",
+        "label": "Conclusion",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📌",
+        "label": "Summary",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Development is the main body that explains the topic. Desarrollo es el cuerpo principal que explica el tema.",
+    "audioWord": "audios/word-development.mp3",
+    "audioSentence": "audios/sentence-development.mp3",
+    "wordEmoji": "🧩",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9e9.png"
+  },
+  {
+    "word": "CONCLUSION",
+    "spanish": "Conclusión",
+    "sentenceEN": "The conclusion summarizes the main ideas of the article.",
+    "sentenceES": "La conclusión resume las ideas principales del artículo.",
+    "options": [
+      {
+        "emoji": "🏁",
+        "label": "Conclusion",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚪",
+        "label": "Introduction",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧩",
+        "label": "Development",
+        "isCorrect": false
+      },
+      {
+        "emoji": "📌",
+        "label": "Summary",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Conclusion is the final part that closes the topic. Conclusión es la parte final que cierra el tema.",
+    "audioWord": "audios/word-conclusion.mp3",
+    "audioSentence": "audios/sentence-conclusion.mp3",
+    "wordEmoji": "🏁",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3c1.png"
+  },
+  {
+    "word": "OBJECTIVE",
+    "spanish": "Objetivo",
+    "sentenceEN": "An objective text presents facts without personal opinions.",
+    "sentenceES": "Un texto objetivo presenta hechos sin opiniones personales.",
+    "options": [
+      {
+        "emoji": "⚖️",
+        "label": "Objective",
+        "isCorrect": true
+      },
+      {
+        "emoji": "💭",
+        "label": "Subjective",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎨",
+        "label": "Creative",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎭",
+        "label": "Dramatic",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Objective means neutral and based on facts. Objetivo significa neutral y basado en hechos.",
+    "audioWord": "audios/word-objective.mp3",
+    "audioSentence": "audios/sentence-objective.mp3",
+    "wordEmoji": "⚖️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2696.png"
+  },
+  {
+    "word": "VERIFIABLE",
+    "spanish": "Verificable",
+    "sentenceEN": "All information in the article must be verifiable.",
+    "sentenceES": "Toda la información en el artículo debe ser verificable.",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Verifiable",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❓",
+        "label": "Questionable",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤔",
+        "label": "Doubtful",
+        "isCorrect": false
+      },
+      {
+        "emoji": "💭",
+        "label": "Imaginary",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Verifiable means it can be checked or confirmed. Verificable significa que puede ser comprobado o confirmado.",
+    "audioWord": "audios/word-verifiable.mp3",
+    "audioSentence": "audios/sentence-verifiable.mp3",
+    "wordEmoji": "✅",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2705.png"
+  },
+  {
+    "word": "FORMAL",
+    "spanish": "Formal",
+    "sentenceEN": "Academic writing requires a formal tone.",
+    "sentenceES": "La escritura académica requiere un tono formal.",
+    "options": [
+      {
+        "emoji": "👔",
+        "label": "Formal",
+        "isCorrect": true
+      },
+      {
+        "emoji": "😎",
+        "label": "Casual",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎉",
+        "label": "Party",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤪",
+        "label": "Silly",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Formal means serious and professional in style. Formal significa serio y profesional en estilo.",
+    "audioWord": "audios/word-formal.mp3",
+    "audioSentence": "audios/sentence-formal.mp3",
+    "wordEmoji": "👔",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f454.png"
+  },
+  {
+    "word": "SIMPLE",
+    "spanish": "Simple",
+    "sentenceEN": "Sun is a simple word that cannot be divided.",
+    "sentenceES": "Sol es una palabra simple que no se puede dividir.",
+    "options": [
+      {
+        "emoji": "☀️",
+        "label": "Simple",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔗",
+        "label": "Compound",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧬",
+        "label": "Parasynthetic",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧩",
+        "label": "Complex",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Simple words have one root and cannot be divided. Las palabras simples tienen una sola raíz y no se pueden dividir.",
+    "audioWord": "audios/word-simple.mp3",
+    "audioSentence": "audios/sentence-simple.mp3",
+    "wordEmoji": "☀️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2600.png"
+  },
+  {
+    "word": "COMPOUND",
+    "spanish": "Compuesta",
+    "sentenceEN": "Umbrella is a compound word: para + agua.",
+    "sentenceES": "Paraguas es una palabra compuesta: para + agua.",
+    "options": [
+      {
+        "emoji": "☂️",
+        "label": "Compound",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️",
+        "label": "Simple",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧬",
+        "label": "Parasynthetic",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧩",
+        "label": "Complex",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Compound words are formed by joining two simple words. Las palabras compuestas se forman uniendo dos palabras simples.",
+    "audioWord": "audios/word-compound.mp3",
+    "audioSentence": "audios/sentence-compound.mp3",
+    "wordEmoji": "☂️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2602.png"
+  },
+  {
+    "word": "PARASYNTHETIC",
+    "spanish": "Parasintética",
+    "sentenceEN": "Landing is a parasynthetic word: a + tierra + ar.",
+    "sentenceES": "Aterrizar es una palabra parasintética: a + tierra + ar.",
+    "options": [
+      {
+        "emoji": "🧬",
+        "label": "Parasynthetic",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️",
+        "label": "Simple",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔗",
+        "label": "Compound",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧩",
+        "label": "Complex",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Parasynthetic words are formed with prefixes and suffixes. Las palabras parasintéticas se forman con prefijos y sufijos.",
+    "audioWord": "audios/word-parasynthetic.mp3",
+    "audioSentence": "audios/sentence-parasynthetic.mp3",
+    "wordEmoji": "🧬",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9ec.png"
+  },
+  {
+    "word": "ROOT",
+    "spanish": "Raíz",
+    "sentenceEN": "The root of the word 'house' is 'cas'.",
+    "sentenceES": "La raíz de la palabra 'casa' es 'cas'.",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Root",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌳",
+        "label": "Tree",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🍃",
+        "label": "Leaf",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌿",
+        "label": "Herb",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Root is the base part of a word. Raíz es la parte base de una palabra.",
+    "audioWord": "audios/word-root.mp3",
+    "audioSentence": "audios/sentence-root.mp3",
+    "wordEmoji": "🌱",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f331.png"
+  },
+  {
+    "word": "PREFIX",
+    "spanish": "Prefijo",
+    "sentenceEN": "The prefix 'des' in 'desalmado' means without.",
+    "sentenceES": "El prefijo 'des' en 'desalmado' significa sin.",
+    "options": [
+      {
+        "emoji": "⬅️",
+        "label": "Prefix",
+        "isCorrect": true
+      },
+      {
+        "emoji": "➡️",
+        "label": "Suffix",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔤",
+        "label": "Alphabet",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔡",
+        "label": "Letters",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Prefix is added at the beginning of a word. Prefijo se agrega al inicio de una palabra.",
+    "audioWord": "audios/word-prefix.mp3",
+    "audioSentence": "audios/sentence-prefix.mp3",
+    "wordEmoji": "⬅️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2b05.png"
+  },
+  {
+    "word": "SUFFIX",
+    "spanish": "Sufijo",
+    "sentenceEN": "The suffix 'ero' in 'quinceañero' indicates a person.",
+    "sentenceES": "El sufijo 'ero' en 'quinceañero' indica una persona.",
+    "options": [
+      {
+        "emoji": "➡️",
+        "label": "Suffix",
+        "isCorrect": true
+      },
+      {
+        "emoji": "⬅️",
+        "label": "Prefix",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔤",
+        "label": "Alphabet",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔡",
+        "label": "Letters",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Suffix is added at the end of a word. Sufijo se agrega al final de una palabra.",
+    "audioWord": "audios/word-suffix.mp3",
+    "audioSentence": "audios/sentence-suffix.mp3",
+    "wordEmoji": "➡️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/27a1.png"
+  },
+  {
+    "word": "UMBRELLA",
+    "spanish": "Paraguas",
+    "sentenceEN": "I need an umbrella when it rains.",
+    "sentenceES": "Necesito un paraguas cuando llueve.",
+    "options": [
+      {
+        "emoji": "☂️",
+        "label": "Umbrella",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🧥",
+        "label": "Coat",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👢",
+        "label": "Boots",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧤",
+        "label": "Gloves",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Umbrella is a compound word that protects from rain. Paraguas es una palabra compuesta que protege de la lluvia.",
+    "audioWord": "audios/word-umbrella.mp3",
+    "audioSentence": "audios/sentence-umbrella.mp3",
+    "wordEmoji": "☂️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2602.png"
+  },
+  {
+    "word": "SUNFLOWER",
+    "spanish": "Girasol",
+    "sentenceEN": "The sunflower turns toward the sun.",
+    "sentenceES": "El girasol gira hacia el sol.",
+    "options": [
+      {
+        "emoji": "🌻",
+        "label": "Sunflower",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌹",
+        "label": "Rose",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌷",
+        "label": "Tulip",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌺",
+        "label": "Hibiscus",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sunflower is a compound word that follows the sun. Girasol es una palabra compuesta que sigue al sol.",
+    "audioWord": "audios/word-sunflower.mp3",
+    "audioSentence": "audios/sentence-sunflower.mp3",
+    "wordEmoji": "🌻",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f33b.png"
+  },
+  {
+    "word": "CAN_OPENER",
+    "spanish": "Abrelatas",
+    "sentenceEN": "We use a can opener to open food cans.",
+    "sentenceES": "Usamos un abrelatas para abrir latas de comida.",
+    "options": [
+      {
+        "emoji": "🔧",
+        "label": "Can Opener",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔨",
+        "label": "Hammer",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔪",
+        "label": "Knife",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🥄",
+        "label": "Spoon",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Can opener is a compound word for opening cans. Abrelatas es una palabra compuesta para abrir latas.",
+    "audioWord": "audios/word-canopener.mp3",
+    "audioSentence": "audios/sentence-canopener.mp3",
+    "wordEmoji": "🔧",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f527.png"
+  },
+  {
+    "word": "PUZZLE",
+    "spanish": "Rompecabezas",
+    "sentenceEN": "Solving a puzzle exercises your brain.",
+    "sentenceES": "Resolver un rompecabezas ejercita tu cerebro.",
+    "options": [
+      {
+        "emoji": "🧩",
+        "label": "Puzzle",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎲",
+        "label": "Dice",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎯",
+        "label": "Target",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🎮",
+        "label": "Videogame",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Puzzle is a compound word that breaks heads. Rompecabezas es una palabra compuesta que rompe cabezas.",
+    "audioWord": "audios/word-puzzle.mp3",
+    "audioSentence": "audios/sentence-puzzle.mp3",
+    "wordEmoji": "🧩",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9e9.png"
+  },
+  {
+    "word": "LANDING",
+    "spanish": "Aterrizar",
+    "sentenceEN": "The plane will land on the runway.",
+    "sentenceES": "El avión va a aterrizar en la pista.",
+    "options": [
+      {
+        "emoji": "✈️",
+        "label": "Landing",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🚀",
+        "label": "Takeoff",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛫",
+        "label": "Departure",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🚁",
+        "label": "Helicopter",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Landing is a parasynthetic word combining earth and action. Aterrizar es una palabra parasintética que combina tierra y acción.",
+    "audioWord": "audios/word-landing.mp3",
+    "audioSentence": "audios/sentence-landing.mp3",
+    "wordEmoji": "✈️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2708.png"
+  },
+  {
+    "word": "PAPERING",
+    "spanish": "Empapelar",
+    "sentenceEN": "They will paper the walls with new wallpaper.",
+    "sentenceES": "Ellos van a empapelar las paredes con nuevo papel tapiz.",
+    "options": [
+      {
+        "emoji": "🧻",
+        "label": "Papering",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🎨",
+        "label": "Painting",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔨",
+        "label": "Hammering",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🔧",
+        "label": "Fixing",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Papering is a parasynthetic word meaning to cover with paper. Empapelar es una palabra parasintética que significa cubrir con papel.",
+    "audioWord": "audios/word-papering.mp3",
+    "audioSentence": "audios/sentence-papering.mp3",
+    "wordEmoji": "🧻",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f9fb.png"
+  },
+  {
+    "word": "HEARTLESS",
+    "spanish": "Desalmado",
+    "sentenceEN": "The villain in the story was heartless.",
+    "sentenceES": "El villano en la historia era desalmado.",
+    "options": [
+      {
+        "emoji": "💔",
+        "label": "Heartless",
+        "isCorrect": true
+      },
+      {
+        "emoji": "❤️",
+        "label": "Loving",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😇",
+        "label": "Saint",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤗",
+        "label": "Caring",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Heartless is a parasynthetic word meaning without soul. Desalmado es una palabra parasintética que significa sin alma.",
+    "audioWord": "audios/word-heartless.mp3",
+    "audioSentence": "audios/sentence-heartless.mp3",
+    "wordEmoji": "💔",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f494.png"
+  },
+  {
+    "word": "CLARIFY",
+    "spanish": "Aclarar",
+    "sentenceEN": "Please clarify your explanation.",
+    "sentenceES": "Por favor aclara tu explicación.",
+    "options": [
+      {
+        "emoji": "💡",
+        "label": "Clarify",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🌫️",
+        "label": "Cloud",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🤔",
+        "label": "Confuse",
+        "isCorrect": false
+      },
+      {
+        "emoji": "❓",
+        "label": "Question",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Clarify is a parasynthetic word meaning to make clear. Aclarar es una palabra parasintética que significa hacer claro.",
+    "audioWord": "audios/word-clarify.mp3",
+    "audioSentence": "audios/sentence-clarify.mp3",
+    "wordEmoji": "💡",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f4a1.png"
+  },
+  {
+    "word": "SADDEN",
+    "spanish": "Entristecer",
+    "sentenceEN": "Bad news can sadden anyone.",
+    "sentenceES": "Las malas noticias pueden entristecer a cualquiera.",
+    "options": [
+      {
+        "emoji": "😢",
+        "label": "Sadden",
+        "isCorrect": true
+      },
+      {
+        "emoji": "😊",
+        "label": "Happy",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😡",
+        "label": "Angry",
+        "isCorrect": false
+      },
+      {
+        "emoji": "😴",
+        "label": "Sleepy",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sadden is a parasynthetic word meaning to make sad. Entristecer es una palabra parasintética que significa hacer triste.",
+    "audioWord": "audios/word-sadden.mp3",
+    "audioSentence": "audios/sentence-sadden.mp3",
+    "wordEmoji": "😢",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f622.png"
+  },
+  {
+    "word": "NIGHTFALL",
+    "spanish": "Anochecer",
+    "sentenceEN": "The sky turns orange at nightfall.",
+    "sentenceES": "El cielo se vuelve naranja al anochecer.",
+    "options": [
+      {
+        "emoji": "🌙",
+        "label": "Nightfall",
+        "isCorrect": true
+      },
+      {
+        "emoji": "☀️",
+        "label": "Sunrise",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌅",
+        "label": "Dawn",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌇",
+        "label": "Sunset",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Nightfall is a parasynthetic word meaning to become night. Anochecer es una palabra parasintética que significa volverse noche.",
+    "audioWord": "audios/word-nightfall.mp3",
+    "audioSentence": "audios/sentence-nightfall.mp3",
+    "wordEmoji": "🌙",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f319.png"
+  },
+  {
+    "word": "REDDEN",
+    "spanish": "Enrojecer",
+    "sentenceEN": "Her cheeks redden when she blushes.",
+    "sentenceES": "Sus mejillas se enrojecen cuando se ruboriza.",
+    "options": [
+      {
+        "emoji": "🔴",
+        "label": "Redden",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🔵",
+        "label": "Blue",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🟢",
+        "label": "Green",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🟡",
+        "label": "Yellow",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Redden is a parasynthetic word meaning to become red. Enrojecer es una palabra parasintética que significa volverse rojo.",
+    "audioWord": "audios/word-redden.mp3",
+    "audioSentence": "audios/sentence-redden.mp3",
+    "wordEmoji": "🔴",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f534.png"
+  },
+  {
+    "word": "THINNING",
+    "spanish": "Adelgazar",
+    "sentenceEN": "Exercise helps with thinning your body.",
+    "sentenceES": "El ejercicio ayuda a adelgazar tu cuerpo.",
+    "options": [
+      {
+        "emoji": "🏃",
+        "label": "Thinning",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🍔",
+        "label": "Eating",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🛌",
+        "label": "Sleeping",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧘",
+        "label": "Meditating",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Thinning is a parasynthetic word meaning to make thin. Adelgazar es una palabra parasintética que significa hacer delgado.",
+    "audioWord": "audios/word-thinning.mp3",
+    "audioSentence": "audios/sentence-thinning.mp3",
+    "wordEmoji": "🏃",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f3c3.png"
+  },
+  {
+    "word": "FIFTEEN_YEAR_OLD",
+    "spanish": "Quinceañero",
+    "sentenceEN": "The fifteen-year-old celebrated his birthday.",
+    "sentenceES": "El quinceañero celebró su cumpleaños.",
+    "options": [
+      {
+        "emoji": "🎂",
+        "label": "Fifteen-year-old",
+        "isCorrect": true
+      },
+      {
+        "emoji": "👶",
+        "label": "Baby",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👴",
+        "label": "Elderly",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🧑",
+        "label": "Adult",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Fifteen-year-old is a parasynthetic word combining age and person. Quinceañero es una palabra parasintética que combina edad y persona.",
+    "audioWord": "audios/word-fifteenyearold.mp3",
+    "audioSentence": "audios/sentence-fifteenyearold.mp3",
+    "wordEmoji": "🎂",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f382.png"
+  },
+  {
+    "word": "STONE_CUTTER",
+    "spanish": "Picapedrero",
+    "sentenceEN": "The stone cutter works with rocks all day.",
+    "sentenceES": "El picapedrero trabaja con piedras todo el día.",
+    "options": [
+      {
+        "emoji": "⛏️",
+        "label": "Stone cutter",
+        "isCorrect": true
+      },
+      {
+        "emoji": "🪓",
+        "label": "Woodcutter",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🌾",
+        "label": "Farmer",
+        "isCorrect": false
+      },
+      {
+        "emoji": "🐟",
+        "label": "Fisherman",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Stone cutter is a parasynthetic word for rock worker. Picapedrero es una palabra parasintética para trabajador de piedra.",
+    "audioWord": "audios/word-stonecutter.mp3",
+    "audioSentence": "audios/sentence-stonecutter.mp3",
+    "wordEmoji": "⛏️",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/26cf.png"
+  },
+  {
+    "word": "RAG_SELLER",
+    "spanish": "Ropavejero",
+    "sentenceEN": "The rag seller collects old clothes.",
+    "sentenceES": "El ropavejero recoge ropa vieja.",
+    "options": [
+      {
+        "emoji": "👕",
+        "label": "Rag seller",
+        "isCorrect": true
+      },
+      {
+        "emoji": "👨‍🍳",
+        "label": "Cook",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👨‍🏫",
+        "label": "Teacher",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👨‍⚕️",
+        "label": "Doctor",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Rag seller is a parasynthetic word for used clothes dealer. Ropavejero es una palabra parasintética para vendedor de ropa usada.",
+    "audioWord": "audios/word-ragseller.mp3",
+    "audioSentence": "audios/sentence-ragseller.mp3",
+    "wordEmoji": "👕",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f455.png"
+  },
+  {
+    "word": "SEVEN_MONTH_OLD",
+    "spanish": "Sietemesino",
+    "sentenceEN": "The seven-month-old baby is learning to crawl.",
+    "sentenceES": "El bebé sietemesino está aprendiendo a gatear.",
+    "options": [
+      {
+        "emoji": "👶",
+        "label": "Seven-month-old",
+        "isCorrect": true
+      },
+      {
+        "emoji": "👦",
+        "label": "Child",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👨",
+        "label": "Man",
+        "isCorrect": false
+      },
+      {
+        "emoji": "👴",
+        "label": "Elderly",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Seven-month-old is a parasynthetic word combining months and age. Sietemesino es una palabra parasintética que combina meses y edad.",
+    "audioWord": "audios/word-sevenmonthold.mp3",
+    "audioSentence": "audios/sentence-sevenmonthold.mp3",
+    "wordEmoji": "👶",
+    "wordEmojiImage": "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/1f476.png"
+  }
+]
