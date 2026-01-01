@@ -474,6 +474,174 @@
             opacity: 1;
         }
 
+        /* Quiz Settings */
+        .quiz-settings {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .quiz-settings label {
+            font-weight: 600;
+            color: #2d3436;
+            margin-right: 10px;
+        }
+
+        .quiz-settings select {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .quiz-settings select:focus {
+            outline: none;
+            border-color: #0984e3;
+        }
+
+        .start-quiz-btn {
+            padding: 12px 30px;
+            background: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .start-quiz-btn:hover {
+            background: #0770c2;
+            transform: translateY(-2px);
+        }
+
+        /* Quiz Progress Bar */
+        .quiz-progress {
+            margin-bottom: 20px;
+        }
+
+        .quiz-progress-bar {
+            height: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .quiz-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #0984e3, #74b9ff);
+            transition: width 0.3s ease;
+        }
+
+        .quiz-progress-text {
+            text-align: center;
+            margin-top: 8px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        /* Final Results */
+        .quiz-final-results {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .results-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .results-circle.excellent {
+            background: linear-gradient(135deg, #00b894, #55efc4);
+        }
+
+        .results-circle.good {
+            background: linear-gradient(135deg, #0984e3, #74b9ff);
+        }
+
+        .results-circle.average {
+            background: linear-gradient(135deg, #fdcb6e, #ffeaa7);
+        }
+
+        .results-circle.needs-practice {
+            background: linear-gradient(135deg, #e17055, #fab1a0);
+        }
+
+        .results-percentage {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .results-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .results-message {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+
+        .results-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 300px;
+            margin: 0 auto 25px;
+        }
+
+        .results-detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .results-detail-row:last-child {
+            border-bottom: none;
+            font-weight: bold;
+            color: #0984e3;
+        }
+
+        .restart-btn {
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .restart-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
         @media (max-width: 768px) {
             .flashcard {
                 height: 250px;
@@ -543,23 +711,91 @@
         <!-- Quiz Mode -->
         <div class="content" id="quiz">
             <div class="quiz-container">
-                <div class="quiz-score">
-                    <h3>Score / Puntuacion</h3>
-                    <div class="score-number"><span id="quizCorrect">0</span> / <span id="quizTotal">0</span></div>
-                </div>
-
-                <div class="quiz-question">
-                    <div class="quiz-word" id="quizWord">Loading...</div>
-                    <div class="quiz-prompt">What is the Spanish translation? / ¿Cual es la traduccion?</div>
-                    <div class="quiz-options" id="quizOptions">
-                        <!-- Options generated by JS -->
+                <!-- Quiz Setup Screen -->
+                <div id="quizSetup">
+                    <div class="quiz-settings">
+                        <h3 style="margin-bottom: 20px; color: #2d3436;">Quiz Settings / Configuracion</h3>
+                        <div style="margin-bottom: 15px;">
+                            <label for="questionCount">Number of questions / Numero de preguntas:</label>
+                            <select id="questionCount">
+                                <option value="5">5</option>
+                                <option value="10" selected>10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">All / Todas (30)</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="quizDirection">Direction / Direccion:</label>
+                            <select id="quizDirection">
+                                <option value="en-es">English → Spanish</option>
+                                <option value="es-en">Spanish → English</option>
+                            </select>
+                        </div>
+                        <button class="start-quiz-btn" onclick="startQuiz()">
+                            Start Quiz / Comenzar Quiz
+                        </button>
                     </div>
-                    <div class="quiz-feedback" id="quizFeedback" style="display: none;"></div>
                 </div>
 
-                <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuizQuestion()" style="display: none;">
-                    Next Question / Siguiente
-                </button>
+                <!-- Quiz Active Screen -->
+                <div id="quizActive" style="display: none;">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="progressFill" style="width: 0%;"></div>
+                        </div>
+                        <div class="quiz-progress-text" id="progressText">Question 1 of 10</div>
+                    </div>
+
+                    <div class="quiz-score">
+                        <h3>Score / Puntuacion</h3>
+                        <div class="score-number"><span id="quizCorrect">0</span> / <span id="quizTotal">0</span></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <div class="quiz-word" id="quizWord">Loading...</div>
+                        <div class="quiz-prompt" id="quizPrompt">What is the Spanish translation?</div>
+                        <div class="quiz-options" id="quizOptions">
+                            <!-- Options generated by JS -->
+                        </div>
+                        <div class="quiz-feedback" id="quizFeedback" style="display: none;"></div>
+                    </div>
+
+                    <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuizQuestion()" style="display: none;">
+                        Next Question / Siguiente
+                    </button>
+                </div>
+
+                <!-- Quiz Results Screen -->
+                <div id="quizResults" style="display: none;">
+                    <div class="quiz-final-results">
+                        <div class="results-circle" id="resultsCircle">
+                            <span class="results-percentage" id="resultsPercentage">0%</span>
+                            <span class="results-label">Score</span>
+                        </div>
+
+                        <div class="results-message" id="resultsMessage">Great job!</div>
+
+                        <div class="results-details">
+                            <div class="results-detail-row">
+                                <span>Correct / Correctas:</span>
+                                <span id="finalCorrect">0</span>
+                            </div>
+                            <div class="results-detail-row">
+                                <span>Incorrect / Incorrectas:</span>
+                                <span id="finalIncorrect">0</span>
+                            </div>
+                            <div class="results-detail-row">
+                                <span>Total Questions:</span>
+                                <span id="finalTotal">0</span>
+                            </div>
+                        </div>
+
+                        <button class="restart-btn" onclick="restartQuiz()">
+                            Try Again / Intentar de Nuevo
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -626,13 +862,18 @@
         let quizTotal = 0;
         let currentFilter = 'all';
 
+        // Quiz State
+        let quizQuestions = [];
+        let currentQuestionIndex = 0;
+        let totalQuestions = 10;
+        let quizDirection = 'en-es'; // 'en-es' or 'es-en'
+
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             setupModeTabs();
             updateFlashcard();
             generateCategoryFilters();
             renderVocabList();
-            loadQuizQuestion();
         });
 
         // Mode Tabs
@@ -680,46 +921,97 @@
         }
 
         function shuffleCards() {
-            shuffledCards = [...vocabularyData].sort(() => Math.random() - 0.5);
+            shuffledCards = shuffleArray(vocabularyData);
             currentCardIndex = 0;
             updateFlashcard();
         }
 
-        // Quiz Functions
-        function loadQuizQuestion() {
-            const randomIndex = Math.floor(Math.random() * vocabularyData.length);
-            const correctWord = vocabularyData[randomIndex];
-
-            // Get 3 wrong answers
-            const wrongAnswers = vocabularyData
-                .filter(w => w.english !== correctWord.english)
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 3);
-
-            // Combine and shuffle options
-            const options = [correctWord, ...wrongAnswers].sort(() => Math.random() - 0.5);
-
-            // Update UI
-            document.getElementById('quizWord').textContent = correctWord.english;
-            document.getElementById('quizFeedback').style.display = 'none';
-            document.getElementById('quizNextBtn').style.display = 'none';
-
-            const optionsContainer = document.getElementById('quizOptions');
-            optionsContainer.innerHTML = options.map((opt, i) => `
-                <div class="quiz-option" onclick="checkAnswer(this, '${opt.english}', '${correctWord.english}', '${correctWord.spanish}')">
-                    ${opt.spanish}
-                </div>
-            `).join('');
+        // Fisher-Yates shuffle algorithm for better randomization
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
         }
 
-        function checkAnswer(element, selected, correct, correctSpanish) {
-            quizTotal++;
-            document.getElementById('quizTotal').textContent = quizTotal;
+        // Quiz Functions
+        function startQuiz() {
+            // Get settings
+            totalQuestions = parseInt(document.getElementById('questionCount').value);
+            quizDirection = document.getElementById('quizDirection').value;
 
+            // Reset state
+            quizCorrect = 0;
+            quizTotal = 0;
+            currentQuestionIndex = 0;
+
+            // Generate random questions pool using Fisher-Yates shuffle
+            quizQuestions = shuffleArray(vocabularyData).slice(0, totalQuestions);
+
+            // Update UI
+            document.getElementById('quizCorrect').textContent = '0';
+            document.getElementById('quizTotal').textContent = totalQuestions;
+
+            // Show quiz screen
+            document.getElementById('quizSetup').style.display = 'none';
+            document.getElementById('quizActive').style.display = 'block';
+            document.getElementById('quizResults').style.display = 'none';
+
+            // Load first question
+            loadQuizQuestion();
+        }
+
+        function loadQuizQuestion() {
+            const correctWord = quizQuestions[currentQuestionIndex];
+
+            // Update progress bar
+            const progress = (currentQuestionIndex / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent =
+                `Question ${currentQuestionIndex + 1} of ${totalQuestions} / Pregunta ${currentQuestionIndex + 1} de ${totalQuestions}`;
+
+            // Get 3 wrong answers (shuffled first, then take 3)
+            const wrongAnswers = shuffleArray(
+                vocabularyData.filter(w => w.english !== correctWord.english)
+            ).slice(0, 3);
+
+            // Combine and shuffle options using Fisher-Yates
+            const options = shuffleArray([correctWord, ...wrongAnswers]);
+
+            // Update UI based on direction
+            if (quizDirection === 'en-es') {
+                document.getElementById('quizWord').textContent = correctWord.english;
+                document.getElementById('quizPrompt').textContent = 'What is the Spanish translation? / ¿Cual es la traduccion al español?';
+
+                const optionsContainer = document.getElementById('quizOptions');
+                optionsContainer.innerHTML = options.map(opt => `
+                    <div class="quiz-option" onclick="checkAnswer(this, '${opt.spanish}', '${correctWord.spanish}')">
+                        ${opt.spanish}
+                    </div>
+                `).join('');
+            } else {
+                document.getElementById('quizWord').textContent = correctWord.spanish;
+                document.getElementById('quizPrompt').textContent = 'What is the English translation? / ¿Cual es la traduccion al ingles?';
+
+                const optionsContainer = document.getElementById('quizOptions');
+                optionsContainer.innerHTML = options.map(opt => `
+                    <div class="quiz-option" onclick="checkAnswer(this, '${opt.english}', '${correctWord.english}')">
+                        ${opt.english}
+                    </div>
+                `).join('');
+            }
+
+            document.getElementById('quizFeedback').style.display = 'none';
+            document.getElementById('quizNextBtn').style.display = 'none';
+        }
+
+        function checkAnswer(element, selected, correct) {
             const options = document.querySelectorAll('.quiz-option');
             options.forEach(opt => {
                 opt.classList.add('disabled');
-                if (opt.textContent.trim() === correctSpanish) {
+                if (opt.textContent.trim() === correct) {
                     opt.classList.add('correct');
                 }
             });
@@ -733,16 +1025,76 @@
                 feedback.className = 'quiz-feedback correct';
             } else {
                 element.classList.add('incorrect');
-                feedback.textContent = `❌ Incorrect. The answer is: ${correctSpanish}`;
+                feedback.textContent = `❌ Incorrect. The answer is: ${correct}`;
                 feedback.className = 'quiz-feedback incorrect';
             }
 
             feedback.style.display = 'block';
+
+            // Check if this is the last question
+            if (currentQuestionIndex >= totalQuestions - 1) {
+                document.getElementById('quizNextBtn').textContent = 'See Results / Ver Resultados';
+            }
             document.getElementById('quizNextBtn').style.display = 'block';
         }
 
         function nextQuizQuestion() {
-            loadQuizQuestion();
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex >= totalQuestions) {
+                showFinalResults();
+            } else {
+                document.getElementById('quizNextBtn').textContent = 'Next Question / Siguiente';
+                loadQuizQuestion();
+            }
+        }
+
+        function showFinalResults() {
+            // Calculate percentage
+            const percentage = Math.round((quizCorrect / totalQuestions) * 100);
+
+            // Determine result class and message
+            let resultClass = 'needs-practice';
+            let message = 'Keep practicing! / ¡Sigue practicando!';
+
+            if (percentage >= 90) {
+                resultClass = 'excellent';
+                message = 'Excellent! / ¡Excelente!';
+            } else if (percentage >= 70) {
+                resultClass = 'good';
+                message = 'Good job! / ¡Buen trabajo!';
+            } else if (percentage >= 50) {
+                resultClass = 'average';
+                message = 'Not bad! / ¡No esta mal!';
+            }
+
+            // Update results UI
+            document.getElementById('resultsCircle').className = 'results-circle ' + resultClass;
+            document.getElementById('resultsPercentage').textContent = percentage + '%';
+            document.getElementById('resultsMessage').textContent = message;
+            document.getElementById('finalCorrect').textContent = quizCorrect;
+            document.getElementById('finalIncorrect').textContent = totalQuestions - quizCorrect;
+            document.getElementById('finalTotal').textContent = totalQuestions;
+
+            // Update progress bar to 100%
+            document.getElementById('progressFill').style.width = '100%';
+
+            // Show results screen
+            document.getElementById('quizActive').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'block';
+        }
+
+        function restartQuiz() {
+            // Reset to setup screen
+            document.getElementById('quizSetup').style.display = 'block';
+            document.getElementById('quizActive').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'none';
+
+            // Reset state
+            quizCorrect = 0;
+            quizTotal = 0;
+            currentQuestionIndex = 0;
+            quizQuestions = [];
         }
 
         // Vocabulary List Functions
