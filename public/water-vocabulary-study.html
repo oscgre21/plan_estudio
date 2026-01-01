@@ -714,24 +714,15 @@
                 <!-- Quiz Setup Screen -->
                 <div id="quizSetup">
                     <div class="quiz-settings">
-                        <h3 style="margin-bottom: 20px; color: #2d3436;">Quiz Settings / Configuracion</h3>
-                        <div style="margin-bottom: 15px;">
-                            <label for="questionCount">Number of questions / Numero de preguntas:</label>
-                            <select id="questionCount">
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="30">All / Todas (30)</option>
-                            </select>
-                        </div>
-                        <div style="margin-bottom: 20px;">
-                            <label for="quizDirection">Direction / Direccion:</label>
-                            <select id="quizDirection">
-                                <option value="en-es">English → Spanish</option>
-                                <option value="es-en">Spanish → English</option>
-                            </select>
-                        </div>
+                        <h3 style="margin-bottom: 20px; color: #2d3436;">Vocabulary Quiz / Quiz de Vocabulario</h3>
+                        <p style="margin-bottom: 15px; color: #636e72;">
+                            Test your knowledge! Translate English words to Spanish.
+                            <br>
+                            ¡Pon a prueba tu conocimiento! Traduce palabras del ingles al español.
+                        </p>
+                        <p style="margin-bottom: 20px; color: #0984e3; font-weight: 600;">
+                            Total: <span id="totalQuestionsDisplay">30</span> questions / preguntas
+                        </p>
                         <button class="start-quiz-btn" onclick="startQuiz()">
                             Start Quiz / Comenzar Quiz
                         </button>
@@ -874,6 +865,9 @@
             updateFlashcard();
             generateCategoryFilters();
             renderVocabList();
+
+            // Update total questions display
+            document.getElementById('totalQuestionsDisplay').textContent = vocabularyData.length;
         });
 
         // Mode Tabs
@@ -938,17 +932,17 @@
 
         // Quiz Functions
         function startQuiz() {
-            // Get settings
-            totalQuestions = parseInt(document.getElementById('questionCount').value);
-            quizDirection = document.getElementById('quizDirection').value;
+            // Fixed settings: all questions, English to Spanish
+            totalQuestions = vocabularyData.length;
+            quizDirection = 'en-es';
 
             // Reset state
             quizCorrect = 0;
             quizTotal = 0;
             currentQuestionIndex = 0;
 
-            // Generate random questions pool using Fisher-Yates shuffle
-            quizQuestions = shuffleArray(vocabularyData).slice(0, totalQuestions);
+            // Generate random questions pool using Fisher-Yates shuffle (all questions)
+            quizQuestions = shuffleArray(vocabularyData);
 
             // Update UI
             document.getElementById('quizCorrect').textContent = '0';
@@ -980,28 +974,16 @@
             // Combine and shuffle options using Fisher-Yates
             const options = shuffleArray([correctWord, ...wrongAnswers]);
 
-            // Update UI based on direction
-            if (quizDirection === 'en-es') {
-                document.getElementById('quizWord').textContent = correctWord.english;
-                document.getElementById('quizPrompt').textContent = 'What is the Spanish translation? / ¿Cual es la traduccion al español?';
+            // Update UI - English to Spanish
+            document.getElementById('quizWord').textContent = correctWord.english;
+            document.getElementById('quizPrompt').textContent = 'What is the Spanish translation? / ¿Cual es la traduccion al español?';
 
-                const optionsContainer = document.getElementById('quizOptions');
-                optionsContainer.innerHTML = options.map(opt => `
-                    <div class="quiz-option" onclick="checkAnswer(this, '${opt.spanish}', '${correctWord.spanish}')">
-                        ${opt.spanish}
-                    </div>
-                `).join('');
-            } else {
-                document.getElementById('quizWord').textContent = correctWord.spanish;
-                document.getElementById('quizPrompt').textContent = 'What is the English translation? / ¿Cual es la traduccion al ingles?';
-
-                const optionsContainer = document.getElementById('quizOptions');
-                optionsContainer.innerHTML = options.map(opt => `
-                    <div class="quiz-option" onclick="checkAnswer(this, '${opt.english}', '${correctWord.english}')">
-                        ${opt.english}
-                    </div>
-                `).join('');
-            }
+            const optionsContainer = document.getElementById('quizOptions');
+            optionsContainer.innerHTML = options.map(opt => `
+                <div class="quiz-option" onclick="checkAnswer(this, '${opt.spanish}', '${correctWord.spanish}')">
+                    ${opt.spanish}
+                </div>
+            `).join('');
 
             document.getElementById('quizFeedback').style.display = 'none';
             document.getElementById('quizNextBtn').style.display = 'none';
