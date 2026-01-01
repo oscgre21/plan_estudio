@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Vocabulary Study - Flashcards & Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #74b9ff 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #0984e3, #74b9ff);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .mode-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .mode-tab {
+            flex: 1;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .mode-tab.active {
+            color: #0984e3;
+            background: white;
+        }
+
+        .mode-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #0984e3;
+        }
+
+        .mode-tab:hover:not(.active) {
+            background: #e9ecef;
+        }
+
+        .content {
+            padding: 30px;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        /* Flashcard Styles */
+        .flashcard-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .flashcard {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front, .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .flashcard-front {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .flashcard-back {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-word {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .flashcard-hint {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .flashcard-translation {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .flashcard-definition {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .flashcard-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .flashcard-controls {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .control-btn.prev {
+            background: #6c757d;
+            color: white;
+        }
+
+        .control-btn.next {
+            background: #0984e3;
+            color: white;
+        }
+
+        .control-btn.shuffle {
+            background: #e17055;
+            color: white;
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-text {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-top: 15px;
+        }
+
+        /* Quiz Styles */
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .quiz-question {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .quiz-word {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2d3436;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .quiz-prompt {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quiz-option {
+            padding: 15px 20px;
+            background: white;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .quiz-option:hover {
+            border-color: #0984e3;
+            background: #f0f8ff;
+        }
+
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .quiz-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .quiz-option.disabled {
+            pointer-events: none;
+        }
+
+        .quiz-feedback {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .quiz-feedback.correct {
+            background: linear-gradient(45deg, #00b894, #55efc4);
+            color: white;
+        }
+
+        .quiz-feedback.incorrect {
+            background: linear-gradient(45deg, #e17055, #fab1a0);
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .quiz-score {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .quiz-score h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .quiz-score .score-number {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .quiz-next-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-next-btn:hover {
+            background: #0770c2;
+        }
+
+        /* Vocabulary List Styles */
+        .vocab-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .vocab-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid #0984e3;
+            transition: all 0.3s ease;
+        }
+
+        .vocab-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .vocab-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .vocab-english {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2d3436;
+        }
+
+        .vocab-spanish {
+            font-size: 1.2rem;
+            color: #0984e3;
+            font-weight: 600;
+        }
+
+        .vocab-definition {
+            color: #636e72;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .vocab-category-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #74b9ff;
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        .category-filter {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #dee2e6;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn.active {
+            background: #0984e3;
+            color: white;
+            border-color: #0984e3;
+        }
+
+        .filter-btn:hover:not(.active) {
+            border-color: #0984e3;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #0984e3;
+        }
+
+        /* Audio Button */
+        .audio-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .audio-btn:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .flashcard {
+                height: 250px;
+            }
+
+            .flashcard-word {
+                font-size: 1.8rem;
+            }
+
+            .flashcard-translation {
+                font-size: 1.5rem;
+            }
+
+            .mode-tabs {
+                flex-direction: column;
+            }
+
+            .flashcard-controls {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">← Back to Home / Volver al Inicio</a>
+
+    <div class="container">
+        <div class="header">
+            <h1>Water Vocabulary Study</h1>
+            <p>Estudia el vocabulario del agua / Study Water Vocabulary</p>
+        </div>
+
+        <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="flashcards">Flashcards</button>
+            <button class="mode-tab" data-mode="quiz">Quiz</button>
+            <button class="mode-tab" data-mode="list">Vocabulary List</button>
+        </div>
+
+        <!-- Flashcards Mode -->
+        <div class="content active" id="flashcards">
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="flashcard-category" id="cardCategory">Category</span>
+                            <div class="flashcard-word" id="cardWord">Word</div>
+                            <div class="flashcard-hint">Click to see translation / Haz clic para ver la traduccion</div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-translation" id="cardTranslation">Traduccion</div>
+                            <div class="flashcard-definition" id="cardDefinition">Definition</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard-controls">
+                    <button class="control-btn prev" onclick="prevCard()">Previous</button>
+                    <button class="control-btn shuffle" onclick="shuffleCards()">Shuffle</button>
+                    <button class="control-btn next" onclick="nextCard()">Next</button>
+                </div>
+
+                <div class="progress-text" id="progressText">Card 1 of 30</div>
+            </div>
+        </div>
+
+        <!-- Quiz Mode -->
+        <div class="content" id="quiz">
+            <div class="quiz-container">
+                <div class="quiz-score">
+                    <h3>Score / Puntuacion</h3>
+                    <div class="score-number"><span id="quizCorrect">0</span> / <span id="quizTotal">0</span></div>
+                </div>
+
+                <div class="quiz-question">
+                    <div class="quiz-word" id="quizWord">Loading...</div>
+                    <div class="quiz-prompt">What is the Spanish translation? / ¿Cual es la traduccion?</div>
+                    <div class="quiz-options" id="quizOptions">
+                        <!-- Options generated by JS -->
+                    </div>
+                    <div class="quiz-feedback" id="quizFeedback" style="display: none;"></div>
+                </div>
+
+                <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuizQuestion()" style="display: none;">
+                    Next Question / Siguiente
+                </button>
+            </div>
+        </div>
+
+        <!-- Vocabulary List Mode -->
+        <div class="content" id="list">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search vocabulary... / Buscar vocabulario...">
+
+            <div class="category-filter" id="categoryFilter">
+                <!-- Filter buttons generated by JS -->
+            </div>
+
+            <div class="vocab-list" id="vocabList">
+                <!-- Vocabulary items generated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Complete Vocabulary Data from Water Vocabulary Exam
+        const vocabularyData = [
+            // Section A - Present Progressive Verbs
+            { english: "swim", spanish: "nadar", definition: "To move through water by moving your arms and legs", category: "Verbs" },
+            { english: "swimming", spanish: "nadando", definition: "Present progressive form of swim - moving through water", category: "Verbs" },
+            { english: "excavate", spanish: "excavar", definition: "To dig out and remove earth carefully, especially to find buried objects", category: "Verbs" },
+            { english: "excavating", spanish: "excavando", definition: "Present progressive form of excavate - digging out earth", category: "Verbs" },
+            { english: "sit", spanish: "sentarse", definition: "To be in a position with your bottom on a surface", category: "Verbs" },
+            { english: "sitting", spanish: "sentado/sentandose", definition: "Present progressive form of sit - being seated", category: "Verbs" },
+            { english: "eat", spanish: "comer", definition: "To put food in your mouth and swallow it", category: "Verbs" },
+            { english: "eating", spanish: "comiendo", definition: "Present progressive form of eat - consuming food", category: "Verbs" },
+            { english: "watch", spanish: "mirar/observar", definition: "To look at something for a period of time", category: "Verbs" },
+            { english: "watching", spanish: "mirando/observando", definition: "Present progressive form of watch - looking at something", category: "Verbs" },
+            { english: "run", spanish: "correr", definition: "To move quickly using your legs", category: "Verbs" },
+            { english: "running", spanish: "corriendo", definition: "Present progressive form of run - moving quickly", category: "Verbs" },
+
+            // Section B - Water Vocabulary
+            { english: "waterfall", spanish: "cascada/catarata", definition: "Water that pours from a height into a river or lake", category: "Water Bodies" },
+            { english: "wet", spanish: "mojado", definition: "Covered with or containing water or another liquid", category: "Adjectives" },
+            { english: "salt water", spanish: "agua salada", definition: "Water that contains salt, like ocean water", category: "Water Types" },
+            { english: "fresh water", spanish: "agua dulce", definition: "Water that is not salty, found in rivers and lakes", category: "Water Types" },
+            { english: "float", spanish: "flotar", definition: "To stay on the surface of water without sinking", category: "Verbs" },
+            { english: "lake", spanish: "lago", definition: "A large body of fresh water surrounded by land", category: "Water Bodies" },
+            { english: "glacier", spanish: "glaciar", definition: "A large mass of ice that moves slowly over land", category: "Water Bodies" },
+            { english: "filter", spanish: "filtrar", definition: "To remove dirt or particles from water using a device", category: "Verbs" },
+            { english: "soak", spanish: "empapar/absorber", definition: "To absorb liquid or become completely wet", category: "Verbs" },
+
+            // Section C - Water Conservation
+            { english: "save water", spanish: "ahorrar agua", definition: "To use water carefully and not waste it", category: "Conservation" },
+            { english: "waste", spanish: "desperdiciar", definition: "To use something carelessly or without purpose", category: "Conservation" },
+            { english: "faucet", spanish: "grifo/llave", definition: "A device that controls the flow of water from a pipe", category: "Plumbing" },
+            { english: "drip", spanish: "gotear", definition: "When liquid falls in small drops", category: "Verbs" },
+            { english: "drain", spanish: "desague/drenaje", definition: "A pipe that carries water away from a place", category: "Plumbing" },
+            { english: "running water", spanish: "agua corriente", definition: "Water that flows from taps or pipes in a building", category: "Water Types" },
+
+            // Additional Context Words
+            { english: "water", spanish: "agua", definition: "A clear liquid essential for life", category: "Basic" },
+            { english: "ocean", spanish: "oceano", definition: "A very large body of salt water", category: "Water Bodies" },
+            { english: "river", spanish: "rio", definition: "A large natural stream of water flowing to the sea or a lake", category: "Water Bodies" }
+        ];
+
+        // State
+        let currentCardIndex = 0;
+        let shuffledCards = [...vocabularyData];
+        let quizCorrect = 0;
+        let quizTotal = 0;
+        let currentFilter = 'all';
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            setupModeTabs();
+            updateFlashcard();
+            generateCategoryFilters();
+            renderVocabList();
+            loadQuizQuestion();
+        });
+
+        // Mode Tabs
+        function setupModeTabs() {
+            document.querySelectorAll('.mode-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const mode = this.dataset.mode;
+
+                    // Update tabs
+                    document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update content
+                    document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+                    document.getElementById(mode).classList.add('active');
+                });
+            });
+        }
+
+        // Flashcard Functions
+        function updateFlashcard() {
+            const card = shuffledCards[currentCardIndex];
+            document.getElementById('cardWord').textContent = card.english;
+            document.getElementById('cardTranslation').textContent = card.spanish;
+            document.getElementById('cardDefinition').textContent = card.definition;
+            document.getElementById('cardCategory').textContent = card.category;
+            document.getElementById('progressText').textContent = `Card ${currentCardIndex + 1} of ${shuffledCards.length}`;
+
+            // Reset flip state
+            document.getElementById('flashcard').classList.remove('flipped');
+        }
+
+        document.getElementById('flashcard').addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+
+        function nextCard() {
+            currentCardIndex = (currentCardIndex + 1) % shuffledCards.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentCardIndex = (currentCardIndex - 1 + shuffledCards.length) % shuffledCards.length;
+            updateFlashcard();
+        }
+
+        function shuffleCards() {
+            shuffledCards = [...vocabularyData].sort(() => Math.random() - 0.5);
+            currentCardIndex = 0;
+            updateFlashcard();
+        }
+
+        // Quiz Functions
+        function loadQuizQuestion() {
+            const randomIndex = Math.floor(Math.random() * vocabularyData.length);
+            const correctWord = vocabularyData[randomIndex];
+
+            // Get 3 wrong answers
+            const wrongAnswers = vocabularyData
+                .filter(w => w.english !== correctWord.english)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3);
+
+            // Combine and shuffle options
+            const options = [correctWord, ...wrongAnswers].sort(() => Math.random() - 0.5);
+
+            // Update UI
+            document.getElementById('quizWord').textContent = correctWord.english;
+            document.getElementById('quizFeedback').style.display = 'none';
+            document.getElementById('quizNextBtn').style.display = 'none';
+
+            const optionsContainer = document.getElementById('quizOptions');
+            optionsContainer.innerHTML = options.map((opt, i) => `
+                <div class="quiz-option" onclick="checkAnswer(this, '${opt.english}', '${correctWord.english}', '${correctWord.spanish}')">
+                    ${opt.spanish}
+                </div>
+            `).join('');
+        }
+
+        function checkAnswer(element, selected, correct, correctSpanish) {
+            quizTotal++;
+            document.getElementById('quizTotal').textContent = quizTotal;
+
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(opt => {
+                opt.classList.add('disabled');
+                if (opt.textContent.trim() === correctSpanish) {
+                    opt.classList.add('correct');
+                }
+            });
+
+            const feedback = document.getElementById('quizFeedback');
+
+            if (selected === correct) {
+                quizCorrect++;
+                document.getElementById('quizCorrect').textContent = quizCorrect;
+                feedback.textContent = '✅ Correct! / ¡Correcto!';
+                feedback.className = 'quiz-feedback correct';
+            } else {
+                element.classList.add('incorrect');
+                feedback.textContent = `❌ Incorrect. The answer is: ${correctSpanish}`;
+                feedback.className = 'quiz-feedback incorrect';
+            }
+
+            feedback.style.display = 'block';
+            document.getElementById('quizNextBtn').style.display = 'block';
+        }
+
+        function nextQuizQuestion() {
+            loadQuizQuestion();
+        }
+
+        // Vocabulary List Functions
+        function generateCategoryFilters() {
+            const categories = ['all', ...new Set(vocabularyData.map(w => w.category))];
+            const container = document.getElementById('categoryFilter');
+
+            container.innerHTML = categories.map(cat => `
+                <button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="filterByCategory('${cat}')">
+                    ${cat === 'all' ? 'All / Todos' : cat}
+                </button>
+            `).join('');
+        }
+
+        function filterByCategory(category) {
+            currentFilter = category;
+
+            // Update filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(category) || (category === 'all' && btn.textContent.includes('All')));
+            });
+
+            renderVocabList();
+        }
+
+        function renderVocabList() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+
+            let filtered = vocabularyData;
+
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(w => w.category === currentFilter);
+            }
+
+            // Apply search filter
+            if (searchTerm) {
+                filtered = filtered.filter(w =>
+                    w.english.toLowerCase().includes(searchTerm) ||
+                    w.spanish.toLowerCase().includes(searchTerm) ||
+                    w.definition.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            const container = document.getElementById('vocabList');
+            container.innerHTML = filtered.map(word => `
+                <div class="vocab-item">
+                    <div class="vocab-item-header">
+                        <span class="vocab-english">${word.english}</span>
+                        <span class="vocab-spanish">${word.spanish}</span>
+                    </div>
+                    <div class="vocab-definition">${word.definition}</div>
+                    <span class="vocab-category-badge">${word.category}</span>
+                </div>
+            `).join('');
+        }
+
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', renderVocabList);
+
+        // Keyboard navigation for flashcards
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('flashcards').classList.contains('active')) {
+                if (e.key === 'ArrowRight') nextCard();
+                if (e.key === 'ArrowLeft') prevCard();
+                if (e.key === ' ') {
+                    e.preventDefault();
+                    document.getElementById('flashcard').classList.toggle('flipped');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
