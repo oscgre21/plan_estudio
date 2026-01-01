@@ -55,6 +55,10 @@ app.get('/media-library', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'media-library.html'));
 });
 
+app.get('/water-vocabulary-exam', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'water-vocabulary-exam.html'));
+});
+
 // ============================================================
 // Media Library API Endpoints
 // ============================================================

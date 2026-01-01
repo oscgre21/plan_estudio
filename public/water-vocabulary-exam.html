@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Vocabulary Exam</title>
+    <style>
+        .exam-app {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #74b9ff 100%);
+            font-family: 'Georgia', serif;
+            padding: 20px;
+        }
+
+        .exam-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .exam-header {
+            background: linear-gradient(45deg, #0984e3, #74b9ff);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .exam-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-50px) translateY(-50px); }
+        }
+
+        .exam-title {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .exam-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .navigation-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .nav-tab {
+            flex: 1;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-tab.active {
+            color: #0984e3;
+            background: white;
+        }
+
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #0984e3;
+        }
+
+        .nav-tab:hover:not(.active) {
+            background: #e9ecef;
+        }
+
+        .section-container {
+            padding: 40px;
+            display: none;
+        }
+
+        .section-container.active {
+            display: block;
+        }
+
+        .section-header {
+            margin-bottom: 30px;
+        }
+
+        .section-header h2 {
+            color: #2d3436;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .vocab-box {
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(116, 185, 255, 0.3);
+        }
+
+        .questions {
+            margin-top: 20px;
+        }
+
+        .question-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .question-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-item.completed {
+            background: linear-gradient(45deg, #00b894, #55efc4);
+            color: white;
+        }
+
+        .question-item.answered-correct {
+            background: linear-gradient(45deg, #d4edda, #c3e6cb);
+            border-left: 4px solid #28a745;
+        }
+
+        .question-item.answered-incorrect {
+            background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+            border-left: 4px solid #dc3545;
+        }
+
+        .question-number {
+            background: #0984e3;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .question-item.completed .question-number {
+            background: white;
+            color: #00b894;
+        }
+
+        .question-content {
+            flex: 1;
+        }
+
+        .question-content p {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .answer-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .answer-input:focus {
+            outline: none;
+            border-color: #0984e3;
+            box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.1);
+        }
+
+        .multiple-choice {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+
+        .option-label:hover {
+            background: rgba(9, 132, 227, 0.1);
+        }
+
+        .option-radio {
+            width: 18px;
+            height: 18px;
+            accent-color: #0984e3;
+        }
+
+        .option-text {
+            font-size: 1rem;
+        }
+
+        .completed-badge {
+            background: white;
+            color: #00b894;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .feedback-container {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            animation: slideIn 0.3s ease;
+        }
+
+        .feedback-container.correct {
+            background: linear-gradient(45deg, #00b894, #55efc4);
+            color: white;
+            border: 2px solid #00b894;
+        }
+
+        .feedback-container.incorrect {
+            background: linear-gradient(45deg, #e17055, #fab1a0);
+            color: white;
+            border: 2px solid #e17055;
+        }
+
+        .feedback-icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .feedback-text {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .feedback-text strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .explanation {
+            font-size: 0.95rem;
+            margin-top: 8px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .exam-footer {
+            padding: 30px 40px;
+            background: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .primary-button {
+            background: #0984e3;
+            color: white;
+        }
+
+        .primary-button:hover {
+            background: #2d3436;
+            transform: translateY(-2px);
+        }
+
+        .secondary-button {
+            background: #6c757d;
+            color: white;
+        }
+
+        .secondary-button:hover {
+            background: #5a6268;
+        }
+
+        .results-container {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .score-display {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .score-display h2 {
+            color: #2d3436;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #0984e3, #74b9ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 15px 35px rgba(9, 132, 227, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .score-number {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .score-message {
+            font-size: 1.3rem;
+            color: #2d3436;
+            font-weight: 600;
+        }
+
+        .detailed-scores {
+            margin-top: 30px;
+            text-align: left;
+            background: rgba(248, 249, 250, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .detailed-scores h3 {
+            margin: 0 0 15px 0;
+            color: #2d3436;
+            text-align: center;
+        }
+
+        .section-score {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .section-score.total {
+            border-top: 2px solid #0984e3;
+            border-bottom: none;
+            margin-top: 10px;
+            padding-top: 12px;
+        }
+
+        .feedback-controls {
+            margin-top: 30px;
+        }
+
+        .feedback-instruction {
+            color: #6c757d;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .progress-indicator {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .exam-app {
+                padding: 10px;
+            }
+
+            .section-container {
+                padding: 20px;
+            }
+
+            .question-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navigation-tabs {
+                flex-direction: column;
+            }
+
+            .nav-tab {
+                border-bottom: 1px solid #dee2e6;
+            }
+
+            .exam-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="exam-app">
+        <a href="/" class="back-link">← Back to Home / Volver al Inicio</a>
+
+        <div class="exam-container">
+            <div class="exam-header">
+                <h1 class="exam-title">Water Vocabulary Exam</h1>
+                <p class="exam-subtitle">English Language Assessment</p>
+            </div>
+
+            <div class="navigation-tabs">
+                <button class="nav-tab active" data-section="1">Section A: Present Progressive</button>
+                <button class="nav-tab" data-section="2">Section B: Multiple Choice</button>
+                <button class="nav-tab" data-section="3">Section C: Complete Sentences</button>
+                <button class="nav-tab" data-section="4">Results</button>
+            </div>
+
+            <!-- Section A -->
+            <div class="section-container active" id="section1">
+                <div class="section-header">
+                    <h2>Section A: Present Progressive Form</h2>
+                    <p>Select what these people have been doing:</p>
+                </div>
+
+                <div class="questions" id="sectionAQuestions">
+                    <!-- Questions will be generated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Section B -->
+            <div class="section-container" id="section2">
+                <div class="section-header">
+                    <h2>Section B: Vocabulary Selection</h2>
+                    <p>Select the correct vocabulary word for each sentence:</p>
+                </div>
+
+                <div class="questions" id="sectionBQuestions">
+                    <!-- Questions will be generated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Section C -->
+            <div class="section-container" id="section3">
+                <div class="section-header">
+                    <h2>Section C: Complete the Sentences</h2>
+                    <p>Complete the sentences with the correct vocabulary word:</p>
+                    <div class="vocab-box">
+                        <strong>Vocabulary:</strong> save water, waste, faucet, drip, drain, running water
+                    </div>
+                </div>
+
+                <div class="questions" id="sectionCQuestions">
+                    <!-- Questions will be generated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="section-container" id="section4">
+                <div class="results-container">
+                    <div class="score-display">
+                        <h2>Exam Results</h2>
+                        <div class="score-circle">
+                            <span class="score-number" id="percentageScore">0%</span>
+                        </div>
+                        <p class="score-message" id="scoreMessage">Complete the exam to see your results</p>
+
+                        <div class="detailed-scores">
+                            <h3>Section Breakdown:</h3>
+                            <div class="section-score">
+                                <span>Section A (Present Progressive):</span>
+                                <span id="sectionAScore">0/6</span>
+                            </div>
+                            <div class="section-score">
+                                <span>Section B (Multiple Choice):</span>
+                                <span id="sectionBScore">0/10</span>
+                            </div>
+                            <div class="section-score">
+                                <span>Section C (Complete Sentences):</span>
+                                <span id="sectionCScore">0/6</span>
+                            </div>
+                            <div class="section-score total">
+                                <span><strong>Total Score:</strong></span>
+                                <span><strong id="totalScore">0/22</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="feedback-controls">
+                            <button class="action-button primary-button" id="toggleFeedbackBtn" style="margin-top: 20px;">
+                                Show Detailed Feedback
+                            </button>
+                            <p class="feedback-instruction" id="feedbackInstruction" style="display: none;">
+                                ← Go back to previous sections to see detailed explanations for each question
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exam-footer">
+                <div class="progress-indicator" id="progressIndicator">
+                    Section 1 of 4
+                </div>
+                <div>
+                    <button class="action-button secondary-button" id="prevBtn" style="display: none; margin-right: 10px;">
+                        Previous
+                    </button>
+                    <button class="action-button primary-button" id="nextBtn">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State
+        let currentSection = 1;
+        let showFeedback = false;
+
+        // Section A questions data (now multiple choice)
+        const sectionAData = [
+            {
+                q: "The girl's hair is wet. _____ in the lake.",
+                options: ["She's been swimming", "She's been sitting", "She's been eating", "She's been watching"],
+                answer: "a",
+                correct: "She's been swimming",
+                explanation: "Present progressive form: 'She's been swimming' - Swimming in the lake would make her hair wet."
+            },
+            {
+                q: "The archaeologist is tired, and his back hurts. _____ a site since this morning.",
+                options: ["He's been excavating", "He's been swimming", "He's been watching", "He's been running"],
+                answer: "a",
+                correct: "He's been excavating",
+                explanation: "Present progressive form: 'He's been excavating' - Excavating (digging) a site since morning would make him tired with back pain."
+            },
+            {
+                q: "The woman has a sunburn. _____ in the sun for hours.",
+                options: ["She's been eating", "She's been sitting", "She's been swimming", "She's been walking"],
+                answer: "b",
+                correct: "She's been sitting",
+                explanation: "Present progressive form: 'She's been sitting' - Sitting in the sun for hours would cause a sunburn."
+            },
+            {
+                q: "The boys don't want any dinner now! _____ candy all afternoon.",
+                options: ["They've been eating", "They've been watching", "They've been playing", "They've been sitting"],
+                answer: "a",
+                correct: "They've been eating",
+                explanation: "Present progressive form: 'They've been eating' - Eating candy all afternoon would make them not hungry for dinner."
+            },
+            {
+                q: "The kids are feeling happy. _____ dolphins for nearly an hour.",
+                options: ["They've been eating", "They've been sitting", "They've been watching", "They've been swimming"],
+                answer: "c",
+                correct: "They've been watching",
+                explanation: "Present progressive form: 'They've been watching' - Watching dolphins would make kids feel happy."
+            },
+            {
+                q: "The runner is exhausted and sweating. _____ for two hours.",
+                options: ["He's been sleeping", "He's been running", "He's been eating", "He's been sitting"],
+                answer: "b",
+                correct: "He's been running",
+                explanation: "Present progressive form: 'He's been running' - Running for two hours would make someone exhausted and sweaty."
+            }
+        ];
+
+        // Correct answers
+        const correctAnswers = {
+            sectionA: {
+                1: { answer: "a", correct: "She's been swimming", explanation: "Present progressive form: 'She's been swimming' - Swimming in the lake would make her hair wet." },
+                2: { answer: "a", correct: "He's been excavating", explanation: "Present progressive form: 'He's been excavating' - Excavating (digging) a site since morning would make him tired with back pain." },
+                3: { answer: "b", correct: "She's been sitting", explanation: "Present progressive form: 'She's been sitting' - Sitting in the sun for hours would cause a sunburn." },
+                4: { answer: "a", correct: "They've been eating", explanation: "Present progressive form: 'They've been eating' - Eating candy all afternoon would make them not hungry for dinner." },
+                5: { answer: "c", correct: "They've been watching", explanation: "Present progressive form: 'They've been watching' - Watching dolphins would make kids feel happy." },
+                6: { answer: "b", correct: "He's been running", explanation: "Present progressive form: 'He's been running' - Running for two hours would make someone exhausted and sweaty." }
+            },
+            sectionB: {
+                1: { answer: "c", correct: "waterfall", explanation: "A waterfall is water that pours from a height into a river or lake." },
+                2: { answer: "a", correct: "wet", explanation: "When clothes get soaked in water, they become wet." },
+                3: { answer: "a", correct: "salt water", explanation: "Oceans contain salt water, which is different from fresh water." },
+                4: { answer: "c", correct: "float", explanation: "Objects that stay on the surface and don't sink are said to float." },
+                5: { answer: "a", correct: "lake", explanation: "A lake is a large body of fresh water surrounded by land." },
+                6: { answer: "c", correct: "glacier", explanation: "A glacier is a large mass of ice that moves slowly over land." },
+                7: { answer: "b", correct: "fresh water", explanation: "Fresh water is not salty and comes from rivers, lakes, and rain." },
+                8: { answer: "b", correct: "filter", explanation: "To filter water means to remove dirt and particles from it." },
+                9: { answer: "b", correct: "wet", explanation: "After being in the rain, clothes become wet (soaked with water)." },
+                10: { answer: "a", correct: "soak", explanation: "A sponge will soak up (absorb) water when dropped into it." }
+            },
+            sectionC: {
+                1: { answer: "save water", explanation: "There are many ways to conserve or save water at home." },
+                2: { answer: "waste", explanation: "Using the dishwasher when it's not full means you waste water." },
+                3: { answer: "faucet", explanation: "You turn off the faucet (tap) while brushing teeth to save water." },
+                4: { answer: "drip", explanation: "Faucets that drip (leak drops of water) waste a lot of fresh water." },
+                5: { answer: "drain", explanation: "Don't throw trash down the drain as it can cause blockages." },
+                6: { answer: "running water", explanation: "When camping, you often don't have access to running water (water from taps)." }
+            }
+        };
+
+        // Section B questions data
+        const sectionBData = [
+            { q: "The students visited a place where they saw a beautiful _____ pouring into a river.", options: ["lake", "glacier", "waterfall"] },
+            { q: "After he jumped in the pool, his clothes were completely _____", options: ["wet", "salt water", "waterfall"] },
+            { q: "Oceans are made of _____", options: ["salt water", "fresh water", "lake"] },
+            { q: "If an object stays on the surface of the water and doesn't sink, it can _____.", options: ["soak", "wet", "float"] },
+            { q: "A large body of fresh water surrounded by land is called a _____.", options: ["lake", "glacier", "filter"] },
+            { q: "A large mass of ice that moves slowly over land is a _____.", options: ["fresh water", "soak", "glacier"] },
+            { q: "Water that is not salty and comes from rivers or lakes is called _____.", options: ["salt water", "fresh water", "wet"] },
+            { q: "When you use a device to remove dirt or particles from water, you _____ it.", options: ["float", "filter", "soak"] },
+            { q: "After playing in the rain, my clothes were completely _____.", options: ["glacier", "wet", "filter"] },
+            { q: "If you drop a sponge into water, it will _____ up the water.", options: ["soak", "filter", "float"] }
+        ];
+
+        // Section C questions data
+        const sectionCData = [
+            "There are many ways you can _____ at home.",
+            "If the dishwasher isn't full when you use it, you'll _____ water.",
+            "Use the handle to turn off the _____ while you brush your teeth.",
+            "Faucets that _____ waste a lot of fresh water.",
+            "Don't throw trash down the _____",
+            "When we went camping, we didn't have _____"
+        ];
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            generateSectionA();
+            generateSectionB();
+            generateSectionC();
+            setupNavigation();
+            setupImmediateFeedback();
+            updateButtons();
+        });
+
+        function generateSectionA() {
+            const container = document.getElementById('sectionAQuestions');
+            container.innerHTML = sectionAData.map((question, index) => {
+                const num = index + 1;
+                return `
+                    <div class="question-item">
+                        <span class="question-number">${num}</span>
+                        <div class="question-content">
+                            <p>${question.q}</p>
+                            <div class="multiple-choice">
+                                ${question.options.map((option, optIndex) => {
+                                    const letter = String.fromCharCode(97 + optIndex);
+                                    return `
+                                        <label class="option-label">
+                                            <input type="radio" name="sectionA_${num}" value="${letter}" class="option-radio">
+                                            <span class="option-text">${letter}) ${option}</span>
+                                        </label>
+                                    `;
+                                }).join('')}
+                            </div>
+                            <div class="feedback-slot" id="feedback_A_${num}"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function generateSectionB() {
+            const container = document.getElementById('sectionBQuestions');
+            container.innerHTML = sectionBData.map((question, index) => {
+                const num = index + 1;
+                return `
+                    <div class="question-item">
+                        <span class="question-number">${num}</span>
+                        <div class="question-content">
+                            <p>${question.q}</p>
+                            <div class="multiple-choice">
+                                ${question.options.map((option, optIndex) => {
+                                    const letter = String.fromCharCode(97 + optIndex);
+                                    return `
+                                        <label class="option-label">
+                                            <input type="radio" name="sectionB_${num}" value="${letter}" class="option-radio">
+                                            <span class="option-text">${letter}) ${option}</span>
+                                        </label>
+                                    `;
+                                }).join('')}
+                            </div>
+                            <div class="feedback-slot" id="feedback_B_${num}"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function generateSectionC() {
+            const container = document.getElementById('sectionCQuestions');
+            container.innerHTML = sectionCData.map((question, index) => {
+                const num = index + 1;
+                return `
+                    <div class="question-item">
+                        <span class="question-number">${num}</span>
+                        <div class="question-content">
+                            <p>${question}</p>
+                            <input type="text" class="answer-input" id="sectionC_${num}" placeholder="Type your answer...">
+                            <div class="feedback-slot" id="feedback_C_${num}"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function setupNavigation() {
+            // Tab navigation
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const section = parseInt(this.dataset.section);
+                    goToSection(section);
+                });
+            });
+
+            // Button navigation
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                if (currentSection > 1) goToSection(currentSection - 1);
+            });
+
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                if (currentSection < 4) {
+                    goToSection(currentSection + 1);
+                } else {
+                    resetExam();
+                }
+            });
+
+            // Toggle feedback button
+            document.getElementById('toggleFeedbackBtn').addEventListener('click', toggleFeedback);
+        }
+
+        function goToSection(section) {
+            currentSection = section;
+
+            // Update tabs
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.toggle('active', parseInt(tab.dataset.section) === section);
+            });
+
+            // Update sections
+            document.querySelectorAll('.section-container').forEach((container, index) => {
+                container.classList.toggle('active', index + 1 === section);
+            });
+
+            // Calculate results when going to section 4
+            if (section === 4) {
+                calculateResults();
+            }
+
+            updateButtons();
+        }
+
+        function updateButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const progressIndicator = document.getElementById('progressIndicator');
+
+            prevBtn.style.display = currentSection > 1 ? 'inline-block' : 'none';
+
+            if (currentSection === 4) {
+                nextBtn.textContent = 'Start Over';
+            } else if (currentSection === 3) {
+                nextBtn.textContent = 'View Results';
+            } else {
+                nextBtn.textContent = 'Next';
+            }
+
+            progressIndicator.textContent = `Section ${currentSection} of 4`;
+        }
+
+        function evaluateAnswer(section, questionNum, userAnswer) {
+            if (section === 'A') {
+                const correct = correctAnswers.sectionA[questionNum];
+                if (!correct) return { isCorrect: false };
+                const isCorrect = userAnswer === correct.answer;
+                return { isCorrect, ...correct };
+            } else if (section === 'B') {
+                const correct = correctAnswers.sectionB[questionNum];
+                if (!correct) return { isCorrect: false };
+                const isCorrect = userAnswer === correct.answer;
+                return { isCorrect, ...correct };
+            } else if (section === 'C') {
+                const correct = correctAnswers.sectionC[questionNum];
+                if (!correct) return { isCorrect: false };
+                const userAnswerClean = userAnswer.toLowerCase().trim();
+                const isCorrect = userAnswerClean === correct.answer.toLowerCase() ||
+                    (correct.answer.includes(' ') && userAnswerClean.includes(correct.answer.split(' ')[0].toLowerCase()));
+                return { isCorrect, ...correct };
+            }
+            return { isCorrect: false };
+        }
+
+        function calculateResults() {
+            let sectionACorrect = 0;
+            let sectionBCorrect = 0;
+            let sectionCCorrect = 0;
+
+            // Evaluate Section A (now 6 multiple choice questions)
+            for (let i = 1; i <= 6; i++) {
+                const selected = document.querySelector(`input[name="sectionA_${i}"]:checked`);
+                const result = evaluateAnswer('A', i, selected ? selected.value : '');
+                if (result.isCorrect) sectionACorrect++;
+            }
+
+            // Evaluate Section B
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="sectionB_${i}"]:checked`);
+                const result = evaluateAnswer('B', i, selected ? selected.value : '');
+                if (result.isCorrect) sectionBCorrect++;
+            }
+
+            // Evaluate Section C
+            for (let i = 1; i <= 6; i++) {
+                const input = document.getElementById(`sectionC_${i}`);
+                const result = evaluateAnswer('C', i, input ? input.value : '');
+                if (result.isCorrect) sectionCCorrect++;
+            }
+
+            const totalQuestions = 22; // 6 + 10 + 6
+            const totalCorrect = sectionACorrect + sectionBCorrect + sectionCCorrect;
+            const percentage = Math.round((totalCorrect / totalQuestions) * 100);
+
+            // Update display
+            document.getElementById('percentageScore').textContent = `${percentage}%`;
+            document.getElementById('sectionAScore').textContent = `${sectionACorrect}/6`;
+            document.getElementById('sectionBScore').textContent = `${sectionBCorrect}/10`;
+            document.getElementById('sectionCScore').textContent = `${sectionCCorrect}/6`;
+            document.getElementById('totalScore').textContent = `${totalCorrect}/${totalQuestions}`;
+
+            // Update message
+            let message = '';
+            if (percentage >= 90) message = "Excellent work! 🌟";
+            else if (percentage >= 80) message = "Great job! 🎉";
+            else if (percentage >= 70) message = "Good effort! 📚";
+            else message = "Keep practicing! 💪";
+            document.getElementById('scoreMessage').textContent = message;
+        }
+
+        function toggleFeedback() {
+            showFeedback = !showFeedback;
+            const btn = document.getElementById('toggleFeedbackBtn');
+            const instruction = document.getElementById('feedbackInstruction');
+
+            btn.textContent = showFeedback ? 'Hide Detailed Feedback' : 'Show Detailed Feedback';
+            instruction.style.display = showFeedback ? 'block' : 'none';
+
+            if (showFeedback) {
+                showAllFeedback();
+            } else {
+                hideAllFeedback();
+            }
+        }
+
+        function showAllFeedback() {
+            // Section A feedback (now 6 multiple choice questions)
+            for (let i = 1; i <= 6; i++) {
+                const selected = document.querySelector(`input[name="sectionA_${i}"]:checked`);
+                const result = evaluateAnswer('A', i, selected ? selected.value : '');
+                showFeedbackFor('A', i, result);
+            }
+
+            // Section B feedback
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="sectionB_${i}"]:checked`);
+                const result = evaluateAnswer('B', i, selected ? selected.value : '');
+                showFeedbackFor('B', i, result);
+            }
+
+            // Section C feedback
+            for (let i = 1; i <= 6; i++) {
+                const input = document.getElementById(`sectionC_${i}`);
+                const result = evaluateAnswer('C', i, input ? input.value : '');
+                showFeedbackFor('C', i, result);
+            }
+        }
+
+        function showFeedbackFor(section, num, result) {
+            const slot = document.getElementById(`feedback_${section}_${num}`);
+            if (!slot) return;
+
+            const correctAnswer = result.answer || result.correct;
+            slot.innerHTML = `
+                <div class="feedback-container ${result.isCorrect ? 'correct' : 'incorrect'}">
+                    <div class="feedback-icon">${result.isCorrect ? '✅' : '❌'}</div>
+                    <div class="feedback-text">
+                        ${result.isCorrect ?
+                            '<span><strong>Correct!</strong> Well done!</span>' :
+                            `<div>
+                                <div><strong>Correct answer:</strong> ${correctAnswer}</div>
+                                <div class="explanation">${result.explanation}</div>
+                            </div>`
+                        }
+                    </div>
+                </div>
+            `;
+        }
+
+        function hideAllFeedback() {
+            document.querySelectorAll('.feedback-slot').forEach(slot => {
+                slot.innerHTML = '';
+            });
+        }
+
+        function resetExam() {
+            // Reset all inputs
+            document.querySelectorAll('.answer-input').forEach(input => input.value = '');
+            document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = false);
+
+            // Hide feedback
+            showFeedback = false;
+            hideAllFeedback();
+            document.getElementById('toggleFeedbackBtn').textContent = 'Show Detailed Feedback';
+            document.getElementById('feedbackInstruction').style.display = 'none';
+
+            // Remove answered classes from questions
+            document.querySelectorAll('.question-item').forEach(item => {
+                item.classList.remove('answered-correct', 'answered-incorrect');
+            });
+
+            // Go to section 1
+            goToSection(1);
+        }
+
+        // Setup immediate feedback when user answers
+        function setupImmediateFeedback() {
+            // Section A - radio buttons (on change)
+            for (let i = 1; i <= 6; i++) {
+                const radios = document.querySelectorAll(`input[name="sectionA_${i}"]`);
+                radios.forEach(radio => {
+                    radio.addEventListener('change', function() {
+                        checkAnswerImmediately('A', i, this.value);
+                    });
+                });
+            }
+
+            // Section B - radio buttons (on change)
+            for (let i = 1; i <= 10; i++) {
+                const radios = document.querySelectorAll(`input[name="sectionB_${i}"]`);
+                radios.forEach(radio => {
+                    radio.addEventListener('change', function() {
+                        checkAnswerImmediately('B', i, this.value);
+                    });
+                });
+            }
+
+            // Section C - text inputs (on blur/enter)
+            for (let i = 1; i <= 6; i++) {
+                const input = document.getElementById(`sectionC_${i}`);
+                if (input) {
+                    input.addEventListener('blur', function() {
+                        if (this.value.trim()) {
+                            checkAnswerImmediately('C', i, this.value);
+                        }
+                    });
+                    input.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter' && this.value.trim()) {
+                            checkAnswerImmediately('C', i, this.value);
+                            this.blur();
+                        }
+                    });
+                }
+            }
+        }
+
+        // Check answer and show feedback immediately
+        function checkAnswerImmediately(section, num, userAnswer) {
+            const result = evaluateAnswer(section, num, userAnswer);
+            showFeedbackFor(section, num, result);
+
+            // Add visual indicator to the input/question
+            const questionItem = document.getElementById(`feedback_${section}_${num}`).closest('.question-item');
+            if (questionItem) {
+                questionItem.classList.remove('answered-correct', 'answered-incorrect');
+                questionItem.classList.add(result.isCorrect ? 'answered-correct' : 'answered-incorrect');
+            }
+        }
+    </script>
+</body>
+</html>
