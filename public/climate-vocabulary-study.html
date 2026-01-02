@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Vocabulary Study - Flashcards & Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 50%, #a8e6cf 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 900px;
+            max-height: 932px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            overflow-y: auto;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #11998e, #38ef7d);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .mode-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .mode-tab {
+            flex: 1;
+            padding: 10px 15px;
+            background: none;
+            border: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .mode-tab.active {
+            color: #11998e;
+            background: white;
+        }
+
+        .mode-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #11998e;
+        }
+
+        .mode-tab:hover:not(.active) {
+            background: #e9ecef;
+        }
+
+        .content {
+            padding: 15px 20px;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        /* Flashcard Styles */
+        .flashcard-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .flashcard {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front, .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .flashcard-front {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+        }
+
+        .flashcard-back {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-word {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .flashcard-hint {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .flashcard-translation {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .flashcard-definition {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .flashcard-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .flashcard-controls {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .control-btn.prev {
+            background: #6c757d;
+            color: white;
+        }
+
+        .control-btn.next {
+            background: #11998e;
+            color: white;
+        }
+
+        .control-btn.shuffle {
+            background: #e17055;
+            color: white;
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-text {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-top: 15px;
+        }
+
+        /* Quiz Styles */
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .quiz-question {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .quiz-word {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3436;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .quiz-prompt {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .quiz-option {
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .quiz-option:hover {
+            border-color: #11998e;
+            background: #f0fff4;
+        }
+
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .quiz-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .quiz-option.disabled {
+            pointer-events: none;
+        }
+
+        .quiz-feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .quiz-feedback.correct {
+            background: linear-gradient(45deg, #00b894, #55efc4);
+            color: white;
+        }
+
+        .quiz-feedback.incorrect {
+            background: linear-gradient(45deg, #e17055, #fab1a0);
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .quiz-score {
+            text-align: center;
+            padding: 12px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .quiz-score h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .quiz-score .score-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .quiz-next-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #11998e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-next-btn:hover {
+            background: #0d7d6e;
+        }
+
+        /* Vocabulary List Styles */
+        .vocab-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .vocab-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid #11998e;
+            transition: all 0.3s ease;
+        }
+
+        .vocab-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .vocab-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .vocab-english {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2d3436;
+        }
+
+        .vocab-spanish {
+            font-size: 1.2rem;
+            color: #11998e;
+            font-weight: 600;
+        }
+
+        .vocab-definition {
+            color: #636e72;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .vocab-category-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #38ef7d;
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        .category-filter {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #dee2e6;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn.active {
+            background: #11998e;
+            color: white;
+            border-color: #11998e;
+        }
+
+        .filter-btn:hover:not(.active) {
+            border-color: #11998e;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #11998e;
+        }
+
+        /* Audio Button */
+        .audio-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .audio-btn:hover {
+            opacity: 1;
+        }
+
+        /* Quiz Settings */
+        .quiz-settings {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .quiz-settings label {
+            font-weight: 600;
+            color: #2d3436;
+            margin-right: 10px;
+        }
+
+        .quiz-settings select {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .quiz-settings select:focus {
+            outline: none;
+            border-color: #11998e;
+        }
+
+        .start-quiz-btn {
+            padding: 10px 25px;
+            background: #11998e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .start-quiz-btn:hover {
+            background: #0d7d6e;
+            transform: translateY(-2px);
+        }
+
+        /* Quiz Progress Bar */
+        .quiz-progress {
+            margin-bottom: 10px;
+        }
+
+        .quiz-progress-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .quiz-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #11998e, #38ef7d);
+            transition: width 0.3s ease;
+        }
+
+        .quiz-progress-text {
+            text-align: center;
+            margin-top: 5px;
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+
+        /* Timer Selector */
+        .timer-selector {
+            margin: 12px 0;
+        }
+
+        .timer-selector-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2d3436;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .timer-options {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .timer-option {
+            padding: 8px 14px;
+            border: 2px solid #dee2e6;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: #6c757d;
+        }
+
+        .timer-option:hover {
+            border-color: #11998e;
+            color: #11998e;
+        }
+
+        .timer-option.active {
+            background: #11998e;
+            border-color: #11998e;
+            color: white;
+        }
+
+        /* Block Selector */
+        .block-selector {
+            margin: 12px 0;
+        }
+
+        .block-selector-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2d3436;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .block-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+        }
+
+        .block-option {
+            padding: 6px 10px;
+            border: 2px solid #dee2e6;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: #6c757d;
+        }
+
+        .block-option:hover:not(.selected) {
+            border-color: #11998e;
+            color: #11998e;
+        }
+
+        .block-option.selected {
+            background: #00b894;
+            border-color: #00b894;
+            color: white;
+        }
+
+        .select-all-btn {
+            margin-top: 8px;
+            padding: 5px 12px;
+            font-size: 0.8rem;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .select-all-btn:hover {
+            background: #5a6268;
+        }
+
+        /* Quiz Timer Display */
+        .quiz-timer {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #11998e;
+            margin-bottom: 10px;
+            padding: 8px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .quiz-timer.warning {
+            color: #e17055;
+            background: linear-gradient(135deg, #fff0f0, #ffe0e0);
+            animation: timerPulse 1s infinite;
+        }
+
+        @keyframes timerPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Final Results */
+        .quiz-final-results {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .results-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .results-circle.excellent {
+            background: linear-gradient(135deg, #00b894, #55efc4);
+        }
+
+        .results-circle.good {
+            background: linear-gradient(135deg, #0984e3, #74b9ff);
+        }
+
+        .results-circle.average {
+            background: linear-gradient(135deg, #fdcb6e, #ffeaa7);
+        }
+
+        .results-circle.needs-practice {
+            background: linear-gradient(135deg, #e17055, #fab1a0);
+        }
+
+        .results-percentage {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .results-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .results-message {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+
+        .results-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 300px;
+            margin: 0 auto 25px;
+        }
+
+        .results-detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .results-detail-row:last-child {
+            border-bottom: none;
+            font-weight: bold;
+            color: #11998e;
+        }
+
+        .restart-btn {
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .restart-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(17, 153, 142, 0.4);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .flashcard {
+                height: 250px;
+            }
+
+            .flashcard-word {
+                font-size: 1.8rem;
+            }
+
+            .flashcard-translation {
+                font-size: 1.5rem;
+            }
+
+            .mode-tabs {
+                flex-direction: column;
+            }
+
+            .flashcard-controls {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">← Back to Home / Volver al Inicio</a>
+
+    <div class="container">
+        <div class="header">
+            <h1>Climate Vocabulary Study</h1>
+            <p>Estudio de Vocabulario Climatico</p>
+        </div>
+
+        <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="flashcards">Flashcards</button>
+            <button class="mode-tab" data-mode="quiz">Quiz</button>
+            <button class="mode-tab" data-mode="list">Vocabulary List</button>
+        </div>
+
+        <!-- Flashcards Mode -->
+        <div class="content active" id="flashcards">
+            <div class="flashcard-container">
+                <!-- Flashcard Block Selector -->
+                <div class="block-selector" style="margin-bottom: 20px;">
+                    <label class="block-selector-label">Select Blocks / Selecciona Bloques:</label>
+                    <div class="block-options" id="flashcardBlockOptions">
+                        <!-- Generated by JS -->
+                    </div>
+                    <button class="select-all-btn" onclick="toggleAllFlashcardBlocks()">Select All / Todos</button>
+                    <p style="margin-top: 6px; font-size: 0.85rem; color: #636e72;">
+                        Selected: <span id="flashcardWordsCount">15</span> words / palabras
+                    </p>
+                </div>
+
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="flashcard-category" id="cardCategory">Category</span>
+                            <div class="flashcard-word" id="cardWord">Word</div>
+                            <div class="flashcard-hint">Click to see translation / Haz clic para ver la traduccion</div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-translation" id="cardTranslation">Traduccion</div>
+                            <div class="flashcard-definition" id="cardDefinition">Definition</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard-controls">
+                    <button class="control-btn prev" onclick="prevCard()">Previous</button>
+                    <button class="control-btn shuffle" onclick="shuffleCards()">Shuffle</button>
+                    <button class="control-btn next" onclick="nextCard()">Next</button>
+                </div>
+
+                <div class="progress-text" id="progressText">Card 1 of 30</div>
+            </div>
+        </div>
+
+        <!-- Quiz Mode -->
+        <div class="content" id="quiz">
+            <div class="quiz-container">
+                <!-- Quiz Setup Screen -->
+                <div id="quizSetup">
+                    <div class="quiz-settings">
+                        <h3 style="margin-bottom: 20px; color: #2d3436;">Climate Vocabulary Quiz / Quiz de Vocabulario Climatico</h3>
+                        <p style="margin-bottom: 15px; color: #636e72;">
+                            Test your knowledge! Translate English words to Spanish.
+                            <br>
+                            ¡Pon a prueba tu conocimiento! Traduce palabras del ingles al espanol.
+                        </p>
+                        <p style="margin-bottom: 10px; color: #11998e; font-weight: 600;">
+                            Total: <span id="totalQuestionsDisplay">30</span> questions / preguntas
+                        </p>
+
+                        <div class="timer-selector">
+                            <label class="timer-selector-label">Select Time / Selecciona Tiempo:</label>
+                            <div class="timer-options">
+                                <button class="timer-option" onclick="selectTime(1)">1 min</button>
+                                <button class="timer-option" onclick="selectTime(2)">2 min</button>
+                                <button class="timer-option" onclick="selectTime(3)">3 min</button>
+                                <button class="timer-option active" onclick="selectTime(5)">5 min</button>
+                                <button class="timer-option" onclick="selectTime(10)">10 min</button>
+                                <button class="timer-option" onclick="selectTime(15)">15 min</button>
+                            </div>
+                        </div>
+
+                        <div class="block-selector">
+                            <label class="block-selector-label">Select Blocks / Selecciona Bloques:</label>
+                            <div class="block-options" id="blockOptions">
+                                <!-- Generated by JS -->
+                            </div>
+                            <button class="select-all-btn" onclick="toggleAllBlocks()">Select All / Todos</button>
+                            <p style="margin-top: 6px; font-size: 0.85rem; color: #636e72;">
+                                Selected: <span id="selectedWordsCount">15</span> words / palabras
+                            </p>
+                        </div>
+
+                        <button class="start-quiz-btn" onclick="startQuiz()">
+                            Start Quiz / Comenzar Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Active Screen -->
+                <div id="quizActive" style="display: none;">
+                    <div class="quiz-timer" id="quizTimer">
+                        <span>⏱️</span>
+                        <span id="timerDisplay">05:00</span>
+                    </div>
+
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="progressFill" style="width: 0%;"></div>
+                        </div>
+                        <div class="quiz-progress-text" id="progressText">Question 1 of 10</div>
+                    </div>
+
+                    <div class="quiz-score">
+                        <h3>Score / Puntuacion</h3>
+                        <div class="score-number"><span id="quizCorrect">0</span> / <span id="quizTotal">0</span></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <div class="quiz-word" id="quizWord">Loading...</div>
+                        <div class="quiz-prompt" id="quizPrompt">What is the Spanish translation?</div>
+                        <div class="quiz-options" id="quizOptions">
+                            <!-- Options generated by JS -->
+                        </div>
+                        <div class="quiz-feedback" id="quizFeedback" style="display: none;"></div>
+                    </div>
+
+                    <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuizQuestion()" style="display: none;">
+                        Next Question / Siguiente
+                    </button>
+                </div>
+
+                <!-- Quiz Results Screen -->
+                <div id="quizResults" style="display: none;">
+                    <div class="quiz-final-results">
+                        <div class="results-circle" id="resultsCircle">
+                            <span class="results-percentage" id="resultsPercentage">0%</span>
+                            <span class="results-label">Score</span>
+                        </div>
+
+                        <div class="results-message" id="resultsMessage">Great job!</div>
+
+                        <div class="results-details">
+                            <div class="results-detail-row">
+                                <span>Correct / Correctas:</span>
+                                <span id="finalCorrect">0</span>
+                            </div>
+                            <div class="results-detail-row">
+                                <span>Incorrect / Incorrectas:</span>
+                                <span id="finalIncorrect">0</span>
+                            </div>
+                            <div class="results-detail-row">
+                                <span>Total Questions:</span>
+                                <span id="finalTotal">0</span>
+                            </div>
+                        </div>
+
+                        <button class="restart-btn" onclick="restartQuiz()">
+                            Try Again / Intentar de Nuevo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary List Mode -->
+        <div class="content" id="list">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search vocabulary... / Buscar vocabulario...">
+
+            <div class="category-filter" id="categoryFilter">
+                <!-- Filter buttons generated by JS -->
+            </div>
+
+            <div class="vocab-list" id="vocabList">
+                <!-- Vocabulary items generated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Climate Vocabulary Data extracted from Climate Exam
+        const vocabularyData = [
+            // Climate Zones
+            { english: "Polar Zone", spanish: "Zona Polar", definition: "Region near the North and South Poles where it is extremely cold all year", category: "Climate Zones" },
+            { english: "Tropical Zone", spanish: "Zona Tropical", definition: "Region near the Equator that is warm or hot all year with lots of rain", category: "Climate Zones" },
+            { english: "Temperate Zone", spanish: "Zona Templada", definition: "Region with four seasons: spring, summer, fall, and winter", category: "Climate Zones" },
+            { english: "Mountain Zone", spanish: "Zona de Montana", definition: "Region where temperature gets colder as you go higher up the mountain", category: "Climate Zones" },
+            { english: "climate zone", spanish: "zona climatica", definition: "A region with specific weather patterns, plants, and animals", category: "Climate Zones" },
+
+            // Geographic Terms
+            { english: "Equator", spanish: "Ecuador", definition: "An imaginary line around the middle of Earth", category: "Geography" },
+            { english: "North Pole", spanish: "Polo Norte", definition: "The northernmost point on Earth", category: "Geography" },
+            { english: "South Pole", spanish: "Polo Sur", definition: "The southernmost point on Earth", category: "Geography" },
+            { english: "mountain", spanish: "montana", definition: "A large natural elevation of the earth's surface", category: "Geography" },
+            { english: "forest", spanish: "bosque", definition: "A large area covered with trees and plants", category: "Geography" },
+            { english: "land", spanish: "tierra", definition: "The solid surface of Earth not covered by water", category: "Geography" },
+
+            // Weather & Temperature
+            { english: "cold", spanish: "frio", definition: "Having a low temperature", category: "Weather" },
+            { english: "hot", spanish: "caliente", definition: "Having a high temperature", category: "Weather" },
+            { english: "warm", spanish: "calido/templado", definition: "Having a comfortable, moderate temperature", category: "Weather" },
+            { english: "freezing", spanish: "congelante", definition: "Extremely cold, below 0°C/32°F", category: "Weather" },
+            { english: "rain", spanish: "lluvia", definition: "Water that falls from clouds in drops", category: "Weather" },
+            { english: "weather", spanish: "clima/tiempo", definition: "The state of the atmosphere at a place and time", category: "Weather" },
+            { english: "temperature", spanish: "temperatura", definition: "How hot or cold something is", category: "Weather" },
+
+            // Seasons
+            { english: "spring", spanish: "primavera", definition: "The season after winter when plants start growing", category: "Seasons" },
+            { english: "summer", spanish: "verano", definition: "The warmest season of the year", category: "Seasons" },
+            { english: "fall", spanish: "otono", definition: "The season after summer when leaves fall from trees", category: "Seasons" },
+            { english: "autumn", spanish: "otono", definition: "Another word for fall, the season after summer", category: "Seasons" },
+            { english: "winter", spanish: "invierno", definition: "The coldest season of the year", category: "Seasons" },
+            { english: "season", spanish: "estacion", definition: "One of the four periods of the year", category: "Seasons" },
+            { english: "four seasons", spanish: "cuatro estaciones", definition: "Spring, summer, fall, and winter", category: "Seasons" },
+
+            // Animals
+            { english: "polar bear", spanish: "oso polar", definition: "A large white bear that lives in the Arctic", category: "Animals" },
+            { english: "penguin", spanish: "pinguino", definition: "A black and white bird that cannot fly, lives in cold regions", category: "Animals" },
+            { english: "llama", spanish: "llama", definition: "A South American animal related to camels, lives in mountains", category: "Animals" },
+            { english: "snow leopard", spanish: "leopardo de las nieves", definition: "A large wild cat that lives in mountain regions", category: "Animals" },
+            { english: "deer", spanish: "venado/ciervo", definition: "A brown animal with antlers that lives in forests", category: "Animals" },
+            { english: "fox", spanish: "zorro", definition: "A small wild animal with a bushy tail", category: "Animals" },
+            { english: "goat", spanish: "cabra", definition: "An animal with horns that lives in mountains", category: "Animals" },
+
+            // Plants & Trees
+            { english: "oak", spanish: "roble", definition: "A large tree that produces acorns", category: "Plants" },
+            { english: "maple", spanish: "arce", definition: "A tree with leaves that turn red in fall", category: "Plants" },
+            { english: "tree", spanish: "arbol", definition: "A tall plant with a trunk and branches", category: "Plants" },
+            { english: "plant", spanish: "planta", definition: "A living thing that grows in soil", category: "Plants" },
+
+            // Global Warming
+            { english: "global warming", spanish: "calentamiento global", definition: "The gradual increase in Earth's temperature", category: "Global Warming" },
+            { english: "climate change", spanish: "cambio climatico", definition: "Long-term changes in weather patterns on Earth", category: "Global Warming" },
+            { english: "greenhouse gases", spanish: "gases de efecto invernadero", definition: "Gases that trap heat in Earth's atmosphere", category: "Global Warming" },
+            { english: "carbon dioxide", spanish: "dioxido de carbono", definition: "A gas released when burning fuels (CO2)", category: "Global Warming" },
+            { english: "rises", spanish: "aumenta/sube", definition: "Goes up, increases", category: "Global Warming" },
+            { english: "melting", spanish: "derritiendo", definition: "Changing from solid ice to liquid water", category: "Global Warming" },
+            { english: "glacier", spanish: "glaciar", definition: "A large mass of ice that moves slowly over land", category: "Global Warming" },
+            { english: "sea level", spanish: "nivel del mar", definition: "The average height of the ocean's surface", category: "Global Warming" },
+
+            // Environmental Actions
+            { english: "absorb", spanish: "absorber", definition: "To take in or soak up", category: "Environment" },
+            { english: "reduce", spanish: "reducir", definition: "To make something smaller or less", category: "Environment" },
+            { english: "recycle", spanish: "reciclar", definition: "To convert waste into reusable material", category: "Environment" },
+            { english: "plant trees", spanish: "plantar arboles", definition: "To put tree seeds or seedlings in the ground to grow", category: "Environment" },
+            { english: "protect", spanish: "proteger", definition: "To keep safe from harm or damage", category: "Environment" },
+            { english: "save", spanish: "ahorrar/salvar", definition: "To keep safe or use less of something", category: "Environment" },
+
+            // Energy & Pollution
+            { english: "burning", spanish: "quemando", definition: "The process of fire consuming something", category: "Energy" },
+            { english: "coal", spanish: "carbon", definition: "A black rock used as fuel", category: "Energy" },
+            { english: "oil", spanish: "petroleo", definition: "A thick liquid used as fuel", category: "Energy" },
+            { english: "gas", spanish: "gas", definition: "A fuel used for heating and cooking", category: "Energy" },
+            { english: "fuel", spanish: "combustible", definition: "Material burned to produce heat or power", category: "Energy" },
+            { english: "release", spanish: "liberar", definition: "To let something go free or emit", category: "Energy" },
+
+            // Effects of Climate Change
+            { english: "hurricane", spanish: "huracan", definition: "A violent tropical storm with strong winds", category: "Climate Effects" },
+            { english: "flood", spanish: "inundacion", definition: "An overflow of water onto normally dry land", category: "Climate Effects" },
+            { english: "drought", spanish: "sequia", definition: "A long period without rain", category: "Climate Effects" },
+            { english: "stronger", spanish: "mas fuerte", definition: "Having more power or intensity", category: "Climate Effects" },
+
+            // Descriptive Words
+            { english: "extremely", spanish: "extremadamente", definition: "To a very great degree", category: "Adjectives" },
+            { english: "slowly", spanish: "lentamente", definition: "At a low speed, not quickly", category: "Adjectives" },
+            { english: "higher", spanish: "mas alto", definition: "At a greater height or level", category: "Adjectives" },
+            { english: "colder", spanish: "mas frio", definition: "Having a lower temperature", category: "Adjectives" },
+            { english: "warmer", spanish: "mas calido", definition: "Having a higher temperature", category: "Adjectives" },
+            { english: "long", spanish: "largo", definition: "Measuring a great distance or time", category: "Adjectives" },
+
+            // Actions & Verbs
+            { english: "survive", spanish: "sobrevivir", definition: "To continue to live despite difficult conditions", category: "Verbs" },
+            { english: "grow", spanish: "crecer", definition: "To increase in size or develop", category: "Verbs" },
+            { english: "live", spanish: "vivir", definition: "To be alive, to exist", category: "Verbs" },
+            { english: "climb", spanish: "escalar/subir", definition: "To go up using hands and feet", category: "Verbs" },
+            { english: "cut down", spanish: "talar", definition: "To make a tree fall by cutting it", category: "Verbs" },
+            { english: "help", spanish: "ayudar", definition: "To give assistance to someone", category: "Verbs" },
+            { english: "cause", spanish: "causar", definition: "To make something happen", category: "Verbs" },
+
+            // Places from Exam
+            { english: "Caribbean", spanish: "Caribe", definition: "A region of islands in the Caribbean Sea", category: "Places" },
+            { english: "Central America", spanish: "America Central", definition: "The region connecting North and South America", category: "Places" },
+            { english: "Africa", spanish: "Africa", definition: "A continent south of Europe", category: "Places" },
+            { english: "Asia", spanish: "Asia", definition: "The largest continent on Earth", category: "Places" },
+            { english: "Earth", spanish: "Tierra", definition: "Our planet, the third from the sun", category: "Places" },
+
+            // Additional General Words from Exam
+            { english: "happens", spanish: "sucede/ocurre", definition: "Takes place, occurs", category: "General Verbs" },
+            { english: "located", spanish: "ubicado/localizado", definition: "Situated in a particular place", category: "General Verbs" },
+            { english: "found", spanish: "encontrado", definition: "Discovered or located", category: "General Verbs" },
+            { english: "different", spanish: "diferente", definition: "Not the same as another", category: "Adjectives" },
+            { english: "own", spanish: "propio", definition: "Belonging to oneself", category: "Adjectives" },
+            { english: "kind", spanish: "tipo/clase", definition: "A category or type of something", category: "General Words" },
+            { english: "near", spanish: "cerca", definition: "Close to, not far from", category: "General Words" },
+            { english: "only", spanish: "solo/solamente", definition: "Exclusively, just", category: "General Words" },
+            { english: "few", spanish: "pocos", definition: "A small number of", category: "General Words" },
+            { english: "many", spanish: "muchos", definition: "A large number of", category: "General Words" },
+            { english: "some", spanish: "algunos", definition: "An unspecified amount", category: "General Words" },
+            { english: "such as", spanish: "tales como", definition: "For example, like", category: "General Words" },
+            { english: "like", spanish: "como", definition: "Similar to, such as", category: "General Words" },
+            { english: "while", spanish: "mientras", definition: "At the same time as", category: "General Words" },
+            { english: "too", spanish: "demasiado/tambien", definition: "Also, or excessively", category: "General Words" },
+            { english: "all year", spanish: "todo el ano", definition: "Throughout the entire year", category: "Time Expressions" },
+            { english: "long-term", spanish: "a largo plazo", definition: "Extending over a long period", category: "Time Expressions" },
+
+            // Question Words
+            { english: "what", spanish: "que", definition: "Asking for information about something", category: "Question Words" },
+            { english: "which", spanish: "cual", definition: "Asking for a choice among options", category: "Question Words" },
+            { english: "where", spanish: "donde", definition: "Asking about a place or location", category: "Question Words" },
+            { english: "why", spanish: "por que", definition: "Asking for a reason", category: "Question Words" },
+            { english: "how", spanish: "como", definition: "Asking about the manner or way", category: "Question Words" },
+            { english: "who", spanish: "quien", definition: "Asking about a person", category: "Question Words" },
+
+            // More Descriptive Words
+            { english: "very cold", spanish: "muy frio", definition: "Extremely low temperature", category: "Adjectives" },
+            { english: "sunny", spanish: "soleado", definition: "Bright with sunlight", category: "Adjectives" },
+            { english: "snowy", spanish: "nevado", definition: "Covered with or having snow", category: "Adjectives" },
+            { english: "rainy", spanish: "lluvioso", definition: "Having much rain", category: "Adjectives" },
+            { english: "mild", spanish: "templado/suave", definition: "Not severe, moderate", category: "Adjectives" },
+            { english: "common", spanish: "comun", definition: "Found often, widespread", category: "Adjectives" },
+            { english: "same", spanish: "mismo", definition: "Identical, not different", category: "Adjectives" },
+            { english: "correct", spanish: "correcto", definition: "Right, accurate, true", category: "Adjectives" },
+            { english: "true", spanish: "verdadero", definition: "In accordance with fact", category: "Adjectives" },
+            { english: "false", spanish: "falso", definition: "Not true, incorrect", category: "Adjectives" },
+
+            // More Verbs from Exam Context
+            { english: "get", spanish: "obtener/ponerse", definition: "To receive or become", category: "General Verbs" },
+            { english: "go", spanish: "ir", definition: "To move or travel", category: "General Verbs" },
+            { english: "make", spanish: "hacer", definition: "To create or cause", category: "General Verbs" },
+            { english: "use", spanish: "usar", definition: "To employ for a purpose", category: "General Verbs" },
+            { english: "find", spanish: "encontrar", definition: "To discover or locate", category: "General Verbs" },
+            { english: "stay", spanish: "quedarse", definition: "To remain in a place", category: "General Verbs" },
+            { english: "leave", spanish: "dejar/salir", definition: "To go away from", category: "General Verbs" },
+            { english: "add", spanish: "anadir/agregar", definition: "To put together with something else", category: "General Verbs" },
+            { english: "walk", spanish: "caminar", definition: "To move on foot", category: "General Verbs" },
+            { english: "change", spanish: "cambiar", definition: "To make or become different", category: "General Verbs" },
+
+            // Nature & Environment
+            { english: "ice", spanish: "hielo", definition: "Frozen water", category: "Nature" },
+            { english: "snow", spanish: "nieve", definition: "Frozen water that falls from clouds as white flakes", category: "Nature" },
+            { english: "air", spanish: "aire", definition: "The invisible mixture of gases around Earth", category: "Nature" },
+            { english: "water", spanish: "agua", definition: "Clear liquid essential for life", category: "Nature" },
+            { english: "sunlight", spanish: "luz del sol", definition: "Light from the sun", category: "Nature" },
+            { english: "atmosphere", spanish: "atmosfera", definition: "The layer of gases surrounding Earth", category: "Nature" },
+            { english: "heat", spanish: "calor", definition: "The quality of being hot, thermal energy", category: "Nature" },
+            { english: "pattern", spanish: "patron", definition: "A repeated design or sequence", category: "Nature" },
+
+            // Exam-specific Phrases
+            { english: "a lot of", spanish: "mucho/mucha", definition: "A large amount of", category: "Phrases" },
+            { english: "not too hot", spanish: "no muy caliente", definition: "Having a moderate temperature", category: "Phrases" },
+            { english: "not too cold", spanish: "no muy frio", definition: "Having a moderate temperature", category: "Phrases" },
+            { english: "all year round", spanish: "durante todo el ano", definition: "Throughout every season", category: "Phrases" },
+            { english: "gets colder", spanish: "se pone mas frio", definition: "Becomes lower in temperature", category: "Phrases" },
+            { english: "goes higher", spanish: "sube mas alto", definition: "Increases in altitude", category: "Phrases" },
+
+            // Body Parts & Life
+            { english: "animal", spanish: "animal", definition: "A living creature that can move", category: "Living Things" },
+            { english: "animals", spanish: "animales", definition: "Living creatures that can move (plural)", category: "Living Things" },
+            { english: "plants", spanish: "plantas", definition: "Living things that grow in soil (plural)", category: "Living Things" },
+            { english: "people", spanish: "personas/gente", definition: "Human beings", category: "Living Things" },
+            { english: "everyone", spanish: "todos", definition: "All people", category: "Living Things" },
+            { english: "scientists", spanish: "cientificos", definition: "People who study science", category: "Living Things" },
+            { english: "adults", spanish: "adultos", definition: "Grown-up people", category: "Living Things" },
+
+            // Actions for Environment
+            { english: "using bikes", spanish: "usar bicicletas", definition: "Riding bicycles for transportation", category: "Eco Actions" },
+            { english: "walking", spanish: "caminando", definition: "Moving on foot", category: "Eco Actions" },
+            { english: "leaving lights on", spanish: "dejar luces encendidas", definition: "Not turning off lights when not needed", category: "Eco Actions" },
+            { english: "cutting trees", spanish: "talando arboles", definition: "Removing trees by cutting", category: "Eco Actions" },
+            { english: "burning fuel", spanish: "quemar combustible", definition: "Using fuel by fire for energy", category: "Eco Actions" },
+
+            // More Geographic Terms
+            { english: "area", spanish: "area/zona", definition: "A region or part of a place", category: "Geography" },
+            { english: "top", spanish: "cima/parte superior", definition: "The highest point of something", category: "Geography" },
+            { english: "lower", spanish: "inferior/mas bajo", definition: "Below in position", category: "Geography" },
+            { english: "parts", spanish: "partes", definition: "Sections or pieces of something", category: "Geography" },
+            { english: "places", spanish: "lugares", definition: "Locations or areas", category: "Geography" },
+            { english: "zone", spanish: "zona", definition: "An area with particular characteristics", category: "Geography" },
+            { english: "region", spanish: "region", definition: "A large area of land", category: "Geography" },
+
+            // Answer/Response Words
+            { english: "answer", spanish: "respuesta", definition: "A reply to a question", category: "Exam Words" },
+            { english: "question", spanish: "pregunta", definition: "A sentence asking for information", category: "Exam Words" },
+            { english: "read", spanish: "leer", definition: "To look at and understand written words", category: "Exam Words" },
+            { english: "complete", spanish: "completar", definition: "To finish or fill in", category: "Exam Words" },
+            { english: "match", spanish: "emparejar", definition: "To pair things together", category: "Exam Words" },
+            { english: "choose", spanish: "elegir/escoger", definition: "To select from options", category: "Exam Words" },
+            { english: "name", spanish: "nombrar", definition: "To give a name or identify", category: "Exam Words" },
+
+            // Effects & Results
+            { english: "effect", spanish: "efecto", definition: "A result or consequence", category: "Results" },
+            { english: "effects", spanish: "efectos", definition: "Results or consequences (plural)", category: "Results" },
+            { english: "result", spanish: "resultado", definition: "Something that happens because of an action", category: "Results" },
+            { english: "causes", spanish: "causa", definition: "Makes something happen", category: "Results" },
+            { english: "makes", spanish: "hace", definition: "Causes to happen or creates", category: "Results" }
+        ];
+
+        // State
+        let currentCardIndex = 0;
+        let shuffledCards = [...vocabularyData];
+        let quizCorrect = 0;
+        let quizTotal = 0;
+        let currentFilter = 'all';
+
+        // Quiz State
+        let quizQuestions = [];
+        let currentQuestionIndex = 0;
+        let totalQuestions = 10;
+        let quizDirection = 'en-es'; // 'en-es' or 'es-en'
+
+        // Timer State
+        let timerInterval = null;
+        let timeRemaining = 0;
+        let selectedTime = 5; // minutes (default)
+        let timedOut = false;
+
+        // Block State
+        let selectedBlocks = [1]; // Default: block 1 (for Quiz)
+        let selectedFlashcardBlocks = [1]; // Default: block 1 (for Flashcards)
+        const BLOCK_SIZE = 15;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            setupModeTabs();
+            generateFlashcardBlockOptions();
+            applyFlashcardBlocks(); // Apply initial block selection
+            generateCategoryFilters();
+            renderVocabList();
+            generateBlockOptions();
+        });
+
+        // Mode Tabs
+        function setupModeTabs() {
+            document.querySelectorAll('.mode-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const mode = this.dataset.mode;
+
+                    // Update tabs
+                    document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update content
+                    document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+                    document.getElementById(mode).classList.add('active');
+                });
+            });
+        }
+
+        // Flashcard Functions
+        function updateFlashcard() {
+            const card = shuffledCards[currentCardIndex];
+            document.getElementById('cardWord').textContent = card.english;
+            document.getElementById('cardTranslation').textContent = card.spanish;
+            document.getElementById('cardDefinition').textContent = card.definition;
+            document.getElementById('cardCategory').textContent = card.category;
+            document.getElementById('progressText').textContent = `Card ${currentCardIndex + 1} of ${shuffledCards.length}`;
+
+            // Reset flip state
+            document.getElementById('flashcard').classList.remove('flipped');
+        }
+
+        document.getElementById('flashcard').addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+
+        function nextCard() {
+            currentCardIndex = (currentCardIndex + 1) % shuffledCards.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentCardIndex = (currentCardIndex - 1 + shuffledCards.length) % shuffledCards.length;
+            updateFlashcard();
+        }
+
+        function shuffleCards() {
+            const selectedWords = getWordsByBlocks(selectedFlashcardBlocks);
+            shuffledCards = shuffleArray(selectedWords);
+            currentCardIndex = 0;
+            updateFlashcard();
+        }
+
+        // Fisher-Yates shuffle algorithm for better randomization
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Block Functions
+        function getTotalBlocks() {
+            return Math.ceil(vocabularyData.length / BLOCK_SIZE);
+        }
+
+        function getWordsByBlocks(blockNumbers) {
+            let words = [];
+            blockNumbers.forEach(blockNum => {
+                const start = (blockNum - 1) * BLOCK_SIZE;
+                const end = Math.min(start + BLOCK_SIZE, vocabularyData.length);
+                words = words.concat(vocabularyData.slice(start, end));
+            });
+            return words;
+        }
+
+        function generateBlockOptions() {
+            const totalBlocks = getTotalBlocks();
+            const container = document.getElementById('blockOptions');
+            let html = '';
+
+            for (let i = 1; i <= totalBlocks; i++) {
+                const start = (i - 1) * BLOCK_SIZE + 1;
+                const end = Math.min(i * BLOCK_SIZE, vocabularyData.length);
+                const isSelected = selectedBlocks.includes(i);
+                html += `<button class="block-option ${isSelected ? 'selected' : ''}"
+                                 onclick="toggleBlock(${i})" data-block="${i}">
+                            ${i} (${start}-${end})
+                         </button>`;
+            }
+            container.innerHTML = html;
+            updateSelectedCount();
+        }
+
+        function toggleBlock(blockNum) {
+            const index = selectedBlocks.indexOf(blockNum);
+            if (index > -1) {
+                if (selectedBlocks.length > 1) {
+                    selectedBlocks.splice(index, 1);
+                }
+            } else {
+                selectedBlocks.push(blockNum);
+            }
+            selectedBlocks.sort((a, b) => a - b);
+            updateBlockUI();
+        }
+
+        function toggleAllBlocks() {
+            const totalBlocks = getTotalBlocks();
+            if (selectedBlocks.length === totalBlocks) {
+                selectedBlocks = [1];
+            } else {
+                selectedBlocks = Array.from({length: totalBlocks}, (_, i) => i + 1);
+            }
+            updateBlockUI();
+        }
+
+        function updateBlockUI() {
+            document.querySelectorAll('.block-option').forEach(btn => {
+                const blockNum = parseInt(btn.dataset.block);
+                btn.classList.toggle('selected', selectedBlocks.includes(blockNum));
+            });
+            updateSelectedCount();
+        }
+
+        function updateSelectedCount() {
+            const words = getWordsByBlocks(selectedBlocks);
+            document.getElementById('selectedWordsCount').textContent = words.length;
+            document.getElementById('totalQuestionsDisplay').textContent = words.length;
+        }
+
+        // Flashcard Block Functions
+        function generateFlashcardBlockOptions() {
+            const totalBlocks = getTotalBlocks();
+            const container = document.getElementById('flashcardBlockOptions');
+            let html = '';
+
+            for (let i = 1; i <= totalBlocks; i++) {
+                const start = (i - 1) * BLOCK_SIZE + 1;
+                const end = Math.min(i * BLOCK_SIZE, vocabularyData.length);
+                const isSelected = selectedFlashcardBlocks.includes(i);
+                html += `<button class="block-option ${isSelected ? 'selected' : ''}"
+                                 onclick="toggleFlashcardBlock(${i})" data-flashcard-block="${i}">
+                            ${i} (${start}-${end})
+                         </button>`;
+            }
+            container.innerHTML = html;
+            updateFlashcardSelectedCount();
+        }
+
+        function toggleFlashcardBlock(blockNum) {
+            const index = selectedFlashcardBlocks.indexOf(blockNum);
+            if (index > -1) {
+                if (selectedFlashcardBlocks.length > 1) {
+                    selectedFlashcardBlocks.splice(index, 1);
+                }
+            } else {
+                selectedFlashcardBlocks.push(blockNum);
+            }
+            selectedFlashcardBlocks.sort((a, b) => a - b);
+            updateFlashcardBlockUI();
+            applyFlashcardBlocks();
+        }
+
+        function toggleAllFlashcardBlocks() {
+            const totalBlocks = getTotalBlocks();
+            if (selectedFlashcardBlocks.length === totalBlocks) {
+                selectedFlashcardBlocks = [1];
+            } else {
+                selectedFlashcardBlocks = Array.from({length: totalBlocks}, (_, i) => i + 1);
+            }
+            updateFlashcardBlockUI();
+            applyFlashcardBlocks();
+        }
+
+        function updateFlashcardBlockUI() {
+            document.querySelectorAll('[data-flashcard-block]').forEach(btn => {
+                const blockNum = parseInt(btn.dataset.flashcardBlock);
+                btn.classList.toggle('selected', selectedFlashcardBlocks.includes(blockNum));
+            });
+            updateFlashcardSelectedCount();
+        }
+
+        function updateFlashcardSelectedCount() {
+            const words = getWordsByBlocks(selectedFlashcardBlocks);
+            document.getElementById('flashcardWordsCount').textContent = words.length;
+        }
+
+        function applyFlashcardBlocks() {
+            const selectedWords = getWordsByBlocks(selectedFlashcardBlocks);
+            shuffledCards = shuffleArray(selectedWords);
+            currentCardIndex = 0;
+            updateFlashcard();
+        }
+
+        // Timer Functions
+        function selectTime(minutes) {
+            selectedTime = minutes;
+            // Update UI - remove active from all, add to selected
+            document.querySelectorAll('.timer-option').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.trim() === minutes + ' min') {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        function startTimer() {
+            timeRemaining = selectedTime * 60; // Convert to seconds
+            timedOut = false;
+            updateTimerDisplay();
+
+            timerInterval = setInterval(function() {
+                timeRemaining--;
+                updateTimerDisplay();
+
+                // Warning state when less than 30 seconds
+                if (timeRemaining <= 30) {
+                    document.getElementById('quizTimer').classList.add('warning');
+                }
+
+                // Time's up!
+                if (timeRemaining <= 0) {
+                    timeUp();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            const display = String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
+            document.getElementById('timerDisplay').textContent = display;
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            document.getElementById('quizTimer').classList.remove('warning');
+        }
+
+        function timeUp() {
+            stopTimer();
+            timedOut = true;
+            showFinalResults();
+        }
+
+        // Quiz Functions
+        function startQuiz() {
+            // Get words from selected blocks
+            const selectedWords = getWordsByBlocks(selectedBlocks);
+            totalQuestions = selectedWords.length;
+            quizDirection = 'en-es';
+
+            // Reset state
+            quizCorrect = 0;
+            quizTotal = 0;
+            currentQuestionIndex = 0;
+            timedOut = false;
+
+            // Generate random questions pool using Fisher-Yates shuffle
+            quizQuestions = shuffleArray(selectedWords);
+
+            // Update UI
+            document.getElementById('quizCorrect').textContent = '0';
+            document.getElementById('quizTotal').textContent = totalQuestions;
+
+            // Show quiz screen
+            document.getElementById('quizSetup').style.display = 'none';
+            document.getElementById('quizActive').style.display = 'block';
+            document.getElementById('quizResults').style.display = 'none';
+
+            // Start the timer
+            startTimer();
+
+            // Load first question
+            loadQuizQuestion();
+        }
+
+        function loadQuizQuestion() {
+            const correctWord = quizQuestions[currentQuestionIndex];
+
+            // Update progress bar
+            const progress = (currentQuestionIndex / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent =
+                `Question ${currentQuestionIndex + 1} of ${totalQuestions} / Pregunta ${currentQuestionIndex + 1} de ${totalQuestions}`;
+
+            // Get 3 wrong answers (shuffled first, then take 3)
+            const wrongAnswers = shuffleArray(
+                vocabularyData.filter(w => w.english !== correctWord.english)
+            ).slice(0, 3);
+
+            // Combine and shuffle options using Fisher-Yates
+            const options = shuffleArray([correctWord, ...wrongAnswers]);
+
+            // Update UI - English to Spanish
+            document.getElementById('quizWord').textContent = correctWord.english;
+            document.getElementById('quizPrompt').textContent = 'What is the Spanish translation? / ¿Cual es la traduccion al espanol?';
+
+            const optionsContainer = document.getElementById('quizOptions');
+            optionsContainer.innerHTML = options.map(opt => `
+                <div class="quiz-option" onclick="checkAnswer(this, '${opt.spanish}', '${correctWord.spanish}')">
+                    ${opt.spanish}
+                </div>
+            `).join('');
+
+            document.getElementById('quizFeedback').style.display = 'none';
+            document.getElementById('quizNextBtn').style.display = 'none';
+        }
+
+        function checkAnswer(element, selected, correct) {
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(opt => {
+                opt.classList.add('disabled');
+                if (opt.textContent.trim() === correct) {
+                    opt.classList.add('correct');
+                }
+            });
+
+            const feedback = document.getElementById('quizFeedback');
+
+            if (selected === correct) {
+                quizCorrect++;
+                document.getElementById('quizCorrect').textContent = quizCorrect;
+                feedback.textContent = '✅ Correct! / ¡Correcto!';
+                feedback.className = 'quiz-feedback correct';
+            } else {
+                element.classList.add('incorrect');
+                feedback.textContent = `❌ Incorrect. The answer is: ${correct}`;
+                feedback.className = 'quiz-feedback incorrect';
+            }
+
+            feedback.style.display = 'block';
+
+            // Check if this is the last question
+            if (currentQuestionIndex >= totalQuestions - 1) {
+                document.getElementById('quizNextBtn').textContent = 'See Results / Ver Resultados';
+            }
+            document.getElementById('quizNextBtn').style.display = 'block';
+        }
+
+        function nextQuizQuestion() {
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex >= totalQuestions) {
+                showFinalResults();
+            } else {
+                document.getElementById('quizNextBtn').textContent = 'Next Question / Siguiente';
+                loadQuizQuestion();
+            }
+        }
+
+        function showFinalResults() {
+            // Stop the timer
+            stopTimer();
+
+            // Calculate based on TOTAL questions (not just answered)
+            const questionsAnswered = currentQuestionIndex;
+            const percentage = Math.round((quizCorrect / totalQuestions) * 100);
+
+            // Determine result class and message
+            let resultClass = 'needs-practice';
+            let message = 'Keep practicing! / ¡Sigue practicando!';
+
+            if (timedOut) {
+                message = "Time's up! / ¡Se acabo el tiempo!";
+                if (percentage >= 70) {
+                    resultClass = 'good';
+                } else if (percentage >= 50) {
+                    resultClass = 'average';
+                }
+            } else {
+                if (percentage >= 90) {
+                    resultClass = 'excellent';
+                    message = 'Excellent! / ¡Excelente!';
+                } else if (percentage >= 70) {
+                    resultClass = 'good';
+                    message = 'Good job! / ¡Buen trabajo!';
+                } else if (percentage >= 50) {
+                    resultClass = 'average';
+                    message = 'Not bad! / ¡No esta mal!';
+                }
+            }
+
+            // Update results UI
+            document.getElementById('resultsCircle').className = 'results-circle ' + resultClass;
+            document.getElementById('resultsPercentage').textContent = percentage + '%';
+            document.getElementById('resultsMessage').textContent = message;
+            document.getElementById('finalCorrect').textContent = quizCorrect;
+            document.getElementById('finalIncorrect').textContent = totalQuestions - quizCorrect;
+            document.getElementById('finalTotal').textContent = totalQuestions;
+
+            // Update progress bar based on questions answered
+            const progressPercent = (questionsAnswered / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progressPercent + '%';
+
+            // Show results screen
+            document.getElementById('quizActive').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'block';
+        }
+
+        function restartQuiz() {
+            // Stop any running timer
+            stopTimer();
+
+            // Reset to setup screen
+            document.getElementById('quizSetup').style.display = 'block';
+            document.getElementById('quizActive').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'none';
+
+            // Reset state
+            quizCorrect = 0;
+            quizTotal = 0;
+            currentQuestionIndex = 0;
+            quizQuestions = [];
+            timedOut = false;
+            timeRemaining = 0;
+        }
+
+        // Vocabulary List Functions
+        function generateCategoryFilters() {
+            const categories = ['all', ...new Set(vocabularyData.map(w => w.category))];
+            const container = document.getElementById('categoryFilter');
+
+            container.innerHTML = categories.map(cat => `
+                <button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="filterByCategory('${cat}')">
+                    ${cat === 'all' ? 'All / Todos' : cat}
+                </button>
+            `).join('');
+        }
+
+        function filterByCategory(category) {
+            currentFilter = category;
+
+            // Update filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(category) || (category === 'all' && btn.textContent.includes('All')));
+            });
+
+            renderVocabList();
+        }
+
+        function renderVocabList() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+
+            let filtered = vocabularyData;
+
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(w => w.category === currentFilter);
+            }
+
+            // Apply search filter
+            if (searchTerm) {
+                filtered = filtered.filter(w =>
+                    w.english.toLowerCase().includes(searchTerm) ||
+                    w.spanish.toLowerCase().includes(searchTerm) ||
+                    w.definition.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            const container = document.getElementById('vocabList');
+            container.innerHTML = filtered.map(word => `
+                <div class="vocab-item">
+                    <div class="vocab-item-header">
+                        <span class="vocab-english">${word.english}</span>
+                        <span class="vocab-spanish">${word.spanish}</span>
+                    </div>
+                    <div class="vocab-definition">${word.definition}</div>
+                    <span class="vocab-category-badge">${word.category}</span>
+                </div>
+            `).join('');
+        }
+
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', renderVocabList);
+
+        // Keyboard navigation for flashcards
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('flashcards').classList.contains('active')) {
+                if (e.key === 'ArrowRight') nextCard();
+                if (e.key === 'ArrowLeft') prevCard();
+                if (e.key === ' ') {
+                    e.preventDefault();
+                    document.getElementById('flashcard').classList.toggle('flipped');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

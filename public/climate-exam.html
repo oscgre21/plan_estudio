@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Zones & Global Warming Exam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .nav-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .nav-tab {
+            flex: 1;
+            min-width: 100px;
+            padding: 10px 8px;
+            background: none;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-tab.active {
+            color: #11998e;
+            background: white;
+        }
+
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #11998e;
+        }
+
+        .nav-tab:hover:not(.active) {
+            background: #e9ecef;
+        }
+
+        .section-container {
+            padding: 20px;
+            display: none;
+        }
+
+        .section-container.active {
+            display: block;
+        }
+
+        .section-header {
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 {
+            color: #11998e;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+
+        .reading-passage {
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9f0f5 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 5px solid #11998e;
+            line-height: 1.8;
+        }
+
+        .reading-passage p {
+            margin-bottom: 12px;
+            color: #4a5568;
+        }
+
+        .reading-passage strong {
+            color: #11998e;
+            font-weight: 600;
+        }
+
+        .word-bank {
+            background: #fff3cd;
+            padding: 12px 18px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ffc107;
+            font-size: 0.95rem;
+        }
+
+        .word-bank strong {
+            color: #856404;
+        }
+
+        .questions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .question-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .question-item:hover {
+            border-color: #38ef7d;
+            box-shadow: 0 5px 15px rgba(56, 239, 125, 0.1);
+        }
+
+        .question-item.answered-correct {
+            background: linear-gradient(45deg, #d4edda, #c3e6cb);
+            border-left: 4px solid #28a745;
+        }
+
+        .question-item.answered-incorrect {
+            background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+            border-left: 4px solid #dc3545;
+        }
+
+        .question-number {
+            background: #11998e;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .question-content {
+            flex: 1;
+        }
+
+        .question-content p {
+            color: #2d3436;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .multiple-choice {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            padding: 10px 14px;
+            background: white;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .option-label:hover {
+            border-color: #38ef7d;
+            background: #f0fdf4;
+        }
+
+        .option-radio {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            accent-color: #11998e;
+        }
+
+        .option-text {
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+
+        .tf-options {
+            display: flex;
+            gap: 15px;
+        }
+
+        .tf-options .option-label {
+            flex: 1;
+            justify-content: center;
+        }
+
+        .matching-instructions {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .matching-instructions p {
+            color: #1565c0;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .matching-options {
+            display: grid;
+            gap: 6px;
+            font-size: 0.9rem;
+            color: #1976d2;
+        }
+
+        .feedback-slot {
+            margin-top: 10px;
+        }
+
+        .feedback {
+            padding: 10px 14px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .feedback.correct {
+            background: linear-gradient(45deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+        }
+
+        .feedback.incorrect {
+            background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+            border: 2px solid #dc3545;
+        }
+
+        .feedback .icon {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .feedback.correct .icon {
+            color: #28a745;
+        }
+
+        .feedback.incorrect .icon {
+            color: #dc3545;
+        }
+
+        .feedback .explanation {
+            color: #374151;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .text-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #38ef7d;
+            box-shadow: 0 0 0 3px rgba(56, 239, 125, 0.1);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn.prev {
+            background: #6c757d;
+            color: white;
+        }
+
+        .nav-btn.next {
+            background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+            color: white;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .progress-indicator {
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        /* Results Section */
+        .results-container {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .score-circle {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .score-circle.excellent {
+            background: linear-gradient(135deg, #00b894, #55efc4);
+        }
+
+        .score-circle.good {
+            background: linear-gradient(135deg, #0984e3, #74b9ff);
+        }
+
+        .score-circle.average {
+            background: linear-gradient(135deg, #fdcb6e, #ffeaa7);
+        }
+
+        .score-circle.needs-practice {
+            background: linear-gradient(135deg, #e17055, #fab1a0);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        .score-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .score-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .score-message {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 20px;
+        }
+
+        .detailed-scores {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: 0 auto 20px;
+            text-align: left;
+        }
+
+        .detailed-scores h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .section-score {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+
+        .section-score:last-child {
+            border-bottom: none;
+        }
+
+        .section-score.total {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 2px solid #11998e;
+            color: #11998e;
+        }
+
+        .action-button {
+            padding: 14px 35px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .primary-button {
+            background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+            color: white;
+        }
+
+        .secondary-button {
+            background: #6c757d;
+            color: white;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .nav-tabs {
+                flex-direction: column;
+            }
+
+            .nav-tab {
+                min-width: auto;
+            }
+
+            .tf-options {
+                flex-direction: column;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">← Back to Home / Volver al Inicio</a>
+
+    <div class="container">
+        <div class="header">
+            <h1>🌍 Climate Zones & Global Warming Exam</h1>
+            <p>Examen de Zonas Climaticas y Calentamiento Global</p>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-section="1">I. Reading</button>
+            <button class="nav-tab" data-section="2">II-III</button>
+            <button class="nav-tab" data-section="3">IV-V</button>
+            <button class="nav-tab" data-section="4">VI-VII</button>
+            <button class="nav-tab" data-section="5">VIII-X</button>
+            <button class="nav-tab" data-section="6">Results</button>
+        </div>
+
+        <!-- Section 1: Reading Comprehension -->
+        <div class="section-container active" id="section1">
+            <div class="section-header">
+                <h2>I. Reading Comprehension</h2>
+                <p>Read the passage and answer the questions:</p>
+            </div>
+
+            <div class="reading-passage">
+                <p>The Earth has different climate zones, and each one has its own kind of weather, plants, and animals. Near the North and South Poles are the <strong>Polar Zones</strong>, where it is extremely cold all year. Only a few plants grow, and animals like polar bears and penguins survive the freezing weather.</p>
+                <p>In the <strong>Mountain Climate Zone</strong>, the temperature gets colder as you go higher up the mountain. Lower areas may have forests, while the top can be too cold for many plants. Animals such as llamas and snow leopards live there.</p>
+                <p>Near the Equator is the <strong>Tropical Zone</strong>, which is warm or hot all year and gets a lot of rain. Many plants and animals live in tropical places like the Caribbean, Central America, and parts of Africa and Asia.</p>
+                <p>The <strong>Temperate Zone</strong> has four seasons: spring, summer, fall, and winter. It is not too hot or too cold, and many animals like deer and foxes live there. Trees such as oaks and maples are common.</p>
+            </div>
+
+            <div class="questions" id="section1Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn prev" onclick="goToSection(1)" disabled>← Previous</button>
+                <button class="nav-btn next" onclick="goToSection(2)">Next →</button>
+            </div>
+            <div class="progress-indicator">Section 1 of 6</div>
+        </div>
+
+        <!-- Section 2: Complete Sentences + Multiple Choice -->
+        <div class="section-container" id="section2">
+            <div class="section-header">
+                <h2>II. Complete the Sentences</h2>
+            </div>
+
+            <div class="word-bank">
+                <strong>Word bank:</strong> rises, carbon dioxide, absorb, sea, greenhouse
+            </div>
+
+            <div class="questions" id="section2Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="section-header" style="margin-top: 30px;">
+                <h2>III. Multiple Choice</h2>
+            </div>
+
+            <div class="questions" id="section3Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn prev" onclick="goToSection(1)">← Previous</button>
+                <button class="nav-btn next" onclick="goToSection(3)">Next →</button>
+            </div>
+            <div class="progress-indicator">Section 2 of 6</div>
+        </div>
+
+        <!-- Section 3: True/False + Multiple Choice -->
+        <div class="section-container" id="section3">
+            <div class="section-header">
+                <h2>IV. True or False</h2>
+            </div>
+
+            <div class="questions" id="section4Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="section-header" style="margin-top: 30px;">
+                <h2>V. Multiple Choice</h2>
+            </div>
+
+            <div class="questions" id="section5Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn prev" onclick="goToSection(2)">← Previous</button>
+                <button class="nav-btn next" onclick="goToSection(4)">Next →</button>
+            </div>
+            <div class="progress-indicator">Section 3 of 6</div>
+        </div>
+
+        <!-- Section 4: Complete Sentences + Matching -->
+        <div class="section-container" id="section4">
+            <div class="section-header">
+                <h2>VI. Complete the Sentences</h2>
+            </div>
+
+            <div class="word-bank">
+                <strong>Word bank:</strong> Equator, colder, four, rain, polar bears, forests
+            </div>
+
+            <div class="questions" id="section6Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="section-header" style="margin-top: 30px;">
+                <h2>VII. Matching</h2>
+            </div>
+
+            <div class="matching-instructions">
+                <p>Match each climate zone with its description:</p>
+                <div class="matching-options">
+                    <div><strong>a)</strong> Hot or warm all year</div>
+                    <div><strong>b)</strong> Very cold with long winters</div>
+                    <div><strong>c)</strong> Gets colder as you go higher</div>
+                    <div><strong>d)</strong> Has four seasons</div>
+                    <div><strong>e)</strong> Llamas, goats, and snow leopards</div>
+                </div>
+            </div>
+
+            <div class="questions" id="section7Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn prev" onclick="goToSection(3)">← Previous</button>
+                <button class="nav-btn next" onclick="goToSection(5)">Next →</button>
+            </div>
+            <div class="progress-indicator">Section 4 of 6</div>
+        </div>
+
+        <!-- Section 5: Final Sections (VIII, IX, X) -->
+        <div class="section-container" id="section5">
+            <div class="section-header">
+                <h2>VIII. Complete the Sentences</h2>
+            </div>
+
+            <div class="word-bank">
+                <strong>Word bank:</strong> rises, carbon dioxide, absorb, sea, greenhouse
+            </div>
+
+            <div class="questions" id="section8Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="section-header" style="margin-top: 30px;">
+                <h2>IX. Multiple Choice</h2>
+            </div>
+
+            <div class="questions" id="section9Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="section-header" style="margin-top: 30px;">
+                <h2>X. Extra Points</h2>
+            </div>
+
+            <div class="questions" id="section10Questions">
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn prev" onclick="goToSection(4)">← Previous</button>
+                <button class="nav-btn next" onclick="goToSection(6)">See Results →</button>
+            </div>
+            <div class="progress-indicator">Section 5 of 6</div>
+        </div>
+
+        <!-- Section 6: Results -->
+        <div class="section-container" id="section6">
+            <div class="results-container">
+                <div class="score-circle" id="scoreCircle">
+                    <span class="score-number" id="percentageScore">0%</span>
+                    <span class="score-label">Score</span>
+                </div>
+
+                <p class="score-message" id="scoreMessage">Complete the exam to see your results</p>
+
+                <div class="detailed-scores">
+                    <h3>Section Breakdown:</h3>
+                    <div class="section-score">
+                        <span>Section I (Reading):</span>
+                        <span id="score1">0/10</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section II (Complete):</span>
+                        <span id="score2">0/3</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section III (MC):</span>
+                        <span id="score3">0/3</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section IV (T/F):</span>
+                        <span id="score4">0/5</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section V (MC):</span>
+                        <span id="score5">0/8</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section VI (Complete):</span>
+                        <span id="score6">0/6</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section VII (Matching):</span>
+                        <span id="score7">0/5</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section VIII (Complete):</span>
+                        <span id="score8">0/5</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section IX (MC):</span>
+                        <span id="score9">0/5</span>
+                    </div>
+                    <div class="section-score">
+                        <span>Section X (Extra):</span>
+                        <span id="score10">0/3</span>
+                    </div>
+                    <div class="section-score total">
+                        <span><strong>Total Score:</strong></span>
+                        <span><strong id="totalScore">0/53</strong></span>
+                    </div>
+                </div>
+
+                <button class="action-button primary-button" onclick="resetExam()">
+                    Try Again / Intentar de Nuevo
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn prev" onclick="goToSection(5)">← Back to Exam</button>
+                <button class="nav-btn next" disabled>Finished</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Correct Answers
+        const correctAnswers = {
+            // Section I - Reading (10)
+            q1_1: "b", q1_2: "b", q1_3: "b", q1_4: "c", q1_5: "b",
+            q1_6: "b", q1_7: "b", q1_8: "c", q1_9: "b", q1_10: "b",
+            // Section II - Complete (3)
+            q2_1: "a", q2_2: "b", q2_3: "c",
+            // Section III - MC (3)
+            q3_1: "b", q3_2: "b", q3_3: "b",
+            // Section IV - T/F (5)
+            q4_1: "false", q4_2: "true", q4_3: "true", q4_4: "true", q4_5: "false",
+            // Section V - MC (8)
+            q5_1: "b", q5_2: "a", q5_3: "c", q5_4: "b", q5_5: "d", q5_6: "b", q5_7: "a", q5_8: "c",
+            // Section VI - Complete (6)
+            q6_1: "a", q6_2: "b", q6_3: "b", q6_4: "b", q6_5: "b", q6_6: "b",
+            // Section VII - Matching (5)
+            q7_a: "b", q7_b: "c", q7_c: "a", q7_d: "d", q7_e: "e",
+            // Section VIII - Complete (5)
+            q8_1: "a", q8_2: "b", q8_3: "c", q8_4: "b", q8_5: "b",
+            // Section IX - MC (5)
+            q9_1: "b", q9_2: "b", q9_3: "c", q9_4: "b", q9_5: "c",
+            // Section X - Extra (3)
+            q10_1: "false", q10_2: "true", q10_3: "open"
+        };
+
+        // Explanations
+        const explanations = {
+            q1_1: "La Zona Polar es extremadamente fria todo el ano.",
+            q1_2: "La temperatura se vuelve mas fria a medida que subes mas alto en la montana.",
+            q1_3: "Muchas plantas y animales viven en la Zona Tropical porque es calida todo el ano y recibe mucha lluvia.",
+            q1_4: "La Zona Templada tiene cuatro estaciones.",
+            q1_5: "Ejemplos: venados (deer) o zorros (foxes).",
+            q1_6: "El Caribe y America Central son lugares donde se encuentra la Zona Tropical.",
+            q1_7: "Robles (oaks) y arces (maples) se encuentran en la Zona Templada.",
+            q1_8: "Osos polares (polar bears) o pinguinos (penguins) viven en la Zona Polar.",
+            q1_9: "En la cima de las montanas altas, hace demasiado frio para muchas plantas.",
+            q1_10: "La Zona Polar es extremadamente fria todo el ano, mientras que la Zona Templada tiene cuatro estaciones.",
+            q2_1: "El calentamiento global ocurre cuando la temperatura de la Tierra aumenta (rises) lentamente.",
+            q2_2: "Quemar carbon, petroleo y gas libera gases de efecto invernadero (greenhouse gases) al aire.",
+            q2_3: "El hielo derretido causa que los niveles del mar (sea levels) aumenten.",
+            q3_1: "El cambio climatico son cambios a largo plazo en los patrones climaticos.",
+            q3_2: "El derretimiento de glaciares es un efecto del calentamiento global.",
+            q3_3: "El dioxido de carbono (carbon dioxide) es el gas principal liberado al quemar combustibles.",
+            q4_1: "FALSO - La Zona Polar es extremadamente fria, no calida.",
+            q4_2: "VERDADERO - Mientras mas alto subes en las montanas, mas frio hace.",
+            q4_3: "VERDADERO - La Zona Tropical esta cerca del Ecuador.",
+            q4_4: "VERDADERO - La Zona Templada tiene cuatro estaciones.",
+            q4_5: "FALSO - Pocas plantas crecen en la Zona Polar debido al frio extremo.",
+            q5_1: "La Zona Polar esta ubicada cerca de los Polos Norte y Sur.",
+            q5_2: "La zona Tropical tiene mucha lluvia.",
+            q5_3: "Osos polares y pinguinos viven en la Zona Polar.",
+            q5_4: "Las Zonas Templadas tienen cuatro estaciones.",
+            q5_5: "Las llamas se encuentran en la Zona de Montana.",
+            q5_6: "La Zona Tropical es caliente o calida todo el ano.",
+            q5_7: "La zona Templada esta entre las zonas tropical y polar.",
+            q5_8: "La temperatura se vuelve mas fria a medida que escalas una montana.",
+            q6_1: "La Zona Tropical recibe mucha lluvia (rain).",
+            q6_2: "La Zona Polar es hogar de animales como osos polares (polar bears).",
+            q6_3: "La Zona Templada tiene cuatro (four) estaciones.",
+            q6_4: "La Zona Tropical se encuentra cerca del Ecuador (Equator).",
+            q6_5: "En las zonas montanosas, mientras mas alto vas, mas frio (colder) hace.",
+            q6_6: "Las areas bajas de las montanas pueden tener bosques (forests).",
+            q7_a: "Zona Polar - Muy fria con inviernos largos",
+            q7_b: "Zona de Montana - Se vuelve mas fria a medida que subes",
+            q7_c: "Zona Tropical - Caliente o calida todo el ano",
+            q7_d: "Zona Templada - Tiene cuatro estaciones",
+            q7_e: "Animales de tierras altas - Llamas, cabras y leopardos de nieve",
+            q8_1: "El calentamiento global ocurre cuando la temperatura de la Tierra aumenta (rises) lentamente.",
+            q8_2: "Quemar carbon, petroleo y gas libera gases de efecto invernadero (greenhouse) al aire.",
+            q8_3: "El hielo derretido causa que los niveles del mar (sea) aumenten.",
+            q8_4: "Talar arboles anade mas dioxido de carbono (carbon dioxide) al aire.",
+            q8_5: "Plantar arboles ayuda a absorber (absorb) dioxido de carbono.",
+            q9_1: "El cambio climatico son cambios a largo plazo en los patrones climaticos.",
+            q9_2: "El derretimiento de glaciares es un efecto del calentamiento global.",
+            q9_3: "Usar bicicletas o caminar ayuda a reducir el calentamiento global.",
+            q9_4: "El dioxido de carbono es el gas principal liberado al quemar combustibles.",
+            q9_5: "Todos pueden ayudar a proteger la Tierra.",
+            q10_1: "FALSO - El calentamiento global hace que la Tierra sea mas calida, no mas fria.",
+            q10_2: "VERDADERO - El cambio climatico puede causar huracanes e inundaciones mas fuertes."
+        };
+
+        // Question Data
+        const questionData = {
+            section1: [
+                { q: "1. What is the weather like in the Polar Zone?", options: ["a) Warm and sunny all year", "b) Extremely cold all year", "c) Hot with lots of rain", "d) Mild with four seasons"] },
+                { q: "2. What happens to the temperature as you go higher in the Mountain Zone?", options: ["a) It gets warmer", "b) It gets colder", "c) It stays the same", "d) It becomes tropical"] },
+                { q: "3. Why do many plants and animals live in the Tropical Zone?", options: ["a) It is cold and snowy", "b) It is warm/hot all year and gets lots of rain", "c) It has four seasons", "d) It has very little water"] },
+                { q: "4. Which zone has four seasons?", options: ["a) Polar Zone", "b) Tropical Zone", "c) Temperate Zone", "d) Mountain Zone"] },
+                { q: "5. Name one animal that lives in the Temperate Zone.", options: ["a) Polar bear", "b) Deer or Fox", "c) Penguin", "d) Llama"] },
+                { q: "6. Name two places where the Tropical Zone is found.", options: ["a) Canada and Alaska", "b) Caribbean and Central America", "c) Antarctica and Greenland", "d) North and South Pole"] },
+                { q: "7. What type of trees can be found in the Temperate Zone?", options: ["a) Palm trees", "b) Oaks and Maples", "c) Cactus", "d) No trees grow there"] },
+                { q: "8. What animal lives in the Polar Zone?", options: ["a) Monkeys", "b) Deer", "c) Polar bears or Penguins", "d) Llamas"] },
+                { q: "9. What kind of plant life is found at the top of high mountains?", options: ["a) Many forests", "b) Few plants (too cold)", "c) Tropical plants", "d) Palm trees"] },
+                { q: "10. What makes the Polar Zone different from the Temperate Zone?", options: ["a) Polar is hot, Temperate is cold", "b) Polar is extremely cold all year, Temperate has four seasons", "c) They are the same", "d) Both have four seasons"] }
+            ],
+            section2: [
+                { q: "1. Global warming happens when Earth's temperature slowly _______.", options: ["a) rises", "b) falls", "c) stays the same", "d) freezes"] },
+                { q: "2. Burning coal, oil, and gas releases _______ gases into the air.", options: ["a) oxygen", "b) greenhouse", "c) nitrogen", "d) helium"] },
+                { q: "3. Melting ice causes _______ levels to rise.", options: ["a) mountain", "b) river", "c) sea", "d) cloud"] }
+            ],
+            section3: [
+                { q: "1. What is climate change?", options: ["a) A simple rainy day", "b) Long-term changes in weather patterns", "c) A type of storm", "d) A cold winter"] },
+                { q: "2. Which of the following is an effect of global warming?", options: ["a) Less sunlight", "b) Melting glaciers", "c) Shorter days", "d) More trees"] },
+                { q: "3. What gas is mainly released when we burn fuels?", options: ["a) Oxygen", "b) Carbon dioxide", "c) Nitrogen", "d) Helium"] }
+            ],
+            section4: [
+                { q: "1. The Polar Zone is warm all year.", tf: true },
+                { q: "2. The higher you go in the mountains, the colder it gets.", tf: true },
+                { q: "3. The Tropical Zone is near the Equator.", tf: true },
+                { q: "4. The Temperate Zone has four seasons.", tf: true },
+                { q: "5. Many plants grow in the Polar Zone.", tf: true }
+            ],
+            section5: [
+                { q: "1. The Polar Zone is located near the:", options: ["A. Equator", "B. North and South Poles", "C. Mountains", "D. Tropical forests"] },
+                { q: "2. Which climate zone has a lot of rain?", options: ["A. Tropical", "B. Polar", "C. Temperate", "D. Mountain"] },
+                { q: "3. What kind of animals live in the Polar Zone?", options: ["A. Monkeys and parrots", "B. Deer and foxes", "C. Polar bears and penguins"] },
+                { q: "4. What do Temperate Zones have?", options: ["A. Only a rainy season", "B. Four seasons", "C. Snow all year", "D. No plants"] },
+                { q: "5. Where can you find llamas?", options: ["A. Temperate Zone", "B. Tropical Zone", "C. Polar Zone", "D. Mountain Zone"] },
+                { q: "6. The Tropical Zone is:", options: ["A. Very cold", "B. Hot or warm all year", "C. Only rainy in winter", "D. Full of snow"] },
+                { q: "7. Which zone is between the tropical and polar zones?", options: ["A. Temperate", "B. Mountain", "C. Tropical", "D. Arctic"] },
+                { q: "8. What happens to temperature as you climb a mountain?", options: ["A. It gets hotter", "B. It stays the same", "C. It gets colder", "D. It becomes tropical"] }
+            ],
+            section6: [
+                { q: "1. The Tropical Zone gets a lot of _______.", options: ["a) rain", "b) snow", "c) ice", "d) wind"] },
+                { q: "2. The Polar Zone is home to animals like _______.", options: ["a) monkeys", "b) polar bears", "c) lions", "d) elephants"] },
+                { q: "3. The Temperate Zone has _______ seasons.", options: ["a) two", "b) four", "c) one", "d) three"] },
+                { q: "4. The Tropical Zone is found near the _______.", options: ["a) North Pole", "b) Equator", "c) South Pole", "d) Mountains"] },
+                { q: "5. In mountain zones, the higher you go, the _______ it gets.", options: ["a) warmer", "b) colder", "c) wetter", "d) sunnier"] },
+                { q: "6. Lower areas of mountains can have _______.", options: ["a) deserts", "b) forests", "c) oceans", "d) glaciers"] }
+            ],
+            section7: [
+                { q: "A. Polar Zone", options: ["a) Hot or warm all year", "b) Very cold with long winters", "c) Gets colder as you go higher", "d) Has four seasons", "e) Llamas, goats, and snow leopards"] },
+                { q: "B. Mountain Zone", options: ["a) Hot or warm all year", "b) Very cold with long winters", "c) Gets colder as you go higher", "d) Has four seasons", "e) Llamas, goats, and snow leopards"] },
+                { q: "C. Tropical Zone", options: ["a) Hot or warm all year", "b) Very cold with long winters", "c) Gets colder as you go higher", "d) Has four seasons", "e) Llamas, goats, and snow leopards"] },
+                { q: "D. Temperate Zone", options: ["a) Hot or warm all year", "b) Very cold with long winters", "c) Gets colder as you go higher", "d) Has four seasons", "e) Llamas, goats, and snow leopards"] },
+                { q: "E. Highland animals", options: ["a) Hot or warm all year", "b) Very cold with long winters", "c) Gets colder as you go higher", "d) Has four seasons", "e) Llamas, goats, and snow leopards"] }
+            ],
+            section8: [
+                { q: "1. Global warming happens when Earth's temperature slowly _______.", options: ["a) rises", "b) falls", "c) freezes", "d) stops"] },
+                { q: "2. Burning coal, oil, and gas releases _______ gases into the air.", options: ["a) oxygen", "b) greenhouse", "c) nitrogen", "d) water"] },
+                { q: "3. Melting ice causes _______ levels to rise.", options: ["a) mountain", "b) river", "c) sea", "d) lake"] },
+                { q: "4. Cutting down trees adds more _______ to the air.", options: ["a) oxygen", "b) carbon dioxide", "c) nitrogen", "d) helium"] },
+                { q: "5. Planting trees helps _______ carbon dioxide.", options: ["a) release", "b) absorb", "c) create", "d) destroy"] }
+            ],
+            section9: [
+                { q: "1. What is climate change?", options: ["a) A single rainy day", "b) Long-term changes in weather patterns", "c) A type of storm", "d) A cold winter"] },
+                { q: "2. Which of the following is an effect of global warming?", options: ["a) Less sunlight", "b) Melting glaciers", "c) Shorter days", "d) More trees"] },
+                { q: "3. Which action helps reduce global warming?", options: ["a) Leaving lights on", "b) Cutting more trees", "c) Using bikes or walking", "d) Burning more fuel"] },
+                { q: "4. What gas is mainly released when we burn fuels?", options: ["a) Oxygen", "b) Carbon dioxide", "c) Nitrogen", "d) Helium"] },
+                { q: "5. Who can help protect the Earth?", options: ["a) Only scientists", "b) Only adults", "c) Everyone", "d) No one"] }
+            ],
+            section10: [
+                { q: "1. True or False: Global warming makes the Earth colder.", tf: true },
+                { q: "2. True or False: Climate change can cause stronger hurricanes and floods.", tf: true },
+                { q: "3. Name one thing you can do to help the planet:", openEnded: true }
+            ]
+        };
+
+        // State
+        let currentSection = 1;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            generateAllQuestions();
+            setupNavigation();
+            setupImmediateFeedback();
+        });
+
+        function generateAllQuestions() {
+            // Section 1 - Reading
+            generateMCQuestions('section1Questions', questionData.section1, 'q1_', 1);
+
+            // Section 2 - Complete
+            generateMCQuestions('section2Questions', questionData.section2, 'q2_', 1);
+
+            // Section 3 - MC
+            generateMCQuestions('section3Questions', questionData.section3, 'q3_', 1);
+
+            // Section 4 - T/F
+            generateTFQuestions('section4Questions', questionData.section4, 'q4_');
+
+            // Section 5 - MC
+            generateMCQuestions('section5Questions', questionData.section5, 'q5_', 1);
+
+            // Section 6 - Complete
+            generateMCQuestions('section6Questions', questionData.section6, 'q6_', 1);
+
+            // Section 7 - Matching
+            generateMatchingQuestions('section7Questions', questionData.section7);
+
+            // Section 8 - Complete
+            generateMCQuestions('section8Questions', questionData.section8, 'q8_', 1);
+
+            // Section 9 - MC
+            generateMCQuestions('section9Questions', questionData.section9, 'q9_', 1);
+
+            // Section 10 - Extra
+            generateSection10('section10Questions');
+        }
+
+        function generateMCQuestions(containerId, questions, prefix, startNum) {
+            const container = document.getElementById(containerId);
+            let html = '';
+
+            questions.forEach((q, index) => {
+                const num = startNum + index;
+                const qId = prefix + num;
+                html += `
+                    <div class="question-item">
+                        <span class="question-number">${num}</span>
+                        <div class="question-content">
+                            <p>${q.q}</p>
+                            <div class="multiple-choice">
+                                ${q.options.map((opt, optIndex) => {
+                                    const letter = String.fromCharCode(97 + optIndex);
+                                    return `
+                                        <label class="option-label">
+                                            <input type="radio" name="${qId}" value="${letter}" class="option-radio">
+                                            <span class="option-text">${opt}</span>
+                                        </label>
+                                    `;
+                                }).join('')}
+                            </div>
+                            <div class="feedback-slot" id="feedback_${qId}"></div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function generateTFQuestions(containerId, questions, prefix) {
+            const container = document.getElementById(containerId);
+            let html = '';
+
+            questions.forEach((q, index) => {
+                const num = index + 1;
+                const qId = prefix + num;
+                html += `
+                    <div class="question-item">
+                        <span class="question-number">${num}</span>
+                        <div class="question-content">
+                            <p>${q.q}</p>
+                            <div class="tf-options">
+                                <label class="option-label">
+                                    <input type="radio" name="${qId}" value="true" class="option-radio">
+                                    <span class="option-text">TRUE</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="${qId}" value="false" class="option-radio">
+                                    <span class="option-text">FALSE</span>
+                                </label>
+                            </div>
+                            <div class="feedback-slot" id="feedback_${qId}"></div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function generateMatchingQuestions(containerId, questions) {
+            const container = document.getElementById(containerId);
+            const letters = ['a', 'b', 'c', 'd', 'e'];
+            let html = '';
+
+            questions.forEach((q, index) => {
+                const letter = letters[index];
+                const qId = 'q7_' + letter;
+                html += `
+                    <div class="question-item">
+                        <div class="question-content">
+                            <p>${q.q}</p>
+                            <div class="multiple-choice">
+                                ${q.options.map((opt, optIndex) => {
+                                    const optLetter = String.fromCharCode(97 + optIndex);
+                                    return `
+                                        <label class="option-label">
+                                            <input type="radio" name="${qId}" value="${optLetter}" class="option-radio">
+                                            <span class="option-text">${opt}</span>
+                                        </label>
+                                    `;
+                                }).join('')}
+                            </div>
+                            <div class="feedback-slot" id="feedback_${qId}"></div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function generateSection10(containerId) {
+            const container = document.getElementById(containerId);
+            let html = '';
+
+            // T/F questions
+            html += `
+                <div class="question-item">
+                    <span class="question-number">1</span>
+                    <div class="question-content">
+                        <p>True or False: Global warming makes the Earth colder.</p>
+                        <div class="tf-options">
+                            <label class="option-label">
+                                <input type="radio" name="q10_1" value="true" class="option-radio">
+                                <span class="option-text">TRUE</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q10_1" value="false" class="option-radio">
+                                <span class="option-text">FALSE</span>
+                            </label>
+                        </div>
+                        <div class="feedback-slot" id="feedback_q10_1"></div>
+                    </div>
+                </div>
+                <div class="question-item">
+                    <span class="question-number">2</span>
+                    <div class="question-content">
+                        <p>True or False: Climate change can cause stronger hurricanes and floods.</p>
+                        <div class="tf-options">
+                            <label class="option-label">
+                                <input type="radio" name="q10_2" value="true" class="option-radio">
+                                <span class="option-text">TRUE</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q10_2" value="false" class="option-radio">
+                                <span class="option-text">FALSE</span>
+                            </label>
+                        </div>
+                        <div class="feedback-slot" id="feedback_q10_2"></div>
+                    </div>
+                </div>
+                <div class="question-item">
+                    <span class="question-number">3</span>
+                    <div class="question-content">
+                        <p>Name one thing you can do to help the planet:</p>
+                        <input type="text" class="text-input" id="q10_3" placeholder="e.g., recycle, plant trees, use less water...">
+                        <div class="feedback-slot" id="feedback_q10_3"></div>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        function setupNavigation() {
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const section = parseInt(this.dataset.section);
+                    goToSection(section);
+                });
+            });
+        }
+
+        function goToSection(sectionNum) {
+            currentSection = sectionNum;
+
+            // Update tabs
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.toggle('active', parseInt(tab.dataset.section) === sectionNum);
+            });
+
+            // Update sections
+            document.querySelectorAll('.section-container').forEach((section, index) => {
+                section.classList.toggle('active', index + 1 === sectionNum);
+            });
+
+            // Calculate results when going to results section
+            if (sectionNum === 6) {
+                calculateResults();
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function setupImmediateFeedback() {
+            // All radio buttons
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    const name = this.name;
+                    const value = this.value;
+                    checkAnswerImmediately(name, value);
+                });
+            });
+
+            // Text input for q10_3
+            const textInput = document.getElementById('q10_3');
+            if (textInput) {
+                textInput.addEventListener('blur', function() {
+                    if (this.value.trim()) {
+                        checkAnswerImmediately('q10_3', this.value);
+                    }
+                });
+                textInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' && this.value.trim()) {
+                        checkAnswerImmediately('q10_3', this.value);
+                        this.blur();
+                    }
+                });
+            }
+        }
+
+        function checkAnswerImmediately(questionId, userAnswer) {
+            const correct = correctAnswers[questionId];
+            let isCorrect = false;
+
+            if (questionId === 'q10_3') {
+                // Open-ended question - always correct if has content
+                isCorrect = userAnswer.trim().length > 0;
+            } else {
+                isCorrect = userAnswer.toLowerCase() === correct.toLowerCase();
+            }
+
+            showFeedback(questionId, isCorrect);
+
+            // Update question item styling
+            const feedbackSlot = document.getElementById('feedback_' + questionId);
+            if (feedbackSlot) {
+                const questionItem = feedbackSlot.closest('.question-item');
+                if (questionItem) {
+                    questionItem.classList.remove('answered-correct', 'answered-incorrect');
+                    questionItem.classList.add(isCorrect ? 'answered-correct' : 'answered-incorrect');
+                }
+            }
+        }
+
+        function showFeedback(questionId, isCorrect) {
+            const feedbackSlot = document.getElementById('feedback_' + questionId);
+            if (!feedbackSlot) return;
+
+            if (isCorrect) {
+                feedbackSlot.innerHTML = `
+                    <div class="feedback correct">
+                        <span class="icon">✓</span>
+                        <span class="explanation">¡Correcto!</span>
+                    </div>
+                `;
+            } else {
+                const explanation = explanations[questionId] || 'Incorrect answer.';
+                feedbackSlot.innerHTML = `
+                    <div class="feedback incorrect">
+                        <span class="icon">✗</span>
+                        <span class="explanation">${explanation}</span>
+                    </div>
+                `;
+            }
+        }
+
+        function calculateResults() {
+            const scores = {
+                s1: 0, s2: 0, s3: 0, s4: 0, s5: 0,
+                s6: 0, s7: 0, s8: 0, s9: 0, s10: 0
+            };
+
+            // Section 1 (10 questions)
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="q1_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q1_' + i]) scores.s1++;
+            }
+
+            // Section 2 (3 questions)
+            for (let i = 1; i <= 3; i++) {
+                const selected = document.querySelector(`input[name="q2_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q2_' + i]) scores.s2++;
+            }
+
+            // Section 3 (3 questions)
+            for (let i = 1; i <= 3; i++) {
+                const selected = document.querySelector(`input[name="q3_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q3_' + i]) scores.s3++;
+            }
+
+            // Section 4 (5 questions)
+            for (let i = 1; i <= 5; i++) {
+                const selected = document.querySelector(`input[name="q4_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q4_' + i]) scores.s4++;
+            }
+
+            // Section 5 (8 questions)
+            for (let i = 1; i <= 8; i++) {
+                const selected = document.querySelector(`input[name="q5_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q5_' + i]) scores.s5++;
+            }
+
+            // Section 6 (6 questions)
+            for (let i = 1; i <= 6; i++) {
+                const selected = document.querySelector(`input[name="q6_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q6_' + i]) scores.s6++;
+            }
+
+            // Section 7 (5 questions - matching)
+            const matchLetters = ['a', 'b', 'c', 'd', 'e'];
+            matchLetters.forEach(letter => {
+                const selected = document.querySelector(`input[name="q7_${letter}"]:checked`);
+                if (selected && selected.value === correctAnswers['q7_' + letter]) scores.s7++;
+            });
+
+            // Section 8 (5 questions)
+            for (let i = 1; i <= 5; i++) {
+                const selected = document.querySelector(`input[name="q8_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q8_' + i]) scores.s8++;
+            }
+
+            // Section 9 (5 questions)
+            for (let i = 1; i <= 5; i++) {
+                const selected = document.querySelector(`input[name="q9_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q9_' + i]) scores.s9++;
+            }
+
+            // Section 10 (3 questions)
+            for (let i = 1; i <= 2; i++) {
+                const selected = document.querySelector(`input[name="q10_${i}"]:checked`);
+                if (selected && selected.value === correctAnswers['q10_' + i]) scores.s10++;
+            }
+            // Open-ended question
+            const openEnded = document.getElementById('q10_3');
+            if (openEnded && openEnded.value.trim().length > 0) scores.s10++;
+
+            // Update display
+            document.getElementById('score1').textContent = scores.s1 + '/10';
+            document.getElementById('score2').textContent = scores.s2 + '/3';
+            document.getElementById('score3').textContent = scores.s3 + '/3';
+            document.getElementById('score4').textContent = scores.s4 + '/5';
+            document.getElementById('score5').textContent = scores.s5 + '/8';
+            document.getElementById('score6').textContent = scores.s6 + '/6';
+            document.getElementById('score7').textContent = scores.s7 + '/5';
+            document.getElementById('score8').textContent = scores.s8 + '/5';
+            document.getElementById('score9').textContent = scores.s9 + '/5';
+            document.getElementById('score10').textContent = scores.s10 + '/3';
+
+            const total = scores.s1 + scores.s2 + scores.s3 + scores.s4 + scores.s5 +
+                          scores.s6 + scores.s7 + scores.s8 + scores.s9 + scores.s10;
+            const maxTotal = 53;
+            const percentage = Math.round((total / maxTotal) * 100);
+
+            document.getElementById('totalScore').textContent = total + '/' + maxTotal;
+            document.getElementById('percentageScore').textContent = percentage + '%';
+
+            // Update score circle and message
+            const scoreCircle = document.getElementById('scoreCircle');
+            const scoreMessage = document.getElementById('scoreMessage');
+
+            scoreCircle.className = 'score-circle';
+            if (percentage >= 90) {
+                scoreCircle.classList.add('excellent');
+                scoreMessage.textContent = '¡Excelente trabajo! Excellent work! 🌟';
+            } else if (percentage >= 70) {
+                scoreCircle.classList.add('good');
+                scoreMessage.textContent = '¡Muy bien! Great job! 👏';
+            } else if (percentage >= 50) {
+                scoreCircle.classList.add('average');
+                scoreMessage.textContent = '¡Buen intento! Good effort! 📚';
+            } else {
+                scoreCircle.classList.add('needs-practice');
+                scoreMessage.textContent = '¡Sigue practicando! Keep practicing! 💪';
+            }
+        }
+
+        function resetExam() {
+            // Clear all inputs
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.checked = false;
+            });
+
+            document.querySelectorAll('input[type="text"]').forEach(input => {
+                input.value = '';
+            });
+
+            // Clear all feedback
+            document.querySelectorAll('.feedback-slot').forEach(slot => {
+                slot.innerHTML = '';
+            });
+
+            // Remove answered classes
+            document.querySelectorAll('.question-item').forEach(item => {
+                item.classList.remove('answered-correct', 'answered-incorrect');
+            });
+
+            // Go to section 1
+            goToSection(1);
+        }
+    </script>
+</body>
+</html>

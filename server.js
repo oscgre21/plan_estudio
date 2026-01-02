@@ -63,6 +63,14 @@ app.get('/water-vocabulary-study', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'water-vocabulary-study.html'));
 });
 
+app.get('/climate-exam', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'climate-exam.html'));
+});
+
+app.get('/climate-vocabulary-study', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'climate-vocabulary-study.html'));
+});
+
 // ============================================================
 // Media Library API Endpoints
 // ============================================================
